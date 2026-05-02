@@ -1,0 +1,7 @@
+entries:
+  - id: audit-indigenous-2026-05-02
+    date: "2026-05-02"
+    agent: "Codex seed build"
+    summary: "High-risk seed dossier drafted with cautious language and treaty-rights uncertainty preserved."
+    checks: ["source-support", "policy-risk", "rights-caution"]
+    result: pass

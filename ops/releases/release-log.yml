@@ -1,0 +1,4 @@
+releases:
+  - id: seed-static-preview
+    date: "2026-05-02"
+    summary: "Initial static-first seed build."

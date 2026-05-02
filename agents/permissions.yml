@@ -1,0 +1,37 @@
+levels:
+  L1: "Draft notes and public audit summaries."
+  L2: "Source and claim maintenance."
+  L3: "Topic dossier edits when automated checks pass."
+  L4: "Workflow orchestration and public summaries."
+  L5: "Code and validator maintenance."
+  L6: "Release and rollback operation."
+agents:
+  orchestrator:
+    allowed_paths:
+      - ops/**
+      - public/latest-agent-runs.json
+      - content/changelog.yml
+  source-steward:
+    allowed_paths:
+      - content/sources/**
+      - content/topics/**/sources.yml
+  claim-citation:
+    allowed_paths:
+      - content/claims/**
+      - content/topics/**/claims.yml
+  topic-writer:
+    allowed_paths:
+      - content/topics/**
+  synthesis-auditor:
+    allowed_paths:
+      - content/topics/**/audit-log.yml
+      - ops/agent-runs/**
+  release-rollback:
+    allowed_paths:
+      - ops/releases/**
+      - public/**
+forbidden:
+  - human_review_required
+  - human_reviewed
+  - raw_agent_transcript
+  - chain_of_thought

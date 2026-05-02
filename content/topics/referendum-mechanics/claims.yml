@@ -1,0 +1,17 @@
+claims:
+  - id: claim-referendum-001
+  - id: claim-referendum-002
+    text: "Elections Alberta lists 177,732 signatures required for the independence citizen initiative petition."
+    status: source_supported
+    source_ids: ["elections-ab-current-petitions"]
+    risk: high
+  - id: claim-referendum-003
+    text: "Elections Alberta lists May 2, 2026 as the signature collection end date for the independence petition."
+    status: source_supported
+    source_ids: ["elections-ab-current-petitions"]
+    risk: high
+  - id: claim-referendum-004
+    text: "Official referendum questions should be displayed from official sources, not inferred."
+    status: source_supported
+    source_ids: ["elections-ab-referendum"]
+    risk: high

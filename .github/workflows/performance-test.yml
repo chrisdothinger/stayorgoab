@@ -1,0 +1,11 @@
+name: performance-test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  performance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Performance smoke test stub for static preview."

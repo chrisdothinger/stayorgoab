@@ -1,0 +1,11 @@
+name: discover-sources
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Source discovery stub. Hermes agents should commit source record changes through pull requests or direct authorized commits."

@@ -1,0 +1,15 @@
+name: build-topic-dossier
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  dossier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Build dossier for ${{ inputs.topic }} after source and citation checks."

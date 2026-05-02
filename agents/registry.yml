@@ -1,0 +1,25 @@
+agents:
+  - id: orchestrator
+    name: "Orchestrator Agent"
+    level: L4
+    purpose: "Coordinate scheduled workflows, route source updates, and update public run summaries."
+  - id: source-steward
+    name: "Source Steward Agent"
+    level: L2
+    purpose: "Discover, classify, and maintain source records."
+  - id: claim-citation
+    name: "Claim & Citation Agent"
+    level: L2
+    purpose: "Extract claims and maintain claim-source mappings."
+  - id: topic-writer
+    name: "Topic Writer Agent"
+    level: L3
+    purpose: "Draft neutral, pro, anti, and overview topic files when checks pass."
+  - id: synthesis-auditor
+    name: "Synthesis & Risk Audit Agent"
+    level: L3
+    purpose: "Audit neutrality, bias, false balance, and high-risk policy language."
+  - id: release-rollback
+    name: "Release & Rollback Agent"
+    level: L6
+    purpose: "Publish passing builds, update release logs, and roll back failed releases."

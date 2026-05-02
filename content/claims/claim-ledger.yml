@@ -1,0 +1,43 @@
+claims:
+  - id: claim-legal-001
+    topic_slug: legal-process
+    text: "A referendum result alone would not make Alberta independent."
+    status: source_supported
+    source_ids: ["scc-secession-reference", "clarity-act"]
+    risk: high
+  - id: claim-legal-002
+    topic_slug: legal-process
+    text: "The House of Commons must consider whether a secession question and majority are clear before federal negotiations."
+    status: source_supported
+    source_ids: ["clarity-act"]
+    risk: high
+  - id: claim-cpp-001
+    topic_slug: cpp-pensions
+    text: "The Canada Pension Plan contains a statutory path for a province to establish its own plan if legislative requirements are met."
+    status: source_supported
+    source_ids: ["osfi-chief-actuary-cpp"]
+    risk: high
+  - id: claim-cpp-002
+    topic_slug: cpp-pensions
+    text: "The final CPP withdrawal transfer amount is a federal Minister of Finance responsibility, not a number settled by Alberta's report alone."
+    status: source_supported
+    source_ids: ["osfi-chief-actuary-cpp"]
+    risk: high
+  - id: claim-indigenous-001
+    topic_slug: indigenous-rights-treaties
+    text: "The Secession Reference says Aboriginal interests would need to be taken into account in constitutional negotiations."
+    status: source_supported
+    source_ids: ["scc-secession-reference"]
+    risk: high
+  - id: claim-economy-001
+    topic_slug: economy-fiscal
+    text: "Alberta's fiscal starting point should be assessed using current budget and fiscal plan documents before independence claims are evaluated."
+    status: source_supported
+    source_ids: ["alberta-budget-documents-2026", "alberta-budget-highlights-2026"]
+    risk: high
+  - id: claim-referendum-001
+    topic_slug: referendum-mechanics
+    text: "Elections Alberta lists a referendum set for October 19, 2026."
+    status: source_supported
+    source_ids: ["elections-ab-referendum"]
+    risk: high

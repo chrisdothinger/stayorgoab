@@ -1,0 +1,5 @@
+entries:
+  - id: redebate-legal-2026-05-02
+    date: "2026-05-02"
+    trigger: seed
+    summary: "Initial legal-process debate map created."

@@ -1,0 +1,12 @@
+claims:
+  - id: claim-indigenous-001
+  - id: claim-indigenous-002
+    text: "Treaty-rights concerns are active in public advocacy around Alberta separation."
+    status: source_supported
+    source_ids: ["first-nations-stand-with-treaties"]
+    risk: high
+  - id: claim-indigenous-003
+    text: "Current public sources do not provide a settled Alberta-specific legal outcome for treaty relationships after independence."
+    status: inference
+    source_ids: ["scc-secession-reference", "first-nations-stand-with-treaties"]
+    risk: high

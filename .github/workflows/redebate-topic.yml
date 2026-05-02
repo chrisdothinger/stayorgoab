@@ -1,0 +1,17 @@
+name: redebate-topic
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        required: false
+        type: string
+  schedule:
+    - cron: "23 16 * * 2"
+permissions:
+  contents: read
+jobs:
+  redebate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Redebate trigger check."

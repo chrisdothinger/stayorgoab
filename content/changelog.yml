@@ -1,0 +1,9 @@
+entries:
+  - id: change-2026-05-02-seed
+    date: "2026-05-02"
+    type: seed
+    summary: "Initial public content model, source records, topic index, and high-risk dossier shells added."
+    files_changed:
+      - content/topics/_index.yml
+      - content/sources/sources.yml
+      - content/claims/claim-ledger.yml

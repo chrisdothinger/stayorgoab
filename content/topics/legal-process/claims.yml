@@ -1,0 +1,13 @@
+claims:
+  - id: claim-legal-001
+  - id: claim-legal-002
+  - id: claim-legal-003
+    text: "A clear vote would create a duty to negotiate, not a guaranteed independence outcome."
+    status: source_supported
+    source_ids: ["scc-secession-reference"]
+    risk: high
+  - id: claim-legal-004
+    text: "Negotiations would need to account for Indigenous interests."
+    status: source_supported
+    source_ids: ["scc-secession-reference", "clarity-act"]
+    risk: high

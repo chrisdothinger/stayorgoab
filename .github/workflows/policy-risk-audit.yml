@@ -1,0 +1,11 @@
+name: policy-risk-audit
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  policy-risk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Policy risk audit stub for high-risk civic claims."

@@ -1,0 +1,17 @@
+schedules:
+  - id: official-status-daily-audit
+    workflow: .github/workflows/agent-orchestrator.yml
+    cron: "17 14 * * *"
+    timezone: America/Edmonton
+    purpose: "Check official status sources and update public status if source-supported changes are found."
+    public_log_level: summarized
+    publish_raw_logs: false
+    human_gate: false
+  - id: weekly-redebate
+    workflow: .github/workflows/redebate-topic.yml
+    cron: "23 16 * * 2"
+    timezone: America/Edmonton
+    purpose: "Review high-risk topics for source changes and redebate triggers."
+    public_log_level: summarized
+    publish_raw_logs: false
+    human_gate: false

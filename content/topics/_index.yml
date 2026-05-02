@@ -1,0 +1,73 @@
+topics:
+  - slug: legal-process
+    title: "What would legally need to happen for Alberta to become independent?"
+    plain_question: "What legal steps would be required for Alberta independence?"
+    category: "Legal process"
+    state: full_dossier
+    time_sensitivity: high
+    keywords: ["Clarity Act", "Secession Reference", "constitutional amendment", "negotiations"]
+    summary: "A referendum could create a political obligation to negotiate only if the question and result are clear; it would not itself make Alberta independent."
+    last_audited_at: "2026-05-02"
+    last_debated_at: "2026-05-02"
+    source_count: 4
+    claim_count: 4
+  - slug: cpp-pensions
+    title: "What would happen to CPP and pensions?"
+    plain_question: "Would Albertans keep CPP benefits or move to another pension system?"
+    category: "CPP, pensions, and benefits"
+    state: full_dossier
+    time_sensitivity: high
+    keywords: ["CPP", "Alberta Pension Plan", "pensions", "Chief Actuary", "withdrawal"]
+    summary: "CPP withdrawal has a statutory path, but transfer amount, timing, and independence-related pension treatment remain materially uncertain."
+    last_audited_at: "2026-05-02"
+    last_debated_at: "2026-05-02"
+    source_count: 3
+    claim_count: 4
+  - slug: indigenous-rights-treaties
+    title: "How do Indigenous rights and treaties affect independence?"
+    plain_question: "What happens to Indigenous rights, treaties, land, and consultation if Alberta tries to separate?"
+    category: "Indigenous rights, treaties, land, and consultation"
+    state: full_dossier
+    time_sensitivity: high
+    keywords: ["section 35", "treaties", "Indigenous rights", "consultation", "Secession Reference"]
+    summary: "The SCC reference says Aboriginal interests would need to be taken into account in negotiations; Alberta-specific effects remain high-risk and contested."
+    last_audited_at: "2026-05-02"
+    last_debated_at: "2026-05-02"
+    source_count: 3
+    claim_count: 3
+  - slug: economy-fiscal
+    title: "Would independence make Alberta richer or poorer?"
+    plain_question: "What is known about Alberta's fiscal position and the economic claims around independence?"
+    category: "Economy and fiscal policy"
+    state: full_dossier
+    time_sensitivity: high
+    keywords: ["budget", "fiscal plan", "resource revenue", "debt", "taxes"]
+    summary: "Alberta has a published fiscal plan, resource-revenue exposure, and debt projections; independence claims require assumptions that are not settled by current official documents."
+    last_audited_at: "2026-05-02"
+    last_debated_at: "2026-05-02"
+    source_count: 2
+    claim_count: 3
+  - slug: referendum-mechanics
+    title: "How does the petition and referendum process work?"
+    plain_question: "How do petitions, referendum questions, voting rules, and timelines work in Alberta?"
+    category: "Referendum mechanics"
+    state: full_dossier
+    time_sensitivity: high
+    keywords: ["petition", "referendum", "Elections Alberta", "October 19 2026", "signatures"]
+    summary: "Elections Alberta publishes the petition and referendum process; several steps are procedural and date-sensitive."
+    last_audited_at: "2026-05-02"
+    last_debated_at: "2026-05-02"
+    source_count: 3
+    claim_count: 4
+  - slug: borders-currency-citizenship
+    title: "What happens to borders, currency, and citizenship?"
+    plain_question: "Would Alberta have a border, a currency, or different citizenship rules?"
+    category: "Borders, trade, currency, and citizenship"
+    state: seed_overview
+    time_sensitivity: medium
+    keywords: ["currency", "border", "citizenship", "trade"]
+    summary: "These questions depend on negotiations and future policy choices; the initial page is a transparent seed overview."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0

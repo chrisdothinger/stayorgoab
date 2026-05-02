@@ -1,0 +1,71 @@
+sources:
+  - id: elections-ab-current-petitions
+    title: "Current Citizen Initiative Petitions"
+    publisher: "Elections Alberta"
+    url: "https://www.elections.ab.ca/recall-initiative/initiative/current-initiative-petitions/"
+    source_type: official
+    accessed_at: "2026-05-02"
+    summary: "Lists active citizen initiative petitions, including A Referendum Relating to Alberta Independence, signature threshold, and collection dates."
+  - id: elections-ab-initiative-process
+    title: "Citizen Initiative Process"
+    publisher: "Elections Alberta"
+    url: "https://www.elections.ab.ca/recall-initiative/initiative/initiative-process/"
+    source_type: official
+    accessed_at: "2026-05-02"
+    summary: "Explains notice, application, petition issuance, and requirements for citizen initiative petitions."
+  - id: elections-ab-referendum
+    title: "Referendum"
+    publisher: "Elections Alberta"
+    url: "https://www.elections.ab.ca/elections/referendum/"
+    source_type: official
+    accessed_at: "2026-05-02"
+    summary: "Explains referendums under Alberta's Referendum Act and notes a referendum set for October 19, 2026."
+  - id: clarity-act
+    title: "Clarity Act"
+    publisher: "Justice Laws Website, Government of Canada"
+    url: "https://laws-lois.justice.gc.ca/eng/acts/C-31.8/FullText.html"
+    source_type: official
+    accessed_at: "2026-05-02"
+    summary: "Federal law setting clarity requirements before the Government of Canada enters negotiations on provincial secession."
+  - id: scc-secession-reference
+    title: "Reference re Secession of Quebec"
+    publisher: "Supreme Court of Canada"
+    url: "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/1643/index.do"
+    source_type: court
+    accessed_at: "2026-05-02"
+    summary: "Supreme Court reference on unilateral secession, democratic expression, constitutional negotiations, and Aboriginal interests."
+  - id: alberta-pensions
+    title: "Pensions"
+    publisher: "Government of Alberta"
+    url: "https://www.alberta.ca/pensions"
+    source_type: official
+    accessed_at: "2026-05-02"
+    summary: "Alberta government pension information and link to Alberta Pension Plan report material."
+  - id: osfi-chief-actuary-cpp
+    title: "Chief Actuary Position Paper - Subsection 113(2) of the Canada Pension Plan"
+    publisher: "Office of the Superintendent of Financial Institutions"
+    url: "https://www.osfi-bsif.gc.ca/en/oca/oca-factsheets-other-reports/chief-actuary-position-paper-subsection-1132-canada-pension-plan"
+    source_type: official
+    accessed_at: "2026-05-02"
+    summary: "Chief Actuary position on CPP withdrawal transfer calculation under subsection 113(2)."
+  - id: alberta-budget-documents-2026
+    title: "Budget documents"
+    publisher: "Government of Alberta"
+    url: "https://www.alberta.ca/budget-documents"
+    source_type: official
+    accessed_at: "2026-05-02"
+    summary: "Budget 2026 documents, fiscal plan, revenue, expense, capital plan, and related tables."
+  - id: alberta-budget-highlights-2026
+    title: "Budget highlights"
+    publisher: "Government of Alberta"
+    url: "https://www.alberta.ca/budget-highlights"
+    source_type: official
+    accessed_at: "2026-05-02"
+    summary: "Public-facing Budget 2026 highlights."
+  - id: first-nations-stand-with-treaties
+    title: "Defend the Treaties"
+    publisher: "Stand With First Nations"
+    url: "https://www.standwithfirstnations.ca/"
+    source_type: advocacy
+    accessed_at: "2026-05-02"
+    summary: "First Nations advocacy site describing treaty-rights concerns and litigation related to Alberta separation."

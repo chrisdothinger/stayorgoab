@@ -1,0 +1,12 @@
+claims:
+  - id: claim-economy-001
+  - id: claim-economy-002
+    text: "Alberta Budget 2026 documents are a primary source for current fiscal context."
+    status: source_supported
+    source_ids: ["alberta-budget-documents-2026"]
+    risk: high
+  - id: claim-economy-003
+    text: "Independence fiscal outcomes depend on assumptions beyond current Alberta budget documents."
+    status: inference
+    source_ids: ["alberta-budget-documents-2026", "scc-secession-reference"]
+    risk: high

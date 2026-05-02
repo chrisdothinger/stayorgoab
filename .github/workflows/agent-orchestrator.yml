@@ -1,0 +1,13 @@
+name: agent-orchestrator
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 14 * * *"
+permissions:
+  contents: read
+jobs:
+  orchestrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Run summarized Hermes/Codex orchestration. Raw logs are not public artifacts."

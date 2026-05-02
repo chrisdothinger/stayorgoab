@@ -1,0 +1,5 @@
+entries:
+  - id: redebate-cpp-2026-05-02
+    date: "2026-05-02"
+    trigger: seed
+    summary: "Initial pension debate map created."

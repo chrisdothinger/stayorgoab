@@ -1,0 +1,7 @@
+entries:
+  - id: audit-referendum-2026-05-02
+    date: "2026-05-02"
+    agent: "Codex seed build"
+    summary: "Seed referendum mechanics dossier drafted from Elections Alberta process and referendum pages."
+    checks: ["source-support", "official-status-caution"]
+    result: pass

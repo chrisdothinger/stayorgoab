@@ -1,0 +1,13 @@
+claims:
+  - id: claim-cpp-001
+  - id: claim-cpp-002
+  - id: claim-cpp-003
+    text: "Current sources do not settle exact contribution rates or benefit levels under a future Alberta plan."
+    status: source_supported
+    source_ids: ["osfi-chief-actuary-cpp", "alberta-pensions"]
+    risk: high
+  - id: claim-cpp-004
+    text: "Independence would add pension questions beyond ordinary CPP withdrawal."
+    status: inference
+    source_ids: ["osfi-chief-actuary-cpp", "scc-secession-reference"]
+    risk: high

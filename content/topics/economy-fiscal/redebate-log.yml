@@ -1,0 +1,5 @@
+entries:
+  - id: redebate-economy-2026-05-02
+    date: "2026-05-02"
+    trigger: seed
+    summary: "Initial economy and fiscal debate map created."

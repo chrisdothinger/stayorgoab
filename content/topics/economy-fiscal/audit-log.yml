@@ -1,0 +1,7 @@
+entries:
+  - id: audit-economy-2026-05-02
+    date: "2026-05-02"
+    agent: "Codex seed build"
+    summary: "Seed fiscal dossier drafted from Alberta Budget 2026 documents with uncertainty preserved."
+    checks: ["source-support", "forecast-caution"]
+    result: pass

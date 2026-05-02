@@ -1,0 +1,7 @@
+entries:
+  - id: audit-cpp-2026-05-02
+    date: "2026-05-02"
+    agent: "Codex seed build"
+    summary: "Seed dossier drafted from OSFI Chief Actuary and Alberta pension sources."
+    checks: ["source-support", "household-finance-caution"]
+    result: pass

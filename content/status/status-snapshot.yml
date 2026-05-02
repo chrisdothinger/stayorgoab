@@ -1,0 +1,23 @@
+generated_at: "2026-05-02T00:00:00Z"
+site_status: seed
+last_official_source_check: "2026-05-02"
+items:
+  - id: independence-petition
+    label: "Independence citizen initiative petition"
+    state: in_progress
+    summary: "Elections Alberta lists A Referendum Relating to Alberta Independence as an approved citizen initiative petition with signature collection ending May 2, 2026."
+    source_ids:
+      - elections-ab-current-petitions
+  - id: referendum-2026
+    label: "2026 Alberta referendum"
+    state: scheduled
+    summary: "Elections Alberta says a referendum has been set for October 19, 2026 and that questions are posted after Orders in Council are issued."
+    source_ids:
+      - elections-ab-referendum
+  - id: legal-baseline
+    label: "Legal baseline"
+    state: known
+    summary: "Canadian law does not treat a provincial referendum result alone as creating independence; clear democratic support would trigger constitutional negotiations."
+    source_ids:
+      - scc-secession-reference
+      - clarity-act

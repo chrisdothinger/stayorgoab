@@ -210,3 +210,28 @@ npm run typecheck             PASS
 npm run test:a11y             PASS, 30 tests
 npm run build                 PASS, 114 static pages
 ```
+## 2026-05-04T14:48:47Z — Sprint 5 Facts Public Briefing
+
+Completed in this package:
+
+- Upgraded `/facts` from a compact status list into a public briefing page for cold readers.
+- Added a current source posture card with `Last official source check` and explicit civic-information / not-legal-advice framing.
+- Added briefing inventory metrics for tracked status items, full dossiers, and high-sensitivity topics.
+- Added source-backed procedural status rows that link directly to source records.
+- Added a `Petition → referendum → negotiations` timeline to prevent readers from conflating separate stages.
+- Added `What is confirmed`, `What is disputed`, and `What is unknown` certainty sections with dossier/source links.
+- Added Playwright product-contract coverage for the Facts briefing UX and checked for ambiguous audit-pending wording.
+
+Validation evidence:
+
+```txt
+npm run test:content          PASS, 8 tests
+npm run validate:citations    PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets      PASS
+npm test                      PASS, 11 tests
+npm run lint                  PASS
+npm run typecheck             PASS
+npm run test:a11y             PASS, 32 tests
+npm run build                 PASS, 114 static pages
+```

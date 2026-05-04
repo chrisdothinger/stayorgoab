@@ -1,4 +1,13 @@
 entries:
+  - id: change-2026-05-04-facts-public-briefing
+    date: "2026-05-04"
+    type: ux
+    summary: "Upgraded Facts into a public briefing page with a current-source status card, procedural timeline, confirmed/disputed/unknown certainty sections, source-backed status rows, and clearer not-legal-advice framing."
+    files_changed:
+      - src/app/facts/page.tsx
+      - src/app/globals.css
+      - tests/a11y.spec.ts
+      - STATUS.md
   - id: change-2026-05-04-home-questions-flagship-refinement
     date: "2026-05-04"
     type: ux

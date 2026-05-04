@@ -46,6 +46,22 @@ test('questions search, filters, maturity legend, and disclosure rows work', asy
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
 });
 
+test('facts page works as a public briefing with timeline and source-backed certainty labels', async ({ page }) => {
+  await page.goto('/facts/');
+  await expect(page.getByRole('heading', { name: /Public briefing/i })).toBeVisible();
+  await expect(page.getByText(/Last checked against tracked official sources: 2026-05-02/i)).toBeVisible();
+  await expect(page.getByText(/Petition → referendum → negotiations/i)).toBeVisible();
+  await expect(page.getByText(/What is confirmed/i)).toBeVisible();
+  await expect(page.getByText(/What is disputed/i)).toBeVisible();
+  await expect(page.getByText(/What is unknown/i)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Read referendum mechanics/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Trace the public review log/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Elections Alberta source/i })).toBeVisible();
+  await expect(page.getByText(/not legal advice/i)).toBeVisible();
+  await expect(page.getByText(/audit pending/i)).toHaveCount(0);
+  await expect(page.getByText(/external audit/i)).toHaveCount(0);
+});
+
 test('source library search, filters, and source trails work', async ({ page }) => {
   await page.goto('/sources/');
   await expect(page.getByText(/16 source records shown/i)).toBeVisible();

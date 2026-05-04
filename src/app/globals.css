@@ -161,6 +161,11 @@ textarea:focus-visible {
   font-weight: 620;
 }
 
+.trust-row {
+  grid-template-columns: minmax(94px, 0.18fr) minmax(180px, 0.42fr) minmax(0, 1fr);
+  align-items: start;
+}
+
 .dark-row {
   background: var(--navy);
   color: var(--paper);
@@ -269,6 +274,18 @@ textarea:focus-visible {
   margin-top: 12px;
   color: var(--muted);
   font-size: 12px;
+}
+
+.changelog-row .expanded-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.changelog-row .expanded-row span {
+  border: 1px solid rgba(17, 24, 39, 0.13);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 3px 7px;
 }
 
 .filter-panel {

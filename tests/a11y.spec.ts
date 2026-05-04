@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-const routes = ['/', '/facts/', '/questions/', '/sources/', '/method/', '/agents/', '/audit/', '/ops/', '/disclaimer/'];
+const routes = ['/', '/facts/', '/questions/', '/sources/', '/method/', '/agents/', '/audit/', '/ops/', '/repo/', '/changelog/', '/disclaimer/'];
 
 for (const route of routes) {
   test(`${route} has no obvious accessibility violations`, async ({ page }) => {
@@ -49,4 +49,21 @@ test('source library search, filters, and source trails work', async ({ page }) 
   await page.getByRole('button', { name: /Expand source details for/i }).first().click();
   await expect(page.getByText(/Used by topics/i)).toBeVisible();
   await expect(page.getByText(/Referenced claims/i)).toBeVisible();
+});
+
+test('public trust surfaces explain repo, review log, and changelog clearly', async ({ page }) => {
+  await page.goto('/repo/');
+  await expect(page.getByText(/Public repository evidence/i)).toBeVisible();
+  await expect(page.getByText('Source map', { exact: true })).toBeVisible();
+  await expect(page.getByRole('main').getByRole('link', { name: /Review log/i })).toBeVisible();
+
+  await page.goto('/changelog/');
+  await expect(page.getByText(/Change history/i)).toBeVisible();
+  await expect(page.getByLabel('Change entries').getByText(/source library ux/i)).toBeVisible();
+  await expect(page.getByText('Files changed', { exact: true })).toBeVisible();
+
+  await page.goto('/ops/');
+  await expect(page.getByText(/internal provenance check/i)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Inspect page-level review manifest/i })).toBeVisible();
+  await expect(page.getByText(/unaudited/i)).toHaveCount(0);
 });

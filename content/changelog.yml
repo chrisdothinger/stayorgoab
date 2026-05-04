@@ -1,4 +1,14 @@
 entries:
+  - id: change-2026-05-04-public-trust-surfaces
+    date: "2026-05-04"
+    type: ux
+    summary: "Upgraded repository and changelog trust surfaces and cleaned Ops wording around internal provenance checks and review manifests."
+    files_changed:
+      - src/app/repo/page.tsx
+      - src/app/changelog/page.tsx
+      - src/app/ops/page.tsx
+      - src/app/globals.css
+      - tests/a11y.spec.ts
   - id: change-2026-05-04-source-library-ux
     date: "2026-05-04"
     type: ux

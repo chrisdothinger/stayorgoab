@@ -28,7 +28,7 @@ export default function OpsPage() {
         <div className="metric-card">
           <span className="mono row-meta">Topics</span>
           <strong>{content.topics.length}</strong>
-          <p>{fullDossiers} full dossiers · {staleTopics} sparse/unaudited topics</p>
+          <p>{fullDossiers} full dossiers · {staleTopics} topics awaiting internal provenance check</p>
         </div>
         <div className="metric-card">
           <span className="mono row-meta">Sources</span>
@@ -99,7 +99,7 @@ export default function OpsPage() {
             ))}
           </ul>
           <p className="mono row-meta">Latest release: {ops.releases[0]?.id ?? 'none'} · {ops.releases[0]?.date ?? 'n/a'}</p>
-          <p><Link href="/audit">Inspect page-level audit manifest</Link></p>
+          <p><Link href="/audit">Inspect page-level review manifest</Link></p>
           <p><Link href="/agents">Inspect public agent permissions</Link></p>
           <p className="mono row-meta">Manifest pages tracked: {manifest.pages.length}</p>
         </div>

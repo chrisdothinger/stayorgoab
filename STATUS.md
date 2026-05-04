@@ -163,3 +163,26 @@ npm run typecheck             PASS
 npm run test:a11y             PASS, 24 tests
 npm run build                 PASS, 114 static pages
 ```
+
+## 2026-05-04T13:54:27Z — Sprint 3 Public Trust Surfaces
+
+Completed in this package:
+
+- Upgraded `/repo/` from a bare GitHub link into a public repository-evidence page with source-map, claim-map, review-manifest, latest-release, and inspection links.
+- Upgraded `/changelog/` into a change-history page with summary metrics, file-change counts, repo trace link, and per-entry file chips.
+- Cleaned Ops wording so remaining user-facing status copy says internal provenance check / review manifest instead of unaudited or audit manifest.
+- Added Playwright coverage for repo, changelog, and Ops trust-surface terminology.
+
+Validation evidence:
+
+```txt
+npm run test:content          PASS, 8 tests
+npm run validate:citations    PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets      PASS
+npm test                      PASS, 11 tests
+npm run lint                  PASS
+npm run typecheck             PASS
+npm run test:a11y             PASS, 30 tests
+npm run build                 PASS, 114 static pages
+```

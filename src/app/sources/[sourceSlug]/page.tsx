@@ -22,9 +22,11 @@ export default function SourceDetailPage({ params }: { params: { sourceSlug: str
         <div className="section-label mono">/ Source</div>
         <h1>{source.title}</h1>
         <p>{source.summary}</p>
+        <p className="audit-note mono">Agentic repository check means this project’s automated/public-repo provenance check; it is not a government audit, regulator audit, external audit, or assurance engagement.</p>
         <div className="source-trail mono">
           <span>{source.publisher}</span>
           <span>{source.source_type}</span>
+          <span>Agentic repository check {source.last_checked_at ?? source.accessed_at}</span>
           <span>Accessed {source.accessed_at}</span>
           <a href={source.url}>Open original</a>
         </div>

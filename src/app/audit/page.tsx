@@ -2,7 +2,7 @@ import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
 
-export const metadata = { title: 'Audit' };
+export const metadata = { title: 'Review log' };
 
 export default function AuditPage() {
   const content = loadRepositoryContent();
@@ -14,16 +14,16 @@ export default function AuditPage() {
   return (
     <>
       <section className="section">
-        <div className="section-label mono">/ Audit</div>
-        <h1>Public audit trail</h1>
-        <p>Compact public records show what changed, which sources support it, which checks ran, and where source files live.</p>
+        <div className="section-label mono">/ Review log</div>
+        <h1>Public review trail</h1>
+        <p>Compact public records show what changed, which sources support it, which automated checks ran, and where source files live. These are internal agentic/public-repository provenance checks, not government audits, regulator audits, external audits, or assurance engagements.</p>
       </section>
 
-      <section className="section ops-grid" aria-label="Audit summary">
+      <section className="section ops-grid" aria-label="Review summary">
         <div className="metric-card">
           <span className="mono row-meta">Pages tracked</span>
           <strong>{manifest.pages.length}</strong>
-          <p>page records in the generated public audit manifest</p>
+          <p>page records in the generated public review manifest</p>
         </div>
         <div className="metric-card">
           <span className="mono row-meta">Sparse states</span>
@@ -31,9 +31,9 @@ export default function AuditPage() {
           <p>stub or seed overview pages clearly labelled as incomplete</p>
         </div>
         <div className="metric-card">
-          <span className="mono row-meta">No audit date</span>
+          <span className="mono row-meta">No check date</span>
           <strong>{stalePages}</strong>
-          <p>pages queued for future source refresh or redebate</p>
+          <p>pages queued for future source refresh or internal provenance check</p>
         </div>
         <div className="metric-card">
           <span className="mono row-meta">Runs</span>
@@ -50,7 +50,7 @@ export default function AuditPage() {
             <span className="mono row-meta state">{page.publication_state}</span>
             <span className="mono">+</span>
             <p className="expanded-row mono">
-              {page.source_file} · {page.source_count} sources · {page.claim_count} claims · audited {page.last_audited_at ?? 'pending'} · run {page.latest_agent_run_id}
+              {page.source_file} · {page.source_count} sources · {page.claim_count} claims · internal provenance check {page.last_audited_at ?? 'pending'} · run {page.latest_agent_run_id}
             </p>
           </article>
         ))}

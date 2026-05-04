@@ -140,3 +140,26 @@ npm run typecheck             PASS
 npm run test:a11y             PASS, 22 tests
 npm run build                 PASS, 114 static pages
 ```
+
+## 2026-05-04T12:57:25Z — Sprint 2 Source Library UX/UI
+
+Completed in this package:
+
+- Added a client-side source-library browser with search by title/publisher/topic/claim text plus filters for source type, publisher, reliability label, and stance.
+- Added live source-record counts, clear-source-filters behavior, expanded source details, topic trails, claim-reference trails, original/archive links, and empty-state copy.
+- Clarified audit/check language across Home, Questions, Sources, Review Log, and source detail pages so users see “internal provenance check” as this project’s automated public-repo provenance process — not a government, regulator, or external audit.
+- Added Playwright coverage for source-library search/filter/trails plus the clearer internal provenance-check wording.
+
+Validation evidence:
+
+```txt
+npm run test:content          PASS, 8 tests
+npm run validate:citations    PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets      PASS
+npm test                      PASS, 11 tests
+npm run lint                  PASS
+npm run typecheck             PASS
+npm run test:a11y             PASS, 24 tests
+npm run build                 PASS, 114 static pages
+```

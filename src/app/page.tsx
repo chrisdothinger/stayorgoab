@@ -43,7 +43,7 @@ export default function HomePage() {
               <Link className="mono row-meta" href="/sources">View source</Link>
             </div>
           ))}
-          <div className="mono status-footnote">Latest public audit: {latestAuditDate(manifest.generated_at)}</div>
+          <div className="mono status-footnote">Latest internal provenance check (agentic public artifact): {latestAuditDate(manifest.generated_at)}</div>
         </aside>
       </section>
 

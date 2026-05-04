@@ -492,6 +492,22 @@ textarea:focus-visible {
   color: var(--secondary);
 }
 
+.audit-note {
+  border-bottom: 1px solid rgba(17, 24, 39, 0.13);
+  color: var(--secondary);
+  padding: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.source-filter-panel select {
+  text-transform: none;
+}
+
+.source-row .row-description {
+  margin: 8px 0 0;
+}
+
 .questions-preview p {
   color: var(--secondary);
 }

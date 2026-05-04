@@ -1,4 +1,17 @@
 entries:
+  - id: change-2026-05-04-source-library-ux
+    date: "2026-05-04"
+    type: ux
+    summary: "Added searchable/filterable source library UX and clarified internal provenance-check wording so it is not mistaken for government, regulator, or external audit."
+    files_changed:
+      - src/app/sources/page.tsx
+      - src/app/sources/[sourceSlug]/page.tsx
+      - src/components/SourceLibrary.tsx
+      - src/components/TopicSearch.tsx
+      - src/app/page.tsx
+      - src/app/globals.css
+      - tests/a11y.spec.ts
+      - STATUS.md
   - id: change-2026-05-04-home-questions-ux
     date: "2026-05-04"
     type: ux

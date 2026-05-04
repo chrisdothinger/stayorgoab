@@ -6,9 +6,9 @@ import type { TopicMeta } from '@/lib/types';
 
 const allValue = 'all';
 const recencyOptions = [
-  { value: allValue, label: 'Any audit state' },
-  { value: 'audited', label: 'Audited' },
-  { value: 'pending', label: 'Pending audit' }
+  { value: allValue, label: 'Any check state' },
+  { value: 'audited', label: 'Checked' },
+  { value: 'pending', label: 'Pending check' }
 ];
 
 function formatState(state: string) {
@@ -96,7 +96,7 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
           </select>
         </label>
         <label className="mono">
-          <span className="section-label">Last audited</span>
+          <span className="section-label">Provenance check</span>
           <select value={auditRecency} onChange={(event) => setAuditRecency(event.target.value)}>
             {recencyOptions.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}
           </select>
@@ -106,6 +106,7 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
       <div className="index-toolbar mono" aria-live="polite">
         <strong>{pluralize(filtered.length, 'question')} shown</strong>
         <span>{hasActiveFilters ? 'Filtered view' : 'All topics'}</span>
+        <span>Internal provenance check = this project’s automated public-repo check, not government or external audit.</span>
         {hasActiveFilters ? <button type="button" onClick={clearFilters}>Clear filters</button> : null}
       </div>
 
@@ -138,7 +139,7 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
               <span className="mono row-meta">{String(index + 1).padStart(3, '0')}</span>
               <div>
                 <Link href={`/questions/${topic.slug}`}>{topic.title}</Link>
-                <div className="mono row-meta">{topic.category} · {topic.source_count} sources · {topic.claim_count} claims · {topic.last_audited_at ? `audited ${topic.last_audited_at}` : 'audit pending'}</div>
+                <div className="mono row-meta">{topic.category} · {topic.source_count} sources · {topic.claim_count} claims · {topic.last_audited_at ? `internal provenance check ${topic.last_audited_at}` : 'internal provenance check pending'}</div>
               </div>
               <span className="mono row-meta state">{formatState(topic.state)}</span>
               <button
@@ -155,7 +156,7 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
                   <strong>Short answer:</strong> {topic.summary}
                   <div className="source-trail mono">
                     <span>State: {formatState(topic.state)}</span>
-                    <span>Last audited: {topic.last_audited_at ?? 'pending'}</span>
+                    <span>Internal check: {topic.last_audited_at ?? 'pending provenance check'}</span>
                     <span>{topic.source_count} sources</span>
                     <span>{topic.claim_count} claims</span>
                   </div>

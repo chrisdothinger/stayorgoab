@@ -1,4 +1,16 @@
 entries:
+  - id: change-2026-05-04-home-questions-flagship-refinement
+    date: "2026-05-04"
+    type: ux
+    summary: "Refined Home and Questions as the flagship public path with a clearer fast-answer search card, reviewed-page trust wording, active filter chips, accessible category state, explicit open-dossier links, and public review trail links."
+    files_changed:
+      - src/app/page.tsx
+      - src/app/questions/page.tsx
+      - src/components/TopicSearch.tsx
+      - src/app/globals.css
+      - tests/a11y.spec.ts
+      - STATUS.md
+      - content/topics/_index.yml
   - id: change-2026-05-04-public-trust-surfaces
     date: "2026-05-04"
     type: ux

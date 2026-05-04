@@ -19,14 +19,16 @@ export default function HomePage() {
         <div>
           <div className="section-label mono">/ Source-backed answers on Alberta independence</div>
           <h1>Stay or go?</h1>
-          <p>Understand what Alberta independence would actually mean. StayOrGoAB is a source-first, autonomous, non-partisan knowledge base for facts, arguments, claims, sources, and public audit trails.</p>
+          <p>Understand what Alberta independence would actually mean. StayOrGoAB is a source-first, autonomous, non-partisan knowledge base for facts, arguments, claims, sources, and public review trails.</p>
           <div className="primary-actions mono" aria-label="Primary paths">
             <Link className="primary-link" href="/facts">Start with current facts</Link>
             <Link href="/questions">Search questions</Link>
             <Link href="/sources">Inspect sources</Link>
             <Link href="/method">How the agents work</Link>
           </div>
-          <form className="home-search" action="/questions/" method="get" role="search" aria-label="Search civic questions">
+          <form className="home-search home-search-card" action="/questions/" method="get" role="search" aria-label="Search civic questions">
+            <h2>Find an answer fast</h2>
+            <p>Search the question index, then expand a row for the short answer, source count, claim count, and public review trail.</p>
             <label className="mono" htmlFor="home-question-search">Search civic questions</label>
             <div>
               <input id="home-question-search" name="q" type="search" placeholder="Try CPP, treaty, referendum, currency..." />
@@ -52,7 +54,7 @@ export default function HomePage() {
         <Link href="/questions"><strong>{content.topics.length}</strong> topics indexed</Link>
         <Link href="/sources"><strong>{content.sources.length}</strong> sources tracked</Link>
         <Link href="/questions"><strong>{fullDossiers}</strong> full dossiers</Link>
-        <Link href="/audit"><strong>{manifest.pages.length}</strong> audited page records</Link>
+        <Link href="/audit"><strong>{manifest.pages.length}</strong> reviewed page records</Link>
       </section>
 
       <section className="section grid-two questions-preview">

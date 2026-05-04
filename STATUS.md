@@ -122,9 +122,9 @@ Validation evidence for this package is recorded after the final verification ru
 
 Completed in this package:
 
-- Upgraded the homepage first viewport with clearer primary paths, a civic-question search box, current-status source links, latest public-audit date, and a labelled public research inventory strip.
-- Improved `/questions` with result counts, clear-filter behavior, dossier-state/audit-recency filters, a maturity legend, active category controls, and clearer expandable row affordances.
-- Tightened public wording by changing awkward `audited pending` row metadata to `audit pending`.
+- Upgraded the homepage first viewport with clearer primary paths, a civic-question search box, current-status source links, latest internal provenance-check date, and a labelled public research inventory strip.
+- Improved `/questions` with result counts, clear-filter behavior, dossier-state/provenance-recency filters, a maturity legend, active category controls, and clearer expandable row affordances.
+- Tightened public wording by replacing ambiguous audit status language with internal provenance-check and review-trail copy.
 - Added Playwright regression coverage for homepage trust/search signals and the upgraded Questions search/filter/disclosure flow.
 
 Validation evidence:
@@ -172,6 +172,30 @@ Completed in this package:
 - Upgraded `/changelog/` into a change-history page with summary metrics, file-change counts, repo trace link, and per-entry file chips.
 - Cleaned Ops wording so remaining user-facing status copy says internal provenance check / review manifest instead of unaudited or audit manifest.
 - Added Playwright coverage for repo, changelog, and Ops trust-surface terminology.
+
+Validation evidence:
+
+```txt
+npm run test:content          PASS, 8 tests
+npm run validate:citations    PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets      PASS
+npm test                      PASS, 11 tests
+npm run lint                  PASS
+npm run typecheck             PASS
+npm run test:a11y             PASS, 30 tests
+npm run build                 PASS, 114 static pages
+```
+## 2026-05-04T14:25:04Z — Sprint 4 Home + Questions Flagship Refinement
+
+Completed in this package:
+
+- Refined the homepage hero/router with a dedicated `Find an answer fast` search card so cold visitors can immediately search the civic question index.
+- Changed homepage trust-strip wording from `audited page records` to `reviewed page records` to preserve internal-provenance clarity.
+- Cleaned `/questions` intro copy to reference public review logs instead of ambiguous audits.
+- Added active filter chips, accessible category `aria-pressed` state, explicit open-dossier links, and public review-trail links in the Questions index.
+- Strengthened Playwright product-contract coverage for the flagship Home + Questions path.
+- Renamed the visible topic category `Source updates and audit changes` to `Source updates and review changes` to avoid implying government, regulator, or external audit activity.
 
 Validation evidence:
 

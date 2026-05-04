@@ -15,10 +15,13 @@ for (const route of routes) {
 test('homepage guides users with search and public trust signals', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('link', { name: /Start with current facts/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Find an answer fast/i })).toBeVisible();
   await expect(page.getByRole('searchbox', { name: /Search civic questions/i })).toBeVisible();
   await expect(page.getByText(/topics indexed/i)).toBeVisible();
   await expect(page.getByText(/sources tracked/i)).toBeVisible();
   await expect(page.getByText(/latest internal provenance check/i)).toBeVisible();
+  await expect(page.getByText(/reviewed page records/i)).toBeVisible();
+  await expect(page.getByText(/audited page records/i)).toHaveCount(0);
 });
 
 test('questions search, filters, maturity legend, and disclosure rows work', async ({ page }) => {
@@ -26,13 +29,19 @@ test('questions search, filters, maturity legend, and disclosure rows work', asy
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
   await expect(page.getByText(/Maturity legend/i)).toBeVisible();
   await expect(page.getByText(/Internal provenance check =/i)).toBeVisible();
+  await expect(page.getByText(/public review trail/i)).toBeVisible();
+  await expect(page.getByText(/audits/i)).toHaveCount(0);
+  await expect(page.getByRole('button', { name: /All 23 questions/i })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.getByRole('link', { name: /Open dossier:/i }).first()).toBeVisible();
   await page.getByLabel('Search topics').fill('CPP');
   await expect(page.getByText(/1 question shown/i)).toBeVisible();
+  await expect(page.getByText(/Active filters/i)).toBeVisible();
+  await expect(page.getByText(/Search: CPP/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /Clear filters/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /CPP and pensions/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'What would happen to CPP and pensions?', exact: true })).toBeVisible();
   await page.getByRole('button', { name: /Expand summary for .*CPP/i }).click();
   await expect(page.getByText(/Short answer/i)).toBeVisible();
-  await expect(page.getByText(/Internal check: /i)).toBeVisible();
+  await expect(page.getByRole('article').getByRole('link', { name: /Public review trail/i })).toBeVisible();
   await page.getByRole('button', { name: /Clear filters/i }).click();
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
 });

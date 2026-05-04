@@ -266,7 +266,7 @@ topics:
   - slug: case-studies
     title: "Case studies"
     plain_question: "What can Alberta learn from Quebec, Brexit, Scotland, or other independence movements?"
-    category: "Source updates and audit changes"
+    category: "Source updates and review changes"
     state: stub
     time_sensitivity: low
     keywords: ["Quebec", "Brexit", "Scotland", "case studies"]

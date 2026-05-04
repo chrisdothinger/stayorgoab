@@ -322,7 +322,8 @@ textarea:focus-visible {
 .category-nav button {
   border: 0;
   background: transparent;
-  padding: 0;
+  min-height: 40px;
+  padding: 8px 0;
   color: var(--secondary);
   cursor: pointer;
   text-decoration: underline;
@@ -371,6 +372,26 @@ textarea:focus-visible {
 .home-search {
   margin-top: 28px;
   max-width: 620px;
+}
+
+.home-search-card {
+  border: 1px solid rgba(17, 24, 39, 0.14);
+  background: rgba(255, 255, 255, 0.38);
+  padding: 16px;
+}
+
+.home-search h2 {
+  margin: 0;
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.02;
+  font-weight: 620;
+}
+
+.home-search p {
+  margin: 8px 0 14px;
+  font-size: 14px;
+  color: var(--secondary);
+  max-width: 58ch;
 }
 
 .home-search label {
@@ -469,8 +490,30 @@ textarea:focus-visible {
   border: 0;
   background: var(--navy) !important;
   color: var(--paper) !important;
-  padding: 3px 7px !important;
+  padding: 8px 10px !important;
+  min-height: 36px;
   cursor: pointer;
+}
+
+.active-filter-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.13);
+  color: var(--secondary);
+}
+
+.active-filter-summary strong,
+.active-filter-summary span {
+  border: 1px solid rgba(17, 24, 39, 0.13);
+  background: rgba(255, 255, 255, 0.48);
+  padding: 4px 8px;
+}
+
+.active-filter-summary strong {
+  color: var(--ink);
 }
 
 .maturity-legend {
@@ -527,6 +570,32 @@ textarea:focus-visible {
 
 .questions-preview p {
   color: var(--secondary);
+}
+
+.question-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.question-row-actions a,
+.question-row-actions button {
+  color: var(--secondary);
+  border: 1px solid rgba(17, 24, 39, 0.13);
+  background: rgba(255, 255, 255, 0.4);
+  padding: 5px 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 520;
+}
+
+.question-row-actions button {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 .footer {

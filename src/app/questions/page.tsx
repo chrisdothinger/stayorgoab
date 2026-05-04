@@ -10,7 +10,7 @@ export default function QuestionsPage() {
       <section className="section">
         <div className="section-label mono">/ Questions</div>
         <h1>The questions that matter</h1>
-        <p>Each topic is a living research dossier with pro-independence arguments, anti-independence / pro-federation arguments, neutral synthesis, claims, sources, audits, and redebate history.</p>
+        <p>Each topic is a living research dossier with pro-independence arguments, anti-independence / pro-federation arguments, neutral synthesis, claims, sources, public review logs, and redebate history.</p>
       </section>
       <TopicSearch topics={topics} />
     </>

@@ -1,4 +1,23 @@
 entries:
+  - id: change-2026-05-04-dossier-factory-first-batch
+    date: "2026-05-04"
+    type: content
+    summary: "Ran the first full-dossier factory batch for legal process, CPP/pensions, and equalization; expanded pro and anti steelman reports first, added neutral mediator syntheses that weigh both sides, tightened full-dossier validation, and added a reusable report page shell with claims/source/review links."
+    files_changed:
+      - content/topics/_index.yml
+      - content/topics/legal-process/*.mdx
+      - content/topics/legal-process/claims.yml
+      - content/topics/cpp-pensions/*.mdx
+      - content/topics/cpp-pensions/claims.yml
+      - content/topics/equalization/*.mdx
+      - content/topics/equalization/claims.yml
+      - src/components/ReportPage.tsx
+      - src/components/MarkdownText.tsx
+      - src/app/questions/[topicSlug]/neutral/page.tsx
+      - src/app/questions/[topicSlug]/pro/page.tsx
+      - src/app/questions/[topicSlug]/anti/page.tsx
+      - src/tests/content-validation.test.ts
+      - tests/a11y.spec.ts
   - id: change-2026-05-04-question-dossiers-filled
     date: "2026-05-04"
     type: content

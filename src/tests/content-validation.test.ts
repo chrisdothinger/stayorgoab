@@ -10,12 +10,11 @@ describe('content validation', () => {
     expect(result.errors).toEqual([]);
   });
 
-  it('requires every current question topic to have public neutral, pro, and anti report content', () => {
+  it('requires every current question topic to have public neutral, pro, and anti report content without overclaiming full status', () => {
     const content = loadRepositoryContent();
     const missing = content.topics.flatMap((topic) => {
       const files = content.topicFiles[topic.slug];
       return [
-        topic.state === 'full_dossier' ? null : `${topic.slug}:state:${topic.state}`,
         files.reports.neutral ? null : `${topic.slug}:neutral`,
         files.reports.pro ? null : `${topic.slug}:pro`,
         files.reports.anti ? null : `${topic.slug}:anti`,
@@ -27,23 +26,45 @@ describe('content validation', () => {
     });
 
     expect(missing).toEqual([]);
+    expect(content.topics.filter((topic) => topic.state === 'full_dossier').map((topic) => topic.slug).sort()).toEqual([
+      'cpp-pensions',
+      'equalization',
+      'legal-process'
+    ]);
   });
 
-  it('requires every current topic report to have briefing sections and uncertainty labels', () => {
+  it('requires every full dossier report to have the full report contract and uncertainty labels', () => {
     const content = loadRepositoryContent();
-    const incomplete = content.topics.flatMap((topic) => {
+    const requiredSections = [
+      '## short answer',
+      '## what current sources support',
+      '## core argument',
+      '## what is known',
+      '## what is disputed',
+      '## assumptions',
+      '## strongest evidence',
+      '## weak points',
+      '## counterarguments',
+      '## source notes',
+      '## what would change this assessment',
+      '## open questions',
+      '## main uncertainty',
+      '## reader checklist'
+    ];
+    const incomplete = content.topics.filter((topic) => topic.state === 'full_dossier').flatMap((topic) => {
       const files = content.topicFiles[topic.slug];
       const reports = [files.reports.neutral, files.reports.pro, files.reports.anti];
       return reports.flatMap((report, index) => {
         const stance = ['neutral', 'pro', 'anti'][index];
         if (!report) return [`${topic.slug}:${stance}:missing`];
         const body = report.body.toLowerCase();
-        const checks = [
-          body.includes('## short answer') ? null : `${topic.slug}:${stance}:short-answer`,
-          body.includes('## what current sources support') ? null : `${topic.slug}:${stance}:source-support`,
-          body.includes('## main uncertainty') ? null : `${topic.slug}:${stance}:uncertainty`,
-          body.length > 900 ? null : `${topic.slug}:${stance}:too-short`
-        ];
+        const checks = requiredSections.map((section) => body.includes(section) ? null : `${topic.slug}:${stance}:${section.replace('## ', '').replace(/ /g, '-')}`);
+        checks.push(body.length > 5000 ? null : `${topic.slug}:${stance}:too-short`);
+        if (stance === 'neutral') {
+          checks.push(body.includes('pro report') || body.includes('pro-independence') ? null : `${topic.slug}:neutral:pro-mediation`);
+          checks.push(body.includes('anti report') || body.includes('pro-federation') ? null : `${topic.slug}:neutral:anti-mediation`);
+          checks.push(body.includes('mediator') || body.includes('synthesis') ? null : `${topic.slug}:neutral:mediator-role`);
+        }
         return checks.filter((item): item is string => Boolean(item));
       });
     });

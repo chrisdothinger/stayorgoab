@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { MarkdownText } from '@/components/MarkdownText';
+import { ReportPage } from '@/components/ReportPage';
 import { loadRepositoryContent } from '@/lib/content';
 
 export const dynamicParams = false;
@@ -14,7 +14,8 @@ export default async function ProReportPage({ params }: { params: Promise<{ topi
   const { topicSlug } = await params;
   const content = loadRepositoryContent();
   const topic = content.topics.find((item) => item.slug === topicSlug);
-  const report = topic ? content.topicFiles[topic.slug].reports.pro : null;
-  if (!topic || !report) notFound();
-  return <section className="section"><div className="section-label mono">/ Pro-independence case</div><h1>{report.title}</h1><MarkdownText body={report.body} /></section>;
+  const files = topic ? content.topicFiles[topic.slug] : null;
+  const report = files?.reports.pro ?? null;
+  if (!topic || !files || !report) notFound();
+  return <ReportPage topic={topic} report={report} kind="pro" />;
 }

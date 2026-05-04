@@ -317,3 +317,32 @@ npm run build                 PASS, 168 static pages
 GITHUB_PAGES=true npm run build PASS, 168 static pages
 static internal link check    PASS, 2,370 internal links
 ```
+## 2026-05-04T20:06:21Z — First dossier factory batch
+
+Completed in this package:
+
+- Ran the agent-factory workflow for three high-priority topics: `legal-process`, `cpp-pensions`, and `equalization`.
+- Expanded pro and anti reports as steelmanned source-bounded arguments.
+- Rebuilt neutral reports as mediator syntheses written after the pro/anti reports, comparing strengths, weak points, evidence quality, and uncertainty rather than acting as a third stance.
+- Downgraded the remaining topics from `full_dossier` to `partial_dossier` until their reports pass the same full-dossier contract.
+- Added `ReportPage` shell with report role, PageTrust, source/claim/review links, pro/anti/neutral navigation, and section navigation.
+- Strengthened content tests so only genuinely full topics can stay `full_dossier`, and full reports must include the full report section contract.
+- Added Playwright coverage for the mediator/steelman report shell.
+
+Validation evidence:
+
+```txt
+npm run test:content              PASS, 10 tests
+npm run validate:citations        PASS
+npm run validate:public-audit     PASS
+npm run validate:secrets          PASS
+npm run validate:agents           PASS
+npm test                          PASS, 13 tests
+npm run lint                      PASS
+npm run typecheck                 PASS
+npm run test:a11y                 PASS, 40 tests
+npm run build                     PASS, 168 static pages
+GITHUB_PAGES=true npm run build   PASS, 168 static pages
+static internal link check        PASS, 3,060 internal links
+browser QA legal-process neutral  PASS, no horizontal overflow on desktop; mediator shell visible
+```

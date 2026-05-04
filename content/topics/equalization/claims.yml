@@ -1,34 +1,61 @@
 claims:
 - id: claim-equalization-001
   topic_slug: equalization
-  text: Equalization claims need to distinguish program payments, federal taxes, federal transfers, and post-independence
-    fiscal arrangements.
+  text: Equalization claims need to distinguish program payments, federal taxes, federal transfers, federal spending,
+    and post-independence fiscal arrangements.
+  status: source_supported
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - clarity-act
+  risk: high
+- id: claim-equalization-002
+  topic_slug: equalization
+  text: Alberta Budget 2026 documents provide a provincial fiscal baseline, but they do not by themselves prove
+    the net fiscal effect of independence.
   status: source_supported
   source_ids:
   - alberta-budget-documents-2026
   - alberta-budget-highlights-2026
   risk: high
-- id: claim-equalization-002
+- id: claim-equalization-003
   topic_slug: equalization
-  text: The strongest pro case is that independence could end Alberta participation in federal redistribution and let Alberta
-    redirect fiscal capacity to local priorities.
+  text: The strongest pro-independence equalization argument is that Alberta could seek to leave federal redistribution
+    arrangements and use more fiscal capacity for Alberta priorities.
   status: inference
-  source_ids: &id001
+  source_ids:
   - alberta-budget-documents-2026
   - alberta-budget-highlights-2026
   - clarity-act
   risk: high
-- id: claim-equalization-003
-  topic_slug: equalization
-  text: The strongest caution is that equalization is only one part of fiscal federalism; independence could also create new
-    costs, lost transfers, or negotiated liabilities.
-  status: inference
-  source_ids: *id001
-  risk: high
 - id: claim-equalization-004
   topic_slug: equalization
-  text: 'This topic remains uncertainty-labelled: Medium-high; program mechanics are sourceable, but net fiscal effects require
-    broader modelling.'
+  text: The strongest anti-independence or pro-federation equalization argument is that equalization is only one
+    part of fiscal federalism and must be weighed against federal spending, new costs, debt/assets, and negotiated
+    liabilities.
+  status: inference
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - clarity-act
+  risk: high
+- id: claim-equalization-005
+  topic_slug: equalization
+  text: Current checked-in sources do not support a simple dollar-for-dollar claim that Alberta could keep equalization
+    savings after independence.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - clarity-act
+  risk: high
+- id: claim-equalization-006
+  topic_slug: equalization
+  text: The topic remains uncertainty-labelled because program mechanics and provincial fiscal baselines are sourceable,
+    while net post-independence fiscal effects require broader modelling and negotiated assumptions.
+  status: source_supported
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - clarity-act
   risk: high

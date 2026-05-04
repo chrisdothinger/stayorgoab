@@ -76,6 +76,25 @@ test('question dossier report navigation does not lead to missing report pages',
   }
 });
 
+test('full dossier report pages show steelman and neutral mediator structure', async ({ page }) => {
+  await page.goto('/questions/legal-process/neutral/');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText(/Neutral synthesis/i);
+  await expect(page.getByText(/written after the pro and anti reports/i)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Pro steelman/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Anti steelman/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Claims ledger/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Weak points/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /What would change this assessment/i })).toBeVisible();
+
+  await page.goto('/questions/legal-process/pro/');
+  await expect(page.getByText(/strongest fair pro-independence argument/i)).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Counterarguments/i })).toBeVisible();
+
+  await page.goto('/questions/legal-process/anti/');
+  await expect(page.getByText(/strongest fair anti-independence/i)).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Counterarguments/i })).toBeVisible();
+});
+
 test('facts page works as a public briefing with timeline and source-backed certainty labels', async ({ page }) => {
   await page.goto('/facts/');
   await expect(page.getByRole('heading', { name: /Public briefing/i })).toBeVisible();

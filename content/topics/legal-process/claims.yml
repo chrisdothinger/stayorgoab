@@ -1,8 +1,9 @@
 claims:
 - id: claim-legal-process-001
   topic_slug: legal-process
-  text: 'A referendum can matter politically, but it does not by itself create independence. Current legal sources point to
-    a sequence: democratic expression, clarity assessment, negotiations, and constitutional implementation if terms are agreed.'
+  text: 'A referendum can matter politically and constitutionally, but it does not by itself create independence.
+    Current legal sources point to a sequence: democratic expression, clarity assessment, negotiations, and constitutional
+    implementation if terms are agreed.'
   status: source_supported
   source_ids:
   - scc-secession-reference
@@ -10,25 +11,46 @@ claims:
   risk: high
 - id: claim-legal-process-002
   topic_slug: legal-process
-  text: A clear vote on a clear question would give independence advocates their strongest democratic mandate and could create
-    a constitutional obligation for other governments to negotiate in good faith.
-  status: inference
-  source_ids: &id001
+  text: The strongest pro-independence legal argument is that a clear question and clear majority could create a
+    democratic mandate and a duty for other governments to negotiate in good faith.
+  status: source_supported
+  source_ids:
   - scc-secession-reference
   - clarity-act
-  - elections-ab-referendum
-  - elections-ab-initiative-process
   risk: high
 - id: claim-legal-process-003
   topic_slug: legal-process
-  text: 'The same legal sources make unilateral secession a weak claim: the result would still depend on Canada, constitutional
-    actors, Indigenous interests, negotiated terms, and implementation law.'
-  status: inference
-  source_ids: *id001
+  text: The strongest anti-independence or pro-federation legal argument is that unilateral or automatic independence
+    is not supported by the current legal baseline.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
   risk: high
 - id: claim-legal-process-004
   topic_slug: legal-process
-  text: 'This topic remains uncertainty-labelled: High for outcomes; medium for the basic legal sequence.'
+  text: Alberta referendum and initiative rules can structure a provincial vote or petition process, but they do
+    not themselves decide federal clarity, negotiated terms, or constitutional implementation.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - elections-ab-referendum
+  - elections-ab-initiative-process
+  - clarity-act
+  risk: high
+- id: claim-legal-process-005
+  topic_slug: legal-process
+  text: Indigenous interests and other constitutional actors would need attention in any secession-related negotiation;
+    the current topic sources do not settle Alberta-specific treaty, land, or implementation outcomes.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  risk: high
+- id: claim-legal-process-006
+  topic_slug: legal-process
+  text: Legal-process outcomes remain uncertainty-labelled because the basic sequence is sourceable but future clarity
+    assessments, negotiation positions, amendments, recognition, and transition terms are unresolved.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
   risk: high

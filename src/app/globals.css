@@ -283,7 +283,7 @@ textarea:focus-visible {
 
 .page-trust {
   display: grid;
-  grid-template-columns: minmax(220px, 1.25fr) minmax(220px, 1.25fr) repeat(2, minmax(120px, 0.75fr)) auto;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
   align-items: stretch;
   padding: 16px 0;
@@ -396,8 +396,74 @@ textarea:focus-visible {
   font-weight: 620;
 }
 
-.markdown p {
+.markdown p,
+.markdown li {
   color: var(--secondary);
+}
+
+.markdown ul {
+  margin: 10px 0 18px;
+  padding-left: 1.2rem;
+  max-width: 76ch;
+}
+
+.markdown li {
+  margin: 7px 0;
+}
+
+.markdown code {
+  border: 1px solid rgba(17, 24, 39, 0.13);
+  background: rgba(255, 255, 255, 0.52);
+  padding: 1px 5px;
+  color: var(--ink);
+  font-size: 0.9em;
+}
+
+.report-hero h1 {
+  max-width: 18ch;
+  font-size: clamp(34px, 5.2vw, 78px);
+  line-height: 0.98;
+}
+
+.report-hero p {
+  max-width: 76ch;
+  color: var(--secondary);
+  font-size: clamp(17px, 1.6vw, 21px);
+}
+
+.report-layout {
+  align-items: start;
+  grid-template-columns: minmax(220px, 0.5fr) minmax(0, 1.5fr);
+}
+
+.report-aside {
+  display: grid;
+  gap: 14px;
+  position: sticky;
+  top: 12px;
+}
+
+.report-section-nav {
+  display: grid;
+  gap: 4px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.13);
+}
+
+.report-section-nav a,
+.category-nav a[aria-current="page"] {
+  color: var(--ink);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.category-nav a[aria-current="page"] {
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+}
+
+.small-note {
+  font-size: 13px;
 }
 
 .primary-actions {

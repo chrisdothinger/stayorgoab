@@ -1,4 +1,14 @@
 entries:
+  - id: change-2026-05-04-source-library-refinement
+    date: "2026-05-04"
+    type: ux
+    summary: "Refined the Source Library with URL-hydrated filters, sorting, active filter chips, why-this-source-matters explanations, clearer topic/claim trails, and polished source detail pages with PageTrust evidence paths."
+    files_changed:
+      - src/components/SourceLibrary.tsx
+      - src/app/sources/[sourceSlug]/page.tsx
+      - src/app/globals.css
+      - tests/a11y.spec.ts
+      - STATUS.md
   - id: change-2026-05-04-reusable-page-trust-layer
     date: "2026-05-04"
     type: ux

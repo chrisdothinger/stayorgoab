@@ -82,14 +82,37 @@ test('source library search, filters, and source trails work', async ({ page }) 
   await page.goto('/sources/');
   await expect(page.getByText(/16 source records shown/i)).toBeVisible();
   await expect(page.getByText(/Internal provenance checks are/i)).toBeVisible();
+  await expect(page.getByLabel('Sort sources')).toBeVisible();
   await page.getByLabel('Search sources').fill('Elections Alberta');
   await expect(page.getByRole('button', { name: /Clear source filters/i })).toBeVisible();
   await expect(page.getByText(/source records shown/i)).toBeVisible();
   await page.getByLabel('Source type').selectOption('official');
   await expect(page.getByLabel('Source type')).toHaveValue('official');
+  await page.getByLabel('Sort sources').selectOption('publisher');
+  await expect(page.getByLabel('Sort sources')).toHaveValue('publisher');
   await page.getByRole('button', { name: /Expand source details for/i }).first().click();
+  await expect(page.getByText(/Why this source matters/i)).toBeVisible();
   await expect(page.getByText(/Used by topics/i)).toBeVisible();
   await expect(page.getByText(/Referenced claims/i)).toBeVisible();
+});
+
+test('source library supports query filters and polished source detail pages', async ({ page }) => {
+  await page.goto('/sources/?q=Elections%20Alberta&type=official&sort=publisher');
+  await expect(page.getByLabel('Search sources')).toHaveValue('Elections Alberta');
+  await expect(page.getByLabel('Source type')).toHaveValue('official');
+  await expect(page.getByLabel('Sort sources')).toHaveValue('publisher');
+  await expect(page.getByText(/Active source filters/i)).toBeVisible();
+  await expect(page.getByText(/Search: Elections Alberta/i)).toBeVisible();
+  await expect(page.getByText(/Type: official/i)).toBeVisible();
+
+  await page.goto('/sources/elections-ab-current-petitions/');
+  await expect(page.getByRole('heading', { name: /Current Citizen Initiative Petitions/i })).toBeVisible();
+  await expect(page.getByRole('region', { name: /Page trust/i })).toBeVisible();
+  await expect(page.getByText(/Why this source matters/i)).toBeVisible();
+  await expect(page.getByText(/Used by topics/i)).toBeVisible();
+  await expect(page.getByText(/Referenced claims/i)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Back to source library/i })).toBeVisible();
+  await expect(page.getByText(/audit pending/i)).toHaveCount(0);
 });
 
 test('public trust surfaces explain repo, review log, and changelog clearly', async ({ page }) => {

@@ -259,3 +259,29 @@ npm run typecheck             PASS
 npm run test:a11y             PASS, 34 tests
 npm run build                 PASS, 114 static pages
 ```
+## 2026-05-04T15:40:00Z — Sprint 7 Source Library Refinement
+
+Completed in this package:
+
+- Added URL-hydrated source search/filter/sort state so shared `/sources/?q=...&type=...&sort=...` links open with the expected library view.
+- Added source sorting by recency, publisher, title, and claim-reference count.
+- Added active source filter chips and retained clear-filter behavior for both desktop and mobile.
+- Changed expandable source rows from generic `How used` copy to `Why this source matters` explanations with topic/claim usage counts.
+- Reused claim/source maps for faster local filtering and clearer topic/claim trails.
+- Polished source detail pages with PageTrust, back-to-library/source evidence links, why-this-source-matters copy, topic rows, claim rows, and async route params for current Next behavior.
+- Added Playwright product-contract coverage for source sorting, query-filter hydration, and source detail trust paths.
+- Preserved deployment/base-path compatibility when client-side source filters update the shared URL.
+
+Validation evidence:
+
+```txt
+npm run test:content          PASS, 8 tests
+npm run validate:citations    PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets      PASS
+npm test                      PASS, 11 tests
+npm run lint                  PASS
+npm run typecheck             PASS
+npm run test:a11y             PASS, 36 tests
+npm run build                 PASS, 114 static pages
+```

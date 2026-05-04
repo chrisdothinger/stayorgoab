@@ -1,10 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { ClaimRecord, SourceRecord, TopicMeta } from '@/lib/types';
 
 const allValue = 'all';
+const sortOptions = ['recency', 'publisher', 'title', 'claims'] as const;
+type SortOption = typeof sortOptions[number];
 
 type SourceLibraryProps = {
   sources: SourceRecord[];
@@ -24,12 +26,41 @@ function sourceRoute(source: SourceRecord) {
   return `/sources/${source.slug ?? source.id}`;
 }
 
+function initialParam(name: string, fallback = '') {
+  if (typeof window === 'undefined') return fallback;
+  return new URLSearchParams(window.location.search).get(name) ?? fallback;
+}
+
+function initialAllParam(name: string) {
+  return initialParam(name, allValue);
+}
+
+function initialSortParam(): SortOption {
+  const value = initialParam('sort', 'recency');
+  return sortOptions.includes(value as SortOption) ? value as SortOption : 'recency';
+}
+
+function compareText(a: string | null | undefined, b: string | null | undefined) {
+  return (a ?? '').localeCompare(b ?? '', 'en', { sensitivity: 'base' });
+}
+
+function checkDate(source: SourceRecord) {
+  return source.last_checked_at ?? source.accessed_at ?? '';
+}
+
+function whySourceMatters(source: SourceRecord, topicCount: number, claimCount: number) {
+  const usage = source.how_used ?? source.summary;
+  return `${usage} It currently supports ${topicCount} ${topicCount === 1 ? 'topic' : 'topics'} and ${claimCount} ${claimCount === 1 ? 'claim' : 'claims'} in the public repository.`;
+}
+
 export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
   const [query, setQuery] = useState('');
   const [sourceType, setSourceType] = useState(allValue);
   const [publisher, setPublisher] = useState(allValue);
   const [reliability, setReliability] = useState(allValue);
   const [stance, setStance] = useState(allValue);
+  const [sortBy, setSortBy] = useState<SortOption>('recency');
+  const [hydrated, setHydrated] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const sourceTypes = unique(sources.map((source) => source.source_type));
@@ -37,11 +68,44 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
   const reliabilities = unique(sources.map((source) => source.reliability_category));
   const stances = unique(sources.map((source) => source.stance));
   const topicBySlug = useMemo(() => new Map(topics.map((topic) => [topic.slug, topic])), [topics]);
+  const claimsBySourceId = useMemo(() => {
+    const map = new Map<string, ClaimRecord[]>();
+    for (const claim of claims) {
+      for (const sourceId of claim.source_ids) {
+        map.set(sourceId, [...(map.get(sourceId) ?? []), claim]);
+      }
+    }
+    return map;
+  }, [claims]);
+
+  useEffect(() => {
+    setQuery(initialParam('q'));
+    setSourceType(initialAllParam('type'));
+    setPublisher(initialAllParam('publisher'));
+    setReliability(initialAllParam('reliability'));
+    setStance(initialAllParam('stance'));
+    setSortBy(initialSortParam());
+    setHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    const params = new URLSearchParams();
+    if (query.trim()) params.set('q', query.trim());
+    if (sourceType !== allValue) params.set('type', sourceType);
+    if (publisher !== allValue) params.set('publisher', publisher);
+    if (reliability !== allValue) params.set('reliability', reliability);
+    if (stance !== allValue) params.set('stance', stance);
+    if (sortBy !== 'recency') params.set('sort', sortBy);
+    const base = window.location.pathname;
+    const next = params.toString() ? `${base}?${params.toString()}` : base;
+    window.history.replaceState(null, '', next);
+  }, [hydrated, publisher, query, reliability, sortBy, sourceType, stance]);
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
-    return sources.filter((source) => {
-      const sourceClaims = claims.filter((claim) => claim.source_ids.includes(source.id));
+    const matches = sources.filter((source) => {
+      const sourceClaims = claimsBySourceId.get(source.id) ?? [];
       const relatedTopics = source.related_topic_slugs?.map((slug) => topicBySlug.get(slug)?.title ?? slug) ?? [];
       const searchText = [
         source.title,
@@ -63,9 +127,25 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
         (stance === allValue || source.stance === stance)
       );
     });
-  }, [claims, publisher, query, reliability, sourceType, sources, stance, topicBySlug]);
 
-  const hasActiveFilters = query.trim() || sourceType !== allValue || publisher !== allValue || reliability !== allValue || stance !== allValue;
+    return [...matches].sort((a, b) => {
+      if (sortBy === 'publisher') return compareText(a.publisher, b.publisher) || compareText(a.title, b.title);
+      if (sortBy === 'title') return compareText(a.title, b.title);
+      if (sortBy === 'claims') return (claimsBySourceId.get(b.id)?.length ?? 0) - (claimsBySourceId.get(a.id)?.length ?? 0) || compareText(a.title, b.title);
+      return checkDate(b).localeCompare(checkDate(a)) || compareText(a.title, b.title);
+    });
+  }, [claimsBySourceId, publisher, query, reliability, sortBy, sourceType, sources, stance, topicBySlug]);
+
+  const activeFilters = [
+    query.trim() ? `Search: ${query.trim()}` : null,
+    sourceType !== allValue ? `Type: ${formatValue(sourceType)}` : null,
+    publisher !== allValue ? `Publisher: ${publisher}` : null,
+    reliability !== allValue ? `Reliability: ${formatValue(reliability)}` : null,
+    stance !== allValue ? `Stance: ${formatValue(stance)}` : null,
+    sortBy !== 'recency' ? `Sort: ${formatValue(sortBy)}` : null
+  ].filter((label): label is string => Boolean(label));
+
+  const hasActiveFilters = activeFilters.length > 0;
 
   function clearFilters() {
     setQuery('');
@@ -73,6 +153,7 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
     setPublisher(allValue);
     setReliability(allValue);
     setStance(allValue);
+    setSortBy('recency');
     setExpanded(null);
   }
 
@@ -111,6 +192,15 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
             {stances.map((item) => <option key={item} value={item}>{formatValue(item)}</option>)}
           </select>
         </label>
+        <label className="mono">
+          <span className="section-label">Sort sources</span>
+          <select aria-label="Sort sources" value={sortBy} onChange={(event) => setSortBy(event.target.value as SortOption)}>
+            <option value="recency">Most recently checked</option>
+            <option value="publisher">Publisher A-Z</option>
+            <option value="title">Title A-Z</option>
+            <option value="claims">Highest claim count</option>
+          </select>
+        </label>
       </div>
 
       <div className="index-toolbar mono" aria-live="polite">
@@ -119,6 +209,13 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
         {hasActiveFilters ? <button type="button" onClick={clearFilters}>Clear source filters</button> : null}
       </div>
 
+      {activeFilters.length ? (
+        <div className="active-filter-list mono" aria-label="Active source filters">
+          <strong>Active source filters</strong>
+          {activeFilters.map((label) => <span className="active-filter" key={label}>{label}</span>)}
+        </div>
+      ) : null}
+
       <div className="audit-note mono">
         Internal provenance checks are this project’s automated public-repository checks — not government audits, regulator audits, external audits, or assurance engagements.
       </div>
@@ -126,7 +223,7 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
       <div className="link-list" aria-live="polite">
         {filtered.map((source, index) => {
           const isExpanded = expanded === source.id;
-          const sourceClaims = claims.filter((claim) => claim.source_ids.includes(source.id));
+          const sourceClaims = claimsBySourceId.get(source.id) ?? [];
           const relatedTopics = source.related_topic_slugs?.map((slug) => topicBySlug.get(slug)).filter((topic): topic is TopicMeta => Boolean(topic)) ?? [];
           return (
             <article className="index-row source-row" key={source.id}>
@@ -150,7 +247,7 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
               </button>
               {isExpanded ? (
                 <div className="expanded-row">
-                  <strong>How used:</strong> {source.how_used ?? source.summary}
+                  <strong>Why this source matters:</strong> {whySourceMatters(source, relatedTopics.length, sourceClaims.length)}
                   <div className="source-trail mono">
                     <span>Accessed {source.accessed_at}</span>
                     <span>Status {source.status ?? 'tracked'}</span>

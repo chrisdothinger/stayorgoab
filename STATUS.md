@@ -215,7 +215,7 @@ npm run build                 PASS, 114 static pages
 Completed in this package:
 
 - Upgraded `/facts` from a compact status list into a public briefing page for cold readers.
-- Added a current source posture card with `Last official source check` and explicit civic-information / not-legal-advice framing.
+- Added a current source status card with `Last checked against tracked official sources` and explicit civic-information / not-legal-advice framing.
 - Added briefing inventory metrics for tracked status items, full dossiers, and high-sensitivity topics.
 - Added source-backed procedural status rows that link directly to source records.
 - Added a `Petition → referendum → negotiations` timeline to prevent readers from conflating separate stages.
@@ -233,5 +233,29 @@ npm test                      PASS, 11 tests
 npm run lint                  PASS
 npm run typecheck             PASS
 npm run test:a11y             PASS, 32 tests
+npm run build                 PASS, 114 static pages
+```
+## 2026-05-04T15:13:35Z — Sprint 6 Reusable Page Trust Layer
+
+Completed in this package:
+
+- Added a reusable `PageTrust` component for public-facing source status, review trail, metrics, and evidence links.
+- Applied the shared trust layer to `/facts`, `/questions`, `/sources`, `/method`, `/repo`, `/audit`, and topic detail pages.
+- Updated topic metadata wording from `Last audited` / `Audit details` to `Internal provenance check` / `Review details`.
+- Added responsive CSS so the trust layer collapses cleanly on mobile.
+- Added Playwright product-contract coverage for the shared trust layer across representative public routes.
+- Fixed the topic detail page to unwrap dynamic `params` asynchronously for current Next route behavior.
+
+Validation evidence:
+
+```txt
+npm run test:content          PASS, 8 tests
+npm run validate:citations    PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets      PASS
+npm test                      PASS, 11 tests
+npm run lint                  PASS
+npm run typecheck             PASS
+npm run test:a11y             PASS, 34 tests
 npm run build                 PASS, 114 static pages
 ```

@@ -29,7 +29,7 @@ test('questions search, filters, maturity legend, and disclosure rows work', asy
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
   await expect(page.getByText(/Maturity legend/i)).toBeVisible();
   await expect(page.getByText(/Internal provenance check =/i)).toBeVisible();
-  await expect(page.getByText(/public review trail/i)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Public review trail/i })).toBeVisible();
   await expect(page.getByText(/audits/i)).toHaveCount(0);
   await expect(page.getByRole('button', { name: /All 23 questions/i })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByRole('link', { name: /Open dossier:/i }).first()).toBeVisible();
@@ -49,7 +49,7 @@ test('questions search, filters, maturity legend, and disclosure rows work', asy
 test('facts page works as a public briefing with timeline and source-backed certainty labels', async ({ page }) => {
   await page.goto('/facts/');
   await expect(page.getByRole('heading', { name: /Public briefing/i })).toBeVisible();
-  await expect(page.getByText(/Last checked against tracked official sources: 2026-05-02/i)).toBeVisible();
+  await expect(page.getByLabel('Briefing status').getByText(/Last checked against tracked official sources: 2026-05-02/i)).toBeVisible();
   await expect(page.getByText(/Petition → referendum → negotiations/i)).toBeVisible();
   await expect(page.getByText(/What is confirmed/i)).toBeVisible();
   await expect(page.getByText(/What is disputed/i)).toBeVisible();
@@ -60,6 +60,22 @@ test('facts page works as a public briefing with timeline and source-backed cert
   await expect(page.getByText(/not legal advice/i)).toBeVisible();
   await expect(page.getByText(/audit pending/i)).toHaveCount(0);
   await expect(page.getByText(/external audit/i)).toHaveCount(0);
+});
+
+test('shared page trust layer appears on public briefing and dossier surfaces', async ({ page }) => {
+  const routesWithTrustLayer = ['/facts/', '/questions/', '/sources/', '/method/', '/repo/', '/audit/', '/questions/legal-process/'];
+
+  for (const route of routesWithTrustLayer) {
+    await page.goto(route);
+    const trustLayer = page.getByRole('region', { name: /Page trust/i });
+    await expect(trustLayer).toBeVisible();
+    await expect(trustLayer.getByText('Source status', { exact: true })).toBeVisible();
+    await expect(trustLayer.getByText('Review trail', { exact: true })).toBeVisible();
+    await expect(trustLayer.getByRole('link', { name: /Inspect sources|Source library/i })).toBeVisible();
+    await expect(trustLayer.getByRole('link', { name: /Open review log|Review log/i })).toBeVisible();
+    await expect(trustLayer.getByText(/audit pending/i)).toHaveCount(0);
+    await expect(trustLayer.getByText(/external audit/i)).toHaveCount(0);
+  }
 });
 
 test('source library search, filters, and source trails work', async ({ page }) => {
@@ -79,8 +95,8 @@ test('source library search, filters, and source trails work', async ({ page }) 
 test('public trust surfaces explain repo, review log, and changelog clearly', async ({ page }) => {
   await page.goto('/repo/');
   await expect(page.getByText(/Public repository evidence/i)).toBeVisible();
-  await expect(page.getByText('Source map', { exact: true })).toBeVisible();
-  await expect(page.getByRole('main').getByRole('link', { name: /Review log/i })).toBeVisible();
+  await expect(page.getByLabel('Repository evidence summary').getByText('Source map', { exact: true })).toBeVisible();
+  await expect(page.getByRole('main').getByRole('link', { name: 'Review log', exact: true })).toBeVisible();
 
   await page.goto('/changelog/');
   await expect(page.getByText(/Change history/i)).toBeVisible();

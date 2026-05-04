@@ -1,3 +1,4 @@
+import { PageTrust } from '@/components/PageTrust';
 import { SourceLibrary } from '@/components/SourceLibrary';
 import { loadRepositoryContent } from '@/lib/content';
 
@@ -16,6 +17,18 @@ export default function SourcesPage() {
         <h1>Source library</h1>
         <p>Search the official, court, primary, advocacy, media, and institutional records used by topic dossiers and claim ledgers.</p>
       </section>
+
+      <PageTrust
+        sourceStatus={`${sources.length} source records tracked across ${sourceTypes.length} source types.`}
+        reviewStatus="Source rows show internal provenance-check context and claim/topic trails."
+        metrics={[
+          { label: 'Claim links', value: linkedClaims },
+          { label: 'Reliability labels', value: reliability.length }
+        ]}
+        sourceLabel="Source library"
+        reviewLabel="Open review log"
+        links={[{ href: '/repo', label: 'Repository evidence' }]}
+      />
 
       <section className="section ops-grid" aria-label="Source summary">
         <div className="metric-card">

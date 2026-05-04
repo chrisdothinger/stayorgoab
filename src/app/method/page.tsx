@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { PageTrust } from '@/components/PageTrust';
 
 export const metadata = { title: 'Method' };
 
@@ -8,8 +9,20 @@ export default function MethodPage() {
       <section className="section">
         <div className="section-label mono">/ Method</div>
         <h1>How StayOrGoAB works</h1>
-        <p>The site separates known facts, disputed claims, uncertainty, arguments, sources, and public audit records. It does not tell readers how to vote.</p>
+        <p>The site separates known facts, disputed claims, uncertainty, arguments, sources, and public review records. It does not tell readers how to vote.</p>
       </section>
+
+      <PageTrust
+        sourceStatus="Claims should trace to source records, topic ledgers, and visible publication states."
+        reviewStatus="Internal provenance checks and public review records are inspectable repository evidence."
+        metrics={[
+          { label: 'Publication gate', value: 'automated' },
+          { label: 'Private data', value: 'excluded' }
+        ]}
+        sourceLabel="Inspect sources"
+        reviewLabel="Open review log"
+        links={[{ href: '/ops', label: 'Operating posture' }]}
+      />
 
       <section className="section grid-two">
         <div><h2>Source-backed before persuasive</h2></div>
@@ -32,8 +45,8 @@ export default function MethodPage() {
         <div><h2>What is never published</h2></div>
         <div className="markdown">
           <p>Secrets, credentials, raw provider logs, raw agent transcripts, hidden chain-of-thought, private submissions, cookies, auth headers, and unnecessary personal data are excluded by rule and scanner.</p>
-          <p>Public audit artifacts are redacted summaries: enough to inspect what changed and why, not enough to leak private or unsafe material.</p>
-          <p><Link href="/ops">View operational observability</Link> · <Link href="/audit">View audit trail</Link></p>
+          <p>Public review artifacts are redacted summaries: enough to inspect what changed and why, not enough to leak private or unsafe material.</p>
+          <p><Link href="/ops">View operational observability</Link> · <Link href="/audit">View review trail</Link></p>
         </div>
       </section>
     </>

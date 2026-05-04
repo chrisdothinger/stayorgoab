@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { AuditMeta } from '@/components/AuditMeta';
 import { MarkdownText } from '@/components/MarkdownText';
+import { PageTrust } from '@/components/PageTrust';
 import { loadRepositoryContent } from '@/lib/content';
 
 export const dynamicParams = false;
@@ -10,8 +11,9 @@ export function generateStaticParams() {
   return loadRepositoryContent().topics.map((topic) => ({ topicSlug: topic.slug }));
 }
 
-export function generateMetadata({ params }: { params: { topicSlug: string } }) {
-  const topic = loadRepositoryContent().topics.find((item) => item.slug === params.topicSlug);
+export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
+  const { topicSlug } = await params;
+  const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
   return { title: topic?.title ?? 'Topic' };
 }
 
@@ -20,9 +22,10 @@ function ReportNavItem({ href, label, available }: { href: string; label: string
   return <Link href={href}>{label}</Link>;
 }
 
-export default function TopicPage({ params }: { params: { topicSlug: string } }) {
+export default async function TopicPage({ params }: { params: Promise<{ topicSlug: string }> }) {
+  const { topicSlug } = await params;
   const content = loadRepositoryContent();
-  const topic = content.topics.find((item) => item.slug === params.topicSlug);
+  const topic = content.topics.find((item) => item.slug === topicSlug);
   if (!topic) notFound();
   const files = content.topicFiles[topic.slug];
   if (!files.index) notFound();
@@ -46,6 +49,18 @@ export default function TopicPage({ params }: { params: { topicSlug: string } })
           sourceFile={`content/topics/${topic.slug}/index.mdx`}
         />
       </section>
+      <PageTrust
+        sourceStatus={`${topic.source_count} sources and ${topic.claim_count} claims attached to this dossier.`}
+        reviewStatus={`Internal provenance check: ${topic.last_audited_at ?? 'pending'}; redebate pass: ${topic.last_debated_at ?? 'pending'}.`}
+        metrics={[
+          { label: 'State', value: topic.state },
+          { label: 'Sensitivity', value: topic.time_sensitivity }
+        ]}
+        sourceHref={`/questions/${topic.slug}/sources`}
+        sourceLabel="Inspect sources"
+        reviewLabel="Open review log"
+        links={[{ href: '/repo', label: 'Repository evidence' }]}
+      />
       <section className="section grid-two">
         <nav className="category-nav mono" aria-label="Topic sections">
           <ReportNavItem href={`/questions/${topic.slug}/neutral`} label="Neutral" available={Boolean(files.reports.neutral)} />

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { PageTrust } from '@/components/PageTrust';
 import { loadRepositoryContent } from '@/lib/content';
 
 export const metadata = { title: 'Facts' };
@@ -107,6 +108,19 @@ export default function FactsPage() {
           </p>
         </aside>
       </section>
+
+      <PageTrust
+        sourceStatus={`Last checked against tracked official sources: ${lastOfficialSourceCheck}`}
+        reviewStatus="Public review log links every page to generated review records."
+        metrics={[
+          { label: 'Status rows', value: statusItems.length },
+          { label: 'Full dossiers', value: fullDossiers },
+          { label: 'High sensitivity', value: highSensitivityTopics }
+        ]}
+        sourceLabel="Inspect sources"
+        reviewLabel="Open review log"
+        links={[{ href: '/repo', label: 'Repository evidence' }]}
+      />
 
       <section className="section facts-metrics" aria-label="Briefing inventory">
         <article className="metric-card">

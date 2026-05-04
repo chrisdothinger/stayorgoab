@@ -1,3 +1,4 @@
+import { PageTrust } from '@/components/PageTrust';
 import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
@@ -18,6 +19,18 @@ export default function AuditPage() {
         <h1>Public review trail</h1>
         <p>Compact public records show what changed, which sources support it, which automated checks ran, and where source files live. These are internal agentic/public-repository provenance checks, not government audits, regulator audits, external audits, or assurance engagements.</p>
       </section>
+
+      <PageTrust
+        sourceStatus={`${content.sources.length} sources and ${content.claims.length} claims feed the generated review manifest.`}
+        reviewStatus={`${manifest.pages.length} page records; ${stalePages} awaiting a check date.`}
+        metrics={[
+          { label: 'Sparse states', value: sparsePages },
+          { label: 'Run summaries', value: ops.latestRuns.length }
+        ]}
+        sourceLabel="Inspect sources"
+        reviewLabel="Open review log"
+        links={[{ href: '/repo', label: 'Repository evidence' }]}
+      />
 
       <section className="section ops-grid" aria-label="Review summary">
         <div className="metric-card">

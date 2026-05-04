@@ -281,6 +281,50 @@ textarea:focus-visible {
   font-size: 12px;
 }
 
+.page-trust {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.25fr) minmax(220px, 1.25fr) repeat(2, minmax(120px, 0.75fr)) auto;
+  gap: 12px;
+  align-items: stretch;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.14);
+}
+
+.page-trust > div,
+.page-trust-links {
+  border: 1px solid rgba(17, 24, 39, 0.14);
+  background: rgba(255, 255, 255, 0.42);
+  padding: 12px;
+}
+
+.page-trust strong {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.2;
+  font-weight: 620;
+}
+
+.page-trust p {
+  margin: 7px 0 0;
+  color: var(--secondary);
+  font-size: 13px;
+}
+
+.page-trust-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  min-width: 160px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.page-trust-links a {
+  color: var(--secondary);
+}
+
 .changelog-row .expanded-row {
   display: flex;
   flex-wrap: wrap;
@@ -698,6 +742,7 @@ textarea:focus-visible {
   .grid-two,
   .filter-panel,
   .trust-strip,
+  .page-trust,
   .ops-grid,
   .facts-metrics,
   .footer {
@@ -731,6 +776,10 @@ textarea:focus-visible {
 
   .site-header .right {
     text-align: left;
+  }
+
+  .page-trust-links {
+    min-width: 0;
   }
 
   .hero {

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { PageTrust } from '@/components/PageTrust';
 import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
@@ -22,6 +23,18 @@ export default function RepoPage() {
           These records support public inspection and internal provenance checks; they are not an external audit.
         </p>
       </section>
+
+      <PageTrust
+        sourceStatus={`${content.sources.length} public source records and ${content.claims.length} claim records are inspectable.`}
+        reviewStatus={`${manifest.pages.length} generated page-level review records; latest release ${latestRelease?.date ?? 'n/a'}.`}
+        metrics={[
+          { label: 'Source map', value: content.sources.length },
+          { label: 'Review records', value: manifest.pages.length }
+        ]}
+        sourceLabel="Inspect sources"
+        reviewLabel="Open review log"
+        links={[{ href: '/ops', label: 'Operating posture' }]}
+      />
 
       <section className="section ops-grid" aria-label="Repository evidence summary">
         <div className="metric-card">

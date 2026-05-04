@@ -1,4 +1,21 @@
 entries:
+  - id: change-2026-05-04-reusable-page-trust-layer
+    date: "2026-05-04"
+    type: ux
+    summary: "Added a reusable PageTrust layer across key public briefing, source, method, repository, review-log, and topic pages so readers consistently see source status, review trail paths, and inspectable evidence links without ambiguous audit-pending wording."
+    files_changed:
+      - src/components/PageTrust.tsx
+      - src/components/AuditMeta.tsx
+      - src/app/facts/page.tsx
+      - src/app/questions/page.tsx
+      - src/app/questions/[topicSlug]/page.tsx
+      - src/app/sources/page.tsx
+      - src/app/method/page.tsx
+      - src/app/repo/page.tsx
+      - src/app/audit/page.tsx
+      - src/app/globals.css
+      - tests/a11y.spec.ts
+      - STATUS.md
   - id: change-2026-05-04-facts-public-briefing
     date: "2026-05-04"
     type: ux

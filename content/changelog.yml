@@ -1,4 +1,13 @@
 entries:
+  - id: change-2026-05-04-validation-hardening
+    date: "2026-05-04"
+    type: validation
+    summary: "Hardened content validation for publication states, dossier evidence, high-risk claims, and deterministic public audit validation."
+    files_changed:
+      - src/lib/validation.ts
+      - src/tests/content-validation.test.ts
+      - package.json
+      - STATUS.md
   - id: change-2026-05-02-seed
     date: "2026-05-02"
     type: seed

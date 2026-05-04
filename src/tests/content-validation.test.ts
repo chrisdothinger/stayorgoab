@@ -66,4 +66,71 @@ describe('content validation', () => {
     expect(result.ok).toBe(false);
     expect(result.errors).toContain('Forbidden human review field found: human_review_required.');
   });
+
+  it('rejects unsupported topic states and malformed audit dates', () => {
+    const content = loadRepositoryContent();
+    const result = validateContentModel({
+      ...content,
+      topics: content.topics.map((topic) =>
+        topic.slug === 'legal-process'
+          ? { ...topic, state: 'human_review_required' as never, last_audited_at: 'yesterday' }
+          : topic
+      )
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain('Topic legal-process has unsupported state human_review_required.');
+    expect(result.errors).toContain('Topic legal-process has malformed last_audited_at date yesterday.');
+  });
+
+  it('rejects full dossiers without claims, audit history, or redebate history', () => {
+    const content = loadRepositoryContent();
+    const result = validateContentModel({
+      ...content,
+      topicFiles: {
+        ...content.topicFiles,
+        'legal-process': {
+          ...content.topicFiles['legal-process'],
+          claims: [],
+          auditEntries: [],
+          redebateEntries: []
+        }
+      }
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain('Full dossier legal-process is missing topic claim ledger.');
+    expect(result.errors).toContain('Full dossier legal-process is missing audit history.');
+    expect(result.errors).toContain('Full dossier legal-process is missing redebate history.');
+  });
+
+  it('rejects high-risk unsupported claims and high-risk claims with undefined sources', () => {
+    const content = loadRepositoryContent();
+    const result = validateContentModel({
+      ...content,
+      claims: [
+        ...content.claims,
+        {
+          id: 'claim-bad-high-risk-unsupported',
+          topic_slug: 'legal-process',
+          text: 'Bad unsupported high-risk civic claim',
+          status: 'unsupported',
+          source_ids: [],
+          risk: 'high'
+        },
+        {
+          id: 'claim-bad-high-risk-bogus-source',
+          topic_slug: 'legal-process',
+          text: 'Bad sourced high-risk civic claim',
+          status: 'source_supported',
+          source_ids: ['not-a-source'],
+          risk: 'high'
+        }
+      ]
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain('High-risk claim claim-bad-high-risk-unsupported cannot be marked unsupported for publication.');
+    expect(result.errors).toContain('Claim claim-bad-high-risk-bogus-source references undefined source not-a-source.');
+  });
 });

@@ -79,4 +79,28 @@ npm run validate:public-audit PASS after generation
 npm run build                 PASS, 113 static pages
 ```
 
-Known caveat carried forward: standalone `validate:public-audit` still needs generated artifacts first. `npm run build` handles this by generating artifacts before validation. Phase 2 should make standalone behavior deterministic from a clean tree.
+Known caveat from Work Package 1 resolved in Work Package 2: `npm run validate:public-audit` now runs `prevalidate:public-audit`, which regenerates public audit artifacts before validation.
+
+## 2026-05-04T11:07:36Z — Work Package 2 validation hardening
+
+Completed in this package:
+
+- Added content-model validation for unsupported publication states and malformed topic audit/debate dates.
+- Strengthened `full_dossier` enforcement so a full dossier must include topic claims, audit history, and redebate history in addition to neutral/pro/anti reports and topic sources.
+- Added high-risk claim guardrail: high-risk civic claims cannot be published as `unsupported`.
+- Made standalone public-audit validation deterministic by adding `prevalidate:public-audit` to regenerate audit artifacts before `validate:public-audit`.
+- Added regression tests proving the new validator failures before implementation.
+
+Validation evidence:
+
+```txt
+npm run test:content       PASS, 7 tests
+npm run validate:citations PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets   PASS
+npm test                   PASS, 10 tests
+npm run lint               PASS
+npm run typecheck          PASS
+```
+
+Next recommended phase: continue Phase 2 by expanding source/claim validation further, then move into Phase 3 public UX completion (`/ops`, richer Facts/Sources/Agents/Audit/Method, mobile/a11y pass).

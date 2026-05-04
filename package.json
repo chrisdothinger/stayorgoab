@@ -14,6 +14,7 @@
     "test:a11y": "playwright test tests/a11y.spec.ts",
     "generate:search-index": "tsx scripts/generate-search-index.ts",
     "generate:audit-manifest": "tsx scripts/generate-audit-manifest.ts",
+    "prevalidate:public-audit": "npm run generate:audit-manifest",
     "validate:public-audit": "tsx scripts/validate-public-audit.ts",
     "validate:citations": "tsx scripts/validate-citations.ts",
     "validate:agents": "tsx scripts/validate-agents.ts",

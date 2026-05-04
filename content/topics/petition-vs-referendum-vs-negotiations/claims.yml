@@ -1,0 +1,36 @@
+claims:
+- id: claim-petition-vs-referendum-vs-negotiations-001
+  topic_slug: petition-vs-referendum-vs-negotiations
+  text: A petition, a referendum, and negotiations are separate stages. Success at one stage can trigger or strengthen the
+    case for the next, but it does not automatically complete the full independence path.
+  status: source_supported
+  source_ids:
+  - elections-ab-new-citizen-initiative-2026-01-02
+  - elections-ab-current-petitions
+  risk: high
+- id: claim-petition-vs-referendum-vs-negotiations-002
+  topic_slug: petition-vs-referendum-vs-negotiations
+  text: 'The strongest pro case is escalation: a valid petition and clear referendum can turn a political demand into a mandate
+    for negotiations.'
+  status: inference
+  source_ids: &id001
+  - elections-ab-new-citizen-initiative-2026-01-02
+  - elections-ab-current-petitions
+  - elections-ab-initiative-process
+  - elections-ab-referendum
+  - clarity-act
+  - scc-secession-reference
+  risk: high
+- id: claim-petition-vs-referendum-vs-negotiations-003
+  topic_slug: petition-vs-referendum-vs-negotiations
+  text: 'The strongest caution is category error: signatures or a vote cannot themselves settle constitutional amendment,
+    assets, debt, borders, rights, or recognition.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-petition-vs-referendum-vs-negotiations-004
+  topic_slug: petition-vs-referendum-vs-negotiations
+  text: 'This topic remains uncertainty-labelled: Medium; the distinction is clear, but current process details can change.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

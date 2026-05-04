@@ -10,6 +10,47 @@ describe('content validation', () => {
     expect(result.errors).toEqual([]);
   });
 
+  it('requires every current question topic to have public neutral, pro, and anti report content', () => {
+    const content = loadRepositoryContent();
+    const missing = content.topics.flatMap((topic) => {
+      const files = content.topicFiles[topic.slug];
+      return [
+        topic.state === 'full_dossier' ? null : `${topic.slug}:state:${topic.state}`,
+        files.reports.neutral ? null : `${topic.slug}:neutral`,
+        files.reports.pro ? null : `${topic.slug}:pro`,
+        files.reports.anti ? null : `${topic.slug}:anti`,
+        files.sourceIds.length > 0 ? null : `${topic.slug}:sources`,
+        files.claims.length > 0 ? null : `${topic.slug}:claims`,
+        files.auditEntries.length > 0 ? null : `${topic.slug}:review-log`,
+        files.redebateEntries.length > 0 ? null : `${topic.slug}:redebate-log`
+      ].filter((item): item is string => Boolean(item));
+    });
+
+    expect(missing).toEqual([]);
+  });
+
+  it('requires every current topic report to have briefing sections and uncertainty labels', () => {
+    const content = loadRepositoryContent();
+    const incomplete = content.topics.flatMap((topic) => {
+      const files = content.topicFiles[topic.slug];
+      const reports = [files.reports.neutral, files.reports.pro, files.reports.anti];
+      return reports.flatMap((report, index) => {
+        const stance = ['neutral', 'pro', 'anti'][index];
+        if (!report) return [`${topic.slug}:${stance}:missing`];
+        const body = report.body.toLowerCase();
+        const checks = [
+          body.includes('## short answer') ? null : `${topic.slug}:${stance}:short-answer`,
+          body.includes('## what current sources support') ? null : `${topic.slug}:${stance}:source-support`,
+          body.includes('## main uncertainty') ? null : `${topic.slug}:${stance}:uncertainty`,
+          body.length > 900 ? null : `${topic.slug}:${stance}:too-short`
+        ];
+        return checks.filter((item): item is string => Boolean(item));
+      });
+    });
+
+    expect(incomplete).toEqual([]);
+  });
+
   it('rejects a full dossier without neutral, pro, and anti reports', () => {
     const content = loadRepositoryContent();
     const cpp = content.topics.find((topic) => topic.slug === 'cpp-pensions');

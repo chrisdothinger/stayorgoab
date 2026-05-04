@@ -1,0 +1,33 @@
+claims:
+- id: claim-military-security-001
+  topic_slug: military-security
+  text: Defence, policing, intelligence, emergency management, border enforcement, and security arrangements would require
+    new Alberta capacity or negotiated continuity.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-military-security-002
+  topic_slug: military-security
+  text: The strongest pro case is that Alberta could design security institutions around its geography, energy infrastructure,
+    border needs, and public-safety preferences.
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - clarity-act
+  - alberta-budget-documents-2026
+  risk: high
+- id: claim-military-security-003
+  topic_slug: military-security
+  text: The strongest caution is that Canada already supplies defence, intelligence, and federal policing capacity that would
+    be costly and complex to replace.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-military-security-004
+  topic_slug: military-security
+  text: 'This topic remains uncertainty-labelled: High; security institutions and costs are unsettled.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

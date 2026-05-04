@@ -1,0 +1,34 @@
+claims:
+- id: claim-federal-debt-assets-001
+  topic_slug: federal-debt-assets
+  text: Federal debt, assets, liabilities, contracts, and property would likely be negotiated rather than allocated by a simple
+    public number on day one.
+  status: source_supported
+  source_ids:
+  - alberta-budget-documents-2026
+  - scc-secession-reference
+  risk: high
+- id: claim-federal-debt-assets-002
+  topic_slug: federal-debt-assets
+  text: The strongest pro case is that Alberta could argue for a favourable allocation using contribution, population, geography,
+    or asset-location principles.
+  status: inference
+  source_ids: &id001
+  - alberta-budget-documents-2026
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-federal-debt-assets-003
+  topic_slug: federal-debt-assets
+  text: The strongest caution is that Canada, creditors, and counterparties may expect Alberta to assume liabilities, and
+    disputes could complicate transition and recognition.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-federal-debt-assets-004
+  topic_slug: federal-debt-assets
+  text: 'This topic remains uncertainty-labelled: High; no settled allocation formula is established in the current source
+    record.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

@@ -1,0 +1,33 @@
+claims:
+- id: claim-clarity-act-001
+  topic_slug: clarity-act
+  text: The Clarity Act gives the House of Commons a role in assessing whether a referendum question and result are clear
+    enough before Canada enters secession negotiations.
+  status: source_supported
+  source_ids:
+  - clarity-act
+  - scc-secession-reference
+  risk: high
+- id: claim-clarity-act-002
+  topic_slug: clarity-act
+  text: A pro-independence strategy would try to satisfy the Act with a direct question and a decisive result, making refusal
+    to negotiate politically harder.
+  status: inference
+  source_ids: &id001
+  - clarity-act
+  - scc-secession-reference
+  risk: high
+- id: claim-clarity-act-003
+  topic_slug: clarity-act
+  text: A pro-federation strategy would stress that ambiguity, narrow support, or unclear consequences give federal actors
+    grounds to reject automatic negotiations.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-clarity-act-004
+  topic_slug: clarity-act
+  text: 'This topic remains uncertainty-labelled: High for Alberta-specific application; lower for the existence of the federal
+    clarity framework.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

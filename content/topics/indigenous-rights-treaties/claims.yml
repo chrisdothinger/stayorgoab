@@ -1,12 +1,35 @@
 claims:
-  - id: claim-indigenous-001
-  - id: claim-indigenous-002
-    text: "Treaty-rights concerns are active in public advocacy around Alberta separation."
-    status: source_supported
-    source_ids: ["first-nations-stand-with-treaties"]
-    risk: high
-  - id: claim-indigenous-003
-    text: "Current public sources do not provide a settled Alberta-specific legal outcome for treaty relationships after independence."
-    status: inference
-    source_ids: ["scc-secession-reference", "first-nations-stand-with-treaties"]
-    risk: high
+- id: claim-indigenous-rights-treaties-001
+  topic_slug: indigenous-rights-treaties
+  text: Indigenous rights and treaties are not side issues. The Supreme Court says Aboriginal interests would need to be taken
+    into account in secession negotiations, while Alberta-specific effects remain contested.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - acfn-stay-pending-court-challenge-2026-04-11
+  risk: high
+- id: claim-indigenous-rights-treaties-002
+  topic_slug: indigenous-rights-treaties
+  text: A careful pro-independence case would argue that new nation-to-nation arrangements could be negotiated, but only if
+    treaty and rights issues are treated as central rather than incidental.
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - acfn-stay-pending-court-challenge-2026-04-11
+  - first-nations-stand-with-treaties
+  - globalnews-court-pauses-verification-2026-04-12
+  risk: high
+- id: claim-indigenous-rights-treaties-003
+  topic_slug: indigenous-rights-treaties
+  text: The strongest pro-federation case is that constitutional rights, treaty relationships, land, consent, and consultation
+    cannot be bypassed by a provincial vote or treated as settled by Alberta alone.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-indigenous-rights-treaties-004
+  topic_slug: indigenous-rights-treaties
+  text: 'This topic remains uncertainty-labelled: Very high; rights, treaties, land, consultation, and litigation are legally
+    and politically sensitive.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

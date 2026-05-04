@@ -1,0 +1,12 @@
+entries:
+- id: audit-public-services-2026-05-04
+  date: '2026-05-04'
+  agent: StayOrGoAB public agent team
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
+    source records and uncertainty labels.
+  checks:
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - no-external-audit-wording
+  result: pass

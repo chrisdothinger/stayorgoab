@@ -1,0 +1,32 @@
+claims:
+- id: claim-international-recognition-001
+  topic_slug: international-recognition
+  text: International recognition would depend on legality, negotiations with Canada, democratic legitimacy, treatment of
+    rights and treaties, and decisions by other states.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-international-recognition-002
+  topic_slug: international-recognition
+  text: The strongest pro case is that a lawful, negotiated, clearly democratic process could make recognition more likely
+    and reduce international resistance.
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-international-recognition-003
+  topic_slug: international-recognition
+  text: The strongest caution is that unilateral or disputed secession could make recognition, treaties, trade, finance, and
+    organization membership harder.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-international-recognition-004
+  topic_slug: international-recognition
+  text: 'This topic remains uncertainty-labelled: High; recognition depends on external actors and process legitimacy.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

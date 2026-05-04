@@ -1,0 +1,34 @@
+claims:
+- id: claim-clear-question-majority-001
+  topic_slug: clear-question-majority
+  text: Clear question and clear majority are legitimacy tests, not just slogans. Current sources do not reduce every scenario
+    to one fixed percentage or magic wording.
+  status: source_supported
+  source_ids:
+  - clarity-act
+  - scc-secession-reference
+  risk: high
+- id: claim-clear-question-majority-002
+  topic_slug: clear-question-majority
+  text: The strongest pro case is that a direct question and decisive result could create a democratic mandate that other
+    governments would need to treat seriously.
+  status: inference
+  source_ids: &id001
+  - clarity-act
+  - scc-secession-reference
+  - elections-ab-referendum
+  risk: high
+- id: claim-clear-question-majority-003
+  topic_slug: clear-question-majority
+  text: The strongest caution is that unclear wording, thin margins, or disputed public understanding could weaken any claimed
+    mandate.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-clear-question-majority-004
+  topic_slug: clear-question-majority
+  text: 'This topic remains uncertainty-labelled: High; clarity depends on wording, result, turnout context, and political/legal
+    judgment.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

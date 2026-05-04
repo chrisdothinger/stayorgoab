@@ -1,0 +1,35 @@
+claims:
+- id: claim-indigenous-treaties-001
+  topic_slug: indigenous-treaties
+  text: Treaty rights, section 35 rights, land, jurisdiction, consultation, and consent are central issues. They cannot be
+    treated as automatic administrative details.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - acfn-stay-pending-court-challenge-2026-04-11
+  risk: high
+- id: claim-indigenous-treaties-002
+  topic_slug: indigenous-treaties
+  text: A cautious pro case would argue that Alberta could seek renewed agreements with Indigenous governments, while admitting
+    those arrangements cannot be presumed.
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - acfn-stay-pending-court-challenge-2026-04-11
+  - first-nations-stand-with-treaties
+  - globalnews-court-pauses-verification-2026-04-12
+  risk: high
+- id: claim-indigenous-treaties-003
+  topic_slug: indigenous-treaties
+  text: The strongest pro-federation case is that existing Crown obligations and constitutional protections cannot be bypassed
+    by a provincial referendum.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-indigenous-treaties-004
+  topic_slug: indigenous-treaties
+  text: 'This topic remains uncertainty-labelled: Very high; treaty, section 35, consent, land, and consultation questions
+    require careful sourcing.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

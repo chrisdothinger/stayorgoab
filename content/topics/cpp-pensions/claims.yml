@@ -1,13 +1,34 @@
 claims:
-  - id: claim-cpp-001
-  - id: claim-cpp-002
-  - id: claim-cpp-003
-    text: "Current sources do not settle exact contribution rates or benefit levels under a future Alberta plan."
-    status: source_supported
-    source_ids: ["osfi-chief-actuary-cpp", "alberta-pensions"]
-    risk: high
-  - id: claim-cpp-004
-    text: "Independence would add pension questions beyond ordinary CPP withdrawal."
-    status: inference
-    source_ids: ["osfi-chief-actuary-cpp", "scc-secession-reference"]
-    risk: high
+- id: claim-cpp-pensions-001
+  topic_slug: cpp-pensions
+  text: CPP withdrawal has a statutory reference point, but independence adds separate questions about benefit continuity,
+    transfer calculations, administration, and negotiations.
+  status: source_supported
+  source_ids:
+  - osfi-chief-actuary-cpp
+  - alberta-pensions
+  risk: high
+- id: claim-cpp-pensions-002
+  topic_slug: cpp-pensions
+  text: 'The strongest pro case is control: Alberta could argue for pension rules, contribution rates, and investment choices
+    better matched to Alberta workers and demographics.'
+  status: inference
+  source_ids: &id001
+  - osfi-chief-actuary-cpp
+  - alberta-pensions
+  - scc-secession-reference
+  risk: high
+- id: claim-cpp-pensions-003
+  topic_slug: cpp-pensions
+  text: 'The strongest caution is household risk: pensions require administrative continuity, federal calculations, public
+    trust, and certainty that current sources do not yet settle.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-cpp-pensions-004
+  topic_slug: cpp-pensions
+  text: 'This topic remains uncertainty-labelled: High for benefit design and transfer amount; medium for ordinary CPP-withdrawal
+    mechanics.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

@@ -1,0 +1,33 @@
+claims:
+- id: claim-economy-overall-001
+  topic_slug: economy-overall
+  text: The overall economic effect would depend on trade, investment, currency, debt, tax policy, resource prices, transition
+    costs, and negotiated market access.
+  status: source_supported
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  risk: high
+- id: claim-economy-overall-002
+  topic_slug: economy-overall
+  text: The strongest pro case is that Alberta could align tax, regulatory, resource, and spending decisions more closely
+    with its economic base.
+  status: inference
+  source_ids: &id001
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - alberta-premiers-address-2026-02-19
+  risk: high
+- id: claim-economy-overall-003
+  topic_slug: economy-overall
+  text: The strongest caution is that transition uncertainty, trade friction, institutional duplication, investor risk, and
+    debt allocation could outweigh expected gains.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-economy-overall-004
+  topic_slug: economy-overall
+  text: 'This topic remains uncertainty-labelled: High; outcomes are model-dependent and assumption-heavy.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

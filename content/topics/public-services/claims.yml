@@ -1,0 +1,34 @@
+claims:
+- id: claim-public-services-001
+  topic_slug: public-services
+  text: Health care, education, benefits, and other services would depend on staffing, legislation, funding, data systems,
+    and transition capacity.
+  status: source_supported
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  risk: high
+- id: claim-public-services-002
+  topic_slug: public-services
+  text: The strongest pro case is local control over program design, tax choices, and spending priorities without federal
+    conditions.
+  status: inference
+  source_ids: &id001
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - scc-secession-reference
+  risk: high
+- id: claim-public-services-003
+  topic_slug: public-services
+  text: 'The strongest caution is service continuity risk: duplicated administration, labour disruption, fiscal pressure,
+    and transition mistakes would affect households quickly.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-public-services-004
+  topic_slug: public-services
+  text: 'This topic remains uncertainty-labelled: High; direct household effects depend on transition planning and fiscal
+    capacity.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

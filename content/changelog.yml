@@ -1,4 +1,23 @@
 entries:
+  - id: change-2026-05-04-question-dossiers-filled
+    date: "2026-05-04"
+    type: content
+    summary: "Filled every current Questions topic as a full dossier with neutral, pro, and anti report pages; added source/claim/review/redebate files where missing; fixed static report navigation that could land on 404 pages; and added product/content tests for complete report coverage."
+    files_changed:
+      - content/topics/_index.yml
+      - content/topics/*/index.mdx
+      - content/topics/*/neutral.mdx
+      - content/topics/*/pro.mdx
+      - content/topics/*/anti.mdx
+      - content/topics/*/claims.yml
+      - content/topics/*/sources.yml
+      - content/topics/*/audit-log.yml
+      - content/topics/*/redebate-log.yml
+      - src/app/questions/[topicSlug]/neutral/page.tsx
+      - src/app/questions/[topicSlug]/pro/page.tsx
+      - src/app/questions/[topicSlug]/anti/page.tsx
+      - tests/a11y.spec.ts
+      - src/tests/content-validation.test.ts
   - id: change-2026-05-04-source-library-refinement
     date: "2026-05-04"
     type: ux

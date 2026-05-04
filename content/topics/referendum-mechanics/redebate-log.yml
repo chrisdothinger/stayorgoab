@@ -1,5 +1,5 @@
 entries:
-  - id: redebate-referendum-2026-05-02
-    date: "2026-05-02"
-    trigger: seed
-    summary: "Initial process debate map created."
+- id: redebate-referendum-mechanics-2026-05-04
+  date: '2026-05-04'
+  trigger: full-topic-expansion
+  summary: Public agent team generated report triad and argument map for current topic coverage.

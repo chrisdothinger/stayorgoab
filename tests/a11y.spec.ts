@@ -46,6 +46,36 @@ test('questions search, filters, maturity legend, and disclosure rows work', asy
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
 });
 
+test('question dossier report navigation does not lead to missing report pages', async ({ page }) => {
+  await page.goto('/questions/');
+  await page.getByLabel('Search topics').fill('equalization');
+  await expect(page.getByText(/1 question shown/i)).toBeVisible();
+  await page.getByRole('button', { name: /Expand summary for .*Equalization/i }).click();
+
+  for (const name of [/neutral report/i, /pro argument/i, /anti argument/i]) {
+    const link = page.getByRole('link', { name }).first();
+    await expect(link).toBeVisible();
+    const responsePromise = page.waitForResponse((response) => response.url().includes('/questions/equalization/') && response.status() < 400);
+    await link.click();
+    const response = await responsePromise;
+    expect(response.status()).toBeLessThan(400);
+    await expect(page.getByRole('heading', { level: 1 })).toContainText(/Equalization|equalization/i);
+    await page.goto('/questions/');
+    await page.getByLabel('Search topics').fill('equalization');
+    await page.getByRole('button', { name: /Expand summary for .*Equalization/i }).click();
+  }
+
+  await page.goto('/questions/equalization/');
+  for (const label of ['Neutral', 'Pro', 'Anti']) {
+    const responsePromise = page.waitForResponse((response) => response.url().includes(`/questions/equalization/${label.toLowerCase()}`) && response.status() < 400);
+    await page.getByRole('link', { name: label, exact: true }).click();
+    const response = await responsePromise;
+    expect(response.status()).toBeLessThan(400);
+    await expect(page.getByRole('heading', { level: 1 })).toContainText(/Equalization|equalization/i);
+    await page.goto('/questions/equalization/');
+  }
+});
+
 test('facts page works as a public briefing with timeline and source-backed certainty labels', async ({ page }) => {
   await page.goto('/facts/');
   await expect(page.getByRole('heading', { name: /Public briefing/i })).toBeVisible();

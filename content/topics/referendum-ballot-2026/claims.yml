@@ -1,0 +1,38 @@
+claims:
+- id: claim-referendum-ballot-2026-001
+  topic_slug: referendum-ballot-2026
+  text: Statements about the 2026 ballot should stay tied to current official sources. Timing, wording, eligibility, and procedural
+    status can change.
+  status: source_supported
+  source_ids:
+  - elections-ab-referendum
+  - alberta-referendum-2026
+  risk: high
+- id: claim-referendum-ballot-2026-002
+  topic_slug: referendum-ballot-2026
+  text: The strongest pro case is that a ballot offers voters a direct democratic signal about whether independence negotiations
+    should be pursued.
+  status: inference
+  source_ids: &id001
+  - elections-ab-referendum
+  - alberta-referendum-2026
+  - elections-ab-bill-23-2026-04-29
+  - elections-ab-current-petitions
+  - elections-ab-new-citizen-initiative-2026-01-02
+  - alberta-premiers-address-2026-02-19
+  - globalnews-court-pauses-verification-2026-04-12
+  risk: high
+- id: claim-referendum-ballot-2026-003
+  topic_slug: referendum-ballot-2026
+  text: The strongest caution is that ballot timing and wording can ask voters to decide before costs, legal constraints,
+    and negotiated consequences are clear.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-referendum-ballot-2026-004
+  topic_slug: referendum-ballot-2026
+  text: 'This topic remains uncertainty-labelled: High and time-sensitive; official pages, litigation, and ballot details
+    must be rechecked.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

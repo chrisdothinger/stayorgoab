@@ -1,0 +1,31 @@
+claims:
+- id: claim-case-studies-001
+  topic_slug: case-studies
+  text: Quebec, Scotland, Brexit, and other cases can illustrate risks and choices, but none is a direct prediction for Alberta.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-case-studies-002
+  topic_slug: case-studies
+  text: The strongest pro case uses case studies to show that democratic self-determination debates can force negotiations
+    and clarify political choices.
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-case-studies-003
+  topic_slug: case-studies
+  text: The strongest caution uses case studies to show transition complexity, divided mandates, economic uncertainty, and
+    long institutional consequences.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-case-studies-004
+  topic_slug: case-studies
+  text: 'This topic remains uncertainty-labelled: Low-to-medium for general lessons; high for direct prediction.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

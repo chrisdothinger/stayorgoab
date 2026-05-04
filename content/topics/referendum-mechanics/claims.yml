@@ -1,17 +1,38 @@
 claims:
-  - id: claim-referendum-001
-  - id: claim-referendum-002
-    text: "Elections Alberta lists 177,732 signatures required for the independence citizen initiative petition."
-    status: source_supported
-    source_ids: ["elections-ab-current-petitions"]
-    risk: high
-  - id: claim-referendum-003
-    text: "Elections Alberta lists May 2, 2026 as the signature collection end date for the independence petition."
-    status: source_supported
-    source_ids: ["elections-ab-current-petitions"]
-    risk: high
-  - id: claim-referendum-004
-    text: "Official referendum questions should be displayed from official sources, not inferred."
-    status: source_supported
-    source_ids: ["elections-ab-referendum"]
-    risk: high
+- id: claim-referendum-mechanics-001
+  topic_slug: referendum-mechanics
+  text: Petitions, referendum administration, ballot rules, and official timelines are procedural. They can open democratic
+    decision points but do not resolve legal independence outcomes by themselves.
+  status: source_supported
+  source_ids:
+  - elections-ab-new-citizen-initiative-2026-01-02
+  - elections-ab-current-petitions
+  risk: high
+- id: claim-referendum-mechanics-002
+  topic_slug: referendum-mechanics
+  text: 'The strongest pro case is procedural legitimacy: collecting signatures and winning a referendum could show democratic
+    demand for negotiations.'
+  status: inference
+  source_ids: &id001
+  - elections-ab-new-citizen-initiative-2026-01-02
+  - elections-ab-current-petitions
+  - elections-ab-initiative-process
+  - elections-ab-referendum
+  - alberta-referendum-2026
+  - elections-ab-bill-23-2026-04-29
+  - globalnews-court-pauses-verification-2026-04-12
+  risk: high
+- id: claim-referendum-mechanics-003
+  topic_slug: referendum-mechanics
+  text: The strongest caution is that process compliance is not the same as constitutional success; timing, wording, litigation,
+    and post-vote negotiations still matter.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-referendum-mechanics-004
+  topic_slug: referendum-mechanics
+  text: 'This topic remains uncertainty-labelled: Medium; process sources are strong, but dates, litigation, and official
+    pages are time-sensitive.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

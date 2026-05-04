@@ -1,0 +1,33 @@
+claims:
+- id: claim-borders-trade-001
+  topic_slug: borders-trade
+  text: Border and trade outcomes would depend on negotiations. Geography and mutual economic interest do not by themselves
+    guarantee frictionless trade.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-borders-trade-002
+  topic_slug: borders-trade
+  text: The strongest pro case is that Alberta and Canada would both have incentives to preserve commerce, labour mobility,
+    energy exports, and supply chains.
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - clarity-act
+  - alberta-budget-documents-2026
+  risk: high
+- id: claim-borders-trade-003
+  topic_slug: borders-trade
+  text: The strongest caution is that international borders can add customs, regulatory, labour-mobility, tariff, and market-access
+    uncertainty.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-borders-trade-004
+  topic_slug: borders-trade
+  text: 'This topic remains uncertainty-labelled: High; outcomes depend on Canada and other external partners.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

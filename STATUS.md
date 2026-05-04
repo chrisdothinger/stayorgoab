@@ -285,3 +285,35 @@ npm run typecheck             PASS
 npm run test:a11y             PASS, 36 tests
 npm run build                 PASS, 114 static pages
 ```
+
+## 2026-05-04T17:42:59Z — Questions Dossier Completion + Report Navigation Fix
+
+Completed in this package:
+
+- Held off on Sprints 8–10 and focused on spec-alignment prerequisites for the Questions/Topics surface.
+- Confirmed no `spec.md` or `sped.md` file currently exists in the repository; this package aligns against existing repo rules, agent registry, content validators, and public-audit/static-export posture until the spec file is added.
+- Used the repo-defined agent team roles (`source-steward`, `topic-writer`, `claim-citation`, `synthesis-auditor`) to plan source coverage, report structure, and risk checks before filling content.
+- Converted all 23 current Questions topics to `full_dossier` state with complete neutral, pro, and anti report files.
+- Added missing topic-level `sources.yml`, `claims.yml`, `audit-log.yml`, and `redebate-log.yml` files so each dossier has inspectable evidence, claims, internal provenance-check entries, and redebate-review entries.
+- Fixed Next dynamic route params for `/questions/[topicSlug]/neutral`, `/pro`, `/anti`, `/claims`, and `/sources` so static-export report links resolve instead of loading 404/error pages.
+- Added content-contract tests requiring every current topic to have neutral/pro/anti reports, source IDs, claims, review logs, redebate logs, and report sections for short answer, current source support, and uncertainty.
+- Added Playwright product coverage that opens the equalization dossier and verifies Neutral report, Pro report, and Anti report navigation returns HTTP <400 and lands on report pages.
+- Validated the built static export for internal link integrity across 2,370 internal links.
+- Ran independent blocker review; fixed the only finding by restoring `next-env.d.ts` to the build-generated `./.next/types/routes.d.ts` import instead of the dev-only route import.
+
+Validation evidence:
+
+```txt
+npm run test:content          PASS, 10 tests
+npm run validate:citations    PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets      PASS
+npm run validate:agents       PASS
+npm test                      PASS, 13 tests
+npm run lint                  PASS
+npm run typecheck             PASS
+npm run test:a11y             PASS, 38 tests
+npm run build                 PASS, 168 static pages
+GITHUB_PAGES=true npm run build PASS, 168 static pages
+static internal link check    PASS, 2,370 internal links
+```

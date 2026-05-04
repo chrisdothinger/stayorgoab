@@ -1,0 +1,33 @@
+claims:
+- id: claim-quebec-secession-reference-001
+  topic_slug: quebec-secession-reference
+  text: The Supreme Court rejected unilateral provincial secession while recognizing that a clear democratic expression for
+    secession would create a duty to negotiate within the constitutional order.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-quebec-secession-reference-002
+  topic_slug: quebec-secession-reference
+  text: 'The strongest pro case points to democratic legitimacy: a clear Alberta vote could not be ignored and would create
+    pressure for good-faith negotiations.'
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-quebec-secession-reference-003
+  topic_slug: quebec-secession-reference
+  text: 'The strongest pro-federation case points to constraint: the Reference does not let a province leave on its own or
+    dictate terms to Canada.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-quebec-secession-reference-004
+  topic_slug: quebec-secession-reference
+  text: 'This topic remains uncertainty-labelled: Medium; the core holding is sourceable, but Alberta-specific implications
+    remain contested.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

@@ -7,9 +7,10 @@ export function generateStaticParams() {
   return loadRepositoryContent().topics.map((topic) => ({ topicSlug: topic.slug }));
 }
 
-export default function TopicSourcesPage({ params }: { params: { topicSlug: string } }) {
+export default async function TopicSourcesPage({ params }: { params: Promise<{ topicSlug: string }> }) {
+  const { topicSlug } = await params;
   const content = loadRepositoryContent();
-  const topic = content.topics.find((item) => item.slug === params.topicSlug);
+  const topic = content.topics.find((item) => item.slug === topicSlug);
   if (!topic) notFound();
   const sourceIds = content.topicFiles[topic.slug].sourceIds;
   const sources = content.sources.filter((source) => sourceIds.includes(source.id));

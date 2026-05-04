@@ -1,1 +1,33 @@
-claims: []
+claims:
+- id: claim-borders-currency-citizenship-001
+  topic_slug: borders-currency-citizenship
+  text: Borders, currency, trade, and citizenship would not be automatic consequences of a referendum. They would depend on
+    negotiated arrangements and later policy design.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-borders-currency-citizenship-002
+  topic_slug: borders-currency-citizenship
+  text: 'The strongest pro case is policy choice: Alberta could seek open movement, practical continuity, and institutions
+    tailored to Alberta interests.'
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - clarity-act
+  - alberta-budget-documents-2026
+  risk: high
+- id: claim-borders-currency-citizenship-003
+  topic_slug: borders-currency-citizenship
+  text: The strongest caution is household and business uncertainty around banking, citizenship status, market access, border
+    administration, and continuity of rights.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-borders-currency-citizenship-004
+  topic_slug: borders-currency-citizenship
+  text: 'This topic remains uncertainty-labelled: High; these systems depend on counterparties and negotiated policy choices.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

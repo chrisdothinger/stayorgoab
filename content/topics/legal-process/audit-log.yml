@@ -1,7 +1,12 @@
 entries:
-  - id: audit-legal-2026-05-02
-    date: "2026-05-02"
-    agent: "Codex seed build"
-    summary: "Seed dossier drafted from SCC, Clarity Act, and Elections Alberta sources."
-    checks: ["source-support", "loaded-language", "high-risk-caution"]
-    result: pass
+- id: audit-legal-process-2026-05-04
+  date: '2026-05-04'
+  agent: StayOrGoAB public agent team
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
+    source records and uncertainty labels.
+  checks:
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - no-external-audit-wording
+  result: pass

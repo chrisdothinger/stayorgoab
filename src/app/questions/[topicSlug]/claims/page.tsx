@@ -6,9 +6,10 @@ export function generateStaticParams() {
   return loadRepositoryContent().topics.map((topic) => ({ topicSlug: topic.slug }));
 }
 
-export default function ClaimsPage({ params }: { params: { topicSlug: string } }) {
+export default async function ClaimsPage({ params }: { params: Promise<{ topicSlug: string }> }) {
+  const { topicSlug } = await params;
   const content = loadRepositoryContent();
-  const topic = content.topics.find((item) => item.slug === params.topicSlug);
+  const topic = content.topics.find((item) => item.slug === topicSlug);
   if (!topic) notFound();
   const claims = content.claims.filter((claim) => claim.topic_slug === topic.slug);
   return (

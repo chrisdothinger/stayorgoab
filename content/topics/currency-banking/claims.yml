@@ -1,0 +1,33 @@
+claims:
+- id: claim-currency-banking-001
+  topic_slug: currency-banking
+  text: Currency options could include Canadian-dollar use, a new currency, a currency board, or another arrangement, but
+    no option should be presented as automatic or cost-free.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-currency-banking-002
+  topic_slug: currency-banking
+  text: 'The strongest pro case is flexibility: Alberta could choose the monetary setup that best supports trade, investment,
+    and fiscal autonomy.'
+  status: inference
+  source_ids: &id001
+  - scc-secession-reference
+  - clarity-act
+  - alberta-budget-documents-2026
+  risk: high
+- id: claim-currency-banking-003
+  topic_slug: currency-banking
+  text: The strongest caution is uncertainty around lender confidence, central-bank access, deposit insurance, payments, regulation,
+    and financial-system continuity.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-currency-banking-004
+  topic_slug: currency-banking
+  text: 'This topic remains uncertainty-labelled: High; monetary and banking choices carry major financial assumptions.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

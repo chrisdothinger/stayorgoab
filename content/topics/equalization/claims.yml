@@ -1,0 +1,34 @@
+claims:
+- id: claim-equalization-001
+  topic_slug: equalization
+  text: Equalization claims need to distinguish program payments, federal taxes, federal transfers, and post-independence
+    fiscal arrangements.
+  status: source_supported
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  risk: high
+- id: claim-equalization-002
+  topic_slug: equalization
+  text: The strongest pro case is that independence could end Alberta participation in federal redistribution and let Alberta
+    redirect fiscal capacity to local priorities.
+  status: inference
+  source_ids: &id001
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - clarity-act
+  risk: high
+- id: claim-equalization-003
+  topic_slug: equalization
+  text: The strongest caution is that equalization is only one part of fiscal federalism; independence could also create new
+    costs, lost transfers, or negotiated liabilities.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-equalization-004
+  topic_slug: equalization
+  text: 'This topic remains uncertainty-labelled: Medium-high; program mechanics are sourceable, but net fiscal effects require
+    broader modelling.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

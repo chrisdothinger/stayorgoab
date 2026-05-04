@@ -1,7 +1,12 @@
 entries:
-  - id: audit-referendum-2026-05-02
-    date: "2026-05-02"
-    agent: "Codex seed build"
-    summary: "Seed referendum mechanics dossier drafted from Elections Alberta process and referendum pages."
-    checks: ["source-support", "official-status-caution"]
-    result: pass
+- id: audit-referendum-mechanics-2026-05-04
+  date: '2026-05-04'
+  agent: StayOrGoAB public agent team
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
+    source records and uncertainty labels.
+  checks:
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - no-external-audit-wording
+  result: pass

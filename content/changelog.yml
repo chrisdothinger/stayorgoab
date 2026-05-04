@@ -1,4 +1,14 @@
 entries:
+  - id: change-2026-05-04-home-questions-ux
+    date: "2026-05-04"
+    type: ux
+    summary: "Upgraded homepage and Questions UX with civic search, trust inventory, richer filters, maturity legend, and clearer expandable rows."
+    files_changed:
+      - src/app/page.tsx
+      - src/components/TopicSearch.tsx
+      - src/app/globals.css
+      - tests/a11y.spec.ts
+      - STATUS.md
   - id: change-2026-05-04-ops-ux-validation
     date: "2026-05-04"
     type: validation

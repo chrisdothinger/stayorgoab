@@ -1,38 +1,75 @@
 'use client';
 
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { TopicMeta } from '@/lib/types';
 
 const allValue = 'all';
+const recencyOptions = [
+  { value: allValue, label: 'Any audit state' },
+  { value: 'audited', label: 'Audited' },
+  { value: 'pending', label: 'Pending audit' }
+];
+
+function formatState(state: string) {
+  return state.replaceAll('_', ' ');
+}
+
+function pluralize(count: number, singular: string, plural = `${singular}s`) {
+  return `${count} ${count === 1 ? singular : plural}`;
+}
 
 export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState(allValue);
   const [state, setState] = useState(allValue);
   const [sensitivity, setSensitivity] = useState(allValue);
+  const [auditRecency, setAuditRecency] = useState(allValue);
   const [expanded, setExpanded] = useState<string | null>(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const initialQuery = params.get('q');
+    if (initialQuery) setQuery(initialQuery);
+  }, []);
 
   const categories = Array.from(new Set(topics.map((topic) => topic.category)));
   const states = Array.from(new Set(topics.map((topic) => topic.state)));
   const sensitivities = Array.from(new Set(topics.map((topic) => topic.time_sensitivity)));
+  const stateCounts = states.map((item) => ({ state: item, count: topics.filter((topic) => topic.state === item).length }));
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return topics.filter((topic) => {
       const text = [topic.title, topic.plain_question, topic.category, topic.summary, ...topic.keywords].join(' ').toLowerCase();
+      const auditMatches =
+        auditRecency === allValue ||
+        (auditRecency === 'audited' && Boolean(topic.last_audited_at)) ||
+        (auditRecency === 'pending' && !topic.last_audited_at);
       return (
         (!normalized || text.includes(normalized)) &&
         (category === allValue || topic.category === category) &&
         (state === allValue || topic.state === state) &&
-        (sensitivity === allValue || topic.time_sensitivity === sensitivity)
+        (sensitivity === allValue || topic.time_sensitivity === sensitivity) &&
+        auditMatches
       );
     });
-  }, [category, query, sensitivity, state, topics]);
+  }, [auditRecency, category, query, sensitivity, state, topics]);
+
+  const hasActiveFilters = query.trim() || category !== allValue || state !== allValue || sensitivity !== allValue || auditRecency !== allValue;
+
+  function clearFilters() {
+    setQuery('');
+    setCategory(allValue);
+    setState(allValue);
+    setSensitivity(allValue);
+    setAuditRecency(allValue);
+    setExpanded(null);
+  }
 
   return (
     <section aria-label="Topic search">
-      <div className="filter-panel">
+      <div className="filter-panel filter-panel-wide">
         <label className="mono">
           <span className="section-label">Search topics</span>
           <input aria-label="Search topics" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="CPP, treaty, referendum..." />
@@ -45,10 +82,10 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
           </select>
         </label>
         <label className="mono">
-          <span className="section-label">State</span>
+          <span className="section-label">Dossier state</span>
           <select value={state} onChange={(event) => setState(event.target.value)}>
             <option value={allValue}>All states</option>
-            {states.map((item) => <option key={item}>{item}</option>)}
+            {states.map((item) => <option key={item}>{formatState(item)}</option>)}
           </select>
         </label>
         <label className="mono">
@@ -58,16 +95,40 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
             {sensitivities.map((item) => <option key={item}>{item}</option>)}
           </select>
         </label>
+        <label className="mono">
+          <span className="section-label">Last audited</span>
+          <select value={auditRecency} onChange={(event) => setAuditRecency(event.target.value)}>
+            {recencyOptions.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}
+          </select>
+        </label>
       </div>
 
-      <nav className="category-nav mono" aria-label="Question categories">
-        {categories.map((item) => (
-          <button key={item} type="button" onClick={() => setCategory(item)}>
-            {item} ({topics.filter((topic) => topic.category === item).length})
-          </button>
+      <div className="index-toolbar mono" aria-live="polite">
+        <strong>{pluralize(filtered.length, 'question')} shown</strong>
+        <span>{hasActiveFilters ? 'Filtered view' : 'All topics'}</span>
+        {hasActiveFilters ? <button type="button" onClick={clearFilters}>Clear filters</button> : null}
+      </div>
+
+      <div className="maturity-legend" aria-label="Maturity legend">
+        <span className="section-label mono">Maturity legend</span>
+        {stateCounts.map((item) => (
+          <span className="legend-item mono" key={item.state}>
+            <strong>{formatState(item.state)}</strong> · {item.count}
+          </span>
         ))}
-        <button type="button" onClick={() => setCategory(allValue)}>All ({topics.length})</button>
-      </nav>
+      </div>
+
+      <details className="category-disclosure" open>
+        <summary className="mono">Browse categories</summary>
+        <nav className="category-nav mono" aria-label="Question categories">
+          <button className={category === allValue ? 'active-filter' : undefined} type="button" onClick={() => setCategory(allValue)}>All ({topics.length})</button>
+          {categories.map((item) => (
+            <button className={category === item ? 'active-filter' : undefined} key={item} type="button" onClick={() => setCategory(item)}>
+              {item} ({topics.filter((topic) => topic.category === item).length})
+            </button>
+          ))}
+        </nav>
+      </details>
 
       <div className="link-list" aria-live="polite">
         {filtered.map((topic, index) => {
@@ -77,14 +138,14 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
               <span className="mono row-meta">{String(index + 1).padStart(3, '0')}</span>
               <div>
                 <Link href={`/questions/${topic.slug}`}>{topic.title}</Link>
-                <div className="mono row-meta">{topic.category} · {topic.source_count} sources · {topic.claim_count} claims</div>
+                <div className="mono row-meta">{topic.category} · {topic.source_count} sources · {topic.claim_count} claims · {topic.last_audited_at ? `audited ${topic.last_audited_at}` : 'audit pending'}</div>
               </div>
-              <span className="mono row-meta state">{topic.state.replaceAll('_', ' ')}</span>
+              <span className="mono row-meta state">{formatState(topic.state)}</span>
               <button
                 className="disclosure-button"
                 type="button"
                 aria-expanded={isExpanded}
-                aria-label={`${isExpanded ? 'Collapse' : 'Expand'} ${topic.category}: ${topic.title}`}
+                aria-label={`${isExpanded ? 'Collapse' : 'Expand'} summary for ${topic.title}`}
                 onClick={() => setExpanded(isExpanded ? null : topic.slug)}
               >
                 {isExpanded ? '-' : '+'}
@@ -93,6 +154,13 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
                 <div className="expanded-row">
                   <strong>Short answer:</strong> {topic.summary}
                   <div className="source-trail mono">
+                    <span>State: {formatState(topic.state)}</span>
+                    <span>Last audited: {topic.last_audited_at ?? 'pending'}</span>
+                    <span>{topic.source_count} sources</span>
+                    <span>{topic.claim_count} claims</span>
+                  </div>
+                  <div className="source-trail mono">
+                    <Link href={`/questions/${topic.slug}`}>open dossier</Link>
                     <Link href={`/questions/${topic.slug}/neutral`}>neutral report</Link>
                     <Link href={`/questions/${topic.slug}/pro`}>pro argument</Link>
                     <Link href={`/questions/${topic.slug}/anti`}>anti argument</Link>
@@ -104,6 +172,12 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
             </article>
           );
         })}
+        {filtered.length === 0 ? (
+          <div className="empty-state">
+            <strong>No questions match those filters.</strong>
+            <p>Try CPP, referendum, treaty, currency, border, equalization, or clear majority.</p>
+          </div>
+        ) : null}
       </div>
     </section>
   );

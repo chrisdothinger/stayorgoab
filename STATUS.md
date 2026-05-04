@@ -117,3 +117,26 @@ Completed in this package:
 - Enriched `/facts`, `/sources`, `/method`, `/agents`, and `/audit` with production-oriented summary/readout sections.
 
 Validation evidence for this package is recorded after the final verification run in the work log / commit output.
+
+## 2026-05-04T12:47:37Z — Sprint 1 Home + Questions UX/UI
+
+Completed in this package:
+
+- Upgraded the homepage first viewport with clearer primary paths, a civic-question search box, current-status source links, latest public-audit date, and a labelled public research inventory strip.
+- Improved `/questions` with result counts, clear-filter behavior, dossier-state/audit-recency filters, a maturity legend, active category controls, and clearer expandable row affordances.
+- Tightened public wording by changing awkward `audited pending` row metadata to `audit pending`.
+- Added Playwright regression coverage for homepage trust/search signals and the upgraded Questions search/filter/disclosure flow.
+
+Validation evidence:
+
+```txt
+npm run test:content          PASS, 8 tests
+npm run validate:citations    PASS
+npm run validate:public-audit PASS, regenerates audit artifacts first
+npm run validate:secrets      PASS
+npm test                      PASS, 11 tests
+npm run lint                  PASS
+npm run typecheck             PASS
+npm run test:a11y             PASS, 22 tests
+npm run build                 PASS, 114 static pages
+```

@@ -1,4 +1,14 @@
-export type PublicationState = 'stub' | 'seed_overview' | 'full_dossier' | 'withhold_pending_support';
+export type PublicationState =
+  | 'stub'
+  | 'seed_overview'
+  | 'source_collection'
+  | 'partial_dossier'
+  | 'full_dossier'
+  | 'needs_audit'
+  | 'needs_redebate'
+  | 'withheld_pending_support'
+  | 'withhold_pending_support'
+  | 'archived';
 export type ClaimStatus = 'source_supported' | 'inference' | 'unsupported' | 'disputed';
 
 export interface TopicMeta {
@@ -18,12 +28,23 @@ export interface TopicMeta {
 
 export interface SourceRecord {
   id: string;
+  slug?: string;
   title: string;
   publisher: string;
+  author?: string | null;
   url: string;
+  published_at?: string | null;
   source_type: 'official' | 'court' | 'advocacy' | 'academic' | 'media' | 'other';
   accessed_at: string;
+  stance?: string | null;
+  reliability_category?: string | null;
   summary: string;
+  how_used?: string | null;
+  related_topic_slugs?: string[];
+  archive_url?: string | null;
+  content_hash?: string | null;
+  last_checked_at?: string | null;
+  status?: string | null;
 }
 
 export interface ClaimRecord {

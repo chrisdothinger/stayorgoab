@@ -1,71 +1,289 @@
 sources:
+  - id: elections-ab-new-citizen-initiative-2026-01-02
+    slug: elections-ab-new-citizen-initiative-2026-01-02
+    title: "New Citizen Initiative Petition Issued"
+    publisher: "Elections Alberta"
+    author: "Elections Alberta"
+    url: "https://www.elections.ab.ca/resources/media/news-releases/new-citizen-initiative-petition-issued-2/"
+    published_at: "2026-01-02"
+    accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Elections Alberta release announcing issuance of a citizen initiative petition related to Alberta independence."
+    how_used: "Seed source for referendum mechanics and current-status tracking."
+    related_topic_slugs: ["referendum-mechanics", "petition-vs-referendum-vs-negotiations", "referendum-ballot-2026"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: elections-ab-current-petitions
+    slug: elections-ab-current-petitions
     title: "Current Citizen Initiative Petitions"
     publisher: "Elections Alberta"
+    author: "Elections Alberta"
     url: "https://www.elections.ab.ca/recall-initiative/initiative/current-initiative-petitions/"
-    source_type: official
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
     summary: "Lists active citizen initiative petitions, including A Referendum Relating to Alberta Independence, signature threshold, and collection dates."
+    how_used: "Current-status and referendum-mechanics source."
+    related_topic_slugs: ["referendum-mechanics", "petition-vs-referendum-vs-negotiations"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: elections-ab-initiative-process
+    slug: elections-ab-initiative-process
     title: "Citizen Initiative Process"
     publisher: "Elections Alberta"
+    author: "Elections Alberta"
     url: "https://www.elections.ab.ca/recall-initiative/initiative/initiative-process/"
-    source_type: official
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
     summary: "Explains notice, application, petition issuance, and requirements for citizen initiative petitions."
+    how_used: "Explains petition process mechanics."
+    related_topic_slugs: ["referendum-mechanics", "petition-vs-referendum-vs-negotiations"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: elections-ab-referendum
+    slug: elections-ab-referendum
     title: "Referendum"
     publisher: "Elections Alberta"
+    author: "Elections Alberta"
     url: "https://www.elections.ab.ca/elections/referendum/"
-    source_type: official
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
     summary: "Explains referendums under Alberta's Referendum Act and notes a referendum set for October 19, 2026."
+    how_used: "Seed source for referendum timing and process."
+    related_topic_slugs: ["referendum-mechanics", "referendum-ballot-2026"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
+  - id: alberta-referendum-2026
+    slug: alberta-referendum-2026
+    title: "2026 Alberta Referendum"
+    publisher: "Government of Alberta"
+    author: "Government of Alberta"
+    url: "https://albertareferendum2026.ca/"
+    published_at: null
+    accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Alberta referendum website for the 2026 referendum context."
+    how_used: "Current-status and referendum-ballot seed source."
+    related_topic_slugs: ["referendum-ballot-2026", "referendum-mechanics"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
+  - id: alberta-premiers-address-2026-02-19
+    slug: alberta-premiers-address-2026-02-19
+    title: "Premier's Address to the Province"
+    publisher: "Government of Alberta"
+    author: "Government of Alberta"
+    url: "https://www.alberta.ca/article-premiers-address-to-the-province"
+    published_at: "2026-02-19"
+    accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Alberta address relevant to referendum context and provincial positioning."
+    how_used: "Seed source for current-status and political-context tracking."
+    related_topic_slugs: ["referendum-ballot-2026", "economy-overall"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: clarity-act
+    slug: clarity-act
     title: "Clarity Act"
     publisher: "Justice Laws Website, Government of Canada"
+    author: "Parliament of Canada"
     url: "https://laws-lois.justice.gc.ca/eng/acts/C-31.8/FullText.html"
-    source_type: official
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_legal
     summary: "Federal law setting clarity requirements before the Government of Canada enters negotiations on provincial secession."
+    how_used: "Legal-process and clarity topic source."
+    related_topic_slugs: ["legal-process", "clarity-act", "clear-question-majority"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: scc-secession-reference
+    slug: scc-secession-reference
     title: "Reference re Secession of Quebec"
     publisher: "Supreme Court of Canada"
+    author: "Supreme Court of Canada"
     url: "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/1643/index.do"
-    source_type: court
+    published_at: "1998-08-20"
     accessed_at: "2026-05-02"
+    source_type: court
+    stance: neutral
+    reliability_category: primary_legal
     summary: "Supreme Court reference on unilateral secession, democratic expression, constitutional negotiations, and Aboriginal interests."
+    how_used: "Core legal baseline for secession and duty-to-negotiate claims."
+    related_topic_slugs: ["legal-process", "quebec-secession-reference", "indigenous-rights-treaties", "indigenous-treaties"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
+  - id: elections-ab-bill-23-2026-04-29
+    slug: elections-ab-bill-23-2026-04-29
+    title: "Amendments to Provincial Electoral Legislation Now in Force"
+    publisher: "Elections Alberta"
+    author: "Elections Alberta"
+    url: "https://www.elections.ab.ca/resources/media/news-releases/bill-23/"
+    published_at: "2026-04-29"
+    accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Elections Alberta release about amendments to provincial electoral legislation."
+    how_used: "Seed source for process changes and current referendum mechanics."
+    related_topic_slugs: ["referendum-mechanics", "referendum-ballot-2026"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
+  - id: acfn-stay-pending-court-challenge-2026-04-11
+    slug: acfn-stay-pending-court-challenge-2026-04-11
+    title: "Athabasca Chipewyan First Nation welcomes stay pending court challenge"
+    publisher: "CNW / Athabasca Chipewyan First Nation"
+    author: "Athabasca Chipewyan First Nation"
+    url: "https://www.newswire.ca/news-releases/athabasca-chipewyan-first-nation-welcomes-a-stay-in-alberta-separation-referendum-pending-the-decision-of-their-court-challenge-894958173.html"
+    published_at: "2026-04-11"
+    accessed_at: "2026-05-02"
+    source_type: advocacy
+    stance: anti_independence_or_rights_concern
+    reliability_category: primary_stakeholder_statement
+    summary: "First Nation statement about a stay related to an Alberta separation referendum court challenge."
+    how_used: "Seed source for Indigenous rights, treaties, litigation, and high-risk current-status tracking."
+    related_topic_slugs: ["indigenous-rights-treaties", "indigenous-treaties", "referendum-mechanics"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
+  - id: globalnews-court-pauses-verification-2026-04-12
+    slug: globalnews-court-pauses-verification-2026-04-12
+    title: "Judge orders temporary pause on Alberta separation referendum petition process"
+    publisher: "Global News / Canadian Press"
+    author: "The Canadian Press"
+    url: "https://globalnews.ca/news/11774421/judge-orders-temporary-pause-on-alberta-separation-referendum-petition-process/"
+    published_at: "2026-04-12"
+    accessed_at: "2026-05-02"
+    source_type: media
+    stance: neutral
+    reliability_category: news_report
+    summary: "News report describing a court pause on verification of an Alberta separation petition."
+    how_used: "Secondary source for current-status and court-process tracking; official/court records should be preferred when available."
+    related_topic_slugs: ["referendum-mechanics", "referendum-ballot-2026", "indigenous-treaties"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: alberta-pensions
+    slug: alberta-pensions
     title: "Pensions"
     publisher: "Government of Alberta"
+    author: "Government of Alberta"
     url: "https://www.alberta.ca/pensions"
-    source_type: official
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
     summary: "Alberta government pension information and link to Alberta Pension Plan report material."
+    how_used: "Seed source for CPP/pension topic."
+    related_topic_slugs: ["cpp-pensions"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: osfi-chief-actuary-cpp
+    slug: osfi-chief-actuary-cpp
     title: "Chief Actuary Position Paper - Subsection 113(2) of the Canada Pension Plan"
     publisher: "Office of the Superintendent of Financial Institutions"
+    author: "Office of the Chief Actuary"
     url: "https://www.osfi-bsif.gc.ca/en/oca/oca-factsheets-other-reports/chief-actuary-position-paper-subsection-1132-canada-pension-plan"
-    source_type: official
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
     summary: "Chief Actuary position on CPP withdrawal transfer calculation under subsection 113(2)."
+    how_used: "Seed source for CPP withdrawal calculation claims."
+    related_topic_slugs: ["cpp-pensions"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: alberta-budget-documents-2026
+    slug: alberta-budget-documents-2026
     title: "Budget documents"
     publisher: "Government of Alberta"
+    author: "Government of Alberta"
     url: "https://www.alberta.ca/budget-documents"
-    source_type: official
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
     summary: "Budget 2026 documents, fiscal plan, revenue, expense, capital plan, and related tables."
+    how_used: "Seed source for fiscal and economic baseline."
+    related_topic_slugs: ["economy-fiscal", "economy-overall", "federal-debt-assets", "public-services"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: alberta-budget-highlights-2026
+    slug: alberta-budget-highlights-2026
     title: "Budget highlights"
     publisher: "Government of Alberta"
+    author: "Government of Alberta"
     url: "https://www.alberta.ca/budget-highlights"
-    source_type: official
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
     summary: "Public-facing Budget 2026 highlights."
+    how_used: "Public-facing fiscal baseline source."
+    related_topic_slugs: ["economy-fiscal", "economy-overall", "public-services"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active
   - id: first-nations-stand-with-treaties
+    slug: first-nations-stand-with-treaties
     title: "Defend the Treaties"
     publisher: "Stand With First Nations"
+    author: "Stand With First Nations"
     url: "https://www.standwithfirstnations.ca/"
-    source_type: advocacy
+    published_at: null
     accessed_at: "2026-05-02"
+    source_type: advocacy
+    stance: anti_independence_or_rights_concern
+    reliability_category: stakeholder_advocacy
     summary: "First Nations advocacy site describing treaty-rights concerns and litigation related to Alberta separation."
+    how_used: "Stakeholder/advocacy source for Indigenous rights and treaties topic; requires corroboration for factual claims."
+    related_topic_slugs: ["indigenous-rights-treaties", "indigenous-treaties"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-02"
+    status: active

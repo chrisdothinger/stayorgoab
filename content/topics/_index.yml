@@ -71,3 +71,207 @@ topics:
     last_debated_at: null
     source_count: 0
     claim_count: 0
+  - slug: petition-vs-referendum-vs-negotiations
+    title: "Petition vs referendum vs negotiations"
+    plain_question: "What is the difference between a petition, a referendum, and negotiations?"
+    category: "Referendum mechanics"
+    state: stub
+    time_sensitivity: high
+    keywords: ["petition", "referendum", "negotiations", "citizen initiative"]
+    summary: "These are separate steps: a petition can trigger process, a referendum can express a democratic result, and negotiations would be a later constitutional/political stage."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: clarity-act
+    title: "The Clarity Act"
+    plain_question: "How would the federal Clarity Act affect an Alberta independence referendum?"
+    category: "Negotiations and constitutional law"
+    state: stub
+    time_sensitivity: high
+    keywords: ["Clarity Act", "House of Commons", "clear question", "clear majority"]
+    summary: "The Clarity Act sets federal conditions before Canada enters secession negotiations, but Alberta-specific effects require careful legal sourcing."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: quebec-secession-reference
+    title: "Quebec Secession Reference"
+    plain_question: "What did the Supreme Court say about unilateral secession?"
+    category: "Legal process"
+    state: stub
+    time_sensitivity: high
+    keywords: ["Supreme Court", "Secession Reference", "unilateral secession", "constitutional principles"]
+    summary: "The Supreme Court rejected unilateral provincial secession and described when a duty to negotiate may arise."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: clear-question-majority
+    title: "Clear question and clear majority"
+    plain_question: "Who decides whether a referendum question and result are clear enough?"
+    category: "Negotiations and constitutional law"
+    state: stub
+    time_sensitivity: high
+    keywords: ["clear question", "clear majority", "referendum threshold", "House of Commons"]
+    summary: "The meaning of a clear question and clear majority is politically and legally consequential, not a simple fixed percentage in the current sparse record."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: referendum-ballot-2026
+    title: "2026 referendum ballot"
+    plain_question: "What is known about the 2026 referendum ballot and timing?"
+    category: "Current status"
+    state: stub
+    time_sensitivity: high
+    keywords: ["2026 referendum", "ballot", "October 19 2026", "Elections Alberta"]
+    summary: "Official referendum timing and ballot details are time-sensitive and must be checked against current official sources before being stated as final."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: economy-overall
+    title: "Overall economic outlook"
+    plain_question: "Would Alberta independence make the economy stronger or weaker overall?"
+    category: "Economy and fiscal policy"
+    state: stub
+    time_sensitivity: high
+    keywords: ["economy", "GDP", "trade", "investment", "fiscal policy"]
+    summary: "The overall economic effect depends on assumptions about trade, currency, debt, assets, taxation, investment, and negotiated outcomes."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: equalization
+    title: "Equalization"
+    plain_question: "What would happen to equalization and federal transfers?"
+    category: "Taxes, debt, and public services"
+    state: stub
+    time_sensitivity: medium
+    keywords: ["equalization", "federal transfers", "fiscal federalism"]
+    summary: "Equalization claims require distinguishing program mechanics, Alberta contributions, federal taxes, and post-independence negotiation assumptions."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: federal-debt-assets
+    title: "Federal debt and assets"
+    plain_question: "Would Alberta take on federal debt or receive federal assets?"
+    category: "Taxes, debt, and public services"
+    state: stub
+    time_sensitivity: high
+    keywords: ["federal debt", "assets", "liabilities", "negotiations"]
+    summary: "Debt and asset allocation would likely be negotiated and cannot be reduced to a single confirmed number from the sparse record."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: indigenous-treaties
+    title: "Indigenous treaties and consent"
+    plain_question: "How would Treaty rights and Indigenous consent affect independence?"
+    category: "Indigenous rights, treaties, land, and consultation"
+    state: stub
+    time_sensitivity: high
+    keywords: ["treaties", "Indigenous consent", "section 35", "consultation"]
+    summary: "Treaty rights, section 35 rights, land, and consultation issues are high-risk and require careful source-backed treatment."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: military-security
+    title: "Military and security"
+    plain_question: "What would happen to military, policing, and security arrangements?"
+    category: "Borders, trade, currency, and citizenship"
+    state: stub
+    time_sensitivity: medium
+    keywords: ["military", "security", "policing", "defence"]
+    summary: "Military and security arrangements would depend on policy choices and negotiations; the sparse topic should not imply settled institutions."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: currency-banking
+    title: "Currency and banking"
+    plain_question: "What currency would Alberta use and how would banking work?"
+    category: "Borders, trade, currency, and citizenship"
+    state: stub
+    time_sensitivity: high
+    keywords: ["currency", "banking", "central bank", "Canadian dollar"]
+    summary: "Currency options are policy choices with tradeoffs; no option should be presented as automatic in sparse content."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: borders-trade
+    title: "Borders and trade"
+    plain_question: "Would there be borders, tariffs, or trade disruption?"
+    category: "Borders, trade, currency, and citizenship"
+    state: stub
+    time_sensitivity: high
+    keywords: ["border", "trade", "tariffs", "customs"]
+    summary: "Border and trade outcomes depend on negotiations with Canada and other trading partners."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: public-services
+    title: "Public services"
+    plain_question: "What happens to health care, education, and public services?"
+    category: "Taxes, debt, and public services"
+    state: stub
+    time_sensitivity: high
+    keywords: ["health care", "education", "public services", "programs"]
+    summary: "Public-service continuity depends on fiscal capacity, staffing, legislation, and transition planning; sparse claims must avoid certainty."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: energy-environment
+    title: "Energy and environment"
+    plain_question: "How would independence affect energy policy and environmental regulation?"
+    category: "Economy and fiscal policy"
+    state: stub
+    time_sensitivity: medium
+    keywords: ["energy", "environment", "oil and gas", "regulation"]
+    summary: "Energy and environmental outcomes depend on future policy, markets, federal-provincial arrangements, and international obligations."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: bureaucracy-governance
+    title: "Bureaucracy and governance"
+    plain_question: "What new institutions would Alberta need to govern independently?"
+    category: "Legal process"
+    state: stub
+    time_sensitivity: medium
+    keywords: ["governance", "bureaucracy", "institutions", "civil service"]
+    summary: "An independent state would need institutional capacity; costs and timing are not settled by current sparse records."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: international-recognition
+    title: "International recognition"
+    plain_question: "Would other countries recognize an independent Alberta?"
+    category: "Negotiations and constitutional law"
+    state: stub
+    time_sensitivity: medium
+    keywords: ["international recognition", "diplomacy", "treaties", "United Nations"]
+    summary: "International recognition would be influenced by legality, negotiations, political support, and diplomatic choices."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0
+  - slug: case-studies
+    title: "Case studies"
+    plain_question: "What can Alberta learn from Quebec, Brexit, Scotland, or other independence movements?"
+    category: "Source updates and audit changes"
+    state: stub
+    time_sensitivity: low
+    keywords: ["Quebec", "Brexit", "Scotland", "case studies"]
+    summary: "Case studies can clarify tradeoffs but must not be treated as direct predictions for Alberta."
+    last_audited_at: null
+    last_debated_at: null
+    source_count: 0
+    claim_count: 0

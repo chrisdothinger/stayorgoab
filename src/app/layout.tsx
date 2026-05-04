@@ -14,7 +14,8 @@ const navItems = [
   ['Facts', '/facts'],
   ['Questions', '/questions'],
   ['Sources', '/sources'],
-  ['Method', '/method']
+  ['Method', '/method'],
+  ['Ops', '/ops']
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -37,7 +38,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <footer className="footer mono">
             <span>Independent non-partisan research project. Not legal or financial advice.</span>
             <span>
-              <Link href="/disclaimer">Disclaimer</Link> · <Link href="/audit">Audit</Link> · <Link href="/agents">Agents</Link>
+              <Link href="/disclaimer">Disclaimer</Link> · <Link href="/audit">Audit</Link> · <Link href="/agents">Agents</Link> · <Link href="/ops">Ops</Link>
             </span>
           </footer>
         </div>

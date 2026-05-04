@@ -14,7 +14,11 @@ const PUBLICATION_STATES = new Set<PublicationState>([
   'archived'
 ]);
 const FULL_DOSSIER_STATES = new Set<PublicationState>(['full_dossier']);
+const SOURCE_TYPES = new Set(['official', 'court', 'advocacy', 'academic', 'media', 'other']);
+const SOURCE_STANCES = new Set(['neutral', 'pro_independence', 'anti_independence', 'anti_independence_or_rights_concern', 'mixed', 'other']);
+const SOURCE_STATUSES = new Set(['active', 'archived', 'superseded', 'broken', 'needs_recheck']);
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function findForbiddenFields(value: unknown, found = new Set<string>()): Set<string> {
   if (Array.isArray(value)) {
@@ -32,6 +36,8 @@ export function validateContentModel(content: RepositoryContent): ValidationResu
   const errors: string[] = [];
   const topicSlugs = new Set<string>();
   const sourceIds = new Set(content.sources.map((source) => source.id));
+  const seenSourceIds = new Set<string>();
+  const seenSourceSlugs = new Set<string>();
   const claimIds = new Set<string>();
 
   for (const forbidden of findForbiddenFields(content.rawRecords)) {
@@ -70,6 +76,39 @@ export function validateContentModel(content: RepositoryContent): ValidationResu
     for (const sourceId of files?.sourceIds ?? []) {
       if (!sourceIds.has(sourceId)) errors.push(`Topic ${topic.slug} references undefined source ${sourceId}.`);
     }
+  }
+
+  for (const source of content.sources) {
+    const sourceLabel = source.id || source.slug || source.title || 'unknown-source';
+    if (seenSourceIds.has(source.id)) errors.push(`Duplicate source id: ${source.id}.`);
+    seenSourceIds.add(source.id);
+    if (!source.id || !SLUG.test(source.id)) errors.push(`Source ${sourceLabel} has malformed id ${source.id}.`);
+    if (source.slug) {
+      if (seenSourceSlugs.has(source.slug)) errors.push(`Duplicate source slug: ${source.slug}.`);
+      seenSourceSlugs.add(source.slug);
+      if (!SLUG.test(source.slug)) errors.push(`Source ${sourceLabel} has malformed slug ${source.slug}.`);
+    }
+    try {
+      new URL(source.url);
+    } catch {
+      errors.push(`Source ${sourceLabel} has invalid URL ${source.url}.`);
+    }
+    for (const field of ['published_at', 'accessed_at', 'last_checked_at'] as const) {
+      const value = source[field];
+      if (value !== null && value !== undefined && !ISO_DATE.test(value)) {
+        errors.push(`Source ${sourceLabel} has malformed ${field} date ${value}.`);
+      }
+    }
+    if (!SOURCE_TYPES.has(source.source_type)) errors.push(`Source ${sourceLabel} has unsupported source_type ${source.source_type}.`);
+    if (source.stance && !SOURCE_STANCES.has(source.stance)) errors.push(`Source ${sourceLabel} has unsupported stance ${source.stance}.`);
+    if (!source.reliability_category) errors.push(`Source ${sourceLabel} is missing reliability_category.`);
+    if (!source.summary) errors.push(`Source ${sourceLabel} is missing summary.`);
+    if (!source.how_used) errors.push(`Source ${sourceLabel} is missing how_used.`);
+    if (!source.related_topic_slugs?.length) errors.push(`Source ${sourceLabel} is missing related_topic_slugs.`);
+    for (const topicSlug of source.related_topic_slugs ?? []) {
+      if (!topicSlugs.has(topicSlug)) errors.push(`Source ${sourceLabel} references undefined topic ${topicSlug}.`);
+    }
+    if (source.status && !SOURCE_STATUSES.has(source.status)) errors.push(`Source ${sourceLabel} has unsupported status ${source.status}.`);
   }
 
   for (const claim of content.claims) {

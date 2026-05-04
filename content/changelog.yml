@@ -1,4 +1,21 @@
 entries:
+  - id: change-2026-05-04-ops-ux-validation
+    date: "2026-05-04"
+    type: validation
+    summary: "Added source-record validation plus public ops observability and richer Facts/Sources/Method/Agents/Audit pages."
+    files_changed:
+      - src/lib/validation.ts
+      - src/tests/content-validation.test.ts
+      - src/lib/ops.ts
+      - src/app/ops/page.tsx
+      - src/app/facts/page.tsx
+      - src/app/sources/page.tsx
+      - src/app/method/page.tsx
+      - src/app/agents/page.tsx
+      - src/app/audit/page.tsx
+      - src/app/layout.tsx
+      - src/app/globals.css
+      - STATUS.md
   - id: change-2026-05-04-validation-hardening
     date: "2026-05-04"
     type: validation

@@ -133,4 +133,41 @@ describe('content validation', () => {
     expect(result.errors).toContain('High-risk claim claim-bad-high-risk-unsupported cannot be marked unsupported for publication.');
     expect(result.errors).toContain('Claim claim-bad-high-risk-bogus-source references undefined source not-a-source.');
   });
+
+  it('rejects malformed or under-modeled source records', () => {
+    const content = loadRepositoryContent();
+    const [firstSource] = content.sources;
+    const result = validateContentModel({
+      ...content,
+      sources: [
+        ...content.sources,
+        {
+          ...firstSource,
+          id: firstSource.id,
+          slug: 'bad slug',
+          url: 'not-a-url',
+          accessed_at: 'May 2',
+          last_checked_at: 'recently',
+          source_type: 'blog' as never,
+          stance: 'maybe' as never,
+          reliability_category: '',
+          summary: '',
+          how_used: '',
+          related_topic_slugs: ['not-a-topic'],
+          status: 'pending human review'
+        }
+      ]
+    });
+
+    expect(result.ok).toBe(false);
+    expect(result.errors).toContain(`Duplicate source id: ${firstSource.id}.`);
+    expect(result.errors).toContain('Source elections-ab-new-citizen-initiative-2026-01-02 has malformed slug bad slug.');
+    expect(result.errors).toContain('Source elections-ab-new-citizen-initiative-2026-01-02 has invalid URL not-a-url.');
+    expect(result.errors).toContain('Source elections-ab-new-citizen-initiative-2026-01-02 has malformed accessed_at date May 2.');
+    expect(result.errors).toContain('Source elections-ab-new-citizen-initiative-2026-01-02 has unsupported source_type blog.');
+    expect(result.errors).toContain('Source elections-ab-new-citizen-initiative-2026-01-02 references undefined topic not-a-topic.');
+    expect(result.errors).toContain('Source elections-ab-new-citizen-initiative-2026-01-02 is missing summary.');
+    expect(result.errors).toContain('Source elections-ab-new-citizen-initiative-2026-01-02 is missing how_used.');
+    expect(result.errors).toContain('Source elections-ab-new-citizen-initiative-2026-01-02 has unsupported status pending human review.');
+  });
 });

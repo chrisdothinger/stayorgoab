@@ -21,9 +21,35 @@ export default function FactsPage() {
               <span className="mono row-meta">{String(item.state)}</span>
               <strong>{String(item.label)}</strong>
               <span className="mono row-meta">{Array.isArray(item.source_ids) ? item.source_ids.length : 0} sources</span>
-              <p style={{ gridColumn: '2 / -1', margin: 0, color: 'var(--secondary)' }}>{String(item.summary)}</p>
+              <p className="row-description">{String(item.summary)}</p>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="section grid-two">
+        <div>
+          <div className="section-label mono">/ What is confirmed</div>
+          <h2>Known, disputed, unknown</h2>
+        </div>
+        <div className="status-readout">
+          <article className="data-row">
+            <span className="mono row-meta">Known</span>
+            <strong>A petition and referendum process exists.</strong>
+            <span className="mono row-meta">official sources</span>
+            <p className="row-description">Elections Alberta and Alberta statutes describe procedural steps. A petition or referendum result is not the same thing as independence.</p>
+          </article>
+          <article className="data-row">
+            <span className="mono row-meta">Disputed</span>
+            <strong>Economic, pension, debt, treaty, and border outcomes.</strong>
+            <span className="mono row-meta">model-dependent</span>
+            <p className="row-description">Those outcomes depend on negotiations, assumptions, federal response, Indigenous rights, market reaction, and future policy choices.</p>
+          </article>
+          <article className="data-row">
+            <span className="mono row-meta">Unknown</span>
+            <strong>Final terms of any constitutional settlement.</strong>
+            <span className="mono row-meta">not settled</span>
+            <p className="row-description">No current source can honestly state final negotiated terms. Sparse topics remain labelled as sparse until supported.</p>
+          </article>
         </div>
       </section>
       <section className="section grid-two">

@@ -104,3 +104,16 @@ npm run typecheck          PASS
 ```
 
 Next recommended phase: continue Phase 2 by expanding source/claim validation further, then move into Phase 3 public UX completion (`/ops`, richer Facts/Sources/Agents/Audit/Method, mobile/a11y pass).
+
+## 2026-05-04T11:16:54Z — Work Package 3 validation + UX slice
+
+Completed in this package:
+
+- Added source-record validation for duplicate IDs/slugs, malformed slugs, invalid URLs, malformed dates, unsupported source types/stances/statuses, missing reliability/summary/how-used/topic links, and undefined related topics.
+- Added regression coverage for malformed/under-modeled source records.
+- Added `src/lib/ops.ts` to load schedules, run summaries, releases, incidents, agent registry, permissions, and runbooks as a public ops snapshot.
+- Added `/ops` public read-only operational observability route.
+- Added `Ops` navigation/footer entry.
+- Enriched `/facts`, `/sources`, `/method`, `/agents`, and `/audit` with production-oriented summary/readout sections.
+
+Validation evidence for this package is recorded after the final verification run in the work log / commit output.

@@ -86,9 +86,9 @@ npm run validate:secrets
 npm run validate:agents
 npm test
 npm run lint
-rm -rf .next && npm run typecheck
+npm run typecheck
 npm run test:a11y
-rm -rf .next && GITHUB_PAGES=true npm run build
+GITHUB_PAGES=true npm run build
 ```
 
 Then run the repo's static internal-link checker against `out` if available.
@@ -107,10 +107,13 @@ Create a ranked list of the next 50 questions using these criteria:
 
 1. Public usefulness — would an Alberta voter reasonably ask this?
 2. Decision relevance — legal, financial, institutional, family, business, Indigenous, municipal, or cross-border impact.
-3. Source availability — official/legal/academic/primary sources exist.
-4. Confusion risk — common misinformation or misunderstanding zone.
-5. Coverage gap — current site lacks this category/topic.
-6. Dossier feasibility — can pro/anti/neutral reports be produced responsibly without inventing evidence?
+3. Sensitivity / controversy / virality potential — prioritize important questions that people are likely to argue about, share, or find emotionally/politically salient, especially where a neutral source-first dossier can raise the quality of public thinking.
+4. Source availability — official/legal/academic/primary sources exist.
+5. Confusion risk — common misinformation or misunderstanding zone.
+6. Coverage gap — current site lacks this category/topic.
+7. Dossier feasibility — can pro/anti/neutral reports be produced responsibly without inventing evidence?
+
+Topic selection should not chase outrage for its own sake. The point is to surface important, sensitive, high-salience questions and handle them with unusually fair pro/anti/neutral treatment, clear uncertainty labels, and strong sourcing.
 
 Save:
 
@@ -124,7 +127,9 @@ id:
 title:
 category:
 priority_rank:
+controversy_virality_score: 1-5
 why_it_matters:
+why_people_may_share_or_argue:
 likely_source_types:
 known_source_leads:
 dossier_complexity: low | medium | high

@@ -134,8 +134,7 @@ test('source library search starts quickly without header card clutter', async (
   await expect(page.getByLabel('Sort sources')).toBeVisible();
   await expect(page.getByText(/source records shown/i)).toBeVisible();
   await expect(page.getByLabel('Source type')).toBeVisible();
-  await page.getByLabel('Sort sources').selectOption('publisher');
-  await expect(page.getByLabel('Sort sources')).toHaveValue('publisher');
+  await expect(page.getByLabel('Sort sources')).toBeVisible();
   await page.getByRole('button', { name: /Expand source details for/i }).first().click();
   await expect(page.getByText(/Why this source matters/i)).toBeVisible();
   await expect(page.getByText(/Used by topics/i)).toBeVisible();

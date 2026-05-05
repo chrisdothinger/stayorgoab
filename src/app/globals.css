@@ -525,6 +525,34 @@ textarea:focus-visible {
 
 .dossier-nav {
   align-content: start;
+  gap: 8px 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.dossier-nav a,
+.dossier-nav span[aria-disabled="true"] {
+  min-height: 34px;
+  padding: 8px 0;
+  color: var(--secondary);
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.dossier-nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 720;
+  text-decoration-thickness: 2px;
+}
+
+.dossier-tab-strip {
+  padding-block: 0 18px;
+}
+
+.compact-dossier-links {
+  border-block: 0;
+  padding: 0;
 }
 
 .small-note {
@@ -732,6 +760,82 @@ textarea:focus-visible {
 
 .questions-trust-meta strong {
   color: var(--ink);
+}
+
+.question-category-section {
+  border-bottom: 1px solid rgba(17, 24, 39, 0.18);
+}
+
+.question-category-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: baseline;
+  padding: 22px 0 8px;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.22);
+}
+
+.question-category-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 720;
+}
+
+.metadata-ledger {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 22px;
+  border-block: 1px solid rgba(17, 24, 39, 0.18);
+}
+
+.metadata-ledger div {
+  display: grid;
+  gap: 4px;
+  min-width: 132px;
+  padding: 10px 16px 10px 0;
+  margin-right: 16px;
+  border-right: 1px solid rgba(17, 24, 39, 0.13);
+}
+
+.metadata-ledger span {
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.metadata-ledger strong {
+  font-size: 18px;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.workflow-ledger {
+  border-top: 1px solid rgba(17, 24, 39, 0.25);
+}
+
+.workflow-ledger-header,
+.workflow-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.7fr) minmax(110px, 0.55fr) minmax(120px, 0.6fr) minmax(0, 1.5fr);
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.13);
+  align-items: baseline;
+}
+
+.workflow-ledger-header {
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.workflow-row strong {
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .category-disclosure {
@@ -992,6 +1096,15 @@ textarea:focus-visible {
   .data-row {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+
+  .workflow-ledger-header {
+    display: none;
+  }
+
+  .workflow-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .index-row {

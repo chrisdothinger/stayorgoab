@@ -14,6 +14,14 @@ function pluralize(count: number, singular: string, plural = `${singular}s`) {
   return `${count} ${count === 1 ? singular : plural}`;
 }
 
+function groupedByCategory(topics: TopicMeta[]) {
+  const groups = new Map<string, TopicMeta[]>();
+  for (const topic of topics) {
+    groups.set(topic.category, [...(groups.get(topic.category) ?? []), topic]);
+  }
+  return Array.from(groups.entries()).map(([category, items]) => ({ category, items }));
+}
+
 export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState(allValue);
@@ -38,6 +46,7 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
   }, [category, query, topics]);
 
   const hasActiveFilters = query.trim() || category !== allValue;
+  const categoryGroups = groupedByCategory(filtered);
   const activeFilterLabels = [
     query.trim() ? `Search: ${query.trim()}` : null,
     category !== allValue ? `Category: ${category}` : null
@@ -78,60 +87,68 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
         </div>
       ) : null}
 
-      <div className="link-list" aria-live="polite">
-        {filtered.map((topic, index) => {
-          const isExpanded = expanded === topic.slug;
-          return (
-            <article className="index-row" key={topic.slug}>
-              <span className="mono row-meta">{String(index + 1).padStart(3, '0')}</span>
-              <div>
-                <Link href={`/questions/${topic.slug}`}>{topic.title}</Link>
-                <div className="mono row-meta">{topic.category} · {topic.source_count} sources · {topic.claim_count} claims</div>
-                <div className="question-row-actions mono">
-                  <Link aria-label={`Open dossier: ${topic.title}`} href={`/questions/${topic.slug}`}>Open dossier</Link>
+      <div className="link-list questions-category-list" aria-live="polite">
+        {categoryGroups.map((group) => (
+          <section className="question-category-section" key={group.category} aria-labelledby={`category-${group.category.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`}>
+            <div className="question-category-heading">
+              <h2 id={`category-${group.category.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`} className="mono">{group.category}</h2>
+              <span className="mono row-meta">{pluralize(group.items.length, 'question')}</span>
+            </div>
+            {group.items.map((topic) => {
+              const isExpanded = expanded === topic.slug;
+              const topicNumber = filtered.indexOf(topic) + 1;
+              return (
+                <article className="index-row" key={topic.slug}>
+                  <span className="mono row-meta">{String(topicNumber).padStart(3, '0')}</span>
+                  <div>
+                    <Link href={`/questions/${topic.slug}`}>{topic.title}</Link>
+                    <div className="mono row-meta">{topic.source_count} sources · {topic.claim_count} claims</div>
+                    <div className="question-row-actions mono">
+                      <Link aria-label={`Open dossier: ${topic.title}`} href={`/questions/${topic.slug}`}>Open dossier</Link>
+                      <button
+                        type="button"
+                        aria-expanded={isExpanded}
+                        aria-label={`${isExpanded ? 'Collapse' : 'Expand'} summary for ${topic.title}`}
+                        onClick={() => setExpanded(isExpanded ? null : topic.slug)}
+                      >
+                        {isExpanded ? 'Collapse summary' : 'Expand summary'}
+                      </button>
+                    </div>
+                  </div>
+                  <span className="mono row-meta state">{formatState(topic.state)}</span>
                   <button
+                    className="disclosure-button"
                     type="button"
                     aria-expanded={isExpanded}
-                    aria-label={`${isExpanded ? 'Collapse' : 'Expand'} summary for ${topic.title}`}
+                    aria-label={`${isExpanded ? 'Collapse' : 'Toggle'} visual summary for ${topic.title}`}
                     onClick={() => setExpanded(isExpanded ? null : topic.slug)}
                   >
-                    {isExpanded ? 'Collapse summary' : 'Expand summary'}
+                    {isExpanded ? '-' : '+'}
                   </button>
-                </div>
-              </div>
-              <span className="mono row-meta state">{formatState(topic.state)}</span>
-              <button
-                className="disclosure-button"
-                type="button"
-                aria-expanded={isExpanded}
-                aria-label={`${isExpanded ? 'Collapse' : 'Toggle'} visual summary for ${topic.title}`}
-                onClick={() => setExpanded(isExpanded ? null : topic.slug)}
-              >
-                {isExpanded ? '-' : '+'}
-              </button>
-              {isExpanded ? (
-                <div className="expanded-row">
-                  <strong>Short answer:</strong> {topic.summary}
-                  <div className="source-trail mono">
-                    <span>State: {formatState(topic.state)}</span>
-                    <span>Internal check: {topic.last_audited_at ?? 'pending provenance check'}</span>
-                    <Link href="/audit">Public review trail</Link>
-                    <span>{topic.source_count} sources</span>
-                    <span>{topic.claim_count} claims</span>
-                  </div>
-                  <div className="source-trail mono">
-                    <Link href={`/questions/${topic.slug}`}>dossier</Link>
-                    <Link href={`/questions/${topic.slug}/neutral`}>neutral</Link>
-                    <Link href={`/questions/${topic.slug}/pro`}>pro</Link>
-                    <Link href={`/questions/${topic.slug}/anti`}>anti</Link>
-                    <Link href={`/questions/${topic.slug}/claims`}>claims</Link>
-                    <Link href={`/questions/${topic.slug}/sources`}>sources</Link>
-                  </div>
-                </div>
-              ) : null}
-            </article>
-          );
-        })}
+                  {isExpanded ? (
+                    <div className="expanded-row">
+                      <strong>Short answer:</strong> {topic.summary}
+                      <div className="source-trail mono">
+                        <span>State: {formatState(topic.state)}</span>
+                        <span>Internal check: {topic.last_audited_at ?? 'pending provenance check'}</span>
+                        <span>{topic.source_count} sources</span>
+                        <span>{topic.claim_count} claims</span>
+                      </div>
+                      <div className="source-trail mono dossier-nav compact-dossier-links" aria-label={`Dossier tabs for ${topic.title}`}>
+                        <Link href={`/questions/${topic.slug}`}>Dossier</Link>
+                        <Link href={`/questions/${topic.slug}/neutral`}>Neutral</Link>
+                        <Link href={`/questions/${topic.slug}/pro`}>Pro</Link>
+                        <Link href={`/questions/${topic.slug}/anti`}>Anti</Link>
+                        <Link href={`/questions/${topic.slug}/claims`}>Claims</Link>
+                        <Link href={`/questions/${topic.slug}/sources`}>Sources</Link>
+                      </div>
+                    </div>
+                  ) : null}
+                </article>
+              );
+            })}
+          </section>
+        ))}
         {filtered.length === 0 ? (
           <div className="empty-state">
             <strong>No questions match those filters.</strong>

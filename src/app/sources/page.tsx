@@ -1,4 +1,3 @@
-import { PageTrust } from '@/components/PageTrust';
 import { SourceLibrary } from '@/components/SourceLibrary';
 import { loadRepositoryContent } from '@/lib/content';
 
@@ -7,49 +6,18 @@ export const metadata = { title: 'Sources' };
 export default function SourcesPage() {
   const { sources, claims, topics } = loadRepositoryContent();
   const sourceTypes = Array.from(new Set(sources.map((source) => source.source_type))).sort();
-  const reliability = Array.from(new Set(sources.map((source) => source.reliability_category).filter(Boolean))).sort();
   const linkedClaims = claims.filter((claim) => claim.source_ids.length > 0).length;
 
   return (
     <>
-      <section className="section">
+      <section className="section sources-hero">
         <div className="section-label mono">/ Sources</div>
         <h1>Source library</h1>
         <p>Search the official, court, primary, advocacy, media, and institutional records used by topic dossiers and claim ledgers.</p>
-      </section>
-
-      <PageTrust
-        sourceStatus={`${sources.length} source records tracked across ${sourceTypes.length} source types.`}
-        reviewStatus="Source rows show internal provenance-check context and claim/topic trails."
-        metrics={[
-          { label: 'Claim links', value: linkedClaims },
-          { label: 'Reliability labels', value: reliability.length }
-        ]}
-        sourceLabel="Source library"
-        reviewLabel="Open review log"
-        links={[{ href: '/repo', label: 'Repository evidence' }]}
-      />
-
-      <section className="section ops-grid" aria-label="Source summary">
-        <div className="metric-card">
-          <span className="mono row-meta">Records</span>
-          <strong>{sources.length}</strong>
-          <p>source records with internal provenance checks</p>
-        </div>
-        <div className="metric-card">
-          <span className="mono row-meta">Types</span>
-          <strong>{sourceTypes.length}</strong>
-          <p>{sourceTypes.join(' · ')}</p>
-        </div>
-        <div className="metric-card">
-          <span className="mono row-meta">Claim links</span>
-          <strong>{linkedClaims}</strong>
-          <p>claims with explicit source references</p>
-        </div>
-        <div className="metric-card">
-          <span className="mono row-meta">Reliability labels</span>
-          <strong>{reliability.length}</strong>
-          <p>primary/legal/news/stakeholder labels retained for filtering</p>
+        <div className="metadata-ledger mono" aria-label="Source library metadata">
+          <div><span>Records</span><strong>{sources.length}</strong></div>
+          <div><span>Types</span><strong>{sourceTypes.length}</strong></div>
+          <div><span>Linked claims</span><strong>{linkedClaims}</strong></div>
         </div>
       </section>
 

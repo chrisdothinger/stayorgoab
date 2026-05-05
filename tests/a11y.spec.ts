@@ -23,7 +23,7 @@ test('homepage is a compact landing page for main sections', async ({ page }) =>
   await expect(page.getByRole('link', { name: /Facts/i })).toHaveCount(0);
 });
 
-test('questions page keeps only search and one category filter, with quiet trust metadata at bottom', async ({ page }) => {
+test('questions page groups topics by category and keeps quiet trust metadata at bottom', async ({ page }) => {
   await page.goto('/questions/');
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
   await expect(page.getByLabel('Search topics')).toBeVisible();
@@ -31,40 +31,49 @@ test('questions page keeps only search and one category filter, with quiet trust
   await expect(page.getByLabel('Dossier state')).toHaveCount(0);
   await expect(page.getByLabel('Time sensitivity')).toHaveCount(0);
   await expect(page.getByLabel('Provenance check')).toHaveCount(0);
-  await expect(page.getByText(/Browse categories/i)).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: /Legal process/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Economy and fiscal policy/i })).toBeVisible();
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/full dossier/i);
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/partial dossier/i);
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/Internal provenance check =/i);
-  await expect(page.getByRole('link', { name: /Public review trail/i })).toBeVisible();
+  await expect(page.getByLabel('Questions trust metadata').getByRole('link', { name: /Public review trail/i })).toBeVisible();
 
   await page.getByLabel('Search topics').fill('CPP');
   await expect(page.getByText(/1 question shown/i)).toBeVisible();
+  await expect(page.getByRole('heading', { name: /CPP, pensions, and benefits/i })).toBeVisible();
   await expect(page.getByText(/Active filters/i)).toBeVisible();
   await expect(page.getByText(/Search: CPP/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /Clear filters/i })).toBeVisible();
   await expect(page.getByRole('link', { name: 'What would happen to CPP and pensions?', exact: true })).toBeVisible();
   await page.getByRole('button', { name: /Expand summary for .*CPP/i }).click();
   await expect(page.getByText(/Short answer/i)).toBeVisible();
-  await expect(page.getByRole('article').getByRole('link', { name: /Public review trail/i })).toBeVisible();
+  await expect(page.getByRole('article').getByRole('link', { name: /Public review trail/i })).toHaveCount(0);
   await page.getByRole('button', { name: /Clear filters/i }).click();
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
 });
 
-test('question dossier report navigation uses short labels and includes dossier link', async ({ page }) => {
-  await page.goto('/questions/equalization/');
-  for (const label of ['Dossier', 'Neutral', 'Pro', 'Anti', 'Claims', 'Sources']) {
-    await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: label, exact: true })).toBeVisible();
+test('question dossier tabs preserve topic context on dossier, reports, claims, and sources', async ({ page }) => {
+  for (const route of [
+    '/questions/equalization/',
+    '/questions/equalization/neutral/',
+    '/questions/equalization/pro/',
+    '/questions/equalization/anti/',
+    '/questions/equalization/claims/',
+    '/questions/equalization/sources/'
+  ]) {
+    await page.goto(route);
+    const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
+    for (const label of ['Dossier', 'Neutral', 'Pro', 'Anti', 'Claims', 'Sources']) {
+      await expect(dossierNav.getByRole('link', { name: label, exact: true })).toBeVisible();
+    }
+    await expect(dossierNav.getByRole('link', { name: /Pro steelman/i })).toHaveCount(0);
+    await expect(dossierNav.getByRole('link', { name: /Anti steelman/i })).toHaveCount(0);
+    await expect(dossierNav.getByRole('link', { name: /Neutral mediator/i })).toHaveCount(0);
+    await expect(dossierNav).toHaveClass(/dossier-nav/);
   }
 
   await page.goto('/questions/legal-process/neutral/');
   const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
-  await expect(dossierNav.getByRole('link', { name: 'Dossier', exact: true })).toBeVisible();
-  await expect(dossierNav.getByRole('link', { name: 'Neutral', exact: true })).toBeVisible();
-  await expect(dossierNav.getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
-  await expect(dossierNav.getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
-  await expect(dossierNav.getByRole('link', { name: /Pro steelman/i })).toHaveCount(0);
-  await expect(dossierNav.getByRole('link', { name: /Anti steelman/i })).toHaveCount(0);
-  await expect(dossierNav.getByRole('link', { name: /Neutral mediator/i })).toHaveCount(0);
   await dossierNav.getByRole('link', { name: 'Dossier', exact: true }).click();
   await expect(page).toHaveURL(/\/questions\/legal-process\/?$/);
 });
@@ -101,7 +110,7 @@ test('full dossier report pages show steelman and neutral mediator structure', a
 });
 
 test('shared page trust layer remains on supporting public trust surfaces', async ({ page }) => {
-  const routesWithTrustLayer = ['/sources/', '/method/', '/repo/', '/audit/'];
+  const routesWithTrustLayer = ['/audit/'];
 
   for (const route of routesWithTrustLayer) {
     await page.goto(route);
@@ -116,9 +125,12 @@ test('shared page trust layer remains on supporting public trust surfaces', asyn
   }
 });
 
-test('source library search, filters, and source trails work', async ({ page }) => {
+test('source library search starts quickly without header card clutter', async ({ page }) => {
   await page.goto('/sources/');
   await expect(page.getByText(/16 source records shown/i)).toBeVisible();
+  await expect(page.getByRole('region', { name: /Page trust/i })).toHaveCount(0);
+  await expect(page.getByLabel('Source summary')).toHaveCount(0);
+  await expect(page.getByLabel('Search sources')).toBeVisible();
   await expect(page.getByText(/Internal provenance checks are/i)).toBeVisible();
   await expect(page.getByLabel('Sort sources')).toBeVisible();
   await page.getByLabel('Search sources').fill('Elections Alberta');
@@ -156,8 +168,9 @@ test('source library supports query filters and polished source detail pages', a
 test('public trust surfaces explain repo, review log, and changelog clearly', async ({ page }) => {
   await page.goto('/repo/');
   await expect(page.getByText(/Public repository evidence/i)).toBeVisible();
-  await expect(page.getByLabel('Repository evidence summary').getByText('Source map', { exact: true })).toBeVisible();
-  await expect(page.getByRole('main').getByRole('link', { name: 'Review log', exact: true })).toBeVisible();
+  await expect(page.getByLabel('Repository ledger').getByText('Source records', { exact: true })).toBeVisible();
+  await expect(page.getByLabel('Repository evidence summary')).toHaveCount(0);
+  await expect(page.getByRole('main').getByRole('link', { name: 'Review log', exact: true })).toHaveCount(0);
 
   await page.goto('/changelog/');
   await expect(page.getByText(/Change history/i)).toBeVisible();
@@ -166,6 +179,11 @@ test('public trust surfaces explain repo, review log, and changelog clearly', as
   await page.goto('/method/');
   await expect(page.getByRole('heading', { name: /Method \/ Ops/i })).toBeVisible();
   await expect(page.getByText(/internal provenance check/i).first()).toBeVisible();
-  await expect(page.getByRole('link', { name: /Inspect page-level review manifest/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Automated workflows/i })).toBeVisible();
+  await expect(page.getByText(/official-status-daily-audit/i)).toBeVisible();
+  await expect(page.getByText(/dossier-factory-buildout/i)).toBeVisible();
+  await expect(page.getByText(/citation-claim-integrity-audit/i)).toBeVisible();
+  await expect(page.getByText(/pending \/ not yet recorded/i).first()).toBeVisible();
+  await expect(page.getByText(/Hermes/i)).toHaveCount(0);
   await expect(page.getByText(/unaudited/i)).toHaveCount(0);
 });

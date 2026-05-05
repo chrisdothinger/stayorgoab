@@ -1,8 +1,33 @@
 import { describe, expect, it } from 'vitest';
+import fs from 'node:fs';
+import path from 'node:path';
 import { loadRepositoryContent } from '@/lib/content';
 import { validateContentModel } from '@/lib/validation';
 
 describe('content validation', () => {
+  it('keeps public-facing site and ops copy free of private assistant names', () => {
+    const roots = ['src/app', 'src/components', 'content', 'ops', 'agents'];
+    const offenders: string[] = [];
+    const ignored = new Set(['node_modules', '.next', 'out']);
+
+    function walk(dir: string) {
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        if (ignored.has(entry.name)) continue;
+        const full = path.join(dir, entry.name);
+        if (entry.isDirectory()) {
+          walk(full);
+          continue;
+        }
+        if (!/\.(tsx?|mdx?|ya?ml|json)$/.test(entry.name)) continue;
+        const text = fs.readFileSync(full, 'utf8');
+        if (/Hermes/i.test(text)) offenders.push(full);
+      }
+    }
+
+    for (const root of roots) walk(path.join(process.cwd(), root));
+    expect(offenders).toEqual([]);
+  });
+
   it('accepts the checked-in content model', () => {
     const content = loadRepositoryContent();
     const result = validateContentModel(content);

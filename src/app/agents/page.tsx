@@ -9,7 +9,7 @@ export default function AgentsPage() {
       <section className="section">
         <div className="section-label mono">/ Agents</div>
         <h1>Public agent team</h1>
-        <p>Hermes agents operate through GitHub-native content and workflow changes. Public summaries are redacted; raw logs and private submissions are not published.</p>
+        <p>Automated workflow identities operate through GitHub-native content and workflow changes. Public summaries are redacted; raw logs and private submissions are not published.</p>
       </section>
 
       <section className="section grid-two">

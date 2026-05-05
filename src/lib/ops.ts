@@ -8,6 +8,9 @@ export interface ScheduleRecord {
   cron: string;
   timezone: string;
   purpose: string;
+  latest_successful_run?: string;
+  allowed_outputs?: string[];
+  required_checks?: string[];
   public_log_level: string;
   publish_raw_logs: boolean;
   human_gate: boolean;

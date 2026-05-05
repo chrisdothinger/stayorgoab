@@ -1027,3 +1027,155 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+- id: alberta-policing
+  slug: alberta-policing
+  title: Policing in Alberta
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/policing-in-alberta
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Current provincial overview of policing responsibilities, police services, and public-safety context in Alberta.
+  how_used: Baseline source for rcmp-provincial-policing topic.
+  related_topic_slugs:
+  - rcmp-provincial-policing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: rcmp-alberta
+  slug: rcmp-alberta
+  title: Alberta RCMP
+  publisher: Royal Canadian Mounted Police
+  author: Royal Canadian Mounted Police
+  url: https://www.rcmp-grc.gc.ca/ab/index-eng.htm
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Current RCMP Alberta presence and services baseline.
+  how_used: Baseline source for rcmp-provincial-policing topic.
+  related_topic_slugs:
+  - rcmp-provincial-policing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: rcmp-contract-policing
+  slug: rcmp-contract-policing
+  title: Contract and Indigenous policing
+  publisher: Royal Canadian Mounted Police
+  author: Royal Canadian Mounted Police
+  url: https://www.rcmp-grc.gc.ca/ccaps-spcca/contract-eng.htm
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal RCMP description of contract and Indigenous policing arrangements.
+  how_used: Baseline source for rcmp-provincial-policing topic.
+  related_topic_slugs:
+  - rcmp-provincial-policing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canadian-charter-rights
+  slug: canadian-charter-rights
+  title: Constitution Act, 1982 / Canadian Charter of Rights and Freedoms
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/const/page-12.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Primary federal legal text for the Canadian Charter baseline.
+  how_used: Baseline source for charter-rights-continuity topic.
+  related_topic_slugs:
+  - charter-rights-continuity
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-bill-of-rights
+  slug: alberta-bill-of-rights
+  title: Alberta Bill of Rights
+  publisher: Alberta King's Printer
+  author: Legislature of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=A14.cfm&leg_type=Acts&isbncln=9780779840772
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Provincial statutory rights baseline in Alberta law.
+  how_used: Baseline source for charter-rights-continuity topic.
+  related_topic_slugs:
+  - charter-rights-continuity
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: scc-morgentaler-1988
+  slug: scc-morgentaler-1988
+  title: R. v. Morgentaler
+  publisher: Supreme Court of Canada
+  author: Supreme Court of Canada
+  url: https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/288/index.do
+  published_at: '1988-01-28'
+  accessed_at: '2026-05-05'
+  source_type: court
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Supreme Court decision striking down the former Criminal Code abortion provisions.
+  how_used: Baseline source for abortion-reproductive-health-rights topic.
+  related_topic_slugs:
+  - abortion-reproductive-health-rights
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canada-health-act
+  slug: canada-health-act
+  title: Canada Health Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/c-6/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute setting broad insured-health-service principles for provincial health insurance plans.
+  how_used: Baseline source for abortion-reproductive-health-rights topic.
+  related_topic_slugs:
+  - abortion-reproductive-health-rights
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: ahs-abortion-services
+  slug: ahs-abortion-services
+  title: Abortion Services
+  publisher: Alberta Health Services
+  author: Alberta Health Services
+  url: https://www.albertahealthservices.ca/findhealth/service.aspx?id=1001472
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Current Alberta Health Services public information about abortion services.
+  how_used: Baseline source for abortion-reproductive-health-rights topic.
+  related_topic_slugs:
+  - abortion-reproductive-health-rights
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active

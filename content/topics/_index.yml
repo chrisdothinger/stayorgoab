@@ -627,3 +627,60 @@ topics:
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
+- slug: rcmp-provincial-policing
+  title: RCMP, local police, and provincial policing
+  plain_question: What would happen to the RCMP, local police, and provincial policing?
+  category: Policing, courts, and public safety
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Policing is visible in everyday life and is already politically charged in Alberta; people may argue over rural crime, RCMP trust, costs, provincial-police proposals, and whether independence would improve accountability or create dangerous disruption.
+  keywords:
+  - RCMP
+  - provincial police
+  - municipal police
+  - policing contracts
+  - public safety
+  summary: Policing could be reorganized under an independent Alberta, but today's RCMP contracts, municipal services, First Nations policing, dispatch, labs, data systems, and transition costs would require written continuity plans rather than assumptions.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: charter-rights-continuity
+  title: Charter rights and civil-liberties continuity
+  plain_question: Would Charter rights and civil liberties continue after independence?
+  category: Rights, law, and democratic legitimacy
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Rights questions cut across ideology; supporters may see a chance to write a local constitution, while opponents may worry about losing Charter remedies.
+  keywords:
+  - Charter
+  - civil liberties
+  - Alberta Bill of Rights
+  - constitution
+  - rights continuity
+  summary: The Canadian Charter binds Canadian governments today; an independent Alberta would need a credible constitutional and statutory rights-continuity plan, and current sources do not prove automatic rollover or repeal.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: abortion-reproductive-health-rights
+  title: Abortion access and reproductive health rights
+  plain_question: What would happen to abortion access and reproductive health rights?
+  category: Healthcare and rights
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: This is one of the most sensitive healthcare and rights topics in Canadian politics; people may argue about bodily autonomy, regional access, doctors, hospitals, and whether current Canadian legal protections would still matter.
+  keywords:
+  - abortion
+  - reproductive health
+  - Canada Health Act
+  - Morgentaler
+  - health rights
+  summary: Abortion and reproductive healthcare currently sit within Canadian criminal-law, constitutional, health-system, and provincial-service baselines; independence would require explicit legal and service-continuity commitments rather than assumptions.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4

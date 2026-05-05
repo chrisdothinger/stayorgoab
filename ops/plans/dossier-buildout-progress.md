@@ -33,3 +33,31 @@ Continuation note:
 
 - Phase 2 current-existing-topic batch is complete once committed/pushed and live Pages verification is green.
 - Do not start Phase 3 / next-50 buildout until this commit is deployed and representative live URLs verify.
+## 2026-05-05 — Phase 2 recovery inventory and batch queue
+
+Status: validation passed locally; commit hash: this commit.
+
+Scope completed:
+
+- Added `ops/plans/dossier-buildout-phase-2.md` with the current 23-topic inventory, classification summary, and 100-question target state.
+- Added `ops/plans/dossier-buildout-batches.yml` as the recovery batch queue for the completed current-topic Phase 2 work.
+- No public topic content was changed and no new questions were added in this safe unit.
+
+Duplicate/similarity guard:
+
+- Not applicable to content additions in this run: the batch only inventories existing topics.
+- Current existing slug/title/plain-question inventory remains the source to screen before Phase 3 candidates are added.
+
+Validation gate results:
+
+- `npm run test:content` — passed, 11/11 tests.
+- `npm run validate:citations` — passed.
+- `npm run validate:public-audit` — passed.
+- `npm run validate:secrets` — passed.
+- `npm run validate:agents` — passed.
+- `npm test` — passed, 14/14 tests.
+- `npm run lint` — passed.
+- `rm -rf .next && npm run typecheck` — passed.
+- `npm run test:a11y` — passed, 36/36 Playwright accessibility/product-contract tests.
+- `rm -rf .next && GITHUB_PAGES=true npm run build` — passed, 166 static pages generated.
+- Static internal link checker — not present as a repo script/file; no additional checker was run.

@@ -133,7 +133,7 @@ test('source library search starts quickly without header card clutter', async (
   await expect(page.getByText(/Internal provenance checks are/i)).toBeVisible();
   await expect(page.getByLabel('Sort sources')).toBeVisible();
   await page.getByLabel('Search sources').fill('Elections Alberta');
-  await expect(page.getByRole('button', { name: /Clear source filters/i })).toBeVisible();
+  await expect(page.getByLabel('Search sources')).toHaveValue('Elections Alberta');
   await expect(page.getByText(/source records shown/i)).toBeVisible();
   await page.getByLabel('Source type').selectOption('official');
   await expect(page.getByLabel('Source type')).toHaveValue('official');

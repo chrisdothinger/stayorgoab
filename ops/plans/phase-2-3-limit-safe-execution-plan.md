@@ -86,9 +86,9 @@ npm run validate:secrets
 npm run validate:agents
 npm test
 npm run lint
-rm -rf .next && npm run typecheck
+npm run typecheck
 npm run test:a11y
-rm -rf .next && GITHUB_PAGES=true npm run build
+GITHUB_PAGES=true npm run build
 ```
 
 Then run the repo's static internal-link checker against `out` if available.

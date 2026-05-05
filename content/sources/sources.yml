@@ -287,3 +287,129 @@ sources:
     content_hash: null
     last_checked_at: "2026-05-02"
     status: active
+  - id: canada-revenue-agency
+    slug: canada-revenue-agency
+    title: "Canada Revenue Agency"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://www.canada.ca/en/revenue-agency.html"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Canada portal for the Canada Revenue Agency and federal tax administration."
+    how_used: "Baseline source for distinguishing current federal tax administration from any future Alberta revenue-administration choices."
+    related_topic_slugs: ["tax-collection-revenue-agency"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+  - id: canada-tax-services
+    slug: canada-tax-services
+    title: "Taxes"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://www.canada.ca/en/services/taxes.html"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Canada tax services page covering current federal tax filing, payment, benefits, and program access."
+    how_used: "Baseline source for the kinds of tax-facing systems residents and businesses currently interact with."
+    related_topic_slugs: ["tax-collection-revenue-agency"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+  - id: alberta-about-taxes
+    slug: alberta-about-taxes
+    title: "About taxes in Alberta"
+    publisher: "Government of Alberta"
+    author: "Government of Alberta"
+    url: "https://www.alberta.ca/about-taxes-in-alberta"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Alberta page describing Alberta tax programs and provincial tax context."
+    how_used: "Baseline source for Alberta-administered tax context and the distinction between existing provincial capacity and future independence requirements."
+    related_topic_slugs: ["tax-collection-revenue-agency"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+  - id: ircc-main
+    slug: ircc-main
+    title: "Immigration, Refugees and Citizenship Canada"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://www.canada.ca/en/immigration-refugees-citizenship.html"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Canada portal for immigration, refugees, citizenship, and related federal services."
+    how_used: "Baseline source for current federal immigration and citizenship administration before considering any independence transition."
+    related_topic_slugs: ["immigration-passports-mobility"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+  - id: canadian-passports
+    slug: canadian-passports
+    title: "Canadian passports and other travel documents"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Canada page for Canadian passport and travel document services."
+    how_used: "Baseline source for current passport administration and travel-document services relevant to mobility questions."
+    related_topic_slugs: ["immigration-passports-mobility"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+  - id: justice-canada-criminal-justice
+    slug: justice-canada-criminal-justice
+    title: "Criminal justice"
+    publisher: "Department of Justice Canada"
+    author: "Department of Justice Canada"
+    url: "https://www.justice.gc.ca/eng/cj-jp/"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Department of Justice Canada criminal justice information page."
+    how_used: "Baseline source for distinguishing current federal criminal-justice responsibilities from provincial court and justice-system operations."
+    related_topic_slugs: ["courts-criminal-law"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+  - id: alberta-courts
+    slug: alberta-courts
+    title: "Courts"
+    publisher: "Government of Alberta"
+    author: "Government of Alberta"
+    url: "https://www.alberta.ca/courts"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Alberta page for provincial court information and court-related public services."
+    how_used: "Baseline source for existing Alberta court context before considering any independence-related justice-system transition."
+    related_topic_slugs: ["courts-criminal-law"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active

@@ -1,0 +1,40 @@
+claims:
+- id: claim-elections-law-political-parties-campaign-finance-001
+  topic_slug: elections-law-political-parties-campaign-finance
+  text: Current sources show separate federal and Alberta baselines for election administration,
+    party/candidate regulation, and campaign finance; they do not settle what rules
+    would govern transition elections, party continuity, spending limits, enforcement,
+    or eligibility after independence.
+  status: source_supported
+  source_ids: &id001
+  - elections-canada-main
+  - canada-elections-act
+  - elections-alberta-main
+  - alberta-election-finances-act
+  risk: medium
+- id: claim-elections-law-political-parties-campaign-finance-002
+  topic_slug: elections-law-political-parties-campaign-finance
+  text: Alberta could write a democratic framework suited to its own institutions,
+    preserve Elections Alberta capacity, and design campaign-finance and party rules
+    that voters can judge directly during a transition.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-elections-law-political-parties-campaign-finance-003
+  topic_slug: elections-law-political-parties-campaign-finance
+  text: Election-law transitions are legitimacy-critical; if rules for parties, spending,
+    advertising, boundaries, eligibility, enforcement, or transition elections are
+    unclear or perceived as self-serving, independence could deepen distrust rather
+    than resolve it.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-elections-law-political-parties-campaign-finance-004
+  topic_slug: elections-law-political-parties-campaign-finance
+  text: 'This topic remains uncertainty-labelled: High; outcomes depend on transition
+    legislation, constitutional design, electoral boundaries, voter eligibility, party-registration
+    rules, campaign-finance limits, third-party advertising rules, enforcement independence,
+    court review, and public legitimacy.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

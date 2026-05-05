@@ -129,3 +129,36 @@ Validation gate results:
 Risk note:
 
 - Dossiers are source-bounded baselines, not final transition plans. Major-project approvals, labour/union continuity, and corrections/parole transitions remain high-uncertainty topics requiring future official agreements, legislation, regulator/tribunal/court decisions, staffing plans, and implementation evidence.
+## 2026-05-05 — Final Phase 2/3 manual batch from 47 to 50 topics
+
+Status: validation passed locally; PR pending. Per owner instruction, stopped exactly at 50 topics.
+
+Scope completed:
+
+- Added exactly 3 new high-salience full dossiers, moving topic count from 47 to 50.
+- New topics: `public-health-disease-surveillance`, `bankruptcy-insolvency-creditor-protection`, `elections-law-political-parties-campaign-finance`.
+- Added neutral, pro-independence, anti-independence / pro-federation reports; claims; topic source lists; audit logs; redebate logs; index records; and 12 global source records.
+- Updated a11y/product count expectations from 47 to 50 topics and from 89 to 101 source records.
+
+Duplicate/similarity guard:
+
+- Screened candidate slugs/questions against all 47 existing topics before adding.
+- Highest normalized token-overlap/Jaccard scores were below the 0.50 reject threshold: `public-health-disease-surveillance` 0.17, `bankruptcy-insolvency-creditor-protection` 0.00, `elections-law-political-parties-campaign-finance` 0.08.
+- Avoided duplicate/near-duplicate areas already covered by recent additions, including major projects, labour/unions, corrections/parole, banking, drugs, privacy/IDs, firearms, healthcare portability, customs, policing, rights, abortion, water, emergency management, statistics, benefits, parks, aviation, and postal/telecom/broadcasting.
+
+Validation gate results:
+
+- `npm run validate:pr-safety` — passed, 27 changed files.
+- `npm run validate:secrets` — passed.
+- `npm run test:content` — passed, 11/11 tests.
+- `npm run validate:citations` — passed.
+- `npm run validate:public-audit` — passed.
+- `npm test` — passed, 14/14 tests.
+- `npm run lint` — passed.
+- `npm run typecheck` — passed.
+- `npm run test:a11y` — passed, 36/36 Playwright tests after deliberate count-expectation updates.
+- `GITHUB_PAGES=true npm run build` — passed, 413 static pages generated.
+
+Risk note:
+
+- Dossiers are source-bounded baselines, not final transition plans. Public-health surveillance, insolvency/creditor protection, and election/campaign-finance transitions remain high-uncertainty topics requiring future official agreements, legislation, regulator/court decisions, data-sharing arrangements, staffing plans, and implementation evidence.

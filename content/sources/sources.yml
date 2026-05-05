@@ -1725,3 +1725,243 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+
+- id: public-health-agency-canada
+  slug: public-health-agency-canada
+  title: Public Health Agency of Canada
+  publisher: Government of Canada
+  author: Public Health Agency of Canada
+  url: https://www.canada.ca/en/public-health.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal public-health agency portal for current disease prevention, surveillance, emergency, and health-protection baselines.
+  how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
+  related_topic_slugs:
+  - public-health-disease-surveillance
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: canada-immunization-vaccine-safety
+  slug: canada-immunization-vaccine-safety
+  title: Reporting adverse events following immunization
+  publisher: Government of Canada
+  author: Public Health Agency of Canada
+  url: https://www.canada.ca/en/public-health/services/immunization/reporting-adverse-events-following-immunization.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal adverse-events-following-immunization reporting context.
+  how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
+  related_topic_slugs:
+  - public-health-disease-surveillance
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-public-health-act
+  slug: alberta-public-health-act
+  title: Public Health Act
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=P37.cfm&leg_type=Acts&isbncln=9780779840932
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary Alberta public-health statute baseline for public-health powers and provincial disease-control authority.
+  how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
+  related_topic_slugs:
+  - public-health-disease-surveillance
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-immunization-policy
+  slug: alberta-immunization-policy
+  title: Alberta immunization policy
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/alberta-immunization-policy
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta immunization-policy portal for provincial immunization program and reporting context.
+  how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
+  related_topic_slugs:
+  - public-health-disease-surveillance
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: office-superintendent-bankruptcy
+  slug: office-superintendent-bankruptcy
+  title: Office of the Superintendent of Bankruptcy
+  publisher: Government of Canada
+  author: Innovation, Science and Economic Development Canada
+  url: https://ised-isde.canada.ca/site/office-superintendent-bankruptcy/en
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal insolvency regulator portal for bankruptcy, proposals, trustees, and insolvency statistics baseline.
+  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
+  related_topic_slugs:
+  - bankruptcy-insolvency-creditor-protection
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: bankruptcy-insolvency-act
+  slug: bankruptcy-insolvency-act
+  title: Bankruptcy and Insolvency Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/B-3/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary federal statute for bankruptcy, insolvency, consumer proposals, and related proceedings.
+  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
+  related_topic_slugs:
+  - bankruptcy-insolvency-creditor-protection
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: companies-creditors-arrangement-act
+  slug: companies-creditors-arrangement-act
+  title: Companies’ Creditors Arrangement Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-36/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary federal statute for large-company creditor protection and restructuring proceedings.
+  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
+  related_topic_slugs:
+  - bankruptcy-insolvency-creditor-protection
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-court-of-kings-bench
+  slug: alberta-court-of-kings-bench
+  title: Court of King’s Bench of Alberta
+  publisher: Alberta Courts
+  author: Alberta Courts
+  url: https://albertacourts.ca/kb
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta superior-court portal relevant to insolvency proceedings heard in court and broader justice-system continuity.
+  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
+  related_topic_slugs:
+  - bankruptcy-insolvency-creditor-protection
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: elections-canada-main
+  slug: elections-canada-main
+  title: Elections Canada
+  publisher: Elections Canada
+  author: Elections Canada
+  url: https://www.elections.ca/home.aspx
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal election-administration portal for current national party, candidate, voting, and enforcement context.
+  how_used: Baseline source for What would happen to election laws, political parties, and campaign finance?
+  related_topic_slugs:
+  - elections-law-political-parties-campaign-finance
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: canada-elections-act
+  slug: canada-elections-act
+  title: Canada Elections Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/E-2.01/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary federal election statute baseline.
+  how_used: Baseline source for What would happen to election laws, political parties, and campaign finance?
+  related_topic_slugs:
+  - elections-law-political-parties-campaign-finance
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: elections-alberta-main
+  slug: elections-alberta-main
+  title: Elections Alberta
+  publisher: Elections Alberta
+  author: Elections Alberta
+  url: https://www.elections.ab.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Provincial election-administration portal for Alberta election, party, candidate, referendum, and finance context.
+  how_used: Baseline source for What would happen to election laws, political parties, and campaign finance?
+  related_topic_slugs:
+  - elections-law-political-parties-campaign-finance
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-election-finances-act
+  slug: alberta-election-finances-act
+  title: Election Finances and Contributions Disclosure Act
+  publisher: Alberta King’s Printer
+  author: Legislature of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=E02.cfm&leg_type=Acts&isbncln=9780779840987
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary Alberta campaign-finance and contributions-disclosure statute baseline.
+  how_used: Baseline source for What would happen to election laws, political parties, and campaign finance?
+  related_topic_slugs:
+  - elections-law-political-parties-campaign-finance
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active

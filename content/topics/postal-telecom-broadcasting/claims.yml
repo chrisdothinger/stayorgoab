@@ -1,0 +1,28 @@
+claims:
+- id: claim-postal-telecom-broadcasting-001
+  topic_slug: postal-telecom-broadcasting
+  text: Current public records show national postal services, federal communications regulation, and federal spectrum-management functions, but they do not establish how an independent Alberta would maintain mail delivery, carrier regulation, spectrum licences, or broadcasting rules.
+  status: source_supported
+  source_ids: &id001
+  - canada-post
+  - crtc-main
+  - ised-spectrum-management
+  risk: medium
+- id: claim-postal-telecom-broadcasting-002
+  topic_slug: postal-telecom-broadcasting
+  text: The strongest pro case is that local communications policy could be designed around Alberta consumer, rural-connectivity, and business priorities.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-postal-telecom-broadcasting-003
+  topic_slug: postal-telecom-broadcasting
+  text: The strongest caution is that mail delivery, carrier obligations, spectrum rights, consumer protections, emergency communications, and broadcasting rules could become complicated if federal systems were interrupted or renegotiated.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-postal-telecom-broadcasting-004
+  topic_slug: postal-telecom-broadcasting
+  text: 'This topic remains uncertainty-labelled: Medium; postal continuity, telecom regulation, spectrum licensing, broadcasting jurisdiction, consumer protection, emergency communications, and cross-border carrier arrangements remain conditional on future decisions and evidence.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

@@ -1,0 +1,28 @@
+claims:
+- id: claim-agriculture-food-inspection-market-access-001
+  topic_slug: agriculture-food-inspection-market-access
+  text: Current public records show federal food inspection and agriculture programs alongside Alberta agriculture responsibilities, but they do not establish how inspection authority, export certification, or market-access arrangements would operate after independence.
+  status: source_supported
+  source_ids: &id001
+  - cfia-main
+  - agriculture-canada-main
+  - alberta-agriculture
+  risk: medium
+- id: claim-agriculture-food-inspection-market-access-002
+  topic_slug: agriculture-food-inspection-market-access
+  text: The strongest pro case is that Alberta could try to tailor agriculture policy, inspection priorities, and trade promotion more closely to provincial producers.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-agriculture-food-inspection-market-access-003
+  topic_slug: agriculture-food-inspection-market-access
+  text: The strongest caution is that producers, processors, exporters, and consumers could face uncertainty if inspection authority, export certification, disease response, or market-recognition arrangements changed before replacements were accepted.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-agriculture-food-inspection-market-access-004
+  topic_slug: agriculture-food-inspection-market-access
+  text: 'This topic remains uncertainty-labelled: Medium; food inspection authority, export certification, animal and plant health rules, market recognition, producer support, trade access, and emergency response capacity remain conditional on future decisions and evidence.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

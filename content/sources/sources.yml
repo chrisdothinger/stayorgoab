@@ -1,586 +1,858 @@
 sources:
-  - id: elections-ab-new-citizen-initiative-2026-01-02
-    slug: elections-ab-new-citizen-initiative-2026-01-02
-    title: "New Citizen Initiative Petition Issued"
-    publisher: "Elections Alberta"
-    author: "Elections Alberta"
-    url: "https://www.elections.ab.ca/resources/media/news-releases/new-citizen-initiative-petition-issued-2/"
-    published_at: "2026-01-02"
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Elections Alberta release announcing issuance of a citizen initiative petition related to Alberta independence."
-    how_used: "Seed source for referendum mechanics and current-status tracking."
-    related_topic_slugs: ["referendum-mechanics", "petition-vs-referendum-vs-negotiations", "referendum-ballot-2026"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: elections-ab-current-petitions
-    slug: elections-ab-current-petitions
-    title: "Current Citizen Initiative Petitions"
-    publisher: "Elections Alberta"
-    author: "Elections Alberta"
-    url: "https://www.elections.ab.ca/recall-initiative/initiative/current-initiative-petitions/"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Lists active citizen initiative petitions, including A Referendum Relating to Alberta Independence, signature threshold, and collection dates."
-    how_used: "Current-status and referendum-mechanics source."
-    related_topic_slugs: ["referendum-mechanics", "petition-vs-referendum-vs-negotiations"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: elections-ab-initiative-process
-    slug: elections-ab-initiative-process
-    title: "Citizen Initiative Process"
-    publisher: "Elections Alberta"
-    author: "Elections Alberta"
-    url: "https://www.elections.ab.ca/recall-initiative/initiative/initiative-process/"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Explains notice, application, petition issuance, and requirements for citizen initiative petitions."
-    how_used: "Explains petition process mechanics."
-    related_topic_slugs: ["referendum-mechanics", "petition-vs-referendum-vs-negotiations"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: elections-ab-referendum
-    slug: elections-ab-referendum
-    title: "Referendum"
-    publisher: "Elections Alberta"
-    author: "Elections Alberta"
-    url: "https://www.elections.ab.ca/elections/referendum/"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Explains referendums under Alberta's Referendum Act and notes a referendum set for October 19, 2026."
-    how_used: "Seed source for referendum timing and process."
-    related_topic_slugs: ["referendum-mechanics", "referendum-ballot-2026"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: alberta-referendum-2026
-    slug: alberta-referendum-2026
-    title: "2026 Alberta Referendum"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://albertareferendum2026.ca/"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Alberta referendum website for the 2026 referendum context."
-    how_used: "Current-status and referendum-ballot seed source."
-    related_topic_slugs: ["referendum-ballot-2026", "referendum-mechanics"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: alberta-premiers-address-2026-02-19
-    slug: alberta-premiers-address-2026-02-19
-    title: "Premier's Address to the Province"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://www.alberta.ca/article-premiers-address-to-the-province"
-    published_at: "2026-02-19"
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Alberta address relevant to referendum context and provincial positioning."
-    how_used: "Seed source for current-status and political-context tracking."
-    related_topic_slugs: ["referendum-ballot-2026", "economy-overall"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: clarity-act
-    slug: clarity-act
-    title: "Clarity Act"
-    publisher: "Justice Laws Website, Government of Canada"
-    author: "Parliament of Canada"
-    url: "https://laws-lois.justice.gc.ca/eng/acts/C-31.8/FullText.html"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_legal
-    summary: "Federal law setting clarity requirements before the Government of Canada enters negotiations on provincial secession."
-    how_used: "Legal-process and clarity topic source."
-    related_topic_slugs: ["legal-process", "clarity-act", "clear-question-majority"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: scc-secession-reference
-    slug: scc-secession-reference
-    title: "Reference re Secession of Quebec"
-    publisher: "Supreme Court of Canada"
-    author: "Supreme Court of Canada"
-    url: "https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/1643/index.do"
-    published_at: "1998-08-20"
-    accessed_at: "2026-05-02"
-    source_type: court
-    stance: neutral
-    reliability_category: primary_legal
-    summary: "Supreme Court reference on unilateral secession, democratic expression, constitutional negotiations, and Aboriginal interests."
-    how_used: "Core legal baseline for secession and duty-to-negotiate claims."
-    related_topic_slugs: ["legal-process", "quebec-secession-reference", "indigenous-rights-treaties", "indigenous-treaties"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: elections-ab-bill-23-2026-04-29
-    slug: elections-ab-bill-23-2026-04-29
-    title: "Amendments to Provincial Electoral Legislation Now in Force"
-    publisher: "Elections Alberta"
-    author: "Elections Alberta"
-    url: "https://www.elections.ab.ca/resources/media/news-releases/bill-23/"
-    published_at: "2026-04-29"
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Elections Alberta release about amendments to provincial electoral legislation."
-    how_used: "Seed source for process changes and current referendum mechanics."
-    related_topic_slugs: ["referendum-mechanics", "referendum-ballot-2026"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: acfn-stay-pending-court-challenge-2026-04-11
-    slug: acfn-stay-pending-court-challenge-2026-04-11
-    title: "Athabasca Chipewyan First Nation welcomes stay pending court challenge"
-    publisher: "CNW / Athabasca Chipewyan First Nation"
-    author: "Athabasca Chipewyan First Nation"
-    url: "https://www.newswire.ca/news-releases/athabasca-chipewyan-first-nation-welcomes-a-stay-in-alberta-separation-referendum-pending-the-decision-of-their-court-challenge-894958173.html"
-    published_at: "2026-04-11"
-    accessed_at: "2026-05-02"
-    source_type: advocacy
-    stance: anti_independence_or_rights_concern
-    reliability_category: primary_stakeholder_statement
-    summary: "First Nation statement about a stay related to an Alberta separation referendum court challenge."
-    how_used: "Seed source for Indigenous rights, treaties, litigation, and high-risk current-status tracking."
-    related_topic_slugs: ["indigenous-rights-treaties", "indigenous-treaties", "referendum-mechanics"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: globalnews-court-pauses-verification-2026-04-12
-    slug: globalnews-court-pauses-verification-2026-04-12
-    title: "Judge orders temporary pause on Alberta separation referendum petition process"
-    publisher: "Global News / Canadian Press"
-    author: "The Canadian Press"
-    url: "https://globalnews.ca/news/11774421/judge-orders-temporary-pause-on-alberta-separation-referendum-petition-process/"
-    published_at: "2026-04-12"
-    accessed_at: "2026-05-02"
-    source_type: media
-    stance: neutral
-    reliability_category: news_report
-    summary: "News report describing a court pause on verification of an Alberta separation petition."
-    how_used: "Secondary source for current-status and court-process tracking; official/court records should be preferred when available."
-    related_topic_slugs: ["referendum-mechanics", "referendum-ballot-2026", "indigenous-treaties"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: alberta-pensions
-    slug: alberta-pensions
-    title: "Pensions"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://www.alberta.ca/pensions"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Alberta government pension information and link to Alberta Pension Plan report material."
-    how_used: "Seed source for CPP/pension topic."
-    related_topic_slugs: ["cpp-pensions"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: osfi-chief-actuary-cpp
-    slug: osfi-chief-actuary-cpp
-    title: "Chief Actuary Position Paper - Subsection 113(2) of the Canada Pension Plan"
-    publisher: "Office of the Superintendent of Financial Institutions"
-    author: "Office of the Chief Actuary"
-    url: "https://www.osfi-bsif.gc.ca/en/oca/oca-factsheets-other-reports/chief-actuary-position-paper-subsection-1132-canada-pension-plan"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Chief Actuary position on CPP withdrawal transfer calculation under subsection 113(2)."
-    how_used: "Seed source for CPP withdrawal calculation claims."
-    related_topic_slugs: ["cpp-pensions"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: alberta-budget-documents-2026
-    slug: alberta-budget-documents-2026
-    title: "Budget documents"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://www.alberta.ca/budget-documents"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Budget 2026 documents, fiscal plan, revenue, expense, capital plan, and related tables."
-    how_used: "Seed source for fiscal and economic baseline."
-    related_topic_slugs: ["economy-fiscal", "economy-overall", "federal-debt-assets", "public-services"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: alberta-budget-highlights-2026
-    slug: alberta-budget-highlights-2026
-    title: "Budget highlights"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://www.alberta.ca/budget-highlights"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Public-facing Budget 2026 highlights."
-    how_used: "Public-facing fiscal baseline source."
-    related_topic_slugs: ["economy-fiscal", "economy-overall", "public-services"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: first-nations-stand-with-treaties
-    slug: first-nations-stand-with-treaties
-    title: "Defend the Treaties"
-    publisher: "Stand With First Nations"
-    author: "Stand With First Nations"
-    url: "https://www.standwithfirstnations.ca/"
-    published_at: null
-    accessed_at: "2026-05-02"
-    source_type: advocacy
-    stance: anti_independence_or_rights_concern
-    reliability_category: stakeholder_advocacy
-    summary: "First Nations advocacy site describing treaty-rights concerns and litigation related to Alberta separation."
-    how_used: "Stakeholder/advocacy source for Indigenous rights and treaties topic; requires corroboration for factual claims."
-    related_topic_slugs: ["indigenous-rights-treaties", "indigenous-treaties"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-02"
-    status: active
-  - id: canada-revenue-agency
-    slug: canada-revenue-agency
-    title: "Canada Revenue Agency"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://www.canada.ca/en/revenue-agency.html"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Canada portal for the Canada Revenue Agency and federal tax administration."
-    how_used: "Baseline source for distinguishing current federal tax administration from any future Alberta revenue-administration choices."
-    related_topic_slugs: ["tax-collection-revenue-agency"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-  - id: canada-tax-services
-    slug: canada-tax-services
-    title: "Taxes"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://www.canada.ca/en/services/taxes.html"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Canada tax services page covering current federal tax filing, payment, benefits, and program access."
-    how_used: "Baseline source for the kinds of tax-facing systems residents and businesses currently interact with."
-    related_topic_slugs: ["tax-collection-revenue-agency"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-  - id: alberta-about-taxes
-    slug: alberta-about-taxes
-    title: "About taxes in Alberta"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://www.alberta.ca/about-taxes-in-alberta"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Alberta page describing Alberta tax programs and provincial tax context."
-    how_used: "Baseline source for Alberta-administered tax context and the distinction between existing provincial capacity and future independence requirements."
-    related_topic_slugs: ["tax-collection-revenue-agency"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-  - id: ircc-main
-    slug: ircc-main
-    title: "Immigration, Refugees and Citizenship Canada"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://www.canada.ca/en/immigration-refugees-citizenship.html"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Canada portal for immigration, refugees, citizenship, and related federal services."
-    how_used: "Baseline source for current federal immigration and citizenship administration before considering any independence transition."
-    related_topic_slugs: ["immigration-passports-mobility"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-  - id: canadian-passports
-    slug: canadian-passports
-    title: "Canadian passports and other travel documents"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Canada page for Canadian passport and travel document services."
-    how_used: "Baseline source for current passport administration and travel-document services relevant to mobility questions."
-    related_topic_slugs: ["immigration-passports-mobility"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-  - id: justice-canada-criminal-justice
-    slug: justice-canada-criminal-justice
-    title: "Criminal justice"
-    publisher: "Department of Justice Canada"
-    author: "Department of Justice Canada"
-    url: "https://www.justice.gc.ca/eng/cj-jp/"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Department of Justice Canada criminal justice information page."
-    how_used: "Baseline source for distinguishing current federal criminal-justice responsibilities from provincial court and justice-system operations."
-    related_topic_slugs: ["courts-criminal-law"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-  - id: alberta-courts
-    slug: alberta-courts
-    title: "Courts"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://www.alberta.ca/courts"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Alberta page for provincial court information and court-related public services."
-    how_used: "Baseline source for existing Alberta court context before considering any independence-related justice-system transition."
-    related_topic_slugs: ["courts-criminal-law"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: canada-student-financial-assistance
-    slug: canada-student-financial-assistance
-    title: "Canada Student Financial Assistance Program"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://www.canada.ca/en/employment-social-development/programs/canada-student-loans-grants.html"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Canada page for the Canada Student Financial Assistance Program, including federal student loans and grants context."
-    how_used: "Baseline source for current federal student loan and grant systems before considering independence-related continuity."
-    related_topic_slugs: ["student-loans-universities-research"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: alberta-student-aid
-    slug: alberta-student-aid
-    title: "Alberta Student Aid"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://studentaid.alberta.ca/"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Alberta student-aid portal for provincial loan, grant, and scholarship administration."
-    how_used: "Baseline source for current Alberta student-aid administration."
-    related_topic_slugs: ["student-loans-universities-research"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: tri-agency-research-funding
-    slug: tri-agency-research-funding
-    title: "Tri-agency research funding"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://www.canada.ca/en/research-coordinating-committee/programs/tri-agency-research-funding.html"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Canada page describing federal tri-agency research funding coordination."
-    how_used: "Baseline source for current federal research-funding institutions relevant to universities and researchers."
-    related_topic_slugs: ["student-loans-universities-research"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: canada-post
-    slug: canada-post
-    title: "Canada Post"
-    publisher: "Canada Post"
-    author: "Canada Post"
-    url: "https://www.canadapost-postescanada.ca/cpc/en/home.page"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Canada Post public portal for national postal-service context."
-    how_used: "Baseline source for current postal-service infrastructure and public-facing services."
-    related_topic_slugs: ["postal-telecom-broadcasting"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: crtc-main
-    slug: crtc-main
-    title: "Canadian Radio-television and Telecommunications Commission"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://crtc.gc.ca/eng/home-accueil.htm"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Canadian regulator site for broadcasting and telecommunications context."
-    how_used: "Baseline source for current telecommunications and broadcasting regulation."
-    related_topic_slugs: ["postal-telecom-broadcasting"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: ised-spectrum-management
-    slug: ised-spectrum-management
-    title: "Spectrum management and telecommunications"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Federal spectrum-management and telecommunications portal for wireless-spectrum and telecom policy context."
-    how_used: "Baseline source for current spectrum-management and telecommunications functions."
-    related_topic_slugs: ["postal-telecom-broadcasting"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: cfia-main
-    slug: cfia-main
-    title: "Canadian Food Inspection Agency"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://inspection.canada.ca/en"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Canadian Food Inspection Agency portal for federal food inspection, animal health, plant health, and food-safety context."
-    how_used: "Baseline source for current federal food-inspection and animal/plant health functions."
-    related_topic_slugs: ["agriculture-food-inspection-market-access"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: agriculture-canada-main
-    slug: agriculture-canada-main
-    title: "Agriculture and Agri-Food Canada"
-    publisher: "Government of Canada"
-    author: "Government of Canada"
-    url: "https://agriculture.canada.ca/en"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Agriculture and Agri-Food Canada portal for federal agriculture programs and market context."
-    how_used: "Baseline source for current federal agriculture programming and market context."
-    related_topic_slugs: ["agriculture-food-inspection-market-access"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
-
-  - id: alberta-agriculture
-    slug: alberta-agriculture
-    title: "Agriculture and irrigation"
-    publisher: "Government of Alberta"
-    author: "Government of Alberta"
-    url: "https://www.alberta.ca/agriculture-and-irrigation"
-    published_at: null
-    accessed_at: "2026-05-05"
-    source_type: official
-    stance: neutral
-    reliability_category: primary_official
-    summary: "Government of Alberta agriculture and irrigation portal for provincial agriculture program context."
-    how_used: "Baseline source for current Alberta agriculture responsibilities and programs."
-    related_topic_slugs: ["agriculture-food-inspection-market-access"]
-    archive_url: null
-    content_hash: null
-    last_checked_at: "2026-05-05"
-    status: active
+- id: elections-ab-new-citizen-initiative-2026-01-02
+  slug: elections-ab-new-citizen-initiative-2026-01-02
+  title: New Citizen Initiative Petition Issued
+  publisher: Elections Alberta
+  author: Elections Alberta
+  url: https://www.elections.ab.ca/resources/media/news-releases/new-citizen-initiative-petition-issued-2/
+  published_at: '2026-01-02'
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Elections Alberta release announcing issuance of a citizen initiative petition
+    related to Alberta independence.
+  how_used: Seed source for referendum mechanics and current-status tracking.
+  related_topic_slugs:
+  - referendum-mechanics
+  - petition-vs-referendum-vs-negotiations
+  - referendum-ballot-2026
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: elections-ab-current-petitions
+  slug: elections-ab-current-petitions
+  title: Current Citizen Initiative Petitions
+  publisher: Elections Alberta
+  author: Elections Alberta
+  url: https://www.elections.ab.ca/recall-initiative/initiative/current-initiative-petitions/
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Lists active citizen initiative petitions, including A Referendum Relating
+    to Alberta Independence, signature threshold, and collection dates.
+  how_used: Current-status and referendum-mechanics source.
+  related_topic_slugs:
+  - referendum-mechanics
+  - petition-vs-referendum-vs-negotiations
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: elections-ab-initiative-process
+  slug: elections-ab-initiative-process
+  title: Citizen Initiative Process
+  publisher: Elections Alberta
+  author: Elections Alberta
+  url: https://www.elections.ab.ca/recall-initiative/initiative/initiative-process/
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Explains notice, application, petition issuance, and requirements for citizen
+    initiative petitions.
+  how_used: Explains petition process mechanics.
+  related_topic_slugs:
+  - referendum-mechanics
+  - petition-vs-referendum-vs-negotiations
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: elections-ab-referendum
+  slug: elections-ab-referendum
+  title: Referendum
+  publisher: Elections Alberta
+  author: Elections Alberta
+  url: https://www.elections.ab.ca/elections/referendum/
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Explains referendums under Alberta's Referendum Act and notes a referendum
+    set for October 19, 2026.
+  how_used: Seed source for referendum timing and process.
+  related_topic_slugs:
+  - referendum-mechanics
+  - referendum-ballot-2026
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: alberta-referendum-2026
+  slug: alberta-referendum-2026
+  title: 2026 Alberta Referendum
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://albertareferendum2026.ca/
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta referendum website for the 2026 referendum context.
+  how_used: Current-status and referendum-ballot seed source.
+  related_topic_slugs:
+  - referendum-ballot-2026
+  - referendum-mechanics
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: alberta-premiers-address-2026-02-19
+  slug: alberta-premiers-address-2026-02-19
+  title: Premier's Address to the Province
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/article-premiers-address-to-the-province
+  published_at: '2026-02-19'
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta address relevant to referendum context and provincial
+    positioning.
+  how_used: Seed source for current-status and political-context tracking.
+  related_topic_slugs:
+  - referendum-ballot-2026
+  - economy-overall
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: clarity-act
+  slug: clarity-act
+  title: Clarity Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-31.8/FullText.html
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal law setting clarity requirements before the Government of Canada
+    enters negotiations on provincial secession.
+  how_used: Legal-process and clarity topic source.
+  related_topic_slugs:
+  - legal-process
+  - clarity-act
+  - clear-question-majority
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: scc-secession-reference
+  slug: scc-secession-reference
+  title: Reference re Secession of Quebec
+  publisher: Supreme Court of Canada
+  author: Supreme Court of Canada
+  url: https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/1643/index.do
+  published_at: '1998-08-20'
+  accessed_at: '2026-05-02'
+  source_type: court
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Supreme Court reference on unilateral secession, democratic expression,
+    constitutional negotiations, and Aboriginal interests.
+  how_used: Core legal baseline for secession and duty-to-negotiate claims.
+  related_topic_slugs:
+  - legal-process
+  - quebec-secession-reference
+  - indigenous-rights-treaties
+  - indigenous-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: elections-ab-bill-23-2026-04-29
+  slug: elections-ab-bill-23-2026-04-29
+  title: Amendments to Provincial Electoral Legislation Now in Force
+  publisher: Elections Alberta
+  author: Elections Alberta
+  url: https://www.elections.ab.ca/resources/media/news-releases/bill-23/
+  published_at: '2026-04-29'
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Elections Alberta release about amendments to provincial electoral legislation.
+  how_used: Seed source for process changes and current referendum mechanics.
+  related_topic_slugs:
+  - referendum-mechanics
+  - referendum-ballot-2026
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: acfn-stay-pending-court-challenge-2026-04-11
+  slug: acfn-stay-pending-court-challenge-2026-04-11
+  title: Athabasca Chipewyan First Nation welcomes stay pending court challenge
+  publisher: CNW / Athabasca Chipewyan First Nation
+  author: Athabasca Chipewyan First Nation
+  url: https://www.newswire.ca/news-releases/athabasca-chipewyan-first-nation-welcomes-a-stay-in-alberta-separation-referendum-pending-the-decision-of-their-court-challenge-894958173.html
+  published_at: '2026-04-11'
+  accessed_at: '2026-05-02'
+  source_type: advocacy
+  stance: anti_independence_or_rights_concern
+  reliability_category: primary_stakeholder_statement
+  summary: First Nation statement about a stay related to an Alberta separation referendum
+    court challenge.
+  how_used: Seed source for Indigenous rights, treaties, litigation, and high-risk
+    current-status tracking.
+  related_topic_slugs:
+  - indigenous-rights-treaties
+  - indigenous-treaties
+  - referendum-mechanics
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: globalnews-court-pauses-verification-2026-04-12
+  slug: globalnews-court-pauses-verification-2026-04-12
+  title: Judge orders temporary pause on Alberta separation referendum petition process
+  publisher: Global News / Canadian Press
+  author: The Canadian Press
+  url: https://globalnews.ca/news/11774421/judge-orders-temporary-pause-on-alberta-separation-referendum-petition-process/
+  published_at: '2026-04-12'
+  accessed_at: '2026-05-02'
+  source_type: media
+  stance: neutral
+  reliability_category: news_report
+  summary: News report describing a court pause on verification of an Alberta separation
+    petition.
+  how_used: Secondary source for current-status and court-process tracking; official/court
+    records should be preferred when available.
+  related_topic_slugs:
+  - referendum-mechanics
+  - referendum-ballot-2026
+  - indigenous-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: alberta-pensions
+  slug: alberta-pensions
+  title: Pensions
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/pensions
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta government pension information and link to Alberta Pension Plan
+    report material.
+  how_used: Seed source for CPP/pension topic.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: osfi-chief-actuary-cpp
+  slug: osfi-chief-actuary-cpp
+  title: Chief Actuary Position Paper - Subsection 113(2) of the Canada Pension Plan
+  publisher: Office of the Superintendent of Financial Institutions
+  author: Office of the Chief Actuary
+  url: https://www.osfi-bsif.gc.ca/en/oca/oca-factsheets-other-reports/chief-actuary-position-paper-subsection-1132-canada-pension-plan
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Chief Actuary position on CPP withdrawal transfer calculation under subsection
+    113(2).
+  how_used: Seed source for CPP withdrawal calculation claims.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: alberta-budget-documents-2026
+  slug: alberta-budget-documents-2026
+  title: Budget documents
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/budget-documents
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Budget 2026 documents, fiscal plan, revenue, expense, capital plan, and
+    related tables.
+  how_used: Seed source for fiscal and economic baseline.
+  related_topic_slugs:
+  - economy-fiscal
+  - economy-overall
+  - federal-debt-assets
+  - public-services
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: alberta-budget-highlights-2026
+  slug: alberta-budget-highlights-2026
+  title: Budget highlights
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/budget-highlights
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Public-facing Budget 2026 highlights.
+  how_used: Public-facing fiscal baseline source.
+  related_topic_slugs:
+  - economy-fiscal
+  - economy-overall
+  - public-services
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: first-nations-stand-with-treaties
+  slug: first-nations-stand-with-treaties
+  title: Defend the Treaties
+  publisher: Stand With First Nations
+  author: Stand With First Nations
+  url: https://www.standwithfirstnations.ca/
+  published_at: null
+  accessed_at: '2026-05-02'
+  source_type: advocacy
+  stance: anti_independence_or_rights_concern
+  reliability_category: stakeholder_advocacy
+  summary: First Nations advocacy site describing treaty-rights concerns and litigation
+    related to Alberta separation.
+  how_used: Stakeholder/advocacy source for Indigenous rights and treaties topic;
+    requires corroboration for factual claims.
+  related_topic_slugs:
+  - indigenous-rights-treaties
+  - indigenous-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-02'
+  status: active
+- id: canada-revenue-agency
+  slug: canada-revenue-agency
+  title: Canada Revenue Agency
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/revenue-agency.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada portal for the Canada Revenue Agency and federal tax
+    administration.
+  how_used: Baseline source for distinguishing current federal tax administration
+    from any future Alberta revenue-administration choices.
+  related_topic_slugs:
+  - tax-collection-revenue-agency
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canada-tax-services
+  slug: canada-tax-services
+  title: Taxes
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/services/taxes.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada tax services page covering current federal tax filing,
+    payment, benefits, and program access.
+  how_used: Baseline source for the kinds of tax-facing systems residents and businesses
+    currently interact with.
+  related_topic_slugs:
+  - tax-collection-revenue-agency
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-about-taxes
+  slug: alberta-about-taxes
+  title: About taxes in Alberta
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/about-taxes-in-alberta
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta page describing Alberta tax programs and provincial
+    tax context.
+  how_used: Baseline source for Alberta-administered tax context and the distinction
+    between existing provincial capacity and future independence requirements.
+  related_topic_slugs:
+  - tax-collection-revenue-agency
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: ircc-main
+  slug: ircc-main
+  title: Immigration, Refugees and Citizenship Canada
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/immigration-refugees-citizenship.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada portal for immigration, refugees, citizenship, and
+    related federal services.
+  how_used: Baseline source for current federal immigration and citizenship administration
+    before considering any independence transition.
+  related_topic_slugs:
+  - immigration-passports-mobility
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canadian-passports
+  slug: canadian-passports
+  title: Canadian passports and other travel documents
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada page for Canadian passport and travel document services.
+  how_used: Baseline source for current passport administration and travel-document
+    services relevant to mobility questions.
+  related_topic_slugs:
+  - immigration-passports-mobility
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: justice-canada-criminal-justice
+  slug: justice-canada-criminal-justice
+  title: Criminal justice
+  publisher: Department of Justice Canada
+  author: Department of Justice Canada
+  url: https://www.justice.gc.ca/eng/cj-jp/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Department of Justice Canada criminal justice information page.
+  how_used: Baseline source for distinguishing current federal criminal-justice responsibilities
+    from provincial court and justice-system operations.
+  related_topic_slugs:
+  - courts-criminal-law
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-courts
+  slug: alberta-courts
+  title: Courts
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/courts
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta page for provincial court information and court-related
+    public services.
+  how_used: Baseline source for existing Alberta court context before considering
+    any independence-related justice-system transition.
+  related_topic_slugs:
+  - courts-criminal-law
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canada-student-financial-assistance
+  slug: canada-student-financial-assistance
+  title: Canada Student Financial Assistance Program
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/employment-social-development/programs/canada-student-loans-grants.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada page for the Canada Student Financial Assistance Program,
+    including federal student loans and grants context.
+  how_used: Baseline source for current federal student loan and grant systems before
+    considering independence-related continuity.
+  related_topic_slugs:
+  - student-loans-universities-research
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-student-aid
+  slug: alberta-student-aid
+  title: Alberta Student Aid
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://studentaid.alberta.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta student-aid portal for provincial loan, grant, and
+    scholarship administration.
+  how_used: Baseline source for current Alberta student-aid administration.
+  related_topic_slugs:
+  - student-loans-universities-research
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: tri-agency-research-funding
+  slug: tri-agency-research-funding
+  title: Tri-agency research funding
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/research-coordinating-committee/programs/tri-agency-research-funding.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada page describing federal tri-agency research funding
+    coordination.
+  how_used: Baseline source for current federal research-funding institutions relevant
+    to universities and researchers.
+  related_topic_slugs:
+  - student-loans-universities-research
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canada-post
+  slug: canada-post
+  title: Canada Post
+  publisher: Canada Post
+  author: Canada Post
+  url: https://www.canadapost-postescanada.ca/cpc/en/home.page
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Canada Post public portal for national postal-service context.
+  how_used: Baseline source for current postal-service infrastructure and public-facing
+    services.
+  related_topic_slugs:
+  - postal-telecom-broadcasting
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: crtc-main
+  slug: crtc-main
+  title: Canadian Radio-television and Telecommunications Commission
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://crtc.gc.ca/eng/home-accueil.htm
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Canadian regulator site for broadcasting and telecommunications context.
+  how_used: Baseline source for current telecommunications and broadcasting regulation.
+  related_topic_slugs:
+  - postal-telecom-broadcasting
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: ised-spectrum-management
+  slug: ised-spectrum-management
+  title: Spectrum management and telecommunications
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal spectrum-management and telecommunications portal for wireless-spectrum
+    and telecom policy context.
+  how_used: Baseline source for current spectrum-management and telecommunications
+    functions.
+  related_topic_slugs:
+  - postal-telecom-broadcasting
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: cfia-main
+  slug: cfia-main
+  title: Canadian Food Inspection Agency
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://inspection.canada.ca/en
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Canadian Food Inspection Agency portal for federal food inspection, animal
+    health, plant health, and food-safety context.
+  how_used: Baseline source for current federal food-inspection and animal/plant health
+    functions.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: agriculture-canada-main
+  slug: agriculture-canada-main
+  title: Agriculture and Agri-Food Canada
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://agriculture.canada.ca/en
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Agriculture and Agri-Food Canada portal for federal agriculture programs
+    and market context.
+  how_used: Baseline source for current federal agriculture programming and market
+    context.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-agriculture
+  slug: alberta-agriculture
+  title: Agriculture and irrigation
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/agriculture-and-irrigation
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta agriculture and irrigation portal for provincial
+    agriculture program context.
+  how_used: Baseline source for current Alberta agriculture responsibilities and programs.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: employment-social-development-canada
+  slug: employment-social-development-canada
+  title: Employment and Social Development Canada
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/employment-social-development.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal department responsible for social programs and labour-market supports.
+  how_used: Baseline source for what would happen to employment insurance and federal
+    income benefits?
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: service-canada-benefits
+  slug: service-canada-benefits
+  title: Benefits finder
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/services/benefits.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada benefits portal for public benefit-program context.
+  how_used: Baseline source for what would happen to employment insurance and federal
+    income benefits?
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-income-support
+  slug: alberta-income-support
+  title: Income Support
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/income-support
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta income-support portal for provincial benefit-program context.
+  how_used: Baseline source for what would happen to employment insurance and federal
+    income benefits?
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: parks-canada-main
+  slug: parks-canada-main
+  title: Parks Canada
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://parks.canada.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal agency portal for national parks, historic sites, and conservation
+    context.
+  how_used: Baseline source for what would happen to national parks, crown land, and
+    public lands?
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-public-lands
+  slug: alberta-public-lands
+  title: Public land use zones
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/public-land-use-zones
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta public land use zones page for provincial public-land recreation and land-management context.
+  how_used: Baseline source for what would happen to national parks, crown land, and
+    public lands?
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: natural-resources-canada-main
+  slug: natural-resources-canada-main
+  title: Natural Resources Canada
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://natural-resources.canada.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal natural-resources department portal for Crown-resource and policy
+    context.
+  how_used: Baseline source for what would happen to national parks, crown land, and
+    public lands?
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: transport-canada-aviation
+  slug: transport-canada-aviation
+  title: Aviation
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://tc.canada.ca/en/aviation
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Transport Canada aviation portal for civil aviation and safety-regulation
+    context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation
+    safety regulation?
+  related_topic_slugs:
+  - air-transport-aviation-safety
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canadian-transportation-agency
+  slug: canadian-transportation-agency
+  title: Canadian Transportation Agency
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://otc-cta.gc.ca/eng
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal transportation regulator portal for air-travel and transportation
+    market context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation
+    safety regulation?
+  related_topic_slugs:
+  - air-transport-aviation-safety
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-transportation-economic-corridors
+  slug: alberta-transportation-economic-corridors
+  title: Transportation and Economic Corridors
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/transportation-and-economic-corridors
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta ministry portal for provincial transportation infrastructure and
+    corridor context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation
+    safety regulation?
+  related_topic_slugs:
+  - air-transport-aviation-safety
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active

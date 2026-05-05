@@ -1,0 +1,39 @@
+claims:
+- id: claim-national-parks-public-lands-001
+  topic_slug: national-parks-public-lands
+  text: Current public records show federal national-park and natural-resource institutions
+    alongside Alberta public-land management, but they do not settle ownership, conservation
+    authority, Indigenous consultation, access rules, or asset-transfer terms after
+    independence.
+  status: source_supported
+  source_ids: &id001
+  - parks-canada-main
+  - alberta-public-lands
+  - natural-resources-canada-main
+  risk: medium
+- id: claim-national-parks-public-lands-002
+  topic_slug: national-parks-public-lands
+  text: The strongest pro case is that alberta could seek more integrated control
+    over land-use decisions, resource policy, recreation access, and conservation
+    priorities inside its territory.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-national-parks-public-lands-003
+  topic_slug: national-parks-public-lands
+  text: The strongest caution is that national parks, federal lands, conservation
+    duties, treaty rights, access rules, and asset transfers could become legally
+    and politically contentious without negotiated authority and source-backed transition
+    plans.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-national-parks-public-lands-004
+  topic_slug: national-parks-public-lands
+  text: 'This topic remains uncertainty-labelled: Medium; ownership or control of
+    federal lands and parks, conservation obligations, Indigenous rights and consultation,
+    public access, staffing, asset transfers, and cross-border land-management agreements
+    remain conditional on future decisions and evidence.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

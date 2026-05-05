@@ -10,7 +10,8 @@ topics:
   - Secession Reference
   - constitutional amendment
   - negotiations
-  summary: A referendum could create a political obligation to negotiate only if the question and result are clear; it would not itself make Alberta independent.
+  summary: A referendum could create a political obligation to negotiate only if the
+    question and result are clear; it would not itself make Alberta independent.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 4
@@ -27,14 +28,16 @@ topics:
   - pensions
   - Chief Actuary
   - withdrawal
-  summary: CPP withdrawal has a statutory path, but transfer amount, timing, and independence-related pension treatment remain materially uncertain.
+  summary: CPP withdrawal has a statutory path, but transfer amount, timing, and independence-related
+    pension treatment remain materially uncertain.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 7
 - slug: indigenous-rights-treaties
   title: How do Indigenous rights and treaties affect independence?
-  plain_question: What happens to Indigenous rights, treaties, land, and consultation if Alberta tries to separate?
+  plain_question: What happens to Indigenous rights, treaties, land, and consultation
+    if Alberta tries to separate?
   category: Indigenous rights, treaties, land, and consultation
   state: full_dossier
   time_sensitivity: high
@@ -44,14 +47,16 @@ topics:
   - Indigenous rights
   - consultation
   - Secession Reference
-  summary: The SCC reference says Aboriginal interests would need to be taken into account in negotiations; Alberta-specific effects remain high-risk and contested.
+  summary: The SCC reference says Aboriginal interests would need to be taken into
+    account in negotiations; Alberta-specific effects remain high-risk and contested.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 4
   claim_count: 4
 - slug: economy-fiscal
   title: Would independence make Alberta richer or poorer?
-  plain_question: What is known about Alberta's fiscal position and the economic claims around independence?
+  plain_question: What is known about Alberta's fiscal position and the economic claims
+    around independence?
   category: Economy and fiscal policy
   state: full_dossier
   time_sensitivity: high
@@ -61,14 +66,17 @@ topics:
   - resource revenue
   - debt
   - taxes
-  summary: Alberta has a published fiscal plan, resource-revenue exposure, and debt projections; independence claims require assumptions that are not settled by current official documents.
+  summary: Alberta has a published fiscal plan, resource-revenue exposure, and debt
+    projections; independence claims require assumptions that are not settled by current
+    official documents.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 4
 - slug: referendum-mechanics
   title: How does the petition and referendum process work?
-  plain_question: How do petitions, referendum questions, voting rules, and timelines work in Alberta?
+  plain_question: How do petitions, referendum questions, voting rules, and timelines
+    work in Alberta?
   category: Referendum mechanics
   state: full_dossier
   time_sensitivity: high
@@ -78,14 +86,16 @@ topics:
   - Elections Alberta
   - October 19 2026
   - signatures
-  summary: Elections Alberta publishes the petition and referendum process; several steps are procedural and date-sensitive.
+  summary: Elections Alberta publishes the petition and referendum process; several
+    steps are procedural and date-sensitive.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 7
   claim_count: 4
 - slug: borders-currency-citizenship
   title: What happens to borders, currency, and citizenship?
-  plain_question: Would Alberta have a border, a currency, or different citizenship rules?
+  plain_question: Would Alberta have a border, a currency, or different citizenship
+    rules?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: medium
@@ -94,7 +104,8 @@ topics:
   - border
   - citizenship
   - trade
-  summary: These questions depend on negotiations and future policy choices; the initial page is a transparent seed overview.
+  summary: These questions depend on negotiations and future policy choices; the initial
+    page is a transparent seed overview.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -110,14 +121,17 @@ topics:
   - referendum
   - negotiations
   - citizen initiative
-  summary: 'These are separate steps: a petition can trigger process, a referendum can express a democratic result, and negotiations would be a later constitutional/political stage.'
+  summary: 'These are separate steps: a petition can trigger process, a referendum
+    can express a democratic result, and negotiations would be a later constitutional/political
+    stage.'
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 6
   claim_count: 4
 - slug: clarity-act
   title: The Clarity Act
-  plain_question: How would the federal Clarity Act affect an Alberta independence referendum?
+  plain_question: How would the federal Clarity Act affect an Alberta independence
+    referendum?
   category: Negotiations and constitutional law
   state: full_dossier
   time_sensitivity: high
@@ -126,7 +140,8 @@ topics:
   - House of Commons
   - clear question
   - clear majority
-  summary: The Clarity Act sets federal conditions before Canada enters secession negotiations, but Alberta-specific effects require careful legal sourcing.
+  summary: The Clarity Act sets federal conditions before Canada enters secession
+    negotiations, but Alberta-specific effects require careful legal sourcing.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 2
@@ -142,7 +157,8 @@ topics:
   - Secession Reference
   - unilateral secession
   - constitutional principles
-  summary: The Supreme Court rejected unilateral provincial secession and described when a duty to negotiate may arise.
+  summary: The Supreme Court rejected unilateral provincial secession and described
+    when a duty to negotiate may arise.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 2
@@ -158,7 +174,8 @@ topics:
   - clear majority
   - referendum threshold
   - House of Commons
-  summary: The meaning of a clear question and clear majority is politically and legally consequential, not a simple fixed percentage in the current sparse record.
+  summary: The meaning of a clear question and clear majority is politically and legally
+    consequential, not a simple fixed percentage in the current sparse record.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -174,7 +191,8 @@ topics:
   - ballot
   - October 19 2026
   - Elections Alberta
-  summary: Official referendum timing and ballot details are time-sensitive and must be checked against current official sources before being stated as final.
+  summary: Official referendum timing and ballot details are time-sensitive and must
+    be checked against current official sources before being stated as final.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 7
@@ -191,7 +209,8 @@ topics:
   - trade
   - investment
   - fiscal policy
-  summary: The overall economic effect depends on assumptions about trade, currency, debt, assets, taxation, investment, and negotiated outcomes.
+  summary: The overall economic effect depends on assumptions about trade, currency,
+    debt, assets, taxation, investment, and negotiated outcomes.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -206,7 +225,8 @@ topics:
   - equalization
   - federal transfers
   - fiscal federalism
-  summary: Equalization claims require distinguishing program mechanics, Alberta contributions, federal taxes, and post-independence negotiation assumptions.
+  summary: Equalization claims require distinguishing program mechanics, Alberta contributions,
+    federal taxes, and post-independence negotiation assumptions.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -222,7 +242,8 @@ topics:
   - assets
   - liabilities
   - negotiations
-  summary: Debt and asset allocation would likely be negotiated and cannot be reduced to a single confirmed number from the sparse record.
+  summary: Debt and asset allocation would likely be negotiated and cannot be reduced
+    to a single confirmed number from the sparse record.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -238,7 +259,8 @@ topics:
   - Indigenous consent
   - section 35
   - consultation
-  summary: Treaty rights, section 35 rights, land, and consultation issues are high-risk and require careful source-backed treatment.
+  summary: Treaty rights, section 35 rights, land, and consultation issues are high-risk
+    and require careful source-backed treatment.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 4
@@ -254,7 +276,8 @@ topics:
   - security
   - policing
   - defence
-  summary: Military and security arrangements would depend on policy choices and negotiations; the sparse topic should not imply settled institutions.
+  summary: Military and security arrangements would depend on policy choices and negotiations;
+    the sparse topic should not imply settled institutions.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -270,7 +293,8 @@ topics:
   - banking
   - central bank
   - Canadian dollar
-  summary: Currency options are policy choices with tradeoffs; no option should be presented as automatic in sparse content.
+  summary: Currency options are policy choices with tradeoffs; no option should be
+    presented as automatic in sparse content.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -286,7 +310,8 @@ topics:
   - trade
   - tariffs
   - customs
-  summary: Border and trade outcomes depend on negotiations with Canada and other trading partners.
+  summary: Border and trade outcomes depend on negotiations with Canada and other
+    trading partners.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -302,7 +327,8 @@ topics:
   - education
   - public services
   - programs
-  summary: Public-service continuity depends on fiscal capacity, staffing, legislation, and transition planning; sparse claims must avoid certainty.
+  summary: Public-service continuity depends on fiscal capacity, staffing, legislation,
+    and transition planning; sparse claims must avoid certainty.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -318,7 +344,8 @@ topics:
   - environment
   - oil and gas
   - regulation
-  summary: Energy and environmental outcomes depend on future policy, markets, federal-provincial arrangements, and international obligations.
+  summary: Energy and environmental outcomes depend on future policy, markets, federal-provincial
+    arrangements, and international obligations.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -334,7 +361,8 @@ topics:
   - bureaucracy
   - institutions
   - civil service
-  summary: An independent state would need institutional capacity; costs and timing are not settled by current sparse records.
+  summary: An independent state would need institutional capacity; costs and timing
+    are not settled by current sparse records.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
@@ -350,14 +378,16 @@ topics:
   - diplomacy
   - treaties
   - United Nations
-  summary: International recognition would be influenced by legality, negotiations, political support, and diplomatic choices.
+  summary: International recognition would be influenced by legality, negotiations,
+    political support, and diplomatic choices.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 2
   claim_count: 4
 - slug: case-studies
   title: Case studies
-  plain_question: What can Alberta learn from Quebec, Brexit, Scotland, or other independence movements?
+  plain_question: What can Alberta learn from Quebec, Brexit, Scotland, or other independence
+    movements?
   category: Source updates and review changes
   state: full_dossier
   time_sensitivity: low
@@ -366,14 +396,16 @@ topics:
   - Brexit
   - Scotland
   - case studies
-  summary: Case studies can clarify tradeoffs but must not be treated as direct predictions for Alberta.
+  summary: Case studies can clarify tradeoffs but must not be treated as direct predictions
+    for Alberta.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 2
   claim_count: 4
 - slug: tax-collection-revenue-agency
   title: Tax collection and revenue administration
-  plain_question: Would Alberta need its own tax collection and revenue administration system?
+  plain_question: Would Alberta need its own tax collection and revenue administration
+    system?
   category: Taxes, debt, and public services
   state: full_dossier
   time_sensitivity: medium
@@ -383,7 +415,9 @@ topics:
   - Canada Revenue Agency
   - tax filing
   - administration
-  summary: Independence would require clear decisions about who administers taxes, benefits, audits, and taxpayer services; existing federal and provincial systems do not answer that transition by themselves.
+  summary: Independence would require clear decisions about who administers taxes,
+    benefits, audits, and taxpayer services; existing federal and provincial systems
+    do not answer that transition by themselves.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
@@ -400,7 +434,9 @@ topics:
   - mobility
   - citizenship
   - travel documents
-  summary: Immigration, passport, citizenship, and movement rights would depend on negotiated legal arrangements and new administrative choices, not on a simple automatic rollover.
+  summary: Immigration, passport, citizenship, and movement rights would depend on
+    negotiated legal arrangements and new administrative choices, not on a simple
+    automatic rollover.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
@@ -417,7 +453,9 @@ topics:
   - justice system
   - prosecutions
   - judiciary
-  summary: Justice-system continuity would require distinguishing Alberta court operations from federal criminal-law authority and any negotiated changes to institutions, laws, and enforcement.
+  summary: Justice-system continuity would require distinguishing Alberta court operations
+    from federal criminal-law authority and any negotiated changes to institutions,
+    laws, and enforcement.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
@@ -434,14 +472,17 @@ topics:
   - research funding
   - post-secondary education
   - grants
-  summary: Post-secondary finance would require separating Alberta institutions and grants from federal student aid and research-funding programs; current sources show today’s systems, not an independence transition plan.
+  summary: Post-secondary finance would require separating Alberta institutions and
+    grants from federal student aid and research-funding programs; current sources
+    show today’s systems, not an independence transition plan.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: postal-telecom-broadcasting
   title: Postal service, telecom, and broadcasting
-  plain_question: What would happen to mail, telecom, internet, wireless spectrum, and broadcasting rules?
+  plain_question: What would happen to mail, telecom, internet, wireless spectrum,
+    and broadcasting rules?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: medium
@@ -451,14 +492,17 @@ topics:
   - internet
   - wireless spectrum
   - broadcasting
-  summary: Mail, telecom, spectrum, and broadcasting are currently tied to federal institutions and regulators; independence claims need evidence about continuity, regulation, market access, and consumer protection.
+  summary: Mail, telecom, spectrum, and broadcasting are currently tied to federal
+    institutions and regulators; independence claims need evidence about continuity,
+    regulation, market access, and consumer protection.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: agriculture-food-inspection-market-access
   title: Agriculture, food inspection, and market access
-  plain_question: How would independence affect agriculture, food inspection, exports, and market access?
+  plain_question: How would independence affect agriculture, food inspection, exports,
+    and market access?
   category: Economy and fiscal policy
   state: full_dossier
   time_sensitivity: medium
@@ -468,7 +512,66 @@ topics:
   - exports
   - market access
   - CFIA
-  summary: Agriculture and food systems depend on provincial programs, federal inspection, and export-market rules; independence would require source-backed plans for inspection authority and market access.
+  summary: Agriculture and food systems depend on provincial programs, federal inspection,
+    and export-market rules; independence would require source-backed plans for inspection
+    authority and market access.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: employment-insurance-federal-benefits
+  title: Employment Insurance and federal benefits
+  plain_question: What would happen to Employment Insurance and federal income benefits?
+  category: Taxes, debt, and public services
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - Employment Insurance
+  - federal benefits
+  - income support
+  - Service Canada
+  - transition
+  summary: Employment Insurance and federal income benefits are currently administered
+    through federal systems; independence would require evidence about continuity,
+    eligibility, funding, and replacement administration.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: national-parks-public-lands
+  title: National parks, Crown land, and public lands
+  plain_question: What would happen to national parks, Crown land, and public lands?
+  category: Indigenous rights, treaties, land, and consultation
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - national parks
+  - Crown land
+  - public lands
+  - Parks Canada
+  - land management
+  summary: Land questions would require separating Alberta public-land powers from
+    federal national-park responsibilities, Indigenous rights, conservation obligations,
+    and any negotiated asset or authority transfer.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: air-transport-aviation-safety
+  title: Air transport and aviation safety
+  plain_question: What would happen to airports, air travel, and aviation safety regulation?
+  category: Borders, trade, currency, and citizenship
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - airports
+  - air travel
+  - aviation safety
+  - Transport Canada
+  - transportation
+  summary: Air travel depends on federal aviation safety regulation, airport systems,
+    carriers, security screening, and international recognition; independence would
+    need a credible continuity plan.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3

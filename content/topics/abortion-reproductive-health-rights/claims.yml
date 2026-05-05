@@ -1,0 +1,28 @@
+claims:
+- id: claim-abortion-reproductive-health-rights-001
+  topic_slug: abortion-reproductive-health-rights
+  text: Current sources show that abortion access is shaped by the post-Morgentaler criminal-law baseline, federal health-system principles, and Alberta service delivery; they do not settle how an independent Alberta would protect, fund, regulate, restrict, or expand reproductive-health services.
+  status: source_supported
+  source_ids: &id001
+  - scc-morgentaler-1988
+  - canada-health-act
+  - ahs-abortion-services
+  risk: high
+- id: claim-abortion-reproductive-health-rights-002
+  topic_slug: abortion-reproductive-health-rights
+  text: the strongest pro-independence case is that Alberta could choose to maintain or clarify access in its own laws and health system, potentially making service rules more transparent if continuity were written into transition legislation.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-abortion-reproductive-health-rights-003
+  topic_slug: abortion-reproductive-health-rights
+  text: the strongest caution is that reproductive healthcare is a rights-and-access issue where legal uncertainty, funding changes, provider shortages, regional access gaps, or changed political control could affect people quickly if continuity were not explicit and enforceable.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-abortion-reproductive-health-rights-004
+  topic_slug: abortion-reproductive-health-rights
+  text: 'This topic remains uncertainty-labelled: High; the legal baseline, health funding, provider licensing, facility access, conscience rules, court remedies, and future political choices would all affect reproductive-health access.'
+  status: source_supported
+  source_ids: *id001
+  risk: high

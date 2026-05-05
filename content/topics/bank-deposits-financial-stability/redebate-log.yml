@@ -1,0 +1,10 @@
+entries:
+- id: redebate-bank-deposits-financial-stability-2026-05-05
+  date: '2026-05-05'
+  summary: Initial public pro/anti/neutral dossier debate pass completed for this
+    high-salience Phase 2/3 topic.
+  stances:
+  - pro_independence
+  - anti_independence_or_pro_federation
+  - neutral_mediator
+  result: complete

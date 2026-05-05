@@ -1,0 +1,42 @@
+claims:
+- id: claim-bank-deposits-financial-stability-001
+  topic_slug: bank-deposits-financial-stability
+  text: Current sources show separate federal and Alberta baselines for banks, deposit
+    insurance, prudential supervision, and credit-union deposit guarantees; they do
+    not settle whether an independent Alberta would retain CDIC coverage, create a
+    new backstop, negotiate transitional coverage, or face confidence risks during
+    a banking transition.
+  status: source_supported
+  source_ids: &id001
+  - cdic-main
+  - bank-act
+  - osfi-who-we-regulate
+  - alberta-credit-union-deposit-guarantee
+  risk: medium
+- id: claim-bank-deposits-financial-stability-002
+  topic_slug: bank-deposits-financial-stability
+  text: The strongest pro-independence case is that Alberta could negotiate depositor-protection
+    continuity, preserve ordinary bank services during transition, and design credit-union
+    and financial-sector rules around provincial priorities while seeking practical
+    arrangements with Canadian institutions.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-bank-deposits-financial-stability-003
+  topic_slug: bank-deposits-financial-stability
+  text: The strongest caution is that bank confidence depends on credible legal authority,
+    supervision, lender-of-last-resort arrangements, deposit insurance, payment systems,
+    and public trust; none of those should be assumed to continue without written
+    agreements and institutional capacity.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-bank-deposits-financial-stability-004
+  topic_slug: bank-deposits-financial-stability
+  text: 'This topic remains uncertainty-labelled: High; deposit protection and financial
+    stability depend on Canada-Alberta negotiations, federal bank law, regulator recognition,
+    payment-system access, central-bank choices, credit-union arrangements, market
+    confidence, and transition timing.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

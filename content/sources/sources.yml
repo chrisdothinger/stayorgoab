@@ -1257,3 +1257,231 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+- id: cdic-main
+  slug: cdic-main
+  title: Canada Deposit Insurance Corporation
+  publisher: Canada Deposit Insurance Corporation
+  author: Canada Deposit Insurance Corporation
+  url: https://www.cdic.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal deposit-insurance corporation portal for current CDIC coverage and depositor-protection context.
+  how_used: Baseline source for What would happen to bank deposits, credit unions, and financial-stability backstops?
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: bank-act
+  slug: bank-act
+  title: Bank Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/B-1.01/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Primary federal banking statute baseline.
+  how_used: Baseline source for What would happen to bank deposits, credit unions, and financial-stability backstops?
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: osfi-who-we-regulate
+  slug: osfi-who-we-regulate
+  title: Who we regulate
+  publisher: Office of the Superintendent of Financial Institutions
+  author: Office of the Superintendent of Financial Institutions
+  url: https://www.osfi-bsif.gc.ca/en/about-osfi/who-we-regulate
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: OSFI overview of federally regulated financial institutions.
+  how_used: Baseline source for What would happen to bank deposits, credit unions, and financial-stability backstops?
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-credit-union-deposit-guarantee
+  slug: alberta-credit-union-deposit-guarantee
+  title: Credit Union Deposit Guarantee Corporation
+  publisher: Credit Union Deposit Guarantee Corporation
+  author: Credit Union Deposit Guarantee Corporation
+  url: https://www.cudgc.ab.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta credit-union deposit-guarantee baseline.
+  how_used: Baseline source for What would happen to bank deposits, credit unions, and financial-stability backstops?
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: health-canada-drugs-health-products
+  slug: health-canada-drugs-health-products
+  title: Drugs and health products
+  publisher: Health Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/health-canada/services/drugs-health-products.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Health Canada portal for drug and health-product regulation.
+  how_used: Baseline source for What would happen to prescription drug approvals, safety recalls, and medicine supply?
+  related_topic_slugs:
+  - pharmaceutical-drug-approvals-supply
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: food-and-drugs-act
+  slug: food-and-drugs-act
+  title: Food and Drugs Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/F-27/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Primary federal statute for food, drugs, cosmetics, and medical devices.
+  how_used: Baseline source for What would happen to prescription drug approvals, safety recalls, and medicine supply?
+  related_topic_slugs:
+  - pharmaceutical-drug-approvals-supply
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canada-recalls-safety-alerts
+  slug: canada-recalls-safety-alerts
+  title: Recalls and safety alerts
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://recalls-rappels.canada.ca/en
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government recall and safety-alert portal for health and consumer products.
+  how_used: Baseline source for What would happen to prescription drug approvals, safety recalls, and medicine supply?
+  related_topic_slugs:
+  - pharmaceutical-drug-approvals-supply
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: health-canada-compliance-enforcement
+  slug: health-canada-compliance-enforcement
+  title: Compliance and enforcement
+  publisher: Health Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/health-canada/services/drugs-health-products/compliance-enforcement.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Health Canada compliance and enforcement context for drugs and health products.
+  how_used: Baseline source for What would happen to prescription drug approvals, safety recalls, and medicine supply?
+  related_topic_slugs:
+  - pharmaceutical-drug-approvals-supply
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: service-canada-sin
+  slug: service-canada-sin
+  title: Social Insurance Number
+  publisher: Government of Canada
+  author: Employment and Social Development Canada
+  url: https://www.canada.ca/en/employment-social-development/services/sin.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada SIN portal for current federal social-insurance-number administration.
+  how_used: Baseline source for What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
+  related_topic_slugs:
+  - privacy-data-federal-ids
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: privacy-act
+  slug: privacy-act
+  title: Privacy Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/P-21/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Primary federal public-sector privacy statute baseline.
+  how_used: Baseline source for What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
+  related_topic_slugs:
+  - privacy-data-federal-ids
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: pipeda
+  slug: pipeda
+  title: Personal Information Protection and Electronic Documents Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/P-8.6/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Primary federal private-sector privacy statute baseline.
+  how_used: Baseline source for What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
+  related_topic_slugs:
+  - privacy-data-federal-ids
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-pipa-overview
+  slug: alberta-pipa-overview
+  title: Personal Information Protection Act overview
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/personal-information-protection-act-overview
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta overview of provincial private-sector privacy legislation.
+  how_used: Baseline source for What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
+  related_topic_slugs:
+  - privacy-data-federal-ids
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active

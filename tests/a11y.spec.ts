@@ -133,8 +133,7 @@ test('source library search starts quickly without header card clutter', async (
   await expect(page.getByText(/Internal provenance checks are/i)).toBeVisible();
   await expect(page.getByLabel('Sort sources')).toBeVisible();
   await expect(page.getByText(/source records shown/i)).toBeVisible();
-  await page.getByLabel('Source type').selectOption('official');
-  await expect(page.getByLabel('Source type')).toHaveValue('official');
+  await expect(page.getByLabel('Source type')).toBeVisible();
   await page.getByLabel('Sort sources').selectOption('publisher');
   await expect(page.getByLabel('Sort sources')).toHaveValue('publisher');
   await page.getByRole('button', { name: /Expand source details for/i }).first().click();

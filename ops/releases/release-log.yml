@@ -1,4 +1,28 @@
 releases:
+  - id: normalize-dossier-report-citations
+    date: "2026-05-05"
+    summary: "Normalized all dossier reports to numbered inline citations with matching Sources sections."
+  - id: phase-2-dossier-planning-inventory
+    date: "2026-05-05"
+    summary: "Added Phase 2 dossier planning inventory and batch queue for continued buildout."
+  - id: current-dossier-batch-completion
+    date: "2026-05-05"
+    summary: "Completed and validated the current dossier content batch."
+  - id: civic-ledger-ux-ops-visibility
+    date: "2026-05-04"
+    summary: "Refined civic ledger UI, repository evidence, method/ops visibility, and public trust surfaces."
+  - id: public-ui-navigation-refinement
+    date: "2026-05-04"
+    summary: "Refined public UI navigation and dossier browsing flow."
+  - id: first-dossier-factory-batch
+    date: "2026-05-04"
+    summary: "Ran the first dossier factory batch for full neutral, pro, and anti reports."
+  - id: spec-alignment-report
+    date: "2026-05-04"
+    summary: "Added the public spec-alignment report and readiness checks."
+  - id: complete-question-dossier-reports
+    date: "2026-05-04"
+    summary: "Completed initial question dossier reports for public review."
   - id: seed-static-preview
     date: "2026-05-02"
     summary: "Initial static-first seed build."

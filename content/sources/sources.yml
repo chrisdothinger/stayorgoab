@@ -856,3 +856,174 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+- id: alberta-water
+  slug: alberta-water
+  title: Water
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/water
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta water portal for water management, policies, and programs.
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-drinking-water-wastewater
+  slug: alberta-drinking-water-wastewater
+  title: Drinking water and wastewater
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/drinking-water-and-wastewater
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta portal for drinking-water and wastewater responsibilities and public information.
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: canada-transboundary-waters
+  slug: canada-transboundary-waters
+  title: Transboundary waters
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/transboundary-waters.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal information on transboundary water context relevant to cross-border river and watershed questions.
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: public-safety-canada-emergency-management
+  slug: public-safety-canada-emergency-management
+  title: Emergency management
+  publisher: Government of Canada
+  author: Public Safety Canada
+  url: https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/index-en.aspx
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Public Safety Canada emergency-management portal for federal emergency roles and programs.
+  how_used: Baseline source for what would happen to emergency management, disaster response, and disaster aid?
+  related_topic_slugs:
+  - emergency-management-disaster-aid
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: public-safety-dfaa
+  slug: public-safety-dfaa
+  title: Disaster Financial Assistance Arrangements
+  publisher: Government of Canada
+  author: Public Safety Canada
+  url: https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/rcvr-dsstrs/dsstr-fnncl-ssstnc-rrngmnts/index-en.aspx
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal Disaster Financial Assistance Arrangements page for disaster recovery funding context.
+  how_used: Baseline source for what would happen to emergency management, disaster response, and disaster aid?
+  related_topic_slugs:
+  - emergency-management-disaster-aid
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-emergency-management
+  slug: alberta-emergency-management
+  title: Emergency management
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/emergency-management
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta emergency-management page for provincial preparedness, response, and recovery context.
+  how_used: Baseline source for what would happen to emergency management, disaster response, and disaster aid?
+  related_topic_slugs:
+  - emergency-management-disaster-aid
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: statistics-canada-main
+  slug: statistics-canada-main
+  title: Statistics Canada
+  publisher: Government of Canada
+  author: Statistics Canada
+  url: https://www.statcan.gc.ca/en/start
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Statistics Canada public portal for federal statistical programs and official data.
+  how_used: Baseline source for what would happen to census, statistics, and public data systems?
+  related_topic_slugs:
+  - statistics-census-public-data
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: statistics-canada-census
+  slug: statistics-canada-census
+  title: Census of Population
+  publisher: Government of Canada
+  author: Statistics Canada
+  url: https://www12.statcan.gc.ca/census-recensement/index-eng.cfm
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Statistics Canada census portal for national census products and public data.
+  how_used: Baseline source for what would happen to census, statistics, and public data systems?
+  related_topic_slugs:
+  - statistics-census-public-data
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-regional-dashboard
+  slug: alberta-regional-dashboard
+  title: Alberta Regional Dashboard
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://regionaldashboard.alberta.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta regional data dashboard for provincial public-data context.
+  how_used: Baseline source for what would happen to census, statistics, and public data systems?
+  related_topic_slugs:
+  - statistics-census-public-data
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active

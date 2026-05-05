@@ -1,0 +1,28 @@
+claims:
+- id: claim-emergency-management-disaster-aid-001
+  topic_slug: emergency-management-disaster-aid
+  text: Current public records show federal emergency-management and disaster-financial-assistance roles alongside Alberta emergency-management responsibilities, but they do not establish how command structures, recovery funding, mutual aid, alerts, or federal-provincial support would operate after independence.
+  status: source_supported
+  source_ids: &id001
+  - public-safety-canada-emergency-management
+  - public-safety-dfaa
+  - alberta-emergency-management
+  risk: medium
+- id: claim-emergency-management-disaster-aid-002
+  topic_slug: emergency-management-disaster-aid
+  text: The strongest pro case is that alberta could seek emergency-management arrangements tailored to provincial hazards, local command structures, and faster recovery decisions.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-emergency-management-disaster-aid-003
+  topic_slug: emergency-management-disaster-aid
+  text: The strongest caution is that residents and municipalities could face transition risk if disaster funding, mutual aid, federal support, alerting systems, or response roles were unclear during fires, floods, severe weather, or other emergencies.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-emergency-management-disaster-aid-004
+  topic_slug: emergency-management-disaster-aid
+  text: 'This topic remains uncertainty-labelled: Medium; command structures, disaster-recovery funding, mutual aid, federal support replacement, emergency alerts, staffing, equipment, and continuity during fires, floods, severe weather, and other emergencies remain conditional on future decisions and evidence.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

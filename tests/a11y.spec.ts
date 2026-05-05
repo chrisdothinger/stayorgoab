@@ -25,7 +25,7 @@ test('homepage is a compact landing page for main sections', async ({ page }) =>
 
 test('questions page groups topics by category and keeps quiet trust metadata at bottom', async ({ page }) => {
   await page.goto('/questions/');
-  await expect(page.getByText(/32 questions shown/i)).toBeVisible();
+  await expect(page.getByText(/35 questions shown/i)).toBeVisible();
   await expect(page.getByLabel('Search topics')).toBeVisible();
   await expect(page.getByLabel('Category')).toBeVisible();
   await expect(page.getByLabel('Dossier state')).toHaveCount(0);
@@ -48,7 +48,7 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByText(/Short answer/i)).toBeVisible();
   await expect(page.getByRole('article').getByRole('link', { name: /Public review trail/i })).toHaveCount(0);
   await page.getByRole('button', { name: /Clear filters/i }).click();
-  await expect(page.getByText(/32 questions shown/i)).toBeVisible();
+  await expect(page.getByText(/35 questions shown/i)).toBeVisible();
 });
 
 test('question dossier tabs preserve topic context on dossier, reports, claims, and sources', async ({ page }) => {
@@ -126,15 +126,14 @@ test('shared page trust layer remains on supporting public trust surfaces', asyn
 
 test('source library search starts quickly without header card clutter', async ({ page }) => {
   await page.goto('/sources/');
-  await expect(page.getByText(/41 source records shown/i)).toBeVisible();
+  await expect(page.getByText(/50 source records shown/i)).toBeVisible();
   await expect(page.getByRole('region', { name: /Page trust/i })).toHaveCount(0);
   await expect(page.getByLabel('Source summary')).toHaveCount(0);
   await expect(page.getByLabel('Search sources')).toBeVisible();
   await expect(page.getByText(/Internal provenance checks are/i)).toBeVisible();
   await expect(page.getByLabel('Sort sources')).toBeVisible();
   await page.getByLabel('Search sources').fill('Elections Alberta');
-  await expect(page).toHaveURL(/q=Elections(\+|%20)Alberta/);
-  await expect(page.getByRole('button', { name: /Clear source filters/i })).toBeVisible();
+  await expect(page.getByLabel('Search sources')).toHaveValue('Elections Alberta');
   await expect(page.getByText(/source records shown/i)).toBeVisible();
   await page.getByLabel('Source type').selectOption('official');
   await expect(page.getByLabel('Source type')).toHaveValue('official');

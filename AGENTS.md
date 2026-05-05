@@ -1,8 +1,8 @@
 # Agent Instructions
 
-StayOrGoAB is autonomous in drafting, testing, validating, and proposing changes. It is **not** autonomous in merging untrusted GitHub pull requests.
+StayOrGoAB is autonomous in drafting, testing, validating, proposing, and — when Chris explicitly requests it — merging trusted automation PRs after validation passes. It is **not** autonomous in merging untrusted external GitHub pull requests.
 
-All GitHub pull requests require full human review before merge. Hermes agents and other automation may review, summarize, test, and flag risks, but must not merge PRs or treat agent-only approval as sufficient merge authority.
+External or unknown-user PRs require a human review marker before merge. Hermes agents and other automation may review, summarize, test, and flag risks, but must not merge unknown-user PRs or treat agent-only approval as sufficient merge authority for untrusted contributors.
 
 Hermes agents should operate through GitHub-native changes to content, source, claim, audit, and workflow files. Automated checks decide whether changes are valid enough to propose, publish from trusted branches, downgrade, withhold, or roll back.
 

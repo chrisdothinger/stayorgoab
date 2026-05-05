@@ -10,3 +10,16 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-legal-process-2026-05-05-debate-brief-pilot
+  date: '2026-05-05'
+  agent: StayOrGoAB public agent team
+  summary: Reworked legal-process dossier as a pilot debate-brief format with separate pro/anti research inputs, expanded
+    source set, current-context sources, and mediator-style neutral synthesis.
+  checks:
+  - expanded-source-research
+  - source-support
+  - stance-balance
+  - public-readable-style
+  - uncertainty-labels
+  - citation-numbering
+  result: pass-pending-validation

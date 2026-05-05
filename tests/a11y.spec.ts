@@ -126,7 +126,7 @@ test('shared page trust layer remains on supporting public trust surfaces', asyn
 
 test('source library search starts quickly without header card clutter', async ({ page }) => {
   await page.goto('/sources/');
-  await expect(page.getByText(/101 source records shown/i)).toBeVisible();
+  await expect(page.getByText(/source records shown/i)).toBeVisible();
   await expect(page.getByRole('region', { name: /Page trust/i })).toHaveCount(0);
   await expect(page.getByLabel('Source summary')).toHaveCount(0);
   await expect(page.getByLabel('Search sources')).toBeVisible();

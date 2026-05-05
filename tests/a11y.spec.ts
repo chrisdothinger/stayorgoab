@@ -25,7 +25,7 @@ test('homepage is a compact landing page for main sections', async ({ page }) =>
 
 test('questions page groups topics by category and keeps quiet trust metadata at bottom', async ({ page }) => {
   await page.goto('/questions/');
-  await expect(page.getByText(/47 questions shown/i)).toBeVisible();
+  await expect(page.getByText(/50 questions shown/i)).toBeVisible();
   await expect(page.getByLabel('Search topics')).toBeVisible();
   await expect(page.getByLabel('Category')).toBeVisible();
   await expect(page.getByLabel('Dossier state')).toHaveCount(0);
@@ -48,7 +48,7 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByText(/Short answer/i)).toBeVisible();
   await expect(page.getByRole('article').getByRole('link', { name: /Public review trail/i })).toHaveCount(0);
   await page.getByRole('button', { name: /Clear filters/i }).click();
-  await expect(page.getByText(/47 questions shown/i)).toBeVisible();
+  await expect(page.getByText(/50 questions shown/i)).toBeVisible();
 });
 
 test('question dossier tabs preserve topic context on dossier, reports, claims, and sources', async ({ page }) => {
@@ -126,7 +126,7 @@ test('shared page trust layer remains on supporting public trust surfaces', asyn
 
 test('source library search starts quickly without header card clutter', async ({ page }) => {
   await page.goto('/sources/');
-  await expect(page.getByText(/89 source records shown/i)).toBeVisible();
+  await expect(page.getByText(/101 source records shown/i)).toBeVisible();
   await expect(page.getByRole('region', { name: /Page trust/i })).toHaveCount(0);
   await expect(page.getByLabel('Source summary')).toHaveCount(0);
   await expect(page.getByLabel('Search sources')).toBeVisible();

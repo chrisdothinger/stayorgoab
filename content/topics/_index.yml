@@ -806,3 +806,63 @@ topics:
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
+- slug: public-health-disease-surveillance
+  title: Public-health disease surveillance, outbreak response, and vaccine reporting
+  plain_question: What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
+  category: Healthcare and public safety
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Public health became highly personal and politically charged after COVID-19; people may argue over whether independence would increase local control or weaken disease surveillance, outbreak coordination, vaccine confidence, and cross-border health warnings.
+  keywords:
+  - public health
+  - disease surveillance
+  - outbreak response
+  - PHAC
+  - vaccines
+  - notifiable diseases
+  summary: Public-health surveillance and outbreak response currently span federal, provincial, laboratory, immunization, reporting, and data-sharing systems; independence would require explicit continuity plans for disease reporting, emergency coordination, vaccine-safety reporting, and cross-border public-health alerts.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
+  claim_count: 4
+- slug: bankruptcy-insolvency-creditor-protection
+  title: Bankruptcy, insolvency, creditor protection, and consumer proposals
+  plain_question: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
+  category: Business, courts, and household finances
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Bankruptcy is not a slogan issue, but it affects households, farms, oilfield contractors, landlords, lenders, small businesses, employees, and suppliers; people may argue over whether independence would free Alberta to set debtor-creditor rules or disrupt credit markets and active insolvency cases.
+  keywords:
+  - bankruptcy
+  - insolvency
+  - consumer proposals
+  - creditor protection
+  - OSB
+  - business restructuring
+  summary: Bankruptcy and insolvency currently rely on federal statutes, the Office of the Superintendent of Bankruptcy, licensed insolvency trustees, courts, and creditor-debtor rules; independence would require explicit continuity for active files, trustees, priorities, stays, consumer proposals, and restructuring proceedings.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
+  claim_count: 4
+- slug: elections-law-political-parties-campaign-finance
+  title: Election laws, political parties, and campaign finance
+  plain_question: What would happen to election laws, political parties, and campaign finance?
+  category: Rights, law, and democratic legitimacy
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Election rules decide who can organize, spend, vote, and govern; people may argue over whether independence would create more accountable local democracy or let incumbents write unfair rules during a high-stakes transition.
+  keywords:
+  - election law
+  - political parties
+  - campaign finance
+  - Elections Canada
+  - Elections Alberta
+  - democratic institutions
+  summary: Election administration, parties, candidate rules, and campaign finance currently exist under separate federal and Alberta legal systems; independence would require clear rules for continuity, voter eligibility, party registration, spending limits, third-party advertising, enforcement, and transition elections.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
+  claim_count: 4

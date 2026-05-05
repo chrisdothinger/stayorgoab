@@ -1,0 +1,11 @@
+entries:
+- at: '2026-05-05'
+  type: initial_full_dossier_audit
+  actor: hermes-agent
+  summary: Added full dossier with bounded official/legal source pack, numbered report
+    citations, source-supported baseline, labelled inferences, and high-salience index
+    fields.
+  result: pass
+  risks:
+  - Future independence terms, negotiated agreements, costs, court outcomes, staffing,
+    data sharing, recognition, and implementation details remain unresolved.

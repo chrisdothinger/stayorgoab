@@ -1,0 +1,42 @@
+claims:
+- id: claim-public-health-disease-surveillance-001
+  topic_slug: public-health-disease-surveillance
+  text: Current sources show federal public-health and vaccine-safety baselines plus
+    Alberta public-health disease-management and communicable-disease reporting baselines;
+    they do not settle how Alberta would maintain surveillance feeds, outbreak notices,
+    vaccine adverse-event reporting, laboratory coordination, or cross-border health
+    alerts after independence.
+  status: source_supported
+  source_ids: &id001
+  - public-health-agency-canada
+  - canada-immunization-vaccine-safety
+  - alberta-public-health-act
+  - alberta-immunization-policy
+  risk: medium
+- id: claim-public-health-disease-surveillance-002
+  topic_slug: public-health-disease-surveillance
+  text: Alberta could design a public-health system more accountable to Alberta voters,
+    keep provincial disease-control capacity, and negotiate data-sharing and response
+    agreements that preserve necessary federal and international links while allowing
+    local policy choices.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-public-health-disease-surveillance-003
+  topic_slug: public-health-disease-surveillance
+  text: Disease surveillance and outbreak response depend on fast, trusted data exchange
+    across borders; even short gaps in legal authority, reporting channels, vaccine-safety
+    feeds, laboratory coordination, or federal public-health relationships could create
+    avoidable risk.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-public-health-disease-surveillance-004
+  topic_slug: public-health-disease-surveillance
+  text: 'This topic remains uncertainty-labelled: High; outcomes depend on negotiated
+    public-health data sharing, laboratory and surveillance agreements, notifiable-disease
+    rules, emergency powers, vaccine procurement and safety reporting, health-workforce
+    capacity, and recognition by Canadian and international public-health networks.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

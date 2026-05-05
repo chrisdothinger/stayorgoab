@@ -1,0 +1,42 @@
+claims:
+- id: claim-labour-standards-public-sector-unions-001
+  topic_slug: labour-standards-public-sector-unions
+  text: Current sources show federal labour-law baselines for federally regulated work and
+    Alberta baselines for employment standards, labour relations, and labour-board administration;
+    they do not settle how an independent Alberta would treat federal-sector workers, existing
+    collective agreements, essential-services rules, pensions, successor rights, or public-sector
+    bargaining mandates.
+  status: source_supported
+  source_ids: &id001
+  - canada-labour-code
+  - alberta-employment-standards
+  - alberta-labour-relations
+  - alberta-labour-relations-board
+  risk: medium
+- id: claim-labour-standards-public-sector-unions-002
+  topic_slug: labour-standards-public-sector-unions
+  text: The strongest pro-independence case is that Alberta could consolidate workplace regulation
+    under local statutes, tailor labour standards and bargaining rules to Alberta’s economy,
+    and write transition clauses that preserve existing contracts while reducing federal-provincial
+    complexity.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-labour-standards-public-sector-unions-003
+  topic_slug: labour-standards-public-sector-unions
+  text: The strongest caution is that workers and employers need certainty before legal jurisdiction
+    changes; federal-sector employees, union certifications, public-sector contracts, strike/lockout
+    rules, tribunal files, and interprovincial employers could face real disruption without
+    detailed successor legislation and agreements.
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-labour-standards-public-sector-unions-004
+  topic_slug: labour-standards-public-sector-unions
+  text: 'This topic remains uncertainty-labelled: High; outcomes depend on transition legislation,
+    labour-board continuity, collective-agreement successor rules, treatment of federally
+    regulated employers, court challenges, public-sector bargaining mandates, fiscal capacity,
+    and negotiated recognition by Canada and other jurisdictions.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

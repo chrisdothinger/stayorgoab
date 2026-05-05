@@ -95,3 +95,37 @@ Validation gate results:
 - `npm run test:a11y` — passed, 36/36 Playwright accessibility/product-contract tests.
 - Clean GitHub Pages build run — passed, 166 static pages generated.
 - Static internal link checker — not present as a repo script/file; no additional checker was run.
+
+## 2026-05-05 — Phase 2/3 manual batch from 44 to 47 topics
+
+Status: validation passed locally; PR pending.
+
+Scope completed:
+
+- Added exactly 3 new high-salience full dossiers, moving topic count from 44 to 47.
+- New topics: `environmental-assessment-pipeline-approvals`, `labour-standards-public-sector-unions`, `federal-prisons-corrections-parole`.
+- Added neutral, pro-independence, anti-independence / pro-federation reports; claims; topic source lists; audit logs; redebate logs; index records; and 12 global source records.
+- Updated a11y/product count expectations from 44 to 47 topics and from 77 to 89 source records.
+
+Duplicate/similarity guard:
+
+- Screened candidate slugs/questions against all 44 existing topics before adding.
+- Highest normalized token-overlap/Jaccard scores were below the reject threshold: `environmental-assessment-pipeline-approvals` 0.167, `labour-standards-public-sector-unions` 0.083, `federal-prisons-corrections-parole` 0.125.
+- Avoided duplicate/near-duplicate areas already covered by recent additions, including banking, drugs, privacy/IDs, firearms, healthcare portability, customs, policing, rights, abortion, water, emergency management, statistics, benefits, parks, aviation, postal/telecom/broadcasting, and generic military/security coverage.
+
+Validation gate results:
+
+- `npm run validate:pr-safety` — passed, 29 changed files.
+- `npm run validate:secrets` — passed.
+- `npm run test:content` — passed, 11/11 tests.
+- `npm run validate:citations` — passed.
+- `npm run validate:public-audit` — passed.
+- `npm test` — passed, 14/14 tests.
+- `npm run lint` — passed.
+- `npm run typecheck` — passed.
+- `npm run test:a11y` — passed, 36/36 Playwright tests after deliberate count-expectation updates.
+- `GITHUB_PAGES=true npm run build` — passed, 383 static pages generated.
+
+Risk note:
+
+- Dossiers are source-bounded baselines, not final transition plans. Major-project approvals, labour/union continuity, and corrections/parole transitions remain high-uncertainty topics requiring future official agreements, legislation, regulator/tribunal/court decisions, staffing plans, and implementation evidence.

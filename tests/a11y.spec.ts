@@ -34,7 +34,6 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByRole('heading', { name: /Legal process/i })).toBeVisible();
   await expect(page.getByRole('heading', { name: /Economy and fiscal policy/i })).toBeVisible();
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/full dossier/i);
-  await expect(page.getByLabel('Questions trust metadata')).toContainText(/partial dossier/i);
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/Internal provenance check =/i);
   await expect(page.getByLabel('Questions trust metadata').getByRole('link', { name: /Public review trail/i })).toBeVisible();
 

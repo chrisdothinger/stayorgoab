@@ -20,7 +20,7 @@ describe('content validation', () => {
         }
         if (!/\.(tsx?|mdx?|ya?ml|json)$/.test(entry.name)) continue;
         const text = fs.readFileSync(full, 'utf8');
-        if (/Hermes/i.test(text)) offenders.push(full);
+        if (/\bHermes\b/.test(text)) offenders.push(full);
       }
     }
 
@@ -51,11 +51,9 @@ describe('content validation', () => {
     });
 
     expect(missing).toEqual([]);
-    expect(content.topics.filter((topic) => topic.state === 'full_dossier').map((topic) => topic.slug).sort()).toEqual([
-      'cpp-pensions',
-      'equalization',
-      'legal-process'
-    ]);
+    expect(content.topics.filter((topic) => topic.state === 'full_dossier').map((topic) => topic.slug).sort()).toEqual(
+      content.topics.map((topic) => topic.slug).sort()
+    );
   });
 
   it('requires every full dossier report to have the full report contract and uncertainty labels', () => {

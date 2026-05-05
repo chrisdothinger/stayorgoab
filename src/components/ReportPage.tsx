@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import { AuditMeta } from '@/components/AuditMeta';
+import { DossierNav } from '@/components/DossierNav';
 import { MarkdownText } from '@/components/MarkdownText';
-import { PageTrust } from '@/components/PageTrust';
 import type { MarkdownFile, TopicMeta } from '@/lib/types';
 
 type ReportKind = 'neutral' | 'pro' | 'anti';
@@ -55,10 +54,6 @@ function reportHeadingIds(body: string) {
   return headings;
 }
 
-function stanceHref(topic: TopicMeta, kind: ReportKind) {
-  return `/questions/${topic.slug}/${kind}`;
-}
-
 export function ReportPage({ topic, report, kind }: { topic: TopicMeta; report: MarkdownFile; kind: ReportKind }) {
   const copy = REPORT_COPY[kind];
   const headings = reportHeadingIds(report.body);
@@ -78,38 +73,18 @@ export function ReportPage({ topic, report, kind }: { topic: TopicMeta; report: 
         />
       </section>
 
-      <PageTrust
-        sourceStatus={`${topic.source_count} topic sources and ${topic.claim_count} claims are attached to this report.`}
-        reviewStatus={`Internal provenance check: ${topic.last_audited_at ?? 'pending'}; redebate pass: ${topic.last_debated_at ?? 'pending'}.`}
-        metrics={[
-          { label: 'Report role', value: copy.label },
-          { label: 'Topic state', value: topic.state }
-        ]}
-        sourceHref={`/questions/${topic.slug}/sources`}
-        sourceLabel="Inspect topic sources"
-        reviewHref="/audit"
-        reviewLabel="Review details"
-        links={[
-          { href: `/questions/${topic.slug}/claims`, label: 'Claims ledger' },
-          { href: `/questions/${topic.slug}`, label: 'Topic overview' }
-        ]}
-      />
-
       <section className="section grid-two report-layout">
         <aside className="report-aside">
-          <nav className="category-nav mono" aria-label="Report views">
-            <Link aria-current={kind === 'neutral' ? 'page' : undefined} href={stanceHref(topic, 'neutral')}>Neutral mediator</Link>
-            <Link aria-current={kind === 'pro' ? 'page' : undefined} href={stanceHref(topic, 'pro')}>Pro steelman</Link>
-            <Link aria-current={kind === 'anti' ? 'page' : undefined} href={stanceHref(topic, 'anti')}>Anti steelman</Link>
-            <Link href={`/questions/${topic.slug}/claims`}>Claims</Link>
-            <Link href={`/questions/${topic.slug}/sources`}>Sources</Link>
-          </nav>
+          <DossierNav active={kind} topic={topic} />
           {visibleSectionLinks.length > 0 ? (
-            <nav className="report-section-nav mono" aria-label="Report sections">
-              {visibleSectionLinks.map((section) => (
-                <a key={section} href={`#${section}`}>{section.replace(/-/g, ' ')}</a>
-              ))}
-            </nav>
+            <details className="report-section-disclosure" aria-label="Report section jumps">
+              <summary className="mono">Jump to section</summary>
+              <nav className="report-section-nav mono" aria-label="Report sections">
+                {visibleSectionLinks.map((section) => (
+                  <a key={section} href={`#${section}`}>{section.replace(/-/g, ' ')}</a>
+                ))}
+              </nav>
+            </details>
           ) : null}
           <div className="notice small-note">
             Neutral reports are mediator summaries. Pro and anti reports are written first, then the neutral report weighs both.

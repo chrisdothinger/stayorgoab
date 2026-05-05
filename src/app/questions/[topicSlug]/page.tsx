@@ -1,8 +1,7 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { AuditMeta } from '@/components/AuditMeta';
+import { DossierNav } from '@/components/DossierNav';
 import { MarkdownText } from '@/components/MarkdownText';
-import { PageTrust } from '@/components/PageTrust';
 import { loadRepositoryContent } from '@/lib/content';
 
 export const dynamicParams = false;
@@ -15,11 +14,6 @@ export async function generateMetadata({ params }: { params: Promise<{ topicSlug
   const { topicSlug } = await params;
   const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
   return { title: topic?.title ?? 'Topic' };
-}
-
-function ReportNavItem({ href, label, available }: { href: string; label: string; available: boolean }) {
-  if (!available) return <span aria-disabled="true">{label} pending</span>;
-  return <Link href={href}>{label}</Link>;
 }
 
 export default async function TopicPage({ params }: { params: Promise<{ topicSlug: string }> }) {
@@ -49,26 +43,16 @@ export default async function TopicPage({ params }: { params: Promise<{ topicSlu
           sourceFile={`content/topics/${topic.slug}/index.mdx`}
         />
       </section>
-      <PageTrust
-        sourceStatus={`${topic.source_count} sources and ${topic.claim_count} claims attached to this dossier.`}
-        reviewStatus={`Internal provenance check: ${topic.last_audited_at ?? 'pending'}; redebate pass: ${topic.last_debated_at ?? 'pending'}.`}
-        metrics={[
-          { label: 'State', value: topic.state },
-          { label: 'Sensitivity', value: topic.time_sensitivity }
-        ]}
-        sourceHref={`/questions/${topic.slug}/sources`}
-        sourceLabel="Inspect sources"
-        reviewLabel="Open review log"
-        links={[{ href: '/repo', label: 'Repository evidence' }]}
-      />
       <section className="section grid-two">
-        <nav className="category-nav mono" aria-label="Topic sections">
-          <ReportNavItem href={`/questions/${topic.slug}/neutral`} label="Neutral" available={Boolean(files.reports.neutral)} />
-          <ReportNavItem href={`/questions/${topic.slug}/pro`} label="Pro" available={Boolean(files.reports.pro)} />
-          <ReportNavItem href={`/questions/${topic.slug}/anti`} label="Anti" available={Boolean(files.reports.anti)} />
-          <Link href={`/questions/${topic.slug}/claims`}>Claims</Link>
-          <Link href={`/questions/${topic.slug}/sources`}>Sources</Link>
-        </nav>
+        <DossierNav
+          active="dossier"
+          topic={topic}
+          reports={{
+            neutral: Boolean(files.reports.neutral),
+            pro: Boolean(files.reports.pro),
+            anti: Boolean(files.reports.anti)
+          }}
+        />
         <MarkdownText body={files.index.body} />
       </section>
     </>

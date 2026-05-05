@@ -33,7 +33,7 @@ export default function RepoPage() {
         ]}
         sourceLabel="Inspect sources"
         reviewLabel="Open review log"
-        links={[{ href: '/ops', label: 'Operating posture' }]}
+        links={[{ href: '/method', label: 'Method / Ops' }]}
       />
 
       <section className="section ops-grid" aria-label="Repository evidence summary">
@@ -81,9 +81,9 @@ export default function RepoPage() {
             <span>source map, filters, claim trails, and original links</span>
           </article>
           <article className="data-row trust-row">
-            <span className="mono row-meta">Ops</span>
-            <strong><Link href="/ops">Operating posture</Link></strong>
-            <span>runbooks, schedule summaries, validation posture, and redacted agent runs</span>
+            <span className="mono row-meta">Method / Ops</span>
+            <strong><Link href="/method">Method / Ops</Link></strong>
+            <span>research method, runbooks, schedule summaries, validation posture, and redacted agent runs</span>
           </article>
         </div>
       </section>

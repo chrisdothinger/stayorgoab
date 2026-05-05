@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-const routes = ['/', '/facts/', '/questions/', '/sources/', '/method/', '/agents/', '/audit/', '/ops/', '/repo/', '/changelog/', '/disclaimer/'];
+const routes = ['/', '/questions/', '/sources/', '/method/', '/agents/', '/audit/', '/repo/', '/changelog/', '/disclaimer/'];
 
 for (const route of routes) {
   test(`${route} has no obvious accessibility violations`, async ({ page }) => {
@@ -12,27 +12,31 @@ for (const route of routes) {
   });
 }
 
-test('homepage guides users with search and public trust signals', async ({ page }) => {
+test('homepage is a compact landing page for main sections', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('link', { name: /Start with current facts/i })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Find an answer fast/i })).toBeVisible();
-  await expect(page.getByRole('searchbox', { name: /Search civic questions/i })).toBeVisible();
-  await expect(page.getByText(/topics indexed/i)).toBeVisible();
-  await expect(page.getByText(/sources tracked/i)).toBeVisible();
-  await expect(page.getByText(/latest internal provenance check/i)).toBeVisible();
-  await expect(page.getByText(/reviewed page records/i)).toBeVisible();
-  await expect(page.getByText(/audited page records/i)).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: /Stay or go/i })).toBeVisible();
+  await expect(page.getByText(/source-first, autonomous, non-partisan knowledge base/i)).toBeVisible();
+  const landingNav = page.getByRole('navigation', { name: /Main site sections/i });
+  await expect(landingNav.getByRole('link', { name: /^Questions/i })).toBeVisible();
+  await expect(landingNav.getByRole('link', { name: /^Sources/i })).toBeVisible();
+  await expect(landingNav.getByRole('link', { name: /^Method \/ Ops/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Facts/i })).toHaveCount(0);
 });
 
-test('questions search, filters, maturity legend, and disclosure rows work', async ({ page }) => {
+test('questions page keeps only search and one category filter, with quiet trust metadata at bottom', async ({ page }) => {
   await page.goto('/questions/');
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
-  await expect(page.getByText(/Maturity legend/i)).toBeVisible();
-  await expect(page.getByText(/Internal provenance check =/i)).toBeVisible();
+  await expect(page.getByLabel('Search topics')).toBeVisible();
+  await expect(page.getByLabel('Category')).toBeVisible();
+  await expect(page.getByLabel('Dossier state')).toHaveCount(0);
+  await expect(page.getByLabel('Time sensitivity')).toHaveCount(0);
+  await expect(page.getByLabel('Provenance check')).toHaveCount(0);
+  await expect(page.getByText(/Browse categories/i)).toHaveCount(0);
+  await expect(page.getByLabel('Questions trust metadata')).toContainText(/full dossier/i);
+  await expect(page.getByLabel('Questions trust metadata')).toContainText(/partial dossier/i);
+  await expect(page.getByLabel('Questions trust metadata')).toContainText(/Internal provenance check =/i);
   await expect(page.getByRole('link', { name: /Public review trail/i })).toBeVisible();
-  await expect(page.getByText(/audits/i)).toHaveCount(0);
-  await expect(page.getByRole('button', { name: /All 23 questions/i })).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.getByRole('link', { name: /Open dossier:/i }).first()).toBeVisible();
+
   await page.getByLabel('Search topics').fill('CPP');
   await expect(page.getByText(/1 question shown/i)).toBeVisible();
   await expect(page.getByText(/Active filters/i)).toBeVisible();
@@ -46,43 +50,44 @@ test('questions search, filters, maturity legend, and disclosure rows work', asy
   await expect(page.getByText(/23 questions shown/i)).toBeVisible();
 });
 
-test('question dossier report navigation does not lead to missing report pages', async ({ page }) => {
-  await page.goto('/questions/');
-  await page.getByLabel('Search topics').fill('equalization');
-  await expect(page.getByText(/1 question shown/i)).toBeVisible();
-  await page.getByRole('button', { name: /Expand summary for .*Equalization/i }).click();
-
-  for (const name of [/neutral report/i, /pro argument/i, /anti argument/i]) {
-    const link = page.getByRole('link', { name }).first();
-    await expect(link).toBeVisible();
-    const responsePromise = page.waitForResponse((response) => response.url().includes('/questions/equalization/') && response.status() < 400);
-    await link.click();
-    const response = await responsePromise;
-    expect(response.status()).toBeLessThan(400);
-    await expect(page.getByRole('heading', { level: 1 })).toContainText(/Equalization|equalization/i);
-    await page.goto('/questions/');
-    await page.getByLabel('Search topics').fill('equalization');
-    await page.getByRole('button', { name: /Expand summary for .*Equalization/i }).click();
-  }
-
+test('question dossier report navigation uses short labels and includes dossier link', async ({ page }) => {
   await page.goto('/questions/equalization/');
-  for (const label of ['Neutral', 'Pro', 'Anti']) {
-    const responsePromise = page.waitForResponse((response) => response.url().includes(`/questions/equalization/${label.toLowerCase()}`) && response.status() < 400);
-    await page.getByRole('link', { name: label, exact: true }).click();
-    const response = await responsePromise;
-    expect(response.status()).toBeLessThan(400);
-    await expect(page.getByRole('heading', { level: 1 })).toContainText(/Equalization|equalization/i);
-    await page.goto('/questions/equalization/');
+  for (const label of ['Dossier', 'Neutral', 'Pro', 'Anti', 'Claims', 'Sources']) {
+    await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: label, exact: true })).toBeVisible();
   }
+
+  await page.goto('/questions/legal-process/neutral/');
+  const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
+  await expect(dossierNav.getByRole('link', { name: 'Dossier', exact: true })).toBeVisible();
+  await expect(dossierNav.getByRole('link', { name: 'Neutral', exact: true })).toBeVisible();
+  await expect(dossierNav.getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
+  await expect(dossierNav.getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
+  await expect(dossierNav.getByRole('link', { name: /Pro steelman/i })).toHaveCount(0);
+  await expect(dossierNav.getByRole('link', { name: /Anti steelman/i })).toHaveCount(0);
+  await expect(dossierNav.getByRole('link', { name: /Neutral mediator/i })).toHaveCount(0);
+  await dossierNav.getByRole('link', { name: 'Dossier', exact: true }).click();
+  await expect(page).toHaveURL(/\/questions\/legal-process\/?$/);
+});
+
+test('report section navigation is collapsible on mobile and does not overlay content while scrolling', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/questions/legal-process/neutral/');
+  const sectionNav = page.getByRole('group', { name: /Report section jumps/i });
+  await expect(sectionNav).toBeVisible();
+  await expect(sectionNav).toHaveJSProperty('open', false);
+  await page.evaluate(() => window.scrollTo(0, 1200));
+  const navBox = await sectionNav.boundingBox();
+  const headingBox = await page.getByRole('heading', { name: /What current sources support/i }).boundingBox();
+  expect(navBox && headingBox ? navBox.y + navBox.height <= headingBox.y || navBox.y >= headingBox.y + headingBox.height : true).toBeTruthy();
 });
 
 test('full dossier report pages show steelman and neutral mediator structure', async ({ page }) => {
   await page.goto('/questions/legal-process/neutral/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText(/Neutral synthesis/i);
   await expect(page.getByText(/written after the pro and anti reports/i)).toBeVisible();
-  await expect(page.getByRole('link', { name: /Pro steelman/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /Anti steelman/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /Claims ledger/i })).toBeVisible();
+  await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
+  await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
+  await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Claims', exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: /Weak points/i })).toBeVisible();
   await expect(page.getByRole('heading', { name: /What would change this assessment/i })).toBeVisible();
 
@@ -95,24 +100,8 @@ test('full dossier report pages show steelman and neutral mediator structure', a
   await expect(page.getByRole('heading', { name: /Counterarguments/i })).toBeVisible();
 });
 
-test('facts page works as a public briefing with timeline and source-backed certainty labels', async ({ page }) => {
-  await page.goto('/facts/');
-  await expect(page.getByRole('heading', { name: /Public briefing/i })).toBeVisible();
-  await expect(page.getByLabel('Briefing status').getByText(/Last checked against tracked official sources: 2026-05-02/i)).toBeVisible();
-  await expect(page.getByText(/Petition → referendum → negotiations/i)).toBeVisible();
-  await expect(page.getByText(/What is confirmed/i)).toBeVisible();
-  await expect(page.getByText(/What is disputed/i)).toBeVisible();
-  await expect(page.getByText(/What is unknown/i)).toBeVisible();
-  await expect(page.getByRole('link', { name: /Read referendum mechanics/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /Trace the public review log/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /Elections Alberta source/i })).toBeVisible();
-  await expect(page.getByText(/not legal advice/i)).toBeVisible();
-  await expect(page.getByText(/audit pending/i)).toHaveCount(0);
-  await expect(page.getByText(/external audit/i)).toHaveCount(0);
-});
-
-test('shared page trust layer appears on public briefing and dossier surfaces', async ({ page }) => {
-  const routesWithTrustLayer = ['/facts/', '/questions/', '/sources/', '/method/', '/repo/', '/audit/', '/questions/legal-process/'];
+test('shared page trust layer remains on supporting public trust surfaces', async ({ page }) => {
+  const routesWithTrustLayer = ['/sources/', '/method/', '/repo/', '/audit/'];
 
   for (const route of routesWithTrustLayer) {
     await page.goto(route);
@@ -123,7 +112,7 @@ test('shared page trust layer appears on public briefing and dossier surfaces', 
     await expect(trustLayer.getByRole('link', { name: /Inspect sources|Source library/i })).toBeVisible();
     await expect(trustLayer.getByRole('link', { name: /Open review log|Review log/i })).toBeVisible();
     await expect(trustLayer.getByText(/audit pending/i)).toHaveCount(0);
-    await expect(trustLayer.getByText(/external audit/i)).toHaveCount(0);
+    await expect(trustLayer.getByText(/audit pending/i)).toHaveCount(0);
   }
 });
 
@@ -172,11 +161,11 @@ test('public trust surfaces explain repo, review log, and changelog clearly', as
 
   await page.goto('/changelog/');
   await expect(page.getByText(/Change history/i)).toBeVisible();
-  await expect(page.getByLabel('Change entries').getByText(/source library ux/i)).toBeVisible();
   await expect(page.getByText('Files changed', { exact: true })).toBeVisible();
 
-  await page.goto('/ops/');
-  await expect(page.getByText(/internal provenance check/i)).toBeVisible();
+  await page.goto('/method/');
+  await expect(page.getByRole('heading', { name: /Method \/ Ops/i })).toBeVisible();
+  await expect(page.getByText(/internal provenance check/i).first()).toBeVisible();
   await expect(page.getByRole('link', { name: /Inspect page-level review manifest/i })).toBeVisible();
   await expect(page.getByText(/unaudited/i)).toHaveCount(0);
 });

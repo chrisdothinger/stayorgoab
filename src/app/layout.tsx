@@ -1,6 +1,6 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import './globals.css';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
@@ -11,11 +11,9 @@ export const metadata: Metadata = {
 };
 
 const navItems = [
-  ['Facts', '/facts'],
   ['Questions', '/questions'],
   ['Sources', '/sources'],
-  ['Method', '/method'],
-  ['Ops', '/ops']
+  ['Method / Ops', '/method']
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -38,7 +36,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <footer className="footer mono">
             <span>Independent non-partisan research project. Not legal or financial advice.</span>
             <span>
-              <Link href="/disclaimer">Disclaimer</Link> · <Link href="/audit">Review log</Link> · <Link href="/agents">Agents</Link> · <Link href="/ops">Ops</Link>
+              <Link href="/disclaimer">Disclaimer</Link> · <Link href="/audit">Review log</Link> · <Link href="/agents">Agents</Link> · <Link href="/method">Method / Ops</Link>
             </span>
           </footer>
         </div>

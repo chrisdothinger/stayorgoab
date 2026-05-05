@@ -11,6 +11,7 @@ Scope: after the UX/Ops sprint, complete remaining existing dossiers, then plan 
 - Do not invent sources, source IDs, run dates, external audits, legal authority, or government/regulator verification.
 - Neutral reports are mediator/synthesis reports comparing pro and anti strengths/weaknesses; they are not a third advocacy position.
 - Keep public copy non-partisan, uncertainty-labelled, citation-backed, and clear for normal readers.
+- Use numbered report citations: cite sources inline as `[1]`, `[2]`, etc.; include a `## Sources` section in every report with matching numbered source entries. Do not use raw source IDs as the public inline citation format.
 - Never commit secrets, raw provider logs, raw agent transcripts, hidden chain-of-thought, personal contact data, or unredacted submissions.
 
 ## Recovery files
@@ -52,8 +53,9 @@ For each question in a batch, use this sequence:
 3. Anti Report Agent — strongest honest anti-independence/pro-federation case supported by available sources.
 4. Claim/Citation Agent — normalize claims and verify source IDs.
 5. Neutral Mediator Agent — only after pro + anti exist; compare strengths, weaknesses, evidence quality, and uncertainty.
-6. Synthesis Auditor — check fairness, overclaiming, missing citations, uncertainty, and public wording.
-7. UX/Public Clarity Auditor — check reader comprehension, short answer, source limits, and next links.
+6. Citation Format Agent — enforce public citation format: all report body citations are numbered bracket references (`[1]`, `[2]`, etc.) and every report has a `## Sources` section listing the matching numbered source records.
+7. Synthesis Auditor — check fairness, overclaiming, missing citations, uncertainty, and public wording.
+8. UX/Public Clarity Auditor — check reader comprehension, short answer, source limits, and next links.
 
 Full-dossier report contract, where applicable:
 
@@ -66,7 +68,7 @@ Full-dossier report contract, where applicable:
 - Strongest evidence
 - Weak points
 - Counterarguments
-- Source notes
+- Sources
 - What would change this assessment
 - Open questions
 - Main uncertainty

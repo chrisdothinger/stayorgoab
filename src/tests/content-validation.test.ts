@@ -68,7 +68,7 @@ describe('content validation', () => {
       '## strongest evidence',
       '## weak points',
       '## counterarguments',
-      '## source notes',
+      '## sources',
       '## what would change this assessment',
       '## open questions',
       '## main uncertainty',
@@ -83,6 +83,12 @@ describe('content validation', () => {
         const body = report.body.toLowerCase();
         const checks = requiredSections.map((section) => body.includes(section) ? null : `${topic.slug}:${stance}:${section.replace('## ', '').replace(/ /g, '-')}`);
         checks.push(body.length > 5000 ? null : `${topic.slug}:${stance}:too-short`);
+        const sourceSection = report.body.split(/## sources/i)[1]?.split(/\n## /)[0] ?? '';
+        checks.push(/\[[a-z][a-z0-9_-]*(?:\s*,\s*[a-z0-9_-]+)*\]/i.test(report.body.split(/## sources/i)[0] ?? '') ? `${topic.slug}:${stance}:raw-source-id-citation` : null);
+        files.sourceIds.forEach((sourceId, sourceIndex) => {
+          const sourceNumber = sourceIndex + 1;
+          checks.push(sourceSection.includes(`${sourceNumber}.`) && sourceSection.includes(`\`${sourceId}\``) ? null : `${topic.slug}:${stance}:source-${sourceNumber}`);
+        });
         if (stance === 'neutral') {
           checks.push(body.includes('pro report') || body.includes('pro-independence') ? null : `${topic.slug}:neutral:pro-mediation`);
           checks.push(body.includes('anti report') || body.includes('pro-federation') ? null : `${topic.slug}:neutral:anti-mediation`);

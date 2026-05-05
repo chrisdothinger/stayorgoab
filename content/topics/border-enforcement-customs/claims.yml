@@ -1,0 +1,28 @@
+claims:
+- id: claim-border-enforcement-customs-001
+  topic_slug: border-enforcement-customs
+  text: Current sources show that border services, customs law, and immigration/citizenship administration are federal Canadian functions today; they do not settle whether an independent Alberta would have open travel, customs inspections, shared border posts, new documentation rules, or enforcement agreements with Canada and the United States.
+  status: source_supported
+  source_ids: &id001
+  - cbsa-main
+  - customs-act
+  - ircc-main
+  risk: medium
+- id: claim-border-enforcement-customs-002
+  topic_slug: border-enforcement-customs
+  text: The strongest pro-independence case is that Alberta could negotiate practical border arrangements to keep lawful travel and trade moving while building its own customs and entry rules around provincial economic priorities.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-border-enforcement-customs-003
+  topic_slug: border-enforcement-customs
+  text: 'The strongest caution is that borders are not symbolic only: customs inspections, immigration authority, inadmissibility decisions, smuggling enforcement, data-sharing, ports of entry, staffing, and traveller documentation require legal authority and agreements before people can rely on seamless movement.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-border-enforcement-customs-004
+  topic_slug: border-enforcement-customs
+  text: 'This topic remains uncertainty-labelled: High; border outcomes depend on Canada-Alberta negotiations, federal laws, U.S. recognition and procedures, customs systems, immigration rules, policing, infrastructure, and staffing.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

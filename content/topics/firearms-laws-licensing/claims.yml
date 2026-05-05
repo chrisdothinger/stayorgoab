@@ -1,0 +1,28 @@
+claims:
+- id: claim-firearms-laws-licensing-001
+  topic_slug: firearms-laws-licensing
+  text: "Current sources show firearms licensing and regulatory baselines involving federal law, the RCMP Canadian Firearms Program, and Alberta\u2019s Chief Firearms Office; they do not settle whether an independent Alberta would keep, replace, relax, tighten, or renegotiate firearms classifications, licensing, enforcement, data systems, or import controls."
+  status: source_supported
+  source_ids: &id001
+  - firearms-act
+  - rcmp-canadian-firearms-program
+  - alberta-chief-firearms-office
+  risk: medium
+- id: claim-firearms-laws-licensing-002
+  topic_slug: firearms-laws-licensing
+  text: The strongest pro-independence case is that Alberta could write firearms policy closer to provincial priorities, rural realities, sport-shooting communities, and local accountability, instead of relying on federal policy choices that many Alberta gun owners dispute.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-firearms-laws-licensing-003
+  topic_slug: firearms-laws-licensing
+  text: 'The strongest caution is that firearms regulation is a public-safety and cross-border enforcement system: licensing records, prohibited and restricted classifications, imports, tracing, police checks, safe storage, and mutual recognition could create safety and legal gaps if continuity were not explicit.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-firearms-laws-licensing-004
+  topic_slug: firearms-laws-licensing
+  text: 'This topic remains uncertainty-labelled: High; firearms rules connect criminal law, licensing databases, policing, import controls, public safety, courts, and politically contested rights-and-safety claims.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

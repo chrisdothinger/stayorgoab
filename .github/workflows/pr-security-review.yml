@@ -7,6 +7,18 @@ jobs:
   pr-security-review:
     runs-on: ubuntu-latest
     steps:
+      - name: Require human review marker for external PRs
+        if: github.event.pull_request.user.login != 'chrisdothinger'
+        run: |
+          node <<'NODE'
+          const event = require(process.env.GITHUB_EVENT_PATH);
+          const labels = (event.pull_request.labels || []).map((label) => label.name.toLowerCase());
+          const accepted = ['human-reviewed', 'chris-approved', 'trusted-contributor'];
+          if (!labels.some((label) => accepted.includes(label))) {
+            console.error('External PRs require a human review marker label before automated checks can pass. Add one of: human-reviewed, chris-approved, trusted-contributor.');
+            process.exit(1);
+          }
+          NODE
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0

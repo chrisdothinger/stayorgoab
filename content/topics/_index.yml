@@ -422,3 +422,54 @@ topics:
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
+- slug: student-loans-universities-research
+  title: Student loans, universities, and research funding
+  plain_question: What would happen to student loans, universities, and research funding?
+  category: Taxes, debt, and public services
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - student loans
+  - universities
+  - research funding
+  - post-secondary education
+  - grants
+  summary: Post-secondary finance would require separating Alberta institutions and grants from federal student aid and research-funding programs; current sources show today’s systems, not an independence transition plan.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: postal-telecom-broadcasting
+  title: Postal service, telecom, and broadcasting
+  plain_question: What would happen to mail, telecom, internet, wireless spectrum, and broadcasting rules?
+  category: Borders, trade, currency, and citizenship
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - postal service
+  - telecom
+  - internet
+  - wireless spectrum
+  - broadcasting
+  summary: Mail, telecom, spectrum, and broadcasting are currently tied to federal institutions and regulators; independence claims need evidence about continuity, regulation, market access, and consumer protection.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: agriculture-food-inspection-market-access
+  title: Agriculture, food inspection, and market access
+  plain_question: How would independence affect agriculture, food inspection, exports, and market access?
+  category: Economy and fiscal policy
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - agriculture
+  - food inspection
+  - exports
+  - market access
+  - CFIA
+  summary: Agriculture and food systems depend on provincial programs, federal inspection, and export-market rules; independence would require source-backed plans for inspection authority and market access.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4

@@ -413,3 +413,174 @@ sources:
     content_hash: null
     last_checked_at: "2026-05-05"
     status: active
+
+  - id: canada-student-financial-assistance
+    slug: canada-student-financial-assistance
+    title: "Canada Student Financial Assistance Program"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://www.canada.ca/en/employment-social-development/programs/canada-student-loans-grants.html"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Canada page for the Canada Student Financial Assistance Program, including federal student loans and grants context."
+    how_used: "Baseline source for current federal student loan and grant systems before considering independence-related continuity."
+    related_topic_slugs: ["student-loans-universities-research"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+
+  - id: alberta-student-aid
+    slug: alberta-student-aid
+    title: "Alberta Student Aid"
+    publisher: "Government of Alberta"
+    author: "Government of Alberta"
+    url: "https://studentaid.alberta.ca/"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Alberta student-aid portal for provincial loan, grant, and scholarship administration."
+    how_used: "Baseline source for current Alberta student-aid administration."
+    related_topic_slugs: ["student-loans-universities-research"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+
+  - id: tri-agency-research-funding
+    slug: tri-agency-research-funding
+    title: "Tri-agency research funding"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://www.canada.ca/en/research-coordinating-committee/programs/tri-agency-research-funding.html"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Canada page describing federal tri-agency research funding coordination."
+    how_used: "Baseline source for current federal research-funding institutions relevant to universities and researchers."
+    related_topic_slugs: ["student-loans-universities-research"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+
+  - id: canada-post
+    slug: canada-post
+    title: "Canada Post"
+    publisher: "Canada Post"
+    author: "Canada Post"
+    url: "https://www.canadapost-postescanada.ca/cpc/en/home.page"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Canada Post public portal for national postal-service context."
+    how_used: "Baseline source for current postal-service infrastructure and public-facing services."
+    related_topic_slugs: ["postal-telecom-broadcasting"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+
+  - id: crtc-main
+    slug: crtc-main
+    title: "Canadian Radio-television and Telecommunications Commission"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://crtc.gc.ca/eng/home-accueil.htm"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Canadian regulator site for broadcasting and telecommunications context."
+    how_used: "Baseline source for current telecommunications and broadcasting regulation."
+    related_topic_slugs: ["postal-telecom-broadcasting"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+
+  - id: ised-spectrum-management
+    slug: ised-spectrum-management
+    title: "Spectrum management and telecommunications"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Federal spectrum-management and telecommunications portal for wireless-spectrum and telecom policy context."
+    how_used: "Baseline source for current spectrum-management and telecommunications functions."
+    related_topic_slugs: ["postal-telecom-broadcasting"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+
+  - id: cfia-main
+    slug: cfia-main
+    title: "Canadian Food Inspection Agency"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://inspection.canada.ca/en"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Canadian Food Inspection Agency portal for federal food inspection, animal health, plant health, and food-safety context."
+    how_used: "Baseline source for current federal food-inspection and animal/plant health functions."
+    related_topic_slugs: ["agriculture-food-inspection-market-access"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+
+  - id: agriculture-canada-main
+    slug: agriculture-canada-main
+    title: "Agriculture and Agri-Food Canada"
+    publisher: "Government of Canada"
+    author: "Government of Canada"
+    url: "https://agriculture.canada.ca/en"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Agriculture and Agri-Food Canada portal for federal agriculture programs and market context."
+    how_used: "Baseline source for current federal agriculture programming and market context."
+    related_topic_slugs: ["agriculture-food-inspection-market-access"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active
+
+  - id: alberta-agriculture
+    slug: alberta-agriculture
+    title: "Agriculture and irrigation"
+    publisher: "Government of Alberta"
+    author: "Government of Alberta"
+    url: "https://www.alberta.ca/agriculture-and-irrigation"
+    published_at: null
+    accessed_at: "2026-05-05"
+    source_type: official
+    stance: neutral
+    reliability_category: primary_official
+    summary: "Government of Alberta agriculture and irrigation portal for provincial agriculture program context."
+    how_used: "Baseline source for current Alberta agriculture responsibilities and programs."
+    related_topic_slugs: ["agriculture-food-inspection-market-access"]
+    archive_url: null
+    content_hash: null
+    last_checked_at: "2026-05-05"
+    status: active

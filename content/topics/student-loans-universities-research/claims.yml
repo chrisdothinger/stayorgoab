@@ -1,0 +1,28 @@
+claims:
+- id: claim-student-loans-universities-research-001
+  topic_slug: student-loans-universities-research
+  text: Current public records show federal student financial assistance, Alberta student aid, and federal tri-agency research funding, but they do not establish how loans, grants, university transfers, or research programs would be replaced or continued after independence.
+  status: source_supported
+  source_ids: &id001
+  - canada-student-financial-assistance
+  - alberta-student-aid
+  - tri-agency-research-funding
+  risk: medium
+- id: claim-student-loans-universities-research-002
+  topic_slug: student-loans-universities-research
+  text: The strongest pro case is that more local post-secondary policy, student-aid design, and research priorities could be aligned with Alberta institutions and taxpayers.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-student-loans-universities-research-003
+  topic_slug: student-loans-universities-research
+  text: The strongest caution is that students, universities, researchers, and lenders could face uncertainty if federal aid, grant programs, loan servicing, or institutional funding channels changed before replacement systems were proven.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-student-loans-universities-research-004
+  topic_slug: student-loans-universities-research
+  text: 'This topic remains uncertainty-labelled: Medium; student-loan servicing, grant eligibility, university funding, research councils, data transfer, and transition financing remain conditional on future decisions and evidence.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

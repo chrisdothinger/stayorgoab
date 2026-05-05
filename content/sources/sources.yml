@@ -1485,3 +1485,243 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+
+- id: impact-assessment-agency
+  slug: impact-assessment-agency
+  title: Impact Assessment Agency of Canada
+  publisher: Government of Canada
+  author: Impact Assessment Agency of Canada
+  url: https://www.canada.ca/en/impact-assessment-agency.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal agency portal for impact assessment administration and guidance.
+  how_used: Baseline source for What would happen to environmental assessments, pipeline approvals, and major project regulation?
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: impact-assessment-act
+  slug: impact-assessment-act
+  title: Impact Assessment Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/I-2.75/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary federal statute for current federal impact-assessment baseline.
+  how_used: Baseline source for What would happen to environmental assessments, pipeline approvals, and major project regulation?
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-energy-regulator
+  slug: alberta-energy-regulator
+  title: Alberta Energy Regulator
+  publisher: Alberta Energy Regulator
+  author: Alberta Energy Regulator
+  url: https://www.aer.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta regulator portal for energy-development regulation and related provincial approval context.
+  how_used: Baseline source for What would happen to environmental assessments, pipeline approvals, and major project regulation?
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-environmental-assessment-process
+  slug: alberta-environmental-assessment-process
+  title: Environmental assessment process
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/environmental-assessment-process
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta environmental-assessment process page for provincial major-project assessment baseline.
+  how_used: Baseline source for What would happen to environmental assessments, pipeline approvals, and major project regulation?
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: canada-labour-code
+  slug: canada-labour-code
+  title: Canada Labour Code
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/L-2/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary federal labour statute baseline for federally regulated employment and labour relations.
+  how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-employment-standards
+  slug: alberta-employment-standards
+  title: Employment standards
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/employment-standards
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta employment-standards portal for current provincial workplace rules.
+  how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-labour-relations
+  slug: alberta-labour-relations
+  title: Labour relations
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/labour-relations
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta labour-relations overview for provincial bargaining and labour-relations context.
+  how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-labour-relations-board
+  slug: alberta-labour-relations-board
+  title: Alberta Labour Relations Board
+  publisher: Alberta Labour Relations Board
+  author: Alberta Labour Relations Board
+  url: https://www.alrb.gov.ab.ca/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Provincial labour-relations tribunal portal for Alberta labour-board administration.
+  how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: correctional-service-canada
+  slug: correctional-service-canada
+  title: Correctional Service Canada
+  publisher: Government of Canada
+  author: Correctional Service Canada
+  url: https://www.canada.ca/en/correctional-service.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal corrections agency portal for current penitentiary and offender-management baseline.
+  how_used: Baseline source for What would happen to federal prisons, corrections, parole, and sentenced inmates?
+  related_topic_slugs:
+  - federal-prisons-corrections-parole
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: corrections-conditional-release-act
+  slug: corrections-conditional-release-act
+  title: Corrections and Conditional Release Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-44.6/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary federal statute for corrections, conditional release, and related institutional baseline.
+  how_used: Baseline source for What would happen to federal prisons, corrections, parole, and sentenced inmates?
+  related_topic_slugs:
+  - federal-prisons-corrections-parole
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: parole-board-canada
+  slug: parole-board-canada
+  title: Parole Board of Canada
+  publisher: Government of Canada
+  author: Parole Board of Canada
+  url: https://www.canada.ca/en/parole-board.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal parole-board portal for current conditional-release decision-making baseline.
+  how_used: Baseline source for What would happen to federal prisons, corrections, parole, and sentenced inmates?
+  related_topic_slugs:
+  - federal-prisons-corrections-parole
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+
+- id: alberta-adult-correctional-remand-centres
+  slug: alberta-adult-correctional-remand-centres
+  title: Adult correctional and remand centres
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/adult-correctional-remand-centres
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta page for provincial adult correctional and remand centres.
+  how_used: Baseline source for What would happen to federal prisons, corrections, parole, and sentenced inmates?
+  related_topic_slugs:
+  - federal-prisons-corrections-parole
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active

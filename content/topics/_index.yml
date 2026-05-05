@@ -749,3 +749,60 @@ topics:
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
+- slug: environmental-assessment-pipeline-approvals
+  title: Environmental assessments, pipeline approvals, and major project regulation
+  plain_question: What would happen to environmental assessments, pipeline approvals, and major project regulation?
+  category: Energy, environment, and infrastructure
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Major projects sit at the centre of Alberta politics; people may argue over whether independence would speed pipelines and mines, reduce perceived federal obstruction, or weaken environmental scrutiny, Indigenous consultation, investor certainty, and cross-border approvals.
+  keywords:
+  - environmental assessment
+  - pipeline approvals
+  - Impact Assessment Agency
+  - Alberta Energy Regulator
+  - major projects
+  summary: Current sources show separate federal and Alberta baselines for impact assessment, environmental assessment, and energy regulation; independence would require explicit rules for project approvals, enforcement, consultation, equivalency, and recognition by other governments and markets.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
+  claim_count: 4
+- slug: labour-standards-public-sector-unions
+  title: Labour standards, unions, and public-sector bargaining
+  plain_question: What would happen to labour standards, union contracts, and public-sector bargaining?
+  category: Workplaces, unions, and public services
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Workplace rules affect paycheques, strikes, public services, oilfield contractors, federal-sector employees, nurses, teachers, civil servants, and employers; people may argue over whether independence would improve local bargaining control or destabilize rights and contracts.
+  keywords:
+  - labour standards
+  - unions
+  - collective bargaining
+  - public sector
+  - employment standards
+  summary: Current sources show federal labour-law baselines for federally regulated work and Alberta baselines for employment standards, labour relations, and bargaining institutions; independence would require explicit continuity rules for workers, employers, unions, and public-sector contracts.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
+  claim_count: 4
+- slug: federal-prisons-corrections-parole
+  title: Federal prisons, corrections, parole, and sentenced inmates
+  plain_question: What would happen to federal prisons, corrections, parole, and sentenced inmates?
+  category: Policing, courts, and public safety
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Corrections is sensitive because it links victims, public safety, prison staff, rural communities, federal employees, inmates’ rights, parole decisions, and costs; people may argue over whether independence would improve local accountability or create dangerous gaps in custody and supervision.
+  keywords:
+  - federal prisons
+  - corrections
+  - parole
+  - Correctional Service Canada
+  - sentenced inmates
+  summary: Current sources show federal baselines for penitentiaries, federal corrections, and parole plus Alberta baselines for remand and correctional centres; independence would require explicit decisions about custody, sentence administration, parole authority, staff, facilities, and public safety.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
+  claim_count: 4

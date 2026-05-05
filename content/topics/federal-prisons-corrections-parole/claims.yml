@@ -1,0 +1,42 @@
+claims:
+- id: claim-federal-prisons-corrections-parole-001
+  topic_slug: federal-prisons-corrections-parole
+  text: Current sources show federal baselines for penitentiaries, federal corrections, conditional
+    release, and parole plus Alberta baselines for provincial correctional and remand centres;
+    they do not settle what would happen to federal inmates located in Alberta, federal correctional
+    staff, parole files, victims services, records, or interjurisdictional custody agreements
+    after independence.
+  status: source_supported
+  source_ids: &id001
+  - correctional-service-canada
+  - corrections-conditional-release-act
+  - parole-board-canada
+  - alberta-adult-correctional-remand-centres
+  risk: medium
+- id: claim-federal-prisons-corrections-parole-002
+  topic_slug: federal-prisons-corrections-parole
+  text: The strongest pro-independence case is that Alberta could create a corrections and
+    parole system accountable to Alberta voters, align sentencing administration with local
+    public-safety priorities, and negotiate orderly transfer or service agreements for institutions,
+    staff, records, and supervision.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-federal-prisons-corrections-parole-003
+  topic_slug: federal-prisons-corrections-parole
+  text: 'The strongest caution is that custody and parole cannot tolerate ambiguity: inmates,
+    victims, staff, communities, courts, police, and parole officers need lawful authority,
+    secure facilities, records access, transport arrangements, and supervision systems on
+    day one.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-federal-prisons-corrections-parole-004
+  topic_slug: federal-prisons-corrections-parole
+  text: 'This topic remains uncertainty-labelled: High; outcomes depend on negotiated transfer
+    terms, federal and Alberta correctional statutes, court orders, staffing and union arrangements,
+    facility ownership, records transfer, parole-board continuity, victim notification, Indigenous
+    inmates’ rights, and public-safety operations.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

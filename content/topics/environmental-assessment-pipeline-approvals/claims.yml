@@ -1,0 +1,42 @@
+claims:
+- id: claim-environmental-assessment-pipeline-approvals-001
+  topic_slug: environmental-assessment-pipeline-approvals
+  text: Current sources show separate federal and Alberta baselines for impact assessment,
+    environmental assessment, and energy regulation; they do not settle whether an independent
+    Alberta could unilaterally accelerate projects, how cross-border or federally regulated
+    effects would be handled, or how Indigenous consultation and market recognition would
+    be maintained.
+  status: source_supported
+  source_ids: &id001
+  - impact-assessment-agency
+  - impact-assessment-act
+  - alberta-energy-regulator
+  - alberta-environmental-assessment-process
+  risk: medium
+- id: claim-environmental-assessment-pipeline-approvals-002
+  topic_slug: environmental-assessment-pipeline-approvals
+  text: The strongest pro-independence case is that Alberta could design a single-window project
+    review system closer to provincial priorities, reduce overlap between federal and provincial
+    processes, and make timelines more predictable if it legislated clear assessment, consultation,
+    enforcement, and appeal rules.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-environmental-assessment-pipeline-approvals-003
+  topic_slug: environmental-assessment-pipeline-approvals
+  text: 'The strongest caution is that major projects depend on more than one approval desk:
+    Indigenous rights, interprovincial and international effects, export markets, financing,
+    environmental credibility, and recognition by Canada or other jurisdictions could still
+    constrain projects even if Alberta changed its own law.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-environmental-assessment-pipeline-approvals-004
+  topic_slug: environmental-assessment-pipeline-approvals
+  text: 'This topic remains uncertainty-labelled: High; outcomes depend on Canada-Alberta
+    negotiations, constitutional terms, Indigenous consultation duties, environmental statutes,
+    regulator capacity, court rulings, investor confidence, cross-border infrastructure, and
+    recognition by other governments and markets.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

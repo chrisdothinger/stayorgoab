@@ -576,3 +576,54 @@ topics:
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
+- slug: water-rights-rivers
+  title: Water rights, rivers, and water infrastructure
+  plain_question: What would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
+  category: Energy, environment, and infrastructure
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - water rights
+  - rivers
+  - drinking water
+  - wastewater
+  - transboundary waters
+  summary: Water governance involves provincial allocation and infrastructure plus federal and interjurisdictional water roles; independence would require clear legal and operational continuity for rivers, drinking water, wastewater, and cross-border water issues.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: emergency-management-disaster-aid
+  title: Emergency management and disaster aid
+  plain_question: What would happen to emergency management, disaster response, and disaster aid?
+  category: Taxes, debt, and public services
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - emergency management
+  - disaster response
+  - disaster aid
+  - Public Safety Canada
+  - Alberta Emergency Management Agency
+  summary: Emergency response already spans provincial and federal systems; independence would require evidence about command roles, mutual aid, funding, disaster recovery, alerts, and continuity for affected communities.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: statistics-census-public-data
+  title: Statistics, census, and public data
+  plain_question: What would happen to census, statistics, and public data systems?
+  category: Bureaucracy and governance
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - statistics
+  - census
+  - public data
+  - Statistics Canada
+  - Alberta data
+  summary: Statistics, census, and public data underpin funding formulas, elections, business planning, research, and public accountability; independence would require credible data-governance continuity and comparability.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4

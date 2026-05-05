@@ -1,0 +1,28 @@
+claims:
+- id: claim-water-rights-rivers-001
+  topic_slug: water-rights-rivers
+  text: Current public records show Alberta water-management and drinking-water/wastewater responsibilities alongside federal transboundary-water information, but they do not settle how water allocation, river-basin management, water-quality rules, infrastructure funding, Indigenous rights, or interjurisdictional arrangements would operate after independence.
+  status: source_supported
+  source_ids: &id001
+  - alberta-water
+  - alberta-drinking-water-wastewater
+  - canada-transboundary-waters
+  risk: medium
+- id: claim-water-rights-rivers-002
+  topic_slug: water-rights-rivers
+  text: The strongest pro case is that alberta could seek more direct control over water allocation, infrastructure priorities, and watershed policy while designing arrangements around local river basins and municipal needs.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-water-rights-rivers-003
+  topic_slug: water-rights-rivers
+  text: The strongest caution is that communities, irrigators, industries, Indigenous governments, and downstream users could face uncertainty if water rights, quality rules, infrastructure funding, or cross-border river arrangements were not continuous.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-water-rights-rivers-004
+  topic_slug: water-rights-rivers
+  text: 'This topic remains uncertainty-labelled: Medium; water allocation, river-basin management, drinking-water and wastewater oversight, infrastructure funding, Indigenous rights, environmental standards, and interjurisdictional water arrangements remain conditional on future decisions and evidence.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

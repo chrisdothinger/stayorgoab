@@ -434,7 +434,7 @@ topics:
   - research funding
   - post-secondary education
   - grants
-  summary: "Post-secondary finance would require separating Alberta institutions and grants from federal student aid and research-funding programs; current sources show today\u2019s systems, not an independence transition plan."
+  summary: Post-secondary finance would require separating Alberta institutions and grants from federal student aid and research-funding programs; current sources show today’s systems, not an independence transition plan.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
@@ -646,7 +646,7 @@ topics:
   - restricted weapons
   - Canadian Firearms Program
   - Chief Firearms Officer
-  summary: "Current sources show firearms licensing and regulatory baselines involving federal law, the RCMP Canadian Firearms Program, and Alberta\u2019s Chief Firearms Office; independence would require explicit continuity plans rather than assumptions."
+  summary: Current sources show firearms licensing and regulatory baselines involving federal law, the RCMP Canadian Firearms Program, and Alberta’s Chief Firearms Office; independence would require explicit continuity plans rather than assumptions.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
@@ -688,4 +688,64 @@ topics:
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
+  claim_count: 4
+- slug: bank-deposits-financial-stability
+  title: Bank deposits, credit unions, and financial stability
+  plain_question: What would happen to bank deposits, credit unions, and financial-stability backstops?
+  category: Currency, banking, and financial stability
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: People may argue over whether savings, payroll accounts, mortgages, credit-union deposits, and bank confidence would be safer under local control or exposed to transition risk without federal deposit insurance and prudential backstops.
+  keywords:
+  - bank deposits
+  - deposit insurance
+  - credit unions
+  - CDIC
+  - OSFI
+  - financial stability
+  summary: Current sources show separate federal and Alberta baselines for banks, deposit insurance, prudential supervision, and credit-union deposit guarantees; independence would require explicit continuity plans for depositor protection and financial-stability backstops.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
+  claim_count: 4
+- slug: pharmaceutical-drug-approvals-supply
+  title: Prescription drug approvals, safety recalls, and medicine supply
+  plain_question: What would happen to prescription drug approvals, safety recalls, and medicine supply?
+  category: Healthcare and public safety
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: Prescription drugs are personal and urgent; people may argue over whether independence could speed access and local purchasing or risk interruptions in approvals, recalls, pharmacovigilance, imports, shortages, and pharmacy supply chains.
+  keywords:
+  - prescription drugs
+  - Health Canada
+  - drug approvals
+  - recalls
+  - medicine supply
+  - Food and Drugs Act
+  summary: Current sources show federal legal and regulatory baselines for drug approval, safety, compliance, recalls, and health-product information; independence would require explicit continuity plans for medicine access, safety surveillance, and supply chains.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
+  claim_count: 4
+- slug: privacy-data-federal-ids
+  title: Privacy rules, Social Insurance Numbers, and federal identity/data systems
+  plain_question: What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
+  category: Rights, law, and digital government
+  state: full_dossier
+  time_sensitivity: high
+  controversy_virality_score: 5
+  why_people_may_share_or_argue: 'Identity and privacy issues feel immediate: people may argue over payroll, tax filing, benefits, banking, health records, surveillance, data transfers, and whether independence would strengthen local control or create confusion and exposure.'
+  keywords:
+  - privacy
+  - Social Insurance Number
+  - federal IDs
+  - PIPEDA
+  - Privacy Act
+  - digital government
+  summary: Current sources show federal SIN administration and federal/provincial privacy-law baselines; independence would require explicit rules for identity numbers, data transfers, public-sector records, private-sector privacy, and service continuity.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 4
   claim_count: 4

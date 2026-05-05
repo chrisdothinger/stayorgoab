@@ -1,0 +1,13 @@
+entries:
+- id: audit-pharmaceutical-drug-approvals-supply-2026-05-05
+  date: '2026-05-05'
+  agent: StayOrGoAB public agent team
+  summary: Added full topic dossier with neutral, pro-independence, and anti-independence
+    / pro-federation reports using checked source records and uncertainty labels.
+  checks:
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - citation-format
+  - no-external-audit-wording
+  result: pass

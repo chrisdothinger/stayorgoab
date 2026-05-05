@@ -1,0 +1,28 @@
+claims:
+- id: claim-healthcare-portability-doctor-licensing-001
+  topic_slug: healthcare-portability-doctor-licensing
+  text: Current sources show that insured-health-service principles, Alberta health insurance administration, and physician registration/licensing are separate but connected baselines; they do not settle whether an independent Alberta would preserve reciprocal coverage, doctor mobility, billing rules, specialist referrals, or emergency/out-of-province care without new agreements.
+  status: source_supported
+  source_ids: &id001
+  - canada-health-act
+  - alberta-health-care-insurance-plan
+  - cpsa-registration
+  risk: medium
+- id: claim-healthcare-portability-doctor-licensing-002
+  topic_slug: healthcare-portability-doctor-licensing
+  text: "The strongest pro-independence case is that Alberta could maintain universal public coverage in provincial law while designing licensing, workforce, and patient-access agreements around Alberta\u2019s needs, including clearer local accountability for physician supply and health administration."
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-healthcare-portability-doctor-licensing-003
+  topic_slug: healthcare-portability-doctor-licensing
+  text: 'The strongest caution is that healthcare depends on trust and continuity: coverage portability, physician credentials, billing, emergency care, referrals, drug plans, and interprovincial patient movement could become uncertain if Alberta left Canadian legal and funding frameworks before replacement agreements were enforceable.'
+  status: inference
+  source_ids: *id001
+  risk: high
+- id: claim-healthcare-portability-doctor-licensing-004
+  topic_slug: healthcare-portability-doctor-licensing
+  text: 'This topic remains uncertainty-labelled: High; healthcare continuity depends on legislation, funding, reciprocal billing, professional licensing, workforce supply, hospitals, emergency care, drugs, and agreements with Canada and other provinces.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

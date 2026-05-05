@@ -10,8 +10,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Elections Alberta release announcing issuance of a citizen initiative petition
-    related to Alberta independence.
+  summary: Elections Alberta release announcing issuance of a citizen initiative petition related to Alberta independence.
   how_used: Seed source for referendum mechanics and current-status tracking.
   related_topic_slugs:
   - referendum-mechanics
@@ -32,8 +31,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Lists active citizen initiative petitions, including A Referendum Relating
-    to Alberta Independence, signature threshold, and collection dates.
+  summary: Lists active citizen initiative petitions, including A Referendum Relating to Alberta Independence, signature threshold, and collection dates.
   how_used: Current-status and referendum-mechanics source.
   related_topic_slugs:
   - referendum-mechanics
@@ -53,8 +51,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Explains notice, application, petition issuance, and requirements for citizen
-    initiative petitions.
+  summary: Explains notice, application, petition issuance, and requirements for citizen initiative petitions.
   how_used: Explains petition process mechanics.
   related_topic_slugs:
   - referendum-mechanics
@@ -74,8 +71,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Explains referendums under Alberta's Referendum Act and notes a referendum
-    set for October 19, 2026.
+  summary: Explains referendums under Alberta's Referendum Act and notes a referendum set for October 19, 2026.
   how_used: Seed source for referendum timing and process.
   related_topic_slugs:
   - referendum-mechanics
@@ -115,8 +111,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta address relevant to referendum context and provincial
-    positioning.
+  summary: Government of Alberta address relevant to referendum context and provincial positioning.
   how_used: Seed source for current-status and political-context tracking.
   related_topic_slugs:
   - referendum-ballot-2026
@@ -136,8 +131,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal law setting clarity requirements before the Government of Canada
-    enters negotiations on provincial secession.
+  summary: Federal law setting clarity requirements before the Government of Canada enters negotiations on provincial secession.
   how_used: Legal-process and clarity topic source.
   related_topic_slugs:
   - legal-process
@@ -158,8 +152,7 @@ sources:
   source_type: court
   stance: neutral
   reliability_category: primary_legal
-  summary: Supreme Court reference on unilateral secession, democratic expression,
-    constitutional negotiations, and Aboriginal interests.
+  summary: Supreme Court reference on unilateral secession, democratic expression, constitutional negotiations, and Aboriginal interests.
   how_used: Core legal baseline for secession and duty-to-negotiate claims.
   related_topic_slugs:
   - legal-process
@@ -201,10 +194,8 @@ sources:
   source_type: advocacy
   stance: anti_independence_or_rights_concern
   reliability_category: primary_stakeholder_statement
-  summary: First Nation statement about a stay related to an Alberta separation referendum
-    court challenge.
-  how_used: Seed source for Indigenous rights, treaties, litigation, and high-risk
-    current-status tracking.
+  summary: First Nation statement about a stay related to an Alberta separation referendum court challenge.
+  how_used: Seed source for Indigenous rights, treaties, litigation, and high-risk current-status tracking.
   related_topic_slugs:
   - indigenous-rights-treaties
   - indigenous-treaties
@@ -224,10 +215,8 @@ sources:
   source_type: media
   stance: neutral
   reliability_category: news_report
-  summary: News report describing a court pause on verification of an Alberta separation
-    petition.
-  how_used: Secondary source for current-status and court-process tracking; official/court
-    records should be preferred when available.
+  summary: News report describing a court pause on verification of an Alberta separation petition.
+  how_used: Secondary source for current-status and court-process tracking; official/court records should be preferred when available.
   related_topic_slugs:
   - referendum-mechanics
   - referendum-ballot-2026
@@ -247,8 +236,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta government pension information and link to Alberta Pension Plan
-    report material.
+  summary: Alberta government pension information and link to Alberta Pension Plan report material.
   how_used: Seed source for CPP/pension topic.
   related_topic_slugs:
   - cpp-pensions
@@ -267,8 +255,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Chief Actuary position on CPP withdrawal transfer calculation under subsection
-    113(2).
+  summary: Chief Actuary position on CPP withdrawal transfer calculation under subsection 113(2).
   how_used: Seed source for CPP withdrawal calculation claims.
   related_topic_slugs:
   - cpp-pensions
@@ -287,8 +274,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Budget 2026 documents, fiscal plan, revenue, expense, capital plan, and
-    related tables.
+  summary: Budget 2026 documents, fiscal plan, revenue, expense, capital plan, and related tables.
   how_used: Seed source for fiscal and economic baseline.
   related_topic_slugs:
   - economy-fiscal
@@ -331,10 +317,8 @@ sources:
   source_type: advocacy
   stance: anti_independence_or_rights_concern
   reliability_category: stakeholder_advocacy
-  summary: First Nations advocacy site describing treaty-rights concerns and litigation
-    related to Alberta separation.
-  how_used: Stakeholder/advocacy source for Indigenous rights and treaties topic;
-    requires corroboration for factual claims.
+  summary: First Nations advocacy site describing treaty-rights concerns and litigation related to Alberta separation.
+  how_used: Stakeholder/advocacy source for Indigenous rights and treaties topic; requires corroboration for factual claims.
   related_topic_slugs:
   - indigenous-rights-treaties
   - indigenous-treaties
@@ -353,10 +337,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada portal for the Canada Revenue Agency and federal tax
-    administration.
-  how_used: Baseline source for distinguishing current federal tax administration
-    from any future Alberta revenue-administration choices.
+  summary: Government of Canada portal for the Canada Revenue Agency and federal tax administration.
+  how_used: Baseline source for distinguishing current federal tax administration from any future Alberta revenue-administration choices.
   related_topic_slugs:
   - tax-collection-revenue-agency
   archive_url: null
@@ -374,10 +356,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada tax services page covering current federal tax filing,
-    payment, benefits, and program access.
-  how_used: Baseline source for the kinds of tax-facing systems residents and businesses
-    currently interact with.
+  summary: Government of Canada tax services page covering current federal tax filing, payment, benefits, and program access.
+  how_used: Baseline source for the kinds of tax-facing systems residents and businesses currently interact with.
   related_topic_slugs:
   - tax-collection-revenue-agency
   archive_url: null
@@ -395,10 +375,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta page describing Alberta tax programs and provincial
-    tax context.
-  how_used: Baseline source for Alberta-administered tax context and the distinction
-    between existing provincial capacity and future independence requirements.
+  summary: Government of Alberta page describing Alberta tax programs and provincial tax context.
+  how_used: Baseline source for Alberta-administered tax context and the distinction between existing provincial capacity and future independence requirements.
   related_topic_slugs:
   - tax-collection-revenue-agency
   archive_url: null
@@ -416,10 +394,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada portal for immigration, refugees, citizenship, and
-    related federal services.
-  how_used: Baseline source for current federal immigration and citizenship administration
-    before considering any independence transition.
+  summary: Government of Canada portal for immigration, refugees, citizenship, and related federal services.
+  how_used: Baseline source for current federal immigration and citizenship administration before considering any independence transition.
   related_topic_slugs:
   - immigration-passports-mobility
   archive_url: null
@@ -438,8 +414,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government of Canada page for Canadian passport and travel document services.
-  how_used: Baseline source for current passport administration and travel-document
-    services relevant to mobility questions.
+  how_used: Baseline source for current passport administration and travel-document services relevant to mobility questions.
   related_topic_slugs:
   - immigration-passports-mobility
   archive_url: null
@@ -458,8 +433,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Department of Justice Canada criminal justice information page.
-  how_used: Baseline source for distinguishing current federal criminal-justice responsibilities
-    from provincial court and justice-system operations.
+  how_used: Baseline source for distinguishing current federal criminal-justice responsibilities from provincial court and justice-system operations.
   related_topic_slugs:
   - courts-criminal-law
   archive_url: null
@@ -477,10 +451,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta page for provincial court information and court-related
-    public services.
-  how_used: Baseline source for existing Alberta court context before considering
-    any independence-related justice-system transition.
+  summary: Government of Alberta page for provincial court information and court-related public services.
+  how_used: Baseline source for existing Alberta court context before considering any independence-related justice-system transition.
   related_topic_slugs:
   - courts-criminal-law
   archive_url: null
@@ -498,10 +470,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada page for the Canada Student Financial Assistance Program,
-    including federal student loans and grants context.
-  how_used: Baseline source for current federal student loan and grant systems before
-    considering independence-related continuity.
+  summary: Government of Canada page for the Canada Student Financial Assistance Program, including federal student loans and grants context.
+  how_used: Baseline source for current federal student loan and grant systems before considering independence-related continuity.
   related_topic_slugs:
   - student-loans-universities-research
   archive_url: null
@@ -519,8 +489,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta student-aid portal for provincial loan, grant, and
-    scholarship administration.
+  summary: Government of Alberta student-aid portal for provincial loan, grant, and scholarship administration.
   how_used: Baseline source for current Alberta student-aid administration.
   related_topic_slugs:
   - student-loans-universities-research
@@ -539,10 +508,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada page describing federal tri-agency research funding
-    coordination.
-  how_used: Baseline source for current federal research-funding institutions relevant
-    to universities and researchers.
+  summary: Government of Canada page describing federal tri-agency research funding coordination.
+  how_used: Baseline source for current federal research-funding institutions relevant to universities and researchers.
   related_topic_slugs:
   - student-loans-universities-research
   archive_url: null
@@ -561,8 +528,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Canada Post public portal for national postal-service context.
-  how_used: Baseline source for current postal-service infrastructure and public-facing
-    services.
+  how_used: Baseline source for current postal-service infrastructure and public-facing services.
   related_topic_slugs:
   - postal-telecom-broadcasting
   archive_url: null
@@ -599,10 +565,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal spectrum-management and telecommunications portal for wireless-spectrum
-    and telecom policy context.
-  how_used: Baseline source for current spectrum-management and telecommunications
-    functions.
+  summary: Federal spectrum-management and telecommunications portal for wireless-spectrum and telecom policy context.
+  how_used: Baseline source for current spectrum-management and telecommunications functions.
   related_topic_slugs:
   - postal-telecom-broadcasting
   archive_url: null
@@ -620,10 +584,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Canadian Food Inspection Agency portal for federal food inspection, animal
-    health, plant health, and food-safety context.
-  how_used: Baseline source for current federal food-inspection and animal/plant health
-    functions.
+  summary: Canadian Food Inspection Agency portal for federal food inspection, animal health, plant health, and food-safety context.
+  how_used: Baseline source for current federal food-inspection and animal/plant health functions.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -641,10 +603,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Agriculture and Agri-Food Canada portal for federal agriculture programs
-    and market context.
-  how_used: Baseline source for current federal agriculture programming and market
-    context.
+  summary: Agriculture and Agri-Food Canada portal for federal agriculture programs and market context.
+  how_used: Baseline source for current federal agriculture programming and market context.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -662,8 +622,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta agriculture and irrigation portal for provincial
-    agriculture program context.
+  summary: Government of Alberta agriculture and irrigation portal for provincial agriculture program context.
   how_used: Baseline source for current Alberta agriculture responsibilities and programs.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
@@ -683,8 +642,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Federal department responsible for social programs and labour-market supports.
-  how_used: Baseline source for what would happen to employment insurance and federal
-    income benefits?
+  how_used: Baseline source for what would happen to employment insurance and federal income benefits?
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -703,8 +661,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government of Canada benefits portal for public benefit-program context.
-  how_used: Baseline source for what would happen to employment insurance and federal
-    income benefits?
+  how_used: Baseline source for what would happen to employment insurance and federal income benefits?
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -723,8 +680,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta income-support portal for provincial benefit-program context.
-  how_used: Baseline source for what would happen to employment insurance and federal
-    income benefits?
+  how_used: Baseline source for what would happen to employment insurance and federal income benefits?
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -742,10 +698,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal agency portal for national parks, historic sites, and conservation
-    context.
-  how_used: Baseline source for what would happen to national parks, crown land, and
-    public lands?
+  summary: Federal agency portal for national parks, historic sites, and conservation context.
+  how_used: Baseline source for what would happen to national parks, crown land, and public lands?
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -764,8 +718,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta public land use zones page for provincial public-land recreation and land-management context.
-  how_used: Baseline source for what would happen to national parks, crown land, and
-    public lands?
+  how_used: Baseline source for what would happen to national parks, crown land, and public lands?
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -783,10 +736,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal natural-resources department portal for Crown-resource and policy
-    context.
-  how_used: Baseline source for what would happen to national parks, crown land, and
-    public lands?
+  summary: Federal natural-resources department portal for Crown-resource and policy context.
+  how_used: Baseline source for what would happen to national parks, crown land, and public lands?
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -804,10 +755,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Transport Canada aviation portal for civil aviation and safety-regulation
-    context.
-  how_used: Baseline source for what would happen to airports, air travel, and aviation
-    safety regulation?
+  summary: Transport Canada aviation portal for civil aviation and safety-regulation context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation safety regulation?
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -825,10 +774,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal transportation regulator portal for air-travel and transportation
-    market context.
-  how_used: Baseline source for what would happen to airports, air travel, and aviation
-    safety regulation?
+  summary: Federal transportation regulator portal for air-travel and transportation market context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation safety regulation?
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -846,10 +793,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta ministry portal for provincial transportation infrastructure and
-    corridor context.
-  how_used: Baseline source for what would happen to airports, air travel, and aviation
-    safety regulation?
+  summary: Alberta ministry portal for provincial transportation infrastructure and corridor context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation safety regulation?
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -1175,6 +1120,139 @@ sources:
   how_used: Baseline source for abortion-reproductive-health-rights topic.
   related_topic_slugs:
   - abortion-reproductive-health-rights
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: firearms-act
+  slug: firearms-act
+  title: Firearms Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/f-11.6/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Official source for current firearms act baseline relevant to the firearms-laws-licensing topic.
+  how_used: Baseline source for What would happen to firearms laws, gun licensing, and restricted weapons rules?
+  related_topic_slugs:
+  - firearms-laws-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: rcmp-canadian-firearms-program
+  slug: rcmp-canadian-firearms-program
+  title: Canadian Firearms Program
+  publisher: Royal Canadian Mounted Police
+  author: Royal Canadian Mounted Police
+  url: https://rcmp.ca/en/firearms
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official source for current canadian firearms program baseline relevant to the firearms-laws-licensing topic.
+  how_used: Baseline source for What would happen to firearms laws, gun licensing, and restricted weapons rules?
+  related_topic_slugs:
+  - firearms-laws-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-chief-firearms-office
+  slug: alberta-chief-firearms-office
+  title: Chief Firearms Office
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/chief-firearms-office
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official source for current chief firearms office baseline relevant to the firearms-laws-licensing topic.
+  how_used: Baseline source for What would happen to firearms laws, gun licensing, and restricted weapons rules?
+  related_topic_slugs:
+  - firearms-laws-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-health-care-insurance-plan
+  slug: alberta-health-care-insurance-plan
+  title: Alberta Health Care Insurance Plan
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/ahcip
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official source for current alberta health care insurance plan baseline relevant to the healthcare-portability-doctor-licensing topic.
+  how_used: Baseline source for What would happen to healthcare coverage, doctor licensing, and out-of-province care?
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: cpsa-registration
+  slug: cpsa-registration
+  title: Physician registration
+  publisher: College of Physicians & Surgeons of Alberta
+  author: College of Physicians & Surgeons of Alberta
+  url: https://cpsa.ca/physicians/registration/
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official source for current physician registration baseline relevant to the healthcare-portability-doctor-licensing topic.
+  how_used: Baseline source for What would happen to healthcare coverage, doctor licensing, and out-of-province care?
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: cbsa-main
+  slug: cbsa-main
+  title: Canada Border Services Agency
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.cbsa-asfc.gc.ca/menu-eng.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official source for current canada border services agency baseline relevant to the border-enforcement-customs topic.
+  how_used: Baseline source for What would happen to border enforcement, customs inspections, and cross-border travel?
+  related_topic_slugs:
+  - border-enforcement-customs
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: customs-act
+  slug: customs-act
+  title: Customs Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-52.6/FullText.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Official source for current customs act baseline relevant to the border-enforcement-customs topic.
+  how_used: Baseline source for What would happen to border enforcement, customs inspections, and cross-border travel?
+  related_topic_slugs:
+  - border-enforcement-customs
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-05'

@@ -371,3 +371,54 @@ topics:
   last_debated_at: '2026-05-04'
   source_count: 2
   claim_count: 4
+- slug: tax-collection-revenue-agency
+  title: Tax collection and revenue administration
+  plain_question: Would Alberta need its own tax collection and revenue administration system?
+  category: Taxes, debt, and public services
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - tax collection
+  - revenue agency
+  - Canada Revenue Agency
+  - tax filing
+  - administration
+  summary: Independence would require clear decisions about who administers taxes, benefits, audits, and taxpayer services; existing federal and provincial systems do not answer that transition by themselves.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: immigration-passports-mobility
+  title: Immigration, passports, and mobility
+  plain_question: What would happen to immigration, passports, and freedom of movement?
+  category: Borders, trade, currency, and citizenship
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - immigration
+  - passports
+  - mobility
+  - citizenship
+  - travel documents
+  summary: Immigration, passport, citizenship, and movement rights would depend on negotiated legal arrangements and new administrative choices, not on a simple automatic rollover.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4
+- slug: courts-criminal-law
+  title: Courts, criminal law, and justice system
+  plain_question: What would happen to courts, criminal law, and the justice system?
+  category: Legal process
+  state: full_dossier
+  time_sensitivity: medium
+  keywords:
+  - courts
+  - criminal law
+  - justice system
+  - prosecutions
+  - judiciary
+  summary: Justice-system continuity would require distinguishing Alberta court operations from federal criminal-law authority and any negotiated changes to institutions, laws, and enforcement.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 3
+  claim_count: 4

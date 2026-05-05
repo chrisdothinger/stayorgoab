@@ -1,0 +1,28 @@
+claims:
+- id: claim-immigration-passports-mobility-001
+  topic_slug: immigration-passports-mobility
+  text: Current public records place immigration, citizenship, and passport services in federal systems, while the Secession Reference frames secession as a negotiated constitutional process rather than a unilateral administrative switch.
+  status: source_supported
+  source_ids: &id001
+  - ircc-main
+  - canadian-passports
+  - scc-secession-reference
+  risk: medium
+- id: claim-immigration-passports-mobility-002
+  topic_slug: immigration-passports-mobility
+  text: The strongest pro case is that a negotiated independence process could seek mobility continuity and immigration rules tailored to Alberta labour-market needs.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-immigration-passports-mobility-003
+  topic_slug: immigration-passports-mobility
+  text: The strongest caution is that passport, citizenship, and movement rights are core legal statuses that could become uncertain without detailed agreements with Canada and other states.
+  status: inference
+  source_ids: *id001
+  risk: medium
+- id: claim-immigration-passports-mobility-004
+  topic_slug: immigration-passports-mobility
+  text: 'This topic remains uncertainty-labelled: Medium; immigration status, passport eligibility, citizenship continuity, residency rules, and movement across any future border remain conditional on future decisions and evidence.'
+  status: source_supported
+  source_ids: *id001
+  risk: medium

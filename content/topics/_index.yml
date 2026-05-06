@@ -10,11 +10,13 @@ topics:
   - Secession Reference
   - constitutional amendment
   - negotiations
-  summary: A referendum could create a political obligation to negotiate only if the question and result are clear; it would not itself make Alberta independent.
-  last_audited_at: '2026-05-04'
-  last_debated_at: '2026-05-04'
-  source_count: 4
-  claim_count: 6
+  - treaty rights
+  - citizen initiative
+  summary: A clear Alberta vote could create democratic force and a duty to negotiate, but it would not by itself create independence; the hard legal fight is clarity, negotiation, treaty rights, and implementation.
+  last_audited_at: '2026-05-05'
+  last_debated_at: '2026-05-05'
+  source_count: 12
+  claim_count: 8
 - slug: cpp-pensions
   title: What would happen to CPP and pensions?
   plain_question: Would Albertans keep CPP benefits or move to another pension system?

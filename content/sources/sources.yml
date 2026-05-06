@@ -1965,3 +1965,150 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+- id: alberta-democratic-processes-2026
+  slug: alberta-democratic-processes-2026
+  title: Improving consistency and fairness in Alberta’s democratic processes
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/improving-consistency-fairness-albertas-democratic-processes
+  published_at: '2026-05-01'
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: mixed
+  reliability_category: primary_official
+  summary: Government of Alberta page describing 2025-2026 changes to provincial referendum and citizen initiative rules, including direct-democracy thresholds and non-derogation language for section 35 Aboriginal and treaty rights.
+  how_used: Used for current Alberta process context; provincial rules can make a referendum route more accessible, but they do not decide Canada-wide constitutional implementation.
+  related_topic_slugs:
+  - legal-process
+  - referendum-mechanics
+  - referendum-ballot-2026
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: alberta-next-path-forward-2026
+  slug: alberta-next-path-forward-2026
+  title: 'Alberta Next: Albertans to decide path forward for the province'
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/article-alberta-next-albertans-to-decide-path-forward-for-the-province
+  published_at: '2026-05-01'
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: mixed
+  reliability_category: primary_official_statement
+  summary: Provincial statement saying the government would not itself put separation on the ballot but would respect a successful citizen-led petition process, while also stating commitments around First Nations rights.
+  how_used: Used for current-event context and democratic-process framing, not as binding law on secession.
+  related_topic_slugs:
+  - legal-process
+  - referendum-mechanics
+  - referendum-ballot-2026
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: angus-reid-referendum-alberta-2025
+  slug: angus-reid-referendum-alberta-2025
+  title: 'Referendum Reality? Half in Alberta & Saskatchewan call for vote on independence, but fewer would actually leave'
+  publisher: Angus Reid Institute
+  author: Angus Reid Institute
+  url: https://angusreid.org/referendum-alberta-saskatchewan-smith-moe/
+  published_at: '2025-05-08'
+  accessed_at: '2026-05-05'
+  source_type: other
+  stance: mixed
+  reliability_category: public_opinion_polling
+  summary: Polling on Alberta and Saskatchewan attitudes toward an independence referendum and actual separation support.
+  how_used: Used to distinguish support for having a vote from support for leaving Canada.
+  related_topic_slugs:
+  - legal-process
+  - referendum-mechanics
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: constitution-act-amending-formula
+  slug: constitution-act-amending-formula
+  title: The Constitution Acts, 1867 to 1982 — Part V, Procedure for Amending Constitution of Canada
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/const/page-13.html
+  published_at: null
+  accessed_at: '2026-05-05'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Official constitutional text covering amendment procedures and section 35 Aboriginal and treaty rights.
+  how_used: Used for constitutional implementation complexity and rights constraints after any referendum mandate.
+  related_topic_slugs:
+  - legal-process
+  - indigenous-rights-treaties
+  - indigenous-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: ablawg-bankes-referendum-non-derogation-2025
+  slug: ablawg-bankes-referendum-non-derogation-2025
+  title: Provincial Referendum Legislation, Citizen-Led Secession Proposals, and Non-Derogation Clauses
+  publisher: ABLawg, University of Calgary Faculty of Law
+  author: Nigel Bankes
+  url: https://ablawg.ca/2025/06/11/provincial-referendum-legislation-citizen-led-secession-proposals-and-non-derogation-clauses/
+  published_at: '2025-06-11'
+  accessed_at: '2026-05-05'
+  source_type: academic
+  stance: mixed
+  reliability_category: expert_legal_commentary
+  summary: Legal commentary on Alberta referendum legislation, citizen-led secession proposals, and non-derogation clauses related to Aboriginal and treaty rights.
+  how_used: Used to sharpen the distinction between provincial referendum machinery and constitutional or treaty constraints.
+  related_topic_slugs:
+  - legal-process
+  - referendum-mechanics
+  - indigenous-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: ablawg-hamilton-treaty-promises-2025
+  slug: ablawg-hamilton-treaty-promises-2025
+  title: '“Get the province of Alberta in line”: Treaty Promises, Provincial Power, and the Role of Indigenous Nations in Discussions on Alberta Secession'
+  publisher: ABLawg, University of Calgary Faculty of Law
+  author: Robert Hamilton
+  url: https://ablawg.ca/2025/05/30/get-the-province-of-alberta-in-line-treaty-promises-provincial-power-and-the-role-of-indigenous-nations-in-discussions-on-alberta-secession/
+  published_at: '2025-05-30'
+  accessed_at: '2026-05-05'
+  source_type: academic
+  stance: anti_independence_or_rights_concern
+  reliability_category: expert_legal_commentary
+  summary: Legal commentary on treaty promises, provincial power, and why Indigenous nations would be central actors in any Alberta secession discussion.
+  how_used: Used for anti/pro-federation and neutral analysis of Indigenous rights, treaty relationships, and negotiation complexity.
+  related_topic_slugs:
+  - legal-process
+  - indigenous-rights-treaties
+  - indigenous-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active
+- id: cbc-alberta-separation-legal-experts-2025
+  slug: cbc-alberta-separation-legal-experts-2025
+  title: Alberta separation would send Canada into uncharted territory, say legal experts
+  publisher: CBC News
+  author: CBC News
+  url: https://www.cbc.ca/news/canada/calgary/separation-consequences-1.7529623
+  published_at: '2025-05-08'
+  accessed_at: '2026-05-05'
+  source_type: media
+  stance: mixed
+  reliability_category: news_report_expert_context
+  summary: News report quoting legal experts on the unsettled consequences of Alberta separation, including currency, federal assets, national parks, First Nations, and institutions.
+  how_used: Used for accessible public-facing examples of the practical transition issues that a vote would not resolve by itself.
+  related_topic_slugs:
+  - legal-process
+  - currency-banking
+  - national-parks-public-lands
+  - indigenous-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-05'
+  status: active

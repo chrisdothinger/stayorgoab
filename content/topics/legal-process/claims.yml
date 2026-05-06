@@ -1,18 +1,19 @@
 claims:
 - id: claim-legal-process-001
   topic_slug: legal-process
-  text: 'A referendum can matter politically and constitutionally, but it does not by itself create independence.
-    Current legal sources point to a sequence: democratic expression, clarity assessment, negotiations, and constitutional
-    implementation if terms are agreed.'
+  text: A referendum can matter politically and constitutionally, but it does not by itself create independence; the legal
+    sequence runs through democratic expression, clarity assessment, negotiations, and constitutional implementation if terms
+    are agreed.
   status: source_supported
   source_ids:
   - scc-secession-reference
   - clarity-act
+  - constitution-act-amending-formula
   risk: high
 - id: claim-legal-process-002
   topic_slug: legal-process
-  text: The strongest pro-independence legal argument is that a clear question and clear majority could create a
-    democratic mandate and a duty for other governments to negotiate in good faith.
+  text: The strongest pro-independence legal argument is that a clear question and clear majority could create democratic
+    legitimacy and a constitutional duty for other governments to negotiate in good faith.
   status: source_supported
   source_ids:
   - scc-secession-reference
@@ -20,37 +21,63 @@ claims:
   risk: high
 - id: claim-legal-process-003
   topic_slug: legal-process
-  text: The strongest anti-independence or pro-federation legal argument is that unilateral or automatic independence
-    is not supported by the current legal baseline.
+  text: The strongest anti-independence or pro-federation legal argument is that unilateral or automatic independence is not
+    supported by the current legal baseline.
   status: source_supported
   source_ids:
   - scc-secession-reference
   - clarity-act
+  - constitution-act-amending-formula
   risk: high
 - id: claim-legal-process-004
   topic_slug: legal-process
-  text: Alberta referendum and initiative rules can structure a provincial vote or petition process, but they do
-    not themselves decide federal clarity, negotiated terms, or constitutional implementation.
+  text: Alberta referendum and initiative rules can structure a provincial vote or petition process, but they do not themselves
+    decide federal clarity, negotiated terms, Indigenous rights issues, or constitutional implementation.
   status: source_supported
   source_ids:
   - elections-ab-referendum
   - elections-ab-initiative-process
+  - elections-ab-current-petitions
+  - alberta-democratic-processes-2026
   - clarity-act
   risk: high
 - id: claim-legal-process-005
   topic_slug: legal-process
-  text: Indigenous interests and other constitutional actors would need attention in any secession-related negotiation;
-    the current topic sources do not settle Alberta-specific treaty, land, or implementation outcomes.
+  text: Indigenous interests and treaty rights would be central issues in any secession-related negotiation, not side issues
+    to be handled after the fact.
   status: source_supported
   source_ids:
   - scc-secession-reference
+  - constitution-act-amending-formula
+  - ablawg-bankes-referendum-non-derogation-2025
+  - ablawg-hamilton-treaty-promises-2025
   risk: high
 - id: claim-legal-process-006
   topic_slug: legal-process
-  text: Legal-process outcomes remain uncertainty-labelled because the basic sequence is sourceable but future clarity
-    assessments, negotiation positions, amendments, recognition, and transition terms are unresolved.
-  status: inference
+  text: Current Alberta petition and referendum mechanics make the issue more than hypothetical, but claimed or potential
+    petition success would still require verification, clarity assessment, negotiation, and implementation.
+  status: source_supported
+  source_ids:
+  - elections-ab-current-petitions
+  - alberta-next-path-forward-2026
+  - alberta-democratic-processes-2026
+  - clarity-act
+  risk: high
+- id: claim-legal-process-007
+  topic_slug: legal-process
+  text: Public support for holding a referendum is not the same as public support for independence; polling can show democratic
+    pressure for a vote while also showing weaker support for actually leaving Canada.
+  status: source_supported
+  source_ids:
+  - angus-reid-referendum-alberta-2025
+  risk: medium
+- id: claim-legal-process-008
+  topic_slug: legal-process
+  text: The practical transition questions after a successful vote would include assets, debt, borders, federal lands, citizenship,
+    currency, public services, Indigenous rights, and recognition; current sources do not settle those terms.
+  status: source_supported
   source_ids:
   - scc-secession-reference
-  - clarity-act
+  - constitution-act-amending-formula
+  - cbc-alberta-separation-legal-experts-2025
   risk: high

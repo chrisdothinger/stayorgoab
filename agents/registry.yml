@@ -6,7 +6,15 @@ agents:
   - id: source-steward
     name: "Source Steward Agent"
     level: L2
-    purpose: "Discover, classify, and maintain source records."
+    purpose: "Discover, classify, and maintain source records, including base, pro-source, anti-source, and counterargument research lanes for new-style dossiers."
+  - id: pro-source-researcher
+    name: "Pro-Source Research Agent"
+    level: L2
+    purpose: "Find credible current sources and argument ammunition for the strongest fair pro-independence case, while recording counterarguments and source limits."
+  - id: anti-source-researcher
+    name: "Anti-Source Research Agent"
+    level: L2
+    purpose: "Find credible current sources and argument ammunition for the strongest fair anti-independence/pro-federation case, while recording counterarguments and source limits."
   - id: claim-citation
     name: "Claim & Citation Agent"
     level: L2

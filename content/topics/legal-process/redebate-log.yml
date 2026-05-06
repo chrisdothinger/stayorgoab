@@ -12,3 +12,7 @@ entries:
   date: '2026-05-05'
   trigger: approved-dossier-framework-standard
   summary: Applied the approved flexible dossier debate-brief framework to the first question so future topics can follow the same source-lane and mediator-synthesis model.
+- id: redebate-legal-process-2026-05-05-contract-v2-mobile
+  date: '2026-05-05'
+  trigger: report-contract-v2-mobile-readability
+  summary: Preserved the approved report contract v2 approach while replacing the difficult decision-tree/table pattern with a stacked Where the debate turns overview and tighter pillar-based briefs.

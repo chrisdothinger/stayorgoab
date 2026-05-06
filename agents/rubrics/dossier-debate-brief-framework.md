@@ -64,35 +64,59 @@ Required posture:
 - avoid false balance where evidence is asymmetrical;
 - end with conditional, updateable synthesis.
 
-## Flexible section menu
+## Report contract v2: compressed, mobile-first briefing format
 
-All full dossier reports must keep the existing validated core sections:
+Use the report contract v2 structure for new and substantially refreshed public reports. The goal is not to reduce each side to one argument; it is to present the strongest overall case through 3-5 compact argument pillars with evidence embedded inside each pillar.
 
-- `## Short answer`
-- `## What current sources support`
-- `## Core argument`
-- `## What is known`
-- `## What is disputed`
-- `## Assumptions`
-- `## Strongest evidence`
-- `## Weak points`
-- `## Counterarguments`
-- `## Sources`
+### Pro and anti reports
+
+Public reading order:
+
+- `## Short answer` — the whole case in plain English.
+- `## What current sources support` — a brief source-backed setup, not a second essay.
+- `## Core argument` — 3-5 numbered pillars. Each pillar should include the point, why it matters, the key citation(s), and one limitation/caveat if needed.
+- `## What is known` — short sourced bullets.
+- `## What is disputed` — the live disputes that actually change the argument.
+- `## Assumptions` — the conditions the brief depends on.
+- `## Strongest evidence` — a compact synthesis of the highest-weight sources, not a duplicate of every pillar.
+- `## Weak points` — the case's real vulnerabilities.
+- `## Counterarguments` — best objection(s) and best reply/replies, paired tightly.
+- `## Sources` — numbered sources matching inline citations.
 - `## What would change this assessment`
 - `## Open questions`
 - `## Main uncertainty`
 - `## Reader checklist`
 
-For new-style dossiers, add whichever of these improve reader understanding without bloating the page:
+Target shape: 3-5 pillars, mostly 2-4 sentence paragraphs, no repetitive optional sections, and no separate “what supports this” evidence pile. Evidence belongs beside the pillar it supports.
 
-- `## One-screen answer` — short version, pro says, anti says, known, uncertain, evidence that would change the answer.
-- `## Best attack / best reply` — the other side's strongest objection and the brief's cleanest answer.
-- `## Where this case is strongest / weakest` — conditions that make the argument more or less persuasive.
-- `## Everyday consequences` — concrete citizen-facing examples, especially for technical topics.
-- `## Decision guide` — a values/evidence matrix that helps readers locate their own position without manipulation.
-- `## Source quality notes` — classify source weight: primary law, government source, court precedent, academic/legal analysis, polling, journalism/current events, advocacy/position source.
+### Neutral report
 
-Do not force every optional section into every report. Use the menu to match the topic. Example: a currency topic may need more everyday consequences; a court-precedent topic may need more source quality notes; a polling-heavy topic may need stronger uncertainty and evidence-change sections.
+Neutral should be the clearest page. It should mediate between the pro and anti briefs rather than becoming a third advocacy side.
+
+Preferred public reading order:
+
+- `## Short answer`
+- `## What current sources support`
+- `## Core argument` with compact subsections for what the pro report gets right, what the anti report gets right, and what survives both arguments.
+- Then the same public-audit contract sections: known, disputed, assumptions, strongest evidence, weak points, counterarguments, sources, what would change, open questions, main uncertainty, reader checklist.
+
+### Topic overview
+
+Use the overview as a router/map, not a fourth report. Prefer:
+
+- `## Short answer`
+- `## One-screen answer`
+- `## Why this question matters`
+- `## The real tension`
+- `## The debate briefs`
+- `## Where the debate turns`
+- `## What to watch`
+
+Do not use wide decision-tree or matrix tables in the dossier overview body. They are hard to read on mobile. Use stacked bullets under `## Where the debate turns` instead.
+
+### Legacy validator note
+
+Until the repository validator is upgraded across all 50 topics, full dossier reports must still preserve the validated public-audit section headings listed above. Keep those sections concise rather than deleting them.
 
 ## Tone standard
 

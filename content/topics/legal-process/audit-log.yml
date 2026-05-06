@@ -23,3 +23,14 @@ entries:
   - uncertainty-labels
   - citation-numbering
   result: pass-pending-validation
+- id: audit-legal-process-2026-05-05-framework-standard
+  date: '2026-05-05'
+  agent: StayOrGoAB public agent team
+  summary: Upgraded the first dossier to the approved debate-brief framework with one-screen answer, best attack/reply, strongest/weakest conditions, everyday consequences, decision guide, and source quality notes.
+  checks:
+  - approved-dossier-framework
+  - public-readable-style
+  - source-quality-notes
+  - citation-numbering
+  - neutral-mediator-role
+  result: pass-pending-validation

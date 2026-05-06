@@ -8,3 +8,7 @@ entries:
   trigger: communication-style-redesign-pilot
   summary: Reframed pro and anti reports as position-specific debate briefs and the neutral report as a mediator synthesis
     after separate source research for each side.
+- id: redebate-legal-process-2026-05-05-framework-standard
+  date: '2026-05-05'
+  trigger: approved-dossier-framework-standard
+  summary: Applied the approved flexible dossier debate-brief framework to the first question so future topics can follow the same source-lane and mediator-synthesis model.

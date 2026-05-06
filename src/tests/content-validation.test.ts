@@ -5,6 +5,7 @@ import { loadRepositoryContent } from '@/lib/content';
 import { hasDeletedV3Section, hasLegacyReportContract, hasLeanReportContract } from '@/lib/dossier-contract';
 import type { ReportKind } from '@/lib/dossier-contract';
 import { validateContentModel } from '@/lib/validation';
+import { validateTopicQuestionRegistry } from '../../scripts/validate-topic-questions';
 
 describe('content validation', () => {
   it('keeps public-facing site and ops copy free of private assistant names', () => {
@@ -33,6 +34,12 @@ describe('content validation', () => {
   it('accepts the checked-in content model', () => {
     const content = loadRepositoryContent();
     const result = validateContentModel(content);
+    expect(result.ok).toBe(true);
+    expect(result.errors).toEqual([]);
+  });
+
+  it('validates the topic-question registry and public question format', () => {
+    const result = validateTopicQuestionRegistry();
     expect(result.ok).toBe(true);
     expect(result.errors).toEqual([]);
   });

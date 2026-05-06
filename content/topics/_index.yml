@@ -1,7 +1,7 @@
 topics:
 - slug: legal-process
   title: What would legally need to happen for Alberta to become independent?
-  plain_question: What legal steps would be required for Alberta independence?
+  plain_question: What would legally need to happen for Alberta to become independent?
   category: Legal process
   state: full_dossier
   time_sensitivity: high
@@ -12,14 +12,15 @@ topics:
   - negotiations
   - treaty rights
   - citizen initiative
-  summary: A clear Alberta vote could create democratic force and a duty to negotiate, but it would not by itself create independence; the hard legal fight is clarity, negotiation, treaty rights, and implementation.
+  summary: A clear Alberta vote could create democratic force and a duty to negotiate, but it would not by itself create independence;
+    the hard legal fight is clarity, negotiation, treaty rights, and implementation.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 12
   claim_count: 8
 - slug: cpp-pensions
-  title: What would happen to CPP and pensions?
-  plain_question: Would Albertans keep CPP benefits or move to another pension system?
+  title: Would Albertans keep CPP benefits, or move to a new pension system?
+  plain_question: Would Albertans keep CPP benefits, or move to a new pension system?
   category: CPP, pensions, and benefits
   state: full_dossier
   time_sensitivity: high
@@ -29,14 +30,15 @@ topics:
   - pensions
   - Chief Actuary
   - withdrawal
-  summary: CPP withdrawal has a statutory path, but transfer amount, timing, and independence-related pension treatment remain materially uncertain.
+  summary: CPP withdrawal has a statutory path, but transfer amount, timing, and independence-related pension treatment remain
+    materially uncertain.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 7
 - slug: indigenous-rights-treaties
-  title: How do Indigenous rights and treaties affect independence?
-  plain_question: What happens to Indigenous rights, treaties, land, and consultation if Alberta tries to separate?
+  title: How would Indigenous rights, treaties, land, and consultation affect Alberta independence?
+  plain_question: How would Indigenous rights, treaties, land, and consultation affect Alberta independence?
   category: Indigenous rights, treaties, land, and consultation
   state: full_dossier
   time_sensitivity: high
@@ -46,14 +48,15 @@ topics:
   - Indigenous rights
   - consultation
   - Secession Reference
-  summary: The SCC reference says Aboriginal interests would need to be taken into account in negotiations; Alberta-specific effects remain high-risk and contested.
+  summary: The SCC reference says Aboriginal interests would need to be taken into account in negotiations; Alberta-specific
+    effects remain high-risk and contested.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 4
   claim_count: 4
 - slug: economy-fiscal
   title: Would independence make Alberta richer or poorer?
-  plain_question: What is known about Alberta's fiscal position and the economic claims around independence?
+  plain_question: Would independence make Alberta richer or poorer?
   category: Economy and fiscal policy
   state: full_dossier
   time_sensitivity: high
@@ -63,14 +66,15 @@ topics:
   - resource revenue
   - debt
   - taxes
-  summary: Alberta has a published fiscal plan, resource-revenue exposure, and debt projections; independence claims require assumptions that are not settled by current official documents.
+  summary: Alberta has a published fiscal plan, resource-revenue exposure, and debt projections; independence claims require
+    assumptions that are not settled by current official documents.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 4
 - slug: referendum-mechanics
-  title: How does the petition and referendum process work?
-  plain_question: How do petitions, referendum questions, voting rules, and timelines work in Alberta?
+  title: How would Alberta’s petition and referendum process actually work?
+  plain_question: How would Alberta’s petition and referendum process actually work?
   category: Referendum mechanics
   state: full_dossier
   time_sensitivity: high
@@ -86,8 +90,8 @@ topics:
   source_count: 7
   claim_count: 4
 - slug: borders-currency-citizenship
-  title: What happens to borders, currency, and citizenship?
-  plain_question: Would Alberta have a border, a currency, or different citizenship rules?
+  title: Would Alberta have new borders, a new currency, or different citizenship rules?
+  plain_question: Would Alberta have new borders, a new currency, or different citizenship rules?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: medium
@@ -102,8 +106,8 @@ topics:
   source_count: 3
   claim_count: 4
 - slug: petition-vs-referendum-vs-negotiations
-  title: Petition vs referendum vs negotiations
-  plain_question: What is the difference between a petition, a referendum, and negotiations?
+  title: What is the difference between a petition, a referendum, and independence negotiations?
+  plain_question: What is the difference between a petition, a referendum, and independence negotiations?
   category: Referendum mechanics
   state: full_dossier
   time_sensitivity: high
@@ -112,14 +116,15 @@ topics:
   - referendum
   - negotiations
   - citizen initiative
-  summary: 'These are separate steps: a petition can trigger process, a referendum can express a democratic result, and negotiations would be a later constitutional/political stage.'
+  summary: 'These are separate steps: a petition can trigger process, a referendum can express a democratic result, and negotiations
+    would be a later constitutional/political stage.'
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 6
   claim_count: 4
 - slug: clarity-act
-  title: The Clarity Act
-  plain_question: How would the federal Clarity Act affect an Alberta independence referendum?
+  title: Does the Clarity Act give Ottawa a veto over Alberta independence?
+  plain_question: Does the Clarity Act give Ottawa a veto over Alberta independence?
   category: Negotiations and constitutional law
   state: full_dossier
   time_sensitivity: high
@@ -128,14 +133,15 @@ topics:
   - House of Commons
   - clear question
   - clear majority
-  summary: The Clarity Act sets federal conditions before Canada enters secession negotiations, but Alberta-specific effects require careful legal sourcing.
+  summary: The Clarity Act sets federal conditions before Canada enters secession negotiations, but Alberta-specific effects
+    require careful legal sourcing.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 2
   claim_count: 4
 - slug: quebec-secession-reference
-  title: Quebec Secession Reference
-  plain_question: What did the Supreme Court say about unilateral secession?
+  title: What did the Supreme Court actually say about unilateral secession?
+  plain_question: What did the Supreme Court actually say about unilateral secession?
   category: Legal process
   state: full_dossier
   time_sensitivity: high
@@ -150,8 +156,8 @@ topics:
   source_count: 2
   claim_count: 4
 - slug: clear-question-majority
-  title: Clear question and clear majority
-  plain_question: Who decides whether a referendum question and result are clear enough?
+  title: Who decides whether Alberta’s referendum question and result are clear enough?
+  plain_question: Who decides whether Alberta’s referendum question and result are clear enough?
   category: Negotiations and constitutional law
   state: full_dossier
   time_sensitivity: high
@@ -160,14 +166,15 @@ topics:
   - clear majority
   - referendum threshold
   - House of Commons
-  summary: The meaning of a clear question and clear majority is politically and legally consequential, not a simple fixed percentage in the current sparse record.
+  summary: The meaning of a clear question and clear majority is politically and legally consequential, not a simple fixed
+    percentage in the current sparse record.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 4
 - slug: referendum-ballot-2026
-  title: 2026 referendum ballot
-  plain_question: What is known about the 2026 referendum ballot and timing?
+  title: What is known, and not known, about a possible 2026 Alberta referendum ballot?
+  plain_question: What is known, and not known, about a possible 2026 Alberta referendum ballot?
   category: Current status
   state: full_dossier
   time_sensitivity: high
@@ -176,14 +183,15 @@ topics:
   - ballot
   - October 19 2026
   - Elections Alberta
-  summary: Official referendum timing and ballot details are time-sensitive and must be checked against current official sources before being stated as final.
+  summary: Official referendum timing and ballot details are time-sensitive and must be checked against current official sources
+    before being stated as final.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 7
   claim_count: 4
 - slug: economy-overall
-  title: Overall economic outlook
-  plain_question: Would Alberta independence make the economy stronger or weaker overall?
+  title: Would Alberta independence strengthen or weaken the economy overall?
+  plain_question: Would Alberta independence strengthen or weaken the economy overall?
   category: Economy and fiscal policy
   state: full_dossier
   time_sensitivity: high
@@ -193,14 +201,15 @@ topics:
   - trade
   - investment
   - fiscal policy
-  summary: The overall economic effect depends on assumptions about trade, currency, debt, assets, taxation, investment, and negotiated outcomes.
+  summary: The overall economic effect depends on assumptions about trade, currency, debt, assets, taxation, investment, and
+    negotiated outcomes.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 4
 - slug: equalization
-  title: Equalization
-  plain_question: What would happen to equalization and federal transfers?
+  title: Would Alberta actually stop paying equalization if it became independent?
+  plain_question: Would Alberta actually stop paying equalization if it became independent?
   category: Taxes, debt, and public services
   state: full_dossier
   time_sensitivity: medium
@@ -208,14 +217,15 @@ topics:
   - equalization
   - federal transfers
   - fiscal federalism
-  summary: Equalization claims require distinguishing program mechanics, Alberta contributions, federal taxes, and post-independence negotiation assumptions.
+  summary: Equalization claims require distinguishing program mechanics, Alberta contributions, federal taxes, and post-independence
+    negotiation assumptions.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 6
 - slug: federal-debt-assets
-  title: Federal debt and assets
-  plain_question: Would Alberta take on federal debt or receive federal assets?
+  title: How much federal debt would Alberta inherit, and what assets could it claim?
+  plain_question: How much federal debt would Alberta inherit, and what assets could it claim?
   category: Taxes, debt, and public services
   state: full_dossier
   time_sensitivity: high
@@ -224,14 +234,15 @@ topics:
   - assets
   - liabilities
   - negotiations
-  summary: Debt and asset allocation would likely be negotiated and cannot be reduced to a single confirmed number from the sparse record.
+  summary: Debt and asset allocation would likely be negotiated and cannot be reduced to a single confirmed number from the
+    sparse record.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 4
 - slug: indigenous-treaties
-  title: Indigenous treaties and consent
-  plain_question: How would Treaty rights and Indigenous consent affect independence?
+  title: Would Indigenous treaty consent be required before Alberta could separate?
+  plain_question: Would Indigenous treaty consent be required before Alberta could separate?
   category: Indigenous rights, treaties, land, and consultation
   state: full_dossier
   time_sensitivity: high
@@ -240,14 +251,15 @@ topics:
   - Indigenous consent
   - section 35
   - consultation
-  summary: Treaty rights, section 35 rights, land, and consultation issues are high-risk and require careful source-backed treatment.
+  summary: Treaty rights, section 35 rights, land, and consultation issues are high-risk and require careful source-backed
+    treatment.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 4
   claim_count: 4
 - slug: military-security
-  title: Military and security
-  plain_question: What would happen to military, policing, and security arrangements?
+  title: Who would defend Alberta, and what security arrangements would replace Canada’s?
+  plain_question: Who would defend Alberta, and what security arrangements would replace Canada’s?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: medium
@@ -256,14 +268,15 @@ topics:
   - security
   - policing
   - defence
-  summary: Military and security arrangements would depend on policy choices and negotiations; the sparse topic should not imply settled institutions.
+  summary: Military and security arrangements would depend on policy choices and negotiations; the sparse topic should not
+    imply settled institutions.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 4
 - slug: currency-banking
-  title: Currency and banking
-  plain_question: What currency would Alberta use and how would banking work?
+  title: Could Alberta keep using the Canadian dollar, or would it need its own currency?
+  plain_question: Could Alberta keep using the Canadian dollar, or would it need its own currency?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: high
@@ -278,8 +291,8 @@ topics:
   source_count: 3
   claim_count: 4
 - slug: borders-trade
-  title: Borders and trade
-  plain_question: Would there be borders, tariffs, or trade disruption?
+  title: Would Alberta independence create borders, tariffs, or trade disruption?
+  plain_question: Would Alberta independence create borders, tariffs, or trade disruption?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: high
@@ -294,8 +307,8 @@ topics:
   source_count: 3
   claim_count: 4
 - slug: public-services
-  title: Public services
-  plain_question: What happens to health care, education, and public services?
+  title: Which public services would be most at risk during an independence transition?
+  plain_question: Which public services would be most at risk during an independence transition?
   category: Taxes, debt, and public services
   state: full_dossier
   time_sensitivity: high
@@ -304,14 +317,15 @@ topics:
   - education
   - public services
   - programs
-  summary: Public-service continuity depends on fiscal capacity, staffing, legislation, and transition planning; sparse claims must avoid certainty.
+  summary: Public-service continuity depends on fiscal capacity, staffing, legislation, and transition planning; sparse claims
+    must avoid certainty.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 4
 - slug: energy-environment
-  title: Energy and environment
-  plain_question: How would independence affect energy policy and environmental regulation?
+  title: Would independence give Alberta more control over energy and environmental rules?
+  plain_question: Would independence give Alberta more control over energy and environmental rules?
   category: Economy and fiscal policy
   state: full_dossier
   time_sensitivity: medium
@@ -320,14 +334,15 @@ topics:
   - environment
   - oil and gas
   - regulation
-  summary: Energy and environmental outcomes depend on future policy, markets, federal-provincial arrangements, and international obligations.
+  summary: Energy and environmental outcomes depend on future policy, markets, federal-provincial arrangements, and international
+    obligations.
   last_audited_at: '2026-05-04'
   last_debated_at: '2026-05-04'
   source_count: 3
   claim_count: 4
 - slug: bureaucracy-governance
-  title: Bureaucracy and governance
-  plain_question: What new institutions would Alberta need to govern independently?
+  title: What new institutions would Alberta need to govern as an independent country?
+  plain_question: What new institutions would Alberta need to govern as an independent country?
   category: Legal process
   state: full_dossier
   time_sensitivity: medium
@@ -342,7 +357,7 @@ topics:
   source_count: 3
   claim_count: 4
 - slug: international-recognition
-  title: International recognition
+  title: Would other countries recognize an independent Alberta?
   plain_question: Would other countries recognize an independent Alberta?
   category: Negotiations and constitutional law
   state: full_dossier
@@ -358,8 +373,8 @@ topics:
   source_count: 2
   claim_count: 4
 - slug: case-studies
-  title: Case studies
-  plain_question: What can Alberta learn from Quebec, Brexit, Scotland, or other independence movements?
+  title: What can Alberta realistically learn from Quebec, Brexit, Scotland, and other independence movements?
+  plain_question: What can Alberta realistically learn from Quebec, Brexit, Scotland, and other independence movements?
   category: Source updates and review changes
   state: full_dossier
   time_sensitivity: low
@@ -374,8 +389,8 @@ topics:
   source_count: 2
   claim_count: 4
 - slug: tax-collection-revenue-agency
-  title: Tax collection and revenue administration
-  plain_question: Would Alberta need its own tax collection and revenue administration system?
+  title: Would Alberta need its own tax agency, and how hard would that be?
+  plain_question: Would Alberta need its own tax agency, and how hard would that be?
   category: Taxes, debt, and public services
   state: full_dossier
   time_sensitivity: medium
@@ -385,14 +400,15 @@ topics:
   - Canada Revenue Agency
   - tax filing
   - administration
-  summary: Independence would require clear decisions about who administers taxes, benefits, audits, and taxpayer services; existing federal and provincial systems do not answer that transition by themselves.
+  summary: Independence would require clear decisions about who administers taxes, benefits, audits, and taxpayer services;
+    existing federal and provincial systems do not answer that transition by themselves.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: immigration-passports-mobility
-  title: Immigration, passports, and mobility
-  plain_question: What would happen to immigration, passports, and freedom of movement?
+  title: Would Albertans keep Canadian passports, citizenship, and freedom of movement?
+  plain_question: Would Albertans keep Canadian passports, citizenship, and freedom of movement?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: medium
@@ -402,14 +418,15 @@ topics:
   - mobility
   - citizenship
   - travel documents
-  summary: Immigration, passport, citizenship, and movement rights would depend on negotiated legal arrangements and new administrative choices, not on a simple automatic rollover.
+  summary: Immigration, passport, citizenship, and movement rights would depend on negotiated legal arrangements and new administrative
+    choices, not on a simple automatic rollover.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: courts-criminal-law
-  title: Courts, criminal law, and justice system
-  plain_question: What would happen to courts, criminal law, and the justice system?
+  title: What would happen to courts, criminal law, and prosecutions if Alberta left Canada?
+  plain_question: What would happen to courts, criminal law, and prosecutions if Alberta left Canada?
   category: Legal process
   state: full_dossier
   time_sensitivity: medium
@@ -419,13 +436,14 @@ topics:
   - justice system
   - prosecutions
   - judiciary
-  summary: Justice-system continuity would require distinguishing Alberta court operations from federal criminal-law authority and any negotiated changes to institutions, laws, and enforcement.
+  summary: Justice-system continuity would require distinguishing Alberta court operations from federal criminal-law authority
+    and any negotiated changes to institutions, laws, and enforcement.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: student-loans-universities-research
-  title: Student loans, universities, and research funding
+  title: What would happen to student loans, universities, and research funding?
   plain_question: What would happen to student loans, universities, and research funding?
   category: Taxes, debt, and public services
   state: full_dossier
@@ -436,14 +454,15 @@ topics:
   - research funding
   - post-secondary education
   - grants
-  summary: Post-secondary finance would require separating Alberta institutions and grants from federal student aid and research-funding programs; current sources show today’s systems, not an independence transition plan.
+  summary: Post-secondary finance would require separating Alberta institutions and grants from federal student aid and research-funding
+    programs; current sources show today’s systems, not an independence transition plan.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: postal-telecom-broadcasting
-  title: Postal service, telecom, and broadcasting
-  plain_question: What would happen to mail, telecom, internet, wireless spectrum, and broadcasting rules?
+  title: Who would regulate mail, telecom, internet, wireless spectrum, and broadcasting?
+  plain_question: Who would regulate mail, telecom, internet, wireless spectrum, and broadcasting?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: medium
@@ -453,14 +472,15 @@ topics:
   - internet
   - wireless spectrum
   - broadcasting
-  summary: Mail, telecom, spectrum, and broadcasting are currently tied to federal institutions and regulators; independence claims need evidence about continuity, regulation, market access, and consumer protection.
+  summary: Mail, telecom, spectrum, and broadcasting are currently tied to federal institutions and regulators; independence
+    claims need evidence about continuity, regulation, market access, and consumer protection.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: agriculture-food-inspection-market-access
-  title: Agriculture, food inspection, and market access
-  plain_question: How would independence affect agriculture, food inspection, exports, and market access?
+  title: How would independence affect farmers, food inspection, exports, and market access?
+  plain_question: How would independence affect farmers, food inspection, exports, and market access?
   category: Economy and fiscal policy
   state: full_dossier
   time_sensitivity: medium
@@ -470,14 +490,15 @@ topics:
   - exports
   - market access
   - CFIA
-  summary: Agriculture and food systems depend on provincial programs, federal inspection, and export-market rules; independence would require source-backed plans for inspection authority and market access.
+  summary: Agriculture and food systems depend on provincial programs, federal inspection, and export-market rules; independence
+    would require source-backed plans for inspection authority and market access.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: employment-insurance-federal-benefits
-  title: Employment Insurance and federal benefits
-  plain_question: What would happen to Employment Insurance and federal income benefits?
+  title: Would Albertans keep Employment Insurance and federal income benefits?
+  plain_question: Would Albertans keep Employment Insurance and federal income benefits?
   category: Taxes, debt, and public services
   state: full_dossier
   time_sensitivity: medium
@@ -487,13 +508,14 @@ topics:
   - income support
   - Service Canada
   - transition
-  summary: Employment Insurance and federal income benefits are currently administered through federal systems; independence would require evidence about continuity, eligibility, funding, and replacement administration.
+  summary: Employment Insurance and federal income benefits are currently administered through federal systems; independence
+    would require evidence about continuity, eligibility, funding, and replacement administration.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: national-parks-public-lands
-  title: National parks, Crown land, and public lands
+  title: What would happen to national parks, Crown land, and public lands?
   plain_question: What would happen to national parks, Crown land, and public lands?
   category: Indigenous rights, treaties, land, and consultation
   state: full_dossier
@@ -504,14 +526,15 @@ topics:
   - public lands
   - Parks Canada
   - land management
-  summary: Land questions would require separating Alberta public-land powers from federal national-park responsibilities, Indigenous rights, conservation obligations, and any negotiated asset or authority transfer.
+  summary: Land questions would require separating Alberta public-land powers from federal national-park responsibilities,
+    Indigenous rights, conservation obligations, and any negotiated asset or authority transfer.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: air-transport-aviation-safety
-  title: Air transport and aviation safety
-  plain_question: What would happen to airports, air travel, and aviation safety regulation?
+  title: Who would regulate airports, air travel, and aviation safety?
+  plain_question: Who would regulate airports, air travel, and aviation safety?
   category: Borders, trade, currency, and citizenship
   state: full_dossier
   time_sensitivity: medium
@@ -521,14 +544,15 @@ topics:
   - aviation safety
   - Transport Canada
   - transportation
-  summary: Air travel depends on federal aviation safety regulation, airport systems, carriers, security screening, and international recognition; independence would need a credible continuity plan.
+  summary: Air travel depends on federal aviation safety regulation, airport systems, carriers, security screening, and international
+    recognition; independence would need a credible continuity plan.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: water-rights-rivers
-  title: Water rights, rivers, and water infrastructure
-  plain_question: What would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
+  title: Could Alberta independence change water rights, rivers, and drinking-water systems?
+  plain_question: Could Alberta independence change water rights, rivers, and drinking-water systems?
   category: Energy, environment, and infrastructure
   state: full_dossier
   time_sensitivity: medium
@@ -538,14 +562,16 @@ topics:
   - drinking water
   - wastewater
   - transboundary waters
-  summary: Water governance involves provincial allocation and infrastructure plus federal and interjurisdictional water roles; independence would require clear legal and operational continuity for rivers, drinking water, wastewater, and cross-border water issues.
+  summary: Water governance involves provincial allocation and infrastructure plus federal and interjurisdictional water roles;
+    independence would require clear legal and operational continuity for rivers, drinking water, wastewater, and cross-border
+    water issues.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: emergency-management-disaster-aid
-  title: Emergency management and disaster aid
-  plain_question: What would happen to emergency management, disaster response, and disaster aid?
+  title: Who would pay for disaster response and emergency aid after independence?
+  plain_question: Who would pay for disaster response and emergency aid after independence?
   category: Taxes, debt, and public services
   state: full_dossier
   time_sensitivity: medium
@@ -555,14 +581,15 @@ topics:
   - disaster aid
   - Public Safety Canada
   - Alberta Emergency Management Agency
-  summary: Emergency response already spans provincial and federal systems; independence would require evidence about command roles, mutual aid, funding, disaster recovery, alerts, and continuity for affected communities.
+  summary: Emergency response already spans provincial and federal systems; independence would require evidence about command
+    roles, mutual aid, funding, disaster recovery, alerts, and continuity for affected communities.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: statistics-census-public-data
-  title: Statistics, census, and public data
-  plain_question: What would happen to census, statistics, and public data systems?
+  title: Who would run census, statistics, and public-data systems for an independent Alberta?
+  plain_question: Who would run census, statistics, and public-data systems for an independent Alberta?
   category: Bureaucracy and governance
   state: full_dossier
   time_sensitivity: medium
@@ -572,133 +599,156 @@ topics:
   - public data
   - Statistics Canada
   - Alberta data
-  summary: Statistics, census, and public data underpin funding formulas, elections, business planning, research, and public accountability; independence would require credible data-governance continuity and comparability.
+  summary: Statistics, census, and public data underpin funding formulas, elections, business planning, research, and public
+    accountability; independence would require credible data-governance continuity and comparability.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: rcmp-provincial-policing
-  title: RCMP, local police, and provincial policing
-  plain_question: What would happen to the RCMP, local police, and provincial policing?
+  title: Would Alberta keep the RCMP, build a provincial police service, or need something new?
+  plain_question: Would Alberta keep the RCMP, build a provincial police service, or need something new?
   category: Policing, courts, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Policing is visible in everyday life and is already politically charged in Alberta; people may argue over rural crime, RCMP trust, costs, provincial-police proposals, and whether independence would improve accountability or create dangerous disruption.
+  why_people_may_share_or_argue: Policing is visible in everyday life and is already politically charged in Alberta; people
+    may argue over rural crime, RCMP trust, costs, provincial-police proposals, and whether independence would improve accountability
+    or create dangerous disruption.
   keywords:
   - RCMP
   - provincial police
   - municipal police
   - policing contracts
   - public safety
-  summary: Policing could be reorganized under an independent Alberta, but today's RCMP contracts, municipal services, First Nations policing, dispatch, labs, data systems, and transition costs would require written continuity plans rather than assumptions.
+  summary: Policing could be reorganized under an independent Alberta, but today's RCMP contracts, municipal services, First
+    Nations policing, dispatch, labs, data systems, and transition costs would require written continuity plans rather than
+    assumptions.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: charter-rights-continuity
-  title: Charter rights and civil-liberties continuity
-  plain_question: Would Charter rights and civil liberties continue after independence?
+  title: Would Charter rights and civil liberties continue after Alberta independence?
+  plain_question: Would Charter rights and civil liberties continue after Alberta independence?
   category: Rights, law, and democratic legitimacy
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Rights questions cut across ideology; supporters may see a chance to write a local constitution, while opponents may worry about losing Charter remedies.
+  why_people_may_share_or_argue: Rights questions cut across ideology; supporters may see a chance to write a local constitution,
+    while opponents may worry about losing Charter remedies.
   keywords:
   - Charter
   - civil liberties
   - Alberta Bill of Rights
   - constitution
   - rights continuity
-  summary: The Canadian Charter binds Canadian governments today; an independent Alberta would need a credible constitutional and statutory rights-continuity plan, and current sources do not prove automatic rollover or repeal.
+  summary: The Canadian Charter binds Canadian governments today; an independent Alberta would need a credible constitutional
+    and statutory rights-continuity plan, and current sources do not prove automatic rollover or repeal.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: abortion-reproductive-health-rights
-  title: Abortion access and reproductive health rights
-  plain_question: What would happen to abortion access and reproductive health rights?
+  title: Could Alberta independence change abortion access and reproductive health rights?
+  plain_question: Could Alberta independence change abortion access and reproductive health rights?
   category: Healthcare and rights
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: This is one of the most sensitive healthcare and rights topics in Canadian politics; people may argue about bodily autonomy, regional access, doctors, hospitals, and whether current Canadian legal protections would still matter.
+  why_people_may_share_or_argue: This is one of the most sensitive healthcare and rights topics in Canadian politics; people
+    may argue about bodily autonomy, regional access, doctors, hospitals, and whether current Canadian legal protections would
+    still matter.
   keywords:
   - abortion
   - reproductive health
   - Canada Health Act
   - Morgentaler
   - health rights
-  summary: Abortion and reproductive healthcare currently sit within Canadian criminal-law, constitutional, health-system, and provincial-service baselines; independence would require explicit legal and service-continuity commitments rather than assumptions.
+  summary: Abortion and reproductive healthcare currently sit within Canadian criminal-law, constitutional, health-system,
+    and provincial-service baselines; independence would require explicit legal and service-continuity commitments rather
+    than assumptions.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: firearms-laws-licensing
-  title: Firearms laws, licensing, and restricted weapons
-  plain_question: What would happen to firearms laws, gun licensing, and restricted weapons rules?
+  title: What would happen to firearms laws, gun licensing, and restricted-weapon rules?
+  plain_question: What would happen to firearms laws, gun licensing, and restricted-weapon rules?
   category: Policing, courts, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Firearms rules are politically charged, especially around rural safety, sport shooting, public safety, federal bans, and provincial-federal conflict; people may argue over whether independence would restore local control or weaken safety safeguards.
+  why_people_may_share_or_argue: Firearms rules are politically charged, especially around rural safety, sport shooting, public
+    safety, federal bans, and provincial-federal conflict; people may argue over whether independence would restore local
+    control or weaken safety safeguards.
   keywords:
   - firearms
   - gun licensing
   - restricted weapons
   - Canadian Firearms Program
   - Chief Firearms Officer
-  summary: Current sources show firearms licensing and regulatory baselines involving federal law, the RCMP Canadian Firearms Program, and Alberta’s Chief Firearms Office; independence would require explicit continuity plans rather than assumptions.
+  summary: Current sources show firearms licensing and regulatory baselines involving federal law, the RCMP Canadian Firearms
+    Program, and Alberta’s Chief Firearms Office; independence would require explicit continuity plans rather than assumptions.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: healthcare-portability-doctor-licensing
-  title: Healthcare portability, doctor licensing, and out-of-province care
-  plain_question: What would happen to healthcare coverage, doctor licensing, and out-of-province care?
+  title: Would Alberta health coverage, doctor licensing, and out-of-province care still work?
+  plain_question: Would Alberta health coverage, doctor licensing, and out-of-province care still work?
   category: Healthcare and rights
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Healthcare is personal and high-trust; people may argue over whether independence could protect Alberta care from Ottawa or risk coverage gaps, physician mobility problems, and uncertainty for snowbirds, students, workers, and patients needing out-of-province treatment.
+  why_people_may_share_or_argue: Healthcare is personal and high-trust; people may argue over whether independence could protect
+    Alberta care from Ottawa or risk coverage gaps, physician mobility problems, and uncertainty for snowbirds, students,
+    workers, and patients needing out-of-province treatment.
   keywords:
   - healthcare coverage
   - doctor licensing
   - out-of-province care
   - Canada Health Act
   - physician registration
-  summary: Current sources show that insured-health-service principles, Alberta health insurance administration, and physician registration/licensing are separate but connected baselines; independence would require explicit continuity plans rather than assumptions.
+  summary: Current sources show that insured-health-service principles, Alberta health insurance administration, and physician
+    registration/licensing are separate but connected baselines; independence would require explicit continuity plans rather
+    than assumptions.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: border-enforcement-customs
-  title: Border enforcement, customs inspections, and cross-border travel
-  plain_question: What would happen to border enforcement, customs inspections, and cross-border travel?
+  title: Who would run border enforcement, customs inspections, and cross-border travel?
+  plain_question: Who would run border enforcement, customs inspections, and cross-border travel?
   category: Borders, customs, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: 'Border questions are concrete and emotional: families, truckers, businesses, tourists, hunters, and border communities may argue over whether independence means normal movement, customs delays, smuggling risks, or a harder Canada-Alberta border.'
+  why_people_may_share_or_argue: 'Border questions are concrete and emotional: families, truckers, businesses, tourists, hunters,
+    and border communities may argue over whether independence means normal movement, customs delays, smuggling risks, or
+    a harder Canada-Alberta border.'
   keywords:
   - border enforcement
   - customs
   - CBSA
   - cross-border travel
   - inspections
-  summary: Current sources show that border services, customs law, and immigration/citizenship administration are federal Canadian functions today; independence would require explicit continuity plans rather than assumptions.
+  summary: Current sources show that border services, customs law, and immigration/citizenship administration are federal
+    Canadian functions today; independence would require explicit continuity plans rather than assumptions.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 3
   claim_count: 4
 - slug: bank-deposits-financial-stability
-  title: Bank deposits, credit unions, and financial stability
-  plain_question: What would happen to bank deposits, credit unions, and financial-stability backstops?
+  title: Would bank deposits and credit-union savings still be protected?
+  plain_question: Would bank deposits and credit-union savings still be protected?
   category: Currency, banking, and financial stability
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: People may argue over whether savings, payroll accounts, mortgages, credit-union deposits, and bank confidence would be safer under local control or exposed to transition risk without federal deposit insurance and prudential backstops.
+  why_people_may_share_or_argue: People may argue over whether savings, payroll accounts, mortgages, credit-union deposits,
+    and bank confidence would be safer under local control or exposed to transition risk without federal deposit insurance
+    and prudential backstops.
   keywords:
   - bank deposits
   - deposit insurance
@@ -706,19 +756,23 @@ topics:
   - CDIC
   - OSFI
   - financial stability
-  summary: Current sources show separate federal and Alberta baselines for banks, deposit insurance, prudential supervision, and credit-union deposit guarantees; independence would require explicit continuity plans for depositor protection and financial-stability backstops.
+  summary: Current sources show separate federal and Alberta baselines for banks, deposit insurance, prudential supervision,
+    and credit-union deposit guarantees; independence would require explicit continuity plans for depositor protection and
+    financial-stability backstops.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
 - slug: pharmaceutical-drug-approvals-supply
-  title: Prescription drug approvals, safety recalls, and medicine supply
-  plain_question: What would happen to prescription drug approvals, safety recalls, and medicine supply?
+  title: Would prescription drug approvals, recalls, and medicine supply still work?
+  plain_question: Would prescription drug approvals, recalls, and medicine supply still work?
   category: Healthcare and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Prescription drugs are personal and urgent; people may argue over whether independence could speed access and local purchasing or risk interruptions in approvals, recalls, pharmacovigilance, imports, shortages, and pharmacy supply chains.
+  why_people_may_share_or_argue: Prescription drugs are personal and urgent; people may argue over whether independence could
+    speed access and local purchasing or risk interruptions in approvals, recalls, pharmacovigilance, imports, shortages,
+    and pharmacy supply chains.
   keywords:
   - prescription drugs
   - Health Canada
@@ -726,19 +780,23 @@ topics:
   - recalls
   - medicine supply
   - Food and Drugs Act
-  summary: Current sources show federal legal and regulatory baselines for drug approval, safety, compliance, recalls, and health-product information; independence would require explicit continuity plans for medicine access, safety surveillance, and supply chains.
+  summary: Current sources show federal legal and regulatory baselines for drug approval, safety, compliance, recalls, and
+    health-product information; independence would require explicit continuity plans for medicine access, safety surveillance,
+    and supply chains.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
 - slug: privacy-data-federal-ids
-  title: Privacy rules, Social Insurance Numbers, and federal identity/data systems
-  plain_question: What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
+  title: What would happen to Social Insurance Numbers, privacy rules, and federal identity systems?
+  plain_question: What would happen to Social Insurance Numbers, privacy rules, and federal identity systems?
   category: Rights, law, and digital government
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: 'Identity and privacy issues feel immediate: people may argue over payroll, tax filing, benefits, banking, health records, surveillance, data transfers, and whether independence would strengthen local control or create confusion and exposure.'
+  why_people_may_share_or_argue: 'Identity and privacy issues feel immediate: people may argue over payroll, tax filing, benefits,
+    banking, health records, surveillance, data transfers, and whether independence would strengthen local control or create
+    confusion and exposure.'
   keywords:
   - privacy
   - Social Insurance Number
@@ -746,76 +804,92 @@ topics:
   - PIPEDA
   - Privacy Act
   - digital government
-  summary: Current sources show federal SIN administration and federal/provincial privacy-law baselines; independence would require explicit rules for identity numbers, data transfers, public-sector records, private-sector privacy, and service continuity.
+  summary: Current sources show federal SIN administration and federal/provincial privacy-law baselines; independence would
+    require explicit rules for identity numbers, data transfers, public-sector records, private-sector privacy, and service
+    continuity.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
 - slug: environmental-assessment-pipeline-approvals
-  title: Environmental assessments, pipeline approvals, and major project regulation
-  plain_question: What would happen to environmental assessments, pipeline approvals, and major project regulation?
+  title: Who would approve pipelines, major projects, and environmental assessments?
+  plain_question: Who would approve pipelines, major projects, and environmental assessments?
   category: Energy, environment, and infrastructure
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Major projects sit at the centre of Alberta politics; people may argue over whether independence would speed pipelines and mines, reduce perceived federal obstruction, or weaken environmental scrutiny, Indigenous consultation, investor certainty, and cross-border approvals.
+  why_people_may_share_or_argue: Major projects sit at the centre of Alberta politics; people may argue over whether independence
+    would speed pipelines and mines, reduce perceived federal obstruction, or weaken environmental scrutiny, Indigenous consultation,
+    investor certainty, and cross-border approvals.
   keywords:
   - environmental assessment
   - pipeline approvals
   - Impact Assessment Agency
   - Alberta Energy Regulator
   - major projects
-  summary: Current sources show separate federal and Alberta baselines for impact assessment, environmental assessment, and energy regulation; independence would require explicit rules for project approvals, enforcement, consultation, equivalency, and recognition by other governments and markets.
+  summary: Current sources show separate federal and Alberta baselines for impact assessment, environmental assessment, and
+    energy regulation; independence would require explicit rules for project approvals, enforcement, consultation, equivalency,
+    and recognition by other governments and markets.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
 - slug: labour-standards-public-sector-unions
-  title: Labour standards, unions, and public-sector bargaining
+  title: What would happen to labour standards, union contracts, and public-sector bargaining?
   plain_question: What would happen to labour standards, union contracts, and public-sector bargaining?
   category: Workplaces, unions, and public services
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Workplace rules affect paycheques, strikes, public services, oilfield contractors, federal-sector employees, nurses, teachers, civil servants, and employers; people may argue over whether independence would improve local bargaining control or destabilize rights and contracts.
+  why_people_may_share_or_argue: Workplace rules affect paycheques, strikes, public services, oilfield contractors, federal-sector
+    employees, nurses, teachers, civil servants, and employers; people may argue over whether independence would improve local
+    bargaining control or destabilize rights and contracts.
   keywords:
   - labour standards
   - unions
   - collective bargaining
   - public sector
   - employment standards
-  summary: Current sources show federal labour-law baselines for federally regulated work and Alberta baselines for employment standards, labour relations, and bargaining institutions; independence would require explicit continuity rules for workers, employers, unions, and public-sector contracts.
+  summary: Current sources show federal labour-law baselines for federally regulated work and Alberta baselines for employment
+    standards, labour relations, and bargaining institutions; independence would require explicit continuity rules for workers,
+    employers, unions, and public-sector contracts.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
 - slug: federal-prisons-corrections-parole
-  title: Federal prisons, corrections, parole, and sentenced inmates
-  plain_question: What would happen to federal prisons, corrections, parole, and sentenced inmates?
+  title: Who would run federal prisons, corrections, parole, and sentenced-inmate transfers?
+  plain_question: Who would run federal prisons, corrections, parole, and sentenced-inmate transfers?
   category: Policing, courts, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Corrections is sensitive because it links victims, public safety, prison staff, rural communities, federal employees, inmates’ rights, parole decisions, and costs; people may argue over whether independence would improve local accountability or create dangerous gaps in custody and supervision.
+  why_people_may_share_or_argue: Corrections is sensitive because it links victims, public safety, prison staff, rural communities,
+    federal employees, inmates’ rights, parole decisions, and costs; people may argue over whether independence would improve
+    local accountability or create dangerous gaps in custody and supervision.
   keywords:
   - federal prisons
   - corrections
   - parole
   - Correctional Service Canada
   - sentenced inmates
-  summary: Current sources show federal baselines for penitentiaries, federal corrections, and parole plus Alberta baselines for remand and correctional centres; independence would require explicit decisions about custody, sentence administration, parole authority, staff, facilities, and public safety.
+  summary: Current sources show federal baselines for penitentiaries, federal corrections, and parole plus Alberta baselines
+    for remand and correctional centres; independence would require explicit decisions about custody, sentence administration,
+    parole authority, staff, facilities, and public safety.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
 - slug: public-health-disease-surveillance
-  title: Public-health disease surveillance, outbreak response, and vaccine reporting
-  plain_question: What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
+  title: Who would handle disease surveillance, outbreak response, and vaccine reporting?
+  plain_question: Who would handle disease surveillance, outbreak response, and vaccine reporting?
   category: Healthcare and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Public health became highly personal and politically charged after COVID-19; people may argue over whether independence would increase local control or weaken disease surveillance, outbreak coordination, vaccine confidence, and cross-border health warnings.
+  why_people_may_share_or_argue: Public health became highly personal and politically charged after COVID-19; people may argue
+    over whether independence would increase local control or weaken disease surveillance, outbreak coordination, vaccine
+    confidence, and cross-border health warnings.
   keywords:
   - public health
   - disease surveillance
@@ -823,19 +897,23 @@ topics:
   - PHAC
   - vaccines
   - notifiable diseases
-  summary: Public-health surveillance and outbreak response currently span federal, provincial, laboratory, immunization, reporting, and data-sharing systems; independence would require explicit continuity plans for disease reporting, emergency coordination, vaccine-safety reporting, and cross-border public-health alerts.
+  summary: Public-health surveillance and outbreak response currently span federal, provincial, laboratory, immunization,
+    reporting, and data-sharing systems; independence would require explicit continuity plans for disease reporting, emergency
+    coordination, vaccine-safety reporting, and cross-border public-health alerts.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
 - slug: bankruptcy-insolvency-creditor-protection
-  title: Bankruptcy, insolvency, creditor protection, and consumer proposals
+  title: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
   plain_question: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
   category: Business, courts, and household finances
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Bankruptcy is not a slogan issue, but it affects households, farms, oilfield contractors, landlords, lenders, small businesses, employees, and suppliers; people may argue over whether independence would free Alberta to set debtor-creditor rules or disrupt credit markets and active insolvency cases.
+  why_people_may_share_or_argue: Bankruptcy is not a slogan issue, but it affects households, farms, oilfield contractors,
+    landlords, lenders, small businesses, employees, and suppliers; people may argue over whether independence would free
+    Alberta to set debtor-creditor rules or disrupt credit markets and active insolvency cases.
   keywords:
   - bankruptcy
   - insolvency
@@ -843,19 +921,22 @@ topics:
   - creditor protection
   - OSB
   - business restructuring
-  summary: Bankruptcy and insolvency currently rely on federal statutes, the Office of the Superintendent of Bankruptcy, licensed insolvency trustees, courts, and creditor-debtor rules; independence would require explicit continuity for active files, trustees, priorities, stays, consumer proposals, and restructuring proceedings.
+  summary: Bankruptcy and insolvency currently rely on federal statutes, the Office of the Superintendent of Bankruptcy, licensed
+    insolvency trustees, courts, and creditor-debtor rules; independence would require explicit continuity for active files,
+    trustees, priorities, stays, consumer proposals, and restructuring proceedings.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4
   claim_count: 4
 - slug: elections-law-political-parties-campaign-finance
-  title: Election laws, political parties, and campaign finance
-  plain_question: What would happen to election laws, political parties, and campaign finance?
+  title: Who would set election laws, political-party rules, and campaign-finance limits?
+  plain_question: Who would set election laws, political-party rules, and campaign-finance limits?
   category: Rights, law, and democratic legitimacy
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
-  why_people_may_share_or_argue: Election rules decide who can organize, spend, vote, and govern; people may argue over whether independence would create more accountable local democracy or let incumbents write unfair rules during a high-stakes transition.
+  why_people_may_share_or_argue: Election rules decide who can organize, spend, vote, and govern; people may argue over whether
+    independence would create more accountable local democracy or let incumbents write unfair rules during a high-stakes transition.
   keywords:
   - election law
   - political parties
@@ -863,7 +944,9 @@ topics:
   - Elections Canada
   - Elections Alberta
   - democratic institutions
-  summary: Election administration, parties, candidate rules, and campaign finance currently exist under separate federal and Alberta legal systems; independence would require clear rules for continuity, voter eligibility, party registration, spending limits, third-party advertising, enforcement, and transition elections.
+  summary: Election administration, parties, candidate rules, and campaign finance currently exist under separate federal
+    and Alberta legal systems; independence would require clear rules for continuity, voter eligibility, party registration,
+    spending limits, third-party advertising, enforcement, and transition elections.
   last_audited_at: '2026-05-05'
   last_debated_at: '2026-05-05'
   source_count: 4

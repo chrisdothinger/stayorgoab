@@ -1,6 +1,7 @@
 import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import {
+  DOSSIER_CITATION_DISPLAY_STANDARD,
   DOSSIER_CONTRACT_VERSION,
   DOSSIER_NEUTRAL_SECTIONS,
   DOSSIER_OVERVIEW_SECTIONS,
@@ -61,6 +62,7 @@ export default function MethodPage() {
           <article className="data-row trust-row"><span className="mono row-meta">Overview</span><strong>{DOSSIER_OVERVIEW_SECTIONS.length} sections</strong><span>{DOSSIER_OVERVIEW_SECTIONS.join(' · ')}</span></article>
           <article className="data-row trust-row"><span className="mono row-meta">Pro / anti</span><strong>{DOSSIER_PRO_ANTI_SECTIONS.length} sections</strong><span>{DOSSIER_PRO_ANTI_SECTIONS.join(' · ')} with three to five argument pillars under the case section.</span></article>
           <article className="data-row trust-row"><span className="mono row-meta">Neutral</span><strong>{DOSSIER_NEUTRAL_SECTIONS.length} sections</strong><span>{DOSSIER_NEUTRAL_SECTIONS.join(' · ')}</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">Citations</span><strong>Evidence chips</strong><span>{DOSSIER_CITATION_DISPLAY_STANDARD.join(' · ')}</span></article>
         </div>
       </section>
 

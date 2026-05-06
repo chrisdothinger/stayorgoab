@@ -125,3 +125,5 @@ Most existing full dossiers still use the older public-audit section contract. D
 - Every inline citation number must appear in the matching `## Sources` list.
 - Every checked source in the topic source list should remain available through the source map and public source page.
 - Do not use raw source IDs as citations in public prose.
+- Do not under-cite claims to make the page prettier. The renderer compresses adjacent clusters of three or more numeric citations into an `Evidence: N sources` chip that expands to exact source-number links.
+- Prefer one precise citation for narrow claims and a grouped citation cluster for claims intentionally supported by several sources.

@@ -1,4 +1,8 @@
 entries:
+- id: redebate-legal-process-2026-05-06-evidence-chip-citations
+  date: '2026-05-06'
+  trigger: citation-readability-cleanup
+  summary: Preserved numbered source references but moved dense public citation clusters to the sitewide expandable Evidence chip display pattern.
 - id: redebate-legal-process-2026-05-04
   date: '2026-05-04'
   trigger: full-topic-expansion

@@ -16,7 +16,7 @@ Required posture:
 - Avoid false balance when the evidence is asymmetric.
 - Use stacked bullets rather than wide decision-tree/matrix tables.
 - State what evidence would change the synthesis.
-- Keep numbered inline citations tied to claims and a matching `## Sources` section.
+- Keep numbered inline citations tied to claims and a matching `## Sources` section; citation clusters of three or more will render as expandable `Evidence: N sources` chips, so do not remove supporting sources just to reduce visual clutter.
 
 Required public sections:
 

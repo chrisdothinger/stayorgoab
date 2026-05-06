@@ -107,6 +107,9 @@ test('full dossier report pages show steelman and neutral mediator structure', a
   await page.goto('/questions/legal-process/pro/');
   await expect(page.getByText(/strongest fair pro-independence argument/i)).toBeVisible();
   await expect(page.getByRole('heading', { name: /Best objections \/ replies/i })).toBeVisible();
+  await expect(page.getByText(/Evidence: 3 sources/i).first()).toBeVisible();
+  await page.getByText(/Evidence: 3 sources/i).first().click();
+  await expect(page.locator('.evidence-chip[open]').first().getByRole('link', { name: '[3]', exact: true })).toBeVisible();
 
   await page.goto('/questions/legal-process/anti/');
   await expect(page.getByText(/strongest fair anti-independence/i)).toBeVisible();
@@ -181,6 +184,8 @@ test('public trust surfaces explain repo, review log, and changelog clearly', as
   await expect(page.getByText(/internal provenance check/i).first()).toBeVisible();
   await expect(page.getByText(/V3 public dossier shape/i)).toBeVisible();
   await expect(page.getByText(/Lean dossier contract/i)).toBeVisible();
+  await expect(page.getByText('Evidence chips', { exact: true })).toBeVisible();
+  await expect(page.getByText(/3\+ adjacent citations render as an expandable Evidence chip/i)).toBeVisible();
   await expect(page.getByText(/Bottom line/i).first()).toBeVisible();
   await expect(page.getByText(/What survives both arguments/i)).toBeVisible();
   await expect(page.getByRole('heading', { name: /Automated workflows/i })).toBeVisible();

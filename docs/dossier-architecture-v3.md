@@ -10,7 +10,7 @@ The public reader layer should answer the question clearly, show the serious arg
 
 The audit layer remains complete and publicly inspectable through:
 
-- numbered citations and `## Sources` sections;
+- numbered citations and `## Sources` sections, with long public citation clusters rendered as compact evidence chips;
 - topic `claims.yml` files;
 - topic `sources.yml` source maps;
 - topic `audit-log.yml` review history;
@@ -112,6 +112,18 @@ Do not use these as standalone sections in refreshed v3 reports:
 - `Reader checklist`
 
 Their jobs are merged into pillars, objections/replies, the neutral mediation sections, and the audit layer.
+
+## Citation display contract
+
+Public dossier citations keep deterministic numbered source IDs under the hood, but the reader layer should avoid footnote explosions:
+
+- One or two supporting sources may render as compact inline numeric citation links.
+- Three or more adjacent citation numbers render as an `Evidence: N sources` chip.
+- Opening the chip shows the exact numbered source links for that claim.
+- Source links jump to the matching `## Sources` list item.
+- Writers should still cite claims precisely; do not remove sources merely to make prose look cleaner.
+
+This preserves source-first auditability while making dense civic prose readable on mobile.
 
 ## Validation approach
 

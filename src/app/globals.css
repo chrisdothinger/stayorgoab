@@ -449,8 +449,14 @@ textarea:focus-visible {
 }
 
 .markdown p,
+.markdown .paragraph,
 .markdown li {
   color: var(--secondary);
+}
+
+.markdown .paragraph {
+  max-width: 76ch;
+  margin: 0 0 18px;
 }
 
 .markdown ul,
@@ -471,6 +477,69 @@ textarea:focus-visible {
   color: var(--ink);
   font-size: 0.9em;
   overflow-wrap: anywhere;
+}
+
+.citation-cluster {
+  display: inline-flex;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.citation-link {
+  color: var(--ink);
+  font-size: 0.72em;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  vertical-align: super;
+}
+
+.evidence-chip {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: baseline;
+}
+
+.evidence-chip summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border: 1px solid rgba(17, 24, 39, 0.16);
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.72em;
+  font-weight: 730;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  padding: 3px 7px;
+  text-transform: uppercase;
+}
+
+.evidence-chip summary::-webkit-details-marker {
+  display: none;
+}
+
+.evidence-chip[open] summary {
+  border-color: rgba(17, 24, 39, 0.32);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.evidence-chip-links {
+  display: inline-flex;
+  gap: 5px;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+.evidence-chip-links .citation-link {
+  font-size: 0.74em;
+}
+
+.markdown li:target {
+  background: rgba(255, 255, 255, 0.72);
+  outline: 1px solid rgba(17, 24, 39, 0.2);
+  outline-offset: 4px;
 }
 
 .report-hero h1 {

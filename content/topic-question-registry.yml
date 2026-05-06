@@ -1,5 +1,6 @@
-version: 2026-05-06-topic-question-standard-v1
-purpose: Harden StayOrGoAB topic selection around sensitive, unique, critical, high-value public questions before broad dossier migration.
+version: 2026-05-06-topic-question-standard-v2-overlap-sweep
+purpose: Harden StayOrGoAB topic selection around sensitive, unique, critical, high-value public questions with structured overlap review before
+  broad dossier migration.
 scoring_scale:
   public_importance: '1-5: real-world civic or personal stakes'
   sensitivity: '1-5: controversy, rights, money, identity, safety, or trust implications'
@@ -11,8 +12,9 @@ decision_meanings:
   reframe: Keep the area, but sharpen the question before dossier migration.
   merge_candidate: Likely duplicate/overlap; resolve before dossier migration.
   split_candidate: Topic is too bundled; split into sharper questions or choose one primary question before migration.
-acceptance_gate: New or refreshed topics should score at least 16/25, be phrased as a question, include research lanes, and have a uniqueness
-  group checked against existing topics.
+  cancel_duplicate: Question should not remain a public dossier candidate because another canonical question covers the same reader need.
+acceptance_gate: New or refreshed topics should score at least 16/25, be phrased as a question, include research lanes, and include structured
+  overlap_review against same-family or adjacent questions.
 topics:
 - slug: legal-process
   current_public_question: What would legally need to happen for Alberta to become independent?
@@ -38,7 +40,32 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on legal path and constitutional rules and the reader outcome in ''What would legally
+    need to happen for Alberta to become independent?''. Adjacent topics may provide context, but this dossier should not re-answer their separate
+    legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: clarity-act
+      relationship: sibling
+      boundary: 'This question covers What would legally need to happen for Alberta to become independent? It is distinct from clarity-act, which
+        asks: Does the Clarity Act give Ottawa a veto over Alberta independence? Keep this dossier focused on legal path and constitutional rules;
+        use the other topic only for context, not as a substitute answer.'
+    - slug: quebec-secession-reference
+      relationship: sibling
+      boundary: 'This question covers What would legally need to happen for Alberta to become independent? It is distinct from quebec-secession-reference,
+        which asks: What did the Supreme Court actually say about unilateral secession? Keep this dossier focused on legal path and constitutional
+        rules; use the other topic only for context, not as a substitute answer.'
+    - slug: clear-question-majority
+      relationship: sibling
+      boundary: 'This question covers What would legally need to happen for Alberta to become independent? It is distinct from clear-question-majority,
+        which asks: Who decides whether Alberta’s referendum question and result are clear enough? Keep this dossier focused on legal path and
+        constitutional rules; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: legal-process
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on legal path and constitutional rules and the reader outcome in ''What would legally
+      need to happen for Alberta to become independent?''. Adjacent topics may provide context, but this dossier should not re-answer their separate
+      legal, fiscal, service, travel, or institutional mechanics.'
 - slug: cpp-pensions
   current_public_question: Would Albertans keep CPP benefits, or move to a new pension system?
   current_legacy_title: What would happen to CPP and pensions?
@@ -63,7 +90,22 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on pensions, benefits, and household income and the reader outcome in ''Would Albertans
+    keep CPP benefits, or move to a new pension system?''. Adjacent topics may provide context, but this dossier should not re-answer their separate
+    legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: employment-insurance-federal-benefits
+      relationship: adjacent
+      boundary: 'This question covers Would Albertans keep CPP benefits, or move to a new pension system? It is distinct from employment-insurance-federal-benefits,
+        which asks: Would Albertans keep Employment Insurance and federal income benefits? Keep this dossier focused on pensions, benefits, and
+        household income; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: cpp-pensions
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on pensions, benefits, and household income and the reader outcome in ''Would Albertans
+      keep CPP benefits, or move to a new pension system?''. Adjacent topics may provide context, but this dossier should not re-answer their
+      separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: indigenous-rights-treaties
   current_public_question: How would Indigenous rights, treaties, land, and consultation affect Alberta independence?
   current_legacy_title: How do Indigenous rights and treaties affect independence?
@@ -88,9 +130,46 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on indigenous rights, treaties, land, and consent and the reader outcome in ''How would
+    Indigenous rights, treaties, land, and consultation affect Alberta independence?''. Adjacent topics may provide context, but this dossier
+    should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: national-parks-public-lands
+      relationship: adjacent
+      boundary: 'This question covers How would Indigenous rights, treaties, land, and consultation affect Alberta independence? It is distinct
+        from national-parks-public-lands, which asks: What would happen to national parks, Crown land, and public lands? Keep this dossier focused
+        on indigenous rights, treaties, land, and consent; use the other topic only for context, not as a substitute answer.'
+    - slug: water-rights-rivers
+      relationship: adjacent
+      boundary: 'This question covers How would Indigenous rights, treaties, land, and consultation affect Alberta independence? It is distinct
+        from water-rights-rivers, which asks: Could Alberta independence change water rights, rivers, and drinking-water systems? Keep this dossier
+        focused on indigenous rights, treaties, land, and consent; use the other topic only for context, not as a substitute answer.'
+    - slug: charter-rights-continuity
+      relationship: adjacent
+      boundary: 'This question covers How would Indigenous rights, treaties, land, and consultation affect Alberta independence? It is distinct
+        from charter-rights-continuity, which asks: Would Charter rights and civil liberties continue after Alberta independence? Keep this dossier
+        focused on indigenous rights, treaties, land, and consent; use the other topic only for context, not as a substitute answer.'
+    - slug: abortion-reproductive-health-rights
+      relationship: adjacent
+      boundary: 'This question covers How would Indigenous rights, treaties, land, and consultation affect Alberta independence? It is distinct
+        from abortion-reproductive-health-rights, which asks: Could Alberta independence change abortion access and reproductive health rights?
+        Keep this dossier focused on indigenous rights, treaties, land, and consent; use the other topic only for context, not as a substitute
+        answer.'
+    - slug: energy-environment
+      relationship: adjacent
+      boundary: 'This question covers How would Indigenous rights, treaties, land, and consultation affect Alberta independence? It is distinct
+        from energy-environment, which asks: Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental
+        rules, and export routes still constrain development? Keep this dossier focused on indigenous rights, treaties, land, and consent; use
+        the other topic only for context, not as a substitute answer.'
+    canonical_slug: indigenous-rights-treaties
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on indigenous rights, treaties, land, and consent and the reader outcome in ''How
+      would Indigenous rights, treaties, land, and consultation affect Alberta independence?''. Adjacent topics may provide context, but this
+      dossier should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: economy-fiscal
-  current_public_question: Would independence make Alberta richer or poorer?
+  current_public_question: Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition costs?
   current_legacy_title: Would independence make Alberta richer or poorer?
   decision: keep
   priority: flagship
@@ -113,7 +192,31 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Macro dashboard question. It may summarize findings from equalization, trade, currency, debt/assets, and transition-cost dossiers,
+    but detailed mechanics belong in those narrower dossiers.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: equalization
+      relationship: adjacent
+      boundary: 'This question covers Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition costs?
+        It is distinct from equalization, which asks: How much, if anything, would Albertans save from ending federal equalization and other transfers?
+        Keep this dossier focused on economy, fiscal policy, and household impact; use the other topic only for context, not as a substitute answer.'
+    - slug: federal-debt-assets
+      relationship: adjacent
+      boundary: 'This question covers Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition costs?
+        It is distinct from federal-debt-assets, which asks: How much federal debt would Alberta inherit, and what assets could it claim? Keep
+        this dossier focused on economy, fiscal policy, and household impact; use the other topic only for context, not as a substitute answer.'
+    - slug: currency-banking
+      relationship: adjacent
+      boundary: 'This question covers Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition costs?
+        It is distinct from currency-banking, which asks: Could Alberta keep using the Canadian dollar, and what would that mean for monetary
+        policy and banking stability? Keep this dossier focused on economy, fiscal policy, and household impact; use the other topic only for
+        context, not as a substitute answer.'
+    canonical_slug: economy-fiscal
+    resolution: keep
+    reviewer_notes: Macro dashboard question. It may summarize findings from equalization, trade, currency, debt/assets, and transition-cost dossiers,
+      but detailed mechanics belong in those narrower dossiers.
 - slug: referendum-mechanics
   current_public_question: How would Alberta’s petition and referendum process actually work?
   current_legacy_title: How does the petition and referendum process work?
@@ -138,22 +241,32 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on democracy, petitions, and referendum mechanics and the reader outcome in ''How would
+    Alberta’s petition and referendum process actually work?''. Adjacent topics may provide context, but this dossier should not re-answer their
+    separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: referendum-mechanics
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on democracy, petitions, and referendum mechanics and the reader outcome in ''How
+      would Alberta’s petition and referendum process actually work?''. Adjacent topics may provide context, but this dossier should not re-answer
+      their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: borders-currency-citizenship
-  current_public_question: Would Alberta have new borders, a new currency, or different citizenship rules?
+  current_public_question: How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
   current_legacy_title: What happens to borders, currency, and citizenship?
-  decision: split_candidate
-  priority: reframe
-  question_family: transition-bundle
-  category: Bundled transition questions needing split/reframe
+  decision: keep
+  priority: flagship
+  question_family: landlocked-corridors
+  category: Landlocked access, export corridors, and logistics
   merge_with: null
   scores:
-    public_importance: 4
-    sensitivity: 4
-    uniqueness: 2
-    answerability: 3
-    reader_value: 4
-    total: 17
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
   reader_intent:
   - voter
   - researcher
@@ -162,22 +275,68 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Broad bundle; split or sharpen before next major dossier refresh.
+  overlap_notes: Reframed from a bundled borders/currency/citizenship topic into a landlocked-corridor question. It covers transit rights, port
+    access, rail/pipeline/road leverage, and overseas route dependence; currency, passports, customs paperwork, and border-agency staffing stay
+    in their separate topics.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: currency-banking
+      relationship: adjacent
+      boundary: 'This question covers How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
+        It is distinct from currency-banking, which asks: Could Alberta keep using the Canadian dollar, and what would that mean for monetary
+        policy and banking stability? Keep this dossier focused on landlocked access, export corridors, and logistics; use the other topic only
+        for context, not as a substitute answer.'
+    - slug: borders-trade
+      relationship: adjacent
+      boundary: 'This question covers How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
+        It is distinct from borders-trade, which asks: Would independence create tariffs, customs costs, or market-access barriers for goods moving
+        to and from Alberta? Keep this dossier focused on landlocked access, export corridors, and logistics; use the other topic only for context,
+        not as a substitute answer.'
+    - slug: border-enforcement-customs
+      relationship: adjacent
+      boundary: 'This question covers How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
+        It is distinct from border-enforcement-customs, which asks: What border agency would Alberta need, and how would inspections for people
+        and goods actually work? Keep this dossier focused on landlocked access, export corridors, and logistics; use the other topic only for
+        context, not as a substitute answer.'
+    - slug: immigration-passports-mobility
+      relationship: adjacent
+      boundary: 'This question covers How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
+        It is distinct from immigration-passports-mobility, which asks: Would Albertans keep Canadian citizenship, passports, residency rights,
+        and the ability to live or work across Canada? Keep this dossier focused on landlocked access, export corridors, and logistics; use the
+        other topic only for context, not as a substitute answer.'
+    - slug: energy-environment
+      relationship: adjacent
+      boundary: 'This question covers How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
+        It is distinct from energy-environment, which asks: Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights,
+        environmental rules, and export routes still constrain development? Keep this dossier focused on landlocked access, export corridors,
+        and logistics; use the other topic only for context, not as a substitute answer.'
+    - slug: environmental-assessment-pipeline-approvals
+      relationship: adjacent
+      boundary: 'This question covers How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
+        It is distinct from environmental-assessment-pipeline-approvals, which asks: Who would approve pipelines, mines, major projects, and environmental
+        assessments — and would approvals actually get faster? Keep this dossier focused on landlocked access, export corridors, and logistics;
+        use the other topic only for context, not as a substitute answer.'
+    canonical_slug: borders-currency-citizenship
+    resolution: keep
+    reviewer_notes: Reframed from a bundled borders/currency/citizenship topic into a landlocked-corridor question. It covers transit rights,
+      port access, rail/pipeline/road leverage, and overseas route dependence; currency, passports, customs paperwork, and border-agency staffing
+      stay in their separate topics.
 - slug: petition-vs-referendum-vs-negotiations
-  current_public_question: What is the difference between a petition, a referendum, and independence negotiations?
+  current_public_question: What would negotiations with Canada actually have to settle after a successful Alberta referendum?
   current_legacy_title: Petition vs referendum vs negotiations
-  decision: merge_candidate
-  priority: merge
-  question_family: referendum-process
-  category: Democracy, petitions, and referendum mechanics
-  merge_with: referendum-mechanics
+  decision: keep
+  priority: flagship
+  question_family: negotiation-settlement
+  category: Post-referendum negotiations and settlement terms
+  merge_with: null
   scores:
-    public_importance: 4
-    sensitivity: 4
-    uniqueness: 2
-    answerability: 5
-    reader_value: 4
-    total: 19
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
   reader_intent:
   - voter
   - researcher
@@ -186,7 +345,15 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Possible overlap; do not refresh dossier until merged/reframed against canonical topic.
+  overlap_notes: 'Reframed from a procedural explainer that overlapped referendum-mechanics. This question is only about post-vote settlement
+    terms: assets, liabilities, treaties, borders, institutions, implementation timing, and conditions Canada/Alberta would negotiate.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: petition-vs-referendum-vs-negotiations
+    resolution: keep
+    reviewer_notes: 'Reframed from a procedural explainer that overlapped referendum-mechanics. This question is only about post-vote settlement
+      terms: assets, liabilities, treaties, borders, institutions, implementation timing, and conditions Canada/Alberta would negotiate.'
 - slug: clarity-act
   current_public_question: Does the Clarity Act give Ottawa a veto over Alberta independence?
   current_legacy_title: The Clarity Act
@@ -211,7 +378,32 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on legal path and constitutional rules and the reader outcome in ''Does the Clarity
+    Act give Ottawa a veto over Alberta independence?''. Adjacent topics may provide context, but this dossier should not re-answer their separate
+    legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: legal-process
+      relationship: sibling
+      boundary: 'This question covers Does the Clarity Act give Ottawa a veto over Alberta independence? It is distinct from legal-process, which
+        asks: What would legally need to happen for Alberta to become independent? Keep this dossier focused on legal path and constitutional
+        rules; use the other topic only for context, not as a substitute answer.'
+    - slug: quebec-secession-reference
+      relationship: sibling
+      boundary: 'This question covers Does the Clarity Act give Ottawa a veto over Alberta independence? It is distinct from quebec-secession-reference,
+        which asks: What did the Supreme Court actually say about unilateral secession? Keep this dossier focused on legal path and constitutional
+        rules; use the other topic only for context, not as a substitute answer.'
+    - slug: clear-question-majority
+      relationship: sibling
+      boundary: 'This question covers Does the Clarity Act give Ottawa a veto over Alberta independence? It is distinct from clear-question-majority,
+        which asks: Who decides whether Alberta’s referendum question and result are clear enough? Keep this dossier focused on legal path and
+        constitutional rules; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: clarity-act
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on legal path and constitutional rules and the reader outcome in ''Does the Clarity
+      Act give Ottawa a veto over Alberta independence?''. Adjacent topics may provide context, but this dossier should not re-answer their separate
+      legal, fiscal, service, travel, or institutional mechanics.'
 - slug: quebec-secession-reference
   current_public_question: What did the Supreme Court actually say about unilateral secession?
   current_legacy_title: Quebec Secession Reference
@@ -236,7 +428,32 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on legal path and constitutional rules and the reader outcome in ''What did the Supreme
+    Court actually say about unilateral secession?''. Adjacent topics may provide context, but this dossier should not re-answer their separate
+    legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: legal-process
+      relationship: sibling
+      boundary: 'This question covers What did the Supreme Court actually say about unilateral secession? It is distinct from legal-process, which
+        asks: What would legally need to happen for Alberta to become independent? Keep this dossier focused on legal path and constitutional
+        rules; use the other topic only for context, not as a substitute answer.'
+    - slug: clarity-act
+      relationship: sibling
+      boundary: 'This question covers What did the Supreme Court actually say about unilateral secession? It is distinct from clarity-act, which
+        asks: Does the Clarity Act give Ottawa a veto over Alberta independence? Keep this dossier focused on legal path and constitutional rules;
+        use the other topic only for context, not as a substitute answer.'
+    - slug: clear-question-majority
+      relationship: sibling
+      boundary: 'This question covers What did the Supreme Court actually say about unilateral secession? It is distinct from clear-question-majority,
+        which asks: Who decides whether Alberta’s referendum question and result are clear enough? Keep this dossier focused on legal path and
+        constitutional rules; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: quebec-secession-reference
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on legal path and constitutional rules and the reader outcome in ''What did the
+      Supreme Court actually say about unilateral secession?''. Adjacent topics may provide context, but this dossier should not re-answer their
+      separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: clear-question-majority
   current_public_question: Who decides whether Alberta’s referendum question and result are clear enough?
   current_legacy_title: Clear question and clear majority
@@ -261,7 +478,32 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on legal path and constitutional rules and the reader outcome in ''Who decides whether
+    Alberta’s referendum question and result are clear enough?''. Adjacent topics may provide context, but this dossier should not re-answer their
+    separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: legal-process
+      relationship: sibling
+      boundary: 'This question covers Who decides whether Alberta’s referendum question and result are clear enough? It is distinct from legal-process,
+        which asks: What would legally need to happen for Alberta to become independent? Keep this dossier focused on legal path and constitutional
+        rules; use the other topic only for context, not as a substitute answer.'
+    - slug: clarity-act
+      relationship: sibling
+      boundary: 'This question covers Who decides whether Alberta’s referendum question and result are clear enough? It is distinct from clarity-act,
+        which asks: Does the Clarity Act give Ottawa a veto over Alberta independence? Keep this dossier focused on legal path and constitutional
+        rules; use the other topic only for context, not as a substitute answer.'
+    - slug: quebec-secession-reference
+      relationship: sibling
+      boundary: 'This question covers Who decides whether Alberta’s referendum question and result are clear enough? It is distinct from quebec-secession-reference,
+        which asks: What did the Supreme Court actually say about unilateral secession? Keep this dossier focused on legal path and constitutional
+        rules; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: clear-question-majority
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on legal path and constitutional rules and the reader outcome in ''Who decides whether
+      Alberta’s referendum question and result are clear enough?''. Adjacent topics may provide context, but this dossier should not re-answer
+      their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: referendum-ballot-2026
   current_public_question: What is known, and not known, about a possible 2026 Alberta referendum ballot?
   current_legacy_title: 2026 referendum ballot
@@ -286,22 +528,33 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on current referendum status and ballot timing and the reader outcome in ''What is
+    known, and not known, about a possible 2026 Alberta referendum ballot?''. Adjacent topics may provide context, but this dossier should not
+    re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: referendum-ballot-2026
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on current referendum status and ballot timing and the reader outcome in ''What
+      is known, and not known, about a possible 2026 Alberta referendum ballot?''. Adjacent topics may provide context, but this dossier should
+      not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: economy-overall
-  current_public_question: Would Alberta independence strengthen or weaken the economy overall?
+  current_public_question: Would an independent Alberta align more closely with the United States, and what would that mean for trade, defence,
+    energy, and sovereignty?
   current_legacy_title: Overall economic outlook
-  decision: merge_candidate
-  priority: merge
-  question_family: macro-fiscal
-  category: Economy, fiscal policy, and household impact
-  merge_with: economy-fiscal
+  decision: keep
+  priority: flagship
+  question_family: us-alignment
+  category: United States partnerships, trade, defence, energy, and sovereignty
+  merge_with: null
   scores:
     public_importance: 5
     sensitivity: 5
-    uniqueness: 2
+    uniqueness: 5
     answerability: 4
     reader_value: 5
-    total: 21
+    total: 24
   reader_intent:
   - voter
   - researcher
@@ -310,9 +563,29 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Possible overlap; do not refresh dossier until merged/reframed against canonical topic.
+  overlap_notes: Replaces the duplicate overall-economy question, which merged into economy-fiscal. This is a distinct strategic-alignment question
+    about U.S. partnerships and sovereignty tradeoffs.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: international-recognition
+      relationship: adjacent
+      boundary: 'This question covers Would an independent Alberta align more closely with the United States, and what would that mean for trade,
+        defence, energy, and sovereignty? It is distinct from international-recognition, which asks: Would other countries recognize an independent
+        Alberta, and what conditions might they attach? Keep this dossier focused on united states partnerships, trade, defence, energy, and sovereignty;
+        use the other topic only for context, not as a substitute answer.'
+    - slug: military-security
+      relationship: adjacent
+      boundary: 'This question covers Would an independent Alberta align more closely with the United States, and what would that mean for trade,
+        defence, energy, and sovereignty? It is distinct from military-security, which asks: Who would defend Alberta, and what alliances or security
+        arrangements would replace Canada’s? Keep this dossier focused on united states partnerships, trade, defence, energy, and sovereignty;
+        use the other topic only for context, not as a substitute answer.'
+    canonical_slug: economy-overall
+    resolution: keep
+    reviewer_notes: Replaces the duplicate overall-economy question, which merged into economy-fiscal. This is a distinct strategic-alignment
+      question about U.S. partnerships and sovereignty tradeoffs.
 - slug: equalization
-  current_public_question: Would Alberta actually stop paying equalization if it became independent?
+  current_public_question: How much, if anything, would Albertans save from ending federal equalization and other transfers?
   current_legacy_title: Equalization
   decision: keep
   priority: flagship
@@ -335,7 +608,30 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Precision upgrade: distinguishes equalization mechanics, federal taxes paid by Albertans, federal spending in Alberta, Canada
+    Health/Social Transfers, and post-independence replacement costs.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: economy-fiscal
+      relationship: adjacent
+      boundary: 'This question covers How much, if anything, would Albertans save from ending federal equalization and other transfers? It is
+        distinct from economy-fiscal, which asks: Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition
+        costs? Keep this dossier focused on equalization and federal transfers; use the other topic only for context, not as a substitute answer.'
+    - slug: federal-debt-assets
+      relationship: adjacent
+      boundary: 'This question covers How much, if anything, would Albertans save from ending federal equalization and other transfers? It is
+        distinct from federal-debt-assets, which asks: How much federal debt would Alberta inherit, and what assets could it claim? Keep this
+        dossier focused on equalization and federal transfers; use the other topic only for context, not as a substitute answer.'
+    - slug: tax-collection-revenue-agency
+      relationship: adjacent
+      boundary: 'This question covers How much, if anything, would Albertans save from ending federal equalization and other transfers? It is
+        distinct from tax-collection-revenue-agency, which asks: Would Alberta need its own tax agency, and how hard would that be? Keep this
+        dossier focused on equalization and federal transfers; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: equalization
+    resolution: keep
+    reviewer_notes: 'Precision upgrade: distinguishes equalization mechanics, federal taxes paid by Albertans, federal spending in Alberta, Canada
+      Health/Social Transfers, and post-independence replacement costs.'
 - slug: federal-debt-assets
   current_public_question: How much federal debt would Alberta inherit, and what assets could it claim?
   current_legacy_title: Federal debt and assets
@@ -360,22 +656,42 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on debt, assets, and fiscal settlement and the reader outcome in ''How much federal
+    debt would Alberta inherit, and what assets could it claim?''. Adjacent topics may provide context, but this dossier should not re-answer
+    their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: economy-fiscal
+      relationship: adjacent
+      boundary: 'This question covers How much federal debt would Alberta inherit, and what assets could it claim? It is distinct from economy-fiscal,
+        which asks: Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition costs? Keep this dossier
+        focused on debt, assets, and fiscal settlement; use the other topic only for context, not as a substitute answer.'
+    - slug: equalization
+      relationship: adjacent
+      boundary: 'This question covers How much federal debt would Alberta inherit, and what assets could it claim? It is distinct from equalization,
+        which asks: How much, if anything, would Albertans save from ending federal equalization and other transfers? Keep this dossier focused
+        on debt, assets, and fiscal settlement; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: federal-debt-assets
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on debt, assets, and fiscal settlement and the reader outcome in ''How much federal
+      debt would Alberta inherit, and what assets could it claim?''. Adjacent topics may provide context, but this dossier should not re-answer
+      their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: indigenous-treaties
-  current_public_question: Would Indigenous treaty consent be required before Alberta could separate?
+  current_public_question: Could First Nations remain tied to Canada or require separate agreements if Alberta tried to separate?
   current_legacy_title: Indigenous treaties and consent
-  decision: merge_candidate
-  priority: merge
-  question_family: indigenous-rights
-  category: Indigenous rights, treaties, land, and consent
-  merge_with: indigenous-rights-treaties
+  decision: keep
+  priority: flagship
+  question_family: indigenous-sovereignty
+  category: First Nations jurisdiction, treaty relationships, and consent
+  merge_with: null
   scores:
     public_importance: 5
     sensitivity: 5
-    uniqueness: 2
+    uniqueness: 5
     answerability: 4
     reader_value: 5
-    total: 21
+    total: 24
   reader_intent:
   - voter
   - researcher
@@ -384,9 +700,17 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Possible overlap; do not refresh dossier until merged/reframed against canonical topic.
+  overlap_notes: Reframed from a duplicate treaty-consent question. The broad Indigenous-rights dossier remains about rights, land, consultation,
+    and treaties; this one asks the narrower but critical question of First Nations jurisdictional choice and separate agreements.
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: indigenous-treaties
+    resolution: keep
+    reviewer_notes: Reframed from a duplicate treaty-consent question. The broad Indigenous-rights dossier remains about rights, land, consultation,
+      and treaties; this one asks the narrower but critical question of First Nations jurisdictional choice and separate agreements.
 - slug: military-security
-  current_public_question: Who would defend Alberta, and what security arrangements would replace Canada’s?
+  current_public_question: Who would defend Alberta, and what alliances or security arrangements would replace Canada’s?
   current_legacy_title: Military and security
   decision: keep
   priority: keep
@@ -408,9 +732,28 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Defence/security capacity question. Distinct from U.S. alignment because it covers defence institutions and alliances generally,
+    not the broader U.S. trade/energy/sovereignty partnership choice.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: economy-overall
+      relationship: adjacent
+      boundary: 'This question covers Who would defend Alberta, and what alliances or security arrangements would replace Canada’s? It is distinct
+        from economy-overall, which asks: Would an independent Alberta align more closely with the United States, and what would that mean for
+        trade, defence, energy, and sovereignty? Keep this dossier focused on defence, security, and foreign affairs; use the other topic only
+        for context, not as a substitute answer.'
+    - slug: international-recognition
+      relationship: adjacent
+      boundary: 'This question covers Who would defend Alberta, and what alliances or security arrangements would replace Canada’s? It is distinct
+        from international-recognition, which asks: Would other countries recognize an independent Alberta, and what conditions might they attach?
+        Keep this dossier focused on defence, security, and foreign affairs; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: military-security
+    resolution: keep
+    reviewer_notes: Defence/security capacity question. Distinct from U.S. alignment because it covers defence institutions and alliances generally,
+      not the broader U.S. trade/energy/sovereignty partnership choice.
 - slug: currency-banking
-  current_public_question: Could Alberta keep using the Canadian dollar, or would it need its own currency?
+  current_public_question: Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking stability?
   current_legacy_title: Currency and banking
   decision: keep
   priority: flagship
@@ -433,9 +776,35 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Canonical currency question. Excludes citizenship, border inspections, and general trade; includes monetary policy, central-bank/lender-of-last-resort
+    issues, banking confidence, and currency-choice tradeoffs.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: borders-currency-citizenship
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking stability?
+        It is distinct from borders-currency-citizenship, which asks: How would a landlocked Alberta move goods through Canadian, U.S., and overseas
+        routes after independence? Keep this dossier focused on currency, banking, and monetary stability; use the other topic only for context,
+        not as a substitute answer.'
+    - slug: bank-deposits-financial-stability
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking stability?
+        It is distinct from bank-deposits-financial-stability, which asks: Would bank deposits, credit-union savings, and financial backstops
+        still be protected? Keep this dossier focused on currency, banking, and monetary stability; use the other topic only for context, not
+        as a substitute answer.'
+    - slug: economy-fiscal
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking stability?
+        It is distinct from economy-fiscal, which asks: Would independence make Alberta richer or poorer after taxes, transfers, debt, trade,
+        and transition costs? Keep this dossier focused on currency, banking, and monetary stability; use the other topic only for context, not
+        as a substitute answer.'
+    canonical_slug: currency-banking
+    resolution: keep
+    reviewer_notes: Canonical currency question. Excludes citizenship, border inspections, and general trade; includes monetary policy, central-bank/lender-of-last-resort
+      issues, banking confidence, and currency-choice tradeoffs.
 - slug: borders-trade
-  current_public_question: Would Alberta independence create borders, tariffs, or trade disruption?
+  current_public_question: Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from Alberta?
   current_legacy_title: Borders and trade
   decision: keep
   priority: flagship
@@ -458,22 +827,48 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Canonical goods/market-access question. Excludes passports/citizenship, aviation safety, and currency choice; focuses on tariffs,
+    customs paperwork, rules of origin, trucking, rail, pipelines, and market access.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: border-enforcement-customs
+      relationship: adjacent
+      boundary: 'This question covers Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from
+        Alberta? It is distinct from border-enforcement-customs, which asks: What border agency would Alberta need, and how would inspections
+        for people and goods actually work? Keep this dossier focused on borders, tariffs, customs, and trade; use the other topic only for context,
+        not as a substitute answer.'
+    - slug: immigration-passports-mobility
+      relationship: adjacent
+      boundary: 'This question covers Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from
+        Alberta? It is distinct from immigration-passports-mobility, which asks: Would Albertans keep Canadian citizenship, passports, residency
+        rights, and the ability to live or work across Canada? Keep this dossier focused on borders, tariffs, customs, and trade; use the other
+        topic only for context, not as a substitute answer.'
+    - slug: borders-currency-citizenship
+      relationship: adjacent
+      boundary: 'This question covers Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from
+        Alberta? It is distinct from borders-currency-citizenship, which asks: How would a landlocked Alberta move goods through Canadian, U.S.,
+        and overseas routes after independence? Keep this dossier focused on borders, tariffs, customs, and trade; use the other topic only for
+        context, not as a substitute answer.'
+    canonical_slug: borders-trade
+    resolution: keep
+    reviewer_notes: Canonical goods/market-access question. Excludes passports/citizenship, aviation safety, and currency choice; focuses on tariffs,
+      customs paperwork, rules of origin, trucking, rail, pipelines, and market access.
 - slug: public-services
-  current_public_question: Which public services would be most at risk during an independence transition?
+  current_public_question: Which services would face the highest interruption risk in the first year after independence?
   current_legacy_title: Public services
-  decision: split_candidate
-  priority: reframe
-  question_family: public-services
-  category: Public services and continuity risks
+  decision: keep
+  priority: flagship
+  question_family: transition-continuity
+  category: Transition continuity and service interruption risk
   merge_with: null
   scores:
     public_importance: 5
-    sensitivity: 4
-    uniqueness: 3
+    sensitivity: 5
+    uniqueness: 4
     answerability: 4
     reader_value: 5
-    total: 21
+    total: 23
   reader_intent:
   - voter
   - researcher
@@ -482,14 +877,23 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Broad bundle; split or sharpen before next major dossier refresh.
+  overlap_notes: Reframed from a broad public-services bucket into a first-year continuity-risk question. Detailed service-specific topics such
+    as healthcare, EI, policing, and public health remain separate.
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: public-services
+    resolution: keep
+    reviewer_notes: Reframed from a broad public-services bucket into a first-year continuity-risk question. Detailed service-specific topics
+      such as healthcare, EI, policing, and public health remain separate.
 - slug: energy-environment
-  current_public_question: Would independence give Alberta more control over energy and environmental rules?
+  current_public_question: Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental rules, and export
+    routes still constrain development?
   current_legacy_title: Energy and environment
   decision: keep
   priority: flagship
-  question_family: energy-environment
-  category: Energy, environment, and major project regulation
+  question_family: resource-development
+  category: Resource development, permitting, markets, and constraints
   merge_with: null
   scores:
     public_importance: 5
@@ -507,9 +911,35 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Reframed from a broad energy/environment topic into Chris’s sharper resource-unlocking question. Distinct from the project-approvals
+    dossier because this asks about actual development outcomes and constraints, not only who runs assessment processes.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: environmental-assessment-pipeline-approvals
+      relationship: adjacent
+      boundary: 'This question covers Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental rules,
+        and export routes still constrain development? It is distinct from environmental-assessment-pipeline-approvals, which asks: Who would
+        approve pipelines, mines, major projects, and environmental assessments — and would approvals actually get faster? Keep this dossier focused
+        on resource development, permitting, markets, and constraints; use the other topic only for context, not as a substitute answer.'
+    - slug: borders-currency-citizenship
+      relationship: adjacent
+      boundary: 'This question covers Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental rules,
+        and export routes still constrain development? It is distinct from borders-currency-citizenship, which asks: How would a landlocked Alberta
+        move goods through Canadian, U.S., and overseas routes after independence? Keep this dossier focused on resource development, permitting,
+        markets, and constraints; use the other topic only for context, not as a substitute answer.'
+    - slug: indigenous-rights-treaties
+      relationship: adjacent
+      boundary: 'This question covers Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental rules,
+        and export routes still constrain development? It is distinct from indigenous-rights-treaties, which asks: How would Indigenous rights,
+        treaties, land, and consultation affect Alberta independence? Keep this dossier focused on resource development, permitting, markets,
+        and constraints; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: energy-environment
+    resolution: keep
+    reviewer_notes: Reframed from a broad energy/environment topic into Chris’s sharper resource-unlocking question. Distinct from the project-approvals
+      dossier because this asks about actual development outcomes and constraints, not only who runs assessment processes.
 - slug: bureaucracy-governance
-  current_public_question: What new institutions would Alberta need to govern as an independent country?
+  current_public_question: What new national institutions would Alberta need on day one, and which could be phased in later?
   current_legacy_title: Bureaucracy and governance
   decision: keep
   priority: keep
@@ -531,9 +961,23 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: State-capacity parent question focused on day-one institutions versus phased transition. Census/public-data has a narrower data-governance
+    boundary.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: statistics-census-public-data
+      relationship: adjacent
+      boundary: 'This question covers What new national institutions would Alberta need on day one, and which could be phased in later? It is
+        distinct from statistics-census-public-data, which asks: Who would run census, statistics, and public-data systems, and why would that
+        matter for funding and elections? Keep this dossier focused on state capacity and public institutions; use the other topic only for context,
+        not as a substitute answer.'
+    canonical_slug: bureaucracy-governance
+    resolution: keep
+    reviewer_notes: State-capacity parent question focused on day-one institutions versus phased transition. Census/public-data has a narrower
+      data-governance boundary.
 - slug: international-recognition
-  current_public_question: Would other countries recognize an independent Alberta?
+  current_public_question: Would other countries recognize an independent Alberta, and what conditions might they attach?
   current_legacy_title: International recognition
   decision: keep
   priority: flagship
@@ -556,7 +1000,26 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Recognition/diplomacy question. Distinct from U.S. alignment: this asks whether other states accept Alberta as a country; U.S.
+    alignment asks what partnerships Alberta would pursue afterward.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: economy-overall
+      relationship: adjacent
+      boundary: 'This question covers Would other countries recognize an independent Alberta, and what conditions might they attach? It is distinct
+        from economy-overall, which asks: Would an independent Alberta align more closely with the United States, and what would that mean for
+        trade, defence, energy, and sovereignty? Keep this dossier focused on international recognition and diplomacy; use the other topic only
+        for context, not as a substitute answer.'
+    - slug: military-security
+      relationship: adjacent
+      boundary: 'This question covers Would other countries recognize an independent Alberta, and what conditions might they attach? It is distinct
+        from military-security, which asks: Who would defend Alberta, and what alliances or security arrangements would replace Canada’s? Keep
+        this dossier focused on international recognition and diplomacy; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: international-recognition
+    resolution: keep
+    reviewer_notes: 'Recognition/diplomacy question. Distinct from U.S. alignment: this asks whether other states accept Alberta as a country;
+      U.S. alignment asks what partnerships Alberta would pursue afterward.'
 - slug: case-studies
   current_public_question: What can Alberta realistically learn from Quebec, Brexit, Scotland, and other independence movements?
   current_legacy_title: Case studies
@@ -580,7 +1043,17 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on comparative case studies and the reader outcome in ''What can Alberta realistically
+    learn from Quebec, Brexit, Scotland, and other independence movements?''. Adjacent topics may provide context, but this dossier should not
+    re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: case-studies
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on comparative case studies and the reader outcome in ''What can Alberta realistically
+      learn from Quebec, Brexit, Scotland, and other independence movements?''. Adjacent topics may provide context, but this dossier should not
+      re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: tax-collection-revenue-agency
   current_public_question: Would Alberta need its own tax agency, and how hard would that be?
   current_legacy_title: Tax collection and revenue administration
@@ -604,9 +1077,24 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on tax collection and revenue administration and the reader outcome in ''Would Alberta
+    need its own tax agency, and how hard would that be?''. Adjacent topics may provide context, but this dossier should not re-answer their separate
+    legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: equalization
+      relationship: adjacent
+      boundary: 'This question covers Would Alberta need its own tax agency, and how hard would that be? It is distinct from equalization, which
+        asks: How much, if anything, would Albertans save from ending federal equalization and other transfers? Keep this dossier focused on tax
+        collection and revenue administration; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: tax-collection-revenue-agency
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on tax collection and revenue administration and the reader outcome in ''Would Alberta
+      need its own tax agency, and how hard would that be?''. Adjacent topics may provide context, but this dossier should not re-answer their
+      separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: immigration-passports-mobility
-  current_public_question: Would Albertans keep Canadian passports, citizenship, and freedom of movement?
+  current_public_question: Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work across Canada?
   current_legacy_title: Immigration, passports, and mobility
   decision: keep
   priority: flagship
@@ -629,14 +1117,46 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Canonical people-status question. Excludes customs costs, goods trade, and aviation-safety regulation; focuses on citizenship,
+    passports, residency, work/study mobility, and family movement.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: border-enforcement-customs
+      relationship: adjacent
+      boundary: 'This question covers Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work
+        across Canada? It is distinct from border-enforcement-customs, which asks: What border agency would Alberta need, and how would inspections
+        for people and goods actually work? Keep this dossier focused on citizenship, passports, immigration, and mobility; use the other topic
+        only for context, not as a substitute answer.'
+    - slug: borders-trade
+      relationship: adjacent
+      boundary: 'This question covers Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work
+        across Canada? It is distinct from borders-trade, which asks: Would independence create tariffs, customs costs, or market-access barriers
+        for goods moving to and from Alberta? Keep this dossier focused on citizenship, passports, immigration, and mobility; use the other topic
+        only for context, not as a substitute answer.'
+    - slug: borders-currency-citizenship
+      relationship: adjacent
+      boundary: 'This question covers Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work
+        across Canada? It is distinct from borders-currency-citizenship, which asks: How would a landlocked Alberta move goods through Canadian,
+        U.S., and overseas routes after independence? Keep this dossier focused on citizenship, passports, immigration, and mobility; use the
+        other topic only for context, not as a substitute answer.'
+    - slug: air-transport-aviation-safety
+      relationship: adjacent
+      boundary: 'This question covers Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work
+        across Canada? It is distinct from air-transport-aviation-safety, which asks: Would Alberta’s airports, flights, aviation safety, and
+        international air links keep operating smoothly after independence? Keep this dossier focused on citizenship, passports, immigration,
+        and mobility; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: immigration-passports-mobility
+    resolution: keep
+    reviewer_notes: Canonical people-status question. Excludes customs costs, goods trade, and aviation-safety regulation; focuses on citizenship,
+      passports, residency, work/study mobility, and family movement.
 - slug: courts-criminal-law
-  current_public_question: What would happen to courts, criminal law, and prosecutions if Alberta left Canada?
+  current_public_question: Who would make criminal law, run prosecutions, and keep courts operating after independence?
   current_legacy_title: Courts, criminal law, and justice system
   decision: keep
   priority: keep
-  question_family: justice-system
-  category: Courts, criminal law, corrections, and justice
+  question_family: justice-law-courts
+  category: Criminal law, prosecutions, courts, and legal continuity
   merge_with: null
   scores:
     public_importance: 5
@@ -653,7 +1173,27 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Narrowed to criminal law, prosecutions, courts, judges, appeals, and active cases. Excludes policing operations, corrections/parole,
+    firearms licensing, and civil bankruptcy.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: federal-prisons-corrections-parole
+      relationship: adjacent
+      boundary: 'This question covers Who would make criminal law, run prosecutions, and keep courts operating after independence? It is distinct
+        from federal-prisons-corrections-parole, which asks: Who would be responsible for prisons, parole, inmate transfers, and sentence administration?
+        Keep this dossier focused on criminal law, prosecutions, courts, and legal continuity; use the other topic only for context, not as a
+        substitute answer.'
+    - slug: rcmp-provincial-policing
+      relationship: adjacent
+      boundary: 'This question covers Who would make criminal law, run prosecutions, and keep courts operating after independence? It is distinct
+        from rcmp-provincial-policing, which asks: Would Alberta keep the RCMP, build a provincial police service, or need something new? Keep
+        this dossier focused on criminal law, prosecutions, courts, and legal continuity; use the other topic only for context, not as a substitute
+        answer.'
+    canonical_slug: courts-criminal-law
+    resolution: keep
+    reviewer_notes: Narrowed to criminal law, prosecutions, courts, judges, appeals, and active cases. Excludes policing operations, corrections/parole,
+      firearms licensing, and civil bankruptcy.
 - slug: student-loans-universities-research
   current_public_question: What would happen to student loans, universities, and research funding?
   current_legacy_title: Student loans, universities, and research funding
@@ -677,7 +1217,27 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on students, universities, and research funding and the reader outcome in ''What would
+    happen to student loans, universities, and research funding?''. Adjacent topics may provide context, but this dossier should not re-answer
+    their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: national-parks-public-lands
+      relationship: adjacent
+      boundary: 'This question covers What would happen to student loans, universities, and research funding? It is distinct from national-parks-public-lands,
+        which asks: What would happen to national parks, Crown land, and public lands? Keep this dossier focused on students, universities, and
+        research funding; use the other topic only for context, not as a substitute answer.'
+    - slug: labour-standards-public-sector-unions
+      relationship: adjacent
+      boundary: 'This question covers What would happen to student loans, universities, and research funding? It is distinct from labour-standards-public-sector-unions,
+        which asks: What would happen to labour standards, union contracts, and public-sector bargaining? Keep this dossier focused on students,
+        universities, and research funding; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: student-loans-universities-research
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on students, universities, and research funding and the reader outcome in ''What
+      would happen to student loans, universities, and research funding?''. Adjacent topics may provide context, but this dossier should not re-answer
+      their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: postal-telecom-broadcasting
   current_public_question: Who would regulate mail, telecom, internet, wireless spectrum, and broadcasting?
   current_legacy_title: Postal service, telecom, and broadcasting
@@ -701,7 +1261,17 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on daily-life federal regulators and the reader outcome in ''Who would regulate mail,
+    telecom, internet, wireless spectrum, and broadcasting?''. Adjacent topics may provide context, but this dossier should not re-answer their
+    separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: postal-telecom-broadcasting
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on daily-life federal regulators and the reader outcome in ''Who would regulate
+      mail, telecom, internet, wireless spectrum, and broadcasting?''. Adjacent topics may provide context, but this dossier should not re-answer
+      their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: agriculture-food-inspection-market-access
   current_public_question: How would independence affect farmers, food inspection, exports, and market access?
   current_legacy_title: Agriculture, food inspection, and market access
@@ -726,7 +1296,22 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on agriculture, food inspection, and market access and the reader outcome in ''How
+    would independence affect farmers, food inspection, exports, and market access?''. Adjacent topics may provide context, but this dossier should
+    not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: abortion-reproductive-health-rights
+      relationship: adjacent
+      boundary: 'This question covers How would independence affect farmers, food inspection, exports, and market access? It is distinct from
+        abortion-reproductive-health-rights, which asks: Could Alberta independence change abortion access and reproductive health rights? Keep
+        this dossier focused on agriculture, food inspection, and market access; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: agriculture-food-inspection-market-access
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on agriculture, food inspection, and market access and the reader outcome in ''How
+      would independence affect farmers, food inspection, exports, and market access?''. Adjacent topics may provide context, but this dossier
+      should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: employment-insurance-federal-benefits
   current_public_question: Would Albertans keep Employment Insurance and federal income benefits?
   current_legacy_title: Employment Insurance and federal benefits
@@ -751,7 +1336,22 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on federal benefits and income supports and the reader outcome in ''Would Albertans
+    keep Employment Insurance and federal income benefits?''. Adjacent topics may provide context, but this dossier should not re-answer their
+    separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: cpp-pensions
+      relationship: adjacent
+      boundary: 'This question covers Would Albertans keep Employment Insurance and federal income benefits? It is distinct from cpp-pensions,
+        which asks: Would Albertans keep CPP benefits, or move to a new pension system? Keep this dossier focused on federal benefits and income
+        supports; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: employment-insurance-federal-benefits
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on federal benefits and income supports and the reader outcome in ''Would Albertans
+      keep Employment Insurance and federal income benefits?''. Adjacent topics may provide context, but this dossier should not re-answer their
+      separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: national-parks-public-lands
   current_public_question: What would happen to national parks, Crown land, and public lands?
   current_legacy_title: National parks, Crown land, and public lands
@@ -775,14 +1375,44 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on national parks, crown land, and public lands and the reader outcome in ''What would
+    happen to national parks, Crown land, and public lands?''. Adjacent topics may provide context, but this dossier should not re-answer their
+    separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: indigenous-rights-treaties
+      relationship: adjacent
+      boundary: 'This question covers What would happen to national parks, Crown land, and public lands? It is distinct from indigenous-rights-treaties,
+        which asks: How would Indigenous rights, treaties, land, and consultation affect Alberta independence? Keep this dossier focused on national
+        parks, crown land, and public lands; use the other topic only for context, not as a substitute answer.'
+    - slug: student-loans-universities-research
+      relationship: adjacent
+      boundary: 'This question covers What would happen to national parks, Crown land, and public lands? It is distinct from student-loans-universities-research,
+        which asks: What would happen to student loans, universities, and research funding? Keep this dossier focused on national parks, crown
+        land, and public lands; use the other topic only for context, not as a substitute answer.'
+    - slug: labour-standards-public-sector-unions
+      relationship: adjacent
+      boundary: 'This question covers What would happen to national parks, Crown land, and public lands? It is distinct from labour-standards-public-sector-unions,
+        which asks: What would happen to labour standards, union contracts, and public-sector bargaining? Keep this dossier focused on national
+        parks, crown land, and public lands; use the other topic only for context, not as a substitute answer.'
+    - slug: bankruptcy-insolvency-creditor-protection
+      relationship: adjacent
+      boundary: 'This question covers What would happen to national parks, Crown land, and public lands? It is distinct from bankruptcy-insolvency-creditor-protection,
+        which asks: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals? Keep this dossier focused on national
+        parks, crown land, and public lands; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: national-parks-public-lands
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on national parks, crown land, and public lands and the reader outcome in ''What
+      would happen to national parks, Crown land, and public lands?''. Adjacent topics may provide context, but this dossier should not re-answer
+      their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: air-transport-aviation-safety
-  current_public_question: Who would regulate airports, air travel, and aviation safety?
+  current_public_question: Would Alberta’s airports, flights, aviation safety, and international air links keep operating smoothly after independence?
   current_legacy_title: Air transport and aviation safety
   decision: keep
   priority: keep
-  question_family: transport-safety
-  category: Transport and aviation safety
+  question_family: aviation-air-links
+  category: Aviation safety, airports, flights, and air links
   merge_with: null
   scores:
     public_importance: 4
@@ -799,7 +1429,27 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Narrowed to aviation continuity: regulators, airports, safety certification, security screening, carriers, and international
+    air-service recognition. Not a general passport/travel question.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: immigration-passports-mobility
+      relationship: adjacent
+      boundary: 'This question covers Would Alberta’s airports, flights, aviation safety, and international air links keep operating smoothly
+        after independence? It is distinct from immigration-passports-mobility, which asks: Would Albertans keep Canadian citizenship, passports,
+        residency rights, and the ability to live or work across Canada? Keep this dossier focused on aviation safety, airports, flights, and
+        air links; use the other topic only for context, not as a substitute answer.'
+    - slug: border-enforcement-customs
+      relationship: adjacent
+      boundary: 'This question covers Would Alberta’s airports, flights, aviation safety, and international air links keep operating smoothly
+        after independence? It is distinct from border-enforcement-customs, which asks: What border agency would Alberta need, and how would inspections
+        for people and goods actually work? Keep this dossier focused on aviation safety, airports, flights, and air links; use the other topic
+        only for context, not as a substitute answer.'
+    canonical_slug: air-transport-aviation-safety
+    resolution: keep
+    reviewer_notes: 'Narrowed to aviation continuity: regulators, airports, safety certification, security screening, carriers, and international
+      air-service recognition. Not a general passport/travel question.'
 - slug: water-rights-rivers
   current_public_question: Could Alberta independence change water rights, rivers, and drinking-water systems?
   current_legacy_title: Water rights, rivers, and water infrastructure
@@ -824,7 +1474,32 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on water rights, rivers, and water infrastructure and the reader outcome in ''Could
+    Alberta independence change water rights, rivers, and drinking-water systems?''. Adjacent topics may provide context, but this dossier should
+    not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: indigenous-rights-treaties
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta independence change water rights, rivers, and drinking-water systems? It is distinct from
+        indigenous-rights-treaties, which asks: How would Indigenous rights, treaties, land, and consultation affect Alberta independence? Keep
+        this dossier focused on water rights, rivers, and water infrastructure; use the other topic only for context, not as a substitute answer.'
+    - slug: charter-rights-continuity
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta independence change water rights, rivers, and drinking-water systems? It is distinct from
+        charter-rights-continuity, which asks: Would Charter rights and civil liberties continue after Alberta independence? Keep this dossier
+        focused on water rights, rivers, and water infrastructure; use the other topic only for context, not as a substitute answer.'
+    - slug: abortion-reproductive-health-rights
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta independence change water rights, rivers, and drinking-water systems? It is distinct from
+        abortion-reproductive-health-rights, which asks: Could Alberta independence change abortion access and reproductive health rights? Keep
+        this dossier focused on water rights, rivers, and water infrastructure; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: water-rights-rivers
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on water rights, rivers, and water infrastructure and the reader outcome in ''Could
+      Alberta independence change water rights, rivers, and drinking-water systems?''. Adjacent topics may provide context, but this dossier should
+      not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: emergency-management-disaster-aid
   current_public_question: Who would pay for disaster response and emergency aid after independence?
   current_legacy_title: Emergency management and disaster aid
@@ -848,14 +1523,24 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on emergency management and disaster aid and the reader outcome in ''Who would pay
+    for disaster response and emergency aid after independence?''. Adjacent topics may provide context, but this dossier should not re-answer
+    their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: emergency-management-disaster-aid
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on emergency management and disaster aid and the reader outcome in ''Who would pay
+      for disaster response and emergency aid after independence?''. Adjacent topics may provide context, but this dossier should not re-answer
+      their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: statistics-census-public-data
-  current_public_question: Who would run census, statistics, and public-data systems for an independent Alberta?
+  current_public_question: Who would run census, statistics, and public-data systems, and why would that matter for funding and elections?
   current_legacy_title: Statistics, census, and public data
   decision: keep
   priority: keep
-  question_family: state-capacity
-  category: State capacity and public institutions
+  question_family: public-data-statistics
+  category: Statistics, census, public data, funding formulas, and elections
   merge_with: null
   scores:
     public_importance: 3
@@ -872,7 +1557,21 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Narrowed to data systems, census, funding formulas, elections, business planning, and public accountability. Distinct from general
+    state-capacity/institution-building.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: bureaucracy-governance
+      relationship: adjacent
+      boundary: 'This question covers Who would run census, statistics, and public-data systems, and why would that matter for funding and elections?
+        It is distinct from bureaucracy-governance, which asks: What new national institutions would Alberta need on day one, and which could
+        be phased in later? Keep this dossier focused on statistics, census, public data, funding formulas, and elections; use the other topic
+        only for context, not as a substitute answer.'
+    canonical_slug: statistics-census-public-data
+    resolution: keep
+    reviewer_notes: Narrowed to data systems, census, funding formulas, elections, business planning, and public accountability. Distinct from
+      general state-capacity/institution-building.
 - slug: rcmp-provincial-policing
   current_public_question: Would Alberta keep the RCMP, build a provincial police service, or need something new?
   current_legacy_title: RCMP, local police, and provincial policing
@@ -897,7 +1596,27 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on police services and public safety and the reader outcome in ''Would Alberta keep
+    the RCMP, build a provincial police service, or need something new?''. Adjacent topics may provide context, but this dossier should not re-answer
+    their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: courts-criminal-law
+      relationship: adjacent
+      boundary: 'This question covers Would Alberta keep the RCMP, build a provincial police service, or need something new? It is distinct from
+        courts-criminal-law, which asks: Who would make criminal law, run prosecutions, and keep courts operating after independence? Keep this
+        dossier focused on police services and public safety; use the other topic only for context, not as a substitute answer.'
+    - slug: federal-prisons-corrections-parole
+      relationship: adjacent
+      boundary: 'This question covers Would Alberta keep the RCMP, build a provincial police service, or need something new? It is distinct from
+        federal-prisons-corrections-parole, which asks: Who would be responsible for prisons, parole, inmate transfers, and sentence administration?
+        Keep this dossier focused on police services and public safety; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: rcmp-provincial-policing
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on police services and public safety and the reader outcome in ''Would Alberta keep
+      the RCMP, build a provincial police service, or need something new?''. Adjacent topics may provide context, but this dossier should not
+      re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: charter-rights-continuity
   current_public_question: Would Charter rights and civil liberties continue after Alberta independence?
   current_legacy_title: Charter rights and civil-liberties continuity
@@ -922,7 +1641,32 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on rights, liberties, and constitutional continuity and the reader outcome in ''Would
+    Charter rights and civil liberties continue after Alberta independence?''. Adjacent topics may provide context, but this dossier should not
+    re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: indigenous-rights-treaties
+      relationship: adjacent
+      boundary: 'This question covers Would Charter rights and civil liberties continue after Alberta independence? It is distinct from indigenous-rights-treaties,
+        which asks: How would Indigenous rights, treaties, land, and consultation affect Alberta independence? Keep this dossier focused on rights,
+        liberties, and constitutional continuity; use the other topic only for context, not as a substitute answer.'
+    - slug: water-rights-rivers
+      relationship: adjacent
+      boundary: 'This question covers Would Charter rights and civil liberties continue after Alberta independence? It is distinct from water-rights-rivers,
+        which asks: Could Alberta independence change water rights, rivers, and drinking-water systems? Keep this dossier focused on rights, liberties,
+        and constitutional continuity; use the other topic only for context, not as a substitute answer.'
+    - slug: abortion-reproductive-health-rights
+      relationship: adjacent
+      boundary: 'This question covers Would Charter rights and civil liberties continue after Alberta independence? It is distinct from abortion-reproductive-health-rights,
+        which asks: Could Alberta independence change abortion access and reproductive health rights? Keep this dossier focused on rights, liberties,
+        and constitutional continuity; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: charter-rights-continuity
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on rights, liberties, and constitutional continuity and the reader outcome in ''Would
+      Charter rights and civil liberties continue after Alberta independence?''. Adjacent topics may provide context, but this dossier should
+      not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: abortion-reproductive-health-rights
   current_public_question: Could Alberta independence change abortion access and reproductive health rights?
   current_legacy_title: Abortion access and reproductive health rights
@@ -947,7 +1691,37 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on reproductive health and rights and the reader outcome in ''Could Alberta independence
+    change abortion access and reproductive health rights?''. Adjacent topics may provide context, but this dossier should not re-answer their
+    separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: indigenous-rights-treaties
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta independence change abortion access and reproductive health rights? It is distinct from indigenous-rights-treaties,
+        which asks: How would Indigenous rights, treaties, land, and consultation affect Alberta independence? Keep this dossier focused on reproductive
+        health and rights; use the other topic only for context, not as a substitute answer.'
+    - slug: agriculture-food-inspection-market-access
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta independence change abortion access and reproductive health rights? It is distinct from agriculture-food-inspection-market-access,
+        which asks: How would independence affect farmers, food inspection, exports, and market access? Keep this dossier focused on reproductive
+        health and rights; use the other topic only for context, not as a substitute answer.'
+    - slug: water-rights-rivers
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta independence change abortion access and reproductive health rights? It is distinct from water-rights-rivers,
+        which asks: Could Alberta independence change water rights, rivers, and drinking-water systems? Keep this dossier focused on reproductive
+        health and rights; use the other topic only for context, not as a substitute answer.'
+    - slug: charter-rights-continuity
+      relationship: adjacent
+      boundary: 'This question covers Could Alberta independence change abortion access and reproductive health rights? It is distinct from charter-rights-continuity,
+        which asks: Would Charter rights and civil liberties continue after Alberta independence? Keep this dossier focused on reproductive health
+        and rights; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: abortion-reproductive-health-rights
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on reproductive health and rights and the reader outcome in ''Could Alberta independence
+      change abortion access and reproductive health rights?''. Adjacent topics may provide context, but this dossier should not re-answer their
+      separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: firearms-laws-licensing
   current_public_question: What would happen to firearms laws, gun licensing, and restricted-weapon rules?
   current_legacy_title: Firearms laws, licensing, and restricted weapons
@@ -972,7 +1746,17 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on firearms, licensing, and public safety and the reader outcome in ''What would happen
+    to firearms laws, gun licensing, and restricted-weapon rules?''. Adjacent topics may provide context, but this dossier should not re-answer
+    their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: firearms-laws-licensing
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on firearms, licensing, and public safety and the reader outcome in ''What would
+      happen to firearms laws, gun licensing, and restricted-weapon rules?''. Adjacent topics may provide context, but this dossier should not
+      re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: healthcare-portability-doctor-licensing
   current_public_question: Would Alberta health coverage, doctor licensing, and out-of-province care still work?
   current_legacy_title: Healthcare portability, doctor licensing, and out-of-province care
@@ -997,22 +1781,32 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on healthcare coverage, portability, and professional licensing and the reader outcome
+    in ''Would Alberta health coverage, doctor licensing, and out-of-province care still work?''. Adjacent topics may provide context, but this
+    dossier should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: healthcare-portability-doctor-licensing
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on healthcare coverage, portability, and professional licensing and the reader outcome
+      in ''Would Alberta health coverage, doctor licensing, and out-of-province care still work?''. Adjacent topics may provide context, but this
+      dossier should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: border-enforcement-customs
-  current_public_question: Who would run border enforcement, customs inspections, and cross-border travel?
+  current_public_question: What border agency would Alberta need, and how would inspections for people and goods actually work?
   current_legacy_title: Border enforcement, customs inspections, and cross-border travel
   decision: keep
-  priority: flagship
-  question_family: border-enforcement
-  category: Border enforcement, customs, and travel
+  priority: keep
+  question_family: border-agency-capacity
+  category: Border agency capacity, inspections, and enforcement
   merge_with: null
   scores:
     public_importance: 5
     sensitivity: 5
-    uniqueness: 5
+    uniqueness: 4
     answerability: 4
     reader_value: 5
-    total: 24
+    total: 23
   reader_intent:
   - voter
   - journalist
@@ -1022,9 +1816,41 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: Narrowed from overlapping border/travel wording. This is a state-capacity question about building or replacing a CBSA-like inspection/enforcement
+    function; goods costs belong to borders-trade and citizenship/passports belong to immigration-passports-mobility.
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: borders-trade
+      relationship: adjacent
+      boundary: 'This question covers What border agency would Alberta need, and how would inspections for people and goods actually work? It
+        is distinct from borders-trade, which asks: Would independence create tariffs, customs costs, or market-access barriers for goods moving
+        to and from Alberta? Keep this dossier focused on border agency capacity, inspections, and enforcement; use the other topic only for context,
+        not as a substitute answer.'
+    - slug: immigration-passports-mobility
+      relationship: adjacent
+      boundary: 'This question covers What border agency would Alberta need, and how would inspections for people and goods actually work? It
+        is distinct from immigration-passports-mobility, which asks: Would Albertans keep Canadian citizenship, passports, residency rights, and
+        the ability to live or work across Canada? Keep this dossier focused on border agency capacity, inspections, and enforcement; use the
+        other topic only for context, not as a substitute answer.'
+    - slug: borders-currency-citizenship
+      relationship: adjacent
+      boundary: 'This question covers What border agency would Alberta need, and how would inspections for people and goods actually work? It
+        is distinct from borders-currency-citizenship, which asks: How would a landlocked Alberta move goods through Canadian, U.S., and overseas
+        routes after independence? Keep this dossier focused on border agency capacity, inspections, and enforcement; use the other topic only
+        for context, not as a substitute answer.'
+    - slug: air-transport-aviation-safety
+      relationship: adjacent
+      boundary: 'This question covers What border agency would Alberta need, and how would inspections for people and goods actually work? It
+        is distinct from air-transport-aviation-safety, which asks: Would Alberta’s airports, flights, aviation safety, and international air
+        links keep operating smoothly after independence? Keep this dossier focused on border agency capacity, inspections, and enforcement; use
+        the other topic only for context, not as a substitute answer.'
+    canonical_slug: border-enforcement-customs
+    resolution: keep
+    reviewer_notes: Narrowed from overlapping border/travel wording. This is a state-capacity question about building or replacing a CBSA-like
+      inspection/enforcement function; goods costs belong to borders-trade and citizenship/passports belong to immigration-passports-mobility.
 - slug: bank-deposits-financial-stability
-  current_public_question: Would bank deposits and credit-union savings still be protected?
+  current_public_question: Would bank deposits, credit-union savings, and financial backstops still be protected?
   current_legacy_title: Bank deposits, credit unions, and financial stability
   decision: keep
   priority: flagship
@@ -1047,7 +1873,21 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Narrowed boundary: depositor protection, credit-union guarantees, prudential supervision, bank confidence, and crisis backstops.
+    Currency-choice mechanics belong to currency-banking.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: currency-banking
+      relationship: adjacent
+      boundary: 'This question covers Would bank deposits, credit-union savings, and financial backstops still be protected? It is distinct from
+        currency-banking, which asks: Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking stability?
+        Keep this dossier focused on bank deposits, credit unions, and financial stability; use the other topic only for context, not as a substitute
+        answer.'
+    canonical_slug: bank-deposits-financial-stability
+    resolution: keep
+    reviewer_notes: 'Narrowed boundary: depositor protection, credit-union guarantees, prudential supervision, bank confidence, and crisis backstops.
+      Currency-choice mechanics belong to currency-banking.'
 - slug: pharmaceutical-drug-approvals-supply
   current_public_question: Would prescription drug approvals, recalls, and medicine supply still work?
   current_legacy_title: Prescription drug approvals, safety recalls, and medicine supply
@@ -1072,7 +1912,17 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on drug approvals, recalls, and medicine supply and the reader outcome in ''Would prescription
+    drug approvals, recalls, and medicine supply still work?''. Adjacent topics may provide context, but this dossier should not re-answer their
+    separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: pharmaceutical-drug-approvals-supply
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on drug approvals, recalls, and medicine supply and the reader outcome in ''Would
+      prescription drug approvals, recalls, and medicine supply still work?''. Adjacent topics may provide context, but this dossier should not
+      re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: privacy-data-federal-ids
   current_public_question: What would happen to Social Insurance Numbers, privacy rules, and federal identity systems?
   current_legacy_title: Privacy rules, Social Insurance Numbers, and federal identity/data systems
@@ -1097,14 +1947,25 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on privacy, identity, and federal data systems and the reader outcome in ''What would
+    happen to Social Insurance Numbers, privacy rules, and federal identity systems?''. Adjacent topics may provide context, but this dossier
+    should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: privacy-data-federal-ids
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on privacy, identity, and federal data systems and the reader outcome in ''What
+      would happen to Social Insurance Numbers, privacy rules, and federal identity systems?''. Adjacent topics may provide context, but this
+      dossier should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: environmental-assessment-pipeline-approvals
-  current_public_question: Who would approve pipelines, major projects, and environmental assessments?
+  current_public_question: Who would approve pipelines, mines, major projects, and environmental assessments — and would approvals actually get
+    faster?
   current_legacy_title: Environmental assessments, pipeline approvals, and major project regulation
   decision: keep
   priority: flagship
-  question_family: energy-environment
-  category: Energy, environment, and major project regulation
+  question_family: major-project-approvals
+  category: Major project approvals, assessments, and permitting speed
   merge_with: null
   scores:
     public_importance: 5
@@ -1122,7 +1983,29 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Canonical project-approval question. Distinct from resource-unlocking: this asks who runs assessment/approval institutions and
+    whether process timelines change; resource-unlocking asks whether development outcomes improve despite markets, rights, export routes, and
+    environmental constraints.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: energy-environment
+      relationship: adjacent
+      boundary: 'This question covers Who would approve pipelines, mines, major projects, and environmental assessments — and would approvals
+        actually get faster? It is distinct from energy-environment, which asks: Would Alberta’s resources be unlocked faster, or would markets,
+        Indigenous rights, environmental rules, and export routes still constrain development? Keep this dossier focused on major project approvals,
+        assessments, and permitting speed; use the other topic only for context, not as a substitute answer.'
+    - slug: borders-currency-citizenship
+      relationship: adjacent
+      boundary: 'This question covers Who would approve pipelines, mines, major projects, and environmental assessments — and would approvals
+        actually get faster? It is distinct from borders-currency-citizenship, which asks: How would a landlocked Alberta move goods through Canadian,
+        U.S., and overseas routes after independence? Keep this dossier focused on major project approvals, assessments, and permitting speed;
+        use the other topic only for context, not as a substitute answer.'
+    canonical_slug: environmental-assessment-pipeline-approvals
+    resolution: keep
+    reviewer_notes: 'Canonical project-approval question. Distinct from resource-unlocking: this asks who runs assessment/approval institutions
+      and whether process timelines change; resource-unlocking asks whether development outcomes improve despite markets, rights, export routes,
+      and environmental constraints.'
 - slug: labour-standards-public-sector-unions
   current_public_question: What would happen to labour standards, union contracts, and public-sector bargaining?
   current_legacy_title: Labour standards, unions, and public-sector bargaining
@@ -1146,14 +2029,34 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on labour standards and public-sector bargaining and the reader outcome in ''What would
+    happen to labour standards, union contracts, and public-sector bargaining?''. Adjacent topics may provide context, but this dossier should
+    not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: student-loans-universities-research
+      relationship: adjacent
+      boundary: 'This question covers What would happen to labour standards, union contracts, and public-sector bargaining? It is distinct from
+        student-loans-universities-research, which asks: What would happen to student loans, universities, and research funding? Keep this dossier
+        focused on labour standards and public-sector bargaining; use the other topic only for context, not as a substitute answer.'
+    - slug: national-parks-public-lands
+      relationship: adjacent
+      boundary: 'This question covers What would happen to labour standards, union contracts, and public-sector bargaining? It is distinct from
+        national-parks-public-lands, which asks: What would happen to national parks, Crown land, and public lands? Keep this dossier focused
+        on labour standards and public-sector bargaining; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: labour-standards-public-sector-unions
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on labour standards and public-sector bargaining and the reader outcome in ''What
+      would happen to labour standards, union contracts, and public-sector bargaining?''. Adjacent topics may provide context, but this dossier
+      should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: federal-prisons-corrections-parole
-  current_public_question: Who would run federal prisons, corrections, parole, and sentenced-inmate transfers?
+  current_public_question: Who would be responsible for prisons, parole, inmate transfers, and sentence administration?
   current_legacy_title: Federal prisons, corrections, parole, and sentenced inmates
   decision: keep
   priority: keep
-  question_family: justice-system
-  category: Courts, criminal law, corrections, and justice
+  question_family: corrections-parole
+  category: Corrections, parole, custody, and sentence administration
   merge_with: null
   scores:
     public_importance: 4
@@ -1170,7 +2073,27 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Narrowed to custody and supervision after sentencing: prisons, remand/correctional centres, parole boards, inmate transfers,
+    staff, facilities, victims notifications, and sentence administration. Distinct from courts/prosecutions and policing.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: courts-criminal-law
+      relationship: adjacent
+      boundary: 'This question covers Who would be responsible for prisons, parole, inmate transfers, and sentence administration? It is distinct
+        from courts-criminal-law, which asks: Who would make criminal law, run prosecutions, and keep courts operating after independence? Keep
+        this dossier focused on corrections, parole, custody, and sentence administration; use the other topic only for context, not as a substitute
+        answer.'
+    - slug: rcmp-provincial-policing
+      relationship: adjacent
+      boundary: 'This question covers Who would be responsible for prisons, parole, inmate transfers, and sentence administration? It is distinct
+        from rcmp-provincial-policing, which asks: Would Alberta keep the RCMP, build a provincial police service, or need something new? Keep
+        this dossier focused on corrections, parole, custody, and sentence administration; use the other topic only for context, not as a substitute
+        answer.'
+    canonical_slug: federal-prisons-corrections-parole
+    resolution: keep
+    reviewer_notes: 'Narrowed to custody and supervision after sentencing: prisons, remand/correctional centres, parole boards, inmate transfers,
+      staff, facilities, victims notifications, and sentence administration. Distinct from courts/prosecutions and policing.'
 - slug: public-health-disease-surveillance
   current_public_question: Who would handle disease surveillance, outbreak response, and vaccine reporting?
   current_legacy_title: Public-health disease surveillance, outbreak response, and vaccine reporting
@@ -1195,7 +2118,17 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on public health, disease surveillance, and vaccine reporting and the reader outcome
+    in ''Who would handle disease surveillance, outbreak response, and vaccine reporting?''. Adjacent topics may provide context, but this dossier
+    should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: public-health-disease-surveillance
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on public health, disease surveillance, and vaccine reporting and the reader outcome
+      in ''Who would handle disease surveillance, outbreak response, and vaccine reporting?''. Adjacent topics may provide context, but this dossier
+      should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: bankruptcy-insolvency-creditor-protection
   current_public_question: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
   current_legacy_title: Bankruptcy, insolvency, creditor protection, and consumer proposals
@@ -1219,7 +2152,22 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on bankruptcy, insolvency, and creditor protection and the reader outcome in ''What
+    would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?''. Adjacent topics may provide context, but this dossier
+    should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against:
+    - slug: national-parks-public-lands
+      relationship: adjacent
+      boundary: 'This question covers What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals? It is distinct
+        from national-parks-public-lands, which asks: What would happen to national parks, Crown land, and public lands? Keep this dossier focused
+        on bankruptcy, insolvency, and creditor protection; use the other topic only for context, not as a substitute answer.'
+    canonical_slug: bankruptcy-insolvency-creditor-protection
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on bankruptcy, insolvency, and creditor protection and the reader outcome in ''What
+      would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?''. Adjacent topics may provide context, but this dossier
+      should not re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
 - slug: elections-law-political-parties-campaign-finance
   current_public_question: Who would set election laws, political-party rules, and campaign-finance limits?
   current_legacy_title: Election laws, political parties, and campaign finance
@@ -1243,4 +2191,29 @@ topics:
   - pro-source
   - anti-source
   - mediator-dedup
-  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+  overlap_notes: 'Specific boundary: this question focuses on election law, parties, and campaign finance and the reader outcome in ''Who would
+    set election laws, political-party rules, and campaign-finance limits?''. Adjacent topics may provide context, but this dossier should not
+    re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+  overlap_review:
+    status: distinct
+    checked_against: []
+    canonical_slug: elections-law-political-parties-campaign-finance
+    resolution: keep
+    reviewer_notes: 'Specific boundary: this question focuses on election law, parties, and campaign finance and the reader outcome in ''Who would
+      set election laws, political-party rules, and campaign-finance limits?''. Adjacent topics may provide context, but this dossier should not
+      re-answer their separate legal, fiscal, service, travel, or institutional mechanics.'
+overlap_review_standard:
+  required_for_each_topic: true
+  statuses:
+  - distinct
+  - overlaps
+  - duplicate
+  - split_needed
+  - needs_review
+  resolutions:
+  - keep
+  - merge_into
+  - cancel
+  - split
+  - reframe
+  rule: A keep decision requires specific boundaries against nearby topics; boilerplate overlap notes are invalid.

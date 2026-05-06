@@ -432,6 +432,14 @@ textarea:focus-visible {
   overflow-wrap: anywhere;
 }
 
+.markdown h3 {
+  font-size: clamp(19px, 2.2vw, 28px);
+  line-height: 1.15;
+  margin: 24px 0 8px;
+  font-weight: 670;
+  overflow-wrap: anywhere;
+}
+
 .markdown h1 {
   font-size: clamp(28px, 5vw, 64px);
   line-height: 0.98;
@@ -445,7 +453,8 @@ textarea:focus-visible {
   color: var(--secondary);
 }
 
-.markdown ul {
+.markdown ul,
+.markdown ol {
   margin: 10px 0 18px;
   padding-left: 1.2rem;
   max-width: 76ch;

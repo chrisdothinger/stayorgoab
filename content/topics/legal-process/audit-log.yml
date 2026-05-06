@@ -34,3 +34,13 @@ entries:
   - citation-numbering
   - neutral-mediator-role
   result: pass-pending-validation
+- id: audit-legal-process-2026-05-05-contract-v2-mobile
+  date: '2026-05-05'
+  agent: StayOrGoAB public agent team
+  summary: Compressed the legal-process dossier into report contract v2 with 3-5 argument pillars and replaced the hard-to-read overview decision tree/table with a mobile-readable Where the debate turns section.
+  checks:
+  - report-contract-v2
+  - mobile-readable-overview
+  - citation-numbering
+  - neutral-mediator-role
+  result: pass-pending-validation

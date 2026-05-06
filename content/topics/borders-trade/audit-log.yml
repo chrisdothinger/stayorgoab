@@ -2,11 +2,21 @@ entries:
 - id: audit-borders-trade-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
+  result: pass
+- id: audit-borders-trade-2026-05-06-lean-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated borders-trade dossier to lean v3 structure, added trade-specific primary sources, preserved numbered citations, and narrowed claims to negotiated tariffs, customs costs, rules of origin, market access, and regulatory-recognition uncertainty.
+  checks:
+  - lean-v3-headings
+  - numbered-citations
+  - source-support
+  - stance-balance
+  - uncertainty-labels
   result: pass

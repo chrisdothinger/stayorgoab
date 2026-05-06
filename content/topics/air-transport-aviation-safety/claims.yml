@@ -1,39 +1,44 @@
 claims:
 - id: claim-air-transport-aviation-safety-001
   topic_slug: air-transport-aviation-safety
-  text: Current public records show federal aviation safety and transportation-regulator
-    roles alongside Alberta transportation infrastructure responsibilities, but they
-    do not establish how aviation safety certification, airport operations, air-service
-    agreements, security, or passenger protections would operate after independence.
+  text: Current sources show that aviation safety and policy, transportation economic regulation and passenger-related matters, passenger/baggage screening, civil air navigation, airport certification, and international air-service arrangements are handled through federal Canadian, Canada-wide/operator, and international aviation frameworks today, while Alberta has transportation and economic-corridor responsibilities.
   status: source_supported
-  source_ids: &id001
+  source_ids: &aviation_sources
   - transport-canada-aviation
   - canadian-transportation-agency
   - alberta-transportation-economic-corridors
+  - catsa-main
+  - icao-chicago-convention
+  - nav-canada-air-navigation-services
+  - transport-canada-airport-certification
+  - cta-air-transport-agreements
   risk: medium
 - id: claim-air-transport-aviation-safety-002
   topic_slug: air-transport-aviation-safety
-  text: The strongest pro case is that alberta could seek transport policy and infrastructure
-    priorities tailored to its airports, northern access, trade corridors, and regional
-    connectivity.
+  text: An independent Alberta would need legal authority, safety-regulator capacity, airport-certification continuity, screening continuity, air-navigation service arrangements, airline and passenger-rule continuity, insurance confidence, and international recognition before airports and flights could operate predictably.
   status: inference
-  source_ids: *id001
-  risk: medium
+  source_ids: *aviation_sources
+  risk: high
 - id: claim-air-transport-aviation-safety-003
   topic_slug: air-transport-aviation-safety
-  text: The strongest caution is that airlines, airports, passengers, cargo shippers,
-    and insurers could face uncertainty if safety certification, regulator recognition,
-    security screening, international air agreements, or passenger-protection rules
-    were not continuous.
+  text: The strongest pro-independence case is that Alberta could preserve current aviation standards during a negotiated transition, bridge certified airport operations, screening and air navigation services, and then use more local control to prioritize regional airports, northern access, cargo, emergency aviation, tourism, and trade corridors.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - transport-canada-aviation
+  - alberta-transportation-economic-corridors
+  - catsa-main
+  - nav-canada-air-navigation-services
+  - transport-canada-airport-certification
   risk: medium
 - id: claim-air-transport-aviation-safety-004
   topic_slug: air-transport-aviation-safety
-  text: 'This topic remains uncertainty-labelled: Medium; aviation safety authority,
-    airport operations, security screening, international air-service agreements,
-    regulator recognition, passenger protections, insurance, and continuity for carriers
-    and travellers remain conditional on future decisions and evidence.'
+  text: The strongest anti-independence / pro-federation case is that smooth aviation should not be assumed without binding arrangements for regulator recognition, airport certification, security screening, air navigation services, airline economics, passenger protections, international air-service rights, and operational readiness.
+  status: inference
+  source_ids: *aviation_sources
+  risk: high
+- id: claim-air-transport-aviation-safety-005
+  topic_slug: air-transport-aviation-safety
+  text: 'This topic remains uncertainty-labelled: medium-to-high, because post-independence aviation outcomes would depend on Canada-Alberta agreements, Alberta legislation and staffing, airport-certification continuity, screening arrangements, air-navigation services, airport and airline readiness, international recognition and air-service rights, insurance, budgets, and public implementation timelines.'
   status: source_supported
-  source_ids: *id001
+  source_ids: *aviation_sources
   risk: medium

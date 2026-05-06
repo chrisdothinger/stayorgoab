@@ -134,11 +134,11 @@ topics:
   public_question: How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
   category: Landlocked access, export corridors, and logistics
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -152,6 +152,8 @@ topics:
   - neutral brief mediates what survives both sides rather than advocating a third side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  validation_status: passed_local
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
 - slug: petition-vs-referendum-vs-negotiations
   public_question: What would negotiations with Canada actually have to settle after a successful Alberta referendum?
   category: Post-referendum negotiations and settlement terms
@@ -263,8 +265,7 @@ topics:
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: economy-overall
-  public_question: Would an independent Alberta align more closely with the United States, and what would that mean for trade,
-    defence, energy, and sovereignty?
+  public_question: Would an independent Alberta align more closely with the United States, and what would that mean for trade, defence, energy, and sovereignty?
   category: United States partnerships, trade, defence, energy, and sovereignty
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -374,8 +375,7 @@ topics:
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: currency-banking
-  public_question: Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking
-    stability?
+  public_question: Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking stability?
   category: Currency, banking, and monetary stability
   question_decision: keep
   migration_status: v3_complete
@@ -397,15 +397,14 @@ topics:
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: borders-trade
-  public_question: Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from
-    Alberta?
+  public_question: Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from Alberta?
   category: Borders, tariffs, customs, and trade
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -419,6 +418,8 @@ topics:
   - neutral brief mediates what survives both sides rather than advocating a third side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  validation_status: passed_local
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
 - slug: public-services
   public_question: Which services would face the highest interruption risk in the first year after independence?
   category: Transition continuity and service interruption risk
@@ -442,8 +443,7 @@ topics:
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: energy-environment
-  public_question: Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental rules,
-    and export routes still constrain development?
+  public_question: Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental rules, and export routes still constrain development?
   category: Resource development, permitting, markets, and constraints
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -553,15 +553,14 @@ topics:
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: immigration-passports-mobility
-  public_question: Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work
-    across Canada?
+  public_question: Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work across Canada?
   category: Citizenship, passports, immigration, and mobility
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -575,6 +574,8 @@ topics:
   - neutral brief mediates what survives both sides rather than advocating a third side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  validation_status: passed_local
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
 - slug: courts-criminal-law
   public_question: Who would make criminal law, run prosecutions, and keep courts operating after independence?
   category: Criminal law, prosecutions, courts, and legal continuity
@@ -645,11 +646,11 @@ topics:
   public_question: How would independence affect farmers, food inspection, exports, and market access?
   category: Agriculture, food inspection, and market access
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
   migration_priority: flagship
   score_total: 23
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -663,6 +664,8 @@ topics:
   - neutral brief mediates what survives both sides rather than advocating a third side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  validation_status: passed_local
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
 - slug: employment-insurance-federal-benefits
   public_question: Would Albertans keep Employment Insurance and federal income benefits?
   category: Federal benefits and income supports
@@ -708,15 +711,14 @@ topics:
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: air-transport-aviation-safety
-  public_question: Would Alberta’s airports, flights, aviation safety, and international air links keep operating smoothly
-    after independence?
+  public_question: Would Alberta’s airports, flights, aviation safety, and international air links keep operating smoothly after independence?
   category: Aviation safety, airports, flights, and air links
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
   migration_priority: keep
   score_total: 21
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -730,6 +732,8 @@ topics:
   - neutral brief mediates what survives both sides rather than advocating a third side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  validation_status: passed_local
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
 - slug: water-rights-rivers
   public_question: Could Alberta independence change water rights, rivers, and drinking-water systems?
   category: Water rights, rivers, and water infrastructure
@@ -910,11 +914,11 @@ topics:
   public_question: What border agency would Alberta need, and how would inspections for people and goods actually work?
   category: Border agency capacity, inspections, and enforcement
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
   migration_priority: keep
   score_total: 23
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -928,6 +932,8 @@ topics:
   - neutral brief mediates what survives both sides rather than advocating a third side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  validation_status: passed_local
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
 - slug: bank-deposits-financial-stability
   public_question: Would bank deposits, credit-union savings, and financial backstops still be protected?
   category: Bank deposits, credit unions, and financial stability
@@ -995,8 +1001,7 @@ topics:
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: environmental-assessment-pipeline-approvals
-  public_question: Who would approve pipelines, mines, major projects, and environmental assessments — and would approvals
-    actually get faster?
+  public_question: Who would approve pipelines, mines, major projects, and environmental assessments — and would approvals actually get faster?
   category: Major project approvals, assessments, and permitting speed
   question_decision: keep
   migration_status: legacy_refresh_needed

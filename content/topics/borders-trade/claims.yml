@@ -1,8 +1,7 @@
 claims:
 - id: claim-borders-trade-001
   topic_slug: borders-trade
-  text: Border and trade outcomes would depend on negotiations. Geography and mutual economic interest do not by themselves
-    guarantee frictionless trade.
+  text: Border and trade outcomes would depend on negotiations; geography and mutual economic interest do not by themselves guarantee frictionless trade.
   status: source_supported
   source_ids:
   - scc-secession-reference
@@ -10,24 +9,42 @@ claims:
   risk: high
 - id: claim-borders-trade-002
   topic_slug: borders-trade
-  text: The strongest pro case is that Alberta and Canada would both have incentives to preserve commerce, labour mobility,
-    energy exports, and supply chains.
+  text: Alberta and Canada would both have practical incentives to preserve commerce, energy flows, agricultural trade, and supply chains.
   status: inference
-  source_ids: &id001
+  source_ids:
   - scc-secession-reference
   - clarity-act
   - alberta-budget-documents-2026
+  - canadian-free-trade-agreement
   risk: high
 - id: claim-borders-trade-003
   topic_slug: borders-trade
-  text: The strongest caution is that international borders can add customs, regulatory, labour-mobility, tariff, and market-access
-    uncertainty.
-  status: inference
-  source_ids: *id001
+  text: If Alberta became a separate state, current internal Canadian trade treatment would need to be replaced by negotiated Canada-Alberta and external market-access arrangements.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - canadian-free-trade-agreement
+  - global-affairs-cusma-text
+  - wto-accessions
   risk: high
 - id: claim-borders-trade-004
   topic_slug: borders-trade
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on Canada and other external partners.'
+  text: Even when tariffs are low or zero, customs administration, rules-of-origin documentation, inspections, regulatory recognition, and compliance systems can create market-access costs.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - global-affairs-cusma-text
+  - canadian-free-trade-agreement
+  - canada-customs-act
+  risk: high
+- id: claim-borders-trade-005
+  topic_slug: borders-trade
+  text: This topic remains high uncertainty because tariff treatment, customs design, trade-agreement continuity, and regulatory recognition would depend on future decisions by Canada and other partners.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - global-affairs-cusma-text
+  - canada-customs-act
+  - wto-accessions
   risk: high

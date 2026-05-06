@@ -1,28 +1,40 @@
 claims:
 - id: claim-agriculture-food-inspection-market-access-001
   topic_slug: agriculture-food-inspection-market-access
-  text: Current public records show federal food inspection and agriculture programs alongside Alberta agriculture responsibilities, but they do not establish how inspection authority, export certification, or market-access arrangements would operate after independence.
+  text: "Current sources establish that Canada has federal food-inspection, export-certification, animal-health, plant-health, recall, agriculture-program, business risk management, and market-development institutions alongside Alberta agriculture and irrigation responsibilities; they do not establish post-independence continuity terms for inspection, certification, programs, or market access."
   status: source_supported
-  source_ids: &id001
+  source_ids: &topic_sources
   - cfia-main
+  - cfia-exporting-food-plants-animals
+  - cfia-animal-health
+  - cfia-plant-health
+  - cfia-food-recalls-allergy-alerts
   - agriculture-canada-main
+  - aafc-brm-programs
+  - aafc-agrimarketing-program
   - alberta-agriculture
   risk: medium
 - id: claim-agriculture-food-inspection-market-access-002
   topic_slug: agriculture-food-inspection-market-access
-  text: The strongest pro case is that Alberta could try to tailor agriculture policy, inspection priorities, and trade promotion more closely to provincial producers.
+  text: "The strongest pro-independence case is conditional: Alberta could seek negotiated continuity while designing agriculture policy, inspection priorities, business risk management choices, and trade promotion more directly around Alberta producers."
   status: inference
-  source_ids: *id001
+  source_ids: *topic_sources
   risk: medium
 - id: claim-agriculture-food-inspection-market-access-003
   topic_slug: agriculture-food-inspection-market-access
-  text: The strongest caution is that producers, processors, exporters, and consumers could face uncertainty if inspection authority, export certification, disease response, or market-recognition arrangements changed before replacements were accepted.
+  text: "The strongest anti-independence / pro-federation case is that inspection, export certification, animal-health and plant-health status, recall response, farm-program delivery, and market recognition require binding plans and external acceptance before producers and processors can safely rely on continuity."
   status: inference
-  source_ids: *id001
+  source_ids: *topic_sources
   risk: medium
 - id: claim-agriculture-food-inspection-market-access-004
   topic_slug: agriculture-food-inspection-market-access
-  text: 'This topic remains uncertainty-labelled: Medium; food inspection authority, export certification, animal and plant health rules, market recognition, producer support, trade access, and emergency response capacity remain conditional on future decisions and evidence.'
+  text: "Alberta's existing agriculture ministry is relevant evidence of provincial agriculture capacity, but it is not evidence that Alberta could instantly replace all federal food-inspection, certification, animal-health, plant-health, recall, agriculture-program, and market-access functions."
   status: source_supported
-  source_ids: *id001
+  source_ids: *topic_sources
+  risk: medium
+- id: claim-agriculture-food-inspection-market-access-005
+  topic_slug: agriculture-food-inspection-market-access
+  text: "The practical test for this topic is a function-by-function continuity plan covering legal authority, inspection and export certificates, market recognition, staff, labs, records, active files, funding, emergency response, recalls, animal and plant health, risk management supports, and public instructions."
+  status: inference
+  source_ids: *topic_sources
   risk: medium

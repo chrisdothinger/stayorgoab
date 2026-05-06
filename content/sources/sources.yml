@@ -427,6 +427,63 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+- id: constitution-act-1982-charter
+  slug: constitution-act-1982-charter
+  title: Constitution Act, 1982 / Canadian Charter of Rights and Freedoms
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/const/page-12.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Canadian constitutional text including Charter mobility-rights provisions relevant to citizens and permanent residents inside Canada.
+  how_used: Legal baseline for current Canadian mobility rights before considering any independence transition.
+  related_topic_slugs:
+  - immigration-passports-mobility
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: citizenship-act
+  slug: citizenship-act
+  title: Citizenship Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-29/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal Canadian statute governing citizenship status, grants, loss, resumption, evidence, and related administration.
+  how_used: Legal baseline for Canadian citizenship claims and limits on assuming automatic post-independence outcomes.
+  related_topic_slugs:
+  - immigration-passports-mobility
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canadian-passport-order
+  slug: canadian-passport-order
+  title: Canadian Passport Order
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/regulations/SI-81-86/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal order establishing Canadian passport issuing authority and passport administration.
+  how_used: Legal baseline for Canadian passport eligibility and issuance questions.
+  related_topic_slugs:
+  - immigration-passports-mobility
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
 - id: justice-canada-criminal-justice
   slug: justice-canada-criminal-justice
   title: Criminal justice
@@ -602,6 +659,82 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+- id: cfia-exporting-food-plants-animals
+  slug: cfia-exporting-food-plants-animals
+  title: Exporting food, plants or animals
+  publisher: Government of Canada
+  author: Canadian Food Inspection Agency
+  url: https://inspection.canada.ca/en/exporting-food-plants-animals
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CFIA export portal for food, plant, and animal exports, including export certification and related requirements.
+  how_used: Supports claims that export market access depends on accepted inspection and certification systems, not only domestic policy preferences.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cfia-animal-health
+  slug: cfia-animal-health
+  title: Animal health
+  publisher: Government of Canada
+  author: Canadian Food Inspection Agency
+  url: https://inspection.canada.ca/en/animal-health
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CFIA animal-health portal covering disease prevention, surveillance, controls, and animal-related regulatory context.
+  how_used: Supports claims about the need to preserve animal-health surveillance, quarantine, disease response, reporting, and recognition during any transition.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cfia-plant-health
+  slug: cfia-plant-health
+  title: Plant health
+  publisher: Government of Canada
+  author: Canadian Food Inspection Agency
+  url: https://inspection.canada.ca/en/plant-health
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CFIA plant-health portal covering plant pests, import/export controls, regulated plants, and plant-protection context.
+  how_used: Supports claims about plant-health functions, pest response, phytosanitary controls, and certification that would need continuity or successor recognition.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cfia-food-recalls-allergy-alerts
+  slug: cfia-food-recalls-allergy-alerts
+  title: Food recalls and allergy alerts
+  publisher: Government of Canada
+  author: Canadian Food Inspection Agency
+  url: https://inspection.canada.ca/en/food-safety-consumers/food-recalls-and-allergy-alerts
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CFIA consumer food-safety page for food recalls and allergy alerts.
+  how_used: Supports claims about recall authority, public communication, and food-safety continuity needs during any independence transition.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
 - id: agriculture-canada-main
   slug: agriculture-canada-main
   title: Agriculture and Agri-Food Canada
@@ -620,6 +753,44 @@ sources:
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-05'
+  status: active
+- id: aafc-brm-programs
+  slug: aafc-brm-programs
+  title: Business risk management programs
+  publisher: Government of Canada
+  author: Agriculture and Agri-Food Canada
+  url: https://agriculture.canada.ca/en/programs
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Agriculture and Agri-Food Canada page for business risk management programs supporting producers facing income, margin, disaster, and production risks.
+  how_used: Supports claims that federal agriculture support is delivered through specific program systems that would need program-by-program continuity, replacement, or wind-down rules.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: aafc-agrimarketing-program
+  slug: aafc-agrimarketing-program
+  title: AgriMarketing Program
+  publisher: Government of Canada
+  author: Agriculture and Agri-Food Canada
+  url: https://agriculture.canada.ca/en/programs/agrimarketing-program
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Agriculture and Agri-Food Canada program page for market-development and promotional activities for Canadian agriculture, agri-food, fish, and seafood sectors.
+  how_used: Supports claims that market access and export growth involve public market-development programs as well as inspection certificates and buyer confidence.
+  related_topic_slugs:
+  - agriculture-food-inspection-market-access
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-agriculture
   slug: alberta-agriculture
@@ -2153,6 +2324,326 @@ sources:
   - equalization
   - healthcare-portability-doctor-licensing
   - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: global-affairs-cusma-text
+  slug: global-affairs-cusma-text
+  title: Canada-United States-Mexico Agreement text
+  publisher: Global Affairs Canada
+  author: Government of Canada
+  url: https://www.international.gc.ca/trade-commerce/trade-agreements-accords-commerciaux/agr-acc/cusma-aceum/text-texte/toc-tdm.aspx?lang=eng
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada page linking to the CUSMA agreement text and chapters, including goods market-access and
+    rules-of-origin material relevant to cross-border trade.
+  how_used: Used to distinguish existing Canadian external trade-agreement access from any future Alberta continuity or
+    accession claim.
+  related_topic_slugs:
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canadian-free-trade-agreement
+  slug: canadian-free-trade-agreement
+  title: Canadian Free Trade Agreement
+  publisher: Canadian Free Trade Agreement Secretariat
+  author: Canadian Free Trade Agreement Secretariat
+  url: https://www.cfta-alec.ca/canadian-free-trade-agreement/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Intergovernmental agreement framework for reducing and eliminating barriers to the free movement of persons,
+    goods, services, and investments within Canada.
+  how_used: Used as the baseline for current internal Canadian trade arrangements that would need replacement or continuity
+    treatment if Alberta became a separate state.
+  related_topic_slugs:
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-customs-act
+  slug: canada-customs-act
+  title: Customs Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-52.6/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute governing customs administration, including importation, reporting, release, accounting, enforcement,
+    and related compliance concepts.
+  how_used: Used to ground the point that customs administration can create operational requirements even where tariffs are low
+    or zero.
+  related_topic_slugs:
+  - borders-trade
+  - border-enforcement-customs
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: wto-accessions
+  slug: wto-accessions
+  title: Accessions
+  publisher: World Trade Organization
+  author: World Trade Organization
+  url: https://www.wto.org/english/thewto_e/acc_e/acc_e.htm
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: WTO accessions page describing the process by which governments seek to become WTO members.
+  how_used: Used to flag that international trade-organization status for a new state is a process question rather than an
+    automatic assumption.
+  related_topic_slugs:
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: immigration-refugee-protection-act
+  slug: immigration-refugee-protection-act
+  title: Immigration and Refugee Protection Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/i-2.5/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute establishing key Canadian immigration and refugee-protection rules, including admissibility and enforcement concepts.
+  how_used: Legal baseline for the traveller-inspection, admissibility, enforcement, appeal, and rights questions an Alberta border plan would need to resolve.
+  related_topic_slugs:
+  - immigration-passports-mobility
+  - border-enforcement-customs
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: us-cbp-main
+  slug: us-cbp-main
+  title: U.S. Customs and Border Protection
+  publisher: U.S. Department of Homeland Security
+  author: U.S. Customs and Border Protection
+  url: https://www.cbp.gov/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official U.S. Customs and Border Protection portal for U.S. border, customs, travel, trade, and enforcement information.
+  how_used: Baseline source for the point that U.S. border procedures and recognition are external constraints for any Alberta border arrangement.
+  related_topic_slugs:
+  - border-enforcement-customs
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cbsa-commercial-importing
+  slug: cbsa-commercial-importing
+  title: Commercial importing
+  publisher: Canada Border Services Agency
+  author: Canada Border Services Agency
+  url: https://www.cbsa-asfc.gc.ca/import/menu-eng.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CBSA commercial importing portal for current Canadian import, release, accounting, and commercial-border guidance.
+  how_used: Baseline for the customs processes and documentation that goods-movement continuity would need to preserve, replace, or interoperate with.
+  related_topic_slugs:
+  - borders-currency-citizenship
+  - border-enforcement-customs
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-transportation-act
+  slug: canada-transportation-act
+  title: Canada Transportation Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-10.4/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal transportation statute relevant to the current Canadian framework for national transportation and rail-related regulation.
+  how_used: Baseline for identifying current Canadian transport-law architecture that an Alberta corridor plan would have to account for.
+  related_topic_slugs:
+  - borders-currency-citizenship
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: us-cbp-basic-importing-exporting
+  slug: us-cbp-basic-importing-exporting
+  title: Basic Importing and Exporting
+  publisher: U.S. Customs and Border Protection
+  author: U.S. Customs and Border Protection
+  url: https://www.cbp.gov/trade/basic-import-export
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: U.S. CBP trade guidance portal explaining basic importing and exporting responsibilities and customs processes.
+  how_used: Baseline for U.S.-route claims, including the need for U.S. customs recognition, documentation, and compliance.
+  related_topic_slugs:
+  - borders-currency-citizenship
+  - border-enforcement-customs
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: wto-trade-facilitation-agreement
+  slug: wto-trade-facilitation-agreement
+  title: Trade Facilitation Agreement Facility
+  publisher: World Trade Organization
+  author: World Trade Organization
+  url: https://www.tfafacility.org/trade-facilitation-agreement-facility
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: WTO facility page describing trade-facilitation agreement concepts, including customs cooperation, release, clearance, transparency, and transit-related disciplines.
+  how_used: Benchmark for the customs and transit disciplines that a low-friction Alberta goods-movement plan would need to address.
+  related_topic_slugs:
+  - borders-currency-citizenship
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: transport-canada-port-authorities
+  slug: transport-canada-port-authorities
+  title: Canada Port Authorities
+  publisher: Transport Canada
+  author: Government of Canada
+  url: https://tc.canada.ca/en/marine-transportation/ports-harbours-anchorages/canada-port-authorities
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Transport Canada overview of Canada Port Authorities and the current federal port-authority framework.
+  how_used: Baseline for overseas-access claims because a landlocked Alberta would rely on ports outside its territory.
+  related_topic_slugs:
+  - borders-currency-citizenship
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: catsa-main
+  slug: catsa-main
+  title: Canadian Air Transport Security Authority
+  publisher: Canadian Air Transport Security Authority
+  author: CATSA / ACSTA
+  url: https://www.catsa-acsta.gc.ca/en
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CATSA portal for the Canadian air transport security-screening authority and passenger/baggage screening information.
+  how_used: Baseline for claims about current aviation security-screening functions and the need for screening continuity in any transition.
+  related_topic_slugs:
+  - air-transport-aviation-safety
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: icao-chicago-convention
+  slug: icao-chicago-convention
+  title: Convention on International Civil Aviation
+  publisher: International Civil Aviation Organization
+  author: International Civil Aviation Organization
+  url: https://www.icao.int/publications/doc-series/convention-international-civil-aviation-doc-7300
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_international
+  summary: ICAO page for the Chicago Convention, the core international civil-aviation framework for state responsibilities, airspace, aircraft nationality, standards, and international cooperation.
+  how_used: International-law baseline for claims that an independent Alberta would need internationally recognized aviation authority and air-service arrangements rather than only domestic legal continuity.
+  related_topic_slugs:
+  - air-transport-aviation-safety
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: nav-canada-air-navigation-services
+  slug: nav-canada-air-navigation-services
+  title: NAV CANADA
+  publisher: NAV CANADA
+  author: NAV CANADA
+  url: https://www.navcanada.ca/en/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_operator
+  summary: NAV CANADA portal for Canada's civil air navigation service provider, relevant to air traffic control, flight information, navigation infrastructure, and operational interfaces.
+  how_used: Baseline for claims that aviation continuity would need air-navigation service arrangements in addition to airport, airline, regulator, and screening plans.
+  related_topic_slugs:
+  - air-transport-aviation-safety
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: transport-canada-airport-certification
+  slug: transport-canada-airport-certification
+  title: Procedures for Certification of Aerodromes as Airports (TP 7775)
+  publisher: Transport Canada
+  author: Government of Canada
+  url: https://tc.canada.ca/en/aviation/publications/procedures-certification-aerodromes-airports-tp-7775
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Transport Canada procedures document for certification of aerodromes as airports under the current Canadian airport-certification framework.
+  how_used: Specific baseline for claims about airport operating certificates, manuals, safety obligations, emergency planning, and transition-day validity.
+  related_topic_slugs:
+  - air-transport-aviation-safety
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cta-air-transport-agreements
+  slug: cta-air-transport-agreements
+  title: Air transport agreements
+  publisher: Canadian Transportation Agency
+  author: Government of Canada
+  url: https://otc-cta.gc.ca/eng/transport-agreements
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Canadian Transportation Agency page listing Canada's air transport agreements and arrangements for international air services.
+  how_used: Baseline for claims that international routes and traffic rights depend on air-service arrangements with other jurisdictions, not unilateral Alberta policy.
+  related_topic_slugs:
+  - air-transport-aviation-safety
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'

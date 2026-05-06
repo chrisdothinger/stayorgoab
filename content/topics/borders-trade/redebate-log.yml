@@ -3,3 +3,7 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-borders-trade-2026-05-06-lean-v3
+  date: '2026-05-06'
+  trigger: lean-v3-batch-02-migration
+  summary: Reframed the dossier around the public question of tariffs, customs costs, and goods-market access, distinguishing negotiated tariff-free continuity from non-tariff border administration and external trade-agreement uncertainty.

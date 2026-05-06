@@ -1,4 +1,10 @@
 source_ids:
 - cfia-main
+- cfia-exporting-food-plants-animals
+- cfia-animal-health
+- cfia-plant-health
+- cfia-food-recalls-allergy-alerts
 - agriculture-canada-main
+- aafc-brm-programs
+- aafc-agrimarketing-program
 - alberta-agriculture

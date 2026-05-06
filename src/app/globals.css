@@ -50,6 +50,7 @@ textarea {
 
 button:focus-visible,
 a:focus-visible,
+summary:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
@@ -534,6 +535,57 @@ textarea:focus-visible {
 
 .evidence-chip-links .citation-link {
   font-size: 0.74em;
+}
+
+.sources-disclosure {
+  margin: 34px 0 0;
+  border-block: 1px solid rgba(17, 24, 39, 0.16);
+}
+
+.sources-disclosure summary {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  list-style: none;
+  padding: 13px 0;
+}
+
+.sources-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.sources-disclosure-title {
+  color: var(--ink);
+  font-size: clamp(24px, 3vw, 42px);
+  font-weight: 620;
+  line-height: 1.05;
+}
+
+.sources-disclosure-hint {
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.sources-disclosure-hint::before {
+  content: "+ ";
+}
+
+.sources-disclosure[open] .sources-disclosure-hint::before {
+  content: "− ";
+}
+
+.sources-disclosure[open] .sources-disclosure-hint {
+  color: var(--secondary);
+}
+
+.sources-disclosure-body {
+  padding: 0 0 14px;
 }
 
 .markdown li:target {

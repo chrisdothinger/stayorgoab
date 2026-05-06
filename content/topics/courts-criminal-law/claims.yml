@@ -1,28 +1,43 @@
 claims:
 - id: claim-courts-criminal-law-001
   topic_slug: courts-criminal-law
-  text: Current public records show existing federal criminal-justice context and Alberta court services, but they do not settle how laws, prosecutions, courts, appeals, custody, or enforcement would transition under independence.
+  text: Under the current Canadian constitutional framework, Parliament has authority over criminal law and criminal procedure, while provinces administer justice and organize provincial courts.
   status: source_supported
-  source_ids: &id001
+  source_ids: &courts_criminal_sources
+  - constitution-act-1867-division-of-powers
+  - criminal-code-canada
   - justice-canada-criminal-justice
   - alberta-courts
+  - alberta-crown-prosecution-service
   - scc-secession-reference
   risk: medium
 - id: claim-courts-criminal-law-002
   topic_slug: courts-criminal-law
-  text: The strongest pro case is that a negotiated transition could preserve functioning courts while allowing Alberta to design justice institutions with clearer local accountability.
-  status: inference
-  source_ids: *id001
+  text: Alberta currently operates court services and a Crown prosecution service within the Canadian criminal-justice framework.
+  status: source_supported
+  source_ids: *courts_criminal_sources
   risk: medium
 - id: claim-courts-criminal-law-003
   topic_slug: courts-criminal-law
-  text: The strongest caution is that criminal law, courts, appeals, corrections, policing interfaces, and constitutional rights cannot be casually replaced without legal and service-continuity risk.
+  text: An independent Alberta would need explicit transition law or agreements to preserve criminal offences, pending prosecutions, court jurisdiction, orders, appeals, custody, records, and enforcement cooperation.
   status: inference
-  source_ids: *id001
-  risk: medium
+  source_ids: *courts_criminal_sources
+  risk: high
 - id: claim-courts-criminal-law-004
   topic_slug: courts-criminal-law
-  text: 'This topic remains uncertainty-labelled: Medium; criminal-law authority, court continuity, prosecutions, appeals, custody, enforcement, and transitional validity of existing orders remain conditional on future decisions and evidence.'
+  text: The strongest pro-independence case is that Alberta could copy existing criminal law initially, keep courts and prosecutions operating, and later make criminal-law policy directly through Alberta institutions.
+  status: inference
+  source_ids: *courts_criminal_sources
+  risk: medium
+- id: claim-courts-criminal-law-005
+  topic_slug: courts-criminal-law
+  text: The strongest anti-independence / pro-federation case is that criminal-law continuity should not be assumed without binding legal authority, court-transition rules, prosecution plans, rights protections, and Canada-facing cooperation agreements.
+  status: inference
+  source_ids: *courts_criminal_sources
+  risk: high
+- id: claim-courts-criminal-law-006
+  topic_slug: courts-criminal-law
+  text: 'This topic remains uncertainty-labelled: high, because criminal law, prosecutions, courts, appeals, custody, records, rights protections, policing interfaces, and intergovernmental enforcement cooperation depend on future legislation, agreements, staffing, budgets, and judicial interpretation.'
   status: source_supported
-  source_ids: *id001
+  source_ids: *courts_criminal_sources
   risk: medium

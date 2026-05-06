@@ -4,3 +4,7 @@ entries:
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic
     coverage.
+- id: redebate-emergency-management-disaster-aid-2026-05-06
+  date: '2026-05-06'
+  trigger: lean-v3-migration
+  summary: Reframed the debate around who pays for emergency response and disaster aid after independence, balancing Alberta emergency capacity against federal DFAA, municipal reimbursement, wildfire surge, mutual aid, and written continuity-agreement requirements.

@@ -3,3 +3,7 @@ entries:
   date: '2026-05-05'
   trigger: phase-2-3-manual-batch
   summary: Manual/ad-hoc content batch generated report triad and argument map for high-salience non-duplicate topic coverage.
+- id: redebate-rcmp-provincial-policing-2026-05-06-v3
+  date: '2026-05-06'
+  trigger: lean-v3-batch-03-migration
+  summary: Reframed debate around whether Alberta would keep RCMP service by agreement, build a provincial police service, or use a mixed continuity model, with explicit tests for written agreements, staffing, costs, local arrangements, and operational readiness.

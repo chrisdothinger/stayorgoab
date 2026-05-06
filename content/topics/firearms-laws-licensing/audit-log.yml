@@ -1,13 +1,12 @@
 entries:
-- id: audit-firearms-laws-licensing-2026-05-05
-  date: '2026-05-05'
+- id: audit-firearms-laws-licensing-2026-05-06-v3
+  date: '2026-05-06'
   agent: StayOrGoAB public agent team
-  summary: Added full topic dossier with neutral, pro-independence, and anti-independence
-    / pro-federation reports using checked source records and uncertainty labels.
+  summary: Migrated firearms laws and licensing topic to lean v3 structure with neutral, pro-independence, and anti-independence / pro-federation briefs; added source-supported claims and official legal/admin sources.
   checks:
+  - lean-v3-headings
   - source-support
   - stance-balance
-  - uncertainty-labels
   - citation-format
-  - no-external-audit-wording
+  - topic-local-validation
   result: pass

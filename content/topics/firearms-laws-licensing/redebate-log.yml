@@ -1,6 +1,5 @@
 entries:
-- id: redebate-firearms-laws-licensing-2026-05-05
-  date: '2026-05-05'
-  trigger: phase-2-3-manual-batch
-  summary: Manual/ad-hoc content batch generated report triad and argument map for
-    high-salience non-duplicate topic coverage.
+- id: redebate-firearms-laws-licensing-2026-05-06-v3
+  date: '2026-05-06'
+  trigger: lean-v3-batch-03-migration
+  summary: Reframed the debate around whether Alberta would copy, replace, relax, or tighten federal firearms licensing and restricted-weapon rules, with explicit tests for legal continuity, administration, data, classifications, enforcement, and cross-border recognition.

@@ -10,3 +10,14 @@ entries:
   - citation-format
   - no-external-audit-wording
   result: pass
+- id: audit-rcmp-provincial-policing-2026-05-06-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated dossier to lean v3 structure with updated Alberta policing, RCMP contract, provincial policing transition, and Police Act sources.
+  checks:
+  - lean-v3-headings
+  - source-support
+  - stance-balance
+  - citation-format
+  - topic-local-validation
+  result: pass

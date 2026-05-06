@@ -128,7 +128,7 @@ sources:
   author: Parliament of Canada
   url: https://laws-lois.justice.gc.ca/eng/acts/C-31.8/FullText.html
   published_at: null
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_legal
@@ -138,9 +138,10 @@ sources:
   - legal-process
   - clarity-act
   - clear-question-majority
+  - charter-rights-continuity
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: scc-secession-reference
   slug: scc-secession-reference
@@ -149,7 +150,7 @@ sources:
   author: Supreme Court of Canada
   url: https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/1643/index.do
   published_at: '1998-08-20'
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: court
   stance: neutral
   reliability_category: primary_legal
@@ -161,9 +162,11 @@ sources:
   - quebec-secession-reference
   - indigenous-rights-treaties
   - indigenous-treaties
+  - courts-criminal-law
+  - charter-rights-continuity
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: elections-ab-bill-23-2026-04-29
   slug: elections-ab-bill-23-2026-04-29
@@ -438,7 +441,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Canadian constitutional text including Charter mobility-rights provisions relevant to citizens and permanent residents inside Canada.
+  summary: Canadian constitutional text including Charter mobility-rights provisions relevant to citizens and permanent residents
+    inside Canada.
   how_used: Legal baseline for current Canadian mobility rights before considering any independence transition.
   related_topic_slugs:
   - immigration-passports-mobility
@@ -491,7 +495,7 @@ sources:
   author: Department of Justice Canada
   url: https://www.justice.gc.ca/eng/cj-jp/
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -502,7 +506,7 @@ sources:
   - courts-criminal-law
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-courts
   slug: alberta-courts
@@ -511,7 +515,7 @@ sources:
   author: Government of Alberta
   url: https://www.alberta.ca/courts
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -522,7 +526,70 @@ sources:
   - courts-criminal-law
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
+  status: active
+- id: constitution-act-1867-division-of-powers
+  slug: constitution-act-1867-division-of-powers
+  title: Constitution Act, 1867 — Distribution of Legislative Powers
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of the United Kingdom / Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/const/page-3.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Constitutional text setting the division of legislative powers, including federal criminal-law authority and provincial
+    administration-of-justice authority.
+  how_used: Legal baseline for distinguishing who currently makes criminal law from who administers courts and justice in
+    Alberta.
+  related_topic_slugs:
+  - courts-criminal-law
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: criminal-code-canada
+  slug: criminal-code-canada
+  title: Criminal Code
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-46/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal Criminal Code statute containing Canadian criminal offences, procedure, sentencing, appeals, warrants,
+    and related operating rules.
+  how_used: Current-law baseline for what would have to be continued, copied, replaced, or negotiated in any Alberta criminal-law
+    transition.
+  related_topic_slugs:
+  - courts-criminal-law
+  - firearms-laws-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-crown-prosecution-service
+  slug: alberta-crown-prosecution-service
+  title: Alberta Crown Prosecution Service
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/alberta-crown-prosecution-service
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta page describing the Crown prosecution service responsible for prosecuting offences in Alberta.
+  how_used: Provincial prosecution baseline for assessing how criminal case files, prosecution authority, disclosure, appeals,
+    and staffing would need continuity planning.
+  related_topic_slugs:
+  - courts-criminal-law
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
   status: active
 - id: canada-student-financial-assistance
   slug: canada-student-financial-assistance
@@ -671,7 +738,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CFIA export portal for food, plant, and animal exports, including export certification and related requirements.
-  how_used: Supports claims that export market access depends on accepted inspection and certification systems, not only domestic policy preferences.
+  how_used: Supports claims that export market access depends on accepted inspection and certification systems, not only domestic
+    policy preferences.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -690,7 +758,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CFIA animal-health portal covering disease prevention, surveillance, controls, and animal-related regulatory context.
-  how_used: Supports claims about the need to preserve animal-health surveillance, quarantine, disease response, reporting, and recognition during any transition.
+  how_used: Supports claims about the need to preserve animal-health surveillance, quarantine, disease response, reporting,
+    and recognition during any transition.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -709,7 +778,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CFIA plant-health portal covering plant pests, import/export controls, regulated plants, and plant-protection context.
-  how_used: Supports claims about plant-health functions, pest response, phytosanitary controls, and certification that would need continuity or successor recognition.
+  how_used: Supports claims about plant-health functions, pest response, phytosanitary controls, and certification that would
+    need continuity or successor recognition.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -728,7 +798,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CFIA consumer food-safety page for food recalls and allergy alerts.
-  how_used: Supports claims about recall authority, public communication, and food-safety continuity needs during any independence transition.
+  how_used: Supports claims about recall authority, public communication, and food-safety continuity needs during any independence
+    transition.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -765,8 +836,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Agriculture and Agri-Food Canada page for business risk management programs supporting producers facing income, margin, disaster, and production risks.
-  how_used: Supports claims that federal agriculture support is delivered through specific program systems that would need program-by-program continuity, replacement, or wind-down rules.
+  summary: Agriculture and Agri-Food Canada page for business risk management programs supporting producers facing income,
+    margin, disaster, and production risks.
+  how_used: Supports claims that federal agriculture support is delivered through specific program systems that would need
+    program-by-program continuity, replacement, or wind-down rules.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -784,8 +857,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Agriculture and Agri-Food Canada program page for market-development and promotional activities for Canadian agriculture, agri-food, fish, and seafood sectors.
-  how_used: Supports claims that market access and export growth involve public market-development programs as well as inspection certificates and buyer confidence.
+  summary: Agriculture and Agri-Food Canada program page for market-development and promotional activities for Canadian agriculture,
+    agri-food, fish, and seafood sectors.
+  how_used: Supports claims that market access and export growth involve public market-development programs as well as inspection
+    certificates and buyer confidence.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -1049,7 +1124,7 @@ sources:
   author: Public Safety Canada
   url: https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/index-en.aspx
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1059,7 +1134,7 @@ sources:
   - emergency-management-disaster-aid
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: public-safety-dfaa
   slug: public-safety-dfaa
@@ -1068,7 +1143,7 @@ sources:
   author: Public Safety Canada
   url: https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/rcvr-dsstrs/dsstr-fnncl-ssstnc-rrngmnts/index-en.aspx
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1078,26 +1153,106 @@ sources:
   - emergency-management-disaster-aid
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-emergency-management
   slug: alberta-emergency-management
-  title: Emergency management
+  title: Alberta Emergency Management Agency
   publisher: Government of Alberta
   author: Government of Alberta
-  url: https://www.alberta.ca/emergency-management
+  url: https://www.alberta.ca/alberta-emergency-management-agency
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta emergency-management page for provincial preparedness, response, and recovery context.
-  how_used: Baseline source for what would happen to emergency management, disaster response, and disaster aid?
+  summary: Alberta Emergency Management Agency page for provincial emergency management leadership and coordination context.
+  how_used: Baseline source for Alberta-side emergency management coordination, preparedness, response, and recovery roles.
   related_topic_slugs:
   - emergency-management-disaster-aid
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-emergency-management-act
+  slug: alberta-emergency-management-act
+  title: Emergency Management Act
+  publisher: Alberta King's Printer
+  author: Legislative Assembly of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=E06P8.cfm&leg_type=Acts&isbncln=9780779842247
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta statute establishing emergency-management authority, including provincial and local emergency powers.
+  how_used: Legal baseline for command authority, local states of emergency, orders, and emergency governance in any continuity
+    plan.
+  related_topic_slugs:
+  - emergency-management-disaster-aid
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-disaster-recovery-programs
+  slug: alberta-disaster-recovery-programs
+  title: Disaster recovery programs
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/disaster-recovery-programs
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta disaster recovery program information for eligibility, applications, and assistance after eligible disasters.
+  how_used: Baseline for Alberta-side recovery assistance and reimbursement questions after floods, wildfires, severe weather,
+    or other disasters.
+  related_topic_slugs:
+  - emergency-management-disaster-aid
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-wildfire
+  slug: alberta-wildfire
+  title: Alberta Wildfire
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/alberta-wildfire
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta Wildfire public portal for provincial wildfire prevention, preparedness, response, status information,
+    and operations.
+  how_used: Baseline for wildfire response capacity, surge requirements, evacuation support, and seasonal disaster-cost planning.
+  related_topic_slugs:
+  - emergency-management-disaster-aid
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-municipalities-and-emergencies
+  slug: alberta-municipalities-and-emergencies
+  title: Emergency preparedness
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/emergency-preparedness
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta emergency preparedness guidance for household, community, and local readiness context.
+  how_used: Baseline source for preparedness, local readiness, and continuity planning questions alongside statutory municipal
+    emergency responsibilities.
+  related_topic_slugs:
+  - emergency-management-disaster-aid
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
   status: active
 - id: statistics-canada-main
   slug: statistics-canada-main
@@ -1163,7 +1318,7 @@ sources:
   author: Government of Alberta
   url: https://www.alberta.ca/policing-in-alberta
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1173,45 +1328,45 @@ sources:
   - rcmp-provincial-policing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: rcmp-alberta
   slug: rcmp-alberta
   title: Alberta RCMP
   publisher: Royal Canadian Mounted Police
   author: Royal Canadian Mounted Police
-  url: https://www.rcmp-grc.gc.ca/ab/index-eng.htm
+  url: https://rcmp.ca/en/alberta
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Current RCMP Alberta presence and services baseline.
+  summary: Current RCMP Alberta page for provincial RCMP policing presence and public-service context.
   how_used: Baseline source for rcmp-provincial-policing topic.
   related_topic_slugs:
   - rcmp-provincial-policing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: rcmp-contract-policing
   slug: rcmp-contract-policing
-  title: Contract and Indigenous policing
-  publisher: Royal Canadian Mounted Police
-  author: Royal Canadian Mounted Police
-  url: https://www.rcmp-grc.gc.ca/ccaps-spcca/contract-eng.htm
+  title: Policing in Canada
+  publisher: Public Safety Canada
+  author: Government of Canada
+  url: https://www.publicsafety.gc.ca/cnt/cntrng-crm/plcng/index-en.aspx
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal RCMP description of contract and Indigenous policing arrangements.
+  summary: Public Safety Canada policing page for federal, provincial, territorial, and RCMP-related policing context.
   how_used: Baseline source for rcmp-provincial-policing topic.
   related_topic_slugs:
   - rcmp-provincial-policing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: canadian-charter-rights
   slug: canadian-charter-rights
@@ -1220,7 +1375,7 @@ sources:
   author: Parliament of Canada
   url: https://laws-lois.justice.gc.ca/eng/const/page-12.html
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_legal
@@ -1230,7 +1385,7 @@ sources:
   - charter-rights-continuity
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-bill-of-rights
   slug: alberta-bill-of-rights
@@ -1239,7 +1394,7 @@ sources:
   author: Legislature of Alberta
   url: https://kings-printer.alberta.ca/1266.cfm?page=A14.cfm&leg_type=Acts&isbncln=9780779840772
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_legal
@@ -1249,7 +1404,7 @@ sources:
   - charter-rights-continuity
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: scc-morgentaler-1988
   slug: scc-morgentaler-1988
@@ -1315,7 +1470,7 @@ sources:
   author: Parliament of Canada
   url: https://laws-lois.justice.gc.ca/eng/acts/f-11.6/FullText.html
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_legal
@@ -1325,7 +1480,7 @@ sources:
   - firearms-laws-licensing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: rcmp-canadian-firearms-program
   slug: rcmp-canadian-firearms-program
@@ -1334,7 +1489,7 @@ sources:
   author: Royal Canadian Mounted Police
   url: https://rcmp.ca/en/firearms
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1344,26 +1499,27 @@ sources:
   - firearms-laws-licensing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-chief-firearms-office
   slug: alberta-chief-firearms-office
-  title: Chief Firearms Office
+  title: Alberta Chief Firearms Office
   publisher: Government of Alberta
   author: Government of Alberta
-  url: https://www.alberta.ca/chief-firearms-office
+  url: https://www.alberta.ca/alberta-chief-firearms-office
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official source for current chief firearms office baseline relevant to the firearms-laws-licensing topic.
-  how_used: Baseline source for What would happen to firearms laws, gun licensing, and restricted weapons rules?
+  summary: Alberta government page for the provincial Chief Firearms Office and firearms administration in Alberta.
+  how_used: Alberta administrative baseline for claims about existing provincial-facing firearms office capacity and its limits
+    within the current federal framework.
   related_topic_slugs:
   - firearms-laws-licensing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-health-care-insurance-plan
   slug: alberta-health-care-insurance-plan
@@ -1830,7 +1986,7 @@ sources:
   author: Correctional Service Canada
   url: https://www.canada.ca/en/correctional-service.html
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1840,7 +1996,7 @@ sources:
   - federal-prisons-corrections-parole
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: corrections-conditional-release-act
   slug: corrections-conditional-release-act
@@ -1849,7 +2005,7 @@ sources:
   author: Parliament of Canada
   url: https://laws-lois.justice.gc.ca/eng/acts/C-44.6/FullText.html
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1859,7 +2015,7 @@ sources:
   - federal-prisons-corrections-parole
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: parole-board-canada
   slug: parole-board-canada
@@ -1868,7 +2024,7 @@ sources:
   author: Parole Board of Canada
   url: https://www.canada.ca/en/parole-board.html
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1878,7 +2034,7 @@ sources:
   - federal-prisons-corrections-parole
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-adult-correctional-remand-centres
   slug: alberta-adult-correctional-remand-centres
@@ -1887,7 +2043,7 @@ sources:
   author: Government of Alberta
   url: https://www.alberta.ca/adult-correctional-remand-centres
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1897,7 +2053,7 @@ sources:
   - federal-prisons-corrections-parole
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: public-health-agency-canada
   slug: public-health-agency-canada
@@ -2339,10 +2495,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada page linking to the CUSMA agreement text and chapters, including goods market-access and
-    rules-of-origin material relevant to cross-border trade.
-  how_used: Used to distinguish existing Canadian external trade-agreement access from any future Alberta continuity or
-    accession claim.
+  summary: Government of Canada page linking to the CUSMA agreement text and chapters, including goods market-access and rules-of-origin
+    material relevant to cross-border trade.
+  how_used: Used to distinguish existing Canadian external trade-agreement access from any future Alberta continuity or accession
+    claim.
   related_topic_slugs:
   - borders-trade
   archive_url: null
@@ -2360,8 +2516,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Intergovernmental agreement framework for reducing and eliminating barriers to the free movement of persons,
-    goods, services, and investments within Canada.
+  summary: Intergovernmental agreement framework for reducing and eliminating barriers to the free movement of persons, goods,
+    services, and investments within Canada.
   how_used: Used as the baseline for current internal Canadian trade arrangements that would need replacement or continuity
     treatment if Alberta became a separate state.
   related_topic_slugs:
@@ -2383,8 +2539,8 @@ sources:
   reliability_category: primary_legal
   summary: Federal statute governing customs administration, including importation, reporting, release, accounting, enforcement,
     and related compliance concepts.
-  how_used: Used to ground the point that customs administration can create operational requirements even where tariffs are low
-    or zero.
+  how_used: Used to ground the point that customs administration can create operational requirements even where tariffs are
+    low or zero.
   related_topic_slugs:
   - borders-trade
   - border-enforcement-customs
@@ -2423,8 +2579,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal statute establishing key Canadian immigration and refugee-protection rules, including admissibility and enforcement concepts.
-  how_used: Legal baseline for the traveller-inspection, admissibility, enforcement, appeal, and rights questions an Alberta border plan would need to resolve.
+  summary: Federal statute establishing key Canadian immigration and refugee-protection rules, including admissibility and
+    enforcement concepts.
+  how_used: Legal baseline for the traveller-inspection, admissibility, enforcement, appeal, and rights questions an Alberta
+    border plan would need to resolve.
   related_topic_slugs:
   - immigration-passports-mobility
   - border-enforcement-customs
@@ -2444,7 +2602,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Official U.S. Customs and Border Protection portal for U.S. border, customs, travel, trade, and enforcement information.
-  how_used: Baseline source for the point that U.S. border procedures and recognition are external constraints for any Alberta border arrangement.
+  how_used: Baseline source for the point that U.S. border procedures and recognition are external constraints for any Alberta
+    border arrangement.
   related_topic_slugs:
   - border-enforcement-customs
   archive_url: null
@@ -2463,7 +2622,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CBSA commercial importing portal for current Canadian import, release, accounting, and commercial-border guidance.
-  how_used: Baseline for the customs processes and documentation that goods-movement continuity would need to preserve, replace, or interoperate with.
+  how_used: Baseline for the customs processes and documentation that goods-movement continuity would need to preserve, replace,
+    or interoperate with.
   related_topic_slugs:
   - borders-currency-citizenship
   - border-enforcement-customs
@@ -2483,8 +2643,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal transportation statute relevant to the current Canadian framework for national transportation and rail-related regulation.
-  how_used: Baseline for identifying current Canadian transport-law architecture that an Alberta corridor plan would have to account for.
+  summary: Federal transportation statute relevant to the current Canadian framework for national transportation and rail-related
+    regulation.
+  how_used: Baseline for identifying current Canadian transport-law architecture that an Alberta corridor plan would have
+    to account for.
   related_topic_slugs:
   - borders-currency-citizenship
   - borders-trade
@@ -2524,8 +2686,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: WTO facility page describing trade-facilitation agreement concepts, including customs cooperation, release, clearance, transparency, and transit-related disciplines.
-  how_used: Benchmark for the customs and transit disciplines that a low-friction Alberta goods-movement plan would need to address.
+  summary: WTO facility page describing trade-facilitation agreement concepts, including customs cooperation, release, clearance,
+    transparency, and transit-related disciplines.
+  how_used: Benchmark for the customs and transit disciplines that a low-friction Alberta goods-movement plan would need to
+    address.
   related_topic_slugs:
   - borders-currency-citizenship
   - borders-trade
@@ -2565,7 +2729,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CATSA portal for the Canadian air transport security-screening authority and passenger/baggage screening information.
-  how_used: Baseline for claims about current aviation security-screening functions and the need for screening continuity in any transition.
+  how_used: Baseline for claims about current aviation security-screening functions and the need for screening continuity
+    in any transition.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -2583,8 +2748,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_international
-  summary: ICAO page for the Chicago Convention, the core international civil-aviation framework for state responsibilities, airspace, aircraft nationality, standards, and international cooperation.
-  how_used: International-law baseline for claims that an independent Alberta would need internationally recognized aviation authority and air-service arrangements rather than only domestic legal continuity.
+  summary: ICAO page for the Chicago Convention, the core international civil-aviation framework for state responsibilities,
+    airspace, aircraft nationality, standards, and international cooperation.
+  how_used: International-law baseline for claims that an independent Alberta would need internationally recognized aviation
+    authority and air-service arrangements rather than only domestic legal continuity.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -2602,8 +2769,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_operator
-  summary: NAV CANADA portal for Canada's civil air navigation service provider, relevant to air traffic control, flight information, navigation infrastructure, and operational interfaces.
-  how_used: Baseline for claims that aviation continuity would need air-navigation service arrangements in addition to airport, airline, regulator, and screening plans.
+  summary: NAV CANADA portal for Canada's civil air navigation service provider, relevant to air traffic control, flight information,
+    navigation infrastructure, and operational interfaces.
+  how_used: Baseline for claims that aviation continuity would need air-navigation service arrangements in addition to airport,
+    airline, regulator, and screening plans.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -2621,8 +2790,10 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Transport Canada procedures document for certification of aerodromes as airports under the current Canadian airport-certification framework.
-  how_used: Specific baseline for claims about airport operating certificates, manuals, safety obligations, emergency planning, and transition-day validity.
+  summary: Transport Canada procedures document for certification of aerodromes as airports under the current Canadian airport-certification
+    framework.
+  how_used: Specific baseline for claims about airport operating certificates, manuals, safety obligations, emergency planning,
+    and transition-day validity.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -2640,10 +2811,112 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Canadian Transportation Agency page listing Canada's air transport agreements and arrangements for international air services.
-  how_used: Baseline for claims that international routes and traffic rights depend on air-service arrangements with other jurisdictions, not unilateral Alberta policy.
+  summary: Canadian Transportation Agency page listing Canada's air transport agreements and arrangements for international
+    air services.
+  how_used: Baseline for claims that international routes and traffic rights depend on air-service arrangements with other
+    jurisdictions, not unilateral Alberta policy.
   related_topic_slugs:
   - air-transport-aviation-safety
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: csc-sentence-calculation
+  slug: csc-sentence-calculation
+  title: Corrections and Conditional Release Act — sentence administration framework
+  publisher: Justice Laws Website
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-44.6/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Official federal statute governing corrections, conditional release, sentence administration, and related federal
+    correctional responsibilities.
+  how_used: Legal baseline for sentence administration and corrections-continuity claims.
+  related_topic_slugs:
+  - federal-prisons-corrections-parole
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-corrections-act
+  slug: alberta-corrections-act
+  title: Corrections Act
+  publisher: Alberta King's Printer
+  author: Legislative Assembly of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=C29.cfm&leg_type=Acts&isbncln=9780779843220
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta statute for provincial correctional matters and correctional-services authority.
+  how_used: Provincial legal baseline for distinguishing Alberta's existing correctional authority from federal penitentiary,
+    parole, and federal sentence-administration functions.
+  related_topic_slugs:
+  - federal-prisons-corrections-parole
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-police-transition-study
+  slug: alberta-police-transition-study
+  title: Alberta Police Service transition study
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/alberta-police-service-transition-study
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta government transition-study material for a possible Alberta Police Service, relevant to design, cost, governance,
+    staffing, and implementation questions.
+  how_used: Baseline for claims that provincial policing has been studied but is not automatically operational.
+  related_topic_slugs:
+  - rcmp-provincial-policing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-police-act
+  slug: alberta-police-act
+  title: Police Act
+  publisher: Alberta King's Printer
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=P17.cfm&leg_type=Acts&isbncln=9780779842315
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta Police Act legal baseline for police services, governance, commissions, complaints, and oversight.
+  how_used: Legal baseline for claims about current Alberta policing authority and any need for statutory authority in a transition.
+  related_topic_slugs:
+  - rcmp-provincial-policing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-human-rights-act
+  slug: alberta-human-rights-act
+  title: Alberta Human Rights Act
+  publisher: Alberta King's Printer
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=A25P5.cfm&leg_type=Acts&isbncln=9780779840802
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta statute establishing human-rights protections, prohibited grounds, complaint processes, and enforcement
+    mechanisms under provincial law.
+  how_used: Statutory human-rights baseline for claims about equality, discrimination, tribunal continuity, and the need to
+    preserve or redesign enforcement after independence.
+  related_topic_slugs:
+  - charter-rights-continuity
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'

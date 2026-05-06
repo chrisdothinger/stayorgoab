@@ -10,3 +10,15 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-emergency-management-disaster-aid-2026-05-06
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated emergency-management-disaster-aid to lean v3 dossier structure; tightened disaster-response funding, DFAA replacement, Alberta emergency authority, disaster recovery, wildfire, municipal reimbursement, mutual-aid, and continuity framing.
+  checks:
+  - lean-v3-headings
+  - numbered-citations
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - secret-like-string-scan
+  result: pass

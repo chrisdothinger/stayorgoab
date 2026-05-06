@@ -1,28 +1,51 @@
 claims:
 - id: claim-firearms-laws-licensing-001
   topic_slug: firearms-laws-licensing
-  text: "Current sources show firearms licensing and regulatory baselines involving federal law, the RCMP Canadian Firearms Program, and Alberta\u2019s Chief Firearms Office; they do not settle whether an independent Alberta would keep, replace, relax, tighten, or renegotiate firearms classifications, licensing, enforcement, data systems, or import controls."
+  text: Canada's current firearms baseline includes the Firearms Act, RCMP Canadian Firearms Program administration, Criminal Code firearm offences and prohibitions, and Alberta Chief Firearms Office functions within the Canadian framework.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - firearms-act
   - rcmp-canadian-firearms-program
+  - criminal-code-canada
   - alberta-chief-firearms-office
   risk: medium
 - id: claim-firearms-laws-licensing-002
   topic_slug: firearms-laws-licensing
-  text: The strongest pro-independence case is that Alberta could write firearms policy closer to provincial priorities, rural realities, sport-shooting communities, and local accountability, instead of relying on federal policy choices that many Alberta gun owners dispute.
+  text: An independent Alberta could choose a different firearms policy direction, but licences, restricted-firearm records, authorizations, offences, prohibitions, safe-storage rules, and enforcement authority would need explicit day-one continuity rules.
   status: inference
-  source_ids: *id001
-  risk: medium
+  source_ids:
+  - firearms-act
+  - rcmp-canadian-firearms-program
+  - criminal-code-canada
+  - alberta-chief-firearms-office
+  risk: high
 - id: claim-firearms-laws-licensing-003
   topic_slug: firearms-laws-licensing
-  text: 'The strongest caution is that firearms regulation is a public-safety and cross-border enforcement system: licensing records, prohibited and restricted classifications, imports, tracing, police checks, safe storage, and mutual recognition could create safety and legal gaps if continuity were not explicit.'
+  text: The pro-independence case is strongest when it proposes continuity first and policy reform second, including draft statutes, licensing operations, data arrangements, classification tables, and public owner guidance.
   status: inference
-  source_ids: *id001
-  risk: high
+  source_ids:
+  - firearms-act
+  - rcmp-canadian-firearms-program
+  - criminal-code-canada
+  - alberta-chief-firearms-office
+  risk: medium
 - id: claim-firearms-laws-licensing-004
   topic_slug: firearms-laws-licensing
-  text: 'This topic remains uncertainty-labelled: High; firearms rules connect criminal law, licensing databases, policing, import controls, public safety, courts, and politically contested rights-and-safety claims.'
-  status: source_supported
-  source_ids: *id001
-  risk: medium
+  text: The anti-independence or pro-federation case is strongest when it identifies specific transition risks in licensing data, RCMP program functions, criminal-law provisions, police and court enforcement, imports, exports, and cross-border recognition.
+  status: inference
+  source_ids:
+  - firearms-act
+  - rcmp-canadian-firearms-program
+  - criminal-code-canada
+  - alberta-chief-firearms-office
+  risk: high
+- id: claim-firearms-laws-licensing-005
+  topic_slug: firearms-laws-licensing
+  text: Uncertainty remains high until public documents show firearms-transition legislation, administrative capacity, data access, police and court protocols, border agreements, classification proposals, and readiness review.
+  status: inference
+  source_ids:
+  - firearms-act
+  - rcmp-canadian-firearms-program
+  - criminal-code-canada
+  - alberta-chief-firearms-office
+  risk: high

@@ -3,3 +3,7 @@ entries:
   date: '2026-05-05'
   trigger: phase-2-3-manual-batch
   summary: Manual/ad-hoc content batch generated report triad and argument map for high-salience non-duplicate topic coverage.
+- id: redebate-charter-rights-continuity-2026-05-06
+  date: '2026-05-06'
+  trigger: lean-v3-batch-03-migration
+  summary: Reframed the debate around legal source, enforcement, limits and override, human-rights tribunals, Indigenous and minority-rights treatment, and the evidence needed to support rights-continuity claims.

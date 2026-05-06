@@ -20,6 +20,7 @@ claims:
   source_ids:
   - scc-secession-reference
   - constitution-act-1982-amending-procedures
+  - constitution-act-1867-federal-provincial-powers
   risk: high
 - id: claim-quebec-secession-reference-004
   topic_slug: quebec-secession-reference
@@ -27,8 +28,37 @@ claims:
   status: source_supported
   source_ids:
   - clarity-act
+  - bill-c20-legisinfo
   risk: high
 - id: claim-quebec-secession-reference-005
+  topic_slug: quebec-secession-reference
+  text: The Clarity Act does not set a fixed numerical threshold for a clear majority, while Quebec law asserts that 50% plus one valid votes expresses the right to choose Quebec's political regime and legal status.
+  status: source_supported
+  source_ids:
+  - clarity-act
+  - quebec-fundamental-rights-act
+  - elections-quebec-1995-referendum-results
+  risk: high
+- id: claim-quebec-secession-reference-006
+  topic_slug: quebec-secession-reference
+  text: Quebec's popular-consultation statutes and past referendum result explain the reference's context, but provincial referendum legislation is not the same thing as a completed constitutional amendment.
+  status: source_supported
+  source_ids:
+  - quebec-popular-consultation-act
+  - elections-quebec-1995-referendum-results
+  - scc-secession-reference
+  - constitution-act-1982-amending-procedures
+  risk: medium
+- id: claim-quebec-secession-reference-007
+  topic_slug: quebec-secession-reference
+  text: International self-determination instruments support why self-determination arguments arise, but the Supreme Court concluded international law did not give Quebec a unilateral right to secede in the circumstances before it.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - un-charter-self-determination
+  - iccpr-article-1-self-determination
+  risk: high
+- id: claim-quebec-secession-reference-008
   topic_slug: quebec-secession-reference
   text: The strongest pro-independence reading is that a clear Alberta mandate could create democratic legitimacy and negotiation pressure, while the strongest anti-independence/pro-federation reading is that lawful secession would still require negotiated constitutional change.
   status: inference
@@ -36,8 +66,9 @@ claims:
   - scc-secession-reference
   - clarity-act
   - constitution-act-1982-amending-procedures
+  - constitution-act-1867-federal-provincial-powers
   risk: high
-- id: claim-quebec-secession-reference-006
+- id: claim-quebec-secession-reference-009
   topic_slug: quebec-secession-reference
   text: Alberta-specific application remains medium-high uncertainty because no final Alberta secession question, result, clarity assessment, negotiated package, or constitutional amendment route exists in the checked source record.
   status: inference
@@ -45,4 +76,5 @@ claims:
   - scc-secession-reference
   - clarity-act
   - constitution-act-1982-amending-procedures
+  - bill-c20-legisinfo
   risk: high

@@ -1535,6 +1535,7 @@ sources:
   how_used: Baseline source for abortion-reproductive-health-rights topic.
   related_topic_slugs:
   - abortion-reproductive-health-rights
+  - healthcare-portability-doctor-licensing
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-05'
@@ -2617,6 +2618,7 @@ sources:
     treatment if Alberta became a separate state.
   related_topic_slugs:
   - borders-trade
+  - healthcare-portability-doctor-licensing
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -3012,6 +3014,860 @@ sources:
     preserve or redesign enforcement after independence.
   related_topic_slugs:
   - charter-rights-continuity
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cdic-whats-covered
+  slug: cdic-whats-covered
+  title: What's covered?
+  publisher: Canada Deposit Insurance Corporation
+  author: Canada Deposit Insurance Corporation
+  url: https://www.cdic.ca/depositors/whats-covered/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CDIC guidance on eligible deposit categories, coverage limits, and product scope.
+  how_used: Supports distinctions between insured deposits, limits, account categories, and uninsured products.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cdic-member-institutions
+  slug: cdic-member-institutions
+  title: List of members
+  publisher: Canada Deposit Insurance Corporation
+  author: Canada Deposit Insurance Corporation
+  url: https://www.cdic.ca/depositors/list-of-members/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CDIC list of member institutions whose eligible deposits are protected by CDIC.
+  how_used: Supports the claim that coverage attaches to eligible deposits at CDIC member institutions, not all financial products everywhere.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-deposit-insurance-corporation-act
+  slug: canada-deposit-insurance-corporation-act
+  title: Canada Deposit Insurance Corporation Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-3/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute establishing and governing the Canada Deposit Insurance Corporation.
+  how_used: Legal baseline for CDIC's authority and the statutory nature of federal deposit insurance.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: bank-of-canada-financial-system
+  slug: bank-of-canada-financial-system
+  title: Financial system
+  publisher: Bank of Canada
+  author: Bank of Canada
+  url: https://www.bankofcanada.ca/core-functions/financial-system/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Bank of Canada overview of its financial-system core function, including safe and efficient payments and financial stability.
+  how_used: Supports claims that deposit confidence depends on broader financial-stability infrastructure beyond insurance.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: bank-of-canada-emergency-lending-assistance
+  slug: bank-of-canada-emergency-lending-assistance
+  title: Emergency Lending Assistance
+  publisher: Bank of Canada
+  author: Bank of Canada
+  url: https://www.bankofcanada.ca/markets/market-operations-liquidity-provision/framework-market-operations-liquidity-provision/emergency-lending-assistance/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Bank of Canada framework page for emergency lending assistance to eligible financial institutions and financial market infrastructures.
+  how_used: Supports liquidity and lender-of-last-resort questions in transition risk analysis.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canadian-payments-act
+  slug: canadian-payments-act
+  title: Canadian Payments Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-21/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute governing Payments Canada and Canadian payment-system arrangements.
+  how_used: Supports payment-system access and clearing as part of deposit and banking continuity.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: bank-of-canada-financial-stability-report-2025
+  slug: bank-of-canada-financial-stability-report-2025
+  title: Financial Stability Report—2025
+  publisher: Bank of Canada
+  author: Bank of Canada
+  url: https://www.bankofcanada.ca/2025/05/financial-stability-report-2025/
+  published_at: '2025-05-08'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Bank of Canada report assessing vulnerabilities and risks to Canada's financial system.
+  how_used: Supports financial-stability framing and the importance of confidence, liquidity, and system-wide risk monitoring.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-credit-union-act
+  slug: alberta-credit-union-act
+  title: Credit Union Act
+  publisher: Alberta King's Printer
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=C32.cfm&leg_type=Acts&isbncln=9780779843003
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta statute governing credit unions and related provincial framework.
+  how_used: Supports analysis of Alberta's existing provincial credit-union legal baseline.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cipf-coverage
+  slug: cipf-coverage
+  title: About CIPF coverage
+  publisher: Canadian Investor Protection Fund
+  author: Canadian Investor Protection Fund
+  url: https://www.cipf.ca/cipf-coverage/about-cipf-coverage
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CIPF explanation of eligible client-property coverage at member investment dealers.
+  how_used: Helps distinguish deposit insurance from investment-account protection in public claims about savings.
+  related_topic_slugs:
+  - bank-deposits-financial-stability
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: bill-c20-legisinfo
+  slug: bill-c20-legisinfo
+  title: Bill C-20, An Act to give effect to the requirement for clarity as set out in the opinion of the Supreme Court of Canada in the Quebec Secession Reference
+  publisher: Parliament of Canada
+  author: Parliament of Canada
+  url: https://www.parl.ca/legisinfo/en/bill/36-2/C-20
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Parliamentary bill-history record for Bill C-20, the legislation that became the Clarity Act.
+  how_used: Legislative-history context for the federal clarity framework and the link to the Secession Reference.
+  related_topic_slugs:
+  - clarity-act
+  - legal-process
+  - quebec-secession-reference
+  - clear-question-majority
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: senate-legal-constitutional-report-bill-c20-2000
+  slug: senate-legal-constitutional-report-bill-c20-2000
+  title: Report of the Standing Senate Committee on Legal and Constitutional Affairs on Bill C-20
+  publisher: Senate of Canada
+  author: Standing Senate Committee on Legal and Constitutional Affairs
+  url: https://sencanada.ca/en/Content/Sen/committee/362/lega/rep/rep09jun00-e
+  published_at: '2000-06-29'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Senate committee report on Bill C-20 documenting parliamentary scrutiny of the clarity legislation.
+  how_used: Legislative-history support for describing the Clarity Act as a statutory implementation of the Secession Reference framework rather than a province-specific measure.
+  related_topic_slugs:
+  - clarity-act
+  - legal-process
+  - quebec-secession-reference
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: house-commons-hansard-bill-c20-2000-03-15
+  slug: house-commons-hansard-bill-c20-2000-03-15
+  title: House of Commons Debates, 36th Parliament, 2nd Session, Sitting No. 60
+  publisher: House of Commons of Canada
+  author: House of Commons of Canada
+  url: https://www.ourcommons.ca/DocumentViewer/en/36-2/house/sitting-60/hansard
+  published_at: '2000-03-15'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: House of Commons Hansard record from the parliamentary debates on Bill C-20.
+  how_used: Parliamentary context for how elected federal actors debated clarity, question wording, majority, and negotiation duties.
+  related_topic_slugs:
+  - clarity-act
+  - legal-process
+  - clear-question-majority
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: quebec-fundamental-rights-act
+  slug: quebec-fundamental-rights-act
+  title: Act respecting the exercise of the fundamental rights and prerogatives of the Quebec people and the Quebec State
+  publisher: Publications Quebec
+  author: National Assembly of Quebec
+  url: https://www.legisquebec.gouv.qc.ca/en/document/cs/E-20.2
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Quebec statute enacted in response to the federal clarity framework, asserting Quebec positions on self-determination and referendum-majority legitimacy.
+  how_used: Comparative legal context showing that federal clarity rules have been contested politically and legally, especially in Quebec.
+  related_topic_slugs:
+  - clarity-act
+  - quebec-secession-reference
+  - clear-question-majority
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-cpp-act
+  slug: canada-cpp-act
+  title: Canada Pension Plan, R.S.C., 1985, c. C-8
+  publisher: Justice Laws Website
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-8/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official consolidated Canada Pension Plan statute, including withdrawal and transfer provisions relevant to provincial CPP exit mechanics.
+  how_used: Legal baseline for CPP withdrawal authority, contribution/benefit framework, and why a statutory mechanism is not the same as a complete transition plan.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: service-canada-cpp-overview
+  slug: service-canada-cpp-overview
+  title: Canada Pension Plan
+  publisher: Government of Canada
+  author: Service Canada
+  url: https://www.canada.ca/en/services/benefits/publicpensions/cpp.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Public Government of Canada overview of CPP retirement, disability, survivor, children's, death, and post-retirement benefits.
+  how_used: Establishes the current benefit families and household-facing administrative continuity questions any Alberta transition would need to answer.
+  related_topic_slugs:
+  - cpp-pensions
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cra-cpp-contribution-rates
+  slug: cra-cpp-contribution-rates
+  title: Canada Pension Plan contribution rates, maximums and exemptions
+  publisher: Canada Revenue Agency
+  author: Government of Canada
+  url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CRA guidance on CPP contribution rates, yearly maximum pensionable earnings, additional maximum pensionable earnings, exemptions, and payroll administration.
+  how_used: Supports claims that contribution comparisons and employer payroll transition are technical administrative questions, not slogans.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: osfi-32nd-actuarial-report-cpp
+  slug: osfi-32nd-actuarial-report-cpp
+  title: Actuarial Report (32nd) on the Canada Pension Plan
+  publisher: Office of the Superintendent of Financial Institutions
+  author: Office of the Chief Actuary
+  url: https://www.osfi-bsif.gc.ca/en/oca/actuarial-reports/actuarial-report-32nd-canada-pension-plan
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Chief Actuary actuarial valuation of the Canada Pension Plan, including long-term financial projections and contribution-rate sustainability analysis.
+  how_used: Baseline for CPP sustainability, actuarial uncertainty, and why any Alberta alternative needs transparent actuarial assumptions.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cpp-investments-annual-report
+  slug: cpp-investments-annual-report
+  title: Annual Report
+  publisher: CPP Investments
+  author: Canada Pension Plan Investment Board
+  url: https://www.cppinvestments.com/the-fund/our-performance/annual-report/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CPP Investments annual-report portal describing fund performance, assets, governance reporting, and long-term investment management.
+  how_used: Supports discussion of investment governance, fund scale, performance comparisons, and the evidence burden for claiming a successor plan would invest better.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cpp-investments-mandate
+  slug: cpp-investments-mandate
+  title: Our Mandate
+  publisher: CPP Investments
+  author: Canada Pension Plan Investment Board
+  url: https://www.cppinvestments.com/about-us/our-mandate/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CPP Investments statement of its statutory mandate to invest CPP funds in the best interests of contributors and beneficiaries without undue risk of loss.
+  how_used: Baseline for comparing current arm's-length CPP investment governance with proposed Alberta governance safeguards.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-app-lifeworks-report
+  slug: alberta-app-lifeworks-report
+  title: Alberta Pension Plan Analysis of Costs, Benefits, Risks and Considerations
+  publisher: Government of Alberta Open Government
+  author: LifeWorks
+  url: https://open.alberta.ca/publications/app-analysis-lifeworks-report
+  published_at: '2023-09-21'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: mixed
+  reliability_category: expert_analysis
+  summary: Alberta-commissioned LifeWorks analysis of the possible costs, benefits, risks, and implementation considerations of an Alberta Pension Plan.
+  how_used: Main source for the pro-APP case and for identifying the assumptions, risks, and implementation questions that require scrutiny.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-pension-plan-report-page
+  slug: alberta-pension-plan-report-page
+  title: The Report
+  publisher: Understanding an Alberta Pension Plan
+  author: Government of Alberta
+  url: https://www.albertapensionplan.ca/the-report
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: mixed
+  reliability_category: primary_official
+  summary: Alberta public-engagement page presenting the Alberta Pension Plan report and the government's framing of potential provincial pension choices.
+  how_used: Source for Alberta's public-facing claims about an APP and for distinguishing official framing from settled actuarial or negotiated outcomes.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-cpp-annual-report-2024
+  slug: canada-cpp-annual-report-2024
+  title: Annual report of the Canada Pension Plan for the fiscal year ending March 31, 2024
+  publisher: Government of Canada
+  author: Employment and Social Development Canada
+  url: https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal annual report on CPP administration, benefit payments, contributions, stewardship, and operational reporting for the fiscal year ending March 31, 2024.
+  how_used: Current operating baseline for CPP administration and benefit delivery that any transition would need to preserve or replace.
+  related_topic_slugs:
+  - cpp-pensions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: employment-insurance-act
+  slug: employment-insurance-act
+  title: Employment Insurance Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/E-5.6/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute establishing Employment Insurance program authority, benefits, contributions, administration, reconsideration, and appeal framework.
+  how_used: Core legal baseline for EI continuity and replacement-authority claims in the employment-insurance-federal-benefits topic.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: employment-insurance-regulations
+  slug: employment-insurance-regulations
+  title: Employment Insurance Regulations
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-332/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal regulations supporting Employment Insurance eligibility, administration, insurable employment, benefits, records, and related implementation details.
+  how_used: Supports claims that EI continuity requires detailed regulatory and operational replacement or bridging, not only broad statutory authority.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: service-canada-ei-regular-benefits
+  slug: service-canada-ei-regular-benefits
+  title: Employment Insurance regular benefits
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/services/benefits/ei/ei-regular-benefit.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada claimant-facing page for EI regular benefits, including eligibility and application channel context.
+  how_used: Shows current federal service baseline for unemployed workers and the functions any transition or Alberta successor program would need to preserve.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: service-canada-ei-special-benefits
+  slug: service-canada-ei-special-benefits
+  title: Employment Insurance special benefits
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/services/benefits/ei/ei-special-benefits.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada claimant-facing page for EI special benefits such as sickness, maternity, parental, caregiving, and related benefit categories.
+  how_used: Expands the EI continuity analysis beyond job-loss benefits to special-benefit claimants who would also need transition protection.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: ei-monitoring-assessment-report-2023-2024
+  slug: ei-monitoring-assessment-report-2023-2024
+  title: Employment Insurance Monitoring and Assessment Report for fiscal year beginning April 1, 2023 and ending March 31, 2024
+  publisher: Employment and Social Development Canada
+  author: Employment and Social Development Canada
+  url: https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/reports/monitoring2024.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal annual monitoring report on EI program use, finances, labour-market context, and administration for 2023-2024.
+  how_used: Provides substantive program-depth evidence for the scale, monitoring, and performance questions that a successor or transition plan would need to address.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: old-age-security-act
+  slug: old-age-security-act
+  title: Old Age Security Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/O-9/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute establishing Old Age Security and related income-tested senior benefits.
+  how_used: Legal baseline for assessing whether senior income benefits would continue, require federal agreement, or require Alberta successor legislation.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: service-canada-oas-overview
+  slug: service-canada-oas-overview
+  title: 'Old Age Security: Overview'
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/services/benefits/publicpensions/cpp/old-age-security.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Canada overview page for Old Age Security benefits and service access.
+  how_used: Claimant-facing source for current federal OAS channels and senior-benefit continuity questions.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cra-canada-child-benefit
+  slug: cra-canada-child-benefit
+  title: Canada child benefit
+  publisher: Canada Revenue Agency
+  author: Canada Revenue Agency
+  url: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Canada Revenue Agency overview of the Canada child benefit and related child/family benefit administration.
+  how_used: Shows federal tax-administered family-benefit channels that would need explicit transition treatment for parents and guardians.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cra-gst-hst-credit
+  slug: cra-gst-hst-credit
+  title: GST/HST credit
+  publisher: Canada Revenue Agency
+  author: Canada Revenue Agency
+  url: https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Canada Revenue Agency overview of the GST/HST credit for low- and modest-income individuals and families.
+  how_used: Supports analysis of federal income-tested credits and payment channels beyond EI and public pensions.
+  related_topic_slugs:
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-ahcip-eligibility
+  slug: alberta-ahcip-eligibility
+  title: AHCIP eligibility
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/ahcip-eligibility
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta criteria and rules for eligibility for provincial health-care insurance coverage.
+  how_used: Supports claims about domestic continuity tasks for residents, movers, temporary absence, and eligibility files.
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-ahcip-health-services-covered
+  slug: alberta-ahcip-health-services-covered
+  title: Services covered by AHCIP
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/ahcip-health-services-covered
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta guidance on hospital, physician, optometry, dental/oral-surgery, podiatry, and other services covered or not covered by AHCIP.
+  how_used: Supports the distinction between preserving Alberta insured services and negotiating external portability.
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-ahcip-coverage-outside-alberta
+  slug: alberta-ahcip-coverage-outside-alberta
+  title: Services outside of Alberta covered by AHCIP
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/ahcip-coverage-outside-alberta
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta information on emergency and planned insured services outside Alberta and how out-of-province coverage is handled.
+  how_used: Core source for portability, reciprocal-care, referral, and pre-approval risk analysis.
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-ahcip-submit-claim
+  slug: alberta-ahcip-submit-claim
+  title: Submit a claim for insured health services
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/ahcip-submit-claim
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta instructions for submitting claims for insured health services, including documentation and reimbursement context.
+  how_used: Supports operational claims about billing, reimbursement, paperwork, and patient-facing administrative continuity.
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-ahcip-absence-from-alberta
+  slug: alberta-ahcip-absence-from-alberta
+  title: Leaving Alberta affects health care coverage
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/ahcip-absence-from-alberta
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta guidance on how temporary or permanent absence from Alberta affects AHCIP coverage.
+  how_used: Supports edge-case analysis for students, workers, snowbirds, movers, and residents away from Alberta during transition.
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-health-transfer
+  slug: canada-health-transfer
+  title: Canada Health Transfer
+  publisher: Department of Finance Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/department-finance/programs/federal-transfers/canada-health-transfer.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal description of Canada Health Transfer arrangements and their connection to provincial and territorial health care funding.
+  how_used: Supports fiscal-transition claims about replacing or renegotiating federal health funding in an independence scenario.
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cpsa-independent-practice-registration
+  slug: cpsa-independent-practice-registration
+  title: Apply for independent practice
+  publisher: College of Physicians & Surgeons of Alberta
+  author: College of Physicians & Surgeons of Alberta
+  url: https://cpsa.ca/physicians/registration/apply-to-practise/independent-practice/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: regulator
+  summary: CPSA information on independent-practice registration requirements and pathways.
+  how_used: Supports detailed claims about credential standards, practice permits, and the need to preserve comparable licensing pathways.
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cihi-national-health-expenditure-trends
+  slug: cihi-national-health-expenditure-trends
+  title: National Health Expenditure Trends
+  publisher: Canadian Institute for Health Information
+  author: Canadian Institute for Health Information
+  url: https://www.cihi.ca/en/national-health-expenditure-trends
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: other
+  stance: neutral
+  reliability_category: data_official
+  summary: CIHI national health spending data and trend reporting.
+  how_used: Supports claims that health coverage continuity is fiscally large and must be budgeted, not merely promised.
+  related_topic_slugs:
+  - healthcare-portability-doctor-licensing
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: constitution-act-1867-federal-provincial-powers
+  slug: constitution-act-1867-federal-provincial-powers
+  title: Constitution Act, 1867 — Distribution of Legislative Powers
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of the United Kingdom
+  url: https://laws-lois.justice.gc.ca/eng/const/page-1.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Primary constitutional text setting federal and provincial institutions and division-of-powers context relevant to why secession cannot be accomplished by ordinary provincial law alone.
+  how_used: Supports claims that Confederation is a constitutional order involving federal and provincial actors, not only a single provincial electorate.
+  related_topic_slugs:
+  - quebec-secession-reference
+  - legal-process
+  - clarity-act
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: quebec-popular-consultation-act
+  slug: quebec-popular-consultation-act
+  title: Popular Consultation Act
+  publisher: LégisQuébec
+  author: National Assembly of Québec
+  url: https://www.legisquebec.gouv.qc.ca/en/document/cs/C-64.1
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Quebec law governing referendums and popular consultations in Quebec.
+  how_used: Supports narrow Quebec-reference context for referendum mechanics while distinguishing a consultative provincial vote from completed constitutional secession.
+  related_topic_slugs:
+  - quebec-secession-reference
+  - referendum-mechanics
+  - clarity-act
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: elections-quebec-1995-referendum-results
+  slug: elections-quebec-1995-referendum-results
+  title: 1995 referendum on Québec's accession to sovereignty
+  publisher: Élections Québec
+  author: Élections Québec
+  url: https://www.electionsquebec.qc.ca/en/results-and-statistics/1995-referendum-on-quebecs-accession-to-sovereignty/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official referendum results page for the 1995 Quebec sovereignty referendum.
+  how_used: Context source for why clear-question and clear-majority disputes mattered after the close 1995 vote.
+  related_topic_slugs:
+  - quebec-secession-reference
+  - clear-question-majority
+  - referendum-ballot-2026
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: un-charter-self-determination
+  slug: un-charter-self-determination
+  title: Charter of the United Nations — Full Text
+  publisher: United Nations
+  author: United Nations
+  url: https://www.un.org/en/about-us/un-charter/full-text
+  published_at: '1945-06-26'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Primary international-law instrument referring to equal rights and self-determination of peoples.
+  how_used: Provides international-law context for self-determination arguments, read through the Supreme Court's conclusion that international law did not give Quebec a unilateral secession right in the circumstances before it.
+  related_topic_slugs:
+  - quebec-secession-reference
+  - legal-process
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: iccpr-article-1-self-determination
+  slug: iccpr-article-1-self-determination
+  title: International Covenant on Civil and Political Rights
+  publisher: United Nations Treaty Series
+  author: United Nations
+  url: https://treaties.un.org/doc/Publication/UNTS/Volume%20999/volume-999-I-14668-English.pdf
+  published_at: '1966-12-16'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Treaty text whose Article 1 recognizes the right of peoples to self-determination.
+  how_used: Provides international-law context for self-determination claims while relying on the Secession Reference for the Canadian-law conclusion about unilateral provincial secession.
+  related_topic_slugs:
+  - quebec-secession-reference
+  - legal-process
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'

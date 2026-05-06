@@ -1,4 +1,9 @@
 entries:
+- id: redebate-cpp-pensions-2026-05-06-pr27-source-depth
+  date: '2026-05-06'
+  trigger: pr27-source-depth
+  summary: >-
+    Rebalanced the cpp-pensions debate after adding source depth. Pro now emphasizes Alberta control, statutory CPP-withdrawal footing, and the APP report while avoiding guaranteed savings. Anti now emphasizes CPP's operating benefit, payroll, actuarial, investment, and reporting baseline. Neutral applies practical readiness tests for benefits, accrued rights, transfer calculation, payroll administration, governance, and independence negotiation.
 - id: redebate-cpp-pensions-2026-05-06-v3-source-refresh
   date: '2026-05-06'
   trigger: v3-source-refresh

@@ -22,3 +22,15 @@ entries:
   - raw-source-id-citation-check
   - audit-safe-public-wording
   result: pass
+- id: audit-healthcare-portability-doctor-licensing-2026-05-06-source-depth-pr27
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent
+  summary: Expanded source depth from 3 to 12 topic sources and strengthened pro, anti, and neutral reports around AHCIP eligibility, covered services, claims, absence rules, out-of-province care, federal health transfers, CPSA registration, labour mobility, and health expenditure data.
+  checks:
+  - v3-lean-headings
+  - source-depth-10-plus
+  - source-support
+  - stance-balance
+  - numbered-source-list-matches-topic-sources
+  - public-safe-agent-metadata
+  result: pass

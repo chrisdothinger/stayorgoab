@@ -20,3 +20,15 @@ entries:
   - required-lean-v3-headings
   - live-url-check
   result: pass
+- id: audit-quebec-secession-reference-2026-05-06-source-depth-pr27
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent
+  summary: Reinforced source depth from 3 to 10 topic sources, adding constitutional, parliamentary, Quebec statutory, referendum-result, and international-law context while preserving the Supreme Court/Clarity Act baseline.
+  checks:
+  - source-support
+  - stance-balance
+  - numbered-citations-match-sources
+  - lean-v3-format
+  - public-safe-agent-metadata
+  - proposed-global-source-registry-written
+  result: pass

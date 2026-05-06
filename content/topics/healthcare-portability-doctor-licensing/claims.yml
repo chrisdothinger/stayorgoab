@@ -1,49 +1,88 @@
 claims:
 - id: claim-healthcare-portability-doctor-licensing-001
   topic_slug: healthcare-portability-doctor-licensing
-  text: Alberta currently administers the Alberta Health Care Insurance Plan for eligible residents, including registration, account updates, health cards, and information about insured services in Alberta, Canada, and outside Canada.
+  text: Alberta currently administers AHCIP for eligible residents and publishes resident-facing rules for registration, eligibility, covered services, claims, absences, and services outside Alberta.
   status: source_supported
   source_ids:
   - alberta-health-care-insurance-plan
+  - alberta-ahcip-eligibility
+  - alberta-ahcip-health-services-covered
+  - alberta-ahcip-submit-claim
+  - alberta-ahcip-absence-from-alberta
+  - alberta-ahcip-coverage-outside-alberta
   risk: low
 - id: claim-healthcare-portability-doctor-licensing-002
   topic_slug: healthcare-portability-doctor-licensing
-  text: The Canada Health Act is the current federal legal baseline for provincial insured-health-service criteria, including public administration, comprehensiveness, universality, portability, and accessibility.
+  text: The Canada Health Act is the current federal baseline for insured-health-service criteria, including public administration, comprehensiveness, universality, portability, and accessibility, and it links these criteria to federal cash contributions.
   status: source_supported
   source_ids:
   - canada-health-act
+  - canada-health-transfer
   risk: low
 - id: claim-healthcare-portability-doctor-licensing-003
   topic_slug: healthcare-portability-doctor-licensing
-  text: Physician registration in Alberta is handled through the College of Physicians & Surgeons of Alberta, making domestic practice-permit continuity a provincial-regulator question before it is an international-recognition question.
+  text: "Alberta's current medical-licensing baseline is provincial/regulatory: the College of Physicians & Surgeons of Alberta handles physician registration and publishes independent-practice registration pathways."
   status: source_supported
   source_ids:
   - cpsa-registration
+  - cpsa-independent-practice-registration
   risk: low
 - id: claim-healthcare-portability-doctor-licensing-004
   topic_slug: healthcare-portability-doctor-licensing
-  text: Alberta could preserve much of its domestic health-coverage and physician-registration machinery through provincial continuity law, but out-of-province care, reciprocal billing, and external credential recognition would require agreements beyond Alberta's unilateral control.
-  status: inference
+  text: Current Alberta materials distinguish between domestic Alberta coverage, coverage outside Alberta, claim submission, and coverage consequences of absence from Alberta, so a transition plan would need to map multiple patient categories rather than issue a single coverage promise.
+  status: source_supported
   source_ids:
-  - canada-health-act
-  - alberta-health-care-insurance-plan
-  - cpsa-registration
-  risk: high
+  - alberta-ahcip-health-services-covered
+  - alberta-ahcip-coverage-outside-alberta
+  - alberta-ahcip-submit-claim
+  - alberta-ahcip-absence-from-alberta
+  risk: low
 - id: claim-healthcare-portability-doctor-licensing-005
   topic_slug: healthcare-portability-doctor-licensing
-  text: The strongest pro-independence assessment improves if Alberta publishes enforceable health-continuity legislation, reciprocal-care agreements, regulator-recognition documents, and a transition budget before any effective separation date.
+  text: Domestic continuity is more within Alberta's unilateral reach than external portability because Alberta can preserve AHCIP-style administration and CPSA-style registration, while out-of-province care and cross-border billing require other governments and providers to cooperate.
   status: inference
   source_ids:
-  - canada-health-act
   - alberta-health-care-insurance-plan
+  - alberta-ahcip-coverage-outside-alberta
   - cpsa-registration
+  - canada-health-act
   risk: medium
 - id: claim-healthcare-portability-doctor-licensing-006
   topic_slug: healthcare-portability-doctor-licensing
-  text: The strongest anti-independence assessment is that patients and doctors should not rely on healthcare portability, out-of-province billing, or labour mobility until replacement agreements are signed, funded, and operationally tested.
+  text: Physician mobility risk is distinct from day-one practice-permit continuity because existing Canadian labour-mobility arrangements and regulator confidence would need to be preserved or replaced for easy cross-border movement.
+  status: inference
+  source_ids:
+  - cpsa-registration
+  - cpsa-independent-practice-registration
+  - canadian-free-trade-agreement
+  risk: medium
+- id: claim-healthcare-portability-doctor-licensing-007
+  topic_slug: healthcare-portability-doctor-licensing
+  text: Health-system continuity needs a fiscal plan because Canadian public health spending is large and recurrent, and federal health transfers are part of the current provincial health-funding environment.
+  status: inference
+  source_ids:
+  - canada-health-transfer
+  - cihi-national-health-expenditure-trends
+  risk: medium
+- id: claim-healthcare-portability-doctor-licensing-008
+  topic_slug: healthcare-portability-doctor-licensing
+  text: The strongest pro-independence version is plausible only if Alberta publishes enforceable continuity law, replacement funding, reciprocal-care agreements, and regulator-recognition documents before any effective separation date.
+  status: inference
+  source_ids:
+  - alberta-health-care-insurance-plan
+  - alberta-ahcip-coverage-outside-alberta
+  - cpsa-registration
+  - canada-health-transfer
+  - canadian-free-trade-agreement
+  risk: high
+- id: claim-healthcare-portability-doctor-licensing-009
+  topic_slug: healthcare-portability-doctor-licensing
+  text: The strongest anti-independence version is that patients and physicians should not rely on portability, reciprocal billing, or labour mobility until replacement agreements are signed, funded, and operationally tested.
   status: inference
   source_ids:
   - canada-health-act
-  - alberta-health-care-insurance-plan
-  - cpsa-registration
+  - alberta-ahcip-coverage-outside-alberta
+  - alberta-ahcip-submit-claim
+  - cpsa-independent-practice-registration
+  - canadian-free-trade-agreement
   risk: high

@@ -7,3 +7,7 @@ entries:
   date: '2026-05-06'
   trigger: lean-v3-migration
   summary: Re-debated the topic around the narrow Secession Reference holding; strengthened pro-independence, anti-independence/pro-federation, and synthesis/mediator sections while preserving source-backed uncertainty labels.
+- id: redebate-quebec-secession-reference-2026-05-06-source-depth-pr27
+  date: '2026-05-06'
+  trigger: source-depth-pr27
+  summary: Re-debated pro, anti, and neutral positions after adding official constitutional, parliamentary, Quebec-law, referendum-result, and international self-determination sources; kept the conclusion that a clear vote matters but unilateral independence is unavailable.

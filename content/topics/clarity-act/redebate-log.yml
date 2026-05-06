@@ -7,3 +7,7 @@ entries:
   date: '2026-05-06'
   trigger: lean-v3-migration
   summary: Reframed the dossier around the public veto question, separating the federal clarity threshold from constitutional amendment and negotiation requirements.
+- id: redebate-clarity-act-2026-05-06-source-depth-pr27
+  date: '2026-05-06'
+  trigger: source-depth-reinforcement
+  summary: Re-tested pro, anti, and neutral arguments against 11 sources; sharpened the distinction among provincial referendum mechanics, federal clarity review, constitutional amendment, and rights-constrained implementation.

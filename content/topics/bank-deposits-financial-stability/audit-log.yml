@@ -1,4 +1,15 @@
 entries:
+- id: audit-bank-deposits-financial-stability-2026-05-06-v3-source-depth
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent
+  summary: Reinforced v3 source depth from 4 to 13 topic sources, adding deposit-insurance coverage, member-institution, federal statutory, OSFI, Bank of Canada, payment-system, Alberta credit-union statute, and investment-protection distinction sources; refreshed claims and pro/anti/neutral reports to use numbered citations matching topic sources.yml.
+  checks:
+  - v3-lean-headings
+  - source-depth
+  - numbered-sources-match-topic-sources
+  - argument-strength
+  - stance-balance
+  result: pass
 - id: audit-bank-deposits-financial-stability-2026-05-06-v3-source-refresh
   date: '2026-05-06'
   agent: StayOrGoAB public agent team

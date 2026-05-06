@@ -46,11 +46,11 @@ topics:
   public_question: Would Albertans keep CPP benefits, or move to a new pension system?
   category: Pensions, benefits, and household income
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
   migration_priority: flagship
   score_total: 25
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -289,11 +289,11 @@ topics:
   public_question: How much, if anything, would Albertans save from ending federal equalization and other transfers?
   category: Equalization and federal transfers
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
   migration_priority: flagship
   score_total: 25
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -378,11 +378,11 @@ topics:
     stability?
   category: Currency, banking, and monetary stability
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -667,11 +667,11 @@ topics:
   public_question: Would Albertans keep Employment Insurance and federal income benefits?
   category: Federal benefits and income supports
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
   migration_priority: flagship
   score_total: 25
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -888,11 +888,11 @@ topics:
   public_question: Would Alberta health coverage, doctor licensing, and out-of-province care still work?
   category: Healthcare coverage, portability, and professional licensing
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
   migration_priority: flagship
   score_total: 25
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -932,11 +932,11 @@ topics:
   public_question: Would bank deposits, credit-union savings, and financial backstops still be protected?
   category: Bank deposits, credit unions, and financial stability
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
   migration_priority: flagship
   score_total: 25
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source

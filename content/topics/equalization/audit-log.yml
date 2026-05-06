@@ -10,3 +10,16 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-equalization-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Refreshed equalization dossier to v3 lean heading standard, added direct Department of Finance Canada equalization
+    and major-transfer sources, and tightened the public answer around category separation rather than automatic household
+    savings.
+  checks:
+  - v3-lean-headings
+  - source-refresh
+  - source-id-numbered-sources
+  - no-raw-source-id-body-citations
+  - report-length
+  result: pass

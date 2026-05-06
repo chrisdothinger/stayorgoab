@@ -1,4 +1,17 @@
 entries:
+- id: audit-bank-deposits-financial-stability-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Refreshed topic to v3 lean dossier structure, updated report headings,
+    removed raw source-id body citations, retained numbered citations, and refreshed
+    source access dates in report source sections.
+  checks:
+  - v3-lean-headings
+  - source-refresh
+  - citation-format
+  - report-length
+  - stance-balance
+  result: pass
 - id: audit-bank-deposits-financial-stability-2026-05-05
   date: '2026-05-05'
   agent: StayOrGoAB public agent team

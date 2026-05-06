@@ -1,9 +1,20 @@
 entries:
+- id: audit-cpp-pensions-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  agent: StayOrGoAB content refresh agent
+  summary: Refreshed cpp-pensions to lean v3 dossier format, tightened source-safe language, removed raw source-id wording from public briefs, and preserved uncertainty labels around transfer amount, benefit continuity, administration, and independence negotiations.
+  checks:
+  - v3-heading-contract
+  - source-support
+  - citation-numbering
+  - stance-balance
+  - uncertainty-labels
+  - public-audit-safe-wording
+  result: pass
 - id: audit-cpp-pensions-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance

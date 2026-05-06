@@ -1,4 +1,9 @@
 entries:
+- id: redebate-cpp-pensions-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  trigger: v3-source-refresh
+  summary: >-
+    Reframed the debate into serious pro, anti, and neutral briefs. Pro emphasizes Alberta control and the CPP-withdrawal anchor; anti emphasizes household-security and transition proof; neutral preserves both insights and applies practical readiness tests.
 - id: redebate-cpp-pensions-2026-05-04
   date: '2026-05-04'
   trigger: full-topic-expansion

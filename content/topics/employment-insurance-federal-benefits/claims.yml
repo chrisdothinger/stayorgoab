@@ -1,37 +1,36 @@
 claims:
 - id: claim-employment-insurance-federal-benefits-001
   topic_slug: employment-insurance-federal-benefits
-  text: Current public records show federal employment and benefit systems alongside
-    Alberta income-support programs, but they do not establish whether EI, federal
-    benefits, eligibility rules, contribution funding, or service delivery would continue
-    unchanged after independence.
+  text: "Current sources establish that Albertans now interact with federal employment/social-development and benefits systems alongside Alberta income support; they do not establish post-independence continuity terms for EI or federal income benefits."
   status: source_supported
-  source_ids: &id001
+  source_ids: &topic_sources
   - employment-social-development-canada
   - service-canada-benefits
   - alberta-income-support
   risk: medium
 - id: claim-employment-insurance-federal-benefits-002
   topic_slug: employment-insurance-federal-benefits
-  text: The strongest pro case is that alberta could try to design income-security
-    programs and labour-market supports around provincial conditions and integrate
-    them with provincial service delivery.
+  text: "The strongest pro-independence case is conditional: Alberta could seek negotiated continuity and legislate funded successor programs before any federal benefit access changed."
   status: inference
-  source_ids: *id001
+  source_ids: *topic_sources
   risk: medium
 - id: claim-employment-insurance-federal-benefits-003
   topic_slug: employment-insurance-federal-benefits
-  text: The strongest caution is that workers and households could face uncertainty
-    if EI, federal benefits, appeals, records, contribution histories, or payment
-    systems changed before replacement agreements and administration were ready.
+  text: "The strongest anti-independence / pro-federation case is that benefit continuity requires binding agreements, funding, records, service capacity, and appeal protections before claimants can safely rely on it."
   status: inference
-  source_ids: *id001
+  source_ids: *topic_sources
   risk: medium
 - id: claim-employment-insurance-federal-benefits-004
   topic_slug: employment-insurance-federal-benefits
-  text: 'This topic remains uncertainty-labelled: Medium; benefit eligibility, funding,
-    contribution records, payment continuity, appeal rights, service delivery, and
-    replacement program design remain conditional on future decisions and evidence.'
+  text: "Alberta's existing income-support program is relevant evidence of provincial benefit administration, but it is not evidence that Alberta already replaces the full federal EI and income-benefit system."
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - service-canada-benefits
+  - alberta-income-support
+  risk: medium
+- id: claim-employment-insurance-federal-benefits-005
+  topic_slug: employment-insurance-federal-benefits
+  text: "The practical test for this topic is a program-by-program continuity plan covering payment authority, eligibility records, applications, pending claims, appeals, data sharing, funding, and fallback payments."
+  status: inference
+  source_ids: *topic_sources
   risk: medium

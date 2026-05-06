@@ -1,4 +1,14 @@
 entries:
+- id: redebate-bank-deposits-financial-stability-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  summary: Reframed pro, anti, and neutral briefs around the v3 lean dossier standard,
+    emphasizing continuity agreements, legal authority, supervision, credit-union
+    guarantees, payment operations, and financial-stability backstops.
+  stances:
+  - pro_independence
+  - anti_independence_or_pro_federation
+  - neutral_mediator
+  result: complete
 - id: redebate-bank-deposits-financial-stability-2026-05-05
   date: '2026-05-05'
   summary: Initial public pro/anti/neutral dossier debate pass completed for this

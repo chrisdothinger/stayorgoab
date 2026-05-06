@@ -1,33 +1,52 @@
 claims:
 - id: claim-currency-banking-001
   topic_slug: currency-banking
-  text: Currency options could include Canadian-dollar use, a new currency, a currency board, or another arrangement, but
-    no option should be presented as automatic or cost-free.
-  status: source_supported
+  text: Alberta could try to keep using the Canadian dollar after independence, but Canadian-dollar use would not automatically preserve Canadian monetary-policy control or federal banking backstops.
+  status: inference
   source_ids:
   - scc-secession-reference
   - clarity-act
+  - bank-act
+  - cdic-main
+  - osfi-who-we-regulate
   risk: high
 - id: claim-currency-banking-002
   topic_slug: currency-banking
-  text: 'The strongest pro case is flexibility: Alberta could choose the monetary setup that best supports trade, investment,
-    and fiscal autonomy.'
+  text: A Canadian-dollar transition could reduce transaction disruption for households and firms, but would trade off monetary autonomy unless Canada agreed to a formal monetary arrangement.
   status: inference
-  source_ids: &id001
+  source_ids:
   - scc-secession-reference
   - clarity-act
   - alberta-budget-documents-2026
   risk: high
 - id: claim-currency-banking-003
   topic_slug: currency-banking
-  text: The strongest caution is uncertainty around lender confidence, central-bank access, deposit insurance, payments, regulation,
-    and financial-system continuity.
-  status: inference
-  source_ids: *id001
+  text: Banking stability in an independence transition would depend on deposit insurance, prudential supervision, payment-system continuity, bank-resolution rules, lender-of-last-resort access, and credible fiscal backing.
+  status: source_supported
+  source_ids:
+  - bank-act
+  - cdic-main
+  - osfi-who-we-regulate
+  - alberta-credit-union-deposit-guarantee
+  - alberta-budget-documents-2026
   risk: high
 - id: claim-currency-banking-004
   topic_slug: currency-banking
-  text: 'This topic remains uncertainty-labelled: High; monetary and banking choices carry major financial assumptions.'
+  text: The current legal-process baseline supports negotiation after a clear democratic expression, not automatic continuation of federal monetary, banking, or deposit-insurance institutions.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-currency-banking-005
+  topic_slug: currency-banking
+  text: This topic remains high-uncertainty because no checked source provides a binding Alberta independence transition plan for currency, central-bank access, or banking backstops.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - bank-act
+  - cdic-main
+  - osfi-who-we-regulate
+  - alberta-credit-union-deposit-guarantee
   risk: high

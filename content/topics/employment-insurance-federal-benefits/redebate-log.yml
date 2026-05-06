@@ -4,3 +4,7 @@ entries:
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic
     coverage.
+- id: redebate-employment-insurance-federal-benefits-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  trigger: v3-source-refresh
+  summary: Rebuilt the overview and briefs around the strongest conditional pro-continuity case, strongest anti-continuity-risk case, and mediator synthesis using the current official source pack.

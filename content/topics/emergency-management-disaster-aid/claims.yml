@@ -1,28 +1,43 @@
 claims:
 - id: claim-emergency-management-disaster-aid-001
   topic_slug: emergency-management-disaster-aid
-  text: Current public records show federal emergency-management and disaster-financial-assistance roles alongside Alberta emergency-management responsibilities, but they do not establish how command structures, recovery funding, mutual aid, alerts, or federal-provincial support would operate after independence.
+  text: Today, emergency management is a layered system involving Public Safety Canada federal coordination, federal Disaster Financial Assistance Arrangements, Alberta emergency management, Alberta emergency law, Alberta disaster recovery programs, Alberta wildfire operations, and municipal emergency roles.
   status: source_supported
-  source_ids: &id001
+  source_ids: &emergency_sources
   - public-safety-canada-emergency-management
   - public-safety-dfaa
   - alberta-emergency-management
+  - alberta-emergency-management-act
+  - alberta-disaster-recovery-programs
+  - alberta-wildfire
+  - alberta-municipalities-and-emergencies
   risk: medium
 - id: claim-emergency-management-disaster-aid-002
   topic_slug: emergency-management-disaster-aid
-  text: The strongest pro case is that alberta could seek emergency-management arrangements tailored to provincial hazards, local command structures, and faster recovery decisions.
+  text: Independence would require Alberta to fund the emergency and disaster-aid functions it controls and either replace or negotiate continuity for federal disaster assistance, federal emergency support, and cross-border coordination.
   status: inference
-  source_ids: *id001
+  source_ids: *emergency_sources
   risk: medium
 - id: claim-emergency-management-disaster-aid-003
   topic_slug: emergency-management-disaster-aid
-  text: The strongest caution is that residents and municipalities could face transition risk if disaster funding, mutual aid, federal support, alerting systems, or response roles were unclear during fires, floods, severe weather, or other emergencies.
+  text: The strongest pro-independence case is that Alberta already has emergency-management, wildfire, recovery-program, legal, and municipal-response baselines that could be expanded into an Alberta-funded system if budgets and agreements were public.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - alberta-emergency-management
+  - alberta-emergency-management-act
+  - alberta-disaster-recovery-programs
+  - alberta-wildfire
+  - alberta-municipalities-and-emergencies
   risk: medium
 - id: claim-emergency-management-disaster-aid-004
   topic_slug: emergency-management-disaster-aid
-  text: 'This topic remains uncertainty-labelled: Medium; command structures, disaster-recovery funding, mutual aid, federal support replacement, emergency alerts, staffing, equipment, and continuity during fires, floods, severe weather, and other emergencies remain conditional on future decisions and evidence.'
+  text: The strongest anti-independence or pro-federation caution is that large disasters can require federal cost sharing, surge capacity, municipal reimbursement, and intergovernmental coordination that current sources do not guarantee for an independent Alberta.
+  status: inference
+  source_ids: *emergency_sources
+  risk: medium
+- id: claim-emergency-management-disaster-aid-005
+  topic_slug: emergency-management-disaster-aid
+  text: The main uncertainty is who pays first, who reimburses whom, what replaces DFAA if it no longer applies, and which agreements preserve emergency support, wildfire surge capacity, municipal recovery, alerts, evacuations, and cross-border coordination.
   status: source_supported
-  source_ids: *id001
+  source_ids: *emergency_sources
   risk: medium

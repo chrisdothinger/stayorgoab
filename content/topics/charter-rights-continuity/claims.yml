@@ -1,28 +1,36 @@
 claims:
 - id: claim-charter-rights-continuity-001
   topic_slug: charter-rights-continuity
-  text: Current legal sources show that the Canadian Charter is part of Canada’s constitutional order and that Alberta also has a provincial Bill of Rights, but they do not settle what rights instrument, court structure, remedies, limitation clause, override power, or transition rule an independent Alberta would adopt.
+  text: The Canadian Charter applies to Alberta today as part of Canada's constitutional order, while Alberta also has provincial rights and human-rights statutes.
   status: source_supported
-  source_ids: &id001
+  source_ids: &charter_rights_sources
   - canadian-charter-rights
   - alberta-bill-of-rights
+  - alberta-human-rights-act
   - scc-secession-reference
-  risk: high
+  - clarity-act
+  risk: medium
 - id: claim-charter-rights-continuity-002
   topic_slug: charter-rights-continuity
-  text: the strongest pro-independence case is that Alberta could entrench a rights framework intentionally, preserve familiar protections by legislation or constitution, and tailor institutions while making continuity a negotiated condition.
+  text: An independent Alberta would need a new legal source for Charter-style rights continuity, including transition law, constitutional or statutory rights text, enforceable remedies, and courts with review powers.
   status: inference
-  source_ids: *id001
-  risk: medium
+  source_ids: *charter_rights_sources
+  risk: high
 - id: claim-charter-rights-continuity-003
   topic_slug: charter-rights-continuity
-  text: 'the strongest caution is that Charter continuity is not something voters should assume from slogans: rights, remedies, courts, Indigenous constitutional protections, equality guarantees, language rights, and override rules would need legally binding transition design.'
+  text: The strongest pro-independence case is that Alberta could entrench familiar civil liberties in its own constitution or transition statutes and design rights institutions deliberately.
   status: inference
-  source_ids: *id001
-  risk: high
+  source_ids: *charter_rights_sources
+  risk: medium
 - id: claim-charter-rights-continuity-004
   topic_slug: charter-rights-continuity
-  text: 'This topic remains uncertainty-labelled: High; rights continuity would depend on constitutional negotiations, any new Alberta constitutional text, transitional legislation, courts, treaty and Indigenous rights treatment, and recognition by Canada and other governments.'
+  text: The strongest anti-independence / pro-federation case is that Charter rights, remedies, equality protections, language rights, Indigenous constitutional protections, and override rules should not be treated as continuing automatically without binding legal text and negotiated arrangements.
+  status: inference
+  source_ids: *charter_rights_sources
+  risk: high
+- id: claim-charter-rights-continuity-005
+  topic_slug: charter-rights-continuity
+  text: 'This topic remains uncertainty-labelled: high, because rights continuity would depend on constitutional negotiations, Alberta constitutional drafting, transition legislation, courts, tribunal design, Indigenous and minority-rights treatment, and recognition by Canada and other governments.'
   status: source_supported
-  source_ids: *id001
+  source_ids: *charter_rights_sources
   risk: high

@@ -1,42 +1,58 @@
 claims:
 - id: claim-federal-prisons-corrections-parole-001
   topic_slug: federal-prisons-corrections-parole
-  text: Current sources show federal baselines for penitentiaries, federal corrections, conditional
-    release, and parole plus Alberta baselines for provincial correctional and remand centres;
-    they do not settle what would happen to federal inmates located in Alberta, federal correctional
-    staff, parole files, victims services, records, or interjurisdictional custody agreements
-    after independence.
+  text: Federal corrections, federal conditional release, parole decision-making, and Alberta provincial correctional centres are currently split across Canadian federal institutions, federal law, and Alberta correctional systems rather than controlled by Alberta alone.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - correctional-service-canada
   - corrections-conditional-release-act
   - parole-board-canada
   - alberta-adult-correctional-remand-centres
-  risk: medium
+  - alberta-corrections-act
+  risk: high
 - id: claim-federal-prisons-corrections-parole-002
   topic_slug: federal-prisons-corrections-parole
-  text: The strongest pro-independence case is that Alberta could create a corrections and
-    parole system accountable to Alberta voters, align sentencing administration with local
-    public-safety priorities, and negotiate orderly transfer or service agreements for institutions,
-    staff, records, and supervision.
+  text: Alberta independence would not by itself settle custody authority, parole-board authority, sentence administration, inmate transfer arrangements, records, victims services, staff status, or supervision for federal offenders in or connected to Alberta.
   status: inference
-  source_ids: *id001
-  risk: medium
+  source_ids:
+  - correctional-service-canada
+  - corrections-conditional-release-act
+  - parole-board-canada
+  - csc-sentence-calculation
+  - alberta-corrections-act
+  risk: high
 - id: claim-federal-prisons-corrections-parole-003
   topic_slug: federal-prisons-corrections-parole
-  text: 'The strongest caution is that custody and parole cannot tolerate ambiguity: inmates,
-    victims, staff, communities, courts, police, and parole officers need lawful authority,
-    secure facilities, records access, transport arrangements, and supervision systems on
-    day one.'
+  text: The strongest pro-independence case is that Alberta could legislate and negotiate a corrections and parole transition that preserves custody continuity while creating an Alberta-accountable system for facilities, parole, sentence administration, transfers, and community supervision.
   status: inference
-  source_ids: *id001
-  risk: high
+  source_ids:
+  - correctional-service-canada
+  - corrections-conditional-release-act
+  - parole-board-canada
+  - alberta-adult-correctional-remand-centres
+  - csc-sentence-calculation
+  - alberta-corrections-act
+  risk: medium
 - id: claim-federal-prisons-corrections-parole-004
   topic_slug: federal-prisons-corrections-parole
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on negotiated transfer
-    terms, federal and Alberta correctional statutes, court orders, staffing and union arrangements,
-    facility ownership, records transfer, parole-board continuity, victim notification, Indigenous
-    inmates’ rights, and public-safety operations.'
+  text: The strongest anti-independence caution is that corrections and parole require continuous lawful authority, accurate sentence records, secure facilities, trained staff, transport powers, victim notification, and community supervision, so any transition gap would be a serious public-safety and rights risk.
+  status: inference
+  source_ids:
+  - correctional-service-canada
+  - corrections-conditional-release-act
+  - parole-board-canada
+  - csc-sentence-calculation
+  - alberta-corrections-act
+  risk: high
+- id: claim-federal-prisons-corrections-parole-005
+  topic_slug: federal-prisons-corrections-parole
+  text: This topic remains high-uncertainty because the checked record does not contain binding Canada-Alberta terms assigning federal inmates, federal institutions, parole files, sentence calculations, transfer powers, or community-supervision duties after an independence transition.
   status: source_supported
-  source_ids: *id001
-  risk: medium
+  source_ids:
+  - correctional-service-canada
+  - corrections-conditional-release-act
+  - parole-board-canada
+  - alberta-adult-correctional-remand-centres
+  - csc-sentence-calculation
+  - alberta-corrections-act
+  risk: high

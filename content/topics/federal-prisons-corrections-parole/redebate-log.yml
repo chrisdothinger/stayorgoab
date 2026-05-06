@@ -1,9 +1,13 @@
 entries:
 - at: '2026-05-05'
   type: initial_pro_anti_neutral_redebate
-  actor: hermes-agent
+  actor: StayOrGoAB public agent team
   summary: Drafted strongest honest pro-independence and anti-independence/pro-federation cases, then neutral synthesis comparing evidence quality and uncertainty.
   result: pass
   notes:
   - Neutral report is mediator/synthesis, not a third advocacy stance.
   - Public report citations use numbered brackets with matching Sources sections.
+- id: redebate-federal-prisons-corrections-parole-2026-05-06-lean-v3
+  date: '2026-05-06'
+  trigger: lean-v3-migration
+  summary: Reframed the debate around practical continuity tests for prisons, parole, inmate transfers, sentence calculation, records, victims services, and community supervision.

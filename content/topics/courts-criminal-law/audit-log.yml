@@ -9,3 +9,15 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-courts-criminal-law-2026-05-06-lean-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated courts-criminal-law to lean v3 dossier structure; tightened criminal-law authority, Alberta prosecution, court-continuity, appeal, custody, rights-protection, and Canada-facing cooperation framing.
+  checks:
+  - lean-v3-headings
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - citation-format
+  - global-source-registry
+  result: pass

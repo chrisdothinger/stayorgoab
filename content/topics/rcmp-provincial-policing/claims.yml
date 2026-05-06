@@ -1,28 +1,49 @@
 claims:
 - id: claim-rcmp-provincial-policing-001
   topic_slug: rcmp-provincial-policing
-  text: Current sources show Alberta already manages important policing policy and oversight functions while RCMP contract policing and municipal/Indigenous policing arrangements remain part of the current system; they do not establish what police service, contracts, costs, labour arrangements, databases, labs, or mutual-aid rules would apply after independence.
+  text: Alberta currently has provincial policing responsibilities and an Alberta Police Act framework, while RCMP contract policing remains an important part of service delivery in many Alberta communities.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - alberta-policing
-  - rcmp-alberta
   - rcmp-contract-policing
+  - rcmp-alberta
+  - alberta-police-act
   risk: medium
 - id: claim-rcmp-provincial-policing-002
   topic_slug: rcmp-provincial-policing
-  text: alberta could argue that independence would let it design policing around provincial priorities, rural response times, local accountability, and a single public-safety strategy instead of relying as heavily on federal RCMP arrangements.
-  status: inference
-  source_ids: *id001
+  text: Alberta has examined a possible Alberta Police Service transition, but the study material does not by itself prove a ready independence-era police service, final staffing model, or guaranteed costs.
+  status: source_supported
+  source_ids:
+  - alberta-police-transition-study
   risk: medium
 - id: claim-rcmp-provincial-policing-003
   topic_slug: rcmp-provincial-policing
-  text: 'the strongest caution is that policing is a live public-safety service: unclear contracts, staffing, training, dispatch, lab access, data-sharing, First Nations policing, and court-adjacent enforcement could create real transition risk if continuity were not guaranteed.'
+  text: A pro-independence policing case is strongest when it proposes negotiated continuity, staged implementation, local accountability, and funded service standards rather than assuming the current RCMP model automatically continues or instantly disappears.
   status: inference
-  source_ids: *id001
-  risk: high
+  source_ids:
+  - alberta-policing
+  - alberta-police-transition-study
+  - rcmp-contract-policing
+  - alberta-police-act
+  risk: medium
 - id: claim-rcmp-provincial-policing-004
   topic_slug: rcmp-provincial-policing
-  text: 'This topic remains uncertainty-labelled: Medium-high; policing is operationally sensitive, partly contractual, and tied to federal RCMP capacity, local police services, municipalities, First Nations communities, courts, labs, information systems, and transition funding.'
-  status: source_supported
-  source_ids: *id001
-  risk: medium
+  text: The main transition risk is operational continuity for emergency response, investigations, dispatch, records, labs, officer staffing, municipal policing, Indigenous policing, court support, and oversight.
+  status: inference
+  source_ids:
+  - alberta-policing
+  - rcmp-contract-policing
+  - rcmp-alberta
+  - alberta-police-act
+  risk: high
+- id: claim-rcmp-provincial-policing-005
+  topic_slug: rcmp-provincial-policing
+  text: The dossier uncertainty is medium-high until public documents show written policing agreements, budgets, staffing, data access, municipal and Indigenous arrangements, and tested readiness plans.
+  status: inference
+  source_ids:
+  - alberta-policing
+  - alberta-police-transition-study
+  - rcmp-contract-policing
+  - rcmp-alberta
+  - alberta-police-act
+  risk: high

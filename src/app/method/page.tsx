@@ -1,5 +1,11 @@
 import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
+import {
+  DOSSIER_CONTRACT_VERSION,
+  DOSSIER_NEUTRAL_SECTIONS,
+  DOSSIER_OVERVIEW_SECTIONS,
+  DOSSIER_PRO_ANTI_SECTIONS
+} from '@/lib/dossier-contract';
 import { loadOpsSnapshot } from '@/lib/ops';
 
 export const metadata = { title: 'Method / Ops' };
@@ -38,9 +44,23 @@ export default function MethodPage() {
         </div>
         <div className="status-readout">
           <article className="data-row trust-row"><span className="mono row-meta">Source first</span><strong>Claims trace to sources</strong><span>Every public claim should resolve to source records, topic claim ledgers, and visible publication state.</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Uncertainty</span><strong>Sparse is allowed</strong><span>Pages can stay partial; fake completeness is not. Unsettled legal, fiscal, Indigenous-rights, and service-continuity claims require clear uncertainty labels.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">Reader layer</span><strong>Lean dossier contract</strong><span>Current refreshed dossiers use {DOSSIER_CONTRACT_VERSION}: a short overview, pro and anti debate briefs, and a neutral mediator synthesis. Audit detail stays in claim maps, source maps, and review logs instead of repeated public sections.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">Uncertainty</span><strong>Sparse is allowed</strong><span>Pages can stay partial; fake completeness is not. Unsettled legal, fiscal, Indigenous-rights, and service-continuity claims require clear uncertainty labels close to the affected argument.</span></article>
           <article className="data-row trust-row"><span className="mono row-meta">Balance</span><strong>Neutral follows pro and anti</strong><span>Pro and anti reports steelman the strongest fair arguments current sources support. Neutral reports mediate those reports rather than inventing a third stance.</span></article>
           <article className="data-row trust-row"><span className="mono row-meta">Provenance</span><strong>Internal check</strong><span>Internal provenance check means automated public-repository validation, not government review or external assurance.</span></article>
+        </div>
+      </section>
+
+      <section className="section grid-two">
+        <div>
+          <div className="section-label mono">/ Dossier architecture</div>
+          <h2>V3 public dossier shape</h2>
+          <p className="section-copy">The public report is the reader layer. The audit layer remains visible through sources, claims, review logs, redebate logs, and generated public manifests.</p>
+        </div>
+        <div className="status-readout">
+          <article className="data-row trust-row"><span className="mono row-meta">Overview</span><strong>{DOSSIER_OVERVIEW_SECTIONS.length} sections</strong><span>{DOSSIER_OVERVIEW_SECTIONS.join(' · ')}</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">Pro / anti</span><strong>{DOSSIER_PRO_ANTI_SECTIONS.length} sections</strong><span>{DOSSIER_PRO_ANTI_SECTIONS.join(' · ')} with three to five argument pillars under the case section.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">Neutral</span><strong>{DOSSIER_NEUTRAL_SECTIONS.length} sections</strong><span>{DOSSIER_NEUTRAL_SECTIONS.join(' · ')}</span></article>
         </div>
       </section>
 

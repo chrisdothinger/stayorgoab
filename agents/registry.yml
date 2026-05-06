@@ -22,7 +22,7 @@ agents:
   - id: topic-writer
     name: "Topic Writer Agent"
     level: L3
-    purpose: "Draft neutral, pro, anti, and overview topic files when checks pass."
+    purpose: "Draft v3 lean public-reader overviews, pro/anti debate briefs, and neutral mediator syntheses when checks pass."
   - id: synthesis-auditor
     name: "Synthesis & Risk Audit Agent"
     level: L3

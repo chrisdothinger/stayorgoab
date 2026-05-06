@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import { loadRepositoryContent } from '@/lib/content';
+import { hasDeletedV3Section, hasLegacyReportContract, hasLeanReportContract } from '@/lib/dossier-contract';
+import type { ReportKind } from '@/lib/dossier-contract';
 import { validateContentModel } from '@/lib/validation';
 
 describe('content validation', () => {
@@ -56,52 +58,21 @@ describe('content validation', () => {
     );
   });
 
-  it('requires every full dossier report to have a validated public report contract and uncertainty labels', () => {
+  it('requires every full dossier report to have a validated public dossier contract', () => {
     const content = loadRepositoryContent();
-    const legacySections = [
-      '## short answer',
-      '## what current sources support',
-      '## core argument',
-      '## what is known',
-      '## what is disputed',
-      '## assumptions',
-      '## strongest evidence',
-      '## weak points',
-      '## counterarguments',
-      '## sources',
-      '## what would change this assessment',
-      '## open questions',
-      '## main uncertainty',
-      '## reader checklist'
-    ];
-    const leanProAntiSections = [
-      '## bottom line',
-      '## best objections / replies',
-      '## what would change this assessment',
-      '## sources'
-    ];
-    const leanNeutralSections = [
-      '## bottom line',
-      '## what each side gets right',
-      '## what survives both arguments',
-      '## the practical test',
-      '## what would change this assessment',
-      '## sources'
-    ];
     const incomplete = content.topics.filter((topic) => topic.state === 'full_dossier').flatMap((topic) => {
       const files = content.topicFiles[topic.slug];
-      const reports = [files.reports.neutral, files.reports.pro, files.reports.anti];
+      const reports = [files.reports.neutral, files.reports.pro, files.reports.anti] as const;
       return reports.flatMap((report, index) => {
-        const stance = ['neutral', 'pro', 'anti'][index];
+        const stance = ['neutral', 'pro', 'anti'][index] as ReportKind;
         if (!report) return [`${topic.slug}:${stance}:missing`];
         const body = report.body.toLowerCase();
-        const hasLegacyContract = legacySections.every((section) => body.includes(section));
-        const leanSections = stance === 'neutral' ? leanNeutralSections : leanProAntiSections;
-        const hasLeanContract = leanSections.every((section) => body.includes(section)) &&
-          (stance === 'neutral' ? true : /## the case in [3-5] pillars/.test(body));
+        const hasLegacyContract = hasLegacyReportContract(body);
+        const hasLeanContract = hasLeanReportContract(body, stance);
         const checks: Array<string | null> = hasLegacyContract || hasLeanContract ? [] : [
           `${topic.slug}:${stance}:report-contract`
         ];
+        checks.push(hasLeanContract && hasDeletedV3Section(body) ? `${topic.slug}:${stance}:retired-v3-section` : null);
         checks.push(body.length > 5000 ? null : `${topic.slug}:${stance}:too-short`);
         const sourceSection = report.body.split(/## sources/i)[1]?.split(/\n## /)[0] ?? '';
         checks.push(/\[[a-z][a-z0-9_-]*(?:\s*,\s*[a-z0-9_-]+)*\]/i.test(report.body.split(/## sources/i)[0] ?? '') ? `${topic.slug}:${stance}:raw-source-id-citation` : null);
@@ -119,6 +90,39 @@ describe('content validation', () => {
     });
 
     expect(incomplete).toEqual([]);
+  });
+
+  it('accepts three-to-five-pillar v3 pro/anti contracts and rejects retired v3 sections', () => {
+    const v3Base = `## Bottom line
+
+Clear answer.
+
+## The case in 3 pillars
+
+### 1. First pillar
+Argument.
+
+### 2. Second pillar
+Argument.
+
+### 3. Third pillar
+Argument.
+
+## Best objections / replies
+
+Objection and reply.
+
+## What would change this assessment
+
+New source.
+
+## Sources
+
+1. Source`;
+
+    expect(hasLeanReportContract(v3Base, 'pro')).toBe(true);
+    expect(hasDeletedV3Section(`${v3Base}\n\n## Reader checklist\n\nLegacy container.`)).toBe(true);
+    expect(hasLeanReportContract(v3Base.replace('3 pillars', '5 pillars'), 'anti')).toBe(true);
   });
 
   it('rejects a full dossier without neutral, pro, and anti reports', () => {

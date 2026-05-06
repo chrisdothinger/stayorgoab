@@ -5,6 +5,7 @@ import { loadRepositoryContent } from '@/lib/content';
 import { hasDeletedV3Section, hasLegacyReportContract, hasLeanReportContract } from '@/lib/dossier-contract';
 import type { ReportKind } from '@/lib/dossier-contract';
 import { validateContentModel } from '@/lib/validation';
+import { validateDossierMigrationManifest } from '../../scripts/validate-dossier-migration';
 import { validateTopicQuestionRegistry } from '../../scripts/validate-topic-questions';
 
 describe('content validation', () => {
@@ -40,6 +41,12 @@ describe('content validation', () => {
 
   it('validates the topic-question registry and public question format', () => {
     const result = validateTopicQuestionRegistry();
+    expect(result.ok).toBe(true);
+    expect(result.errors).toEqual([]);
+  });
+
+  it('validates the dossier migration manifest before bulk v3 rewrites', () => {
+    const result = validateDossierMigrationManifest();
     expect(result.ok).toBe(true);
     expect(result.errors).toEqual([]);
   });

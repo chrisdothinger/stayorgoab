@@ -15,7 +15,7 @@ Required posture:
 - Keep most paragraphs to 2-4 sentences.
 - Admit weak points and assumptions where they matter, inside pillars or objection/reply pairs.
 - Pair best objections with best replies instead of adding repetitive sections.
-- Keep numbered inline citations tied to claims and a matching `## Sources` section.
+- Keep numbered inline citations tied to claims and a matching `## Sources` section; citation clusters of three or more will render as expandable `Evidence: N sources` chips, so do not remove supporting sources just to reduce visual clutter.
 - End with what would change the assessment, including the main uncertainty.
 
 Required public sections:

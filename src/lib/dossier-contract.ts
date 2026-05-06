@@ -26,6 +26,12 @@ export const DOSSIER_NEUTRAL_SECTIONS = [
   '## Sources'
 ] as const;
 
+export const DOSSIER_CITATION_DISPLAY_STANDARD = [
+  '1–2 citations render as compact inline source links',
+  '3+ adjacent citations render as an expandable Evidence chip',
+  'Expanded evidence chips link to exact numbered Sources entries'
+] as const;
+
 export const LEGACY_DOSSIER_REPORT_SECTIONS = [
   '## Short answer',
   '## What current sources support',

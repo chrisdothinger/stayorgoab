@@ -1,4 +1,14 @@
 entries:
+- id: audit-legal-process-2026-05-06-evidence-chip-citations
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Updated the legal-process dossier to use the sitewide evidence-chip citation display standard for dense citation clusters while preserving numbered citations and the matching Sources section.
+  checks:
+  - evidence-chip-citations
+  - citation-numbering
+  - source-list-anchors
+  - public-audit-validation
+  result: pass
 - id: audit-legal-process-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team

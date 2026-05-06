@@ -2,9 +2,12 @@ entries:
 - id: redebate-employment-insurance-federal-benefits-2026-05-05
   date: '2026-05-05'
   trigger: full-topic-expansion
-  summary: Public agent team generated report triad and argument map for current topic
-    coverage.
+  summary: Public agent generated report triad and argument map for current topic coverage.
 - id: redebate-employment-insurance-federal-benefits-2026-05-06-v3-source-refresh
   date: '2026-05-06'
   trigger: v3-source-refresh
   summary: Rebuilt the overview and briefs around the strongest conditional pro-continuity case, strongest anti-continuity-risk case, and mediator synthesis using the current official source pack.
+- id: redebate-employment-insurance-federal-benefits-2026-05-06-pr27-depth
+  date: '2026-05-06'
+  trigger: pr27-source-depth-reinforcement
+  summary: Re-debated the topic with added EI statute/regulation, Service Canada EI pages, EI Monitoring and Assessment Report, CPP/OAS legal and service sources, and CRA child/family benefit and GST/HST credit sources. The refreshed pro case is conditional continuity by agreement and successor legislation; the anti case is operational and legal continuity risk; the neutral synthesis requires a program-by-program handoff table.

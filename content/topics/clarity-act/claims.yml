@@ -5,6 +5,7 @@ claims:
   status: source_supported
   source_ids:
   - clarity-act
+  - house-commons-canadian-parliamentary-system
   risk: high
 - id: claim-clarity-act-002
   topic_slug: clarity-act
@@ -12,6 +13,7 @@ claims:
   status: source_supported
   source_ids:
   - clarity-act
+  - bill-c20-legisinfo
   risk: high
 - id: claim-clarity-act-003
   topic_slug: clarity-act
@@ -27,6 +29,8 @@ claims:
   source_ids:
   - scc-secession-reference
   - constitution-act-1982-amending-procedures
+  - alberta-referendum-act
+  - elections-ab-referendum
   risk: high
 - id: claim-clarity-act-005
   topic_slug: clarity-act
@@ -37,4 +41,30 @@ claims:
   - scc-secession-reference
   - constitution-act-1982-amending-procedures
   - house-commons-canadian-parliamentary-system
+  - bill-c20-legisinfo
+  risk: high
+- id: claim-clarity-act-006
+  topic_slug: clarity-act
+  text: Parliamentary records for Bill C-20 support treating the Clarity Act as Parliament's statutory response to the Secession Reference, not as an Alberta-specific rule.
+  status: source_supported
+  source_ids:
+  - bill-c20-legisinfo
+  - senate-legal-constitutional-report-bill-c20-2000
+  - house-commons-hansard-bill-c20-2000-03-15
+  risk: medium
+- id: claim-clarity-act-007
+  topic_slug: clarity-act
+  text: Quebec's own fundamental-rights statute shows that the federal clarity framework has been contested, especially over democratic mandate and majority-threshold questions.
+  status: source_supported
+  source_ids:
+  - quebec-fundamental-rights-act
+  - clarity-act
+  risk: medium
+- id: claim-clarity-act-008
+  topic_slug: clarity-act
+  text: Any secession negotiation would have to address Indigenous and treaty rights; the Secession Reference and section 35 of the Constitution Act, 1982 make this a constitutional issue, not an optional implementation detail.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-charter
   risk: high

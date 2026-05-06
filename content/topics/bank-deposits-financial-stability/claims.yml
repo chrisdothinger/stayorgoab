@@ -1,42 +1,106 @@
 claims:
 - id: claim-bank-deposits-financial-stability-001
   topic_slug: bank-deposits-financial-stability
-  text: Current sources show separate federal and Alberta baselines for banks, deposit
-    insurance, prudential supervision, and credit-union deposit guarantees; they do
-    not settle whether an independent Alberta would retain CDIC coverage, create a
-    new backstop, negotiate transitional coverage, or face confidence risks during
-    a banking transition.
+  text: >-
+    Current sources establish a layered Canadian baseline: eligible deposits at
+    CDIC member institutions are protected under federal deposit-insurance law
+    and rules, federally regulated banks operate under the Bank Act and OSFI
+    supervision, payment clearing is governed through Canadian payments
+    legislation, and Alberta credit unions have a separate provincial guarantee
+    and statutory framework.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - cdic-main
+  - cdic-whats-covered
+  - cdic-member-institutions
+  - canada-deposit-insurance-corporation-act
   - bank-act
   - osfi-who-we-regulate
+  - canadian-payments-act
   - alberta-credit-union-deposit-guarantee
+  - alberta-credit-union-act
   risk: medium
 - id: claim-bank-deposits-financial-stability-002
   topic_slug: bank-deposits-financial-stability
-  text: The strongest pro-independence case is that Alberta could negotiate depositor-protection
-    continuity, preserve ordinary bank services during transition, and design credit-union
-    and financial-sector rules around provincial priorities while seeking practical
-    arrangements with Canadian institutions.
-  status: inference
-  source_ids: *id001
-  risk: medium
+  text: >-
+    Deposit insurance is only one part of financial stability; the source record
+    also points to central-bank financial-stability work, emergency lending
+    assistance, payment systems, prudential supervision, and system-wide risk
+    reporting as functions that would need continuity or credible replacement in
+    any independence transition.
+  status: source_supported
+  source_ids:
+  - cdic-whats-covered
+  - bank-of-canada-financial-system
+  - bank-of-canada-emergency-lending-assistance
+  - osfi-who-we-regulate
+  - canadian-payments-act
+  - bank-of-canada-financial-stability-report-2025
+  risk: high
 - id: claim-bank-deposits-financial-stability-003
   topic_slug: bank-deposits-financial-stability
-  text: The strongest caution is that bank confidence depends on credible legal authority,
-    supervision, lender-of-last-resort arrangements, deposit insurance, payment systems,
-    and public trust; none of those should be assumed to continue without written
-    agreements and institutional capacity.
+  text: >-
+    The strongest pro-independence case is conditional: Alberta could make
+    depositor-protection continuity a first-order negotiation item, use the
+    current Canadian and Alberta frameworks as a functional checklist, and
+    legislate or fund successor arrangements before any legal transition affected
+    account holders.
   status: inference
-  source_ids: *id001
-  risk: high
+  source_ids:
+  - cdic-main
+  - cdic-whats-covered
+  - cdic-member-institutions
+  - canada-deposit-insurance-corporation-act
+  - bank-act
+  - osfi-who-we-regulate
+  - canadian-payments-act
+  - alberta-credit-union-deposit-guarantee
+  - alberta-credit-union-act
+  risk: medium
 - id: claim-bank-deposits-financial-stability-004
   topic_slug: bank-deposits-financial-stability
-  text: 'This topic remains uncertainty-labelled: High; deposit protection and financial
-    stability depend on Canada-Alberta negotiations, federal bank law, regulator recognition,
-    payment-system access, central-bank choices, credit-union arrangements, market
-    confidence, and transition timing.'
+  text: >-
+    The strongest caution is that bank confidence depends on credible legal
+    authority, supervision, liquidity support, payment-system access, resolution
+    capacity, deposit-insurance funding, and public trust; none should be assumed
+    to continue after independence without written agreements and institutional
+    capacity.
+  status: inference
+  source_ids:
+  - canada-deposit-insurance-corporation-act
+  - bank-act
+  - osfi-who-we-regulate
+  - bank-of-canada-financial-system
+  - bank-of-canada-emergency-lending-assistance
+  - canadian-payments-act
+  - cdic-whats-covered
+  risk: high
+- id: claim-bank-deposits-financial-stability-005
+  topic_slug: bank-deposits-financial-stability
+  text: >-
+    Public claims about protecting "savings" should distinguish insured deposits
+    from uninsured or differently protected products, because CDIC and Alberta
+    credit-union coverage are category-specific and CIPF coverage is for eligible
+    client property at investment dealers, not a general bank-deposit guarantee.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - cdic-whats-covered
+  - alberta-credit-union-deposit-guarantee
+  - cipf-coverage
   risk: medium
+- id: claim-bank-deposits-financial-stability-006
+  topic_slug: bank-deposits-financial-stability
+  text: >-
+    This topic remains high-uncertainty: current sources show today’s
+    institutions and legal tools, but they do not show whether Canada, Alberta,
+    CDIC, OSFI, the Bank of Canada, Payments Canada participants, banks, or
+    credit unions would agree to a specific independence-transition model.
+  status: source_supported
+  source_ids:
+  - cdic-main
+  - bank-act
+  - osfi-who-we-regulate
+  - bank-of-canada-financial-system
+  - canadian-payments-act
+  - alberta-credit-union-deposit-guarantee
+  risk: high

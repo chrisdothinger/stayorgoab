@@ -20,3 +20,14 @@ entries:
   - no-simplistic-veto-claim
   - live-url-check
   result: pass
+- id: audit-clarity-act-2026-05-06-source-depth-pr27
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent
+  summary: Reinforced clarity-act source depth to 11 topic sources, adding parliamentary history, Alberta referendum machinery, Quebec response-law context, and Indigenous-rights constitutional constraints while preserving lean v3 reports.
+  checks:
+  - source-support
+  - stance-balance
+  - numbered-citations-match-sources
+  - public-safe-agent-metadata
+  - proposed-global-sources-written
+  result: pass

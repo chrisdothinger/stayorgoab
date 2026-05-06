@@ -1,58 +1,97 @@
 claims:
 - id: claim-cpp-pensions-001
   topic_slug: cpp-pensions
-  text: CPP withdrawal has a statutory transfer-calculation reference point under subsection 113(2), but the current topic sources do not establish a final Alberta transfer amount or agreed methodology.
+  text: CPP withdrawal has a statutory basis, including transfer provisions, but the public record does not establish a final Alberta transfer amount or an agreed methodology accepted by all affected governments.
   status: source_supported
   source_ids:
+  - canada-cpp-act
   - osfi-chief-actuary-cpp
+  - alberta-app-lifeworks-report
   risk: high
 - id: claim-cpp-pensions-002
   topic_slug: cpp-pensions
-  text: Alberta has official pension material and has treated pension-policy alternatives, including an Alberta Pension Plan discussion, as a public policy issue.
+  text: Alberta has treated an Alberta Pension Plan as an official policy option and commissioned analysis arguing that Alberta could pursue lower contributions or other advantages, but those claims depend on assumptions and implementation choices.
   status: source_supported
   source_ids:
   - alberta-pensions
-  risk: medium
+  - alberta-pension-plan-report-page
+  - alberta-app-lifeworks-report
+  risk: high
 - id: claim-cpp-pensions-003
   topic_slug: cpp-pensions
-  text: An independence-linked pension transition would add negotiation and transition questions because secession-related consequences would be shaped by constitutional principles and negotiations rather than automatic unilateral implementation.
+  text: The current CPP system covers multiple benefit streams and administrative functions, including retirement, disability, survivor, children's, death, post-retirement benefits, payroll contributions, and annual program reporting.
   status: source_supported
   source_ids:
-  - scc-secession-reference
-  risk: high
+  - service-canada-cpp-overview
+  - cra-cpp-contribution-rates
+  - canada-cpp-annual-report-2024
+  risk: medium
 - id: claim-cpp-pensions-004
   topic_slug: cpp-pensions
-  text: The strongest pro-independence pension argument is that Alberta could seek more control over plan design, contribution rules, administration, investment governance, and any asset-transfer negotiation.
-  status: inference
+  text: CPP sustainability and contribution-rate claims should be checked against Chief Actuary reporting rather than inferred only from Alberta demographics or political preference.
+  status: source_supported
   source_ids:
-  - alberta-pensions
+  - osfi-32nd-actuarial-report-cpp
   - osfi-chief-actuary-cpp
-  - scc-secession-reference
   risk: high
 - id: claim-cpp-pensions-005
   topic_slug: cpp-pensions
-  text: The strongest anti-independence or pro-federation pension argument is that pension security depends on continuity, public trust, administrative readiness, and clear legal terms that current sources do not yet settle.
-  status: inference
-  source_ids:
-  - osfi-chief-actuary-cpp
-  - alberta-pensions
-  - scc-secession-reference
-  risk: high
-- id: claim-cpp-pensions-006
-  topic_slug: cpp-pensions
-  text: Current checked-in sources do not prove that Albertans would automatically receive lower contributions, higher benefits, better investment returns, identical CPP continuity, or worse pension outcomes under a separate Alberta pension arrangement.
+  text: Investment-governance comparisons need to account for CPP Investments' statutory mandate, annual reporting, scale, and arm's-length design before claiming that a successor Alberta fund would perform better or worse.
   status: source_supported
   source_ids:
-  - osfi-chief-actuary-cpp
-  - alberta-pensions
+  - cpp-investments-mandate
+  - cpp-investments-annual-report
+  risk: medium
+- id: claim-cpp-pensions-006
+  topic_slug: cpp-pensions
+  text: An independence-linked pension transition would add constitutional negotiation questions because secession consequences would be shaped by constitutional principles and negotiations rather than automatic unilateral implementation.
+  status: source_supported
+  source_ids:
   - scc-secession-reference
+  - canada-cpp-act
   risk: high
 - id: claim-cpp-pensions-007
   topic_slug: cpp-pensions
-  text: This topic should remain high-uncertainty because ordinary CPP-withdrawal mechanics have a clearer statutory reference point than independence-related questions about benefit continuity, transfer amount, administration, portability, and negotiated terms.
+  text: The strongest pro-independence pension argument is that Alberta could seek control over contribution policy, benefit design, administration, investment governance, and asset-transfer negotiations, while using statutory CPP withdrawal provisions as a starting point.
+  status: inference
+  source_ids:
+  - alberta-pensions
+  - alberta-pension-plan-report-page
+  - alberta-app-lifeworks-report
+  - canada-cpp-act
+  - osfi-chief-actuary-cpp
+  risk: high
+- id: claim-cpp-pensions-008
+  topic_slug: cpp-pensions
+  text: The strongest anti-independence or pro-federation pension argument is that pension security depends on continuity, actuarial credibility, payroll administration, investment governance, and negotiated legal terms that current sources do not yet settle for a separate Alberta system.
+  status: inference
+  source_ids:
+  - service-canada-cpp-overview
+  - canada-cpp-annual-report-2024
+  - cra-cpp-contribution-rates
+  - osfi-32nd-actuarial-report-cpp
+  - cpp-investments-mandate
+  - scc-secession-reference
+  risk: high
+- id: claim-cpp-pensions-009
+  topic_slug: cpp-pensions
+  text: Current checked sources do not prove that Albertans would automatically receive lower contributions, higher benefits, better investment returns, identical CPP continuity, or worse pension outcomes under a separate Alberta pension arrangement.
   status: source_supported
   source_ids:
+  - alberta-app-lifeworks-report
   - osfi-chief-actuary-cpp
-  - alberta-pensions
+  - osfi-32nd-actuarial-report-cpp
+  - cpp-investments-annual-report
+  - canada-cpp-annual-report-2024
+  risk: high
+- id: claim-cpp-pensions-010
+  topic_slug: cpp-pensions
+  text: This topic should remain high-uncertainty because ordinary CPP withdrawal mechanics are more defined than independence-related questions about benefit continuity, transfer amount, administration, portability, governance, and negotiated terms.
+  status: source_supported
+  source_ids:
+  - canada-cpp-act
+  - osfi-chief-actuary-cpp
+  - service-canada-cpp-overview
+  - cra-cpp-contribution-rates
   - scc-secession-reference
   risk: high

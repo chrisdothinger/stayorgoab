@@ -1,36 +1,76 @@
 claims:
 - id: claim-employment-insurance-federal-benefits-001
   topic_slug: employment-insurance-federal-benefits
-  text: "Current sources establish that Albertans now interact with federal employment/social-development and benefits systems alongside Alberta income support; they do not establish post-independence continuity terms for EI or federal income benefits."
+  text: "EI is presently a federal statutory and regulatory program administered through federal/service channels, so Alberta independence would require legal authority and operating arrangements rather than mere political assurance for EI continuity."
+  status: source_supported
+  source_ids:
+  - employment-insurance-act
+  - employment-insurance-regulations
+  - service-canada-ei-regular-benefits
+  - service-canada-ei-special-benefits
+  - ei-monitoring-assessment-report-2023-2024
+  risk: medium
+- id: claim-employment-insurance-federal-benefits-002
+  topic_slug: employment-insurance-federal-benefits
+  text: "The current federal benefits baseline includes broad Government of Canada benefit navigation, EI, CPP, OAS, child/family benefits, and GST/HST credit channels, while Alberta income support remains a separate provincial program."
   status: source_supported
   source_ids: &topic_sources
   - employment-social-development-canada
   - service-canada-benefits
   - alberta-income-support
-  risk: medium
-- id: claim-employment-insurance-federal-benefits-002
-  topic_slug: employment-insurance-federal-benefits
-  text: "The strongest pro-independence case is conditional: Alberta could seek negotiated continuity and legislate funded successor programs before any federal benefit access changed."
-  status: inference
-  source_ids: *topic_sources
+  - employment-insurance-act
+  - employment-insurance-regulations
+  - service-canada-ei-regular-benefits
+  - service-canada-ei-special-benefits
+  - ei-monitoring-assessment-report-2023-2024
+  - canada-cpp-act
+  - service-canada-cpp-overview
+  - old-age-security-act
+  - service-canada-oas-overview
+  - cra-canada-child-benefit
+  - cra-gst-hst-credit
   risk: medium
 - id: claim-employment-insurance-federal-benefits-003
   topic_slug: employment-insurance-federal-benefits
-  text: "The strongest anti-independence / pro-federation case is that benefit continuity requires binding agreements, funding, records, service capacity, and appeal protections before claimants can safely rely on it."
+  text: "The strongest pro-independence case is conditional: Alberta could negotiate transitional service/payment continuity and enact successor income-security programs, but the source pack does not show that such agreements or replacements currently exist."
   status: inference
   source_ids: *topic_sources
   risk: medium
 - id: claim-employment-insurance-federal-benefits-004
   topic_slug: employment-insurance-federal-benefits
-  text: "Alberta's existing income-support program is relevant evidence of provincial benefit administration, but it is not evidence that Alberta already replaces the full federal EI and income-benefit system."
-  status: source_supported
-  source_ids:
-  - service-canada-benefits
-  - alberta-income-support
+  text: "The strongest anti-independence / pro-federation case is that continuity for EI and federal income benefits depends on binding agreements, statutory authority, funding, records, service capacity, payment systems, reconsideration/appeal rules, and public instructions."
+  status: inference
+  source_ids: *topic_sources
   risk: medium
 - id: claim-employment-insurance-federal-benefits-005
   topic_slug: employment-insurance-federal-benefits
-  text: "The practical test for this topic is a program-by-program continuity plan covering payment authority, eligibility records, applications, pending claims, appeals, data sharing, funding, and fallback payments."
+  text: "CPP, OAS, Canada child benefit, and GST/HST credit sources strengthen the federal-benefits side of this topic because they show multiple federal benefit families beyond EI that would need program-by-program treatment."
+  status: source_supported
+  source_ids:
+  - canada-cpp-act
+  - service-canada-cpp-overview
+  - old-age-security-act
+  - service-canada-oas-overview
+  - cra-canada-child-benefit
+  - cra-gst-hst-credit
+  risk: medium
+- id: claim-employment-insurance-federal-benefits-006
+  topic_slug: employment-insurance-federal-benefits
+  text: "Alberta's existing income-support program is evidence of provincial benefit administration, but it is not evidence that Alberta already replaces EI, CPP, OAS, child/family benefits, or federal tax-credit delivery."
+  status: source_supported
+  source_ids:
+  - alberta-income-support
+  - service-canada-benefits
+  - employment-insurance-act
+  - service-canada-ei-regular-benefits
+  - service-canada-cpp-overview
+  - service-canada-oas-overview
+  - cra-canada-child-benefit
+  - cra-gst-hst-credit
+  risk: medium
+- id: claim-employment-insurance-federal-benefits-007
+  topic_slug: employment-insurance-federal-benefits
+  text: "A responsible continuity plan should publish a program-by-program table covering payment authority, eligibility and contribution records, applications, pending claims, reconsiderations and appeals, data sharing, funding, service channels, and fallback payments."
   status: inference
   source_ids: *topic_sources
   risk: medium

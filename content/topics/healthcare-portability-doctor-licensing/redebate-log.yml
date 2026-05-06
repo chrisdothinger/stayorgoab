@@ -11,3 +11,10 @@ entries:
     Rebuilt pro, anti, and neutral arguments around enforceable continuity tests:
     domestic AHCIP/CPSA preservation versus negotiated portability, reciprocal
     billing, federal framework replacement, and physician mobility.
+- id: redebate-healthcare-portability-doctor-licensing-2026-05-06-source-depth-pr27
+  date: '2026-05-06'
+  trigger: pr27-source-depth-refresh
+  summary: >-
+    Re-debated the topic with 12 sources, separating Alberta-controlled domestic
+    continuity from external portability, federal-transfer, reciprocal-billing,
+    physician-mobility, and fiscal-capacity risks.

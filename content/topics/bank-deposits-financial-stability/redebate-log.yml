@@ -1,4 +1,12 @@
 entries:
+- id: redebate-bank-deposits-financial-stability-2026-05-06-v3-source-depth
+  date: '2026-05-06'
+  summary: Re-debated pro, anti, and neutral briefs after expanding the source base to cover CDIC coverage and members, federal deposit-insurance and bank statutes, OSFI supervision, Bank of Canada financial-stability and emergency-lending functions, Canadian payments law, Alberta credit-union law and guarantee, and CIPF product-scope distinctions.
+  stances:
+  - pro_independence
+  - anti_independence_or_pro_federation
+  - neutral_mediator
+  result: complete
 - id: redebate-bank-deposits-financial-stability-2026-05-06-v3-source-refresh
   date: '2026-05-06'
   summary: Reframed pro, anti, and neutral briefs around the v3 lean dossier standard,

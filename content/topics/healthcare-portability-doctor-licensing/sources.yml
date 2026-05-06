@@ -1,4 +1,13 @@
 source_ids:
 - canada-health-act
 - alberta-health-care-insurance-plan
+- alberta-ahcip-eligibility
+- alberta-ahcip-health-services-covered
+- alberta-ahcip-coverage-outside-alberta
+- alberta-ahcip-submit-claim
+- alberta-ahcip-absence-from-alberta
+- canada-health-transfer
 - cpsa-registration
+- cpsa-independent-practice-registration
+- canadian-free-trade-agreement
+- cihi-national-health-expenditure-trends

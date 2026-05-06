@@ -1,9 +1,8 @@
 entries:
 - id: audit-employment-insurance-federal-benefits-2026-05-05
   date: '2026-05-05'
-  agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence
-    / pro-federation reports using checked source records and uncertainty labels.
+  agent: StayOrGoAB public agent
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using checked source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
@@ -12,7 +11,7 @@ entries:
   result: pass
 - id: audit-employment-insurance-federal-benefits-2026-05-06-v3-source-refresh
   date: '2026-05-06'
-  agent: StayOrGoAB public agent team
+  agent: StayOrGoAB public agent
   summary: Refreshed topic to lean v3 dossier headings and tightened source-safe content around EI, federal income-benefit continuity, Alberta income support, transition agreements, records, funding, payments, and appeals.
   checks:
   - v3-heading-standard
@@ -20,4 +19,17 @@ entries:
   - citation-numbering
   - stance-balance
   - audit-safe-wording
+  result: pass
+- id: audit-employment-insurance-federal-benefits-2026-05-06-pr27-depth
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent
+  summary: Reinforced source depth from three baseline sources to fourteen topic sources, adding federal EI legal/service sources, EI monitoring, CPP/OAS sources, CRA child/family and GST/HST credit sources, and refreshed claims plus pro/anti/neutral arguments around program-by-program continuity.
+  checks:
+  - source-depth-10-plus
+  - primary-official-source-preference
+  - citation-numbering
+  - claim-source-alignment
+  - stance-balance
+  - lean-v3-format
+  - public-safe-agent-metadata
   result: pass

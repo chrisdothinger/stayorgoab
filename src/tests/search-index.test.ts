@@ -9,7 +9,7 @@ describe('search index', () => {
     expect(entries.some((entry) => entry.slug === 'cpp-pensions')).toBe(true);
     const cpp = entries.find((entry) => entry.slug === 'cpp-pensions');
     expect(cpp?.keywords).toContain('CPP');
-    expect(cpp?.category).toBe('CPP, pensions, and benefits');
+    expect(cpp?.category).toBe('Pensions, benefits, and household income');
 
     const source = entries.find((entry) => entry.id === 'source-elections-ab-referendum');
     expect(source?.type).toBe('source');

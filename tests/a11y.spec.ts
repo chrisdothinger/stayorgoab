@@ -31,15 +31,15 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByLabel('Dossier state')).toHaveCount(0);
   await expect(page.getByLabel('Time sensitivity')).toHaveCount(0);
   await expect(page.getByLabel('Provenance check')).toHaveCount(0);
-  await expect(page.getByRole('heading', { name: /Legal process/i })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Economy and fiscal policy/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Legal path and constitutional rules/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Economy, fiscal policy, and household impact/i })).toBeVisible();
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/full dossier/i);
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/Internal provenance check =/i);
   await expect(page.getByLabel('Questions trust metadata').getByRole('link', { name: /Public review trail/i })).toBeVisible();
 
   await page.getByLabel('Search topics').fill('CPP');
   await expect(page.getByText(/1 question shown/i)).toBeVisible();
-  await expect(page.getByRole('heading', { name: /CPP, pensions, and benefits/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Pensions, benefits, and household income/i })).toBeVisible();
   await expect(page.getByText(/Active filters/i)).toBeVisible();
   await expect(page.getByText(/Search: CPP/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /Clear filters/i })).toBeVisible();

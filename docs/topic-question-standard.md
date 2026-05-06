@@ -28,11 +28,12 @@ A topic should pass all of these before a new dossier is drafted or an existing 
 
 1. **Question form** — public title and canonical registry question end with `?`.
 2. **Single-question focus** — the dossier answers one main question, not a bundle of loosely related issues.
-3. **Uniqueness check** — the question belongs to a `question_family` and has been checked against existing topics in that family.
-4. **Score threshold** — total score is at least 16/25 unless explicitly held as an archive/research item.
-5. **Research lanes** — base, pro-source, anti-source, and mediator-dedup lanes are defined.
-6. **Source-first answerability** — credible public sources can support a fair dossier without speculation masquerading as fact.
-7. **Public value** — a normal reader can quickly understand why the question matters.
+3. **Uniqueness check** — the question belongs to a `question_family`, has a structured `overlap_review`, and has been checked against same-family and adjacent-family topics.
+4. **Boundary test** — the registry must say what this question includes and what nearby questions cover instead.
+5. **Score threshold** — total score is at least 16/25 unless explicitly held as an archive/research item.
+6. **Research lanes** — base, pro-source, anti-source, and mediator-dedup lanes are defined.
+7. **Source-first answerability** — credible public sources can support a fair dossier without speculation masquerading as fact.
+8. **Public value** — a normal reader can quickly understand why the question matters.
 
 ## Scoring rubric
 
@@ -61,6 +62,29 @@ Classification:
 | `reframe` | Keep the area, but rewrite the public question before major dossier work. |
 | `merge_candidate` | Likely overlaps another topic; resolve before migration. |
 | `split_candidate` | Too broad or bundled; split into sharper questions or choose a primary question. |
+| `cancel_duplicate` | Do not keep as a public dossier candidate because another question already covers the reader need. |
+
+## Structured overlap review
+
+Each registry entry must include `overlap_review`. The audit agent is not done just because a question is grammatical.
+
+Required checks before `decision: keep`:
+
+1. Name the closest same-family or adjacent-family topics.
+2. Say whether each nearby topic is a parent, child, sibling, duplicate, bundle, or adjacent dependency.
+3. State the boundary in plain English: **this question answers X; the nearby question answers Y**.
+4. Record the canonical slug that should survive if overlap is found.
+5. Reject boilerplate notes like “distinct enough if source depth remains strong.” That sentence is catnip for false confidence.
+6. Use reciprocal checks. If `A` says it was checked against `B`, `B` should usually say how it differs from `A`; known high-risk pairs are hard validator errors if one-way.
+7. Boundary text must be complete and explicit — no truncated fragments, and no vague “adjacent but distinct” handwaving.
+
+Example boundaries:
+
+- `currency-banking` covers currency choice, monetary policy, lender-of-last-resort risk, and banking stability. It does **not** cover passports, border inspections, or tariffs.
+- `borders-trade` covers goods, tariffs, customs costs, rules of origin, trucking, rail, pipelines, and market access. It does **not** cover citizenship or aviation safety.
+- `border-enforcement-customs` survives only as a state-capacity question about a CBSA-like inspection/enforcement function.
+- `courts-criminal-law` covers laws, courts, judges, prosecutions, appeals, and active cases. `federal-prisons-corrections-parole` covers custody, parole, transfers, staff, facilities, and sentence administration.
+- `energy-environment` now asks whether resources are actually unlocked; `environmental-assessment-pipeline-approvals` asks who approves major projects and whether process timelines get faster.
 
 ## Research hardening workflow
 
@@ -77,14 +101,20 @@ Before adding or refreshing a topic:
 
 ## Deduplication rules
 
-Do not keep two topics just because the slugs differ. Keep separate topics only when they answer different reader questions.
+Do not keep two topics just because the slugs differ. Keep separate topics only when they answer different reader questions and the boundary is recorded in `overlap_review`.
 
-Examples:
+Current hard boundaries and required reciprocal checks:
 
-- `referendum-mechanics` and `petition-vs-referendum-vs-negotiations` overlap. The second should likely merge into the first unless it becomes a sharply distinct explainer.
-- `indigenous-rights-treaties` and `indigenous-treaties` overlap. Keep only if one focuses on broad rights/land/consultation and the other answers a narrower consent question.
-- `economy-fiscal` and `economy-overall` overlap. Keep both only if one focuses on government budget/debt/taxes and the other on household/investment/macroeconomic effects.
-- `borders-currency-citizenship` is a bundle. It should not be refreshed as one mega-topic if stronger single-question dossiers exist for borders, currency, citizenship, and mobility.
+- Retire subject bundles. The old borders/currency/citizenship bundle is replaced by a landlocked-corridors question; currency, citizenship, border agency, and goods-trade questions are separate.
+- The landlocked-corridors topic must be checked against currency, citizenship/mobility, goods-trade, border-agency capacity, resource-market access, and major-project approvals.
+- `referendum-mechanics` covers petition/referendum process; the post-referendum negotiation question covers what Canada and Alberta would have to settle after a successful vote.
+- `economy-fiscal` is the macro dashboard; the old duplicate overall-economy slot is replaced by a U.S.-alignment question.
+- Equalization, federal debt/assets, tax collection, and the macro-economy question must be kept separate: savings/transfer flows, settlement balance sheet, revenue machinery, and overall household/fiscal outcome.
+- `indigenous-rights-treaties` covers broad rights, land, treaties, and consultation; the narrower Indigenous-sovereignty question asks whether First Nations could remain tied to Canada or require separate agreements.
+- `borders-trade`, `border-enforcement-customs`, `immigration-passports-mobility`, and `air-transport-aviation-safety` must not all re-answer “will people be able to travel?” Each has a narrower boundary.
+- `courts-criminal-law`, `rcmp-provincial-policing`, and `federal-prisons-corrections-parole` are separate only if court/prosecution, policing, and sentence/custody administration stay clearly separated.
+- `energy-environment` asks whether resources are actually unlocked; `environmental-assessment-pipeline-approvals` asks who approves projects and whether permitting gets faster.
+- U.S. alignment must be checked against international recognition and defence/security so the question stays about partnership trade-offs, not generic diplomacy or military replacement.
 
 ## Relationship to dossier v3
 

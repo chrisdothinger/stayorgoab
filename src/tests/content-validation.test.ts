@@ -56,9 +56,9 @@ describe('content validation', () => {
     );
   });
 
-  it('requires every full dossier report to have the full report contract and uncertainty labels', () => {
+  it('requires every full dossier report to have a validated public report contract and uncertainty labels', () => {
     const content = loadRepositoryContent();
-    const requiredSections = [
+    const legacySections = [
       '## short answer',
       '## what current sources support',
       '## core argument',
@@ -74,6 +74,20 @@ describe('content validation', () => {
       '## main uncertainty',
       '## reader checklist'
     ];
+    const leanProAntiSections = [
+      '## bottom line',
+      '## best objections / replies',
+      '## what would change this assessment',
+      '## sources'
+    ];
+    const leanNeutralSections = [
+      '## bottom line',
+      '## what each side gets right',
+      '## what survives both arguments',
+      '## the practical test',
+      '## what would change this assessment',
+      '## sources'
+    ];
     const incomplete = content.topics.filter((topic) => topic.state === 'full_dossier').flatMap((topic) => {
       const files = content.topicFiles[topic.slug];
       const reports = [files.reports.neutral, files.reports.pro, files.reports.anti];
@@ -81,7 +95,13 @@ describe('content validation', () => {
         const stance = ['neutral', 'pro', 'anti'][index];
         if (!report) return [`${topic.slug}:${stance}:missing`];
         const body = report.body.toLowerCase();
-        const checks = requiredSections.map((section) => body.includes(section) ? null : `${topic.slug}:${stance}:${section.replace('## ', '').replace(/ /g, '-')}`);
+        const hasLegacyContract = legacySections.every((section) => body.includes(section));
+        const leanSections = stance === 'neutral' ? leanNeutralSections : leanProAntiSections;
+        const hasLeanContract = leanSections.every((section) => body.includes(section)) &&
+          (stance === 'neutral' ? true : /## the case in [3-5] pillars/.test(body));
+        const checks: Array<string | null> = hasLegacyContract || hasLeanContract ? [] : [
+          `${topic.slug}:${stance}:report-contract`
+        ];
         checks.push(body.length > 5000 ? null : `${topic.slug}:${stance}:too-short`);
         const sourceSection = report.body.split(/## sources/i)[1]?.split(/\n## /)[0] ?? '';
         checks.push(/\[[a-z][a-z0-9_-]*(?:\s*,\s*[a-z0-9_-]+)*\]/i.test(report.body.split(/## sources/i)[0] ?? '') ? `${topic.slug}:${stance}:raw-source-id-citation` : null);

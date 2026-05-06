@@ -85,7 +85,7 @@ test('report section navigation is collapsible on mobile and does not overlay co
   await expect(sectionNav).toHaveJSProperty('open', false);
   await page.evaluate(() => window.scrollTo(0, 1200));
   const navBox = await sectionNav.boundingBox();
-  const headingBox = await page.getByRole('heading', { name: /What current sources support/i }).boundingBox();
+  const headingBox = await page.getByRole('heading', { name: /What each side gets right/i }).boundingBox();
   expect(navBox && headingBox ? navBox.y + navBox.height <= headingBox.y || navBox.y >= headingBox.y + headingBox.height : true).toBeTruthy();
 });
 
@@ -96,16 +96,16 @@ test('full dossier report pages show steelman and neutral mediator structure', a
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Claims', exact: true })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Weak points/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /What each side gets right/i })).toBeVisible();
   await expect(page.getByRole('heading', { name: /What would change this assessment/i })).toBeVisible();
 
   await page.goto('/questions/legal-process/pro/');
   await expect(page.getByText(/strongest fair pro-independence argument/i)).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Counterarguments/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Best objections \/ replies/i })).toBeVisible();
 
   await page.goto('/questions/legal-process/anti/');
   await expect(page.getByText(/strongest fair anti-independence/i)).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Counterarguments/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Best objections \/ replies/i })).toBeVisible();
 });
 
 test('shared page trust layer remains on supporting public trust surfaces', async ({ page }) => {

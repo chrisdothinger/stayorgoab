@@ -1,33 +1,40 @@
 claims:
 - id: claim-clarity-act-001
   topic_slug: clarity-act
-  text: The Clarity Act gives the House of Commons a role in assessing whether a referendum question and result are clear
-    enough before Canada enters secession negotiations.
+  text: The Clarity Act gives the House of Commons a federal gatekeeping role before the Government of Canada enters negotiations on provincial secession.
   status: source_supported
   source_ids:
   - clarity-act
-  - scc-secession-reference
   risk: high
 - id: claim-clarity-act-002
   topic_slug: clarity-act
-  text: A pro-independence strategy would try to satisfy the Act with a direct question and a decisive result, making refusal
-    to negotiate politically harder.
-  status: inference
-  source_ids: &id001
+  text: The Clarity Act does not set a fixed percentage threshold for a clear majority; it directs the House of Commons to consider the size of the majority, turnout, and other relevant matters.
+  status: source_supported
+  source_ids:
   - clarity-act
-  - scc-secession-reference
   risk: high
 - id: claim-clarity-act-003
   topic_slug: clarity-act
-  text: A pro-federation strategy would stress that ambiguity, narrow support, or unclear consequences give federal actors
-    grounds to reject automatic negotiations.
-  status: inference
-  source_ids: *id001
+  text: The Supreme Court rejected unilateral provincial secession under Canadian law but said a clear majority on a clear question would create a duty for constitutional actors to negotiate.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
   risk: high
 - id: claim-clarity-act-004
   topic_slug: clarity-act
-  text: 'This topic remains uncertainty-labelled: High for Alberta-specific application; lower for the existence of the federal
-    clarity framework.'
+  text: Lawful secession would require constitutional amendment procedures and negotiation; neither a provincial referendum nor a House of Commons clarity finding would be self-executing independence.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-amending-procedures
+  risk: high
+- id: claim-clarity-act-005
+  topic_slug: clarity-act
+  text: Calling the Clarity Act an Ottawa veto is imprecise because the Act is a federal threshold for negotiations, while final secession would depend on broader constitutional amendment and negotiation steps.
+  status: inference
+  source_ids:
+  - clarity-act
+  - scc-secession-reference
+  - constitution-act-1982-amending-procedures
+  - house-commons-canadian-parliamentary-system
   risk: high

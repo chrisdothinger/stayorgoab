@@ -3,3 +3,7 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-petition-vs-referendum-vs-negotiations-v3-2026-05-06
+  date: '2026-05-06'
+  trigger: lean-v3-migration
+  summary: Re-debated the topic as petition versus referendum versus post-referendum negotiations, with emphasis on constitutional clarity, negotiated transition files, and anti-overclaim safeguards.

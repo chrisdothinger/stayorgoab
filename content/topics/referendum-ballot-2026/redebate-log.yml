@@ -1,5 +1,8 @@
 entries:
-- id: redebate-referendum-ballot-2026-2026-05-04
-  date: '2026-05-04'
-  trigger: full-topic-expansion
-  summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-referendum-ballot-2026-2026-05-06
+  date: '2026-05-06'
+  trigger: lean-v3-migration
+  summary: Reframed the debate around the distinction between an issued citizen initiative petition, current official petition
+    status, formal placement of a question on a 2026 referendum ballot, and the non-self-executing legal consequences of any yes vote.
+    The strongest pro-independence case is mandate-building through a verified petition and clear ballot; the strongest anti-independence
+    / pro-federation case is that current official records do not yet prove final ballot status or implementation.

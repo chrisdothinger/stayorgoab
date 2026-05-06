@@ -1,12 +1,16 @@
 entries:
-- id: audit-referendum-ballot-2026-2026-05-04
-  date: '2026-05-04'
+- id: audit-referendum-ballot-2026-2026-05-06
+  date: '2026-05-06'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Migrated referendum-ballot-2026 to lean v3 briefs, focusing on what official sources show about the independence
+    initiative petition, current petition status, referendum process, and unresolved 2026 ballot status.
   checks:
-  - source-support
-  - stance-balance
-  - uncertainty-labels
-  - no-external-audit-wording
+  - lean-v3-headings
+  - report-contract
+  - numbered-citations-match-sources
+  - official-url-live-check
+  - source-metadata-date-consistency
+  - neutral-mediator-language
+  - no-private-assistant-names
+  - no-manifest-change
   result: pass

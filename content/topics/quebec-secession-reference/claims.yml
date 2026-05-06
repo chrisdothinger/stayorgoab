@@ -1,33 +1,48 @@
 claims:
 - id: claim-quebec-secession-reference-001
   topic_slug: quebec-secession-reference
-  text: The Supreme Court rejected unilateral provincial secession while recognizing that a clear democratic expression for
-    secession would create a duty to negotiate within the constitutional order.
+  text: The Supreme Court rejected unilateral provincial secession under Canadian constitutional law.
   status: source_supported
   source_ids:
   - scc-secession-reference
-  - clarity-act
   risk: high
 - id: claim-quebec-secession-reference-002
   topic_slug: quebec-secession-reference
-  text: 'The strongest pro case points to democratic legitimacy: a clear Alberta vote could not be ignored and would create
-    pressure for good-faith negotiations.'
-  status: inference
-  source_ids: &id001
+  text: The Supreme Court said a clear majority on a clear secession question would create a duty for constitutional actors to negotiate constitutional change.
+  status: source_supported
+  source_ids:
   - scc-secession-reference
-  - clarity-act
   risk: high
 - id: claim-quebec-secession-reference-003
   topic_slug: quebec-secession-reference
-  text: 'The strongest pro-federation case points to constraint: the Reference does not let a province leave on its own or
-    dictate terms to Canada.'
-  status: inference
-  source_ids: *id001
+  text: A clear referendum result would not be self-executing independence and would not let a province dictate final secession terms unilaterally.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-amending-procedures
   risk: high
 - id: claim-quebec-secession-reference-004
   topic_slug: quebec-secession-reference
-  text: 'This topic remains uncertainty-labelled: Medium; the core holding is sourceable, but Alberta-specific implications
-    remain contested.'
+  text: The Clarity Act gives the House of Commons a federal gatekeeping role on whether a secession question and result are clear before the Government of Canada enters negotiations.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - clarity-act
+  risk: high
+- id: claim-quebec-secession-reference-005
+  topic_slug: quebec-secession-reference
+  text: The strongest pro-independence reading is that a clear Alberta mandate could create democratic legitimacy and negotiation pressure, while the strongest anti-independence/pro-federation reading is that lawful secession would still require negotiated constitutional change.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - constitution-act-1982-amending-procedures
+  risk: high
+- id: claim-quebec-secession-reference-006
+  topic_slug: quebec-secession-reference
+  text: Alberta-specific application remains medium-high uncertainty because no final Alberta secession question, result, clarity assessment, negotiated package, or constitutional amendment route exists in the checked source record.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - constitution-act-1982-amending-procedures
   risk: high

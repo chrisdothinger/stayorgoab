@@ -2,11 +2,21 @@ entries:
 - id: audit-clarity-act-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
+  result: pass
+- id: audit-clarity-act-2026-05-06-lean-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated clarity-act dossier to lean v3 style; replaced generic batch text with precise Clarity Act, Secession Reference, constitutional amendment, and House of Commons role analysis.
+  checks:
+  - source-support
+  - stance-balance
+  - numbered-citations-match-sources
+  - no-simplistic-veto-claim
+  - live-url-check
   result: pass

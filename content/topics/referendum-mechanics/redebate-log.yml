@@ -3,3 +3,9 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-referendum-mechanics-2026-05-06
+  date: '2026-05-06'
+  trigger: lean-v3-migration
+  summary: Reframed the debate around the distinction between petition mechanics, referendum administration, and downstream
+    constitutional consequences. Strongest pro case is democratic-mandate building; strongest anti case is that process compliance
+    does not settle secession implementation.

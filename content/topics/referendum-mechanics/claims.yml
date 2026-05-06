@@ -1,38 +1,59 @@
 claims:
 - id: claim-referendum-mechanics-001
   topic_slug: referendum-mechanics
-  text: Petitions, referendum administration, ballot rules, and official timelines are procedural. They can open democratic
-    decision points but do not resolve legal independence outcomes by themselves.
+  text: Alberta's citizen initiative process can be used for legislative proposals, policy proposals, or constitutional referendum
+    proposals, but the petition stage is distinct from a later referendum vote.
+  status: source_supported
+  source_ids:
+  - elections-ab-initiative-process
+  - alberta-citizen-initiative-act
+  risk: high
+- id: claim-referendum-mechanics-002
+  topic_slug: referendum-mechanics
+  text: Elections Alberta issued the 2026 Alberta independence citizen initiative petition on January 2, 2026, with a published
+    question asking whether Alberta should cease to be part of Canada and become an independent state.
+  status: source_supported
+  source_ids:
+  - elections-ab-new-citizen-initiative-2026-01-02
+  risk: high
+- id: claim-referendum-mechanics-003
+  topic_slug: referendum-mechanics
+  text: Elections Alberta listed the independence petition threshold as 177,732 signatures, equal to 10% of votes cast in the
+    2023 provincial general election, with a collection period ending May 2, 2026.
   status: source_supported
   source_ids:
   - elections-ab-new-citizen-initiative-2026-01-02
   - elections-ab-current-petitions
   risk: high
-- id: claim-referendum-mechanics-002
+- id: claim-referendum-mechanics-004
   topic_slug: referendum-mechanics
-  text: 'The strongest pro case is procedural legitimacy: collecting signatures and winning a referendum could show democratic
-    demand for negotiations.'
+  text: Alberta referendums are administered under the Referendum Act and related election rules, generally asking electors to
+    answer a yes/no question.
+  status: source_supported
+  source_ids:
+  - elections-ab-referendum
+  - alberta-referendum-act
+  risk: high
+- id: claim-referendum-mechanics-005
+  topic_slug: referendum-mechanics
+  text: A successful Alberta petition or referendum could create democratic pressure or a negotiating mandate, but it would not
+    by itself settle federal, constitutional, Indigenous-rights, transition, or recognition issues for independence.
   status: inference
-  source_ids: &id001
-  - elections-ab-new-citizen-initiative-2026-01-02
-  - elections-ab-current-petitions
+  source_ids:
   - elections-ab-initiative-process
+  - elections-ab-referendum
+  - alberta-citizen-initiative-act
+  - alberta-referendum-act
+  risk: high
+- id: claim-referendum-mechanics-006
+  topic_slug: referendum-mechanics
+  text: The 2026 petition and referendum mechanics are time-sensitive because official petition status, verification, litigation,
+    Orders in Council, and ballot wording can change the practical answer.
+  status: source_supported
+  source_ids:
+  - elections-ab-current-petitions
   - elections-ab-referendum
   - alberta-referendum-2026
   - elections-ab-bill-23-2026-04-29
   - globalnews-court-pauses-verification-2026-04-12
-  risk: high
-- id: claim-referendum-mechanics-003
-  topic_slug: referendum-mechanics
-  text: The strongest caution is that process compliance is not the same as constitutional success; timing, wording, litigation,
-    and post-vote negotiations still matter.
-  status: inference
-  source_ids: *id001
-  risk: high
-- id: claim-referendum-mechanics-004
-  topic_slug: referendum-mechanics
-  text: 'This topic remains uncertainty-labelled: Medium; process sources are strong, but dates, litigation, and official
-    pages are time-sensitive.'
-  status: source_supported
-  source_ids: *id001
   risk: high

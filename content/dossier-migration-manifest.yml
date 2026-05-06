@@ -1,7 +1,8 @@
 version: 2026-05-06-dossier-migration-control-v1
 standard: v3-lean-with-evidence-chip-citations
 source_registry: content/topic-question-registry.yml
-batch_size_target: 5-7 dossiers per PR; smaller for high-sensitivity Indigenous/treaty batches
+batch_size_target: 5-7 dossiers per PR; smaller for high-sensitivity Indigenous/treaty
+  batches
 statuses:
 - legacy_refresh_needed
 - in_refresh
@@ -39,7 +40,8 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: cpp-pensions
@@ -61,11 +63,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: indigenous-rights-treaties
-  public_question: How would Indigenous rights, treaties, land, and consultation affect Alberta independence?
+  public_question: How would Indigenous rights, treaties, land, and consultation affect
+    Alberta independence?
   category: Indigenous rights, treaties, land, and consent
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -83,11 +87,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: economy-fiscal
-  public_question: Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition costs?
+  public_question: Would independence make Alberta richer or poorer after taxes, transfers,
+    debt, trade, and transition costs?
   category: Economy, fiscal policy, and household impact
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -105,18 +111,19 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: referendum-mechanics
   public_question: How would Alberta’s petition and referendum process actually work?
   category: Democracy, petitions, and referendum mechanics
   question_decision: keep
-  migration_status: legacy_refresh_needed
-  migration_batch: batch-03-democratic-legal-process
+  migration_status: v3_complete
+  migration_batch: batch-04-referendum-secession-law
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -127,11 +134,15 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: pending-batch-04
+  last_migrated_at: '2026-05-06'
 - slug: borders-currency-citizenship
-  public_question: How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
+  public_question: How would a landlocked Alberta move goods through Canadian, U.S.,
+    and overseas routes after independence?
   category: Landlocked access, export corridors, and logistics
   question_decision: keep
   migration_status: v3_complete
@@ -149,20 +160,23 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   validation_status: passed_local
-  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source,
+    claim, audit, and redebate artifacts.
 - slug: petition-vs-referendum-vs-negotiations
-  public_question: What would negotiations with Canada actually have to settle after a successful Alberta referendum?
+  public_question: What would negotiations with Canada actually have to settle after
+    a successful Alberta referendum?
   category: Post-referendum negotiations and settlement terms
   question_decision: keep
-  migration_status: legacy_refresh_needed
-  migration_batch: batch-03-democratic-legal-process
+  migration_status: v3_complete
+  migration_batch: batch-04-referendum-secession-law
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -173,18 +187,21 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: pending-batch-04
+  last_migrated_at: '2026-05-06'
 - slug: clarity-act
   public_question: Does the Clarity Act give Ottawa a veto over Alberta independence?
   category: Legal path and constitutional rules
   question_decision: keep
-  migration_status: legacy_refresh_needed
-  migration_batch: batch-03-democratic-legal-process
+  migration_status: v3_complete
+  migration_batch: batch-04-referendum-secession-law
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -195,18 +212,21 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: pending-batch-04
+  last_migrated_at: '2026-05-06'
 - slug: quebec-secession-reference
   public_question: What did the Supreme Court actually say about unilateral secession?
   category: Legal path and constitutional rules
   question_decision: keep
-  migration_status: legacy_refresh_needed
-  migration_batch: batch-03-democratic-legal-process
+  migration_status: v3_complete
+  migration_batch: batch-04-referendum-secession-law
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -217,18 +237,22 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: pending-batch-04
+  last_migrated_at: '2026-05-06'
 - slug: clear-question-majority
-  public_question: Who decides whether Alberta’s referendum question and result are clear enough?
+  public_question: Who decides whether Alberta’s referendum question and result are
+    clear enough?
   category: Legal path and constitutional rules
   question_decision: keep
-  migration_status: legacy_refresh_needed
-  migration_batch: batch-03-democratic-legal-process
+  migration_status: v3_complete
+  migration_batch: batch-04-referendum-secession-law
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -239,18 +263,22 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: pending-batch-04
+  last_migrated_at: '2026-05-06'
 - slug: referendum-ballot-2026
-  public_question: What is known, and not known, about a possible 2026 Alberta referendum ballot?
+  public_question: What is known, and not known, about a possible 2026 Alberta referendum
+    ballot?
   category: Current referendum status and ballot timing
   question_decision: keep
-  migration_status: legacy_refresh_needed
-  migration_batch: batch-03-democratic-legal-process
+  migration_status: v3_complete
+  migration_batch: batch-04-referendum-secession-law
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -261,12 +289,15 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: pending-batch-04
+  last_migrated_at: '2026-05-06'
 - slug: economy-overall
-  public_question: Would an independent Alberta align more closely with the United States, and what would that mean for trade,
-    defence, energy, and sovereignty?
+  public_question: Would an independent Alberta align more closely with the United
+    States, and what would that mean for trade, defence, energy, and sovereignty?
   category: United States partnerships, trade, defence, energy, and sovereignty
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -284,11 +315,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: equalization
-  public_question: How much, if anything, would Albertans save from ending federal equalization and other transfers?
+  public_question: How much, if anything, would Albertans save from ending federal
+    equalization and other transfers?
   category: Equalization and federal transfers
   question_decision: keep
   migration_status: v3_complete
@@ -306,11 +339,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: federal-debt-assets
-  public_question: How much federal debt would Alberta inherit, and what assets could it claim?
+  public_question: How much federal debt would Alberta inherit, and what assets could
+    it claim?
   category: Debt, assets, and fiscal settlement
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -328,11 +363,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: indigenous-treaties
-  public_question: Could First Nations remain tied to Canada or require separate agreements if Alberta tried to separate?
+  public_question: Could First Nations remain tied to Canada or require separate agreements
+    if Alberta tried to separate?
   category: First Nations jurisdiction, treaty relationships, and consent
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -350,11 +387,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: military-security
-  public_question: Who would defend Alberta, and what alliances or security arrangements would replace Canada’s?
+  public_question: Who would defend Alberta, and what alliances or security arrangements
+    would replace Canada’s?
   category: Defence, security, and foreign affairs
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -372,12 +411,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: currency-banking
-  public_question: Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking
-    stability?
+  public_question: Could Alberta keep using the Canadian dollar, and what would that
+    mean for monetary policy and banking stability?
   category: Currency, banking, and monetary stability
   question_decision: keep
   migration_status: v3_complete
@@ -395,12 +435,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: borders-trade
-  public_question: Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from
-    Alberta?
+  public_question: Would independence create tariffs, customs costs, or market-access
+    barriers for goods moving to and from Alberta?
   category: Borders, tariffs, customs, and trade
   question_decision: keep
   migration_status: v3_complete
@@ -418,13 +459,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   validation_status: passed_local
-  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source,
+    claim, audit, and redebate artifacts.
 - slug: public-services
-  public_question: Which services would face the highest interruption risk in the first year after independence?
+  public_question: Which services would face the highest interruption risk in the
+    first year after independence?
   category: Transition continuity and service interruption risk
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -442,12 +486,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: energy-environment
-  public_question: Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental rules,
-    and export routes still constrain development?
+  public_question: Would Alberta’s resources be unlocked faster, or would markets,
+    Indigenous rights, environmental rules, and export routes still constrain development?
   category: Resource development, permitting, markets, and constraints
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -465,11 +510,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: bureaucracy-governance
-  public_question: What new national institutions would Alberta need on day one, and which could be phased in later?
+  public_question: What new national institutions would Alberta need on day one, and
+    which could be phased in later?
   category: State capacity and public institutions
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -487,11 +534,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: international-recognition
-  public_question: Would other countries recognize an independent Alberta, and what conditions might they attach?
+  public_question: Would other countries recognize an independent Alberta, and what
+    conditions might they attach?
   category: International recognition and diplomacy
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -509,11 +558,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: case-studies
-  public_question: What can Alberta realistically learn from Quebec, Brexit, Scotland, and other independence movements?
+  public_question: What can Alberta realistically learn from Quebec, Brexit, Scotland,
+    and other independence movements?
   category: Comparative case studies
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -531,11 +582,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: tax-collection-revenue-agency
-  public_question: Would Alberta need its own tax agency, and how hard would that be?
+  public_question: Would Alberta need its own tax agency, and how hard would that
+    be?
   category: Tax collection and revenue administration
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -553,12 +606,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: immigration-passports-mobility
-  public_question: Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work
-    across Canada?
+  public_question: Would Albertans keep Canadian citizenship, passports, residency
+    rights, and the ability to live or work across Canada?
   category: Citizenship, passports, immigration, and mobility
   question_decision: keep
   migration_status: v3_complete
@@ -576,13 +630,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   validation_status: passed_local
-  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source,
+    claim, audit, and redebate artifacts.
 - slug: courts-criminal-law
-  public_question: Who would make criminal law, run prosecutions, and keep courts operating after independence?
+  public_question: Who would make criminal law, run prosecutions, and keep courts
+    operating after independence?
   category: Criminal law, prosecutions, courts, and legal continuity
   question_decision: keep
   migration_status: v3_complete
@@ -600,13 +657,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   last_migrated: '2026-05-06'
-  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources, claims, audit log, and redebate log.
+  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources,
+    claims, audit log, and redebate log.
 - slug: student-loans-universities-research
-  public_question: What would happen to student loans, universities, and research funding?
+  public_question: What would happen to student loans, universities, and research
+    funding?
   category: Students, universities, and research funding
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -624,11 +684,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: postal-telecom-broadcasting
-  public_question: Who would regulate mail, telecom, internet, wireless spectrum, and broadcasting?
+  public_question: Who would regulate mail, telecom, internet, wireless spectrum,
+    and broadcasting?
   category: Daily-life federal regulators
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -646,11 +708,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: agriculture-food-inspection-market-access
-  public_question: How would independence affect farmers, food inspection, exports, and market access?
+  public_question: How would independence affect farmers, food inspection, exports,
+    and market access?
   category: Agriculture, food inspection, and market access
   question_decision: keep
   migration_status: v3_complete
@@ -668,11 +732,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   validation_status: passed_local
-  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source,
+    claim, audit, and redebate artifacts.
 - slug: employment-insurance-federal-benefits
   public_question: Would Albertans keep Employment Insurance and federal income benefits?
   category: Federal benefits and income supports
@@ -692,7 +758,8 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: national-parks-public-lands
@@ -714,12 +781,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: air-transport-aviation-safety
-  public_question: Would Alberta’s airports, flights, aviation safety, and international air links keep operating smoothly
-    after independence?
+  public_question: Would Alberta’s airports, flights, aviation safety, and international
+    air links keep operating smoothly after independence?
   category: Aviation safety, airports, flights, and air links
   question_decision: keep
   migration_status: v3_complete
@@ -737,13 +805,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   validation_status: passed_local
-  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source,
+    claim, audit, and redebate artifacts.
 - slug: water-rights-rivers
-  public_question: Could Alberta independence change water rights, rivers, and drinking-water systems?
+  public_question: Could Alberta independence change water rights, rivers, and drinking-water
+    systems?
   category: Water rights, rivers, and water infrastructure
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -761,7 +832,8 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: emergency-management-disaster-aid
@@ -783,13 +855,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   last_migrated: '2026-05-06'
-  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources, claims, audit log, and redebate log.
+  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources,
+    claims, audit log, and redebate log.
 - slug: statistics-census-public-data
-  public_question: Who would run census, statistics, and public-data systems, and why would that matter for funding and elections?
+  public_question: Who would run census, statistics, and public-data systems, and
+    why would that matter for funding and elections?
   category: Statistics, census, public data, funding formulas, and elections
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -807,11 +882,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: rcmp-provincial-policing
-  public_question: Would Alberta keep the RCMP, build a provincial police service, or need something new?
+  public_question: Would Alberta keep the RCMP, build a provincial police service,
+    or need something new?
   category: Police services and public safety
   question_decision: keep
   migration_status: v3_complete
@@ -829,13 +906,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   last_migrated: '2026-05-06'
-  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources, claims, audit log, and redebate log.
+  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources,
+    claims, audit log, and redebate log.
 - slug: charter-rights-continuity
-  public_question: Would Charter rights and civil liberties continue after Alberta independence?
+  public_question: Would Charter rights and civil liberties continue after Alberta
+    independence?
   category: Rights, liberties, and constitutional continuity
   question_decision: keep
   migration_status: v3_complete
@@ -853,13 +933,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   last_migrated: '2026-05-06'
-  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources, claims, audit log, and redebate log.
+  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources,
+    claims, audit log, and redebate log.
 - slug: abortion-reproductive-health-rights
-  public_question: Could Alberta independence change abortion access and reproductive health rights?
+  public_question: Could Alberta independence change abortion access and reproductive
+    health rights?
   category: Reproductive health and rights
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -877,11 +960,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: firearms-laws-licensing
-  public_question: What would happen to firearms laws, gun licensing, and restricted-weapon rules?
+  public_question: What would happen to firearms laws, gun licensing, and restricted-weapon
+    rules?
   category: Firearms, licensing, and public safety
   question_decision: keep
   migration_status: v3_complete
@@ -899,13 +984,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   last_migrated: '2026-05-06'
-  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources, claims, audit log, and redebate log.
+  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources,
+    claims, audit log, and redebate log.
 - slug: healthcare-portability-doctor-licensing
-  public_question: Would Alberta health coverage, doctor licensing, and out-of-province care still work?
+  public_question: Would Alberta health coverage, doctor licensing, and out-of-province
+    care still work?
   category: Healthcare coverage, portability, and professional licensing
   question_decision: keep
   migration_status: v3_complete
@@ -923,11 +1011,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: border-enforcement-customs
-  public_question: What border agency would Alberta need, and how would inspections for people and goods actually work?
+  public_question: What border agency would Alberta need, and how would inspections
+    for people and goods actually work?
   category: Border agency capacity, inspections, and enforcement
   question_decision: keep
   migration_status: v3_complete
@@ -945,13 +1035,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   validation_status: passed_local
-  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source, claim, audit, and redebate artifacts.
+  notes: Migrated to lean v3 in Batch 2 with refreshed border/trade/mobility source,
+    claim, audit, and redebate artifacts.
 - slug: bank-deposits-financial-stability
-  public_question: Would bank deposits, credit-union savings, and financial backstops still be protected?
+  public_question: Would bank deposits, credit-union savings, and financial backstops
+    still be protected?
   category: Bank deposits, credit unions, and financial stability
   question_decision: keep
   migration_status: v3_complete
@@ -969,11 +1062,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: pharmaceutical-drug-approvals-supply
-  public_question: Would prescription drug approvals, recalls, and medicine supply still work?
+  public_question: Would prescription drug approvals, recalls, and medicine supply
+    still work?
   category: Drug approvals, recalls, and medicine supply
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -991,11 +1086,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: privacy-data-federal-ids
-  public_question: What would happen to Social Insurance Numbers, privacy rules, and federal identity systems?
+  public_question: What would happen to Social Insurance Numbers, privacy rules, and
+    federal identity systems?
   category: Privacy, identity, and federal data systems
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -1013,12 +1110,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: environmental-assessment-pipeline-approvals
-  public_question: Who would approve pipelines, mines, major projects, and environmental assessments — and would approvals
-    actually get faster?
+  public_question: Who would approve pipelines, mines, major projects, and environmental
+    assessments — and would approvals actually get faster?
   category: Major project approvals, assessments, and permitting speed
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -1036,11 +1134,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: labour-standards-public-sector-unions
-  public_question: What would happen to labour standards, union contracts, and public-sector bargaining?
+  public_question: What would happen to labour standards, union contracts, and public-sector
+    bargaining?
   category: Labour standards and public-sector bargaining
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -1058,11 +1158,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: federal-prisons-corrections-parole
-  public_question: Who would be responsible for prisons, parole, inmate transfers, and sentence administration?
+  public_question: Who would be responsible for prisons, parole, inmate transfers,
+    and sentence administration?
   category: Corrections, parole, custody, and sentence administration
   question_decision: keep
   migration_status: v3_complete
@@ -1080,13 +1182,16 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   last_migrated: '2026-05-06'
-  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources, claims, audit log, and redebate log.
+  validation_notes: Lean v3 overview/pro/anti/neutral refreshed with updated sources,
+    claims, audit log, and redebate log.
 - slug: public-health-disease-surveillance
-  public_question: Who would handle disease surveillance, outbreak response, and vaccine reporting?
+  public_question: Who would handle disease surveillance, outbreak response, and vaccine
+    reporting?
   category: Public health, disease surveillance, and vaccine reporting
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -1104,11 +1209,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: bankruptcy-insolvency-creditor-protection
-  public_question: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
+  public_question: What would happen to bankruptcy, insolvency, creditor protection,
+    and consumer proposals?
   category: Bankruptcy, insolvency, and creditor protection
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -1126,11 +1233,13 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: elections-law-political-parties-campaign-finance
-  public_question: Who would set election laws, political-party rules, and campaign-finance limits?
+  public_question: Who would set election laws, political-party rules, and campaign-finance
+    limits?
   category: Election law, parties, and campaign finance
   question_decision: keep
   migration_status: legacy_refresh_needed
@@ -1148,6 +1257,7 @@ topics:
   - question matches topic-question registry and _index.yml
   - overview/pro/anti/neutral use v3 lean dossier contract
   - pro and anti briefs each use 3-5 serious argument pillars
-  - neutral brief mediates what survives both sides rather than advocating a third side
+  - neutral brief mediates what survives both sides rather than advocating a third
+    side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated

@@ -1,36 +1,61 @@
 claims:
 - id: claim-petition-vs-referendum-vs-negotiations-001
   topic_slug: petition-vs-referendum-vs-negotiations
-  text: A petition, a referendum, and negotiations are separate stages. Success at one stage can trigger or strengthen the
-    case for the next, but it does not automatically complete the full independence path.
+  text: A petition, referendum, and negotiation are separate stages; petition and referendum success can create political or constitutional pressure but do not themselves settle independence terms.
   status: source_supported
   source_ids:
-  - elections-ab-new-citizen-initiative-2026-01-02
+  - scc-secession-reference
+  - clarity-act
+  - elections-ab-initiative-process
   - elections-ab-current-petitions
+  - elections-ab-referendum
+  - alberta-citizen-initiative-act
   risk: high
 - id: claim-petition-vs-referendum-vs-negotiations-002
   topic_slug: petition-vs-referendum-vs-negotiations
-  text: 'The strongest pro case is escalation: a valid petition and clear referendum can turn a political demand into a mandate
-    for negotiations.'
-  status: inference
-  source_ids: &id001
-  - elections-ab-new-citizen-initiative-2026-01-02
-  - elections-ab-current-petitions
-  - elections-ab-initiative-process
-  - elections-ab-referendum
-  - clarity-act
+  text: A clear democratic expression on secession could create a duty for other constitutional actors to negotiate, while still rejecting unilateral provincial secession.
+  status: source_supported
+  source_ids:
   - scc-secession-reference
+  - clarity-act
   risk: high
 - id: claim-petition-vs-referendum-vs-negotiations-003
   topic_slug: petition-vs-referendum-vs-negotiations
-  text: 'The strongest caution is category error: signatures or a vote cannot themselves settle constitutional amendment,
-    assets, debt, borders, rights, or recognition.'
-  status: inference
-  source_ids: *id001
+  text: The House of Commons has a statutory role under the Clarity Act in assessing whether a secession referendum question and majority are clear before federal negotiations proceed.
+  status: source_supported
+  source_ids:
+  - clarity-act
   risk: high
 - id: claim-petition-vs-referendum-vs-negotiations-004
   topic_slug: petition-vs-referendum-vs-negotiations
-  text: 'This topic remains uncertainty-labelled: Medium; the distinction is clear, but current process details can change.'
+  text: Any final separation would require constitutional implementation rather than only Alberta legislation or a referendum result.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-amending-procedures
+  risk: high
+- id: claim-petition-vs-referendum-vs-negotiations-005
+  topic_slug: petition-vs-referendum-vs-negotiations
+  text: Negotiations after a successful referendum would have to address practical transition files such as assets, debt, borders, customs, citizenship, mobility, public services, pensions, courts, currency, and recognition; current sources do not settle those terms.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-amending-procedures
+  - citizenship-act
+  - customs-act
+  risk: high
+- id: claim-petition-vs-referendum-vs-negotiations-006
+  topic_slug: petition-vs-referendum-vs-negotiations
+  text: Indigenous and treaty issues would be central to a lawful secession-related process and should not be treated as after-the-fact implementation details.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  risk: high
+- id: claim-petition-vs-referendum-vs-negotiations-007
+  topic_slug: petition-vs-referendum-vs-negotiations
+  text: Citizenship and customs or border arrangements are current federal legal systems, so post-secession continuity would require legal or negotiated arrangements rather than automatic continuation.
+  status: source_supported
+  source_ids:
+  - citizenship-act
+  - customs-act
   risk: high

@@ -1,34 +1,60 @@
 claims:
 - id: claim-clear-question-majority-001
   topic_slug: clear-question-majority
-  text: Clear question and clear majority are legitimacy tests, not just slogans. Current sources do not reduce every scenario
-    to one fixed percentage or magic wording.
+  text: Alberta can administer a referendum, but it is not the only judge of whether an independence question and result are clear enough to justify secession negotiations.
   status: source_supported
   source_ids:
   - clarity-act
   - scc-secession-reference
+  - elections-ab-referendum
   risk: high
 - id: claim-clear-question-majority-002
   topic_slug: clear-question-majority
-  text: The strongest pro case is that a direct question and decisive result could create a democratic mandate that other
-    governments would need to treat seriously.
-  status: inference
-  source_ids: &id001
+  text: The Clarity Act requires the House of Commons to consider whether a secession referendum question is clear before the federal government enters negotiations.
+  status: source_supported
+  source_ids:
   - clarity-act
-  - scc-secession-reference
-  - elections-ab-referendum
   risk: high
 - id: claim-clear-question-majority-003
   topic_slug: clear-question-majority
-  text: The strongest caution is that unclear wording, thin margins, or disputed public understanding could weaken any claimed
-    mandate.
-  status: inference
-  source_ids: *id001
+  text: The Clarity Act does not set one fixed percentage for a clear majority; it points to factors including majority size, voter participation, and other relevant matters.
+  status: source_supported
+  source_ids:
+  - clarity-act
   risk: high
 - id: claim-clear-question-majority-004
   topic_slug: clear-question-majority
-  text: 'This topic remains uncertainty-labelled: High; clarity depends on wording, result, turnout context, and political/legal
-    judgment.'
+  text: The Supreme Court's Secession Reference says a clear majority on a clear question would create a duty to negotiate, not a unilateral right to secede.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-amending-procedures
+  risk: high
+- id: claim-clear-question-majority-005
+  topic_slug: clear-question-majority
+  text: A direct Alberta independence question with a decisive result could create a democratic mandate that other governments would need to treat seriously.
+  status: inference
+  source_ids:
+  - clarity-act
+  - scc-secession-reference
+  - elections-ab-referendum
+  - alberta-referendum-act
+  risk: high
+- id: claim-clear-question-majority-006
+  topic_slug: clear-question-majority
+  text: Unclear wording, a thin margin, low turnout, or disputed public understanding could weaken a claimed mandate for secession negotiations.
+  status: inference
+  source_ids:
+  - clarity-act
+  - scc-secession-reference
+  risk: high
+- id: claim-clear-question-majority-007
+  topic_slug: clear-question-majority
+  text: Alberta referendum and citizen-initiative laws can help create a public voting record, but they do not by themselves amend Canada's Constitution or settle the terms of independence.
+  status: source_supported
+  source_ids:
+  - elections-ab-initiative-process
+  - alberta-referendum-act
+  - alberta-citizen-initiative-act
+  - constitution-act-1982-amending-procedures
   risk: high

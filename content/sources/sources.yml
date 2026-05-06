@@ -6,7 +6,7 @@ sources:
   author: Elections Alberta
   url: https://www.elections.ab.ca/resources/media/news-releases/new-citizen-initiative-petition-issued-2/
   published_at: '2026-01-02'
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -18,7 +18,7 @@ sources:
   - referendum-ballot-2026
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: elections-ab-current-petitions
   slug: elections-ab-current-petitions
@@ -27,7 +27,7 @@ sources:
   author: Elections Alberta
   url: https://www.elections.ab.ca/recall-initiative/initiative/current-initiative-petitions/
   published_at: null
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -37,9 +37,10 @@ sources:
   related_topic_slugs:
   - referendum-mechanics
   - petition-vs-referendum-vs-negotiations
+  - referendum-ballot-2026
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: elections-ab-initiative-process
   slug: elections-ab-initiative-process
@@ -48,7 +49,7 @@ sources:
   author: Elections Alberta
   url: https://www.elections.ab.ca/recall-initiative/initiative/initiative-process/
   published_at: null
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -57,9 +58,10 @@ sources:
   related_topic_slugs:
   - referendum-mechanics
   - petition-vs-referendum-vs-negotiations
+  - referendum-ballot-2026
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: elections-ab-referendum
   slug: elections-ab-referendum
@@ -68,7 +70,7 @@ sources:
   author: Elections Alberta
   url: https://www.elections.ab.ca/elections/referendum/
   published_at: null
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -77,9 +79,10 @@ sources:
   related_topic_slugs:
   - referendum-mechanics
   - referendum-ballot-2026
+  - clear-question-majority
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-referendum-2026
   slug: alberta-referendum-2026
@@ -88,7 +91,7 @@ sources:
   author: Government of Alberta
   url: https://albertareferendum2026.ca/
   published_at: null
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -99,7 +102,7 @@ sources:
   - referendum-mechanics
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-premiers-address-2026-02-19
   slug: alberta-premiers-address-2026-02-19
@@ -137,8 +140,10 @@ sources:
   related_topic_slugs:
   - legal-process
   - clarity-act
+  - quebec-secession-reference
   - clear-question-majority
   - charter-rights-continuity
+  - referendum-ballot-2026
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -159,11 +164,101 @@ sources:
   how_used: Core legal baseline for secession and duty-to-negotiate claims.
   related_topic_slugs:
   - legal-process
+  - clarity-act
   - quebec-secession-reference
+  - clear-question-majority
   - indigenous-rights-treaties
   - indigenous-treaties
   - courts-criminal-law
   - charter-rights-continuity
+  - referendum-ballot-2026
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: constitution-act-1982-amending-procedures
+  slug: constitution-act-1982-amending-procedures
+  title: Constitution Act, 1982 — Procedure for Amending Constitution of Canada
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/const/page-13.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Primary constitutional text for Part V amending procedures, including general, unanimity, and province-specific amendment routes.
+  how_used: Legal baseline for explaining that lawful secession would require constitutional amendment rather than an automatic referendum result.
+  related_topic_slugs:
+  - clarity-act
+  - legal-process
+  - quebec-secession-reference
+  - clear-question-majority
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: house-commons-canadian-parliamentary-system
+  slug: house-commons-canadian-parliamentary-system
+  title: Canadian Parliamentary System
+  publisher: House of Commons of Canada
+  author: House of Commons of Canada
+  url: https://www.ourcommons.ca/procedure/our-procedure/parliamentaryFramework/c_g_parliamentaryframework-e.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Official House of Commons procedural overview describing the House's place in Canada's parliamentary system.
+  how_used: Institutional baseline for distinguishing the House of Commons role under the Clarity Act from the whole Parliament or constitutional amending process.
+  related_topic_slugs:
+  - clarity-act
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-citizen-initiative-act
+  slug: alberta-citizen-initiative-act
+  title: Citizen Initiative Act
+  publisher: Government of Alberta / King's Printer
+  author: Government of Alberta
+  url: https://open.alberta.ca/publications/c13p2
+  published_at: null
+  accessed_at: '2026-05-06'
+  updated_at: '2026-05-01'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta statute governing citizen initiative petitions, including initiative petition and referendum proposal mechanics.
+  how_used: Primary legal source for distinguishing petition mechanics from referendum and implementation claims.
+  related_topic_slugs:
+  - referendum-mechanics
+  - petition-vs-referendum-vs-negotiations
+  - referendum-ballot-2026
+  - clear-question-majority
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-referendum-act
+  slug: alberta-referendum-act
+  title: Referendum Act
+  publisher: Government of Alberta / King's Printer
+  author: Government of Alberta
+  url: https://open.alberta.ca/publications/r08p4
+  published_at: null
+  accessed_at: '2026-05-06'
+  updated_at: '2025-12-11'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta statute governing provincial referendums and their administration under Alberta law.
+  how_used: Primary legal source for ballot-status, referendum-administration, and legal-effect claims.
+  related_topic_slugs:
+  - referendum-mechanics
+  - petition-vs-referendum-vs-negotiations
+  - referendum-ballot-2026
+  - clear-question-majority
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -175,7 +270,7 @@ sources:
   author: Elections Alberta
   url: https://www.elections.ab.ca/resources/media/news-releases/bill-23/
   published_at: '2026-04-29'
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -186,7 +281,7 @@ sources:
   - referendum-ballot-2026
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: acfn-stay-pending-court-challenge-2026-04-11
   slug: acfn-stay-pending-court-challenge-2026-04-11
@@ -216,7 +311,7 @@ sources:
   author: The Canadian Press
   url: https://globalnews.ca/news/11774421/judge-orders-temporary-pause-on-alberta-separation-referendum-petition-process/
   published_at: '2026-04-12'
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: media
   stance: neutral
   reliability_category: news_report
@@ -229,7 +324,7 @@ sources:
   - indigenous-treaties
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: alberta-pensions
   slug: alberta-pensions

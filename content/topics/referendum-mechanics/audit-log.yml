@@ -10,3 +10,15 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-referendum-mechanics-2026-05-06
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated referendum-mechanics to lean v3 briefs, refreshed public-source metadata, added primary Alberta legal sources,
+    and checked live official URLs for petition and referendum process claims.
+  checks:
+  - lean-v3-headings
+  - numbered-citations-match-sources
+  - official-url-live-check
+  - source-metadata-date-consistency
+  - no-manifest-change
+  result: pass

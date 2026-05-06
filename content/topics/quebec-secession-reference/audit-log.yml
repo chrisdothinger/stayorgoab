@@ -1,12 +1,22 @@
 entries:
 - id: audit-quebec-secession-reference-2026-05-04
   date: '2026-05-04'
-  agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  agent: StayOrGoAB content process
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
+  result: pass
+- id: audit-quebec-secession-reference-2026-05-06-lean-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB content migration process
+  summary: Migrated Quebec Secession Reference dossier to lean v3 style with precise Supreme Court, Clarity Act, and Constitution Act, 1982 amendment analysis.
+  checks:
+  - source-support
+  - stance-balance
+  - numbered-citations-match-sources
+  - required-lean-v3-headings
+  - live-url-check
   result: pass

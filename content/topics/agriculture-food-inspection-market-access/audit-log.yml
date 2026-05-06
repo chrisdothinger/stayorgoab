@@ -9,3 +9,25 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-agriculture-food-inspection-market-access-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Refreshed topic to lean v3 dossier headings and tightened source-safe content around agriculture, food inspection, export certification, disease response, farm programs, and market-access continuity.
+  checks:
+  - v3-heading-standard
+  - source-support
+  - citation-numbering
+  - stance-balance
+  - audit-safe-wording
+  result: pass
+- id: audit-agriculture-food-inspection-market-access-2026-05-06-v3-source-coverage-fix
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Added targeted official CFIA and Agriculture and Agri-Food Canada sources for export certification, animal health, plant health, food recalls, business risk management, and market development; strengthened pro, anti, neutral, and claim citations around these specific functions.
+  checks:
+  - source-coverage
+  - source-support
+  - citation-numbering
+  - stance-balance
+  - claims-refresh
+  result: pass

@@ -3,3 +3,11 @@ entries:
   date: '2026-05-05'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-agriculture-food-inspection-market-access-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  trigger: v3-source-refresh
+  summary: Rebuilt the overview and briefs around the strongest conditional pro-continuity case, strongest anti-continuity-risk case, and mediator synthesis using the current official source pack.
+- id: redebate-agriculture-food-inspection-market-access-2026-05-06-source-coverage-fix
+  date: '2026-05-06'
+  trigger: independent-review-source-coverage-blocker
+  summary: Re-opened the dossier after review found agriculture source coverage too thin; added targeted CFIA export, animal-health, plant-health, food-recall sources and AAFC business risk management and market-development sources, then rebalanced the pro, anti, and neutral arguments around function-specific continuity tests.

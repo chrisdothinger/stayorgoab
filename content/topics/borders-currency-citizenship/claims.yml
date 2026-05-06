@@ -1,33 +1,56 @@
 claims:
 - id: claim-borders-currency-citizenship-001
   topic_slug: borders-currency-citizenship
-  text: Borders, currency, trade, and citizenship would not be automatic consequences of a referendum. They would depend on
-    negotiated arrangements and later policy design.
+  text: A landlocked independent Alberta could still move goods through Canadian, U.S., and overseas routes, but access would depend on negotiated transit, customs, inspection, transport, and port arrangements rather than automatic continuation of current domestic Canadian treatment.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - customs-act
+  - cbsa-commercial-importing
+  - canada-transportation-act
+  - transport-canada-port-authorities
+  risk: high
+- id: claim-borders-currency-citizenship-002
+  topic_slug: borders-currency-citizenship
+  text: Canadian corridors would likely remain commercially important for Alberta goods, but Canada would control the legal and administrative terms for customs, transit, border enforcement, transport regulation, and port access on Canadian territory.
+  status: source_supported
+  source_ids:
+  - customs-act
+  - cbsa-commercial-importing
+  - canada-transportation-act
+  - transport-canada-port-authorities
+  risk: high
+- id: claim-borders-currency-citizenship-003
+  topic_slug: borders-currency-citizenship
+  text: U.S. routes could diversify Alberta's options, but they would require U.S. customs recognition, border processing, carrier compliance, security treatment, and any tariff or rules-of-origin arrangements that apply to Alberta-origin goods.
+  status: inference
+  source_ids:
+  - us-cbp-basic-importing-exporting
+  - wto-trade-facilitation-agreement
+  - scc-secession-reference
+  - clarity-act
+  risk: high
+- id: claim-borders-currency-citizenship-004
+  topic_slug: borders-currency-citizenship
+  text: Modern goods movement after independence would require customs and trade-facilitation systems including published rules, release and clearance procedures, transit treatment, data exchange, inspections, risk management, and enforcement capacity.
+  status: source_supported
+  source_ids:
+  - customs-act
+  - cbsa-commercial-importing
+  - wto-trade-facilitation-agreement
+  risk: high
+- id: claim-borders-currency-citizenship-005
+  topic_slug: borders-currency-citizenship
+  text: This topic remains high-uncertainty because no checked source provides binding Canada-Alberta corridor terms, U.S. recognition arrangements, port-access commitments, or an Alberta customs implementation plan for an independence transition.
   status: source_supported
   source_ids:
   - scc-secession-reference
   - clarity-act
-  risk: high
-- id: claim-borders-currency-citizenship-002
-  topic_slug: borders-currency-citizenship
-  text: 'The strongest pro case is policy choice: Alberta could seek open movement, practical continuity, and institutions
-    tailored to Alberta interests.'
-  status: inference
-  source_ids: &id001
-  - scc-secession-reference
-  - clarity-act
-  - alberta-budget-documents-2026
-  risk: high
-- id: claim-borders-currency-citizenship-003
-  topic_slug: borders-currency-citizenship
-  text: The strongest caution is household and business uncertainty around banking, citizenship status, market access, border
-    administration, and continuity of rights.
-  status: inference
-  source_ids: *id001
-  risk: high
-- id: claim-borders-currency-citizenship-004
-  topic_slug: borders-currency-citizenship
-  text: 'This topic remains uncertainty-labelled: High; these systems depend on counterparties and negotiated policy choices.'
-  status: source_supported
-  source_ids: *id001
+  - customs-act
+  - cbsa-commercial-importing
+  - canada-transportation-act
+  - us-cbp-basic-importing-exporting
+  - wto-trade-facilitation-agreement
+  - transport-canada-port-authorities
   risk: high

@@ -10,3 +10,27 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-air-transport-aviation-safety-2026-05-06-lean-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated topic to lean v3 dossier structure; tightened aviation-safety, airport-operations, security-screening, passenger-rule, international-recognition, and implementation-readiness framing.
+  checks:
+  - lean-v3-headings
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - citation-format
+  - global-source-registry
+  result: pass
+- id: audit-air-transport-aviation-safety-2026-05-06-source-coverage
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Added targeted aviation sources for ICAO/Chicago Convention, NAV CANADA air navigation services, Transport Canada airport certification, and CTA air transport agreements; strengthened pro, anti, neutral, and claim coverage around airport certificates, air navigation, international recognition, route rights, and accessed-date consistency.
+  checks:
+  - source-support
+  - numbered-citation-alignment
+  - global-source-registry
+  - accessed-date-consistency
+  - stance-balance
+  - uncertainty-labels
+  result: pass

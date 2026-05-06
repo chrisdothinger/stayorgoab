@@ -4,3 +4,7 @@ entries:
   trigger: phase-2-3-manual-batch
   summary: Manual/ad-hoc content batch generated report triad and argument map for
     high-salience non-duplicate topic coverage.
+- id: redebate-border-enforcement-customs-2026-05-06-lean-v3
+  date: '2026-05-06'
+  trigger: batch-2-lean-v3-migration
+  summary: Reframed the debate around the practical test for an Alberta border/customs agency, inspections for people and goods, Canada-Alberta border continuity, and U.S. recognition constraints.

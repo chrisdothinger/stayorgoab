@@ -9,3 +9,15 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-immigration-passports-mobility-2026-05-06-lean-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated dossier to lean v3 structure and narrowed the assessment around citizenship, passports, immigration status, residency, and Canada-wide mobility rights.
+  checks:
+  - lean-v3-headings
+  - source-support
+  - numbered-citation-alignment
+  - stance-balance
+  - uncertainty-labels
+  - no-secrets
+  result: pass

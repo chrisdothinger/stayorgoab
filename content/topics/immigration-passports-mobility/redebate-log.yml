@@ -3,3 +3,7 @@ entries:
   date: '2026-05-05'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-immigration-passports-mobility-2026-05-06-lean-v3
+  date: '2026-05-06'
+  trigger: lean-v3-migration
+  summary: Reframed the debate around practical continuity tests for Canadian citizenship, passport eligibility, immigration status, residency rights, and live/work mobility across Canada.

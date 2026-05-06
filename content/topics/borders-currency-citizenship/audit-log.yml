@@ -2,11 +2,22 @@ entries:
 - id: audit-borders-currency-citizenship-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
+  result: pass
+- id: audit-borders-currency-citizenship-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Refreshed topic to lean v3 dossier headings, narrowed the public question to landlocked goods movement through Canadian, U.S., and overseas routes, and added targeted customs, transport, port, U.S. border, and trade-facilitation sources.
+  checks:
+  - v3-lean-dossier-headings
+  - source-refresh
+  - source-id-matching
+  - numbered-citation-sources-match
+  - stance-balance
+  - uncertainty-labels
   result: pass

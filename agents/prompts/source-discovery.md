@@ -1,6 +1,13 @@
 # Source Discovery Prompt
 
-Find public sources relevant to one topic. Prefer official and primary sources, but do not stop at the base packet when a dossier needs a stronger public argument.
+Find public sources relevant to one hardened public question, not just a broad subject label. Prefer official and primary sources, but do not stop at the base packet when a dossier needs a stronger public argument.
+
+Before source discovery, check `content/topic-question-registry.yml` and `docs/topic-question-standard.md`:
+
+- confirm the topic is phrased as a public question;
+- check the `question_family` for overlap/repetition;
+- if the registry marks the topic `merge_candidate` or `split_candidate`, do not treat it as ready for full dossier migration until the question is resolved;
+- prioritize high-sensitivity, unique, high-reader-value questions.
 
 Use separate source lanes for new or substantially refreshed dossiers:
 

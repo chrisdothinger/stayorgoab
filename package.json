@@ -17,6 +17,7 @@
     "prevalidate:public-audit": "npm run generate:audit-manifest",
     "validate:public-audit": "tsx scripts/validate-public-audit.ts",
     "validate:citations": "tsx scripts/validate-citations.ts",
+    "validate:topics": "tsx scripts/validate-topic-questions.ts",
     "validate:agents": "tsx scripts/validate-agents.ts",
     "validate:secrets": "tsx scripts/validate-secrets.ts",
     "validate:pr-safety": "tsx scripts/validate-pr-safety.ts"

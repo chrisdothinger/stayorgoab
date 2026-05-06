@@ -1,0 +1,1246 @@
+version: 2026-05-06-topic-question-standard-v1
+purpose: Harden StayOrGoAB topic selection around sensitive, unique, critical, high-value public questions before broad dossier migration.
+scoring_scale:
+  public_importance: '1-5: real-world civic or personal stakes'
+  sensitivity: '1-5: controversy, rights, money, identity, safety, or trust implications'
+  uniqueness: '1-5: distinct from existing dossiers'
+  answerability: '1-5: credible public sources can support a fair dossier'
+  reader_value: '1-5: likely usefulness to voters, journalists, policymakers, or affected groups'
+decision_meanings:
+  keep: Question is distinct enough to refresh/migrate as a dossier.
+  reframe: Keep the area, but sharpen the question before dossier migration.
+  merge_candidate: Likely duplicate/overlap; resolve before dossier migration.
+  split_candidate: Topic is too bundled; split into sharper questions or choose one primary question before migration.
+acceptance_gate: New or refreshed topics should score at least 16/25, be phrased as a question, include research lanes, and have a uniqueness
+  group checked against existing topics.
+topics:
+- slug: legal-process
+  current_public_question: What would legally need to happen for Alberta to become independent?
+  current_legacy_title: What would legally need to happen for Alberta to become independent?
+  decision: keep
+  priority: flagship
+  question_family: secession-law
+  category: Legal path and constitutional rules
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 4
+    answerability: 5
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: cpp-pensions
+  current_public_question: Would Albertans keep CPP benefits, or move to a new pension system?
+  current_legacy_title: What would happen to CPP and pensions?
+  decision: keep
+  priority: flagship
+  question_family: pensions-benefits
+  category: Pensions, benefits, and household income
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 25
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: indigenous-rights-treaties
+  current_public_question: How would Indigenous rights, treaties, land, and consultation affect Alberta independence?
+  current_legacy_title: How do Indigenous rights and treaties affect independence?
+  decision: keep
+  priority: flagship
+  question_family: indigenous-rights
+  category: Indigenous rights, treaties, land, and consent
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 4
+    answerability: 4
+    reader_value: 5
+    total: 23
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: economy-fiscal
+  current_public_question: Would independence make Alberta richer or poorer?
+  current_legacy_title: Would independence make Alberta richer or poorer?
+  decision: keep
+  priority: flagship
+  question_family: macro-fiscal
+  category: Economy, fiscal policy, and household impact
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 4
+    answerability: 4
+    reader_value: 5
+    total: 23
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: referendum-mechanics
+  current_public_question: How would Alberta’s petition and referendum process actually work?
+  current_legacy_title: How does the petition and referendum process work?
+  decision: keep
+  priority: flagship
+  question_family: referendum-process
+  category: Democracy, petitions, and referendum mechanics
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 4
+    answerability: 5
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: borders-currency-citizenship
+  current_public_question: Would Alberta have new borders, a new currency, or different citizenship rules?
+  current_legacy_title: What happens to borders, currency, and citizenship?
+  decision: split_candidate
+  priority: reframe
+  question_family: transition-bundle
+  category: Bundled transition questions needing split/reframe
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 2
+    answerability: 3
+    reader_value: 4
+    total: 17
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Broad bundle; split or sharpen before next major dossier refresh.
+- slug: petition-vs-referendum-vs-negotiations
+  current_public_question: What is the difference between a petition, a referendum, and independence negotiations?
+  current_legacy_title: Petition vs referendum vs negotiations
+  decision: merge_candidate
+  priority: merge
+  question_family: referendum-process
+  category: Democracy, petitions, and referendum mechanics
+  merge_with: referendum-mechanics
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 2
+    answerability: 5
+    reader_value: 4
+    total: 19
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Possible overlap; do not refresh dossier until merged/reframed against canonical topic.
+- slug: clarity-act
+  current_public_question: Does the Clarity Act give Ottawa a veto over Alberta independence?
+  current_legacy_title: The Clarity Act
+  decision: keep
+  priority: flagship
+  question_family: secession-law
+  category: Legal path and constitutional rules
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 4
+    answerability: 5
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: quebec-secession-reference
+  current_public_question: What did the Supreme Court actually say about unilateral secession?
+  current_legacy_title: Quebec Secession Reference
+  decision: keep
+  priority: flagship
+  question_family: secession-law
+  category: Legal path and constitutional rules
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 4
+    answerability: 5
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: clear-question-majority
+  current_public_question: Who decides whether Alberta’s referendum question and result are clear enough?
+  current_legacy_title: Clear question and clear majority
+  decision: keep
+  priority: flagship
+  question_family: secession-law
+  category: Legal path and constitutional rules
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 4
+    answerability: 5
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: referendum-ballot-2026
+  current_public_question: What is known, and not known, about a possible 2026 Alberta referendum ballot?
+  current_legacy_title: 2026 referendum ballot
+  decision: keep
+  priority: flagship
+  question_family: current-referendum
+  category: Current referendum status and ballot timing
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: economy-overall
+  current_public_question: Would Alberta independence strengthen or weaken the economy overall?
+  current_legacy_title: Overall economic outlook
+  decision: merge_candidate
+  priority: merge
+  question_family: macro-fiscal
+  category: Economy, fiscal policy, and household impact
+  merge_with: economy-fiscal
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 2
+    answerability: 4
+    reader_value: 5
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Possible overlap; do not refresh dossier until merged/reframed against canonical topic.
+- slug: equalization
+  current_public_question: Would Alberta actually stop paying equalization if it became independent?
+  current_legacy_title: Equalization
+  decision: keep
+  priority: flagship
+  question_family: federal-transfers
+  category: Equalization and federal transfers
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 25
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: federal-debt-assets
+  current_public_question: How much federal debt would Alberta inherit, and what assets could it claim?
+  current_legacy_title: Federal debt and assets
+  decision: keep
+  priority: flagship
+  question_family: debt-assets
+  category: Debt, assets, and fiscal settlement
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: indigenous-treaties
+  current_public_question: Would Indigenous treaty consent be required before Alberta could separate?
+  current_legacy_title: Indigenous treaties and consent
+  decision: merge_candidate
+  priority: merge
+  question_family: indigenous-rights
+  category: Indigenous rights, treaties, land, and consent
+  merge_with: indigenous-rights-treaties
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 2
+    answerability: 4
+    reader_value: 5
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Possible overlap; do not refresh dossier until merged/reframed against canonical topic.
+- slug: military-security
+  current_public_question: Who would defend Alberta, and what security arrangements would replace Canada’s?
+  current_legacy_title: Military and security
+  decision: keep
+  priority: keep
+  question_family: defence-security
+  category: Defence, security, and foreign affairs
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 4
+    reader_value: 4
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: currency-banking
+  current_public_question: Could Alberta keep using the Canadian dollar, or would it need its own currency?
+  current_legacy_title: Currency and banking
+  decision: keep
+  priority: flagship
+  question_family: currency-banking
+  category: Currency, banking, and monetary stability
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: borders-trade
+  current_public_question: Would Alberta independence create borders, tariffs, or trade disruption?
+  current_legacy_title: Borders and trade
+  decision: keep
+  priority: flagship
+  question_family: borders-trade
+  category: Borders, tariffs, customs, and trade
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: public-services
+  current_public_question: Which public services would be most at risk during an independence transition?
+  current_legacy_title: Public services
+  decision: split_candidate
+  priority: reframe
+  question_family: public-services
+  category: Public services and continuity risks
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 4
+    uniqueness: 3
+    answerability: 4
+    reader_value: 5
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Broad bundle; split or sharpen before next major dossier refresh.
+- slug: energy-environment
+  current_public_question: Would independence give Alberta more control over energy and environmental rules?
+  current_legacy_title: Energy and environment
+  decision: keep
+  priority: flagship
+  question_family: energy-environment
+  category: Energy, environment, and major project regulation
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: bureaucracy-governance
+  current_public_question: What new institutions would Alberta need to govern as an independent country?
+  current_legacy_title: Bureaucracy and governance
+  decision: keep
+  priority: keep
+  question_family: state-capacity
+  category: State capacity and public institutions
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 4
+    reader_value: 4
+    total: 22
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: international-recognition
+  current_public_question: Would other countries recognize an independent Alberta?
+  current_legacy_title: International recognition
+  decision: keep
+  priority: flagship
+  question_family: international-recognition
+  category: International recognition and diplomacy
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: case-studies
+  current_public_question: What can Alberta realistically learn from Quebec, Brexit, Scotland, and other independence movements?
+  current_legacy_title: Case studies
+  decision: keep
+  priority: keep
+  question_family: case-studies
+  category: Comparative case studies
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 4
+    reader_value: 4
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: tax-collection-revenue-agency
+  current_public_question: Would Alberta need its own tax agency, and how hard would that be?
+  current_legacy_title: Tax collection and revenue administration
+  decision: keep
+  priority: keep
+  question_family: tax-administration
+  category: Tax collection and revenue administration
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 4
+    reader_value: 4
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: immigration-passports-mobility
+  current_public_question: Would Albertans keep Canadian passports, citizenship, and freedom of movement?
+  current_legacy_title: Immigration, passports, and mobility
+  decision: keep
+  priority: flagship
+  question_family: citizenship-mobility
+  category: Citizenship, passports, immigration, and mobility
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: courts-criminal-law
+  current_public_question: What would happen to courts, criminal law, and prosecutions if Alberta left Canada?
+  current_legacy_title: Courts, criminal law, and justice system
+  decision: keep
+  priority: keep
+  question_family: justice-system
+  category: Courts, criminal law, corrections, and justice
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 4
+    reader_value: 4
+    total: 22
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: student-loans-universities-research
+  current_public_question: What would happen to student loans, universities, and research funding?
+  current_legacy_title: Student loans, universities, and research funding
+  decision: keep
+  priority: keep
+  question_family: education-research
+  category: Students, universities, and research funding
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 22
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: postal-telecom-broadcasting
+  current_public_question: Who would regulate mail, telecom, internet, wireless spectrum, and broadcasting?
+  current_legacy_title: Postal service, telecom, and broadcasting
+  decision: keep
+  priority: keep
+  question_family: daily-life-regulators
+  category: Daily-life federal regulators
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 3
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: agriculture-food-inspection-market-access
+  current_public_question: How would independence affect farmers, food inspection, exports, and market access?
+  current_legacy_title: Agriculture, food inspection, and market access
+  decision: keep
+  priority: flagship
+  question_family: agriculture-market-access
+  category: Agriculture, food inspection, and market access
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 23
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: employment-insurance-federal-benefits
+  current_public_question: Would Albertans keep Employment Insurance and federal income benefits?
+  current_legacy_title: Employment Insurance and federal benefits
+  decision: keep
+  priority: flagship
+  question_family: federal-benefits
+  category: Federal benefits and income supports
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 25
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: national-parks-public-lands
+  current_public_question: What would happen to national parks, Crown land, and public lands?
+  current_legacy_title: National parks, Crown land, and public lands
+  decision: keep
+  priority: keep
+  question_family: public-lands
+  category: National parks, Crown land, and public lands
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 4
+    reader_value: 4
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: air-transport-aviation-safety
+  current_public_question: Who would regulate airports, air travel, and aviation safety?
+  current_legacy_title: Air transport and aviation safety
+  decision: keep
+  priority: keep
+  question_family: transport-safety
+  category: Transport and aviation safety
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 3
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: water-rights-rivers
+  current_public_question: Could Alberta independence change water rights, rivers, and drinking-water systems?
+  current_legacy_title: Water rights, rivers, and water infrastructure
+  decision: keep
+  priority: flagship
+  question_family: water-infrastructure
+  category: Water rights, rivers, and water infrastructure
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 23
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: emergency-management-disaster-aid
+  current_public_question: Who would pay for disaster response and emergency aid after independence?
+  current_legacy_title: Emergency management and disaster aid
+  decision: keep
+  priority: keep
+  question_family: emergency-management
+  category: Emergency management and disaster aid
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 22
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: statistics-census-public-data
+  current_public_question: Who would run census, statistics, and public-data systems for an independent Alberta?
+  current_legacy_title: Statistics, census, and public data
+  decision: keep
+  priority: keep
+  question_family: state-capacity
+  category: State capacity and public institutions
+  merge_with: null
+  scores:
+    public_importance: 3
+    sensitivity: 2
+    uniqueness: 5
+    answerability: 5
+    reader_value: 3
+    total: 18
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: rcmp-provincial-policing
+  current_public_question: Would Alberta keep the RCMP, build a provincial police service, or need something new?
+  current_legacy_title: RCMP, local police, and provincial policing
+  decision: keep
+  priority: flagship
+  question_family: policing
+  category: Police services and public safety
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 25
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: charter-rights-continuity
+  current_public_question: Would Charter rights and civil liberties continue after Alberta independence?
+  current_legacy_title: Charter rights and civil-liberties continuity
+  decision: keep
+  priority: flagship
+  question_family: rights-liberties
+  category: Rights, liberties, and constitutional continuity
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: abortion-reproductive-health-rights
+  current_public_question: Could Alberta independence change abortion access and reproductive health rights?
+  current_legacy_title: Abortion access and reproductive health rights
+  decision: keep
+  priority: flagship
+  question_family: rights-health
+  category: Reproductive health and rights
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: firearms-laws-licensing
+  current_public_question: What would happen to firearms laws, gun licensing, and restricted-weapon rules?
+  current_legacy_title: Firearms laws, licensing, and restricted weapons
+  decision: keep
+  priority: flagship
+  question_family: public-safety-rights
+  category: Firearms, licensing, and public safety
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 23
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: healthcare-portability-doctor-licensing
+  current_public_question: Would Alberta health coverage, doctor licensing, and out-of-province care still work?
+  current_legacy_title: Healthcare portability, doctor licensing, and out-of-province care
+  decision: keep
+  priority: flagship
+  question_family: healthcare-systems
+  category: Healthcare coverage, portability, and professional licensing
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 25
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: border-enforcement-customs
+  current_public_question: Who would run border enforcement, customs inspections, and cross-border travel?
+  current_legacy_title: Border enforcement, customs inspections, and cross-border travel
+  decision: keep
+  priority: flagship
+  question_family: border-enforcement
+  category: Border enforcement, customs, and travel
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 4
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: bank-deposits-financial-stability
+  current_public_question: Would bank deposits and credit-union savings still be protected?
+  current_legacy_title: Bank deposits, credit unions, and financial stability
+  decision: keep
+  priority: flagship
+  question_family: financial-stability
+  category: Bank deposits, credit unions, and financial stability
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 25
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: pharmaceutical-drug-approvals-supply
+  current_public_question: Would prescription drug approvals, recalls, and medicine supply still work?
+  current_legacy_title: Prescription drug approvals, safety recalls, and medicine supply
+  decision: keep
+  priority: flagship
+  question_family: health-regulation
+  category: Drug approvals, recalls, and medicine supply
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: privacy-data-federal-ids
+  current_public_question: What would happen to Social Insurance Numbers, privacy rules, and federal identity systems?
+  current_legacy_title: Privacy rules, Social Insurance Numbers, and federal identity/data systems
+  decision: keep
+  priority: flagship
+  question_family: identity-data
+  category: Privacy, identity, and federal data systems
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: environmental-assessment-pipeline-approvals
+  current_public_question: Who would approve pipelines, major projects, and environmental assessments?
+  current_legacy_title: Environmental assessments, pipeline approvals, and major project regulation
+  decision: keep
+  priority: flagship
+  question_family: energy-environment
+  category: Energy, environment, and major project regulation
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 5
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 25
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: labour-standards-public-sector-unions
+  current_public_question: What would happen to labour standards, union contracts, and public-sector bargaining?
+  current_legacy_title: Labour standards, unions, and public-sector bargaining
+  decision: keep
+  priority: keep
+  question_family: labour-public-sector
+  category: Labour standards and public-sector bargaining
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 22
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: federal-prisons-corrections-parole
+  current_public_question: Who would run federal prisons, corrections, parole, and sentenced-inmate transfers?
+  current_legacy_title: Federal prisons, corrections, parole, and sentenced inmates
+  decision: keep
+  priority: keep
+  question_family: justice-system
+  category: Courts, criminal law, corrections, and justice
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 3
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: public-health-disease-surveillance
+  current_public_question: Who would handle disease surveillance, outbreak response, and vaccine reporting?
+  current_legacy_title: Public-health disease surveillance, outbreak response, and vaccine reporting
+  decision: keep
+  priority: flagship
+  question_family: public-health
+  category: Public health, disease surveillance, and vaccine reporting
+  merge_with: null
+  scores:
+    public_importance: 5
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 5
+    reader_value: 5
+    total: 24
+  reader_intent:
+  - voter
+  - journalist
+  - policymaker
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: bankruptcy-insolvency-creditor-protection
+  current_public_question: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
+  current_legacy_title: Bankruptcy, insolvency, creditor protection, and consumer proposals
+  decision: keep
+  priority: keep
+  question_family: financial-law
+  category: Bankruptcy, insolvency, and creditor protection
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 3
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 21
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.
+- slug: elections-law-political-parties-campaign-finance
+  current_public_question: Who would set election laws, political-party rules, and campaign-finance limits?
+  current_legacy_title: Election laws, political parties, and campaign finance
+  decision: keep
+  priority: keep
+  question_family: democratic-institutions
+  category: Election law, parties, and campaign finance
+  merge_with: null
+  scores:
+    public_importance: 4
+    sensitivity: 4
+    uniqueness: 5
+    answerability: 5
+    reader_value: 4
+    total: 22
+  reader_intent:
+  - voter
+  - researcher
+  research_lanes:
+  - base-packet
+  - pro-source
+  - anti-source
+  - mediator-dedup
+  overlap_notes: Distinct enough for a public dossier if source depth remains strong.

@@ -43,7 +43,7 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByText(/Active filters/i)).toBeVisible();
   await expect(page.getByText(/Search: CPP/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /Clear filters/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'What would happen to CPP and pensions?', exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Would Albertans keep CPP benefits, or move to a new pension system?', exact: true })).toBeVisible();
   await page.getByRole('button', { name: /Expand summary for .*CPP/i }).click();
   await expect(page.getByText(/Short answer/i)).toBeVisible();
   await expect(page.getByRole('article').getByRole('link', { name: /Public review trail/i })).toHaveCount(0);

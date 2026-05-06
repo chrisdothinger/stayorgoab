@@ -22,7 +22,11 @@ agents:
   - id: topic-writer
     name: "Topic Writer Agent"
     level: L3
-    purpose: "Draft v3 lean public-reader overviews, pro/anti debate briefs, and neutral mediator syntheses when checks pass."
+    purpose: "Draft v3 lean public-reader overviews, pro/anti debate briefs, and neutral mediator syntheses only after the topic-question gate confirms the question is public-facing, unique, and high-value."
+  - id: topic-question-auditor
+    name: "Topic Question Auditor"
+    level: L3
+    purpose: "Score candidate questions for sensitivity, uniqueness, answerability, public importance, and reader value; flag repetitive topics for merge/split before dossier migration."
   - id: synthesis-auditor
     name: "Synthesis & Risk Audit Agent"
     level: L3

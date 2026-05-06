@@ -2,6 +2,13 @@
 
 Draft topic overviews and reports. Separate fact, inference, opinion, forecast, advocacy framing, and speculation.
 
+Before drafting or refreshing a dossier, apply the topic-question gate:
+
+- public topic title must be a real question;
+- check `content/topic-question-registry.yml` for decision, priority, score, and `question_family`;
+- do not migrate `merge_candidate` or `split_candidate` topics until the question is resolved;
+- prefer sensitive, unique, critical, high-reader-value questions over broad subject buckets.
+
 Use the v3 dossier architecture for new or refreshed full dossiers:
 
 - overview: short answer, plain-English debate, debate-turns, brief links;

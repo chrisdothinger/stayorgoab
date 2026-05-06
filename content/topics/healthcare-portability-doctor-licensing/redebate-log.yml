@@ -4,3 +4,10 @@ entries:
   trigger: phase-2-3-manual-batch
   summary: Manual/ad-hoc content batch generated report triad and argument map for
     high-salience non-duplicate topic coverage.
+- id: redebate-healthcare-portability-doctor-licensing-2026-05-06
+  date: '2026-05-06'
+  trigger: v3-source-refresh
+  summary: >-
+    Rebuilt pro, anti, and neutral arguments around enforceable continuity tests:
+    domestic AHCIP/CPSA preservation versus negotiated portability, reciprocal
+    billing, federal framework replacement, and physician mobility.

@@ -1,28 +1,49 @@
 claims:
 - id: claim-healthcare-portability-doctor-licensing-001
   topic_slug: healthcare-portability-doctor-licensing
-  text: Current sources show that insured-health-service principles, Alberta health insurance administration, and physician registration/licensing are separate but connected baselines; they do not settle whether an independent Alberta would preserve reciprocal coverage, doctor mobility, billing rules, specialist referrals, or emergency/out-of-province care without new agreements.
+  text: Alberta currently administers the Alberta Health Care Insurance Plan for eligible residents, including registration, account updates, health cards, and information about insured services in Alberta, Canada, and outside Canada.
   status: source_supported
-  source_ids: &id001
+  source_ids:
+  - alberta-health-care-insurance-plan
+  risk: low
+- id: claim-healthcare-portability-doctor-licensing-002
+  topic_slug: healthcare-portability-doctor-licensing
+  text: The Canada Health Act is the current federal legal baseline for provincial insured-health-service criteria, including public administration, comprehensiveness, universality, portability, and accessibility.
+  status: source_supported
+  source_ids:
+  - canada-health-act
+  risk: low
+- id: claim-healthcare-portability-doctor-licensing-003
+  topic_slug: healthcare-portability-doctor-licensing
+  text: Physician registration in Alberta is handled through the College of Physicians & Surgeons of Alberta, making domestic practice-permit continuity a provincial-regulator question before it is an international-recognition question.
+  status: source_supported
+  source_ids:
+  - cpsa-registration
+  risk: low
+- id: claim-healthcare-portability-doctor-licensing-004
+  topic_slug: healthcare-portability-doctor-licensing
+  text: Alberta could preserve much of its domestic health-coverage and physician-registration machinery through provincial continuity law, but out-of-province care, reciprocal billing, and external credential recognition would require agreements beyond Alberta's unilateral control.
+  status: inference
+  source_ids:
+  - canada-health-act
+  - alberta-health-care-insurance-plan
+  - cpsa-registration
+  risk: high
+- id: claim-healthcare-portability-doctor-licensing-005
+  topic_slug: healthcare-portability-doctor-licensing
+  text: The strongest pro-independence assessment improves if Alberta publishes enforceable health-continuity legislation, reciprocal-care agreements, regulator-recognition documents, and a transition budget before any effective separation date.
+  status: inference
+  source_ids:
   - canada-health-act
   - alberta-health-care-insurance-plan
   - cpsa-registration
   risk: medium
-- id: claim-healthcare-portability-doctor-licensing-002
+- id: claim-healthcare-portability-doctor-licensing-006
   topic_slug: healthcare-portability-doctor-licensing
-  text: "The strongest pro-independence case is that Alberta could maintain universal public coverage in provincial law while designing licensing, workforce, and patient-access agreements around Alberta\u2019s needs, including clearer local accountability for physician supply and health administration."
+  text: The strongest anti-independence assessment is that patients and doctors should not rely on healthcare portability, out-of-province billing, or labour mobility until replacement agreements are signed, funded, and operationally tested.
   status: inference
-  source_ids: *id001
-  risk: medium
-- id: claim-healthcare-portability-doctor-licensing-003
-  topic_slug: healthcare-portability-doctor-licensing
-  text: 'The strongest caution is that healthcare depends on trust and continuity: coverage portability, physician credentials, billing, emergency care, referrals, drug plans, and interprovincial patient movement could become uncertain if Alberta left Canadian legal and funding frameworks before replacement agreements were enforceable.'
-  status: inference
-  source_ids: *id001
+  source_ids:
+  - canada-health-act
+  - alberta-health-care-insurance-plan
+  - cpsa-registration
   risk: high
-- id: claim-healthcare-portability-doctor-licensing-004
-  topic_slug: healthcare-portability-doctor-licensing
-  text: 'This topic remains uncertainty-labelled: High; healthcare continuity depends on legislation, funding, reciprocal billing, professional licensing, workforce supply, hospitals, emergency care, drugs, and agreements with Canada and other provinces.'
-  status: source_supported
-  source_ids: *id001
-  risk: medium

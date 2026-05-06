@@ -3,3 +3,8 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-equalization-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  trigger: v3-source-refresh
+  summary: Reframed the debate around whether equalization is a standalone savings claim or one part of a whole federal fiscal-balance
+    model, adding direct federal equalization and major-transfer sources to support the category boundary.

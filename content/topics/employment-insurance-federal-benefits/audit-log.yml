@@ -10,3 +10,14 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-employment-insurance-federal-benefits-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Refreshed topic to lean v3 dossier headings and tightened source-safe content around EI, federal income-benefit continuity, Alberta income support, transition agreements, records, funding, payments, and appeals.
+  checks:
+  - v3-heading-standard
+  - source-support
+  - citation-numbering
+  - stance-balance
+  - audit-safe-wording
+  result: pass

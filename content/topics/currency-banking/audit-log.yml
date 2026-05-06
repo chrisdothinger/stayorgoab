@@ -2,11 +2,21 @@ entries:
 - id: audit-currency-banking-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
+  result: pass
+- id: audit-currency-banking-2026-05-06-v3-source-refresh
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Refreshed currency-banking to v3 lean dossier headings, narrowed the public answer to Canadian-dollar use, monetary-policy tradeoffs, and banking-stability backstops, and added current banking/deposit-regulation source IDs already present in the shared source registry.
+  checks:
+  - v3-lean-dossier-headings
+  - source-refresh
+  - source-id-matching
+  - no-raw-source-id-body-citations
+  - report-length-over-5000-chars
   result: pass

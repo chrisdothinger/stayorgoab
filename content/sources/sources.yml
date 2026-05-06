@@ -31,7 +31,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Lists active citizen initiative petitions, including A Referendum Relating to Alberta Independence, signature threshold, and collection dates.
+  summary: Lists active citizen initiative petitions, including A Referendum Relating to Alberta Independence, signature threshold,
+    and collection dates.
   how_used: Current-status and referendum-mechanics source.
   related_topic_slugs:
   - referendum-mechanics
@@ -152,7 +153,8 @@ sources:
   source_type: court
   stance: neutral
   reliability_category: primary_legal
-  summary: Supreme Court reference on unilateral secession, democratic expression, constitutional negotiations, and Aboriginal interests.
+  summary: Supreme Court reference on unilateral secession, democratic expression, constitutional negotiations, and Aboriginal
+    interests.
   how_used: Core legal baseline for secession and duty-to-negotiate claims.
   related_topic_slugs:
   - legal-process
@@ -216,7 +218,8 @@ sources:
   stance: neutral
   reliability_category: news_report
   summary: News report describing a court pause on verification of an Alberta separation petition.
-  how_used: Secondary source for current-status and court-process tracking; official/court records should be preferred when available.
+  how_used: Secondary source for current-status and court-process tracking; official/court records should be preferred when
+    available.
   related_topic_slugs:
   - referendum-mechanics
   - referendum-ballot-2026
@@ -338,7 +341,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government of Canada portal for the Canada Revenue Agency and federal tax administration.
-  how_used: Baseline source for distinguishing current federal tax administration from any future Alberta revenue-administration choices.
+  how_used: Baseline source for distinguishing current federal tax administration from any future Alberta revenue-administration
+    choices.
   related_topic_slugs:
   - tax-collection-revenue-agency
   archive_url: null
@@ -376,7 +380,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government of Alberta page describing Alberta tax programs and provincial tax context.
-  how_used: Baseline source for Alberta-administered tax context and the distinction between existing provincial capacity and future independence requirements.
+  how_used: Baseline source for Alberta-administered tax context and the distinction between existing provincial capacity
+    and future independence requirements.
   related_topic_slugs:
   - tax-collection-revenue-agency
   archive_url: null
@@ -395,7 +400,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government of Canada portal for immigration, refugees, citizenship, and related federal services.
-  how_used: Baseline source for current federal immigration and citizenship administration before considering any independence transition.
+  how_used: Baseline source for current federal immigration and citizenship administration before considering any independence
+    transition.
   related_topic_slugs:
   - immigration-passports-mobility
   archive_url: null
@@ -433,7 +439,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Department of Justice Canada criminal justice information page.
-  how_used: Baseline source for distinguishing current federal criminal-justice responsibilities from provincial court and justice-system operations.
+  how_used: Baseline source for distinguishing current federal criminal-justice responsibilities from provincial court and
+    justice-system operations.
   related_topic_slugs:
   - courts-criminal-law
   archive_url: null
@@ -452,7 +459,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government of Alberta page for provincial court information and court-related public services.
-  how_used: Baseline source for existing Alberta court context before considering any independence-related justice-system transition.
+  how_used: Baseline source for existing Alberta court context before considering any independence-related justice-system
+    transition.
   related_topic_slugs:
   - courts-criminal-law
   archive_url: null
@@ -470,7 +478,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada page for the Canada Student Financial Assistance Program, including federal student loans and grants context.
+  summary: Government of Canada page for the Canada Student Financial Assistance Program, including federal student loans
+    and grants context.
   how_used: Baseline source for current federal student loan and grant systems before considering independence-related continuity.
   related_topic_slugs:
   - student-loans-universities-research
@@ -584,7 +593,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Canadian Food Inspection Agency portal for federal food inspection, animal health, plant health, and food-safety context.
+  summary: Canadian Food Inspection Agency portal for federal food inspection, animal health, plant health, and food-safety
+    context.
   how_used: Baseline source for current federal food-inspection and animal/plant health functions.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
@@ -813,7 +823,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta water portal for water management, policies, and programs.
-  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial
+    water issues?
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -832,7 +843,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta portal for drinking-water and wastewater responsibilities and public information.
-  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial
+    water issues?
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -851,7 +863,8 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Federal information on transboundary water context relevant to cross-border river and watershed questions.
-  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial
+    water issues?
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -1192,7 +1205,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official source for current alberta health care insurance plan baseline relevant to the healthcare-portability-doctor-licensing topic.
+  summary: Official source for current alberta health care insurance plan baseline relevant to the healthcare-portability-doctor-licensing
+    topic.
   how_used: Baseline source for What would happen to healthcare coverage, doctor licensing, and out-of-province care?
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
@@ -1211,7 +1225,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official source for current physician registration baseline relevant to the healthcare-portability-doctor-licensing topic.
+  summary: Official source for current physician registration baseline relevant to the healthcare-portability-doctor-licensing
+    topic.
   how_used: Baseline source for What would happen to healthcare coverage, doctor licensing, and out-of-province care?
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
@@ -1485,7 +1500,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: impact-assessment-agency
   slug: impact-assessment-agency
   title: Impact Assessment Agency of Canada
@@ -1505,7 +1519,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: impact-assessment-act
   slug: impact-assessment-act
   title: Impact Assessment Act
@@ -1525,7 +1538,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-energy-regulator
   slug: alberta-energy-regulator
   title: Alberta Energy Regulator
@@ -1545,7 +1557,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-environmental-assessment-process
   slug: alberta-environmental-assessment-process
   title: Environmental assessment process
@@ -1565,7 +1576,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: canada-labour-code
   slug: canada-labour-code
   title: Canada Labour Code
@@ -1585,7 +1595,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-employment-standards
   slug: alberta-employment-standards
   title: Employment standards
@@ -1605,7 +1614,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-labour-relations
   slug: alberta-labour-relations
   title: Labour relations
@@ -1625,7 +1633,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-labour-relations-board
   slug: alberta-labour-relations-board
   title: Alberta Labour Relations Board
@@ -1645,7 +1652,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: correctional-service-canada
   slug: correctional-service-canada
   title: Correctional Service Canada
@@ -1665,7 +1671,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: corrections-conditional-release-act
   slug: corrections-conditional-release-act
   title: Corrections and Conditional Release Act
@@ -1685,7 +1690,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: parole-board-canada
   slug: parole-board-canada
   title: Parole Board of Canada
@@ -1705,7 +1709,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-adult-correctional-remand-centres
   slug: alberta-adult-correctional-remand-centres
   title: Adult correctional and remand centres
@@ -1725,7 +1728,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: public-health-agency-canada
   slug: public-health-agency-canada
   title: Public Health Agency of Canada
@@ -1737,7 +1739,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal public-health agency portal for current disease prevention, surveillance, emergency, and health-protection baselines.
+  summary: Federal public-health agency portal for current disease prevention, surveillance, emergency, and health-protection
+    baselines.
   how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
   related_topic_slugs:
   - public-health-disease-surveillance
@@ -1745,7 +1748,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: canada-immunization-vaccine-safety
   slug: canada-immunization-vaccine-safety
   title: Reporting adverse events following immunization
@@ -1765,7 +1767,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-public-health-act
   slug: alberta-public-health-act
   title: Public Health Act
@@ -1785,7 +1786,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-immunization-policy
   slug: alberta-immunization-policy
   title: Alberta immunization policy
@@ -1805,7 +1805,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: office-superintendent-bankruptcy
   slug: office-superintendent-bankruptcy
   title: Office of the Superintendent of Bankruptcy
@@ -1825,7 +1824,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: bankruptcy-insolvency-act
   slug: bankruptcy-insolvency-act
   title: Bankruptcy and Insolvency Act
@@ -1845,7 +1843,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: companies-creditors-arrangement-act
   slug: companies-creditors-arrangement-act
   title: Companies’ Creditors Arrangement Act
@@ -1865,7 +1862,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-court-of-kings-bench
   slug: alberta-court-of-kings-bench
   title: Court of King’s Bench of Alberta
@@ -1885,7 +1881,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: elections-canada-main
   slug: elections-canada-main
   title: Elections Canada
@@ -1905,7 +1900,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: canada-elections-act
   slug: canada-elections-act
   title: Canada Elections Act
@@ -1925,7 +1919,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: elections-alberta-main
   slug: elections-alberta-main
   title: Elections Alberta
@@ -1945,7 +1938,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-
 - id: alberta-election-finances-act
   slug: alberta-election-finances-act
   title: Election Finances and Contributions Disclosure Act
@@ -1976,8 +1968,10 @@ sources:
   source_type: official
   stance: mixed
   reliability_category: primary_official
-  summary: Government of Alberta page describing 2025-2026 changes to provincial referendum and citizen initiative rules, including direct-democracy thresholds and non-derogation language for section 35 Aboriginal and treaty rights.
-  how_used: Used for current Alberta process context; provincial rules can make a referendum route more accessible, but they do not decide Canada-wide constitutional implementation.
+  summary: Government of Alberta page describing 2025-2026 changes to provincial referendum and citizen initiative rules,
+    including direct-democracy thresholds and non-derogation language for section 35 Aboriginal and treaty rights.
+  how_used: Used for current Alberta process context; provincial rules can make a referendum route more accessible, but they
+    do not decide Canada-wide constitutional implementation.
   related_topic_slugs:
   - legal-process
   - referendum-mechanics
@@ -1997,7 +1991,8 @@ sources:
   source_type: official
   stance: mixed
   reliability_category: primary_official_statement
-  summary: Provincial statement saying the government would not itself put separation on the ballot but would respect a successful citizen-led petition process, while also stating commitments around First Nations rights.
+  summary: Provincial statement saying the government would not itself put separation on the ballot but would respect a successful
+    citizen-led petition process, while also stating commitments around First Nations rights.
   how_used: Used for current-event context and democratic-process framing, not as binding law on secession.
   related_topic_slugs:
   - legal-process
@@ -2009,7 +2004,7 @@ sources:
   status: active
 - id: angus-reid-referendum-alberta-2025
   slug: angus-reid-referendum-alberta-2025
-  title: 'Referendum Reality? Half in Alberta & Saskatchewan call for vote on independence, but fewer would actually leave'
+  title: Referendum Reality? Half in Alberta & Saskatchewan call for vote on independence, but fewer would actually leave
   publisher: Angus Reid Institute
   author: Angus Reid Institute
   url: https://angusreid.org/referendum-alberta-saskatchewan-smith-moe/
@@ -2059,7 +2054,8 @@ sources:
   source_type: academic
   stance: mixed
   reliability_category: expert_legal_commentary
-  summary: Legal commentary on Alberta referendum legislation, citizen-led secession proposals, and non-derogation clauses related to Aboriginal and treaty rights.
+  summary: Legal commentary on Alberta referendum legislation, citizen-led secession proposals, and non-derogation clauses
+    related to Aboriginal and treaty rights.
   how_used: Used to sharpen the distinction between provincial referendum machinery and constitutional or treaty constraints.
   related_topic_slugs:
   - legal-process
@@ -2071,7 +2067,8 @@ sources:
   status: active
 - id: ablawg-hamilton-treaty-promises-2025
   slug: ablawg-hamilton-treaty-promises-2025
-  title: '“Get the province of Alberta in line”: Treaty Promises, Provincial Power, and the Role of Indigenous Nations in Discussions on Alberta Secession'
+  title: '“Get the province of Alberta in line”: Treaty Promises, Provincial Power, and the Role of Indigenous Nations in
+    Discussions on Alberta Secession'
   publisher: ABLawg, University of Calgary Faculty of Law
   author: Robert Hamilton
   url: https://ablawg.ca/2025/05/30/get-the-province-of-alberta-in-line-treaty-promises-provincial-power-and-the-role-of-indigenous-nations-in-discussions-on-alberta-secession/
@@ -2080,8 +2077,10 @@ sources:
   source_type: academic
   stance: anti_independence_or_rights_concern
   reliability_category: expert_legal_commentary
-  summary: Legal commentary on treaty promises, provincial power, and why Indigenous nations would be central actors in any Alberta secession discussion.
-  how_used: Used for anti/pro-federation and neutral analysis of Indigenous rights, treaty relationships, and negotiation complexity.
+  summary: Legal commentary on treaty promises, provincial power, and why Indigenous nations would be central actors in any
+    Alberta secession discussion.
+  how_used: Used for anti/pro-federation and neutral analysis of Indigenous rights, treaty relationships, and negotiation
+    complexity.
   related_topic_slugs:
   - legal-process
   - indigenous-rights-treaties
@@ -2101,8 +2100,10 @@ sources:
   source_type: media
   stance: mixed
   reliability_category: news_report_expert_context
-  summary: News report quoting legal experts on the unsettled consequences of Alberta separation, including currency, federal assets, national parks, First Nations, and institutions.
-  how_used: Used for accessible public-facing examples of the practical transition issues that a vote would not resolve by itself.
+  summary: News report quoting legal experts on the unsettled consequences of Alberta separation, including currency, federal
+    assets, national parks, First Nations, and institutions.
+  how_used: Used for accessible public-facing examples of the practical transition issues that a vote would not resolve by
+    itself.
   related_topic_slugs:
   - legal-process
   - currency-banking
@@ -2111,4 +2112,48 @@ sources:
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-05'
+  status: active
+- id: finance-canada-equalization-program
+  slug: finance-canada-equalization-program
+  title: Equalization Program
+  publisher: Department of Finance Canada
+  author: Department of Finance Canada
+  url: https://www.canada.ca/en/department-finance/programs/federal-transfers/equalization.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal explanation of the Equalization program, including purpose, formula overview, and constitutional commitment
+    to reasonably comparable provincial public services at reasonably comparable taxation levels.
+  how_used: Direct source for what equalization is and why it cannot be treated as a separate Alberta cheque without broader
+    fiscal analysis.
+  related_topic_slugs:
+  - equalization
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: finance-canada-major-federal-transfers
+  slug: finance-canada-major-federal-transfers
+  title: Major federal transfers
+  publisher: Department of Finance Canada
+  author: Department of Finance Canada
+  url: https://www.canada.ca/en/department-finance/programs/federal-transfers/major-federal-transfers.html#Alberta
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal transfer tables by province and territory, including Alberta rows for major federal transfers such as the
+    Canada Health Transfer, Canada Social Transfer, Equalization, and related programs.
+  how_used: Direct source for separating equalization from other federal transfers and for testing any Alberta savings claim
+    against current federal transfer categories.
+  related_topic_slugs:
+  - equalization
+  - healthcare-portability-doctor-licensing
+  - employment-insurance-federal-benefits
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
   status: active

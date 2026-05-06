@@ -11,3 +11,14 @@ entries:
   - citation-format
   - no-external-audit-wording
   result: pass
+- id: audit-healthcare-portability-doctor-licensing-2026-05-06
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Refreshed topic to lean v3 dossier shape with current official source baselines for Canada Health Act portability, Alberta AHCIP administration, and CPSA physician registration.
+  checks:
+  - v3-lean-headings
+  - source-support
+  - stance-balance
+  - raw-source-id-citation-check
+  - audit-safe-public-wording
+  result: pass

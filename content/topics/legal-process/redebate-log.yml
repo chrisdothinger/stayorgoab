@@ -16,3 +16,7 @@ entries:
   date: '2026-05-05'
   trigger: report-contract-v2-mobile-readability
   summary: Preserved the approved report contract v2 approach while replacing the difficult decision-tree/table pattern with a stacked Where the debate turns overview and tighter pillar-based briefs.
+- id: redebate-legal-process-2026-05-06-contract-v3-lean
+  date: '2026-05-06'
+  trigger: repetitive-section-reduction
+  summary: Re-drafted the legal-process dossier into a leaner public contract that folds known/disputed/assumptions/evidence/weak-points/checklist material into pillars, objection/reply pairs, and change-assessment sections.

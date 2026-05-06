@@ -44,3 +44,14 @@ entries:
   - citation-numbering
   - neutral-mediator-role
   result: pass-pending-validation
+- id: audit-legal-process-2026-05-06-contract-v3-lean
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Reduced repetitive public-facing sections in the legal-process overview, pro, anti, and neutral reports while preserving pillar arguments, numbered citations, source lists, and public audit artifacts.
+  checks:
+  - report-contract-v3-lean
+  - section-deduplication
+  - citation-numbering
+  - neutral-mediator-role
+  - public-audit-validation
+  result: pass

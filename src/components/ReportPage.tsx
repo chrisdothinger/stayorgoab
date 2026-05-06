@@ -77,9 +77,6 @@ export function ReportPage({ topic, report, kind }: { topic: TopicMeta; report: 
               </nav>
             </details>
           ) : null}
-          <div className="notice small-note">
-            V3 dossiers keep the public reader layer lean: overview first, pro and anti debate briefs next, then a neutral mediator synthesis. Dense citation clusters render as expandable evidence chips; claim maps, source maps, and review logs remain the audit layer.
-          </div>
         </aside>
         <article className="report-body">
           <MarkdownText body={report.body} />

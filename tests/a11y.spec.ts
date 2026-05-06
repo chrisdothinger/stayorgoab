@@ -83,6 +83,11 @@ test('report section navigation is collapsible on mobile and does not overlay co
   const sectionNav = page.getByRole('group', { name: /Report section jumps/i });
   await expect(sectionNav).toBeVisible();
   await expect(sectionNav).toHaveJSProperty('open', false);
+  await sectionNav.getByText(/Jump to section/i).click();
+  await expect(sectionNav.getByRole('link', { name: 'Bottom line', exact: true })).toBeVisible();
+  await expect(sectionNav.getByRole('link', { name: 'What each side gets right', exact: true })).toBeVisible();
+  await expect(sectionNav.getByRole('link', { name: /Reader checklist/i })).toHaveCount(0);
+  await sectionNav.getByText(/Jump to section/i).click();
   await page.evaluate(() => window.scrollTo(0, 1200));
   const navBox = await sectionNav.boundingBox();
   const headingBox = await page.getByRole('heading', { name: /What each side gets right/i }).boundingBox();
@@ -174,6 +179,10 @@ test('public trust surfaces explain repo, review log, and changelog clearly', as
   await page.goto('/method/');
   await expect(page.getByRole('heading', { name: /Method \/ Ops/i })).toBeVisible();
   await expect(page.getByText(/internal provenance check/i).first()).toBeVisible();
+  await expect(page.getByText(/V3 public dossier shape/i)).toBeVisible();
+  await expect(page.getByText(/Lean dossier contract/i)).toBeVisible();
+  await expect(page.getByText(/Bottom line/i).first()).toBeVisible();
+  await expect(page.getByText(/What survives both arguments/i)).toBeVisible();
   await expect(page.getByRole('heading', { name: /Automated workflows/i })).toBeVisible();
   await expect(page.getByText(/official-status-daily-audit/i)).toBeVisible();
   await expect(page.getByText(/dossier-factory-buildout/i)).toBeVisible();

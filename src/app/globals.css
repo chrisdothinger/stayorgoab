@@ -522,6 +522,12 @@ textarea:focus-visible {
   font-size: 12px;
 }
 
+.report-section-nav a.subsection-link {
+  color: var(--secondary);
+  padding-left: 12px;
+  text-transform: none;
+}
+
 .category-nav a[aria-current="page"] {
   color: var(--ink);
   font-size: 12px;

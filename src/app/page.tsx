@@ -1,24 +1,9 @@
 import Link from 'next/link';
-
-const landingLinks = [
-  {
-    href: '/questions',
-    label: 'Questions',
-    text: 'Browse dossiers, neutral syntheses, pro and anti reports, claim ledgers, and source trails.'
-  },
-  {
-    href: '/sources',
-    label: 'Sources',
-    text: 'Inspect the public source library behind the claims and topic summaries.'
-  },
-  {
-    href: '/method',
-    label: 'Method / Ops',
-    text: 'See how source handling, autonomous checks, review logs, and publication limits work.'
-  }
-];
+import { loadRepositoryContent } from '@/lib/content';
 
 export default function HomePage() {
+  const { topics } = loadRepositoryContent();
+
   return (
     <>
       <section className="hero landing-hero">
@@ -27,14 +12,12 @@ export default function HomePage() {
           <h1>Stay or go?</h1>
           <p>Understand what Alberta independence would actually mean. StayOrGoAB is a source-first, autonomous, non-partisan knowledge base for arguments, claims, sources, and public review trails.</p>
         </div>
-        <nav className="landing-nav" aria-label="Main site sections">
-          {landingLinks.map((item) => (
-            <Link className="landing-link" href={item.href} key={item.href}>
-              <span className="mono">{item.label}</span>
-              <strong>{item.text}</strong>
-            </Link>
-          ))}
-        </nav>
+        <Link className="question-entry-portal" href="/questions">
+          <span className="question-entry-kicker mono">001 / Questions</span>
+          <strong>Choose the question before choosing a side.</strong>
+          <span className="question-entry-copy">Browse {topics.length} source-backed questions about Alberta separation and independence. Each question links to the evidence, claims, pro case, anti case, and neutral synthesis where available.</span>
+          <span className="question-entry-action mono">Browse the questions →</span>
+        </Link>
       </section>
     </>
   );

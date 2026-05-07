@@ -24,7 +24,7 @@ Subject labels can still exist internally as categories, but the public title sh
 
 ## Acceptance gate for a topic
 
-A topic should pass all of these before a new dossier is drafted or an existing dossier is migrated to the v3/evidence-chip standard:
+A topic should pass all of these before a new dossier is drafted or an existing dossier is migrated to the v3.1 overview-neutral/evidence-chip standard:
 
 1. **Question form** — public title and canonical registry question end with `?`.
 2. **Single-question focus** — the dossier answers one main question, not a bundle of loosely related issues.
@@ -44,7 +44,7 @@ Each criterion is scored 1–5 in `content/topic-question-registry.yml`.
 | `public_importance` | Does it affect real civic decisions, money, rights, institutions, safety, or daily life? |
 | `sensitivity` | Is it controversial, emotionally loaded, rights-related, financially material, or trust-sensitive? |
 | `uniqueness` | Is it clearly different from existing dossiers? |
-| `answerability` | Can credible sources support a pro, anti, and neutral treatment? |
+| `answerability` | Can credible sources support a fair overview-as-neutral answer plus pro and anti briefs? |
 | `reader_value` | Would voters, journalists, policymakers, or affected groups actually use the answer? |
 
 Classification:
@@ -97,7 +97,7 @@ Before adding or refreshing a topic:
 5. **Anti-source lane** — identify why a serious anti-independence/pro-federation argument needs this question and what evidence it would use.
 6. **Mediator-dedup lane** — decide whether the question is unique, too broad, too narrow, or better merged.
 7. **Registry update** — update `content/topic-question-registry.yml` before writing or migrating the dossier.
-8. **Dossier migration** — only then update the dossier to lean v3 + evidence-chip citations.
+8. **Dossier migration** — only then update the dossier to v3.1 overview-neutral + evidence-chip citations.
 
 ## Deduplication rules
 
@@ -125,6 +125,6 @@ Sequence:
 1. Harden the question.
 2. Confirm uniqueness and value.
 3. Build/update source packets.
-4. Write the lean v3 overview/pro/anti/neutral reports.
+4. Write the v3.1 overview-as-neutral synthesis plus pro/anti debate briefs.
 5. Keep numbered citations and evidence-chip display.
 6. Validate claims, sources, audit logs, and public release metadata.

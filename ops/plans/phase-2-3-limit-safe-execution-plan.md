@@ -9,7 +9,7 @@ Scope: after the UX/Ops sprint, complete remaining existing dossiers, then plan 
 - Do not run a giant all-in-one dossier job.
 - Do not mark a dossier complete unless it satisfies the full-dossier contract.
 - Do not invent sources, source IDs, run dates, external audits, legal authority, or government/regulator verification.
-- Neutral reports are mediator/synthesis reports comparing pro and anti strengths/weaknesses; they are not a third advocacy position.
+- The overview is the neutral synthesis and main answer; do not create a separate public neutral report for migrated topics.
 - Keep public copy non-partisan, uncertainty-labelled, citation-backed, and clear for normal readers.
 - Use numbered report citations: cite sources inline as `[1]`, `[2]`, etc.; include a `## Sources` section in every report with matching numbered source entries. Do not use raw source IDs as the public inline citation format.
 - Never commit secrets, raw provider logs, raw agent transcripts, hidden chain-of-thought, personal contact data, or unredacted submissions.
@@ -52,27 +52,18 @@ For each question in a batch, use this sequence:
 2. Pro Report Agent — strongest honest pro-independence case supported by available sources.
 3. Anti Report Agent — strongest honest anti-independence/pro-federation case supported by available sources.
 4. Claim/Citation Agent — normalize claims and verify source IDs.
-5. Neutral Mediator Agent — only after pro + anti exist; compare strengths, weaknesses, evidence quality, and uncertainty.
+5. Overview Synthesis Agent — after pro + anti source lanes exist, merge the balanced synthesis into `index.mdx`; no separate public neutral report for migrated topics.
 6. Citation Format Agent — enforce public citation format: all report body citations are numbered bracket references (`[1]`, `[2]`, etc.) and every report has a `## Sources` section listing the matching numbered source records.
 7. Synthesis Auditor — check fairness, overclaiming, missing citations, uncertainty, and public wording.
 8. UX/Public Clarity Auditor — check reader comprehension, short answer, source limits, and next links.
 
 Full-dossier report contract, where applicable:
 
-- Short answer
-- What current sources support
-- Core argument
-- What is known
-- What is disputed
-- Assumptions
-- Strongest evidence
-- Weak points
-- Counterarguments
-- Sources
-- What would change this assessment
-- Open questions
-- Main uncertainty
-- Reader checklist
+- Overview = balanced short answer and neutral synthesis
+- Pro brief = strongest fair pro-independence case
+- Anti brief = strongest fair anti-independence/pro-federation case
+- Claims and sources = audit support
+- Legacy neutral route = compatibility notice after migration
 
 ## Phase 2 validation gate
 
@@ -111,9 +102,9 @@ Create a ranked list of the next 50 questions using these criteria:
 4. Source availability — official/legal/academic/primary sources exist.
 5. Confusion risk — common misinformation or misunderstanding zone.
 6. Coverage gap — current site lacks this category/topic.
-7. Dossier feasibility — can pro/anti/neutral reports be produced responsibly without inventing evidence?
+7. Dossier feasibility — can overview/pro/anti treatment be produced responsibly without inventing evidence?
 
-Topic selection should not chase outrage for its own sake. The point is to surface important, sensitive, high-salience questions and handle them with unusually fair pro/anti/neutral treatment, clear uncertainty labels, and strong sourcing.
+Topic selection should not chase outrage for its own sake. The point is to surface important, sensitive, high-salience questions and handle them with unusually fair overview/pro/anti treatment, clear uncertainty labels, and strong sourcing.
 
 Save:
 

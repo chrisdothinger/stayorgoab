@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { DossierNav } from '@/components/DossierNav';
 import { ReportPage } from '@/components/ReportPage';
+import { hasMergedNeutralOverview } from '@/lib/dossier-contract';
 import { loadRepositoryContent } from '@/lib/content';
 
 export const dynamicParams = false;
@@ -20,7 +21,7 @@ export default async function NeutralReportPage({ params }: { params: Promise<{ 
   const report = files?.reports.neutral ?? null;
   if (!topic || !files || !report) notFound();
 
-  if (topic.slug !== 'legal-process') {
+  if (!hasMergedNeutralOverview(topic.slug)) {
     return <ReportPage topic={topic} report={report} kind="neutral" />;
   }
 

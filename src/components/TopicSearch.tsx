@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
+import { hasMergedNeutralOverview } from '@/lib/dossier-contract';
 import type { TopicMeta } from '@/lib/types';
 
 const allValue = 'all';
@@ -20,6 +21,10 @@ function groupedByCategory(topics: TopicMeta[]) {
     groups.set(topic.category, [...(groups.get(topic.category) ?? []), topic]);
   }
   return Array.from(groups.entries()).map(([category, items]) => ({ category, items }));
+}
+
+function neutralIsMergedIntoOverview(topic: TopicMeta) {
+  return hasMergedNeutralOverview(topic.slug);
 }
 
 export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
@@ -97,6 +102,7 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
             {group.items.map((topic) => {
               const isExpanded = expanded === topic.slug;
               const topicNumber = filtered.indexOf(topic) + 1;
+              const showNeutralLink = !neutralIsMergedIntoOverview(topic);
               return (
                 <article className="index-row" key={topic.slug}>
                   <span className="mono row-meta">{String(topicNumber).padStart(3, '0')}</span>
@@ -135,8 +141,8 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
                         <span>{topic.claim_count} claims</span>
                       </div>
                       <div className="source-trail mono dossier-nav compact-dossier-links" aria-label={`Dossier tabs for ${topic.title}`}>
-                        <Link href={`/questions/${topic.slug}`}>Dossier</Link>
-                        <Link href={`/questions/${topic.slug}/neutral`}>Neutral</Link>
+                        <Link href={`/questions/${topic.slug}`}>Overview</Link>
+                        {showNeutralLink ? <Link href={`/questions/${topic.slug}/neutral`}>Neutral</Link> : null}
                         <Link href={`/questions/${topic.slug}/pro`}>Pro</Link>
                         <Link href={`/questions/${topic.slug}/anti`}>Anti</Link>
                         <Link href={`/questions/${topic.slug}/claims`}>Claims</Link>

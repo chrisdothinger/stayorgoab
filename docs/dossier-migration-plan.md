@@ -1,11 +1,11 @@
-# Dossier Migration Plan — v3 Lean Standard
+# Dossier Migration Plan — v3.1 Overview-Neutral Standard
 
 ## Goal
 
 Build out all 50 StayOrGoAB questions as high-value, source-first public dossiers using the current standards:
 
 - hardened public question map from `content/topic-question-registry.yml`;
-- lean v3 public dossier contract;
+- overview-as-neutral v3.1 public dossier contract;
 - evidence-chip citation rendering while preserving numbered source IDs;
 - public audit trail through sources, claims, audit logs, redebate logs, validators, and PR history.
 
@@ -19,9 +19,9 @@ Build out all 50 StayOrGoAB questions as high-value, source-first public dossier
 ## Current state
 
 - 50 public questions exist.
-- 50 topics have the required content artifacts: `index.mdx`, `pro.mdx`, `anti.mdx`, `neutral.mdx`, `sources.yml`, `claims.yml`, `audit-log.yml`, and `redebate-log.yml`.
-- `legal-process` is the completed v3 pilot.
-- The other 49 topics are tracked as `legacy_refresh_needed` in `content/dossier-migration-manifest.yml`.
+- 50 topics have the required content artifacts: `index.mdx`, `pro.mdx`, `anti.mdx`, legacy `neutral.mdx`, `sources.yml`, `claims.yml`, `audit-log.yml`, and `redebate-log.yml`.
+- `legal-process` is the completed v3.1 pilot: neutral synthesis is merged into the overview and the separate Neutral nav item is hidden for that topic.
+- The other 49 topics are tracked as `legacy_refresh_needed` in `content/dossier-migration-manifest.yml` and still have separate neutral reports until migrated.
 
 ## Control files
 
@@ -119,34 +119,33 @@ For every migrated topic:
    - Prefer primary law, government, court, regulator, fiscal/statistical, treaty, and institutional sources.
    - Add current credible sources when needed; preserve source IDs and source quality labels.
 
-3. **Overview rewrite**
+3. **Overview + neutral synthesis rewrite**
    - Required headings:
      - `## Short answer`
-     - `## The debate in plain English`
-     - `## Where the debate turns`
-     - `## Read the briefs`
+     - `## What this means for Albertans`
+     - `## What each side gets right`
+     - `## What would have to be decided`
+     - `## What survives both arguments`
+     - `## Sources`
+   - The overview is the neutral report for refreshed dossiers. It must contain the balanced synthesis readers need before deciding whether to open pro/anti.
+   - Do not add separate `If you only read one page` or `Want to test the argument?` sections.
 
 4. **Pro rewrite**
    - Required headings:
      - `## Bottom line`
      - `## The case in 3–5 pillars`
-     - `## Best objections / replies`
-     - `## What would change this assessment`
+     - `## Main weakness`
      - `## Sources`
 
 5. **Anti rewrite**
    - Same v3 structure as pro.
    - Must be the strongest honest anti-independence/pro-federation case, not a straw man.
 
-6. **Neutral rewrite**
-   - Required headings:
-     - `## Bottom line`
-     - `## What each side gets right`
-     - `## What survives both arguments`
-     - `## The practical test`
-     - `## What would change this assessment`
-     - `## Sources`
-   - Neutral is a mediator synthesis after pro/anti, not a third advocacy side.
+6. **Retire separate neutral reader path**
+   - Move the neutral synthesis into `index.mdx`.
+   - Remove the Neutral tab from public navigation for the migrated topic.
+   - Keep any legacy `/neutral/` route as a notice or compatibility redirect until route removal is safe.
+   - Do not keep duplicate neutral prose in both overview and neutral report.
 
 7. **Evidence artifacts**
    - Update `sources.yml` for any source additions or changed source-quality notes.
@@ -186,10 +185,10 @@ After merge, verify GitHub `build`, `deploy`, and `secret-scan`, then live-check
 
 Each batch gets an independent review before merge:
 
-- **Spec compliance:** v3 sections, citation/source matching, manifest status, audit/redebate updates.
+- **Spec compliance:** v3.1 overview-as-neutral sections, citation/source matching, manifest status, audit/redebate updates.
 - **Source quality:** current credible source coverage, no missing obvious counter-evidence, no unsupported high-risk claims.
-- **Reader quality:** plain-English answer, no repetitive legacy containers, mobile-readable pillars, no raw Markdown artifacts.
-- **Fairness:** serious pro and anti briefs; neutral compares what survives both sides.
+- **Reader quality:** overview answers the question and performs the neutral synthesis, pro/anti avoid repeated background, mobile-readable pillars, no raw Markdown artifacts.
+- **Fairness:** serious pro and anti briefs; overview compares what survives both sides.
 
 ## Migration status updates
 

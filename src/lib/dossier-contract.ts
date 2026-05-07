@@ -2,7 +2,14 @@ export type ReportKind = 'neutral' | 'pro' | 'anti';
 
 export const DOSSIER_CONTRACT_VERSION = 'v3.1-overview-neutral' as const;
 
-export const MERGED_NEUTRAL_TOPIC_SLUGS = ['legal-process'] as const;
+export const MERGED_NEUTRAL_TOPIC_SLUGS = [
+  'legal-process',
+  'cpp-pensions',
+  'employment-insurance-federal-benefits',
+  'bank-deposits-financial-stability',
+  'currency-banking',
+  'equalization'
+] as const;
 
 export function hasMergedNeutralOverview(topicSlug: string) {
   return (MERGED_NEUTRAL_TOPIC_SLUGS as readonly string[]).includes(topicSlug);

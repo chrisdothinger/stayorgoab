@@ -22,7 +22,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: secession-law
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   merge_with: null
   scores:
     public_importance: 5
@@ -72,7 +72,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: pensions-benefits
-  category: Pensions, benefits, and household income
+  category: Public services, health, and benefits
   merge_with: null
   scores:
     public_importance: 5
@@ -112,7 +112,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: indigenous-rights
-  category: Indigenous rights, treaties, land, and consent
+  category: Indigenous rights, treaties, and land
   merge_with: null
   scores:
     public_importance: 5
@@ -174,7 +174,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: macro-fiscal
-  category: Economy, fiscal policy, and household impact
+  category: Economy, taxes, and finance
   merge_with: null
   scores:
     public_importance: 5
@@ -223,7 +223,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: referendum-process
-  category: Democracy, petitions, and referendum mechanics
+  category: Legal process and referendum
   merge_with: null
   scores:
     public_importance: 5
@@ -258,7 +258,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: landlocked-corridors
-  category: Landlocked access, export corridors, and logistics
+  category: Trade, borders, and mobility
   merge_with: null
   scores:
     public_importance: 5
@@ -328,7 +328,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: negotiation-settlement
-  category: Post-referendum negotiations and settlement terms
+  category: Legal process and referendum
   merge_with: null
   scores:
     public_importance: 5
@@ -360,7 +360,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: secession-law
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   merge_with: null
   scores:
     public_importance: 5
@@ -410,7 +410,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: secession-law
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   merge_with: null
   scores:
     public_importance: 5
@@ -460,7 +460,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: secession-law
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   merge_with: null
   scores:
     public_importance: 5
@@ -510,7 +510,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: current-referendum
-  category: Current referendum status and ballot timing
+  category: Legal process and referendum
   merge_with: null
   scores:
     public_importance: 5
@@ -546,7 +546,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: us-alignment
-  category: United States partnerships, trade, defence, energy, and sovereignty
+  category: Foreign affairs, defence, and recognition
   merge_with: null
   scores:
     public_importance: 5
@@ -590,7 +590,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: federal-transfers
-  category: Equalization and federal transfers
+  category: Economy, taxes, and finance
   merge_with: null
   scores:
     public_importance: 5
@@ -638,7 +638,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: debt-assets
-  category: Debt, assets, and fiscal settlement
+  category: Economy, taxes, and finance
   merge_with: null
   scores:
     public_importance: 5
@@ -683,7 +683,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: indigenous-sovereignty
-  category: First Nations jurisdiction, treaty relationships, and consent
+  category: Indigenous rights, treaties, and land
   merge_with: null
   scores:
     public_importance: 5
@@ -715,7 +715,7 @@ topics:
   decision: keep
   priority: keep
   question_family: defence-security
-  category: Defence, security, and foreign affairs
+  category: Foreign affairs, defence, and recognition
   merge_with: null
   scores:
     public_importance: 4
@@ -758,7 +758,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: currency-banking
-  category: Currency, banking, and monetary stability
+  category: Economy, taxes, and finance
   merge_with: null
   scores:
     public_importance: 5
@@ -809,7 +809,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: borders-trade
-  category: Borders, tariffs, customs, and trade
+  category: Trade, borders, and mobility
   merge_with: null
   scores:
     public_importance: 5
@@ -860,7 +860,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: transition-continuity
-  category: Transition continuity and service interruption risk
+  category: Public services, health, and benefits
   merge_with: null
   scores:
     public_importance: 5
@@ -893,7 +893,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: resource-development
-  category: Resource development, permitting, markets, and constraints
+  category: Energy, resources, and environment
   merge_with: null
   scores:
     public_importance: 5
@@ -944,7 +944,7 @@ topics:
   decision: keep
   priority: keep
   question_family: state-capacity
-  category: State capacity and public institutions
+  category: Government institutions and regulators
   merge_with: null
   scores:
     public_importance: 5
@@ -982,7 +982,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: international-recognition
-  category: International recognition and diplomacy
+  category: Foreign affairs, defence, and recognition
   merge_with: null
   scores:
     public_importance: 5
@@ -1026,7 +1026,7 @@ topics:
   decision: keep
   priority: keep
   question_family: case-studies
-  category: Comparative case studies
+  category: Legal process and referendum
   merge_with: null
   scores:
     public_importance: 4
@@ -1060,7 +1060,7 @@ topics:
   decision: keep
   priority: keep
   question_family: tax-administration
-  category: Tax collection and revenue administration
+  category: Economy, taxes, and finance
   merge_with: null
   scores:
     public_importance: 4
@@ -1099,7 +1099,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: citizenship-mobility
-  category: Citizenship, passports, immigration, and mobility
+  category: Trade, borders, and mobility
   merge_with: null
   scores:
     public_importance: 5
@@ -1156,7 +1156,7 @@ topics:
   decision: keep
   priority: keep
   question_family: justice-law-courts
-  category: Criminal law, prosecutions, courts, and legal continuity
+  category: Justice, rights, and public safety
   merge_with: null
   scores:
     public_importance: 5
@@ -1200,7 +1200,7 @@ topics:
   decision: keep
   priority: keep
   question_family: education-research
-  category: Students, universities, and research funding
+  category: Work, education, and everyday life
   merge_with: null
   scores:
     public_importance: 4
@@ -1244,7 +1244,7 @@ topics:
   decision: keep
   priority: keep
   question_family: daily-life-regulators
-  category: Daily-life federal regulators
+  category: Government institutions and regulators
   merge_with: null
   scores:
     public_importance: 4
@@ -1278,7 +1278,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: agriculture-market-access
-  category: Agriculture, food inspection, and market access
+  category: Trade, borders, and mobility
   merge_with: null
   scores:
     public_importance: 5
@@ -1318,7 +1318,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: federal-benefits
-  category: Federal benefits and income supports
+  category: Public services, health, and benefits
   merge_with: null
   scores:
     public_importance: 5
@@ -1358,7 +1358,7 @@ topics:
   decision: keep
   priority: keep
   question_family: public-lands
-  category: National parks, Crown land, and public lands
+  category: Energy, resources, and environment
   merge_with: null
   scores:
     public_importance: 4
@@ -1412,7 +1412,7 @@ topics:
   decision: keep
   priority: keep
   question_family: aviation-air-links
-  category: Aviation safety, airports, flights, and air links
+  category: Trade, borders, and mobility
   merge_with: null
   scores:
     public_importance: 4
@@ -1456,7 +1456,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: water-infrastructure
-  category: Water rights, rivers, and water infrastructure
+  category: Energy, resources, and environment
   merge_with: null
   scores:
     public_importance: 5
@@ -1506,7 +1506,7 @@ topics:
   decision: keep
   priority: keep
   question_family: emergency-management
-  category: Emergency management and disaster aid
+  category: Public services, health, and benefits
   merge_with: null
   scores:
     public_importance: 4
@@ -1540,7 +1540,7 @@ topics:
   decision: keep
   priority: keep
   question_family: public-data-statistics
-  category: Statistics, census, public data, funding formulas, and elections
+  category: Government institutions and regulators
   merge_with: null
   scores:
     public_importance: 3
@@ -1578,7 +1578,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: policing
-  category: Police services and public safety
+  category: Justice, rights, and public safety
   merge_with: null
   scores:
     public_importance: 5
@@ -1623,7 +1623,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: rights-liberties
-  category: Rights, liberties, and constitutional continuity
+  category: Justice, rights, and public safety
   merge_with: null
   scores:
     public_importance: 5
@@ -1673,7 +1673,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: rights-health
-  category: Reproductive health and rights
+  category: Justice, rights, and public safety
   merge_with: null
   scores:
     public_importance: 5
@@ -1728,7 +1728,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: public-safety-rights
-  category: Firearms, licensing, and public safety
+  category: Justice, rights, and public safety
   merge_with: null
   scores:
     public_importance: 4
@@ -1763,7 +1763,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: healthcare-systems
-  category: Healthcare coverage, portability, and professional licensing
+  category: Public services, health, and benefits
   merge_with: null
   scores:
     public_importance: 5
@@ -1798,7 +1798,7 @@ topics:
   decision: keep
   priority: keep
   question_family: border-agency-capacity
-  category: Border agency capacity, inspections, and enforcement
+  category: Trade, borders, and mobility
   merge_with: null
   scores:
     public_importance: 5
@@ -1855,7 +1855,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: financial-stability
-  category: Bank deposits, credit unions, and financial stability
+  category: Economy, taxes, and finance
   merge_with: null
   scores:
     public_importance: 5
@@ -1894,7 +1894,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: health-regulation
-  category: Drug approvals, recalls, and medicine supply
+  category: Public services, health, and benefits
   merge_with: null
   scores:
     public_importance: 5
@@ -1929,7 +1929,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: identity-data
-  category: Privacy, identity, and federal data systems
+  category: Government institutions and regulators
   merge_with: null
   scores:
     public_importance: 5
@@ -1965,7 +1965,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: major-project-approvals
-  category: Major project approvals, assessments, and permitting speed
+  category: Energy, resources, and environment
   merge_with: null
   scores:
     public_importance: 5
@@ -2012,7 +2012,7 @@ topics:
   decision: keep
   priority: keep
   question_family: labour-public-sector
-  category: Labour standards and public-sector bargaining
+  category: Work, education, and everyday life
   merge_with: null
   scores:
     public_importance: 4
@@ -2056,7 +2056,7 @@ topics:
   decision: keep
   priority: keep
   question_family: corrections-parole
-  category: Corrections, parole, custody, and sentence administration
+  category: Justice, rights, and public safety
   merge_with: null
   scores:
     public_importance: 4
@@ -2100,7 +2100,7 @@ topics:
   decision: keep
   priority: flagship
   question_family: public-health
-  category: Public health, disease surveillance, and vaccine reporting
+  category: Public services, health, and benefits
   merge_with: null
   scores:
     public_importance: 5
@@ -2135,7 +2135,7 @@ topics:
   decision: keep
   priority: keep
   question_family: financial-law
-  category: Bankruptcy, insolvency, and creditor protection
+  category: Economy, taxes, and finance
   merge_with: null
   scores:
     public_importance: 4
@@ -2174,7 +2174,7 @@ topics:
   decision: keep
   priority: keep
   question_family: democratic-institutions
-  category: Election law, parties, and campaign finance
+  category: Government institutions and regulators
   merge_with: null
   scores:
     public_importance: 4

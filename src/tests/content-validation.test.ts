@@ -39,6 +39,34 @@ describe('content validation', () => {
     expect(result.errors).toEqual([]);
   });
 
+  it('keeps question categories consolidated enough to be useful as filters', () => {
+    const content = loadRepositoryContent();
+    const categories = [...new Set(content.topics.map((topic) => topic.category))].sort();
+    const expectedCategories = [
+      'Economy, taxes, and finance',
+      'Energy, resources, and environment',
+      'Foreign affairs, defence, and recognition',
+      'Government institutions and regulators',
+      'Indigenous rights, treaties, and land',
+      'Justice, rights, and public safety',
+      'Legal process and referendum',
+      'Public services, health, and benefits',
+      'Trade, borders, and mobility',
+      'Work, education, and everyday life'
+    ];
+
+    expect(categories).toEqual(expectedCategories);
+    expect(categories.length).toBeLessThanOrEqual(12);
+    expect(categories.length).toBeGreaterThanOrEqual(8);
+
+    const categoryCounts = categories.map((category) => ({
+      category,
+      count: content.topics.filter((topic) => topic.category === category).length
+    }));
+
+    expect(categoryCounts.every((entry) => entry.count >= 2)).toBe(true);
+  });
+
   it('derives topic source and claim counts from dossier files instead of stale index metadata', () => {
     const content = loadRepositoryContent();
     const mismatches = content.topics.flatMap((topic) => {

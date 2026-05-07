@@ -2,7 +2,7 @@ topics:
 - slug: legal-process
   title: What would legally need to happen for Alberta to become independent?
   plain_question: What would legally need to happen for Alberta to become independent?
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -21,7 +21,7 @@ topics:
 - slug: cpp-pensions
   title: Would Albertans keep CPP benefits, or move to a new pension system?
   plain_question: Would Albertans keep CPP benefits, or move to a new pension system?
-  category: Pensions, benefits, and household income
+  category: Public services, health, and benefits
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -39,7 +39,7 @@ topics:
 - slug: indigenous-rights-treaties
   title: How would Indigenous rights, treaties, land, and consultation affect Alberta independence?
   plain_question: How would Indigenous rights, treaties, land, and consultation affect Alberta independence?
-  category: Indigenous rights, treaties, land, and consent
+  category: Indigenous rights, treaties, and land
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -57,7 +57,7 @@ topics:
 - slug: economy-fiscal
   title: Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition costs?
   plain_question: Would independence make Alberta richer or poorer after taxes, transfers, debt, trade, and transition costs?
-  category: Economy, fiscal policy, and household impact
+  category: Economy, taxes, and finance
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -75,7 +75,7 @@ topics:
 - slug: referendum-mechanics
   title: How would Alberta’s petition and referendum process actually work?
   plain_question: How would Alberta’s petition and referendum process actually work?
-  category: Democracy, petitions, and referendum mechanics
+  category: Legal process and referendum
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -92,7 +92,7 @@ topics:
 - slug: borders-currency-citizenship
   title: How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
   plain_question: How would a landlocked Alberta move goods through Canadian, U.S., and overseas routes after independence?
-  category: Landlocked access, export corridors, and logistics
+  category: Trade, borders, and mobility
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -108,7 +108,7 @@ topics:
 - slug: petition-vs-referendum-vs-negotiations
   title: What would negotiations with Canada actually have to settle after a successful Alberta referendum?
   plain_question: What would negotiations with Canada actually have to settle after a successful Alberta referendum?
-  category: Post-referendum negotiations and settlement terms
+  category: Legal process and referendum
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -125,7 +125,7 @@ topics:
 - slug: clarity-act
   title: Does the Clarity Act give Ottawa a veto over Alberta independence?
   plain_question: Does the Clarity Act give Ottawa a veto over Alberta independence?
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -142,7 +142,7 @@ topics:
 - slug: quebec-secession-reference
   title: What did the Supreme Court actually say about unilateral secession?
   plain_question: What did the Supreme Court actually say about unilateral secession?
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -158,7 +158,7 @@ topics:
 - slug: clear-question-majority
   title: Who decides whether Alberta’s referendum question and result are clear enough?
   plain_question: Who decides whether Alberta’s referendum question and result are clear enough?
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -175,7 +175,7 @@ topics:
 - slug: referendum-ballot-2026
   title: What is known, and not known, about a possible 2026 Alberta referendum ballot?
   plain_question: What is known, and not known, about a possible 2026 Alberta referendum ballot?
-  category: Current referendum status and ballot timing
+  category: Legal process and referendum
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -194,7 +194,7 @@ topics:
     energy, and sovereignty?
   plain_question: Would an independent Alberta align more closely with the United States, and what would that mean for trade,
     defence, energy, and sovereignty?
-  category: United States partnerships, trade, defence, energy, and sovereignty
+  category: Foreign affairs, defence, and recognition
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -212,7 +212,7 @@ topics:
 - slug: equalization
   title: How much, if anything, would Albertans save from ending federal equalization and other transfers?
   plain_question: How much, if anything, would Albertans save from ending federal equalization and other transfers?
-  category: Equalization and federal transfers
+  category: Economy, taxes, and finance
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -228,7 +228,7 @@ topics:
 - slug: federal-debt-assets
   title: How much federal debt would Alberta inherit, and what assets could it claim?
   plain_question: How much federal debt would Alberta inherit, and what assets could it claim?
-  category: Debt, assets, and fiscal settlement
+  category: Economy, taxes, and finance
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -245,7 +245,7 @@ topics:
 - slug: indigenous-treaties
   title: Could First Nations remain tied to Canada or require separate agreements if Alberta tried to separate?
   plain_question: Could First Nations remain tied to Canada or require separate agreements if Alberta tried to separate?
-  category: First Nations jurisdiction, treaty relationships, and consent
+  category: Indigenous rights, treaties, and land
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -262,7 +262,7 @@ topics:
 - slug: military-security
   title: Who would defend Alberta, and what alliances or security arrangements would replace Canada’s?
   plain_question: Who would defend Alberta, and what alliances or security arrangements would replace Canada’s?
-  category: Defence, security, and foreign affairs
+  category: Foreign affairs, defence, and recognition
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -279,7 +279,7 @@ topics:
 - slug: currency-banking
   title: Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking stability?
   plain_question: Could Alberta keep using the Canadian dollar, and what would that mean for monetary policy and banking stability?
-  category: Currency, banking, and monetary stability
+  category: Economy, taxes, and finance
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -296,7 +296,7 @@ topics:
   title: Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from Alberta?
   plain_question: Would independence create tariffs, customs costs, or market-access barriers for goods moving to and from
     Alberta?
-  category: Borders, tariffs, customs, and trade
+  category: Trade, borders, and mobility
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -312,7 +312,7 @@ topics:
 - slug: public-services
   title: Which services would face the highest interruption risk in the first year after independence?
   plain_question: Which services would face the highest interruption risk in the first year after independence?
-  category: Transition continuity and service interruption risk
+  category: Public services, health, and benefits
   state: full_dossier
   time_sensitivity: high
   keywords:
@@ -331,7 +331,7 @@ topics:
     routes still constrain development?
   plain_question: Would Alberta’s resources be unlocked faster, or would markets, Indigenous rights, environmental rules,
     and export routes still constrain development?
-  category: Resource development, permitting, markets, and constraints
+  category: Energy, resources, and environment
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -348,7 +348,7 @@ topics:
 - slug: bureaucracy-governance
   title: What new national institutions would Alberta need on day one, and which could be phased in later?
   plain_question: What new national institutions would Alberta need on day one, and which could be phased in later?
-  category: State capacity and public institutions
+  category: Government institutions and regulators
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -364,7 +364,7 @@ topics:
 - slug: international-recognition
   title: Would other countries recognize an independent Alberta, and what conditions might they attach?
   plain_question: Would other countries recognize an independent Alberta, and what conditions might they attach?
-  category: International recognition and diplomacy
+  category: Foreign affairs, defence, and recognition
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -380,7 +380,7 @@ topics:
 - slug: case-studies
   title: What can Alberta realistically learn from Quebec, Brexit, Scotland, and other independence movements?
   plain_question: What can Alberta realistically learn from Quebec, Brexit, Scotland, and other independence movements?
-  category: Comparative case studies
+  category: Legal process and referendum
   state: full_dossier
   time_sensitivity: low
   keywords:
@@ -396,7 +396,7 @@ topics:
 - slug: tax-collection-revenue-agency
   title: Would Alberta need its own tax agency, and how hard would that be?
   plain_question: Would Alberta need its own tax agency, and how hard would that be?
-  category: Tax collection and revenue administration
+  category: Economy, taxes, and finance
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -415,7 +415,7 @@ topics:
   title: Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work across Canada?
   plain_question: Would Albertans keep Canadian citizenship, passports, residency rights, and the ability to live or work
     across Canada?
-  category: Citizenship, passports, immigration, and mobility
+  category: Trade, borders, and mobility
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -433,7 +433,7 @@ topics:
 - slug: courts-criminal-law
   title: Who would make criminal law, run prosecutions, and keep courts operating after independence?
   plain_question: Who would make criminal law, run prosecutions, and keep courts operating after independence?
-  category: Criminal law, prosecutions, courts, and legal continuity
+  category: Justice, rights, and public safety
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -451,7 +451,7 @@ topics:
 - slug: student-loans-universities-research
   title: What would happen to student loans, universities, and research funding?
   plain_question: What would happen to student loans, universities, and research funding?
-  category: Students, universities, and research funding
+  category: Work, education, and everyday life
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -469,7 +469,7 @@ topics:
 - slug: postal-telecom-broadcasting
   title: Who would regulate mail, telecom, internet, wireless spectrum, and broadcasting?
   plain_question: Who would regulate mail, telecom, internet, wireless spectrum, and broadcasting?
-  category: Daily-life federal regulators
+  category: Government institutions and regulators
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -487,7 +487,7 @@ topics:
 - slug: agriculture-food-inspection-market-access
   title: How would independence affect farmers, food inspection, exports, and market access?
   plain_question: How would independence affect farmers, food inspection, exports, and market access?
-  category: Agriculture, food inspection, and market access
+  category: Trade, borders, and mobility
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -505,7 +505,7 @@ topics:
 - slug: employment-insurance-federal-benefits
   title: Would Albertans keep Employment Insurance and federal income benefits?
   plain_question: Would Albertans keep Employment Insurance and federal income benefits?
-  category: Federal benefits and income supports
+  category: Public services, health, and benefits
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -523,7 +523,7 @@ topics:
 - slug: national-parks-public-lands
   title: What would happen to national parks, Crown land, and public lands?
   plain_question: What would happen to national parks, Crown land, and public lands?
-  category: National parks, Crown land, and public lands
+  category: Energy, resources, and environment
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -542,7 +542,7 @@ topics:
   title: Would Alberta’s airports, flights, aviation safety, and international air links keep operating smoothly after independence?
   plain_question: Would Alberta’s airports, flights, aviation safety, and international air links keep operating smoothly
     after independence?
-  category: Aviation safety, airports, flights, and air links
+  category: Trade, borders, and mobility
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -560,7 +560,7 @@ topics:
 - slug: water-rights-rivers
   title: Could Alberta independence change water rights, rivers, and drinking-water systems?
   plain_question: Could Alberta independence change water rights, rivers, and drinking-water systems?
-  category: Water rights, rivers, and water infrastructure
+  category: Energy, resources, and environment
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -579,7 +579,7 @@ topics:
 - slug: emergency-management-disaster-aid
   title: Who would pay for disaster response and emergency aid after independence?
   plain_question: Who would pay for disaster response and emergency aid after independence?
-  category: Emergency management and disaster aid
+  category: Public services, health, and benefits
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -597,7 +597,7 @@ topics:
 - slug: statistics-census-public-data
   title: Who would run census, statistics, and public-data systems, and why would that matter for funding and elections?
   plain_question: Who would run census, statistics, and public-data systems, and why would that matter for funding and elections?
-  category: Statistics, census, public data, funding formulas, and elections
+  category: Government institutions and regulators
   state: full_dossier
   time_sensitivity: medium
   keywords:
@@ -615,7 +615,7 @@ topics:
 - slug: rcmp-provincial-policing
   title: Would Alberta keep the RCMP, build a provincial police service, or need something new?
   plain_question: Would Alberta keep the RCMP, build a provincial police service, or need something new?
-  category: Police services and public safety
+  category: Justice, rights, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -638,7 +638,7 @@ topics:
 - slug: charter-rights-continuity
   title: Would Charter rights and civil liberties continue after Alberta independence?
   plain_question: Would Charter rights and civil liberties continue after Alberta independence?
-  category: Rights, liberties, and constitutional continuity
+  category: Justice, rights, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -659,7 +659,7 @@ topics:
 - slug: abortion-reproductive-health-rights
   title: Could Alberta independence change abortion access and reproductive health rights?
   plain_question: Could Alberta independence change abortion access and reproductive health rights?
-  category: Reproductive health and rights
+  category: Justice, rights, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -682,7 +682,7 @@ topics:
 - slug: firearms-laws-licensing
   title: What would happen to firearms laws, gun licensing, and restricted-weapon rules?
   plain_question: What would happen to firearms laws, gun licensing, and restricted-weapon rules?
-  category: Firearms, licensing, and public safety
+  category: Justice, rights, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -704,7 +704,7 @@ topics:
 - slug: healthcare-portability-doctor-licensing
   title: Would Alberta health coverage, doctor licensing, and out-of-province care still work?
   plain_question: Would Alberta health coverage, doctor licensing, and out-of-province care still work?
-  category: Healthcare coverage, portability, and professional licensing
+  category: Public services, health, and benefits
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -727,7 +727,7 @@ topics:
 - slug: border-enforcement-customs
   title: What border agency would Alberta need, and how would inspections for people and goods actually work?
   plain_question: What border agency would Alberta need, and how would inspections for people and goods actually work?
-  category: Border agency capacity, inspections, and enforcement
+  category: Trade, borders, and mobility
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -749,7 +749,7 @@ topics:
 - slug: bank-deposits-financial-stability
   title: Would bank deposits, credit-union savings, and financial backstops still be protected?
   plain_question: Would bank deposits, credit-union savings, and financial backstops still be protected?
-  category: Bank deposits, credit unions, and financial stability
+  category: Economy, taxes, and finance
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -773,7 +773,7 @@ topics:
 - slug: pharmaceutical-drug-approvals-supply
   title: Would prescription drug approvals, recalls, and medicine supply still work?
   plain_question: Would prescription drug approvals, recalls, and medicine supply still work?
-  category: Drug approvals, recalls, and medicine supply
+  category: Public services, health, and benefits
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -797,7 +797,7 @@ topics:
 - slug: privacy-data-federal-ids
   title: What would happen to Social Insurance Numbers, privacy rules, and federal identity systems?
   plain_question: What would happen to Social Insurance Numbers, privacy rules, and federal identity systems?
-  category: Privacy, identity, and federal data systems
+  category: Government institutions and regulators
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -823,7 +823,7 @@ topics:
     get faster?
   plain_question: Who would approve pipelines, mines, major projects, and environmental assessments — and would approvals
     actually get faster?
-  category: Major project approvals, assessments, and permitting speed
+  category: Energy, resources, and environment
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -846,7 +846,7 @@ topics:
 - slug: labour-standards-public-sector-unions
   title: What would happen to labour standards, union contracts, and public-sector bargaining?
   plain_question: What would happen to labour standards, union contracts, and public-sector bargaining?
-  category: Labour standards and public-sector bargaining
+  category: Work, education, and everyday life
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -869,7 +869,7 @@ topics:
 - slug: federal-prisons-corrections-parole
   title: Who would be responsible for prisons, parole, inmate transfers, and sentence administration?
   plain_question: Who would be responsible for prisons, parole, inmate transfers, and sentence administration?
-  category: Corrections, parole, custody, and sentence administration
+  category: Justice, rights, and public safety
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -892,7 +892,7 @@ topics:
 - slug: public-health-disease-surveillance
   title: Who would handle disease surveillance, outbreak response, and vaccine reporting?
   plain_question: Who would handle disease surveillance, outbreak response, and vaccine reporting?
-  category: Public health, disease surveillance, and vaccine reporting
+  category: Public services, health, and benefits
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -916,7 +916,7 @@ topics:
 - slug: bankruptcy-insolvency-creditor-protection
   title: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
   plain_question: What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
-  category: Bankruptcy, insolvency, and creditor protection
+  category: Economy, taxes, and finance
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5
@@ -940,7 +940,7 @@ topics:
 - slug: elections-law-political-parties-campaign-finance
   title: Who would set election laws, political-party rules, and campaign-finance limits?
   plain_question: Who would set election laws, political-party rules, and campaign-finance limits?
-  category: Election law, parties, and campaign finance
+  category: Government institutions and regulators
   state: full_dossier
   time_sensitivity: high
   controversy_virality_score: 5

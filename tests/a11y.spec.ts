@@ -134,6 +134,11 @@ test('source library search starts quickly without header card clutter', async (
   await expect(page.getByRole('region', { name: /Page trust/i })).toHaveCount(0);
   await expect(page.getByLabel('Source summary')).toHaveCount(0);
   await expect(page.getByLabel('Search sources')).toBeVisible();
+  await expect(page.getByLabel('Source library metadata')).toHaveCount(0);
+  await expect(page.getByText('Records', { exact: true })).toHaveCount(0);
+  await expect(page.getByText('Linked claims', { exact: true })).toHaveCount(0);
+  await expect(page.getByText('Stance', { exact: true })).toHaveCount(0);
+  await expect(page.getByText('All stances', { exact: true })).toHaveCount(0);
   await expect(page.getByText(/Internal provenance checks are/i)).toBeVisible();
   await expect(page.getByLabel('Sort sources')).toBeVisible();
   await expect(page.getByText(/source records shown/i)).toBeVisible();
@@ -153,6 +158,11 @@ test('source library supports query filters and polished source detail pages', a
   await expect(page.getByText(/Active source filters/i)).toBeVisible();
   await expect(page.getByText(/Search: Elections Alberta/i)).toBeVisible();
   await expect(page.getByText(/Type: official/i)).toBeVisible();
+
+  await page.goto('/sources/?stance=neutral');
+  await expect(page.getByLabel('Search sources')).toBeVisible();
+  await expect(page).not.toHaveURL(/stance=/);
+  await expect(page.getByText('Stance', { exact: true })).toHaveCount(0);
 
   await page.goto('/sources/elections-ab-current-petitions/');
   await expect(page.getByRole('heading', { name: /Current Citizen Initiative Petitions/i })).toBeVisible();

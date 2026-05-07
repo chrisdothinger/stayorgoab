@@ -58,7 +58,6 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
   const [sourceType, setSourceType] = useState(allValue);
   const [publisher, setPublisher] = useState(allValue);
   const [reliability, setReliability] = useState(allValue);
-  const [stance, setStance] = useState(allValue);
   const [sortBy, setSortBy] = useState<SortOption>('recency');
   const [hydrated, setHydrated] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -66,7 +65,6 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
   const sourceTypes = unique(sources.map((source) => source.source_type));
   const publishers = unique(sources.map((source) => source.publisher));
   const reliabilities = unique(sources.map((source) => source.reliability_category));
-  const stances = unique(sources.map((source) => source.stance));
   const topicBySlug = useMemo(() => new Map(topics.map((topic) => [topic.slug, topic])), [topics]);
   const claimsBySourceId = useMemo(() => {
     const map = new Map<string, ClaimRecord[]>();
@@ -83,7 +81,6 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
     setSourceType(initialAllParam('type'));
     setPublisher(initialAllParam('publisher'));
     setReliability(initialAllParam('reliability'));
-    setStance(initialAllParam('stance'));
     setSortBy(initialSortParam());
     setHydrated(true);
   }, []);
@@ -95,12 +92,11 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
     if (sourceType !== allValue) params.set('type', sourceType);
     if (publisher !== allValue) params.set('publisher', publisher);
     if (reliability !== allValue) params.set('reliability', reliability);
-    if (stance !== allValue) params.set('stance', stance);
     if (sortBy !== 'recency') params.set('sort', sortBy);
     const base = window.location.pathname;
     const next = params.toString() ? `${base}?${params.toString()}` : base;
     window.history.replaceState(null, '', next);
-  }, [hydrated, publisher, query, reliability, sortBy, sourceType, stance]);
+  }, [hydrated, publisher, query, reliability, sortBy, sourceType]);
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -114,7 +110,6 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
         source.how_used,
         source.source_type,
         source.reliability_category,
-        source.stance,
         ...relatedTopics,
         ...sourceClaims.map((claim) => claim.text)
       ].join(' ').toLowerCase();
@@ -123,8 +118,7 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
         (!normalized || searchText.includes(normalized)) &&
         (sourceType === allValue || source.source_type === sourceType) &&
         (publisher === allValue || source.publisher === publisher) &&
-        (reliability === allValue || source.reliability_category === reliability) &&
-        (stance === allValue || source.stance === stance)
+        (reliability === allValue || source.reliability_category === reliability)
       );
     });
 
@@ -134,14 +128,13 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
       if (sortBy === 'claims') return (claimsBySourceId.get(b.id)?.length ?? 0) - (claimsBySourceId.get(a.id)?.length ?? 0) || compareText(a.title, b.title);
       return checkDate(b).localeCompare(checkDate(a)) || compareText(a.title, b.title);
     });
-  }, [claimsBySourceId, publisher, query, reliability, sortBy, sourceType, sources, stance, topicBySlug]);
+  }, [claimsBySourceId, publisher, query, reliability, sortBy, sourceType, sources, topicBySlug]);
 
   const activeFilters = [
     query.trim() ? `Search: ${query.trim()}` : null,
     sourceType !== allValue ? `Type: ${formatValue(sourceType)}` : null,
     publisher !== allValue ? `Publisher: ${publisher}` : null,
     reliability !== allValue ? `Reliability: ${formatValue(reliability)}` : null,
-    stance !== allValue ? `Stance: ${formatValue(stance)}` : null,
     sortBy !== 'recency' ? `Sort: ${formatValue(sortBy)}` : null
   ].filter((label): label is string => Boolean(label));
 
@@ -152,7 +145,6 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
     setSourceType(allValue);
     setPublisher(allValue);
     setReliability(allValue);
-    setStance(allValue);
     setSortBy('recency');
     setExpanded(null);
   }
@@ -183,13 +175,6 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
           <select value={reliability} onChange={(event) => setReliability(event.target.value)}>
             <option value={allValue}>All labels</option>
             {reliabilities.map((item) => <option key={item} value={item}>{formatValue(item)}</option>)}
-          </select>
-        </label>
-        <label className="mono">
-          <span className="section-label">Stance</span>
-          <select value={stance} onChange={(event) => setStance(event.target.value)}>
-            <option value={allValue}>All stances</option>
-            {stances.map((item) => <option key={item} value={item}>{formatValue(item)}</option>)}
           </select>
         </label>
         <label className="mono">

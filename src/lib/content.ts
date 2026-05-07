@@ -88,9 +88,17 @@ export function loadRepositoryContent(): RepositoryContent {
 
   const topicFiles = Object.fromEntries(topicIndex.topics.map((topic) => [topic.slug, readTopicFiles(topic.slug)]));
   const topicClaims = Object.values(topicFiles).flatMap((files) => files.claims);
+  const topics = topicIndex.topics.map((topic) => {
+    const files = topicFiles[topic.slug];
+    return {
+      ...topic,
+      source_count: files?.sourceIds.length ?? 0,
+      claim_count: files?.claims.length ?? 0
+    };
+  });
 
   return {
-    topics: topicIndex.topics,
+    topics,
     sources: sourcesFile.sources,
     claims: [...claimsFile.claims, ...topicClaims],
     glossary: glossaryFile.terms,

@@ -41,19 +41,6 @@ export default function MethodPage() {
 
       <section className="section grid-two">
         <div>
-          <div className="section-label mono">/ Dossier shape</div>
-          <h2>The overview is the neutral synthesis</h2>
-          <p className="section-copy">The refreshed standard treats the overview as the main balanced report, not a teaser. It should answer the question, explain what each side gets right, name the decisions that remain unresolved, and cite the evidence trail.</p>
-        </div>
-        <div className="status-readout">
-          <article className="data-row trust-row"><span className="mono row-meta">Overview</span><strong>Main balanced answer</strong><span>Readers should be able to stop on the overview and understand the practical answer. The former neutral-report job lives here.</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Briefs</span><strong>Pro and anti are optional deep dives</strong><span>The side briefs test the strongest fair pro-independence and anti-independence / pro-federation cases without repeating the overview.</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Audit</span><strong>Claims and sources remain separate</strong><span>The evidence trail stays public through numbered citations, source lists, claim maps, audit logs, and GitHub history.</span></article>
-        </div>
-      </section>
-
-      <section className="section grid-two">
-        <div>
           <div className="section-label mono">/ Public auditability</div>
           <h2>Why GitHub is part of the method</h2>
           <p className="section-copy">The goal is a completely auditable civic knowledge base: source-first, non-partisan, and transparent enough that readers can test whether the process is biased, incomplete, unsupported, or drifting away from its autonomous operating model.</p>

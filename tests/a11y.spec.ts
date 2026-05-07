@@ -180,6 +180,11 @@ test('report pages omit jump navigation and keep the brief close to the dossier 
   await expect(page.getByRole('group', { name: /Report section jumps/i })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: /Bottom line/i })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i })).toBeVisible();
+
+  const proTitleSize = await page.locator('.report-hero h1').evaluate((element) => getComputedStyle(element).fontSize);
+  await page.goto('/questions/legal-process/');
+  const overviewTitleSize = await page.locator('section').first().locator('h1').evaluate((element) => getComputedStyle(element).fontSize);
+  expect(proTitleSize).toBe(overviewTitleSize);
 });
 
 test('full dossier report pages show pro and anti structure, with neutral merged into overview', async ({ page }) => {
@@ -240,6 +245,14 @@ test('source library search starts quickly without header card clutter', async (
   await expect(page.getByText(/Why this source matters/i)).toBeVisible();
   await expect(page.getByText(/Used by topics/i)).toBeVisible();
   await expect(page.getByText(/Referenced claims/i)).toBeVisible();
+  const topicLink = page.locator('.source-link-trail').first().getByRole('link').first();
+  await expect(topicLink).toBeVisible();
+  const [topicFontFamily, topicFontSize] = await topicLink.evaluate((element) => {
+    const style = getComputedStyle(element);
+    return [style.fontFamily, style.fontSize];
+  });
+  expect(topicFontFamily).not.toContain('SFMono');
+  expect(parseFloat(topicFontSize)).toBeLessThan(24);
 });
 
 test('source library supports query filters and polished source detail pages', async ({ page }) => {
@@ -292,6 +305,9 @@ test('public trust surfaces explain repo, review log, and changelog clearly', as
   await expect(page.getByRole('heading', { name: /Latest recorded runs/i })).toBeVisible();
   await expect(page.getByText(/Recorded:/i)).toBeVisible();
   await expect(page.getByText(/Description:/i)).toBeVisible();
+  await expect(page.getByText(/Dossier shape/i)).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: /The overview is the neutral synthesis/i })).toHaveCount(0);
+  await expect(page.getByText(/Main balanced answer/i)).toHaveCount(0);
   await expect(page.getByText(/V3 public dossier shape/i)).toHaveCount(0);
   await expect(page.getByText(/Lean dossier contract/i)).toHaveCount(0);
   await expect(page.getByText(/Evidence chips/i)).toHaveCount(0);

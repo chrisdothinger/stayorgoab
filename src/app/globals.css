@@ -342,6 +342,39 @@ textarea:focus-visible {
   overflow-wrap: anywhere;
 }
 
+.source-link-trail {
+  display: grid;
+  gap: 7px;
+  color: var(--secondary);
+  font-size: 15px;
+}
+
+.source-link-trail strong {
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 680;
+  text-transform: none;
+}
+
+.source-link-trail a {
+  color: var(--secondary);
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 520;
+  line-height: 1.25;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.source-link-trail a:hover {
+  color: var(--ink);
+}
+
+.source-meta-trail a {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
 .page-trust {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -706,7 +739,7 @@ textarea:focus-visible {
 
 .report-hero h1 {
   max-width: 18ch;
-  font-size: clamp(34px, 5.2vw, 78px);
+  font-size: clamp(28px, 5vw, 64px);
   line-height: 0.98;
 }
 
@@ -1187,6 +1220,25 @@ textarea:focus-visible {
 
 .source-row .row-description {
   margin: 8px 0 0;
+}
+
+.source-row .source-link-trail a {
+  color: var(--secondary);
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 520;
+  line-height: 1.25;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.source-row .source-link-trail a:hover {
+  color: var(--ink);
+}
+
+.source-row .source-meta-trail a {
+  font-size: 12px;
+  line-height: 1.2;
 }
 
 .source-detail-grid {

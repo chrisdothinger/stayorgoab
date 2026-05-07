@@ -4,3 +4,7 @@ entries:
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic
     coverage.
+- id: redebate-water-rights-rivers-2026-05-06-v3
+  date: '2026-05-06'
+  trigger: lean-v3-source-depth-migration
+  summary: Reframed the topic around conditional continuity and added stronger source-supported treatment of provincial water law, transboundary/apportionment, drinking-water and wastewater operations, infrastructure/drought constraints, federal environmental law, and Indigenous/First Nations water-service risks.

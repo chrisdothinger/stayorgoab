@@ -10,3 +10,14 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-water-rights-rivers-2026-05-06-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated topic to lean v3 with deeper official source coverage across Alberta water law, drinking-water/wastewater systems, drought operations, transboundary/apportionment, federal environmental law, and Indigenous/First Nations water-service risk.
+  checks:
+  - source-depth
+  - source-numbering
+  - stance-balance
+  - uncertainty-labels
+  - topic-local-edits-only
+  result: pass

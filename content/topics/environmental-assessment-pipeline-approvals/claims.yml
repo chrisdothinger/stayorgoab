@@ -1,42 +1,119 @@
 claims:
 - id: claim-environmental-assessment-pipeline-approvals-001
   topic_slug: environmental-assessment-pipeline-approvals
-  text: Current sources show separate federal and Alberta baselines for impact assessment,
-    environmental assessment, and energy regulation; they do not settle whether an independent
-    Alberta could unilaterally accelerate projects, how cross-border or federally regulated
-    effects would be handled, or how Indigenous consultation and market recognition would
-    be maintained.
+  text: >-
+    Current sources show a layered approval system: federal impact assessment and
+    Canada Energy Regulator roles, Alberta environmental assessment and energy
+    regulation, Indigenous consultation, fisheries and species-at-risk law, and
+    market/export dependencies for some projects.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - impact-assessment-agency
   - impact-assessment-act
-  - alberta-energy-regulator
   - alberta-environmental-assessment-process
-  risk: medium
+  - alberta-energy-regulator
+  - canada-energy-regulator-act
+  - canada-energy-regulator-pipelines
+  - alberta-duty-to-consult-guidelines
+  - canada-fisheries-act
+  - species-protection-law
+  - canada-energy-regulator-market-snapshots
+  risk: high
 - id: claim-environmental-assessment-pipeline-approvals-002
   topic_slug: environmental-assessment-pipeline-approvals
-  text: The strongest pro-independence case is that Alberta could design a single-window project
-    review system closer to provincial priorities, reduce overlap between federal and provincial
-    processes, and make timelines more predictable if it legislated clear assessment, consultation,
-    enforcement, and appeal rules.
-  status: inference
-  source_ids: *id001
+  text: >-
+    Alberta has a real provincial project-approval base because it already has an
+    environmental-assessment process, provincial environmental legislation, the
+    Alberta Energy Regulator, and the Responsible Energy Development Act.
+  status: source_supported
+  source_ids:
+  - alberta-environmental-assessment-process
+  - alberta-environmental-protection-enhancement-act
+  - alberta-energy-regulator
+  - responsible-energy-development-act
   risk: medium
 - id: claim-environmental-assessment-pipeline-approvals-003
   topic_slug: environmental-assessment-pipeline-approvals
-  text: 'The strongest caution is that major projects depend on more than one approval desk:
-    Indigenous rights, interprovincial and international effects, export markets, financing,
-    environmental credibility, and recognition by Canada or other jurisdictions could still
-    constrain projects even if Alberta changed its own law.'
-  status: inference
-  source_ids: *id001
-  risk: high
+  text: >-
+    The Supreme Court of Canada's 2023 Impact Assessment Act reference supports a
+    narrower conclusion: federal assessment power has constitutional limits, but
+    it does not eliminate every federal role over major projects.
+  status: source_supported
+  source_ids:
+  - impact-assessment-act
+  - reference-re-impact-assessment-act-2023-scc
+  risk: medium
 - id: claim-environmental-assessment-pipeline-approvals-004
   topic_slug: environmental-assessment-pipeline-approvals
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on Canada-Alberta
-    negotiations, constitutional terms, Indigenous consultation duties, environmental statutes,
-    regulator capacity, court rulings, investor confidence, cross-border infrastructure, and
-    recognition by other governments and markets.'
-  status: source_supported
-  source_ids: *id001
+  text: >-
+    The strongest pro-independence case is that Alberta could use its existing
+    assessment and AER systems to build a more integrated single-window process
+    for Alberta-controlled projects, if it also legislated continuity,
+    consultation, environmental safeguards, appeals, staffing, and recognition
+    arrangements.
+  status: inference
+  source_ids:
+  - alberta-environmental-assessment-process
+  - alberta-environmental-protection-enhancement-act
+  - alberta-energy-regulator
+  - responsible-energy-development-act
+  - alberta-duty-to-consult-guidelines
+  - canada-fisheries-act
+  - species-protection-law
   risk: medium
+- id: claim-environmental-assessment-pipeline-approvals-005
+  topic_slug: environmental-assessment-pipeline-approvals
+  text: >-
+    The strongest anti-independence / pro-federation caution is that faster
+    Alberta paperwork would not by itself resolve Indigenous consultation,
+    federal or successor environmental protections, interprovincial or
+    international pipeline recognition, courts, financing, or market/export
+    constraints.
+  status: inference
+  source_ids:
+  - impact-assessment-act
+  - reference-re-impact-assessment-act-2023-scc
+  - canada-energy-regulator-act
+  - canada-energy-regulator-pipelines
+  - alberta-duty-to-consult-guidelines
+  - canada-undrip-act
+  - canada-fisheries-act
+  - species-protection-law
+  - canada-energy-regulator-market-snapshots
+  risk: high
+- id: claim-environmental-assessment-pipeline-approvals-006
+  topic_slug: environmental-assessment-pipeline-approvals
+  text: >-
+    This topic remains high uncertainty: current sources identify today's laws,
+    regulators, and constraints, but they do not provide a signed independence
+    transition framework for assessments, consultation, environmental
+    enforcement, CER-to-successor pipeline jurisdiction, export routes, or market
+    recognition.
+  status: source_supported
+  source_ids:
+  - impact-assessment-agency
+  - impact-assessment-act
+  - alberta-environmental-assessment-process
+  - alberta-energy-regulator
+  - canada-energy-regulator-act
+  - canada-energy-regulator-pipelines
+  - alberta-duty-to-consult-guidelines
+  - canada-fisheries-act
+  - species-protection-law
+  - canada-energy-regulator-market-snapshots
+  risk: high
+- id: claim-environmental-assessment-pipeline-approvals-007
+  topic_slug: environmental-assessment-pipeline-approvals
+  text: >-
+    Claims that independence would make approvals faster need project-specific
+    proof showing which statutory steps are removed, merged, time-limited, or
+    replaced and whether new cross-border, consultation, court, or market delays
+    are avoided.
+  status: inference
+  source_ids:
+  - impact-assessment-act
+  - reference-re-impact-assessment-act-2023-scc
+  - canada-energy-regulator-act
+  - canada-energy-regulator-pipelines
+  - canada-building-canada-act-major-projects
+  risk: high

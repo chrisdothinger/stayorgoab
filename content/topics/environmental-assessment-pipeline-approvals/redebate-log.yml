@@ -7,3 +7,7 @@ entries:
   notes:
   - Neutral report is mediator/synthesis, not a third advocacy stance.
   - Public report citations use numbered brackets with matching Sources sections.
+- id: redebate-environmental-assessment-pipeline-approvals-2026-05-06-v3
+  date: '2026-05-06'
+  trigger: lean-v3-source-depth-migration
+  summary: Reframed the topic around conditional continuity and added stronger source-supported treatment of federal/provincial assessment law, CER/AER pipeline and energy regulation, Indigenous consultation, fisheries/species/environmental constraints, major-project coordination, and market/export limits on approval-speed claims.

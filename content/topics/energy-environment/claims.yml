@@ -1,34 +1,106 @@
 claims:
 - id: claim-energy-environment-001
   topic_slug: energy-environment
-  text: Energy and environmental outcomes would depend on Alberta policy, market access, infrastructure, Indigenous rights,
-    federal-provincial disentanglement, and international obligations.
+  text: >-
+    Alberta already has a major upstream energy-governance baseline: provincial
+    energy, oil-sands and royalty policy, the Alberta Energy Regulator, and
+    provincial legislation assigning the AER a central regulatory role.
   status: source_supported
   source_ids:
-  - alberta-budget-documents-2026
-  - alberta-budget-highlights-2026
-  risk: high
+  - alberta-energy
+  - alberta-oil-sands
+  - alberta-royalty-overview
+  - alberta-energy-regulator
+  - responsible-energy-development-act
+  risk: medium
 - id: claim-energy-environment-002
   topic_slug: energy-environment
-  text: The strongest pro case is greater control over energy regulation, project approvals, resource revenue, and climate
-    policy.
-  status: inference
-  source_ids: &id001
-  - alberta-budget-documents-2026
-  - alberta-budget-highlights-2026
-  - alberta-premiers-address-2026-02-19
+  text: >-
+    Energy development remains constrained by export routes and markets because
+    oil and gas value depends on pipeline capacity, interprovincial or
+    international infrastructure, destination markets, prices, and customers.
+  status: source_supported
+  source_ids:
+  - cer-pipeline-profiles
+  - cer-canada-oil-imports-exports
+  - cer-canadas-energy-future-2023
   risk: high
 - id: claim-energy-environment-003
   topic_slug: energy-environment
-  text: The strongest caution is that markets, investors, trading partners, environmental obligations, and infrastructure
-    counterparties would still constrain Alberta choices.
-  status: inference
-  source_ids: *id001
+  text: >-
+    Environmental regulation would require continuity planning because federal
+    impact assessment, fisheries/pollution protections, emissions reporting, and
+    climate-policy credibility currently affect project assessment and market
+    confidence.
+  status: source_supported
+  source_ids:
+  - impact-assessment-act
+  - iaac-impact-assessment-process-overview
+  - canada-fisheries-act
+  - alberta-emissions-reduction-energy-development-plan
+  - eccc-greenhouse-gas-emissions
   risk: high
 - id: claim-energy-environment-004
   topic_slug: energy-environment
-  text: 'This topic remains uncertainty-labelled: Medium-high; policy preferences are knowable, but markets and obligations
-    are external.'
+  text: >-
+    Indigenous rights, consultation, and Aboriginal interests would need explicit
+    transition treatment rather than being assumed away as ordinary resource
+    administration.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - canada-undrip-act
+  - scc-secession-reference
+  risk: high
+- id: claim-energy-environment-005
+  topic_slug: energy-environment
+  text: >-
+    The strongest pro-independence case is conditional: Alberta could preserve
+    AER functions, carry forward approvals and liabilities, align royalties and
+    emissions policy, and negotiate export access as a national priority.
+  status: inference
+  source_ids:
+  - alberta-energy-regulator
+  - responsible-energy-development-act
+  - alberta-royalty-overview
+  - cer-pipeline-profiles
+  - cer-canada-oil-imports-exports
+  - alberta-emissions-reduction-energy-development-plan
+  risk: medium
+- id: claim-energy-environment-006
+  topic_slug: energy-environment
+  text: >-
+    The strongest anti-independence / pro-federation caution is that independence
+    could add uncertainty before adding capacity if pipeline jurisdiction,
+    environmental-law continuity, Indigenous consultation, emissions credibility,
+    financing, or buyer demand were unresolved.
+  status: inference
+  source_ids:
+  - cer-pipeline-profiles
+  - cer-canada-oil-imports-exports
+  - cer-canadas-energy-future-2023
+  - impact-assessment-act
+  - iaac-impact-assessment-process-overview
+  - canada-fisheries-act
+  - canada-undrip-act
+  - scc-secession-reference
+  - eccc-greenhouse-gas-emissions
+  risk: high
+- id: claim-energy-environment-007
+  topic_slug: energy-environment
+  text: >-
+    This topic remains high-medium uncertainty because current sources identify
+    the institutions and constraints but do not provide signed transition terms
+    for pipelines, federal environmental substitution, Indigenous consultation,
+    emissions targets, export-market access, regulator continuity, or
+    international recognition.
+  status: source_supported
+  source_ids:
+  - alberta-energy-regulator
+  - responsible-energy-development-act
+  - cer-pipeline-profiles
+  - impact-assessment-act
+  - iaac-impact-assessment-process-overview
+  - canada-undrip-act
+  - scc-secession-reference
+  - eccc-greenhouse-gas-emissions
   risk: high

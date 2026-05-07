@@ -1,35 +1,99 @@
 claims:
 - id: claim-indigenous-rights-treaties-001
   topic_slug: indigenous-rights-treaties
-  text: Indigenous rights and treaties are not side issues. The Supreme Court says Aboriginal interests would need to be taken
-    into account in secession negotiations, while Alberta-specific effects remain contested.
+  text: Indigenous rights, treaties, land interests, and consultation would be central transition issues in any Alberta independence process rather than side issues.
   status: source_supported
   source_ids:
   - scc-secession-reference
-  - acfn-stay-pending-court-challenge-2026-04-11
+  - constitution-act-1982-charter
+  - haida-duty-to-consult
+  - mikisew-cree-duty-to-consult-treaty
+  - tsilhqotin-aboriginal-title
   risk: high
 - id: claim-indigenous-rights-treaties-002
   topic_slug: indigenous-rights-treaties
-  text: A careful pro-independence case would argue that new nation-to-nation arrangements could be negotiated, but only if
-    treaty and rights issues are treated as central rather than incidental.
-  status: inference
-  source_ids: &id001
+  text: The Secession Reference says Aboriginal interests would need to be taken into account in secession negotiations, and it does not authorize a province to settle secession consequences alone.
+  status: source_supported
+  source_ids:
   - scc-secession-reference
+  risk: high
+- id: claim-indigenous-rights-treaties-003
+  topic_slug: indigenous-rights-treaties
+  text: Section 35 protects Aboriginal and treaty rights in the current Canadian constitutional order.
+  status: source_supported
+  source_ids:
+  - constitution-act-1982-charter
+  risk: high
+- id: claim-indigenous-rights-treaties-004
+  topic_slug: indigenous-rights-treaties
+  text: Canadian consultation doctrine can require consultation, and sometimes accommodation, where Crown conduct may adversely affect asserted or established Aboriginal or treaty rights.
+  status: source_supported
+  source_ids:
+  - haida-duty-to-consult
+  - mikisew-cree-duty-to-consult-treaty
+  risk: high
+- id: claim-indigenous-rights-treaties-005
+  topic_slug: indigenous-rights-treaties
+  text: Aboriginal title and treaty rights make land and resource authority especially sensitive in any independence transition.
+  status: source_supported
+  source_ids:
+  - tsilhqotin-aboriginal-title
+  - mikisew-cree-duty-to-consult-treaty
+  - alberta-indigenous-consultations
+  - alberta-first-nations-consultation-guidelines-2014
+  risk: high
+- id: claim-indigenous-rights-treaties-006
+  topic_slug: indigenous-rights-treaties
+  text: Alberta's current consultation materials identify consultation processes for First Nations in land and natural-resource management, but they are not a complete secession-transition framework.
+  status: source_supported
+  source_ids:
+  - alberta-indigenous-consultations
+  - alberta-first-nations-consultation-guidelines-2014
+  risk: high
+- id: claim-indigenous-rights-treaties-007
+  topic_slug: indigenous-rights-treaties
+  text: A careful pro-independence case can argue for direct nation-to-nation agreements and clearer accountability only if it also documents rights continuity, Indigenous-government participation, and dispute-resolution mechanisms.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-charter
+  - canada-undrip-act
+  - undrip-action-plan-canada
+  - alberta-indigenous-consultations
+  risk: high
+- id: claim-indigenous-rights-treaties-008
+  topic_slug: indigenous-rights-treaties
+  text: The strongest anti-independence case is that a provincial referendum would not by itself resolve treaty continuity, section 35 rights, consultation duties, land/title interests, reserve lands, or Indigenous-government objections.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-charter
+  - haida-duty-to-consult
+  - mikisew-cree-duty-to-consult-treaty
+  - tsilhqotin-aboriginal-title
   - acfn-stay-pending-court-challenge-2026-04-11
   - first-nations-stand-with-treaties
   - globalnews-court-pauses-verification-2026-04-12
   risk: high
-- id: claim-indigenous-rights-treaties-003
+- id: claim-indigenous-rights-treaties-009
   topic_slug: indigenous-rights-treaties
-  text: The strongest pro-federation case is that constitutional rights, treaty relationships, land, consent, and consultation
-    cannot be bypassed by a provincial vote or treated as settled by Alberta alone.
-  status: inference
-  source_ids: *id001
-  risk: high
-- id: claim-indigenous-rights-treaties-004
-  topic_slug: indigenous-rights-treaties
-  text: 'This topic remains uncertainty-labelled: Very high; rights, treaties, land, consultation, and litigation are legally
-    and politically sensitive.'
+  text: Current Indigenous public statements and news records show active contestation around Alberta separation politics, but they do not constitute a final court ruling on all rights issues.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - acfn-stay-pending-court-challenge-2026-04-11
+  - first-nations-stand-with-treaties
+  - globalnews-court-pauses-verification-2026-04-12
+  risk: high
+- id: claim-indigenous-rights-treaties-010
+  topic_slug: indigenous-rights-treaties
+  text: This topic remains uncertainty-labelled very high because treaty continuity, consent arguments, land/title interests, consultation, reserve lands, federal fiduciary roles, and court jurisdiction would depend on future negotiations and legal decisions.
+  status: source_supported
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-charter
+  - haida-duty-to-consult
+  - mikisew-cree-duty-to-consult-treaty
+  - tsilhqotin-aboriginal-title
+  - alberta-indigenous-consultations
+  - acfn-stay-pending-court-challenge-2026-04-11
   risk: high

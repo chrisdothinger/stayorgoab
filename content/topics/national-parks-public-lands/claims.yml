@@ -1,39 +1,137 @@
 claims:
 - id: claim-national-parks-public-lands-001
   topic_slug: national-parks-public-lands
-  text: Current public records show federal national-park and natural-resource institutions
-    alongside Alberta public-land management, but they do not settle ownership, conservation
-    authority, Indigenous consultation, access rules, or asset-transfer terms after
-    independence.
+  text: >-
+    Current sources show two overlapping land systems in Alberta: Parks Canada
+    national parks under federal law and planning, and Alberta-administered
+    public lands, public land use zones, recreation rules, provincial parks,
+    protected areas, and land-use planning under provincial law.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - parks-canada-main
+  - parks-canada-alberta-national-parks
+  - canada-national-parks-act
+  - parks-canada-management-planning
+  - alberta-public-lands-main
+  - alberta-public-lands-act
   - alberta-public-lands
-  - natural-resources-canada-main
+  - alberta-recreation-on-public-land
+  - alberta-parks-protected-areas
+  - alberta-parks-act
+  - alberta-land-use-framework
   risk: medium
 - id: claim-national-parks-public-lands-002
   topic_slug: national-parks-public-lands
-  text: The strongest pro case is that alberta could seek more integrated control
-    over land-use decisions, resource policy, recreation access, and conservation
-    priorities inside its territory.
-  status: inference
-  source_ids: *id001
-  risk: medium
+  text: >-
+    Alberta has a substantial existing administrative base for provincial Crown
+    land, recreation access, parks/protected areas, and land-use planning, but
+    that baseline does not itself settle federal national-park title,
+    administration, assets, staff, or operations after independence.
+  status: source_supported
+  source_ids:
+  - alberta-public-lands-main
+  - alberta-public-lands-act
+  - alberta-public-lands
+  - alberta-recreation-on-public-land
+  - alberta-parks-protected-areas
+  - alberta-parks-act
+  - alberta-land-use-framework
+  - parks-canada-alberta-national-parks
+  - canada-national-parks-act
+  risk: high
 - id: claim-national-parks-public-lands-003
   topic_slug: national-parks-public-lands
-  text: The strongest caution is that national parks, federal lands, conservation
-    duties, treaty rights, access rules, and asset transfers could become legally
-    and politically contentious without negotiated authority and source-backed transition
-    plans.
-  status: inference
-  source_ids: *id001
-  risk: medium
+  text: >-
+    National parks in Alberta require explicit transition treatment because
+    Parks Canada sources and federal national-parks law point to federal
+    administration, statutory purposes, management planning, visitor operations,
+    ecological obligations, and protected-area rules.
+  status: source_supported
+  source_ids:
+  - parks-canada-main
+  - parks-canada-alberta-national-parks
+  - canada-national-parks-act
+  - parks-canada-management-planning
+  risk: high
 - id: claim-national-parks-public-lands-004
   topic_slug: national-parks-public-lands
-  text: 'This topic remains uncertainty-labelled: Medium; ownership or control of
-    federal lands and parks, conservation obligations, Indigenous rights and consultation,
-    public access, staffing, asset transfers, and cross-border land-management agreements
-    remain conditional on future decisions and evidence.'
+  text: >-
+    Indigenous and treaty issues need first-order transition treatment because
+    federal UNDRIP legislation and treaty materials for Alberta point to rights,
+    consultation, Crown obligations, harvesting, cultural places, and affected
+    Indigenous governments beyond ordinary provincial land administration.
   status: source_supported
-  source_ids: *id001
+  source_ids:
+  - canada-undrip-act
+  - rcaanc-treaties-in-alberta
+  risk: high
+- id: claim-national-parks-public-lands-005
+  topic_slug: national-parks-public-lands
+  text: >-
+    The strongest pro-independence case is conditional: Alberta could use its
+    existing public-land and parks institutions as a transition platform, but
+    only if it negotiates national-park continuity, federal conservation duties,
+    Indigenous/treaty terms, access rules, staffing, assets, and visitor
+    operations before any effective date.
+  status: inference
+  source_ids:
+  - parks-canada-main
+  - parks-canada-alberta-national-parks
+  - canada-national-parks-act
+  - parks-canada-management-planning
+  - alberta-public-lands-main
+  - alberta-public-lands-act
+  - alberta-public-lands
+  - alberta-recreation-on-public-land
+  - alberta-parks-protected-areas
+  - alberta-parks-act
+  - alberta-land-use-framework
+  - species-protection-law
+  - canada-undrip-act
+  - rcaanc-treaties-in-alberta
   risk: medium
+- id: claim-national-parks-public-lands-006
+  topic_slug: national-parks-public-lands
+  text: >-
+    The strongest anti-independence / pro-federation caution is that without
+    binding transition agreements, disputes over federal park assets, protected
+    status, conservation enforcement, Indigenous/treaty duties, staff, tourism
+    operations, and public access could create avoidable legal and service risk.
+  status: inference
+  source_ids:
+  - parks-canada-main
+  - parks-canada-alberta-national-parks
+  - canada-national-parks-act
+  - parks-canada-management-planning
+  - alberta-public-lands
+  - alberta-recreation-on-public-land
+  - alberta-parks-protected-areas
+  - species-protection-law
+  - canada-undrip-act
+  - rcaanc-treaties-in-alberta
+  risk: high
+- id: claim-national-parks-public-lands-007
+  topic_slug: national-parks-public-lands
+  text: >-
+    This topic remains high-medium uncertainty: current sources identify today's
+    federal and provincial land institutions, conservation laws, and Indigenous
+    rights/treaty layers, but they do not provide signed independence-transition
+    terms for national parks, Crown land, protected areas, public access,
+    staffing, revenue, enforcement, or asset transfers.
+  status: source_supported
+  source_ids:
+  - parks-canada-main
+  - parks-canada-alberta-national-parks
+  - canada-national-parks-act
+  - parks-canada-management-planning
+  - alberta-public-lands-main
+  - alberta-public-lands-act
+  - alberta-public-lands
+  - alberta-recreation-on-public-land
+  - alberta-parks-protected-areas
+  - alberta-parks-act
+  - alberta-land-use-framework
+  - species-protection-law
+  - canada-undrip-act
+  - rcaanc-treaties-in-alberta
+  risk: high

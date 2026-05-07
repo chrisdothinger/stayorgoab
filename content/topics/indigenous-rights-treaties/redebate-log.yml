@@ -3,3 +3,7 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-indigenous-rights-treaties-2026-05-06-lean-v3
+  date: '2026-05-06'
+  trigger: batch5-land-water-resources-v3-migration
+  summary: Rebuilt the argument map around section 35, Secession Reference negotiation duties, consultation doctrine, Aboriginal title/treaty cases, Alberta consultation policy, UNDRIP implementation context, and current Indigenous opposition records.

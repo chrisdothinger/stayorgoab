@@ -27,7 +27,7 @@ test('homepage is a compact landing page for main sections', async ({ page }) =>
   await expect(questionPortal).toContainText(/Browse the questions/i);
   await expect(page.locator('.landing-link')).toHaveCount(0);
   await expect(page.getByRole('main').getByRole('link', { name: /^Sources/i })).toHaveCount(0);
-  await expect(page.getByRole('main').getByRole('link', { name: /^Method \/ Ops/i })).toHaveCount(0);
+  await expect(page.getByRole('main').getByRole('link', { name: /^How this works/i })).toHaveCount(0);
   await expect(page.getByRole('link', { name: /Facts/i })).toHaveCount(0);
 });
 
@@ -46,8 +46,8 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   const categoryBackground = await page.locator('.question-category-heading').first().evaluate((element) => getComputedStyle(element).backgroundColor);
   expect(categoryBackground).not.toBe('rgba(0, 0, 0, 0)');
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/full dossier/i);
-  await expect(page.getByLabel('Questions trust metadata')).toContainText(/Internal provenance check =/i);
-  await expect(page.getByLabel('Questions trust metadata').getByRole('link', { name: /Public review trail/i })).toBeVisible();
+  await expect(page.getByLabel('Questions trust metadata')).toContainText(/Last evidence check =/i);
+  await expect(page.getByLabel('Questions trust metadata').getByRole('link', { name: /Review trail/i })).toBeVisible();
 
   await page.getByLabel('Search topics').fill('CPP');
   await expect(page.getByText(/1 question shown/i)).toBeVisible();
@@ -58,7 +58,7 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByRole('link', { name: 'Would Albertans keep CPP benefits, or move to a new pension system?', exact: true })).toBeVisible();
   await page.getByRole('button', { name: /Expand summary for .*CPP/i }).click();
   await expect(page.getByText(/Short answer/i)).toBeVisible();
-  await expect(page.getByRole('article').getByRole('link', { name: /Public review trail/i })).toHaveCount(0);
+  await expect(page.getByRole('article').getByRole('link', { name: /Review trail/i })).toHaveCount(0);
   await page.getByRole('button', { name: /Clear filters/i }).click();
   await expect(page.getByText(/50 questions shown/i)).toBeVisible();
 
@@ -85,6 +85,11 @@ test('global shell keeps header typography consistent and mobile content inside 
   expect(githubTextTransform).toBe('uppercase');
 
   await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+  const mobileHeaderHeight = await page.locator('.site-header').evaluate((element) => element.getBoundingClientRect().height);
+  expect(mobileHeaderHeight).toBeLessThanOrEqual(78);
+  await expect(page.getByRole('contentinfo').getByRole('link', { name: /How this works/i })).toHaveCount(0);
+
   for (const route of ['/questions/legal-process/pro/', '/questions/legal-process/sources/', '/sources/']) {
     await page.goto(route);
     await expect(page.locator('body')).toBeVisible();
@@ -152,6 +157,7 @@ test('active dossier tab is visibly stronger than inactive tabs', async ({ page 
 test('claims pages are readable ledgers without dummy expansion controls or unexplained risk labels', async ({ page }) => {
   await page.goto('/questions/legal-process/claims/');
   await expect(page.getByText(/Key claims used in this dossier/i)).toBeVisible();
+  await expect(page.getByText(/Claims and evidence/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /^\+$/ })).toHaveCount(0);
   await expect(page.getByText(/Risk:/i)).toHaveCount(0);
   await expect(page.locator('.claim-row').first()).toBeVisible();
@@ -194,10 +200,10 @@ test('full dossier report pages show pro and anti structure, with neutral merged
 
 test('public review trail shows compact metadata without header cards', async ({ page }) => {
   await page.goto('/audit/');
-  await expect(page.getByRole('heading', { name: /Public review trail/i })).toBeVisible();
-  await expect(page.getByRole('region', { name: /Review metadata/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Review trail/i })).toBeVisible();
+  await expect(page.getByRole('region', { name: /Review coverage/i })).toBeVisible();
   await expect(page.getByText(/What this trail covers/i)).toBeVisible();
-  await expect(page.getByText(/current source map and claim ledger/i)).toBeVisible();
+  await expect(page.getByText(/current source map and claims-and-evidence file/i)).toBeVisible();
   await expect(page.getByText('Pages tracked', { exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: /Inspect sources/i })).toBeVisible();
   await expect(page.getByRole('region', { name: /Page trust/i })).toHaveCount(0);
@@ -216,6 +222,7 @@ test('source library search starts quickly without header card clutter', async (
   await expect(page.getByText('Stance', { exact: true })).toHaveCount(0);
   await expect(page.getByText('All stances', { exact: true })).toHaveCount(0);
   await expect(page.getByText(/Internal provenance checks are/i)).toHaveCount(0);
+  await expect(page.getByText(/last evidence check/i).first()).toBeVisible();
   await expect(page.getByLabel('Sort sources')).toBeVisible();
   await expect(page.getByText(/source records shown/i)).toBeVisible();
   await expect(page.getByLabel('Source type')).toBeVisible();
@@ -256,13 +263,14 @@ test('public trust surfaces explain repo, review log, and changelog clearly', as
   await expect(page.getByLabel('Repository ledger').getByText('Source records', { exact: true })).toBeVisible();
   await expect(page.getByLabel('Repository evidence summary')).toHaveCount(0);
   await expect(page.getByRole('main').getByRole('link', { name: 'Review log', exact: true })).toHaveCount(0);
+  await expect(page.getByRole('main').getByRole('link', { name: 'Review trail', exact: true })).toHaveCount(0);
 
   await page.goto('/changelog/');
   await expect(page.getByText(/Change history/i)).toBeVisible();
   await expect(page.getByText('Files changed', { exact: true })).toBeVisible();
 
   await page.goto('/method/');
-  await expect(page.getByRole('heading', { name: /Method \/ Ops/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /How this works/i })).toBeVisible();
   await expect(page.getByText(/does not tell readers how to vote/i)).toBeVisible();
   await expect(page.getByRole('heading', { name: /How dossiers are built/i })).toBeVisible();
   await expect(page.getByText(/An orchestrator agent sets the work plan/i)).toBeVisible();

@@ -15,13 +15,13 @@ export function AuditMeta({
 }) {
   const repoPath = `https://github.com/chrisdothinger/stayorgoab/blob/main/${sourceFile}`;
   return (
-    <div className="source-trail mono" aria-label="Review metadata">
-      <span>Internal provenance check: {audited ?? 'not yet'}</span>
-      <span>Last redebate pass: {debated ?? 'not yet'}</span>
+    <div className="source-trail mono" aria-label="Evidence metadata">
+      <span>Last evidence check: {audited ?? 'not yet'}</span>
+      <span>Last argument review: {debated ?? 'not yet'}</span>
       <span>Sources: {sourceCount}</span>
       <span>Claims: {claimCount}</span>
-      <Link href="/audit">Review details</Link>
-      <a href={repoPath}>GitHub source</a>
+      <Link href="/audit">Review trail</Link>
+      <a href={repoPath}>Source file</a>
     </div>
   );
 }

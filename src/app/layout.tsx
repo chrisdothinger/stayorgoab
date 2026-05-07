@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const navItems = [
   ['Questions', '/questions'],
   ['Sources', '/sources'],
-  ['Method / Ops', '/method']
+  ['How this works', '/method']
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <footer className="footer mono">
             <span>Independent non-partisan research project. Not legal or financial advice.</span>
             <span>
-              <Link href="/disclaimer">Disclaimer</Link> · <Link href="/audit">Review log</Link> · <Link href="/agents">Agents</Link> · <Link href="/method">Method / Ops</Link>
+              <Link href="/disclaimer">Disclaimer</Link> · <Link href="/audit">Review trail</Link> · <Link href="/agents">Agents</Link>
             </span>
           </footer>
         </div>

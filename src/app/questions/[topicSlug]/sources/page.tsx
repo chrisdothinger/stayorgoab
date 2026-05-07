@@ -8,6 +8,15 @@ export function generateStaticParams() {
   return loadRepositoryContent().topics.map((topic) => ({ topicSlug: topic.slug }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
+  const { topicSlug } = await params;
+  const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
+  return {
+    title: topic ? `${topic.title} — sources` : 'Topic sources',
+    description: topic ? `Source records used in the StayOrGoAB dossier for: ${topic.title}` : 'Source records used in a StayOrGoAB dossier.'
+  };
+}
+
 export default async function TopicSourcesPage({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const content = loadRepositoryContent();

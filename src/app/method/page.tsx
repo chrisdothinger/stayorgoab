@@ -1,6 +1,9 @@
 import { loadOpsSnapshot } from '@/lib/ops';
 
-export const metadata = { title: 'Method / Ops' };
+export const metadata = {
+  title: 'How this works',
+  description: 'How StayOrGoAB builds, checks, and publishes source-backed Alberta independence dossiers.'
+};
 
 const GITHUB_REPO_URL = 'https://github.com/chrisdothinger/stayorgoab';
 
@@ -17,8 +20,8 @@ export default function MethodPage() {
   return (
     <>
       <section className="section">
-        <div className="section-label mono">/ Method / Ops</div>
-        <h1>Method / Ops</h1>
+        <div className="section-label mono">/ How this works</div>
+        <h1>How this works</h1>
         <p>The site separates known facts, disputed claims, uncertainty, arguments, sources, and public review records. It does not tell readers how to vote. This page explains the research method and operating model in plain language.</p>
       </section>
 

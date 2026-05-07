@@ -8,6 +8,15 @@ export function generateStaticParams() {
   return loadRepositoryContent().topics.map((topic) => ({ topicSlug: topic.slug }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
+  const { topicSlug } = await params;
+  const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
+  return {
+    title: topic ? `${topic.title} — claims and evidence` : 'Claims and evidence',
+    description: topic ? `Claims and source records supporting the StayOrGoAB dossier for: ${topic.title}` : 'Claims and source records supporting a StayOrGoAB dossier.'
+  };
+}
+
 function formatStatus(status: string) {
   return status.replaceAll('_', ' ');
 }
@@ -24,9 +33,9 @@ export default async function ClaimsPage({ params }: { params: Promise<{ topicSl
   return (
     <>
       <section className="section">
-        <div className="section-label mono">/ Claim ledger</div>
+        <div className="section-label mono">/ Claims and evidence</div>
         <h1>{topic.title}</h1>
-        <p>Key claims used in this dossier and the sources that support them.</p>
+        <p>Key claims used in this dossier, paired with the sources that support them.</p>
       </section>
       <section className="section dossier-tab-strip">
         <DossierNav

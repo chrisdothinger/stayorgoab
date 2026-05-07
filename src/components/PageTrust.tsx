@@ -18,7 +18,7 @@ export function PageTrust({
   sourceHref = '/sources',
   reviewHref = '/audit',
   sourceLabel = 'Inspect sources',
-  reviewLabel = 'Open review log',
+  reviewLabel = 'Open review trail',
   links = []
 }: {
   sourceStatus: string;

@@ -1,5 +1,16 @@
 # Dossier buildout progress
 
+## 2026-05-07 — Overview-neutral standard lock-in
+
+Status: standardization PR pending at creation time.
+
+Scope:
+
+- Q1 proved the new reader model: the overview is the neutral synthesis, while pro/anti remain optional debate briefs.
+- Legacy expanded-row navigation should no longer link to Neutral for migrated topics.
+- Method / Ops, agent rubrics, prompts, and migration docs now describe overview-as-neutral as the new standard.
+- Batch continuation should follow `docs/overview-neutral-rollout-plan.md`: small PRs, validate/merge/deploy/live-check each batch before starting the next.
+
 ## 2026-05-05 — Current dirty Phase 2 dossier batch
 
 Status: validation passed locally; commit hash: `PENDING_COMMIT_HASH`.

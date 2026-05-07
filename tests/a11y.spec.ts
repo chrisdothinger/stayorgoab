@@ -57,6 +57,15 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByRole('article').getByRole('link', { name: /Public review trail/i })).toHaveCount(0);
   await page.getByRole('button', { name: /Clear filters/i }).click();
   await expect(page.getByText(/50 questions shown/i)).toBeVisible();
+
+  await page.getByLabel('Search topics').fill('legally need');
+  await expect(page.getByText(/1 question shown/i)).toBeVisible();
+  await page.getByRole('button', { name: /Expand summary for .*Alberta to become independent/i }).click();
+  const compactLinks = page.getByLabel(/Dossier tabs for What would legally need to happen/i);
+  await expect(compactLinks.getByRole('link', { name: 'Overview', exact: true })).toBeVisible();
+  await expect(compactLinks.getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
+  await expect(compactLinks.getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
+  await expect(compactLinks.getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
 });
 
 test('question overview keeps the shared dossier navigation and no duplicate deep-dive panel', async ({ page }) => {

@@ -9,6 +9,7 @@ A reader should finish a dossier able to say:
 - what the short answer is;
 - what the strongest pro-independence argument is;
 - what the strongest anti-independence or pro-federation argument is;
+- what each side gets right;
 - what facts are settled by checked sources;
 - what remains uncertain or conditional;
 - what evidence would change the assessment;
@@ -21,12 +22,27 @@ Use separate research lanes before writing:
 1. **Base source packet** — official, primary, legal, institutional, and durable context sources.
 2. **Pro-source research lane** — credible current sources, facts, and arguments that help the pro-independence case make its strongest lawful version.
 3. **Anti-source research lane** — credible current sources, facts, and arguments that help the anti-independence/pro-federation case make its strongest lawful version.
-4. **Counterargument scan** — enough cross-reading that each side can answer the other side's best objection.
+4. **Mediator synthesis lane** — enough cross-reading to identify what each side gets right, where each overstates, and what survives both arguments.
 5. **Citation and source-quality audit** — numbered inline citations, matching `## Sources`, checked source IDs, and clear source quality labels.
 
 The base packet is the floor, not the ceiling. Writers may add current credible sources when the source records, topic packet, claim map, audit log, redebate log, source map, and citation validation remain intact.
 
 ## Report role standard
+
+### Overview / neutral synthesis
+
+The overview is the neutral synthesis for refreshed dossiers. It is the main balanced answer, not a router page and not a teaser for a separate neutral report.
+
+Required posture:
+
+- start with a short plain-English answer;
+- explain the everyday implication for Albertans;
+- identify what the pro side gets right;
+- identify what the anti/pro-federation side gets right;
+- identify what each side overstates or still has to prove;
+- state what would have to be decided before the claim becomes real;
+- end with what survives both arguments;
+- keep numbered citations and a matching `## Sources` section.
 
 ### Pro report
 
@@ -36,10 +52,9 @@ Required posture:
 
 - distinguish lawful possibility from guaranteed outcome;
 - build from multiple argument pillars, not one slogan;
-- state assumptions and limits inside the relevant pillar or objection/reply;
-- admit weak points;
-- answer the anti side's strongest attack;
-- explain what evidence would strengthen or weaken the case.
+- state assumptions and limits inside the relevant pillar;
+- admit the main weakness;
+- avoid re-explaining the overview unless necessary for the argument.
 
 ### Anti report
 
@@ -49,66 +64,41 @@ Required posture:
 
 - distinguish democratic pressure from legal completion;
 - build from multiple argument pillars, not one slogan;
-- state assumptions and limits inside the relevant pillar or objection/reply;
-- admit weak points;
-- answer the pro side's strongest attack;
-- explain what evidence would strengthen or weaken the case.
+- state assumptions and limits inside the relevant pillar;
+- admit the main weakness;
+- avoid re-explaining the overview unless necessary for the argument.
 
-### Neutral report
+## Report contract v3.1: overview-as-neutral reader format
 
-Write as a mediator after the pro and anti reports exist. Neutral is not a third advocacy side. It should explain what survives both arguments, where the sides are talking past each other, and what a careful reader should watch next.
+Use this structure for new and substantially refreshed public dossiers. The goal is fewer public-facing sections, not thinner arguments. Keep evidence close to the claim it supports and leave audit machinery to the claims, sources, audit log, and public review trail.
 
-Required posture:
+### Overview
 
-- compare the pro and anti reports directly;
-- identify what each side gets right;
-- identify what each side overstates;
-- avoid false balance where evidence is asymmetrical;
-- end with conditional, updateable synthesis.
+Public reading order:
 
-## Report contract v3: lean public briefing format
+- `## Short answer`
+- `## What this means for Albertans`
+- `## What each side gets right`
+- `## What would have to be decided`
+- `## What survives both arguments`
+- `## Sources`
 
-Use this structure for new and substantially refreshed public reports. The goal is fewer public-facing sections, not thinner arguments. Keep evidence close to the claim it supports and leave audit machinery to the claims, sources, audit log, and public review trail.
+Do not add a separate `If you only read one page` or `Want to test the argument?` section. Do not treat the overview as a link hub. The overview is the answer.
 
 ### Pro and anti reports
 
 Public reading order:
 
 - `## Bottom line` — the whole case in plain English.
-- `## The case in 4 pillars` — usually 3-5 numbered pillars. Each pillar should include the point, why it matters, key citation(s), and its caveat/limit when needed.
-- `## Best objections / replies` — the strongest opposing attacks paired directly with the strongest fair replies.
-- `## What would change this assessment` — what would strengthen, weaken, or materially redirect the brief; include the main uncertainty here rather than in a separate section.
+- `## The case in 3 pillars` — usually 3-5 numbered pillars. Each pillar should include the point, why it matters, key citation(s), and its caveat/limit when needed.
+- `## Main weakness` — the strongest limitation or objection in plain language.
 - `## Sources` — numbered sources matching inline citations.
 
-Avoid separate public sections for `What current sources support`, `What is known`, `What is disputed`, `Assumptions`, `Strongest evidence`, `Weak points`, `Counterarguments`, `Open questions`, `Main uncertainty`, or `Reader checklist` unless a specific topic truly needs one. Those roles should usually be folded into the pillars, objections/replies, and change-assessment section.
+Avoid separate public sections for `What current sources support`, `What is known`, `What is disputed`, `Assumptions`, `Strongest evidence`, `Weak points`, `Counterarguments`, `Open questions`, `Main uncertainty`, or `Reader checklist` unless a specific topic truly needs one. Those roles should usually be folded into the overview, pillars, and main-weakness section.
 
-### Neutral report
+### Legacy neutral reports
 
-Neutral should be the clearest and shortest report. It should mediate between the pro and anti briefs rather than becoming a third advocacy side.
-
-Preferred public reading order:
-
-- `## Bottom line`
-- `## What each side gets right`
-- `## What survives both arguments`
-- `## The practical test`
-- `## What would change this assessment`
-- `## Sources`
-
-### Topic overview
-
-Use the overview as a router/map, not a fourth report. Prefer:
-
-- `## Short answer`
-- `## The debate in plain English`
-- `## Where the debate turns`
-- `## Read the briefs`
-
-Do not use wide decision-tree or matrix tables in the dossier overview body. They are hard to read on mobile. Use stacked bullets under `## Where the debate turns` instead.
-
-### Legacy validator note
-
-Most existing full dossiers still use the older public-audit section contract. Do not mass-convert them mechanically. New and substantially refreshed dossiers may use v3 when validation supports either the legacy contract or the lean v3 contract.
+Existing dossiers may still have `/neutral/` reports during migration. Do not create or refresh separate neutral reports as the new standard. When a dossier is migrated to v3.1, fold the neutral synthesis into `index.mdx`, hide the Neutral nav item for that topic, and keep the legacy route only as a compatibility notice until route removal is safe.
 
 ## Tone standard
 

@@ -6,7 +6,7 @@ Generated/updated: 2026-05-05 by the limit-safe batch runner.
 - Stop target: **100** total questions.
 - Remaining capacity before the scheduled runner stops: **77** questions.
 - Phase 2 scope: classify existing public questions and preserve a recovery inventory before Phase 3 expansion.
-- Completion rule: do not mark a topic complete unless it has topic metadata/index content, pro/anti/neutral reports, claims, sources, public audit log, and redebate log coverage that passes repo validators.
+- Completion rule: do not mark a topic complete unless it has topic metadata/index content, overview-as-neutral synthesis, pro/anti briefs, claims, sources, public audit log, and redebate log coverage that passes repo validators.
 
 ## Classification summary
 - `complete_full_dossier`: 23

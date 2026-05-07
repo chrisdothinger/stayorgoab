@@ -29,10 +29,23 @@ export default function MethodPage() {
         </div>
         <div className="status-readout">
           <article className="data-row trust-row"><span className="mono row-meta">1 / assign</span><strong>An orchestrator agent sets the work plan</strong><span>A central reviewing agent reads the public question, the repository rules, and the role definitions stored in GitHub. It assigns bounded tasks to specialist agents instead of letting one system write everything at once.</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">2 / research</span><strong>Specialist agents work in defined lanes</strong><span>Different agents can handle source collection, pro-side arguments, anti-side arguments, neutral synthesis, citation checks, and release review. Each role has limits on what it can change and what evidence it must return.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">2 / research</span><strong>Specialist agents work in defined lanes</strong><span>Different agents can handle source collection, pro-side arguments, anti-side arguments, overview synthesis, citation checks, and release review. The neutral synthesis is folded into the overview so readers get the balanced answer before choosing whether to open side briefs.</span></article>
           <article className="data-row trust-row"><span className="mono row-meta">3 / report back</span><strong>Drafts come back with evidence</strong><span>Agents do not simply declare an answer. They return proposed text, source records, claim links, and a short summary of what changed so the work can be checked against the public files.</span></article>
           <article className="data-row trust-row"><span className="mono row-meta">4 / validate</span><strong>The orchestrator checks before publication</strong><span>The orchestrator compares the work against the site rules: sources must exist, claims must cite sources, public pages must build, secret scans must pass, and summaries must not expose private prompts or raw logs.</span></article>
           <article className="data-row trust-row"><span className="mono row-meta">5 / publish</span><strong>Green work is published through GitHub</strong><span>Accepted changes go through the public repository and deployment checks before appearing on the site. That trail is intentional: readers can inspect what changed, when it changed, and what evidence supported it.</span></article>
+        </div>
+      </section>
+
+      <section className="section grid-two">
+        <div>
+          <div className="section-label mono">/ Dossier shape</div>
+          <h2>The overview is the neutral synthesis</h2>
+          <p className="section-copy">The refreshed standard treats the overview as the main balanced report, not a teaser. It should answer the question, explain what each side gets right, name the decisions that remain unresolved, and cite the evidence trail.</p>
+        </div>
+        <div className="status-readout">
+          <article className="data-row trust-row"><span className="mono row-meta">Overview</span><strong>Main balanced answer</strong><span>Readers should be able to stop on the overview and understand the practical answer. The former neutral-report job lives here.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">Briefs</span><strong>Pro and anti are optional deep dives</strong><span>The side briefs test the strongest fair pro-independence and anti-independence / pro-federation cases without repeating the overview.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">Audit</span><strong>Claims and sources remain separate</strong><span>The evidence trail stays public through numbered citations, source lists, claim maps, audit logs, and GitHub history.</span></article>
         </div>
       </section>
 

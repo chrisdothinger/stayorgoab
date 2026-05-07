@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { hasMergedNeutralOverview } from '@/lib/dossier-contract';
 import type { TopicMeta } from '@/lib/types';
 
 type ReportAvailability = {
@@ -21,7 +22,7 @@ export function DossierNav({
   active?: 'dossier' | 'neutral' | 'pro' | 'anti' | 'claims' | 'sources';
   reports?: ReportAvailability;
 }) {
-  const neutralMergedIntoOverview = topic.slug === 'legal-process';
+  const neutralMergedIntoOverview = hasMergedNeutralOverview(topic.slug);
 
   return (
     <nav className="category-nav mono dossier-nav" aria-label="Dossier navigation">

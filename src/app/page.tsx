@@ -12,7 +12,7 @@ export default function HomePage() {
         <Link className="question-entry-portal" href="/questions">
           <span className="question-entry-kicker mono">Questions</span>
           <strong>Choose the question before choosing a side.</strong>
-          <span className="question-entry-copy">Browse source-backed questions about Alberta separation and independence. Each question links to the evidence, claims, pro case, anti case, and neutral synthesis where available.</span>
+          <span className="question-entry-copy">Browse source-backed questions about Alberta separation and independence. Each question starts with a balanced overview, then links to the evidence, claims, pro case, and anti case.</span>
           <span className="question-entry-action mono">Browse the questions →</span>
         </Link>
       </section>

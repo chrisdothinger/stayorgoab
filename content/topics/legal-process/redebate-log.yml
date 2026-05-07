@@ -1,4 +1,8 @@
 entries:
+- id: redebate-legal-process-2026-05-06-compact-overview-primary
+  date: '2026-05-06'
+  trigger: compact-overview-primary-ux
+  summary: Reduced repeated report prose and treated the overview as the main reader answer, with pro/anti/neutral/claims/sources positioned as optional deeper review.
 - id: redebate-legal-process-2026-05-06-reader-first-pilot
   date: '2026-05-06'
   trigger: reader-first-writing-contract-pilot

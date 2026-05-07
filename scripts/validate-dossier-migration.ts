@@ -2,6 +2,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 import * as yaml from 'js-yaml';
 import {
+  COMPACT_DOSSIER_OVERVIEW_SECTIONS,
   DOSSIER_OVERVIEW_SECTIONS,
   hasDeletedV3Section,
   hasLeanReportContract
@@ -87,7 +88,9 @@ function readIndexFrontmatterTitle(slug: string): string | null {
 
 function hasOverviewV3Contract(body: string) {
   const lowerBody = body.toLowerCase();
-  return DOSSIER_OVERVIEW_SECTIONS.every((section) => lowerBody.includes(section.toLowerCase()));
+  const hasLegacyOverview = DOSSIER_OVERVIEW_SECTIONS.every((section) => lowerBody.includes(section.toLowerCase()));
+  const hasCompactOverview = COMPACT_DOSSIER_OVERVIEW_SECTIONS.every((section) => lowerBody.includes(section.toLowerCase()));
+  return hasLegacyOverview || hasCompactOverview;
 }
 
 function usedCitationNumbers(body: string): number[] {

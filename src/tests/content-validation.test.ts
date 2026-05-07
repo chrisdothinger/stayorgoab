@@ -165,9 +165,25 @@ describe('content validation', () => {
 
     expect(overview).toContain('## What this means for Albertans');
     expect(overview).toContain('## What would have to be decided');
-    expect(reports[0].toLowerCase()).toContain('plain english');
-    expect(reports[1].toLowerCase()).toContain('plain english');
-    expect(reports[2].toLowerCase()).toContain('plain english');
+    expect(overview).toContain('## If you only read one page');
+    expect(rubric).toContain('Most readers should not need the pro, anti, or neutral briefs');
+    expect(rubric).toContain('Cut repeated points even when they are true');
+
+    const wordCountBeforeSources = (body: string) =>
+      (body.split(/## Sources/i)[0] ?? '').match(/\b[\w’'-]+\b/g)?.length ?? 0;
+    const q1WordCounts: Record<string, number> = Object.fromEntries(
+      [['overview', overview], ['neutral', reports[0]], ['pro', reports[1]], ['anti', reports[2]]].map(([name, body]) => [
+        name,
+        wordCountBeforeSources(body)
+      ])
+    );
+    expect(q1WordCounts).toEqual({
+      overview: expect.any(Number),
+      neutral: expect.any(Number),
+      pro: expect.any(Number),
+      anti: expect.any(Number)
+    });
+    expect(Object.values(q1WordCounts).every((count) => count <= 700)).toBe(true);
 
     const crypticPhrases = [
       'lawful escalation',

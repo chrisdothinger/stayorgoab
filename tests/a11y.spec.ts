@@ -59,9 +59,19 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByText(/50 questions shown/i)).toBeVisible();
 });
 
+test('question overview is the primary reader path with optional deep-dive reports after the answer', async ({ page }) => {
+  await page.goto('/questions/legal-process/');
+  await expect(page.getByRole('region', { name: /Dossier overview/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Short answer/i })).toBeVisible();
+  const deepDive = page.getByRole('complementary', { name: /Optional deeper reports/i });
+  await expect(deepDive).toBeVisible();
+  await expect(deepDive.getByText(/The overview is the main answer/i)).toBeVisible();
+  await expect(deepDive.getByRole('link', { name: /Neutral synthesis/i })).toBeVisible();
+  await expect(page.getByRole('navigation', { name: /Dossier navigation/i })).toHaveCount(0);
+});
+
 test('question dossier tabs preserve topic context on dossier, reports, claims, and sources', async ({ page }) => {
   for (const route of [
-    '/questions/equalization/',
     '/questions/equalization/neutral/',
     '/questions/equalization/pro/',
     '/questions/equalization/anti/',
@@ -70,7 +80,7 @@ test('question dossier tabs preserve topic context on dossier, reports, claims, 
   ]) {
     await page.goto(route);
     const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
-    for (const label of ['Dossier', 'Neutral', 'Pro', 'Anti', 'Claims', 'Sources']) {
+    for (const label of ['Overview', 'Neutral', 'Pro', 'Anti', 'Claims', 'Sources']) {
       await expect(dossierNav.getByRole('link', { name: label, exact: true })).toBeVisible();
     }
     await expect(dossierNav.getByRole('link', { name: /Pro steelman/i })).toHaveCount(0);
@@ -81,7 +91,7 @@ test('question dossier tabs preserve topic context on dossier, reports, claims, 
 
   await page.goto('/questions/legal-process/neutral/');
   const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
-  await dossierNav.getByRole('link', { name: 'Dossier', exact: true }).click();
+  await dossierNav.getByRole('link', { name: 'Overview', exact: true }).click();
   await expect(page).toHaveURL(/\/questions\/legal-process\/?$/);
 });
 
@@ -110,18 +120,18 @@ test('full dossier report pages show steelman and neutral mediator structure', a
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Claims', exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: /What each side gets right/i })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /What would change this assessment/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /What would change the answer/i })).toBeVisible();
 
   await page.goto('/questions/legal-process/pro/');
   await expect(page.getByText(/strongest fair pro-independence argument/i)).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Best objections \/ replies/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Main weakness/i })).toBeVisible();
   await expect(page.getByText(/Evidence: 3 sources/i).first()).toBeVisible();
   await page.getByText(/Evidence: 3 sources/i).first().click();
-  await expect(page.locator('.evidence-chip[open]').first().getByRole('link', { name: '[3]', exact: true })).toBeVisible();
+  await expect(page.locator('.evidence-chip[open]').first().getByRole('link', { name: /\[\d+\]/ }).first()).toBeVisible();
 
   await page.goto('/questions/legal-process/anti/');
   await expect(page.getByText(/strongest fair anti-independence/i)).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Best objections \/ replies/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Main weakness/i })).toBeVisible();
 });
 
 test('public review trail shows compact metadata without header cards', async ({ page }) => {

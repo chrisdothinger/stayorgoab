@@ -1,4 +1,15 @@
 entries:
+- id: audit-legal-process-2026-05-06-compact-overview-primary
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Compressed question 1 so the overview is the primary reader path, shortened pro/anti/neutral briefs to avoid repeated background, and moved deeper report links after the answer.
+  checks:
+  - compact-reader-path
+  - overview-primary-ux
+  - citation-numbering
+  - source-list-preservation
+  - public-audit-validation
+  result: pass
 - id: audit-legal-process-2026-05-06-reader-first-pilot
   date: '2026-05-06'
   agent: StayOrGoAB public agent team

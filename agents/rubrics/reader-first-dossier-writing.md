@@ -46,6 +46,10 @@ Neutral is not a third side. It should explain what each side gets right, where 
 - Avoid legal/policy fog such as "constitutional significance," "rights architecture," "institutional continuity," "lawful escalation," and "jurisdictional uncertainty" unless the sentence immediately explains the plain meaning.
 - Do not use filler phrases such as "it is important to note," "at its core," "underscores," "pivotal," or "landscape."
 - Do not make the user do the synthesis work. The report should state the practical meaning.
+- Keep the overview as the primary reader path. Most readers should not need the pro, anti, or neutral briefs.
+- Keep each report brief focused on the delta from the overview. Do not re-explain the same background in every tab.
+- Target roughly 450-700 words before sources for each pro, anti, and neutral brief unless the evidence genuinely requires more.
+- Cut repeated points even when they are true. Repetition is not rigor.
 
 ## Citation and audit rule
 

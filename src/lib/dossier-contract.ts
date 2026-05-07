@@ -26,6 +26,28 @@ export const DOSSIER_NEUTRAL_SECTIONS = [
   '## Sources'
 ] as const;
 
+export const COMPACT_DOSSIER_OVERVIEW_SECTIONS = [
+  '## Short answer',
+  '## What this means for Albertans',
+  '## What would have to be decided',
+  '## Where the debate turns',
+  '## If you only read one page'
+] as const;
+
+export const COMPACT_DOSSIER_PRO_ANTI_SECTIONS = [
+  '## Bottom line',
+  '## Main weakness',
+  '## Sources'
+] as const;
+
+export const COMPACT_DOSSIER_NEUTRAL_SECTIONS = [
+  '## Bottom line',
+  '## What each side gets right',
+  '## What survives both arguments',
+  '## What would change the answer',
+  '## Sources'
+] as const;
+
 export const DOSSIER_CITATION_DISPLAY_STANDARD = [
   '1–2 citations render as compact inline source links',
   '3+ adjacent citations render as an expandable Evidence chip',
@@ -73,12 +95,16 @@ export function hasLegacyReportContract(body: string) {
 
 export function hasLeanReportContract(body: string, kind: ReportKind) {
   const lowerBody = body.toLowerCase();
-  const required = kind === 'neutral'
+  const legacyRequired = kind === 'neutral'
     ? DOSSIER_NEUTRAL_SECTIONS
     : DOSSIER_PRO_ANTI_SECTIONS.filter((section) => section !== '## The case in 4 pillars');
-  const hasRequiredSections = lowerSections(required).every((section) => lowerBody.includes(section));
+  const compactRequired = kind === 'neutral'
+    ? COMPACT_DOSSIER_NEUTRAL_SECTIONS
+    : COMPACT_DOSSIER_PRO_ANTI_SECTIONS;
+  const hasLegacySections = lowerSections(legacyRequired).every((section) => lowerBody.includes(section));
+  const hasCompactSections = lowerSections(compactRequired).every((section) => lowerBody.includes(section));
   const hasRoleShape = kind === 'neutral' ? true : /## the case in [3-5] pillars/.test(lowerBody);
-  return hasRequiredSections && hasRoleShape;
+  return (hasLegacySections || hasCompactSections) && hasRoleShape;
 }
 
 export function hasDeletedV3Section(body: string) {

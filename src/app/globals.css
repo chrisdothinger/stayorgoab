@@ -737,18 +737,6 @@ textarea:focus-visible {
   outline-offset: 4px;
 }
 
-.report-hero h1 {
-  max-width: 18ch;
-  font-size: clamp(28px, 5vw, 64px);
-  line-height: 0.98;
-}
-
-.report-hero p {
-  max-width: 76ch;
-  color: var(--secondary);
-  font-size: clamp(17px, 1.6vw, 21px);
-}
-
 .dossier-overview {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -762,6 +750,13 @@ textarea:focus-visible {
 .report-layout {
   align-items: start;
   padding-top: 18px;
+}
+
+.report-context {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .report-body .markdown > :first-child {

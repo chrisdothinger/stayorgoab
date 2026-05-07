@@ -174,7 +174,7 @@ test('claims pages are readable ledgers without dummy expansion controls or unex
   await expect(page.locator('.claim-sources').first().getByRole('link').first()).toBeVisible();
 });
 
-test('report pages omit jump navigation and keep the brief close to the dossier nav', async ({ page }) => {
+test('report pages omit jump navigation and keep dossier header/nav position stable', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/questions/legal-process/pro/');
   await expect(page.getByText(/Jump to section/i)).toHaveCount(0);
@@ -182,10 +182,18 @@ test('report pages omit jump navigation and keep the brief close to the dossier 
   await expect(page.getByRole('heading', { name: /Bottom line/i })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i })).toBeVisible();
 
-  const proTitleSize = await page.locator('.report-hero h1').evaluate((element) => getComputedStyle(element).fontSize);
-  await page.goto('/questions/legal-process/');
-  const overviewTitleSize = await page.locator('section').first().locator('h1').evaluate((element) => getComputedStyle(element).fontSize);
-  expect(proTitleSize).toBe(overviewTitleSize);
+  const routes = ['/questions/legal-process/', '/questions/legal-process/pro/', '/questions/legal-process/anti/'];
+  const navTops: number[] = [];
+  const titleSizes: string[] = [];
+  for (const route of routes) {
+    await page.goto(route);
+    await expect(page.getByRole('heading', { name: /What would legally need to happen/i })).toBeVisible();
+    navTops.push(await page.getByRole('navigation', { name: /Dossier navigation/i }).evaluate((element) => element.getBoundingClientRect().top));
+    titleSizes.push(await page.locator('.dossier-hero h1').evaluate((element) => getComputedStyle(element).fontSize));
+  }
+
+  expect(new Set(titleSizes).size).toBe(1);
+  expect(Math.max(...navTops) - Math.min(...navTops)).toBeLessThanOrEqual(1);
 });
 
 test('full dossier report pages show pro and anti structure, with neutral merged into overview', async ({ page }) => {
@@ -207,14 +215,14 @@ test('full dossier report pages show pro and anti structure, with neutral merged
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Claims', exact: true })).toBeVisible();
 
   await page.goto('/questions/legal-process/pro/');
-  await expect(page.getByText(/strongest fair pro-independence argument/i)).toBeVisible();
+  await expect(page.getByText(/strongest pro-independence legal case is narrow/i)).toBeVisible();
   await expect(page.getByRole('heading', { name: /Main weakness/i })).toBeVisible();
   await expect(page.locator('.evidence-chip summary').first()).toContainText(/\d+ sources/i);
   await page.locator('.evidence-chip summary').first().click();
   await expect(page.locator('.evidence-chip[open]').first().getByRole('link', { name: /\[\d+\]/ }).first()).toBeVisible();
 
   await page.goto('/questions/legal-process/anti/');
-  await expect(page.getByText(/strongest fair anti-independence/i)).toBeVisible();
+  await expect(page.getByText(/strongest anti-independence case is not that Alberta is forbidden/i)).toBeVisible();
   await expect(page.getByRole('heading', { name: /Main weakness/i })).toBeVisible();
 });
 

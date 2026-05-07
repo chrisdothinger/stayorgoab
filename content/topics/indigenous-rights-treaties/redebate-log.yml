@@ -7,3 +7,7 @@ entries:
   date: '2026-05-06'
   trigger: batch5-land-water-resources-v3-migration
   summary: Rebuilt the argument map around section 35, Secession Reference negotiation duties, consultation doctrine, Aboriginal title/treaty cases, Alberta consultation policy, UNDRIP implementation context, and current Indigenous opposition records.
+- id: redebate-indigenous-rights-treaties-2026-05-07
+  date: '2026-05-07'
+  trigger: q1-overview-baseline-migration
+  summary: "Promoted the neutral synthesis into the Overview while preserving high-uncertainty framing: Indigenous governments are rights-bearing participants, treaty and section 35 continuity cannot be assumed, and neither automatic consent nor automatic impossibility is source-supported."

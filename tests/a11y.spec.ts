@@ -36,11 +36,15 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByText(/50 questions shown/i)).toBeVisible();
   await expect(page.getByLabel('Search topics')).toBeVisible();
   await expect(page.getByLabel('Category')).toBeVisible();
+  await expect(page.getByText(/Critical questions about Alberta separation/i)).toBeVisible();
+  await expect(page.getByText(/public review logs, and redebate history/i)).toHaveCount(0);
   await expect(page.getByLabel('Dossier state')).toHaveCount(0);
   await expect(page.getByLabel('Time sensitivity')).toHaveCount(0);
   await expect(page.getByLabel('Provenance check')).toHaveCount(0);
   await expect(page.getByRole('heading', { name: /Legal process and referendum/i })).toBeVisible();
   await expect(page.getByRole('heading', { name: /Economy, taxes, and finance/i })).toBeVisible();
+  const categoryBackground = await page.locator('.question-category-heading').first().evaluate((element) => getComputedStyle(element).backgroundColor);
+  expect(categoryBackground).not.toBe('rgba(0, 0, 0, 0)');
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/full dossier/i);
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/Internal provenance check =/i);
   await expect(page.getByLabel('Questions trust metadata').getByRole('link', { name: /Public review trail/i })).toBeVisible();
@@ -106,6 +110,15 @@ test('question dossier tabs preserve topic context on dossier, reports, claims, 
   const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
   await dossierNav.getByRole('link', { name: 'Overview', exact: true }).click();
   await expect(page).toHaveURL(/\/questions\/legal-process\/?$/);
+});
+
+test('claims pages are readable ledgers without dummy expansion controls or unexplained risk labels', async ({ page }) => {
+  await page.goto('/questions/legal-process/claims/');
+  await expect(page.getByText(/Key claims used in this dossier/i)).toBeVisible();
+  await expect(page.getByRole('button', { name: /^\+$/ })).toHaveCount(0);
+  await expect(page.getByText(/Risk:/i)).toHaveCount(0);
+  await expect(page.locator('.claim-row').first()).toBeVisible();
+  await expect(page.locator('.claim-sources').first().getByRole('link').first()).toBeVisible();
 });
 
 test('report section navigation is collapsible on mobile and does not overlay content while scrolling', async ({ page }) => {

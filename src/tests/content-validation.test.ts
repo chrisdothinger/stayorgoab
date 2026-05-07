@@ -121,6 +121,40 @@ describe('content validation', () => {
     expect(incomplete).toEqual([]);
   });
 
+  it('documents and pilots the reader-first dossier writing contract on question 1', () => {
+    const rubricPath = path.join(process.cwd(), 'agents/rubrics/reader-first-dossier-writing.md');
+    expect(fs.existsSync(rubricPath)).toBe(true);
+
+    const rubric = fs.readFileSync(rubricPath, 'utf8');
+    expect(rubric).toContain('Plain-English answer first');
+    expect(rubric).toContain('The agents do the critical thinking');
+    expect(rubric).toContain('Do not reduce citation discipline');
+
+    const topicDir = path.join(process.cwd(), 'content/topics/legal-process');
+    const overview = fs.readFileSync(path.join(topicDir, 'index.mdx'), 'utf8');
+    const reports = ['neutral.mdx', 'pro.mdx', 'anti.mdx'].map((file) => fs.readFileSync(path.join(topicDir, file), 'utf8'));
+    const allPublicBodies = [overview, ...reports];
+
+    expect(overview).toContain('## What this means for Albertans');
+    expect(overview).toContain('## What would have to be decided');
+    expect(reports[0].toLowerCase()).toContain('plain english');
+    expect(reports[1].toLowerCase()).toContain('plain english');
+    expect(reports[2].toLowerCase()).toContain('plain english');
+
+    const crypticPhrases = [
+      'lawful escalation',
+      'democratic machinery',
+      'rights architecture',
+      'constitutional significance',
+      'implementation would raise constitutional, treaty, institutional, and practical questions'
+    ];
+    const offenders = allPublicBodies.flatMap((body, index) =>
+      crypticPhrases.filter((phrase) => body.toLowerCase().includes(phrase)).map((phrase) => `${index}:${phrase}`)
+    );
+
+    expect(offenders).toEqual([]);
+  });
+
   it('accepts three-to-five-pillar v3 pro/anti contracts and rejects retired v3 sections', () => {
     const v3Base = `## Bottom line
 

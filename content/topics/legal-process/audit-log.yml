@@ -1,4 +1,15 @@
 entries:
+- id: audit-legal-process-2026-05-06-reader-first-pilot
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Rewrote the first public dossier under the reader-first writing contract so the overview, pro brief, anti brief, and neutral synthesis explain the legal process in plainer language while preserving numbered citations and source lists.
+  checks:
+  - reader-first-writing-contract
+  - public-readable-style
+  - citation-numbering
+  - neutral-mediator-role
+  - public-audit-validation
+  result: pass
 - id: audit-legal-process-2026-05-06-evidence-chip-citations
   date: '2026-05-06'
   agent: StayOrGoAB public agent team

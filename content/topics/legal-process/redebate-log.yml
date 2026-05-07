@@ -1,4 +1,8 @@
 entries:
+- id: redebate-legal-process-2026-05-06-reader-first-pilot
+  date: '2026-05-06'
+  trigger: reader-first-writing-contract-pilot
+  summary: Reworked question 1 overview, pro brief, anti brief, and neutral synthesis so readers get the plain-English meaning first while the audit/citation structure remains intact.
 - id: redebate-legal-process-2026-05-06-evidence-chip-citations
   date: '2026-05-06'
   trigger: citation-readability-cleanup

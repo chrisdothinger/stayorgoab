@@ -132,9 +132,10 @@ test('question dossier tabs preserve topic context on dossier, reports, claims, 
   ]) {
     await page.goto(route);
     const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
-    for (const label of ['Overview', 'Neutral', 'Pro', 'Anti', 'Claims', 'Sources']) {
+    for (const label of ['Overview', 'Pro', 'Anti', 'Claims', 'Sources']) {
       await expect(dossierNav.getByRole('link', { name: label, exact: true })).toBeVisible();
     }
+    await expect(dossierNav.getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
     await expect(dossierNav.getByRole('link', { name: /Pro steelman/i })).toHaveCount(0);
     await expect(dossierNav.getByRole('link', { name: /Anti steelman/i })).toHaveCount(0);
     await expect(dossierNav.getByRole('link', { name: /Neutral mediator/i })).toHaveCount(0);
@@ -188,17 +189,22 @@ test('report pages omit jump navigation and keep the brief close to the dossier 
 });
 
 test('full dossier report pages show pro and anti structure, with neutral merged into overview', async ({ page }) => {
-  await page.goto('/questions/legal-process/');
-  await expect(page.getByRole('heading', { name: /What each side gets right/i })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /What survives both arguments/i })).toBeVisible();
+  for (const slug of ['legal-process', 'cpp-pensions', 'employment-insurance-federal-benefits', 'bank-deposits-financial-stability', 'currency-banking', 'equalization']) {
+    await page.goto(`/questions/${slug}/`);
+    await expect(page.getByRole('heading', { name: /What each side gets right/i })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /What survives both arguments/i })).toBeVisible();
+    await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
+
+    await page.goto(`/questions/${slug}/neutral/`);
+    await expect(page.getByRole('heading', { name: /Neutral now lives in the overview/i })).toBeVisible();
+    await expect(page.getByRole('link', { name: /Read the merged overview/i })).toBeVisible();
+    await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
+  }
 
   await page.goto('/questions/legal-process/neutral/');
-  await expect(page.getByRole('heading', { name: /Neutral now lives in the overview/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /Read the merged overview/i })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Claims', exact: true })).toBeVisible();
-  await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
 
   await page.goto('/questions/legal-process/pro/');
   await expect(page.getByText(/strongest fair pro-independence argument/i)).toBeVisible();

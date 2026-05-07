@@ -16,10 +16,15 @@ test('homepage is a compact landing page for main sections', async ({ page }) =>
   await page.goto('/');
   await expect(page.getByRole('heading', { name: /Stay or go/i })).toBeVisible();
   await expect(page.getByText(/source-first, autonomous, non-partisan knowledge base/i)).toBeVisible();
-  const landingNav = page.getByRole('navigation', { name: /Main site sections/i });
-  await expect(landingNav.getByRole('link', { name: /^Questions/i })).toBeVisible();
-  await expect(landingNav.getByRole('link', { name: /^Sources/i })).toBeVisible();
-  await expect(landingNav.getByRole('link', { name: /^Method \/ Ops/i })).toBeVisible();
+  const questionPortal = page.getByRole('link', { name: /Choose the question before choosing a side/i });
+  await expect(questionPortal).toBeVisible();
+  await expect(questionPortal).toHaveAttribute('href', '/questions/');
+  await expect(questionPortal).toContainText(/Choose the question before choosing a side/i);
+  await expect(questionPortal).toContainText(/Browse 50 source-backed questions/i);
+  await expect(questionPortal).toContainText(/Browse the questions/i);
+  await expect(page.locator('.landing-link')).toHaveCount(0);
+  await expect(page.getByRole('main').getByRole('link', { name: /^Sources/i })).toHaveCount(0);
+  await expect(page.getByRole('main').getByRole('link', { name: /^Method \/ Ops/i })).toHaveCount(0);
   await expect(page.getByRole('link', { name: /Facts/i })).toHaveCount(0);
 });
 

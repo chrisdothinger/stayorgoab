@@ -25,30 +25,8 @@ const REPORT_COPY: Record<ReportKind, { label: string; eyebrow: string; explaine
   }
 };
 
-type HeadingLink = { id: string; label: string; level: 2 | 3 };
-
-function slugifyHeading(label: string) {
-  return label.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-}
-
-function reportHeadingLinks(body: string): HeadingLink[] {
-  const links: HeadingLink[] = [];
-  const seen = new Set<string>();
-  for (const line of body.split('\n')) {
-    const match = line.match(/^(#{2,3})\s+(.+)$/);
-    if (!match) continue;
-    const label = match[2].trim();
-    const id = slugifyHeading(label);
-    if (!id || seen.has(id)) continue;
-    seen.add(id);
-    links.push({ id, label, level: match[1].length as 2 | 3 });
-  }
-  return links;
-}
-
 export function ReportPage({ topic, report, kind }: { topic: TopicMeta; report: MarkdownFile; kind: ReportKind }) {
   const copy = REPORT_COPY[kind];
-  const sectionLinks = reportHeadingLinks(report.body);
   return (
     <>
       <section className="section report-hero">
@@ -68,19 +46,7 @@ export function ReportPage({ topic, report, kind }: { topic: TopicMeta; report: 
         <DossierNav active={kind} topic={topic} />
       </section>
 
-      <section className="section grid-two report-layout">
-        <aside className="report-aside">
-          {sectionLinks.length > 0 ? (
-            <details className="report-section-disclosure" aria-label="Report section jumps">
-              <summary className="mono">Jump to section</summary>
-              <nav className="report-section-nav mono" aria-label="Report sections">
-                {sectionLinks.map((section) => (
-                  <a className={section.level === 3 ? 'subsection-link' : undefined} key={section.id} href={`#${section.id}`}>{section.label}</a>
-                ))}
-              </nav>
-            </details>
-          ) : null}
-        </aside>
+      <section className="section report-layout">
         <article className="report-body">
           <MarkdownText body={report.body} />
         </article>

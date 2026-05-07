@@ -3,3 +3,7 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-federal-debt-assets-2026-05-07-q1
+  date: '2026-05-07'
+  trigger: q1-v3-overview-neutral-migration
+  summary: Reframed the dossier around the unresolved debt/assets settlement question; pro case argues debt and assets must be negotiated together, anti case warns against assuming a debt-free or asset-selective exit, and Overview carries the neutral synthesis.

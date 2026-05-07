@@ -4726,3 +4726,43 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-06'
   status: active
+
+- id: public-accounts-canada-2024
+  slug: public-accounts-canada-2024
+  title: Public Accounts of Canada 2024
+  publisher: Receiver General for Canada
+  author: Receiver General for Canada
+  url: https://www.tpsgc-pwgsc.gc.ca/recgen/cpc-pac/2024/index-eng.html
+  published_at: '2024-12-12'
+  accessed_at: '2026-05-07'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Canada-wide public accounts reporting federal financial statements, liabilities, assets, and accumulated deficit.
+  how_used: Provides the federal balance-sheet baseline for debt and asset allocation discussions; not used as an Alberta-specific allocation formula.
+  related_topic_slugs:
+  - federal-debt-assets
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-07'
+  status: active
+
+- id: finance-canada-annual-financial-report-2024
+  slug: finance-canada-annual-financial-report-2024
+  title: Annual Financial Report of the Government of Canada 2023–24
+  publisher: Finance Canada
+  author: Department of Finance Canada
+  url: https://www.canada.ca/en/department-finance/services/publications/annual-financial-report/2024.html
+  published_at: '2024-10-25'
+  accessed_at: '2026-05-07'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Finance Canada's accessible annual summary of the federal government's fiscal results, debt charges, liabilities, and financial position for 2023–24.
+  how_used: Provides a current federal fiscal baseline for explaining debt and liabilities; not used as an Alberta-specific secession settlement.
+  related_topic_slugs:
+  - federal-debt-assets
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-07'
+  status: active

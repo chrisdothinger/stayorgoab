@@ -1,34 +1,37 @@
 claims:
 - id: claim-federal-debt-assets-001
   topic_slug: federal-debt-assets
-  text: Federal debt, assets, liabilities, contracts, and property would likely be negotiated rather than allocated by a simple
-    public number on day one.
+  text: There is no confirmed public formula in the cited record for assigning Alberta a fixed share of federal debt or assets after independence.
   status: source_supported
   source_ids:
-  - alberta-budget-documents-2026
   - scc-secession-reference
+  - clarity-act
+  - public-accounts-canada-2024
+  - finance-canada-annual-financial-report-2024
   risk: high
 - id: claim-federal-debt-assets-002
   topic_slug: federal-debt-assets
-  text: The strongest pro case is that Alberta could argue for a favourable allocation using contribution, population, geography,
-    or asset-location principles.
-  status: inference
-  source_ids: &id001
-  - alberta-budget-documents-2026
-  - scc-secession-reference
-  - clarity-act
-  risk: high
+  text: Canada-wide public accounts and annual financial reporting describe federal liabilities and assets, but they are not an Alberta secession allocation table.
+  status: source_supported
+  source_ids:
+  - public-accounts-canada-2024
+  - finance-canada-annual-financial-report-2024
+  risk: medium
 - id: claim-federal-debt-assets-003
   topic_slug: federal-debt-assets
-  text: The strongest caution is that Canada, creditors, and counterparties may expect Alberta to assume liabilities, and
-    disputes could complicate transition and recognition.
+  text: A credible settlement would likely have to consider liabilities and assets together rather than treating federal debt as a stand-alone invoice.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - scc-secession-reference
+  - public-accounts-canada-2024
+  - finance-canada-annual-financial-report-2024
   risk: high
 - id: claim-federal-debt-assets-004
   topic_slug: federal-debt-assets
-  text: 'This topic remains uncertainty-labelled: High; no settled allocation formula is established in the current source
-    record.'
-  status: source_supported
-  source_ids: *id001
+  text: Alberta could argue for allocation principles such as population, contribution, asset location, or program responsibility, but none is established as an automatic legal entitlement in the cited record.
+  status: inference
+  source_ids:
+  - alberta-budget-documents-2026
+  - scc-secession-reference
+  - clarity-act
   risk: high

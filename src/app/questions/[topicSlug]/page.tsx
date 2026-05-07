@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { AuditMeta } from '@/components/AuditMeta';
+import { DossierHeader } from '@/components/DossierHeader';
 import { DossierNav } from '@/components/DossierNav';
 import { MarkdownText } from '@/components/MarkdownText';
 import { loadRepositoryContent } from '@/lib/content';
@@ -31,21 +31,12 @@ export default async function TopicPage({ params }: { params: Promise<{ topicSlu
 
   return (
     <>
-      <section className="section">
-        <div className="section-label mono">/ {topic.category}</div>
-        <h1>{topic.title}</h1>
-        <p>{topic.summary}</p>
-        {!isFullDossier ? (
+      <DossierHeader topic={topic} sourceFile={`content/topics/${topic.slug}/index.mdx`} />
+      {!isFullDossier ? (
+        <section className="section">
           <p className="notice">This topic is intentionally sparse. It is listed so readers can see the research queue, but it is not a completed dossier yet.</p>
-        ) : null}
-        <AuditMeta
-          sourceCount={topic.source_count}
-          claimCount={topic.claim_count}
-          audited={topic.last_audited_at}
-          debated={topic.last_debated_at}
-          sourceFile={`content/topics/${topic.slug}/index.mdx`}
-        />
-      </section>
+        </section>
+      ) : null}
 
       {isFullDossier ? (
         <section className="section dossier-tab-strip">

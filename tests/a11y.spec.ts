@@ -72,6 +72,27 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(compactLinks.getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
 });
 
+test('global shell keeps header typography consistent and mobile content inside viewport', async ({ page }) => {
+  await page.goto('/');
+  const questionsLink = page.getByRole('navigation', { name: /Primary navigation/i }).getByRole('link', { name: 'Questions' });
+  const githubLink = page.getByRole('banner').getByRole('link', { name: 'GitHub' });
+  const [questionsFontSize, githubFontSize, githubTextTransform] = await Promise.all([
+    questionsLink.evaluate((element) => getComputedStyle(element).fontSize),
+    githubLink.evaluate((element) => getComputedStyle(element).fontSize),
+    githubLink.evaluate((element) => getComputedStyle(element).textTransform)
+  ]);
+  expect(githubFontSize).toBe(questionsFontSize);
+  expect(githubTextTransform).toBe('uppercase');
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const route of ['/questions/legal-process/pro/', '/questions/legal-process/sources/', '/sources/']) {
+    await page.goto(route);
+    await expect(page.locator('body')).toBeVisible();
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(1);
+  }
+});
+
 test('question overview keeps the shared dossier navigation and no duplicate deep-dive panel', async ({ page }) => {
   await page.goto('/questions/legal-process/');
   await expect(page.getByRole('region', { name: /Dossier overview/i })).toBeVisible();
@@ -110,6 +131,22 @@ test('question dossier tabs preserve topic context on dossier, reports, claims, 
   const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
   await dossierNav.getByRole('link', { name: 'Overview', exact: true }).click();
   await expect(page).toHaveURL(/\/questions\/legal-process\/?$/);
+});
+
+test('active dossier tab is visibly stronger than inactive tabs', async ({ page }) => {
+  await page.goto('/questions/legal-process/pro/');
+  const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
+  const activeTab = dossierNav.getByRole('link', { name: 'Pro', exact: true });
+  const inactiveTab = dossierNav.getByRole('link', { name: 'Anti', exact: true });
+  await expect(activeTab).toHaveAttribute('aria-current', 'page');
+  const [activeBackground, inactiveBackground, activeColor, inactiveColor] = await Promise.all([
+    activeTab.evaluate((element) => getComputedStyle(element).backgroundColor),
+    inactiveTab.evaluate((element) => getComputedStyle(element).backgroundColor),
+    activeTab.evaluate((element) => getComputedStyle(element).color),
+    inactiveTab.evaluate((element) => getComputedStyle(element).color)
+  ]);
+  expect(activeBackground).not.toBe(inactiveBackground);
+  expect(activeColor).not.toBe(inactiveColor);
 });
 
 test('claims pages are readable ledgers without dummy expansion controls or unexplained risk labels', async ({ page }) => {

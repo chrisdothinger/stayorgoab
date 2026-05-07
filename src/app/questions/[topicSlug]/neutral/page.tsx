@@ -13,6 +13,15 @@ export function generateStaticParams() {
     .map((topic) => ({ topicSlug: topic.slug }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
+  const { topicSlug } = await params;
+  const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
+  return {
+    title: topic ? `${topic.title} — neutral synthesis` : 'Neutral synthesis',
+    description: topic ? `Neutral synthesis status for the StayOrGoAB dossier: ${topic.title}` : 'Neutral synthesis status for a StayOrGoAB dossier.'
+  };
+}
+
 export default async function NeutralReportPage({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const content = loadRepositoryContent();

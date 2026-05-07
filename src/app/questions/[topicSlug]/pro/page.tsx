@@ -10,6 +10,15 @@ export function generateStaticParams() {
     .map((topic) => ({ topicSlug: topic.slug }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
+  const { topicSlug } = await params;
+  const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
+  return {
+    title: topic ? `${topic.title} — pro brief` : 'Pro brief',
+    description: topic ? `The strongest fair pro-independence argument for: ${topic.title}` : 'A source-backed pro-independence debate brief.'
+  };
+}
+
 export default async function ProReportPage({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const content = loadRepositoryContent();

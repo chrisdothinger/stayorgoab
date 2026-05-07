@@ -1355,14 +1355,29 @@ textarea:focus-visible {
     grid-column: 1 / -1;
   }
 
-  .site-header nav {
-    justify-content: start;
-    flex-wrap: wrap;
-    gap: 4px 14px;
+  .site-header {
+    grid-template-columns: 1fr auto;
+    gap: 2px 12px;
+    padding-block: 4px;
   }
 
-  .site-header nav a,
-  .site-header .right a,
+  .site-header nav {
+    grid-column: 1 / -1;
+    order: 3;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 0 12px;
+  }
+
+  .site-header .brand,
+  .site-header .right a {
+    min-height: 28px;
+  }
+
+  .site-header nav a {
+    min-height: 32px;
+  }
+
   .dossier-nav a,
   .dossier-nav span[aria-disabled="true"],
   .category-nav a,
@@ -1372,7 +1387,7 @@ textarea:focus-visible {
   }
 
   .site-header .right {
-    text-align: left;
+    text-align: right;
   }
 
   .page-trust-links {

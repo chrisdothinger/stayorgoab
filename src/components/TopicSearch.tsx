@@ -167,8 +167,8 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
         <div>
           <strong>{topics.length}</strong> topics · {stateCounts.map((item) => `${formatState(item.state)}: ${item.count}`).join(' · ')}
         </div>
-        <div>Internal provenance check = this project’s automated public-repo check, not government or external audit.</div>
-        <Link href="/audit">Public review trail</Link>
+        <div>Last evidence check = this project’s automated public-repo check, not government or external audit.</div>
+        <Link href="/audit">Review trail</Link>
       </footer>
     </section>
   );

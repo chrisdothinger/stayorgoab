@@ -212,7 +212,7 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
               <div>
                 <Link href={sourceRoute(source)}>{source.title}</Link>
                 <div className="mono row-meta">
-                  {source.publisher} · {formatValue(source.source_type)} · {formatValue(source.reliability_category)} · internal provenance check {source.last_checked_at ?? source.accessed_at}
+                  {source.publisher} · {formatValue(source.source_type)} · {formatValue(source.reliability_category)} · last evidence check {source.last_checked_at ?? source.accessed_at}
                 </div>
                 <p className="row-description">{source.summary}</p>
               </div>

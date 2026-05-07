@@ -11,7 +11,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ sourceSlug: string }> }) {
   const { sourceSlug } = await params;
   const source = loadRepositoryContent().sources.find((item) => (item.slug ?? item.id) === sourceSlug || item.id === sourceSlug);
-  return { title: source?.title ?? 'Source' };
+  return {
+    title: source ? `${source.title} — source record` : 'Source record',
+    description: source?.summary ?? 'A StayOrGoAB source record.'
+  };
 }
 
 function formatValue(value: string) {
@@ -41,11 +44,11 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
         <div className="section-label mono">/ Source</div>
         <h1>{source.title}</h1>
         <p>{source.summary}</p>
-        <p className="audit-note mono">Internal provenance check means this project’s automated/public-repo provenance check; it is not a government audit, regulator audit, external audit, or assurance engagement.</p>
+        <p className="audit-note mono">Last evidence check means this project’s automated public-repository check; it is not a government audit, regulator audit, external audit, or assurance engagement.</p>
         <div className="source-trail mono">
           <span>{source.publisher}</span>
           <span>{formatValue(source.source_type)}</span>
-          <span>Internal provenance check {checkDate}</span>
+          <span>Last evidence check {checkDate}</span>
           <span>Accessed {source.accessed_at}</span>
           <a href={source.url}>Open original</a>
           {source.archive_url ? <a href={source.archive_url}>Open archive copy</a> : null}
@@ -64,7 +67,7 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
         sourceHref="/sources/"
         sourceLabel="Source library evidence"
         reviewHref="/audit/"
-        reviewLabel="Open review log"
+        reviewLabel="Open review trail"
         links={[{ href: '/repo/', label: 'Repository evidence' }]}
       />
 
@@ -74,7 +77,7 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
           <p>{whyItMatters}</p>
         </article>
         <article className="briefing-card">
-          <div className="section-label mono">Review details</div>
+          <div className="section-label mono">Evidence details</div>
           <p>This source row records the publisher, source type, reliability label, access date, original URL, and any archive copy available to this project.</p>
         </article>
       </section>

@@ -2,7 +2,10 @@ import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
 
-export const metadata = { title: 'Repository' };
+export const metadata = {
+  title: 'Repository evidence',
+  description: 'Where StayOrGoAB public source records, claims, review records, and validators live.'
+};
 
 export default function RepoPage() {
   const content = loadRepositoryContent();
@@ -17,8 +20,8 @@ export default function RepoPage() {
         <h1>Public repository evidence</h1>
         <p>
           Source records, claim links, generated review manifests, validation scripts, release summaries,
-          and static site code are inspectable in the public repository. These records support internal
-          provenance checks; they are not an external audit or assurance engagement.
+          and static site code are inspectable in the public repository. These records support public-repository
+          evidence checks; they are not an external audit or assurance engagement.
         </p>
       </section>
 
@@ -36,7 +39,7 @@ export default function RepoPage() {
           <article className="data-row trust-row">
             <span className="mono row-meta">Claim records</span>
             <strong>{content.claims.length}</strong>
-            <span>claim rows tied back to source IDs and topic ledgers</span>
+            <span>claim rows tied back to source IDs and topic evidence files</span>
           </article>
           <article className="data-row trust-row">
             <span className="mono row-meta">Review manifest</span>
@@ -65,7 +68,7 @@ export default function RepoPage() {
           <article className="data-row trust-row">
             <span className="mono row-meta">Content</span>
             <strong>content/topics</strong>
-            <span>topic dossiers, report files, claim ledgers, topic source maps, and review logs</span>
+            <span>topic dossiers, report files, claims-and-evidence files, topic source maps, and review trail records</span>
           </article>
           <article className="data-row trust-row">
             <span className="mono row-meta">Ops</span>

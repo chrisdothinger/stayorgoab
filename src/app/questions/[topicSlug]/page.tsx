@@ -13,7 +13,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
-  return { title: topic?.title ?? 'Topic' };
+  return {
+    title: topic ? `${topic.title} — overview` : 'Question overview',
+    description: topic?.summary ?? 'A source-backed StayOrGoAB question overview.'
+  };
 }
 
 export default async function TopicPage({ params }: { params: Promise<{ topicSlug: string }> }) {

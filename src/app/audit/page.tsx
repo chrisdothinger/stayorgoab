@@ -3,7 +3,10 @@ import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
 
-export const metadata = { title: 'Review log' };
+export const metadata = {
+  title: 'Review trail',
+  description: 'Public review records for StayOrGoAB source, claim, and dossier checks.'
+};
 
 export default function AuditPage() {
   const content = loadRepositoryContent();
@@ -15,15 +18,15 @@ export default function AuditPage() {
   return (
     <>
       <section className="section">
-        <div className="section-label mono">/ Review log</div>
-        <h1>Public review trail</h1>
-        <p>Compact public records show what changed, which sources support it, which automated checks ran, and where source files live. These are internal agentic/public-repository provenance checks, not government audits, regulator audits, external audits, or assurance engagements.</p>
+        <div className="section-label mono">/ Review trail</div>
+        <h1>Review trail</h1>
+        <p>Compact public records show what changed, which sources support it, which automated checks ran, and where source files live. These are StayOrGoAB public-repository evidence checks, not government audits, regulator audits, external audits, or assurance engagements.</p>
       </section>
 
-      <section className="section" aria-label="Review metadata">
-        <div className="section-label mono">/ Metadata</div>
+      <section className="section" aria-label="Review coverage">
+        <div className="section-label mono">/ Coverage</div>
         <h2>What this trail covers</h2>
-        <p className="section-copy">The review trail is generated from repository records. Source and claim counts come from each dossier's current source map and claim ledger, so refreshed dossiers do not depend on manually edited counts.</p>
+        <p className="section-copy">The review trail is generated from repository records. Source and claim counts come from each dossier's current source map and claims-and-evidence file, so refreshed dossiers do not depend on manually edited counts.</p>
         <div className="metadata-ledger mono">
           <div><span>Pages tracked</span><strong>{manifest.pages.length}</strong></div>
           <div><span>Sources</span><strong>{content.sources.length}</strong></div>
@@ -43,7 +46,7 @@ export default function AuditPage() {
             <span className="mono row-meta state">{page.publication_state}</span>
             <span className="mono">+</span>
             <p className="expanded-row mono">
-              {page.source_file} · {page.source_count} sources · {page.claim_count} claims · internal provenance check {page.last_audited_at ?? 'pending'} · run {page.latest_agent_run_id}
+              {page.source_file} · {page.source_count} sources · {page.claim_count} claims · last evidence check {page.last_audited_at ?? 'pending'} · run {page.latest_agent_run_id}
             </p>
           </article>
         ))}

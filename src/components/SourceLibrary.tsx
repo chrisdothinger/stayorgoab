@@ -229,18 +229,18 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
               {isExpanded ? (
                 <div className="expanded-row">
                   <strong>Why this source matters:</strong> {whySourceMatters(source, relatedTopics.length, sourceClaims.length)}
-                  <div className="source-trail mono">
+                  <div className="source-trail source-meta-trail mono">
                     <span>Accessed {source.accessed_at}</span>
                     <span>Status {source.status ?? 'tracked'}</span>
                     {source.archive_url ? <a href={source.archive_url}>archive copy</a> : null}
                     <a href={source.url}>open original</a>
                     <Link href={sourceRoute(source)}>source detail</Link>
                   </div>
-                  <div className="source-trail mono">
+                  <div className="source-trail source-link-trail">
                     <strong>Used by topics</strong>
                     {relatedTopics.length ? relatedTopics.map((topic) => <Link key={topic.slug} href={`/questions/${topic.slug}`}>{topic.title}</Link>) : <span>No topic links recorded</span>}
                   </div>
-                  <div className="source-trail mono">
+                  <div className="source-trail source-link-trail">
                     <strong>Referenced claims</strong>
                     {sourceClaims.length ? sourceClaims.slice(0, 4).map((claim) => <Link key={claim.id} href={`/questions/${claim.topic_slug}/claims`}>{claim.id}</Link>) : <span>No claim links recorded</span>}
                   </div>

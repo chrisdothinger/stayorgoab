@@ -32,9 +32,11 @@ Turn abstract complexity into concrete decision points. Prefer questions like:
 
 Pro and anti reports remain professional debate briefs. Each side should make its strongest fair case with multiple pillars, real objections, and clear limits. Do not turn either side into a slogan or a campaign ad.
 
-### Neutral as mediator
+### Neutral synthesis belongs in the overview
 
-Neutral is not a third side. It should explain what each side gets right, where each side overstates, what survives both arguments, and what evidence would change the answer.
+Neutral is not a third side. When the overview and neutral report serve the same reader job, merge them. The overview should explain what each side gets right, where each side overstates, what survives both arguments, and what evidence would change the answer.
+
+Keep separate pro and anti briefs for readers who want the strongest fair cases.
 
 ## Style rules
 
@@ -46,9 +48,9 @@ Neutral is not a third side. It should explain what each side gets right, where 
 - Avoid legal/policy fog such as "constitutional significance," "rights architecture," "institutional continuity," "lawful escalation," and "jurisdictional uncertainty" unless the sentence immediately explains the plain meaning.
 - Do not use filler phrases such as "it is important to note," "at its core," "underscores," "pivotal," or "landscape."
 - Do not make the user do the synthesis work. The report should state the practical meaning.
-- Keep the overview as the primary reader path. Most readers should not need the pro, anti, or neutral briefs.
-- Keep each report brief focused on the delta from the overview. Do not re-explain the same background in every tab.
-- Target roughly 450-700 words before sources for each pro, anti, and neutral brief unless the evidence genuinely requires more.
+- Keep the overview as the primary reader path. Most readers should not need separate pro or anti briefs.
+- Keep each pro/anti brief focused on the delta from the overview. Do not re-explain the same background in every tab.
+- Target roughly 450-700 words before sources for each pro and anti brief unless the evidence genuinely requires more.
 - Cut repeated points even when they are true. Repetition is not rigor.
 
 ## Citation and audit rule

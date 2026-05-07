@@ -64,9 +64,12 @@ export function ReportPage({ topic, report, kind }: { topic: TopicMeta; report: 
         />
       </section>
 
+      <section className="section dossier-tab-strip">
+        <DossierNav active={kind} topic={topic} />
+      </section>
+
       <section className="section grid-two report-layout">
         <aside className="report-aside">
-          <DossierNav active={kind} topic={topic} />
           {sectionLinks.length > 0 ? (
             <details className="report-section-disclosure" aria-label="Report section jumps">
               <summary className="mono">Jump to section</summary>

@@ -163,10 +163,11 @@ describe('content validation', () => {
     const reports = ['neutral.mdx', 'pro.mdx', 'anti.mdx'].map((file) => fs.readFileSync(path.join(topicDir, file), 'utf8'));
     const allPublicBodies = [overview, ...reports];
 
-    expect(overview).toContain('## What this means for Albertans');
+    expect(overview).toContain('## What each side gets right');
     expect(overview).toContain('## What would have to be decided');
-    expect(overview).toContain('## If you only read one page');
-    expect(rubric).toContain('Most readers should not need the pro, anti, or neutral briefs');
+    expect(overview).toContain('## What survives both arguments');
+    expect(overview).toContain('## Sources');
+    expect(rubric).toContain('Most readers should not need separate pro or anti briefs');
     expect(rubric).toContain('Cut repeated points even when they are true');
 
     const wordCountBeforeSources = (body: string) =>

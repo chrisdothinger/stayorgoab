@@ -29,9 +29,10 @@ export const DOSSIER_NEUTRAL_SECTIONS = [
 export const COMPACT_DOSSIER_OVERVIEW_SECTIONS = [
   '## Short answer',
   '## What this means for Albertans',
+  '## What each side gets right',
   '## What would have to be decided',
-  '## Where the debate turns',
-  '## If you only read one page'
+  '## What survives both arguments',
+  '## Sources'
 ] as const;
 
 export const COMPACT_DOSSIER_PRO_ANTI_SECTIONS = [

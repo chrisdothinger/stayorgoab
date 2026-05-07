@@ -19,7 +19,7 @@ export default async function ClaimsPage({ params }: { params: Promise<{ topicSl
       <section className="section">
         <div className="section-label mono">/ Claim ledger</div>
         <h1>{topic.title}</h1>
-        <p>Claims for this dossier, kept in the same topic context as the neutral, pro, anti, and source tabs.</p>
+        <p>Claims for this dossier, kept in the same topic context as the overview, pro, anti, and source tabs.</p>
       </section>
       <section className="section dossier-tab-strip">
         <DossierNav

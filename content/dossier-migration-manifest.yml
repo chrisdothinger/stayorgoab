@@ -23,7 +23,7 @@ gates:
 topics:
 - slug: legal-process
   public_question: What would legally need to happen for Alberta to become independent?
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-00-complete-pilot
@@ -46,7 +46,7 @@ topics:
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: cpp-pensions
   public_question: Would Albertans keep CPP benefits, or move to a new pension system?
-  category: Pensions, benefits, and household income
+  category: Public services, health, and benefits
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
@@ -70,7 +70,7 @@ topics:
 - slug: indigenous-rights-treaties
   public_question: How would Indigenous rights, treaties, land, and consultation affect
     Alberta independence?
-  category: Indigenous rights, treaties, land, and consent
+  category: Indigenous rights, treaties, and land
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-05-indigenous-land-water
@@ -94,7 +94,7 @@ topics:
 - slug: economy-fiscal
   public_question: Would independence make Alberta richer or poorer after taxes, transfers,
     debt, trade, and transition costs?
-  category: Economy, fiscal policy, and household impact
+  category: Economy, taxes, and finance
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-07-energy-resources-economy
@@ -117,7 +117,7 @@ topics:
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: referendum-mechanics
   public_question: How would Alberta’s petition and referendum process actually work?
-  category: Democracy, petitions, and referendum mechanics
+  category: Legal process and referendum
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-04-referendum-secession-law
@@ -143,7 +143,7 @@ topics:
 - slug: borders-currency-citizenship
   public_question: How would a landlocked Alberta move goods through Canadian, U.S.,
     and overseas routes after independence?
-  category: Landlocked access, export corridors, and logistics
+  category: Trade, borders, and mobility
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
@@ -170,7 +170,7 @@ topics:
 - slug: petition-vs-referendum-vs-negotiations
   public_question: What would negotiations with Canada actually have to settle after
     a successful Alberta referendum?
-  category: Post-referendum negotiations and settlement terms
+  category: Legal process and referendum
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-04-referendum-secession-law
@@ -195,7 +195,7 @@ topics:
   last_migrated_at: '2026-05-06'
 - slug: clarity-act
   public_question: Does the Clarity Act give Ottawa a veto over Alberta independence?
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-04-referendum-secession-law
@@ -220,7 +220,7 @@ topics:
   last_migrated_at: '2026-05-06'
 - slug: quebec-secession-reference
   public_question: What did the Supreme Court actually say about unilateral secession?
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-04-referendum-secession-law
@@ -246,7 +246,7 @@ topics:
 - slug: clear-question-majority
   public_question: Who decides whether Alberta’s referendum question and result are
     clear enough?
-  category: Legal path and constitutional rules
+  category: Legal process and referendum
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-04-referendum-secession-law
@@ -272,7 +272,7 @@ topics:
 - slug: referendum-ballot-2026
   public_question: What is known, and not known, about a possible 2026 Alberta referendum
     ballot?
-  category: Current referendum status and ballot timing
+  category: Legal process and referendum
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-04-referendum-secession-law
@@ -298,7 +298,7 @@ topics:
 - slug: economy-overall
   public_question: Would an independent Alberta align more closely with the United
     States, and what would that mean for trade, defence, energy, and sovereignty?
-  category: United States partnerships, trade, defence, energy, and sovereignty
+  category: Foreign affairs, defence, and recognition
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-07-energy-resources-economy
@@ -322,7 +322,7 @@ topics:
 - slug: equalization
   public_question: How much, if anything, would Albertans save from ending federal
     equalization and other transfers?
-  category: Equalization and federal transfers
+  category: Economy, taxes, and finance
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
@@ -346,7 +346,7 @@ topics:
 - slug: federal-debt-assets
   public_question: How much federal debt would Alberta inherit, and what assets could
     it claim?
-  category: Debt, assets, and fiscal settlement
+  category: Economy, taxes, and finance
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-07-energy-resources-economy
@@ -370,7 +370,7 @@ topics:
 - slug: indigenous-treaties
   public_question: Could First Nations remain tied to Canada or require separate agreements
     if Alberta tried to separate?
-  category: First Nations jurisdiction, treaty relationships, and consent
+  category: Indigenous rights, treaties, and land
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-05-indigenous-land-water
@@ -394,7 +394,7 @@ topics:
 - slug: military-security
   public_question: Who would defend Alberta, and what alliances or security arrangements
     would replace Canada’s?
-  category: Defence, security, and foreign affairs
+  category: Foreign affairs, defence, and recognition
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-06-state-capacity-foreign-security
@@ -418,7 +418,7 @@ topics:
 - slug: currency-banking
   public_question: Could Alberta keep using the Canadian dollar, and what would that
     mean for monetary policy and banking stability?
-  category: Currency, banking, and monetary stability
+  category: Economy, taxes, and finance
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
@@ -442,7 +442,7 @@ topics:
 - slug: borders-trade
   public_question: Would independence create tariffs, customs costs, or market-access
     barriers for goods moving to and from Alberta?
-  category: Borders, tariffs, customs, and trade
+  category: Trade, borders, and mobility
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
@@ -469,7 +469,7 @@ topics:
 - slug: public-services
   public_question: Which services would face the highest interruption risk in the
     first year after independence?
-  category: Transition continuity and service interruption risk
+  category: Public services, health, and benefits
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-08-regulators-public-services
@@ -493,7 +493,7 @@ topics:
 - slug: energy-environment
   public_question: Would Alberta’s resources be unlocked faster, or would markets,
     Indigenous rights, environmental rules, and export routes still constrain development?
-  category: Resource development, permitting, markets, and constraints
+  category: Energy, resources, and environment
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-07-energy-resources-economy
@@ -517,7 +517,7 @@ topics:
 - slug: bureaucracy-governance
   public_question: What new national institutions would Alberta need on day one, and
     which could be phased in later?
-  category: State capacity and public institutions
+  category: Government institutions and regulators
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-06-state-capacity-foreign-security
@@ -541,7 +541,7 @@ topics:
 - slug: international-recognition
   public_question: Would other countries recognize an independent Alberta, and what
     conditions might they attach?
-  category: International recognition and diplomacy
+  category: Foreign affairs, defence, and recognition
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-06-state-capacity-foreign-security
@@ -565,7 +565,7 @@ topics:
 - slug: case-studies
   public_question: What can Alberta realistically learn from Quebec, Brexit, Scotland,
     and other independence movements?
-  category: Comparative case studies
+  category: Legal process and referendum
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-09-remaining-high-value
@@ -589,7 +589,7 @@ topics:
 - slug: tax-collection-revenue-agency
   public_question: Would Alberta need its own tax agency, and how hard would that
     be?
-  category: Tax collection and revenue administration
+  category: Economy, taxes, and finance
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-06-state-capacity-foreign-security
@@ -613,7 +613,7 @@ topics:
 - slug: immigration-passports-mobility
   public_question: Would Albertans keep Canadian citizenship, passports, residency
     rights, and the ability to live or work across Canada?
-  category: Citizenship, passports, immigration, and mobility
+  category: Trade, borders, and mobility
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
@@ -640,7 +640,7 @@ topics:
 - slug: courts-criminal-law
   public_question: Who would make criminal law, run prosecutions, and keep courts
     operating after independence?
-  category: Criminal law, prosecutions, courts, and legal continuity
+  category: Justice, rights, and public safety
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-03-justice-safety-rights
@@ -667,7 +667,7 @@ topics:
 - slug: student-loans-universities-research
   public_question: What would happen to student loans, universities, and research
     funding?
-  category: Students, universities, and research funding
+  category: Work, education, and everyday life
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-08-regulators-public-services
@@ -691,7 +691,7 @@ topics:
 - slug: postal-telecom-broadcasting
   public_question: Who would regulate mail, telecom, internet, wireless spectrum,
     and broadcasting?
-  category: Daily-life federal regulators
+  category: Government institutions and regulators
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-08-regulators-public-services
@@ -715,7 +715,7 @@ topics:
 - slug: agriculture-food-inspection-market-access
   public_question: How would independence affect farmers, food inspection, exports,
     and market access?
-  category: Agriculture, food inspection, and market access
+  category: Trade, borders, and mobility
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
@@ -741,7 +741,7 @@ topics:
     claim, audit, and redebate artifacts.
 - slug: employment-insurance-federal-benefits
   public_question: Would Albertans keep Employment Insurance and federal income benefits?
-  category: Federal benefits and income supports
+  category: Public services, health, and benefits
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
@@ -764,7 +764,7 @@ topics:
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: national-parks-public-lands
   public_question: What would happen to national parks, Crown land, and public lands?
-  category: National parks, Crown land, and public lands
+  category: Energy, resources, and environment
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-05-indigenous-land-water
@@ -788,7 +788,7 @@ topics:
 - slug: air-transport-aviation-safety
   public_question: Would Alberta’s airports, flights, aviation safety, and international
     air links keep operating smoothly after independence?
-  category: Aviation safety, airports, flights, and air links
+  category: Trade, borders, and mobility
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
@@ -815,7 +815,7 @@ topics:
 - slug: water-rights-rivers
   public_question: Could Alberta independence change water rights, rivers, and drinking-water
     systems?
-  category: Water rights, rivers, and water infrastructure
+  category: Energy, resources, and environment
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-05-indigenous-land-water
@@ -838,7 +838,7 @@ topics:
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
 - slug: emergency-management-disaster-aid
   public_question: Who would pay for disaster response and emergency aid after independence?
-  category: Emergency management and disaster aid
+  category: Public services, health, and benefits
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-03-justice-safety-rights
@@ -865,7 +865,7 @@ topics:
 - slug: statistics-census-public-data
   public_question: Who would run census, statistics, and public-data systems, and
     why would that matter for funding and elections?
-  category: Statistics, census, public data, funding formulas, and elections
+  category: Government institutions and regulators
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-06-state-capacity-foreign-security
@@ -889,7 +889,7 @@ topics:
 - slug: rcmp-provincial-policing
   public_question: Would Alberta keep the RCMP, build a provincial police service,
     or need something new?
-  category: Police services and public safety
+  category: Justice, rights, and public safety
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-03-justice-safety-rights
@@ -916,7 +916,7 @@ topics:
 - slug: charter-rights-continuity
   public_question: Would Charter rights and civil liberties continue after Alberta
     independence?
-  category: Rights, liberties, and constitutional continuity
+  category: Justice, rights, and public safety
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-03-justice-safety-rights
@@ -943,7 +943,7 @@ topics:
 - slug: abortion-reproductive-health-rights
   public_question: Could Alberta independence change abortion access and reproductive
     health rights?
-  category: Reproductive health and rights
+  category: Justice, rights, and public safety
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-04-rights-courts-public-safety
@@ -967,7 +967,7 @@ topics:
 - slug: firearms-laws-licensing
   public_question: What would happen to firearms laws, gun licensing, and restricted-weapon
     rules?
-  category: Firearms, licensing, and public safety
+  category: Justice, rights, and public safety
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-03-justice-safety-rights
@@ -994,7 +994,7 @@ topics:
 - slug: healthcare-portability-doctor-licensing
   public_question: Would Alberta health coverage, doctor licensing, and out-of-province
     care still work?
-  category: Healthcare coverage, portability, and professional licensing
+  category: Public services, health, and benefits
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
@@ -1018,7 +1018,7 @@ topics:
 - slug: border-enforcement-customs
   public_question: What border agency would Alberta need, and how would inspections
     for people and goods actually work?
-  category: Border agency capacity, inspections, and enforcement
+  category: Trade, borders, and mobility
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-02-borders-trade-mobility
@@ -1045,7 +1045,7 @@ topics:
 - slug: bank-deposits-financial-stability
   public_question: Would bank deposits, credit-union savings, and financial backstops
     still be protected?
-  category: Bank deposits, credit unions, and financial stability
+  category: Economy, taxes, and finance
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-01-household-financial-security
@@ -1069,7 +1069,7 @@ topics:
 - slug: pharmaceutical-drug-approvals-supply
   public_question: Would prescription drug approvals, recalls, and medicine supply
     still work?
-  category: Drug approvals, recalls, and medicine supply
+  category: Public services, health, and benefits
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-08-regulators-public-services
@@ -1093,7 +1093,7 @@ topics:
 - slug: privacy-data-federal-ids
   public_question: What would happen to Social Insurance Numbers, privacy rules, and
     federal identity systems?
-  category: Privacy, identity, and federal data systems
+  category: Government institutions and regulators
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-06-state-capacity-foreign-security
@@ -1117,7 +1117,7 @@ topics:
 - slug: environmental-assessment-pipeline-approvals
   public_question: Who would approve pipelines, mines, major projects, and environmental
     assessments — and would approvals actually get faster?
-  category: Major project approvals, assessments, and permitting speed
+  category: Energy, resources, and environment
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-07-energy-resources-economy
@@ -1141,7 +1141,7 @@ topics:
 - slug: labour-standards-public-sector-unions
   public_question: What would happen to labour standards, union contracts, and public-sector
     bargaining?
-  category: Labour standards and public-sector bargaining
+  category: Work, education, and everyday life
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-07-energy-resources-economy
@@ -1165,7 +1165,7 @@ topics:
 - slug: federal-prisons-corrections-parole
   public_question: Who would be responsible for prisons, parole, inmate transfers,
     and sentence administration?
-  category: Corrections, parole, custody, and sentence administration
+  category: Justice, rights, and public safety
   question_decision: keep
   migration_status: v3_complete
   migration_batch: batch-03-justice-safety-rights
@@ -1192,7 +1192,7 @@ topics:
 - slug: public-health-disease-surveillance
   public_question: Who would handle disease surveillance, outbreak response, and vaccine
     reporting?
-  category: Public health, disease surveillance, and vaccine reporting
+  category: Public services, health, and benefits
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-08-regulators-public-services
@@ -1216,7 +1216,7 @@ topics:
 - slug: bankruptcy-insolvency-creditor-protection
   public_question: What would happen to bankruptcy, insolvency, creditor protection,
     and consumer proposals?
-  category: Bankruptcy, insolvency, and creditor protection
+  category: Economy, taxes, and finance
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-09-remaining-high-value
@@ -1240,7 +1240,7 @@ topics:
 - slug: elections-law-political-parties-campaign-finance
   public_question: Who would set election laws, political-party rules, and campaign-finance
     limits?
-  category: Election law, parties, and campaign finance
+  category: Government institutions and regulators
   question_decision: keep
   migration_status: legacy_refresh_needed
   migration_batch: batch-09-remaining-high-value

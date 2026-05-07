@@ -272,6 +272,26 @@ textarea:focus-visible {
   padding: 6px 0 14px;
 }
 
+.question-index-row {
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: start;
+}
+
+.question-index-main {
+  min-width: 0;
+}
+
+.question-summary-row {
+  max-width: 62ch;
+  padding-top: 10px;
+  font-size: clamp(16px, 1.7vw, 20px);
+  line-height: 1.48;
+}
+
+.question-summary-row strong {
+  color: var(--ink);
+}
+
 .row-description {
   grid-column: 2 / -1;
   margin: 0;
@@ -573,23 +593,23 @@ textarea:focus-visible {
 
 .evidence-chip {
   display: inline-block;
-  margin-left: 4px;
-  vertical-align: baseline;
+  margin-left: 3px;
+  vertical-align: 0.04em;
 }
 
 .evidence-chip summary {
   display: inline-flex;
   align-items: center;
-  min-height: 32px;
+  min-height: 26px;
   border: 1px solid rgba(17, 24, 39, 0.16);
-  background: rgba(255, 255, 255, 0.58);
-  color: var(--ink);
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--secondary);
   cursor: pointer;
-  font-size: 0.72em;
-  font-weight: 730;
-  letter-spacing: 0.02em;
+  font-size: 0.68em;
+  font-weight: 680;
+  letter-spacing: 0.01em;
   line-height: 1;
-  padding: 5px 9px;
+  padding: 4px 7px;
   text-transform: uppercase;
 }
 
@@ -1281,24 +1301,46 @@ textarea:focus-visible {
 .question-row-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 14px;
-  margin-top: 8px;
+  gap: 8px 12px;
+  margin-top: 10px;
   font-size: 12px;
   text-transform: uppercase;
 }
 
 .question-row-actions a,
 .question-row-actions button {
-  color: var(--secondary);
   border: 1px solid rgba(17, 24, 39, 0.13);
-  background: rgba(255, 255, 255, 0.4);
   min-height: 40px;
   padding: 8px 10px;
   text-decoration: none;
   cursor: pointer;
   font-size: 12px;
   line-height: 1.2;
-  font-weight: 520;
+  font-weight: 620;
+}
+
+.question-row-actions .open-dossier-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--paper);
+  background: var(--navy);
+  border-color: rgba(17, 24, 39, 0.72);
+  min-height: 46px;
+  padding: 12px 16px;
+  letter-spacing: 0.02em;
+}
+
+.question-row-actions .summary-toggle {
+  color: var(--secondary);
+  background: transparent;
+  border-color: transparent;
+  padding-inline: 2px;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.question-row-actions .summary-toggle:hover {
+  color: var(--ink);
 }
 
 .question-row-actions button {
@@ -1436,6 +1478,10 @@ textarea:focus-visible {
 
   .index-row {
     grid-template-columns: 34px minmax(0, 1fr) 44px;
+  }
+
+  .question-index-row {
+    grid-template-columns: 34px minmax(0, 1fr);
   }
 
   .claim-row,

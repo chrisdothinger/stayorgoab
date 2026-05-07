@@ -29,8 +29,8 @@ function renderCitationCluster(citationText: string, keyPrefix: string): ReactNo
   if (numbers.length >= 3) {
     return (
       <details className="evidence-chip" key={`${keyPrefix}-evidence`}>
-        <summary aria-label={`Show ${numbers.length} sources for this claim`}>
-          Evidence: {numbers.length} sources
+        <summary aria-label={`Show ${numbers.length} source links for this claim`}>
+          {numbers.length} sources
         </summary>
         <span className="evidence-chip-links" aria-label="Evidence source links">
           {renderSourceLinks(numbers, `${keyPrefix}-source`)}

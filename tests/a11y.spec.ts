@@ -19,8 +19,11 @@ test('homepage is a compact landing page for main sections', async ({ page }) =>
   const questionPortal = page.getByRole('link', { name: /Choose the question before choosing a side/i });
   await expect(questionPortal).toBeVisible();
   await expect(questionPortal).toHaveAttribute('href', '/questions/');
+  await expect(questionPortal).toContainText(/Questions/i);
   await expect(questionPortal).toContainText(/Choose the question before choosing a side/i);
-  await expect(questionPortal).toContainText(/Browse 50 source-backed questions/i);
+  await expect(questionPortal).toContainText(/Browse source-backed questions/i);
+  await expect(questionPortal).not.toContainText(/001/i);
+  await expect(questionPortal).not.toContainText(/Browse 50 source-backed questions/i);
   await expect(questionPortal).toContainText(/Browse the questions/i);
   await expect(page.locator('.landing-link')).toHaveCount(0);
   await expect(page.getByRole('main').getByRole('link', { name: /^Sources/i })).toHaveCount(0);

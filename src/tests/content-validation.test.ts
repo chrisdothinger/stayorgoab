@@ -149,6 +149,56 @@ describe('content validation', () => {
     expect(incomplete).toEqual([]);
   });
 
+  it('documents and pilots the reader-first dossier writing contract on question 1', () => {
+    const rubricPath = path.join(process.cwd(), 'agents/rubrics/reader-first-dossier-writing.md');
+    expect(fs.existsSync(rubricPath)).toBe(true);
+
+    const rubric = fs.readFileSync(rubricPath, 'utf8');
+    expect(rubric).toContain('Plain-English answer first');
+    expect(rubric).toContain('The agents do the critical thinking');
+    expect(rubric).toContain('Do not reduce citation discipline');
+
+    const topicDir = path.join(process.cwd(), 'content/topics/legal-process');
+    const overview = fs.readFileSync(path.join(topicDir, 'index.mdx'), 'utf8');
+    const reports = ['neutral.mdx', 'pro.mdx', 'anti.mdx'].map((file) => fs.readFileSync(path.join(topicDir, file), 'utf8'));
+    const allPublicBodies = [overview, ...reports];
+
+    expect(overview).toContain('## What this means for Albertans');
+    expect(overview).toContain('## What would have to be decided');
+    expect(overview).toContain('## If you only read one page');
+    expect(rubric).toContain('Most readers should not need the pro, anti, or neutral briefs');
+    expect(rubric).toContain('Cut repeated points even when they are true');
+
+    const wordCountBeforeSources = (body: string) =>
+      (body.split(/## Sources/i)[0] ?? '').match(/\b[\w’'-]+\b/g)?.length ?? 0;
+    const q1WordCounts: Record<string, number> = Object.fromEntries(
+      [['overview', overview], ['neutral', reports[0]], ['pro', reports[1]], ['anti', reports[2]]].map(([name, body]) => [
+        name,
+        wordCountBeforeSources(body)
+      ])
+    );
+    expect(q1WordCounts).toEqual({
+      overview: expect.any(Number),
+      neutral: expect.any(Number),
+      pro: expect.any(Number),
+      anti: expect.any(Number)
+    });
+    expect(Object.values(q1WordCounts).every((count) => count <= 700)).toBe(true);
+
+    const crypticPhrases = [
+      'lawful escalation',
+      'democratic machinery',
+      'rights architecture',
+      'constitutional significance',
+      'implementation would raise constitutional, treaty, institutional, and practical questions'
+    ];
+    const offenders = allPublicBodies.flatMap((body, index) =>
+      crypticPhrases.filter((phrase) => body.toLowerCase().includes(phrase)).map((phrase) => `${index}:${phrase}`)
+    );
+
+    expect(offenders).toEqual([]);
+  });
+
   it('accepts three-to-five-pillar v3 pro/anti contracts and rejects retired v3 sections', () => {
     const v3Base = `## Bottom line
 

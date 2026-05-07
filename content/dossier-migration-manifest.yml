@@ -72,11 +72,11 @@ topics:
     Alberta independence?
   category: Indigenous rights, treaties, land, and consent
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-05-indigenous-land-water
   migration_priority: flagship
   score_total: 23
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -372,11 +372,11 @@ topics:
     if Alberta tried to separate?
   category: First Nations jurisdiction, treaty relationships, and consent
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-05-indigenous-land-water
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -495,11 +495,11 @@ topics:
     Indigenous rights, environmental rules, and export routes still constrain development?
   category: Resource development, permitting, markets, and constraints
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-07-energy-resources-economy
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -766,11 +766,11 @@ topics:
   public_question: What would happen to national parks, Crown land, and public lands?
   category: National parks, Crown land, and public lands
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-05-indigenous-land-water
   migration_priority: keep
   score_total: 21
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -817,11 +817,11 @@ topics:
     systems?
   category: Water rights, rivers, and water infrastructure
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-05-indigenous-land-water
   migration_priority: flagship
   score_total: 23
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -1119,11 +1119,11 @@ topics:
     assessments — and would approvals actually get faster?
   category: Major project approvals, assessments, and permitting speed
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-07-energy-resources-economy
   migration_priority: flagship
   score_total: 25
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source

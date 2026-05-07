@@ -6,3 +6,14 @@ entries:
   result: pass
   risks:
   - Future independence terms, negotiated agreements, costs, court outcomes, staffing, and implementation details remain unresolved.
+- id: audit-environmental-assessment-pipeline-approvals-2026-05-06-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated topic to lean v3 with deeper official/legal source coverage across federal and Alberta assessment law, AER/CER roles, Indigenous consultation, environmental/fisheries/species constraints, major-project speed claims, and market/export recognition risk.
+  checks:
+  - source-depth
+  - source-numbering
+  - stance-balance
+  - uncertainty-labels
+  - topic-local-edits-only
+  result: pass

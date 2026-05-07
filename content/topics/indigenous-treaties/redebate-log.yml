@@ -3,3 +3,7 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-indigenous-treaties-lean-v3-2026-05-06
+  date: '2026-05-06'
+  trigger: lean-v3-migration-source-depth
+  summary: Rebuilt pro, anti, and neutral reports around treaty continuity, section 35, federal jurisdiction, constitutional amendment, duty to consult, UNDRIP, and current First Nation litigation/advocacy records.

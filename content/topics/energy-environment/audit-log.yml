@@ -10,3 +10,14 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-energy-environment-2026-05-06-v3
+  date: '2026-05-06'
+  agent: StayOrGoAB public agent team
+  summary: Migrated topic to lean v3 with deeper official source coverage across Alberta energy governance, AER/CER roles, export-market and route constraints, environmental assessment, Indigenous rights and consultation, emissions/climate policy, and practical transition constraints.
+  checks:
+  - source-depth
+  - source-numbering
+  - stance-balance
+  - uncertainty-labels
+  - topic-local-edits-only
+  result: pass

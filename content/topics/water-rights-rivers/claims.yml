@@ -1,28 +1,105 @@
 claims:
 - id: claim-water-rights-rivers-001
   topic_slug: water-rights-rivers
-  text: Current public records show Alberta water-management and drinking-water/wastewater responsibilities alongside federal transboundary-water information, but they do not settle how water allocation, river-basin management, water-quality rules, infrastructure funding, Indigenous rights, or interjurisdictional arrangements would operate after independence.
+  text: >-
+    Alberta currently administers major water-management functions, including
+    water allocation and approvals under the Water Act, drinking-water and
+    wastewater oversight, water strategy, drought information, and some
+    water-related industrial regulation.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - alberta-water
   - alberta-drinking-water-wastewater
-  - canada-transboundary-waters
+  - alberta-water-act
+  - alberta-water-for-life-strategy
+  - alberta-drought-current-conditions
+  - aer-directive-081-water-disposal-limits
   risk: medium
 - id: claim-water-rights-rivers-002
   topic_slug: water-rights-rivers
-  text: The strongest pro case is that alberta could seek more direct control over water allocation, infrastructure priorities, and watershed policy while designing arrangements around local river basins and municipal needs.
-  status: inference
-  source_ids: *id001
-  risk: medium
+  text: >-
+    Current sources also show federal, intergovernmental, and international water
+    layers: transboundary waters, Canada Water Act cooperation, Canada-U.S.
+    Boundary Waters Treaty/IJC processes, Prairie water apportionment, and
+    federal fish-habitat and pollution law.
+  status: source_supported
+  source_ids:
+  - canada-transboundary-waters
+  - canada-water-act
+  - ijc-boundary-waters-treaty
+  - prairie-provinces-water-board
+  - canada-fisheries-act
+  risk: high
 - id: claim-water-rights-rivers-003
   topic_slug: water-rights-rivers
-  text: The strongest caution is that communities, irrigators, industries, Indigenous governments, and downstream users could face uncertainty if water rights, quality rules, infrastructure funding, or cross-border river arrangements were not continuous.
-  status: inference
-  source_ids: *id001
-  risk: medium
+  text: >-
+    Indigenous and First Nations water issues need explicit transition treatment
+    because federal UNDRIP legislation and federal First Nations water-service
+    materials point to rights, consultation, jurisdiction, funding, and service
+    delivery questions beyond ordinary provincial-municipal water administration.
+  status: source_supported
+  source_ids:
+  - canada-undrip-act
+  - indigenous-services-canada-water-first-nations
+  risk: high
 - id: claim-water-rights-rivers-004
   topic_slug: water-rights-rivers
-  text: 'This topic remains uncertainty-labelled: Medium; water allocation, river-basin management, drinking-water and wastewater oversight, infrastructure funding, Indigenous rights, environmental standards, and interjurisdictional water arrangements remain conditional on future decisions and evidence.'
-  status: source_supported
-  source_ids: *id001
+  text: >-
+    The strongest pro-independence case is conditional: Alberta could use its
+    existing provincial water-law and service baseline as a transition checklist,
+    carry forward licences and approvals, maintain drinking-water and wastewater
+    oversight, and negotiate transboundary, Indigenous-rights, and First Nations
+    service continuity before any effective date.
+  status: inference
+  source_ids:
+  - alberta-water
+  - alberta-drinking-water-wastewater
+  - alberta-water-act
+  - canada-transboundary-waters
+  - ijc-boundary-waters-treaty
+  - prairie-provinces-water-board
+  - canada-undrip-act
+  - indigenous-services-canada-water-first-nations
   risk: medium
+- id: claim-water-rights-rivers-005
+  topic_slug: water-rights-rivers
+  text: >-
+    The strongest anti-independence / pro-federation caution is that households,
+    municipalities, Indigenous governments, irrigators, industry, and downstream
+    users could face avoidable risk if legal authority, funding, enforcement,
+    apportionment, boundary-water machinery, or service-delivery responsibilities
+    were not continuous.
+  status: inference
+  source_ids:
+  - alberta-drinking-water-wastewater
+  - alberta-water-act
+  - alberta-drought-current-conditions
+  - canada-transboundary-waters
+  - canada-water-act
+  - ijc-boundary-waters-treaty
+  - prairie-provinces-water-board
+  - canada-fisheries-act
+  - canada-undrip-act
+  - indigenous-services-canada-water-first-nations
+  risk: high
+- id: claim-water-rights-rivers-006
+  topic_slug: water-rights-rivers
+  text: >-
+    This topic remains high-medium uncertainty: current sources identify today's
+    water institutions and legal layers, but they do not provide a signed
+    independence-transition framework for water rights, cross-border rivers,
+    drinking water, wastewater, infrastructure funding, Indigenous rights, or
+    environmental enforcement.
+  status: source_supported
+  source_ids:
+  - alberta-water
+  - alberta-drinking-water-wastewater
+  - alberta-water-act
+  - canada-transboundary-waters
+  - canada-water-act
+  - ijc-boundary-waters-treaty
+  - prairie-provinces-water-board
+  - canada-fisheries-act
+  - canada-undrip-act
+  - indigenous-services-canada-water-first-nations
+  risk: high

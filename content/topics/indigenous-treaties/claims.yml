@@ -1,35 +1,72 @@
 claims:
 - id: claim-indigenous-treaties-001
   topic_slug: indigenous-treaties
-  text: Treaty rights, section 35 rights, land, jurisdiction, consultation, and consent are central issues. They cannot be
-    treated as automatic administrative details.
+  text: A province cannot unilaterally secede under Canadian law, but a clear majority on a clear question could create a duty to negotiate constitutional change.
   status: source_supported
   source_ids:
   - scc-secession-reference
-  - acfn-stay-pending-court-challenge-2026-04-11
   risk: high
 - id: claim-indigenous-treaties-002
   topic_slug: indigenous-treaties
-  text: A cautious pro case would argue that Alberta could seek renewed agreements with Indigenous governments, while admitting
-    those arrangements cannot be presumed.
-  status: inference
-  source_ids: &id001
-  - scc-secession-reference
+  text: Section 35 recognizes and affirms existing Aboriginal and treaty rights, so an Alberta separation plan could not treat those rights as ordinary provincial policy choices.
+  status: source_supported
+  source_ids:
+  - constitution-act-1982-charter
+  - constitution-act-1982-amending-procedures
+  risk: high
+- id: claim-indigenous-treaties-003
+  topic_slug: indigenous-treaties
+  text: Federal jurisdiction over "Indians, and Lands reserved for the Indians" means reserve lands and federal Crown obligations would require constitutional or negotiated treatment rather than unilateral provincial transfer.
+  status: source_supported
+  source_ids:
+  - constitution-act-1867-federal-provincial-powers
+  - constitution-act-1982-amending-procedures
+  risk: high
+- id: claim-indigenous-treaties-004
+  topic_slug: indigenous-treaties
+  text: Crown conduct that may adversely affect Aboriginal or treaty rights can trigger consultation duties, and established Aboriginal title can require consent or justified infringement for land-use decisions.
+  status: source_supported
+  source_ids:
+  - haida-duty-to-consult
+  - mikisew-cree-duty-to-consult-treaty
+  - tsilhqotin-aboriginal-title
+  risk: high
+- id: claim-indigenous-treaties-005
+  topic_slug: indigenous-treaties
+  text: Canada's UNDRIP Act and federal action plan raise the policy benchmark for Indigenous participation and consent-oriented planning, but they do not create an automatic Alberta secession mechanism.
+  status: source_supported
+  source_ids:
+  - canada-undrip-act
+  - undrip-action-plan-canada
+  risk: medium
+- id: claim-indigenous-treaties-006
+  topic_slug: indigenous-treaties
+  text: Current public records show First Nation opposition and reported court-process risk around the Alberta separation petition process; they do not show settled Indigenous-government consent.
+  status: source_supported
+  source_ids:
   - acfn-stay-pending-court-challenge-2026-04-11
   - first-nations-stand-with-treaties
   - globalnews-court-pauses-verification-2026-04-12
   risk: high
-- id: claim-indigenous-treaties-003
+- id: claim-indigenous-treaties-007
   topic_slug: indigenous-treaties
-  text: The strongest pro-federation case is that existing Crown obligations and constitutional protections cannot be bypassed
-    by a provincial referendum.
+  text: A cautious pro-independence case can argue for negotiated treaty-continuity or successor agreements, but only if it admits those agreements are not yet demonstrated by the current source record.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - scc-secession-reference
+  - constitution-act-1982-charter
+  - haida-duty-to-consult
+  - acfn-stay-pending-court-challenge-2026-04-11
   risk: high
-- id: claim-indigenous-treaties-004
+- id: claim-indigenous-treaties-008
   topic_slug: indigenous-treaties
-  text: 'This topic remains uncertainty-labelled: Very high; treaty, section 35, consent, land, and consultation questions
-    require careful sourcing.'
-  status: source_supported
-  source_ids: *id001
+  text: The strongest anti-independence case is that treaty continuity, section 35 protection, reserve lands, consultation, and consent are unresolved threshold issues, not implementation details.
+  status: inference
+  source_ids:
+  - constitution-act-1867-federal-provincial-powers
+  - constitution-act-1982-charter
+  - haida-duty-to-consult
+  - mikisew-cree-duty-to-consult-treaty
+  - tsilhqotin-aboriginal-title
+  - acfn-stay-pending-court-challenge-2026-04-11
   risk: high

@@ -2,11 +2,22 @@ entries:
 - id: audit-indigenous-treaties-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
+  result: pass
+- id: audit-indigenous-treaties-lean-v3-2026-05-06
+  date: '2026-05-06'
+  agent: content automation
+  summary: Migrated topic to lean v3 report structure with deeper primary-law, Supreme Court, UNDRIP, and current-process source support.
+  checks:
+  - lean-v3-section-structure
+  - numbered-citations-match-page-sources
+  - source-depth-10-plus-where-supportable
+  - claims-ledger-updated
+  - proposed-global-source-registry-written-to-tmp
+  - non-partisan-high-sensitivity-tone
   result: pass

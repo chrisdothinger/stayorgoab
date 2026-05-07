@@ -3,3 +3,7 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-energy-environment-2026-05-06-v3
+  date: '2026-05-06'
+  trigger: lean-v3-source-depth-migration
+  summary: Reframed the topic around conditional continuity and added stronger source-supported treatment of resource development, export markets and routes, AER/CER roles, environmental regulation, Indigenous rights and consultation, emissions/climate policy, and practical market constraints.

@@ -10,3 +10,7 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+
+- date: '2026-05-06'
+  event: v3 lean dossier migration
+  notes: Refreshed overview, pro, anti, neutral, sources, and claim map for Batch 5 source-first migration.

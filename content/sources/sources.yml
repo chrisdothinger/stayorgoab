@@ -3872,3 +3872,851 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-06'
   status: active
+- id: alberta-energy
+  slug: alberta-energy
+  title: Energy
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/energy
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Provincial landing page for Alberta energy policy and resources.
+  how_used: Baseline source for Alberta's existing energy-policy role.
+  related_topic_slugs:
+  - energy-environment
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-oil-sands
+  slug: alberta-oil-sands
+  title: Oil sands
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/oil-sands
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Provincial source on Alberta oil-sands resources and policy context.
+  how_used: Baseline source for resource-development claims.
+  related_topic_slugs:
+  - energy-environment
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-royalty-overview
+  slug: alberta-royalty-overview
+  title: Royalty overview
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/royalty-overview
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Provincial overview of Alberta's non-renewable resource royalty framework.
+  how_used: Supports discussion of provincial royalty control and revenue design.
+  related_topic_slugs:
+  - energy-environment
+  - economy-fiscal
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cer-pipeline-profiles
+  slug: cer-pipeline-profiles
+  title: Pipeline profiles
+  publisher: Canada Energy Regulator
+  author: Canada Energy Regulator
+  url: https://www.cer-rec.gc.ca/en/data-analysis/facilities-we-regulate/pipeline-profiles/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CER profiles for federally regulated pipeline systems.
+  how_used: Supports export-route and federally regulated infrastructure constraints.
+  related_topic_slugs:
+  - energy-environment
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cer-canada-oil-imports-exports
+  slug: cer-canada-oil-imports-exports
+  title: Canada's oil imports and exports
+  publisher: Canada Energy Regulator
+  author: Canada Energy Regulator
+  url: https://www.cer-rec.gc.ca/en/data-analysis/energy-commodities/crude-oil-petroleum-products/statistics/canadas-oil-imports-exports.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CER statistical source on Canadian oil import and export flows.
+  how_used: Supports claims about market access and export dependence.
+  related_topic_slugs:
+  - energy-environment
+  - borders-trade
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: cer-canadas-energy-future-2023
+  slug: cer-canadas-energy-future-2023
+  title: Canada's Energy Future 2023
+  publisher: Canada Energy Regulator
+  author: Canada Energy Regulator
+  url: https://www.cer-rec.gc.ca/en/data-analysis/canada-energy-future/2023/
+  published_at: '2023-06-20'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: expert_official
+  summary: CER long-term energy supply and demand scenarios.
+  how_used: Context for demand, investment, and transition-risk uncertainty.
+  related_topic_slugs:
+  - energy-environment
+  - economy-overall
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: iaac-impact-assessment-process-overview
+  slug: iaac-impact-assessment-process-overview
+  title: Impact assessments 101
+  publisher: Impact Assessment Agency of Canada
+  author: Impact Assessment Agency of Canada
+  url: https://www.canada.ca/en/impact-assessment-agency/programs/impact-assessments-101.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal overview of the impact assessment process.
+  how_used: Operational context for environmental assessment and transition planning.
+  related_topic_slugs:
+  - energy-environment
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-fisheries-act
+  slug: canada-fisheries-act
+  title: Fisheries Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/F-14/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal fish habitat and pollution statute relevant to energy and environmental regulation.
+  how_used: Supports environmental-law continuity and federal-protection claims.
+  related_topic_slugs:
+  - energy-environment
+  - water-rights-rivers
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-undrip-act
+  slug: canada-undrip-act
+  title: United Nations Declaration on the Rights of Indigenous Peoples Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws.justice.gc.ca/eng/acts/u-2.2/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute concerning UNDRIP implementation.
+  how_used: Baseline for Indigenous-rights and consultation transition issues.
+  related_topic_slugs:
+  - energy-environment
+  - indigenous-rights-treaties
+  - indigenous-treaties
+  - environmental-assessment-pipeline-approvals
+  - national-parks-public-lands
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-emissions-reduction-energy-development-plan
+  slug: alberta-emissions-reduction-energy-development-plan
+  title: Emissions Reduction and Energy Development Plan
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/emissions-reduction-and-energy-development-plan
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta plan connecting emissions reduction and energy development.
+  how_used: Provincial baseline for emissions and energy policy discussion.
+  related_topic_slugs:
+  - energy-environment
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: eccc-greenhouse-gas-emissions
+  slug: eccc-greenhouse-gas-emissions
+  title: Greenhouse gas emissions indicators
+  publisher: Environment and Climate Change Canada
+  author: Environment and Climate Change Canada
+  url: https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/greenhouse-gas-emissions.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal indicators page for greenhouse gas emissions reporting.
+  how_used: Supports emissions-accounting and climate-credibility constraints.
+  related_topic_slugs:
+  - energy-environment
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: reference-re-impact-assessment-act-2023-scc
+  slug: reference-re-impact-assessment-act-2023-scc
+  title: Reference re Impact Assessment Act
+  publisher: Supreme Court of Canada
+  author: Supreme Court of Canada
+  url: https://decisions.scc-csc.ca/scc-csc/scc-csc/en/item/20074/index.do
+  published_at: '2023-10-13'
+  accessed_at: '2026-05-06'
+  source_type: court
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Supreme Court of Canada advisory opinion on constitutionality of parts of the federal Impact Assessment Act scheme.
+  how_used: Supports bounded treatment of federal assessment authority and cautions against overclaiming either federal or provincial control.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-environmental-protection-enhancement-act
+  slug: alberta-environmental-protection-enhancement-act
+  title: Environmental Protection and Enhancement Act
+  publisher: Alberta King's Printer
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=E12.cfm&leg_type=Acts&isbncln=9780779843119
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta statute for environmental protection, approvals, enforcement, and related regulatory tools.
+  how_used: Supports discussion of provincial environmental duties and day-one continuity for approvals and enforcement.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: responsible-energy-development-act
+  slug: responsible-energy-development-act
+  title: Responsible Energy Development Act
+  publisher: Alberta King's Printer
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=R17P3.cfm&leg_type=Acts&isbncln=9780779842983
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Alberta statute establishing the AER's integrated energy-resource regulatory framework.
+  how_used: Supports the single-regulator institutional baseline and questions about successor authority.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-energy-regulator-act
+  slug: canada-energy-regulator-act
+  title: Canadian Energy Regulator Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-15.1/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute governing the Canada Energy Regulator and federally regulated pipelines and energy infrastructure.
+  how_used: Establishes federal pipeline and energy-infrastructure baseline for cross-border approval questions.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-energy-regulator-pipelines
+  slug: canada-energy-regulator-pipelines
+  title: Pipelines
+  publisher: Canada Energy Regulator
+  author: Canada Energy Regulator
+  url: https://www.cer-rec.gc.ca/en/applications-hearings/pipelines/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CER public material on pipeline applications and hearings.
+  how_used: Supports pipeline-specific analysis, especially interprovincial and international approval pathways.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-duty-to-consult-guidelines
+  slug: alberta-duty-to-consult-guidelines
+  title: The Government of Alberta's Guidelines on Consultation with First Nations on Land and Natural Resource Management
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://open.alberta.ca/publications/9781460143265
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta guidance for consultation with First Nations on land and natural-resource management decisions.
+  how_used: Supports treatment of Indigenous consultation as a first-order approval and transition issue.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: species-protection-law
+  slug: species-protection-law
+  title: Species at Risk Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/S-15.3/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Federal statute for wildlife species at risk and related protection measures.
+  how_used: Supports species-protection constraints and equivalency/continuity questions in project approvals.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-building-canada-act-major-projects
+  slug: canada-building-canada-act-major-projects
+  title: Building Canada Act / major projects
+  publisher: Government of Canada
+  author: Government of Canada
+  url: https://www.canada.ca/en/privy-council/campaigns/build-canada.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal major-project coordination material relevant to current Canadian efforts to accelerate nationally significant projects.
+  how_used: Provides comparison point for permitting-speed claims inside Canada versus independence proposals.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-energy-regulator-market-snapshots
+  slug: canada-energy-regulator-market-snapshots
+  title: Market snapshots
+  publisher: Canada Energy Regulator
+  author: Canada Energy Regulator
+  url: https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: CER energy market snapshots and analysis material.
+  how_used: Supports market/export constraint framing and cautions against treating legal approval as the only project bottleneck.
+  related_topic_slugs:
+  - environmental-assessment-pipeline-approvals
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: haida-duty-to-consult
+  slug: haida-duty-to-consult
+  title: Haida Nation v. British Columbia (Minister of Forests)
+  publisher: Supreme Court of Canada
+  author: Supreme Court of Canada
+  url: https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/2189/index.do
+  published_at: '2004-11-18'
+  accessed_at: '2026-05-06'
+  source_type: court
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Leading Supreme Court of Canada decision on the Crown duty to consult and, where appropriate, accommodate Indigenous peoples.
+  how_used: Establishes consultation-duty principles relevant to rights-affecting Crown decisions.
+  related_topic_slugs:
+  - indigenous-rights-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: mikisew-cree-duty-to-consult-treaty
+  slug: mikisew-cree-duty-to-consult-treaty
+  title: Mikisew Cree First Nation v. Canada (Minister of Canadian Heritage)
+  publisher: Supreme Court of Canada
+  author: Supreme Court of Canada
+  url: https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/2251/index.do
+  published_at: '2005-11-24'
+  accessed_at: '2026-05-06'
+  source_type: court
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Supreme Court of Canada decision applying consultation analysis in a treaty-rights context.
+  how_used: Supports careful treatment of treaty rights and Crown consultation obligations.
+  related_topic_slugs:
+  - indigenous-rights-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: tsilhqotin-aboriginal-title
+  slug: tsilhqotin-aboriginal-title
+  title: Tsilhqot'in Nation v. British Columbia
+  publisher: Supreme Court of Canada
+  author: Supreme Court of Canada
+  url: https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/14246/index.do
+  published_at: '2014-06-26'
+  accessed_at: '2026-05-06'
+  source_type: court
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Supreme Court of Canada decision recognizing Aboriginal title and explaining consequences for land-use decisions.
+  how_used: Supports land/title uncertainty analysis in an independence transition.
+  related_topic_slugs:
+  - indigenous-rights-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-indigenous-consultations
+  slug: alberta-indigenous-consultations
+  title: Indigenous consultations in Alberta
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/indigenous-consultations-in-alberta
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta government page describing provincial Indigenous consultation processes.
+  how_used: Establishes current provincial consultation-policy baseline.
+  related_topic_slugs:
+  - indigenous-rights-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-first-nations-consultation-guidelines-2014
+  slug: alberta-first-nations-consultation-guidelines-2014
+  title: The Government of Alberta's Guidelines on Consultation with First Nations on Land and Natural Resource Management, 2014
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://open.alberta.ca/publications/9781460108536
+  published_at: '2014-01-01'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta guidelines for consultation with First Nations on land and natural-resource management.
+  how_used: Shows current Alberta consultation framework, while noting it is not a secession-transition plan.
+  related_topic_slugs:
+  - indigenous-rights-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: parks-canada-alberta-national-parks
+  slug: parks-canada-alberta-national-parks
+  title: National parks in Alberta
+  publisher: Parks Canada, Government of Canada
+  author: Parks Canada
+  url: https://parks.canada.ca/pn-np/ab
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Parks Canada page listing national parks in Alberta and linking to park-specific visitor and operating information.
+  how_used: Identifies Alberta national parks as federal Parks Canada sites whose administration, access, and operations need explicit transition treatment.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-national-parks-act
+  slug: canada-national-parks-act
+  title: Canada National Parks Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/n-14.01/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal statute governing national parks, including park dedication, administration, protection, and regulatory authority.
+  how_used: Legal baseline for why national parks are a federal-law transition issue rather than ordinary provincial public land.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: parks-canada-management-planning
+  slug: parks-canada-management-planning
+  title: Management planning
+  publisher: Parks Canada, Government of Canada
+  author: Parks Canada
+  url: https://parks.canada.ca/agence-agency/bib-lib/plans
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Parks Canada management-planning resources for national parks and other protected heritage places.
+  how_used: Supports discussion of park operations, ecological objectives, planning continuity, and why a transition must address more than land title.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-public-lands-act
+  slug: alberta-public-lands-act
+  title: Public Lands Act
+  publisher: Alberta King's Printer
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=P40.cfm&leg_type=Acts&isbncln=9780779843089
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta statute for provincial public lands and related administration.
+  how_used: Legal baseline for Alberta-administered Crown/public lands and continuity questions for dispositions and enforcement.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-recreation-on-public-land
+  slug: alberta-recreation-on-public-land
+  title: Recreation on public land
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/recreation-on-public-land
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta public information on recreation access and rules on public land.
+  how_used: Grounds discussion of public access, permits, restrictions, enforcement, and visitor communications on provincial public lands.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-parks-protected-areas
+  slug: alberta-parks-protected-areas
+  title: Parks and protected areas
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/parks-and-protected-areas
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta government page for provincial parks and protected areas.
+  how_used: Establishes Alberta's provincial parks/protected-areas baseline distinct from federal national parks.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-parks-act
+  slug: alberta-parks-act
+  title: Provincial Parks Act
+  publisher: Alberta King's Printer
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=P35.cfm&leg_type=Acts&isbncln=9780779843072
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta statute governing provincial parks and related protected-area administration.
+  how_used: Legal baseline for provincial parks continuity and protected-area questions.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-land-use-framework
+  slug: alberta-land-use-framework
+  title: Land-use Framework
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/land-use-framework
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta's land-use planning framework for managing growth, cumulative effects, and regional planning.
+  how_used: Supports analysis of regional land-use planning and cumulative-effects continuity.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: rcaanc-treaties-in-alberta
+  slug: rcaanc-treaties-in-alberta
+  title: Treaties in Alberta
+  publisher: Crown-Indigenous Relations and Northern Affairs Canada
+  author: Government of Canada
+  url: https://www.rcaanc-cirnac.gc.ca/eng/1100100028574/1529354437231
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal information on numbered treaties relevant to Alberta and treaty relationships.
+  how_used: Supports discussion of treaty rights and Crown obligations as first-order land-transition issues.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-water-act
+  slug: alberta-water-act
+  title: Water Act
+  publisher: Alberta King's Printer
+  author: Government of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=W03.cfm&leg_type=Acts&isbncln=9780779843096
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta statute governing water allocation, licences, approvals, priorities, and related provincial water administration.
+  how_used: Provides the legal baseline for Alberta water rights, licences, approvals, and allocation systems.
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-water-for-life-strategy
+  slug: alberta-water-for-life-strategy
+  title: Water for Life strategy
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/water-for-life-strategy
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta's long-running water strategy emphasizing safe drinking water, healthy aquatic ecosystems, and reliable water supplies.
+  how_used: Grounds watershed-policy and infrastructure-planning context without treating strategy goals as transition guarantees.
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-drought-current-conditions
+  slug: alberta-drought-current-conditions
+  title: Drought current conditions
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/drought-current-conditions
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Provincial drought monitoring and current-conditions information for Alberta.
+  how_used: Supports the point that scarcity, drought operations, and public communications are practical water-governance constraints.
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: aer-directive-081-water-disposal-limits
+  slug: aer-directive-081-water-disposal-limits
+  title: 'Directive 081: Water Disposal Limits and Reporting Requirements for Thermal In Situ Oil Sands Schemes'
+  publisher: Alberta Energy Regulator
+  author: Alberta Energy Regulator
+  url: https://www.aer.ca/regulations-and-compliance-enforcement/rules-and-regulations/directives/directive-081
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Alberta Energy Regulator directive setting water-disposal limits and reporting requirements for thermal in situ oil sands operations.
+  how_used: Shows that water governance also intersects with industrial regulation and operational reporting.
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: canada-water-act
+  slug: canada-water-act
+  title: Canada Water Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Government of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/C-11/FullText.html
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal statute authorizing cooperative federal-provincial water-resource arrangements, water-quality management, and related federal roles.
+  how_used: Grounds the federal legal baseline for cooperative and interjurisdictional water management.
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: ijc-boundary-waters-treaty
+  slug: ijc-boundary-waters-treaty
+  title: Boundary Waters Treaty
+  publisher: International Joint Commission
+  author: International Joint Commission
+  url: https://ijc.org/en/who/mission/bwt
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: IJC page on the 1909 Boundary Waters Treaty between Canada and the United States and the commission's treaty mission.
+  how_used: Grounds the international boundary-water layer relevant to rivers and water bodies crossing or affecting the United States.
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: prairie-provinces-water-board
+  slug: prairie-provinces-water-board
+  title: Prairie Provinces Water Board
+  publisher: Prairie Provinces Water Board
+  author: Prairie Provinces Water Board
+  url: https://ppwb.ca/
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Intergovernmental board associated with apportionment and water-quality cooperation among the Prairie provinces.
+  how_used: Supports the need to address downstream apportionment and prairie interprovincial water arrangements in any transition.
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: indigenous-services-canada-water-first-nations
+  slug: indigenous-services-canada-water-first-nations
+  title: Water in First Nations communities
+  publisher: Indigenous Services Canada
+  author: Government of Canada
+  url: https://www.sac-isc.gc.ca/eng/1100100034879/1521124927588
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal information on water and wastewater services, advisories, and support in First Nations communities.
+  how_used: Grounds the need to address First Nations drinking-water and wastewater responsibilities separately from provincial municipal systems.
+  related_topic_slugs:
+  - water-rights-rivers
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: undrip-action-plan-canada
+  slug: undrip-action-plan-canada
+  title: United Nations Declaration on the Rights of Indigenous Peoples Act Action Plan
+  publisher: Department of Justice Canada
+  author: Department of Justice Canada
+  url: https://www.justice.gc.ca/eng/declaration/ap-pa.html
+  published_at: '2023-06-21'
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Federal action plan under the UN Declaration Act, including measures related to consultation, participation, and alignment of laws.
+  how_used: Adds official context for current Canadian UNDRIP implementation and self-determination language.
+  related_topic_slugs:
+  - indigenous-rights-treaties
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active
+- id: alberta-public-lands-main
+  slug: alberta-public-lands-main
+  title: Public lands
+  publisher: Government of Alberta
+  author: Government of Alberta
+  url: https://www.alberta.ca/public-lands
+  published_at: null
+  accessed_at: '2026-05-06'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Government of Alberta public lands overview for provincial Crown land administration and access context.
+  how_used: Supports the baseline for Alberta public-land administration in the national parks and public lands dossier.
+  related_topic_slugs:
+  - national-parks-public-lands
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-06'
+  status: active

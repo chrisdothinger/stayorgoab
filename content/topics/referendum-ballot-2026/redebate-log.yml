@@ -6,3 +6,7 @@ entries:
     status, formal placement of a question on a 2026 referendum ballot, and the non-self-executing legal consequences of any yes vote.
     The strongest pro-independence case is mandate-building through a verified petition and clear ballot; the strongest anti-independence
     / pro-federation case is that current official records do not yet prove final ballot status or implementation.
+- id: redebate-referendum-ballot-2026-2026-05-07
+  date: '2026-05-07'
+  trigger: q1-overview-baseline-migration
+  summary: Promoted the neutral synthesis into the Overview so readers get the balanced answer first; Pro and Anti remain optional debate briefs.

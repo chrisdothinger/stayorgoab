@@ -9,3 +9,7 @@ entries:
   summary: Reframed the debate around the distinction between petition mechanics, referendum administration, and downstream
     constitutional consequences. Strongest pro case is democratic-mandate building; strongest anti case is that process compliance
     does not settle secession implementation.
+- id: redebate-referendum-mechanics-2026-05-07
+  date: '2026-05-07'
+  trigger: q1-overview-baseline-migration
+  summary: Promoted the neutral synthesis into the Overview so readers get the balanced answer first; Pro and Anti remain optional debate briefs.

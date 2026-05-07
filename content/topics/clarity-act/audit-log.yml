@@ -31,3 +31,13 @@ entries:
   - public-safe-agent-metadata
   - proposed-global-sources-written
   result: pass
+- id: audit-clarity-act-2026-05-07
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Reworked the public Overview to the Question 1 baseline structure, merging neutral synthesis into the main reader path while preserving numbered citations and source lists.
+  checks:
+  - q1-overview-heading-contract
+  - overview-neutral-synthesis
+  - numbered-citations-preserved
+  - neutral-hidden-from-public-nav
+  result: pass

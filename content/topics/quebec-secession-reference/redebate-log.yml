@@ -11,3 +11,7 @@ entries:
   date: '2026-05-06'
   trigger: source-depth-pr27
   summary: Re-debated pro, anti, and neutral positions after adding official constitutional, parliamentary, Quebec-law, referendum-result, and international self-determination sources; kept the conclusion that a clear vote matters but unilateral independence is unavailable.
+- id: redebate-quebec-secession-reference-2026-05-07
+  date: '2026-05-07'
+  trigger: q1-overview-baseline-migration
+  summary: Promoted the neutral synthesis into the Overview so readers get the balanced answer first; Pro and Anti remain optional debate briefs.

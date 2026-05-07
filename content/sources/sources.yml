@@ -164,6 +164,7 @@ sources:
   how_used: Core legal baseline for secession and duty-to-negotiate claims.
   related_topic_slugs:
   - legal-process
+  - economy-fiscal
   - clarity-act
   - quebec-secession-reference
   - clear-question-majority
@@ -2529,6 +2530,7 @@ sources:
     itself.
   related_topic_slugs:
   - legal-process
+  - economy-fiscal
   - currency-banking
   - national-parks-public-lands
   - indigenous-treaties
@@ -2553,6 +2555,7 @@ sources:
     fiscal analysis.
   related_topic_slugs:
   - equalization
+  - economy-fiscal
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -2574,6 +2577,7 @@ sources:
     against current federal transfer categories.
   related_topic_slugs:
   - equalization
+  - economy-fiscal
   - healthcare-portability-doctor-licensing
   - employment-insurance-federal-benefits
   archive_url: null
@@ -2597,6 +2601,7 @@ sources:
     claim.
   related_topic_slugs:
   - borders-trade
+  - economy-fiscal
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -2618,6 +2623,7 @@ sources:
     treatment if Alberta became a separate state.
   related_topic_slugs:
   - borders-trade
+  - economy-fiscal
   - healthcare-portability-doctor-licensing
   archive_url: null
   content_hash: null

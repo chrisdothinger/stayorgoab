@@ -15,7 +15,8 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'quebec-secession-reference',
   'clear-question-majority',
   'referendum-ballot-2026',
-  'indigenous-rights-treaties'
+  'indigenous-rights-treaties',
+  'economy-fiscal'
 ] as const;
 
 export function hasMergedNeutralOverview(topicSlug: string) {

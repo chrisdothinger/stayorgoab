@@ -98,11 +98,11 @@ topics:
     debt, trade, and transition costs?
   category: Economy, taxes, and finance
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-07-energy-resources-economy
   migration_priority: flagship
   score_total: 23
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -117,6 +117,8 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: pending-q1-economy-fiscal-overview
+  last_migrated_at: '2026-05-07'
 - slug: referendum-mechanics
   public_question: How would Alberta’s petition and referendum process actually work?
   category: Legal process and referendum

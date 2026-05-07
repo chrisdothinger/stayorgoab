@@ -1,8 +1,7 @@
 claims:
 - id: claim-economy-fiscal-001
   topic_slug: economy-fiscal
-  text: Alberta has a current fiscal baseline, but that baseline does not answer the independence question by itself. Independence
-    scenarios depend on negotiated costs, revenue changes, and institutional choices.
+  text: Alberta's current budget is a starting fiscal baseline, but it does not forecast the fiscal position of a future independent state.
   status: source_supported
   source_ids:
   - alberta-budget-documents-2026
@@ -10,25 +9,37 @@ claims:
   risk: high
 - id: claim-economy-fiscal-002
   topic_slug: economy-fiscal
-  text: 'The strongest pro case is fiscal control: Alberta could keep more policy authority over taxes, resource revenue,
-    regulation, and spending priorities.'
+  text: Federal transfers, including equalization and major transfers, are part of the current fiscal system but cannot be treated as a clean independence saving without accounting for services, programs, debt, administration, and replacement institutions.
   status: inference
-  source_ids: &id001
-  - alberta-budget-documents-2026
-  - alberta-budget-highlights-2026
-  - alberta-premiers-address-2026-02-19
+  source_ids:
+  - finance-canada-equalization-program
+  - finance-canada-major-federal-transfers
   risk: high
 - id: claim-economy-fiscal-003
   topic_slug: economy-fiscal
-  text: 'The strongest caution is transition exposure: debt allocation, duplicated institutions, service costs, market reaction,
-    and trade uncertainty could offset claimed fiscal gains.'
+  text: The strongest pro-independence fiscal case is greater policy control over taxes, spending, regulation, and resource policy, not a source-proven automatic windfall.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - finance-canada-equalization-program
+  - finance-canada-major-federal-transfers
   risk: high
 - id: claim-economy-fiscal-004
   topic_slug: economy-fiscal
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on assumptions about revenue, trade, debt, institutions,
-    and transition costs.'
-  status: source_supported
-  source_ids: *id001
+  text: The strongest anti-independence fiscal caution is transition risk; debt and asset division, duplicated institutions, trade continuity, market response, and negotiation terms could offset claimed fiscal gains.
+  status: inference
+  source_ids:
+  - cbc-alberta-separation-legal-experts-2025
+  - scc-secession-reference
+  - canadian-free-trade-agreement
+  - global-affairs-cusma-text
+  risk: high
+- id: claim-economy-fiscal-005
+  topic_slug: economy-fiscal
+  text: Existing Canadian internal trade rules and CUSMA are the current baseline; continuity for an independent Alberta should not be assumed without negotiated or legal terms.
+  status: inference
+  source_ids:
+  - canadian-free-trade-agreement
+  - global-affairs-cusma-text
   risk: high

@@ -10,3 +10,14 @@ entries:
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-economy-fiscal-q1-overview-2026-05-07
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Migrated economy-fiscal overview to the Q1/v3 reader-first overview-as-neutral baseline and expanded the topic source list for fiscal baseline, federal transfers, secession-process uncertainty, and trade continuity caveats.
+  checks:
+  - q1-v3-overview-contract
+  - neutral-synthesis-merged
+  - citation-source-alignment
+  - source-refresh
+  - no-net-fiscal-forecast
+  result: pass

@@ -11,3 +11,7 @@ entries:
   date: '2026-05-06'
   trigger: source-depth-reinforcement
   summary: Re-tested pro, anti, and neutral arguments against 11 sources; sharpened the distinction among provincial referendum mechanics, federal clarity review, constitutional amendment, and rights-constrained implementation.
+- id: redebate-clarity-act-2026-05-07
+  date: '2026-05-07'
+  trigger: q1-overview-baseline-migration
+  summary: Promoted the neutral synthesis into the Overview so readers get the balanced answer first; Pro and Anti remain optional debate briefs.

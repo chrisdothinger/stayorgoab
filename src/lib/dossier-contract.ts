@@ -8,7 +8,13 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'employment-insurance-federal-benefits',
   'bank-deposits-financial-stability',
   'currency-banking',
-  'equalization'
+  'equalization',
+  'referendum-mechanics',
+  'petition-vs-referendum-vs-negotiations',
+  'clarity-act',
+  'quebec-secession-reference',
+  'clear-question-majority',
+  'referendum-ballot-2026'
 ] as const;
 
 export function hasMergedNeutralOverview(topicSlug: string) {

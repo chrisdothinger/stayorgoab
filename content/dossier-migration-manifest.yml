@@ -91,7 +91,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-indigenous-rights-overview
+  last_migrated_pr: '#48'
   last_migrated_at: '2026-05-07'
 - slug: economy-fiscal
   public_question: Would independence make Alberta richer or poorer after taxes, transfers,
@@ -117,7 +117,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-economy-fiscal-overview
+  last_migrated_pr: '#50'
   last_migrated_at: '2026-05-07'
 - slug: referendum-mechanics
   public_question: How would Alberta’s petition and referendum process actually work?
@@ -142,7 +142,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-legal-process-overviews
+  last_migrated_pr: '#47'
   last_migrated_at: '2026-05-07'
 - slug: borders-currency-citizenship
   public_question: How would a landlocked Alberta move goods through Canadian, U.S.,
@@ -195,7 +195,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-legal-process-overviews
+  last_migrated_pr: '#47'
   last_migrated_at: '2026-05-07'
 - slug: clarity-act
   public_question: Does the Clarity Act give Ottawa a veto over Alberta independence?
@@ -220,7 +220,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-legal-process-overviews
+  last_migrated_pr: '#47'
   last_migrated_at: '2026-05-07'
 - slug: quebec-secession-reference
   public_question: What did the Supreme Court actually say about unilateral secession?
@@ -245,7 +245,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-legal-process-overviews
+  last_migrated_pr: '#47'
   last_migrated_at: '2026-05-07'
 - slug: clear-question-majority
   public_question: Who decides whether Alberta’s referendum question and result are
@@ -271,7 +271,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-legal-process-overviews
+  last_migrated_pr: '#47'
   last_migrated_at: '2026-05-07'
 - slug: referendum-ballot-2026
   public_question: What is known, and not known, about a possible 2026 Alberta referendum
@@ -297,7 +297,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-legal-process-overviews
+  last_migrated_pr: '#47'
   last_migrated_at: '2026-05-07'
 - slug: economy-overall
   public_question: Would an independent Alberta align more closely with the United

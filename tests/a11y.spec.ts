@@ -59,20 +59,24 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByText(/50 questions shown/i)).toBeVisible();
 });
 
-test('question overview is the primary reader path with optional deep-dive reports after the answer', async ({ page }) => {
+test('question overview keeps the shared dossier navigation and no duplicate deep-dive panel', async ({ page }) => {
   await page.goto('/questions/legal-process/');
   await expect(page.getByRole('region', { name: /Dossier overview/i })).toBeVisible();
   await expect(page.getByRole('heading', { name: /Short answer/i })).toBeVisible();
-  const deepDive = page.getByRole('complementary', { name: /Optional deeper reports/i });
-  await expect(deepDive).toBeVisible();
-  await expect(deepDive.getByText(/The overview is the main answer/i)).toBeVisible();
-  await expect(deepDive.getByRole('link', { name: /Neutral synthesis/i })).toBeVisible();
-  await expect(page.getByRole('navigation', { name: /Dossier navigation/i })).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: /What each side gets right/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /What survives both arguments/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /If you only read one page/i })).toHaveCount(0);
+  await expect(page.getByRole('complementary', { name: /Optional deeper reports/i })).toHaveCount(0);
+  const dossierNav = page.getByRole('navigation', { name: /Dossier navigation/i });
+  await expect(dossierNav.getByRole('link', { name: 'Overview', exact: true })).toBeVisible();
+  await expect(dossierNav.getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
+  await expect(dossierNav.getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
+  await expect(dossierNav.getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
 });
 
 test('question dossier tabs preserve topic context on dossier, reports, claims, and sources', async ({ page }) => {
   for (const route of [
-    '/questions/equalization/neutral/',
+    '/questions/equalization/',
     '/questions/equalization/pro/',
     '/questions/equalization/anti/',
     '/questions/equalization/claims/',
@@ -97,30 +101,33 @@ test('question dossier tabs preserve topic context on dossier, reports, claims, 
 
 test('report section navigation is collapsible on mobile and does not overlay content while scrolling', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/questions/legal-process/neutral/');
+  await page.goto('/questions/legal-process/pro/');
   const sectionNav = page.getByRole('group', { name: /Report section jumps/i });
   await expect(sectionNav).toBeVisible();
   await expect(sectionNav).toHaveJSProperty('open', false);
   await sectionNav.getByText(/Jump to section/i).click();
   await expect(sectionNav.getByRole('link', { name: 'Bottom line', exact: true })).toBeVisible();
-  await expect(sectionNav.getByRole('link', { name: 'What each side gets right', exact: true })).toBeVisible();
+  await expect(sectionNav.getByRole('link', { name: 'The case in 3 pillars', exact: true })).toBeVisible();
   await expect(sectionNav.getByRole('link', { name: /Reader checklist/i })).toHaveCount(0);
   await sectionNav.getByText(/Jump to section/i).click();
   await page.evaluate(() => window.scrollTo(0, 1200));
   const navBox = await sectionNav.boundingBox();
-  const headingBox = await page.getByRole('heading', { name: /What each side gets right/i }).boundingBox();
+  const headingBox = await page.getByRole('heading', { name: /The case in 3 pillars/i }).boundingBox();
   expect(navBox && headingBox ? navBox.y + navBox.height <= headingBox.y || navBox.y >= headingBox.y + headingBox.height : true).toBeTruthy();
 });
 
-test('full dossier report pages show steelman and neutral mediator structure', async ({ page }) => {
+test('full dossier report pages show pro and anti structure, with neutral merged into overview', async ({ page }) => {
+  await page.goto('/questions/legal-process/');
+  await expect(page.getByRole('heading', { name: /What each side gets right/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /What survives both arguments/i })).toBeVisible();
+
   await page.goto('/questions/legal-process/neutral/');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText(/Neutral synthesis/i);
-  await expect(page.getByText(/written after the pro and anti reports/i)).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Neutral now lives in the overview/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Read the merged overview/i })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
   await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Claims', exact: true })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /What each side gets right/i })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /What would change the answer/i })).toBeVisible();
+  await expect(page.getByRole('navigation', { name: /Dossier navigation/i }).getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
 
   await page.goto('/questions/legal-process/pro/');
   await expect(page.getByText(/strongest fair pro-independence argument/i)).toBeVisible();

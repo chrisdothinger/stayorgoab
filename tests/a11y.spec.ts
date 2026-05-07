@@ -121,21 +121,13 @@ test('claims pages are readable ledgers without dummy expansion controls or unex
   await expect(page.locator('.claim-sources').first().getByRole('link').first()).toBeVisible();
 });
 
-test('report section navigation is collapsible on mobile and does not overlay content while scrolling', async ({ page }) => {
+test('report pages omit jump navigation and keep the brief close to the dossier nav', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/questions/legal-process/pro/');
-  const sectionNav = page.getByRole('group', { name: /Report section jumps/i });
-  await expect(sectionNav).toBeVisible();
-  await expect(sectionNav).toHaveJSProperty('open', false);
-  await sectionNav.getByText(/Jump to section/i).click();
-  await expect(sectionNav.getByRole('link', { name: 'Bottom line', exact: true })).toBeVisible();
-  await expect(sectionNav.getByRole('link', { name: 'The case in 3 pillars', exact: true })).toBeVisible();
-  await expect(sectionNav.getByRole('link', { name: /Reader checklist/i })).toHaveCount(0);
-  await sectionNav.getByText(/Jump to section/i).click();
-  await page.evaluate(() => window.scrollTo(0, 1200));
-  const navBox = await sectionNav.boundingBox();
-  const headingBox = await page.getByRole('heading', { name: /The case in 3 pillars/i }).boundingBox();
-  expect(navBox && headingBox ? navBox.y + navBox.height <= headingBox.y || navBox.y >= headingBox.y + headingBox.height : true).toBeTruthy();
+  await expect(page.getByText(/Jump to section/i)).toHaveCount(0);
+  await expect(page.getByRole('group', { name: /Report section jumps/i })).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: /Bottom line/i })).toBeVisible();
+  await expect(page.getByRole('navigation', { name: /Dossier navigation/i })).toBeVisible();
 });
 
 test('full dossier report pages show pro and anti structure, with neutral merged into overview', async ({ page }) => {

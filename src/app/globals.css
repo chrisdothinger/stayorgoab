@@ -659,45 +659,15 @@ textarea:focus-visible {
 
 .report-layout {
   align-items: start;
-  grid-template-columns: minmax(220px, 0.5fr) minmax(0, 1.5fr);
+  padding-top: 18px;
 }
 
-.report-aside {
-  display: grid;
-  gap: 14px;
-  position: sticky;
-  top: 12px;
+.report-body .markdown > :first-child {
+  margin-top: 0;
 }
 
-.report-section-disclosure {
-  border-bottom: 1px solid rgba(17, 24, 39, 0.13);
-}
-
-.report-section-disclosure summary {
-  cursor: pointer;
-  color: var(--secondary);
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 12px 0;
-}
-
-.report-section-nav {
-  display: grid;
-  gap: 4px;
-  padding: 14px 0;
-  border-bottom: 1px solid rgba(17, 24, 39, 0.13);
-}
-
-.report-section-nav a {
-  color: var(--ink);
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-.report-section-nav a.subsection-link {
-  color: var(--secondary);
-  padding-left: 12px;
-  text-transform: none;
+.report-body {
+  max-width: 76ch;
 }
 
 .category-nav a[aria-current="page"] {
@@ -734,7 +704,8 @@ textarea:focus-visible {
 }
 
 .dossier-tab-strip {
-  padding-block: 0 18px;
+  padding-block: 0;
+  border-bottom: 0;
 }
 
 .compact-dossier-links {

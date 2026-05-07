@@ -116,20 +116,16 @@ test('full dossier report pages show steelman and neutral mediator structure', a
   await expect(page.getByRole('heading', { name: /Best objections \/ replies/i })).toBeVisible();
 });
 
-test('shared page trust layer remains on supporting public trust surfaces', async ({ page }) => {
-  const routesWithTrustLayer = ['/audit/'];
-
-  for (const route of routesWithTrustLayer) {
-    await page.goto(route);
-    const trustLayer = page.getByRole('region', { name: /Page trust/i });
-    await expect(trustLayer).toBeVisible();
-    await expect(trustLayer.getByText('Source status', { exact: true })).toBeVisible();
-    await expect(trustLayer.getByText('Review trail', { exact: true })).toBeVisible();
-    await expect(trustLayer.getByRole('link', { name: /Inspect sources|Source library/i })).toBeVisible();
-    await expect(trustLayer.getByRole('link', { name: /Open review log|Review log/i })).toBeVisible();
-    await expect(trustLayer.getByText(/audit pending/i)).toHaveCount(0);
-    await expect(trustLayer.getByText(/audit pending/i)).toHaveCount(0);
-  }
+test('public review trail shows compact metadata without header cards', async ({ page }) => {
+  await page.goto('/audit/');
+  await expect(page.getByRole('heading', { name: /Public review trail/i })).toBeVisible();
+  await expect(page.getByRole('region', { name: /Review metadata/i })).toBeVisible();
+  await expect(page.getByText(/What this trail covers/i)).toBeVisible();
+  await expect(page.getByText(/current source map and claim ledger/i)).toBeVisible();
+  await expect(page.getByText('Pages tracked', { exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Inspect sources/i })).toBeVisible();
+  await expect(page.getByRole('region', { name: /Page trust/i })).toHaveCount(0);
+  await expect(page.locator('.metric-card')).toHaveCount(0);
 });
 
 test('source library search starts quickly without header card clutter', async ({ page }) => {
@@ -182,12 +178,13 @@ test('public trust surfaces explain repo, review log, and changelog clearly', as
   await page.goto('/method/');
   await expect(page.getByRole('heading', { name: /Method \/ Ops/i })).toBeVisible();
   await expect(page.getByText(/internal provenance check/i).first()).toBeVisible();
-  await expect(page.getByText(/V3 public dossier shape/i)).toBeVisible();
-  await expect(page.getByText(/Lean dossier contract/i)).toBeVisible();
-  await expect(page.getByText('Evidence chips', { exact: true })).toBeVisible();
-  await expect(page.getByText(/3\+ adjacent citations render as an expandable Evidence chip/i)).toBeVisible();
-  await expect(page.getByText(/Bottom line/i).first()).toBeVisible();
-  await expect(page.getByText(/What survives both arguments/i)).toBeVisible();
+  await expect(page.getByText(/Short, sourced briefs/i)).toBeVisible();
+  await expect(page.getByText(/source maps, claim maps, and review logs/i)).toBeVisible();
+  await expect(page.getByText(/Neutral follows pro and anti/i)).toBeVisible();
+  await expect(page.getByText(/V3 public dossier shape/i)).toHaveCount(0);
+  await expect(page.getByText(/Lean dossier contract/i)).toHaveCount(0);
+  await expect(page.getByText(/Evidence chips/i)).toHaveCount(0);
+  await expect(page.getByText(/Dossier architecture/i)).toHaveCount(0);
   await expect(page.getByRole('heading', { name: /Automated workflows/i })).toBeVisible();
   await expect(page.getByText(/official-status-daily-audit/i)).toBeVisible();
   await expect(page.getByText(/dossier-factory-buildout/i)).toBeVisible();

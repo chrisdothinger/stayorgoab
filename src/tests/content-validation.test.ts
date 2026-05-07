@@ -39,6 +39,21 @@ describe('content validation', () => {
     expect(result.errors).toEqual([]);
   });
 
+  it('derives topic source and claim counts from dossier files instead of stale index metadata', () => {
+    const content = loadRepositoryContent();
+    const mismatches = content.topics.flatMap((topic) => {
+      const files = content.topicFiles[topic.slug];
+      const expectedSourceCount = files.sourceIds.length;
+      const expectedClaimCount = files.claims.length;
+      return [
+        topic.source_count === expectedSourceCount ? null : `${topic.slug}:sources:${topic.source_count}:${expectedSourceCount}`,
+        topic.claim_count === expectedClaimCount ? null : `${topic.slug}:claims:${topic.claim_count}:${expectedClaimCount}`
+      ].filter((item): item is string => Boolean(item));
+    });
+
+    expect(mismatches).toEqual([]);
+  });
+
   it('validates the topic-question registry and public question format', () => {
     const result = validateTopicQuestionRegistry();
     expect(result.ok).toBe(true);

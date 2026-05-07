@@ -1,4 +1,4 @@
-import { PageTrust } from '@/components/PageTrust';
+import Link from 'next/link';
 import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
@@ -20,39 +20,19 @@ export default function AuditPage() {
         <p>Compact public records show what changed, which sources support it, which automated checks ran, and where source files live. These are internal agentic/public-repository provenance checks, not government audits, regulator audits, external audits, or assurance engagements.</p>
       </section>
 
-      <PageTrust
-        sourceStatus={`${content.sources.length} sources and ${content.claims.length} claims feed the generated review manifest.`}
-        reviewStatus={`${manifest.pages.length} page records; ${stalePages} awaiting a check date.`}
-        metrics={[
-          { label: 'Sparse states', value: sparsePages },
-          { label: 'Run summaries', value: ops.latestRuns.length }
-        ]}
-        sourceLabel="Inspect sources"
-        reviewLabel="Open review log"
-        links={[{ href: '/repo', label: 'Repository evidence' }]}
-      />
-
-      <section className="section ops-grid" aria-label="Review summary">
-        <div className="metric-card">
-          <span className="mono row-meta">Pages tracked</span>
-          <strong>{manifest.pages.length}</strong>
-          <p>page records in the generated public review manifest</p>
+      <section className="section" aria-label="Review metadata">
+        <div className="section-label mono">/ Metadata</div>
+        <h2>What this trail covers</h2>
+        <p className="section-copy">The review trail is generated from repository records. Source and claim counts come from each dossier's current source map and claim ledger, so refreshed dossiers do not depend on manually edited counts.</p>
+        <div className="metadata-ledger mono">
+          <div><span>Pages tracked</span><strong>{manifest.pages.length}</strong></div>
+          <div><span>Sources</span><strong>{content.sources.length}</strong></div>
+          <div><span>Claims</span><strong>{content.claims.length}</strong></div>
+          <div><span>Sparse states</span><strong>{sparsePages}</strong></div>
+          <div><span>No check date</span><strong>{stalePages}</strong></div>
+          <div><span>Run summaries</span><strong>{ops.latestRuns.length}</strong></div>
         </div>
-        <div className="metric-card">
-          <span className="mono row-meta">Sparse states</span>
-          <strong>{sparsePages}</strong>
-          <p>stub or seed overview pages clearly labelled as incomplete</p>
-        </div>
-        <div className="metric-card">
-          <span className="mono row-meta">No check date</span>
-          <strong>{stalePages}</strong>
-          <p>pages queued for future source refresh or internal provenance check</p>
-        </div>
-        <div className="metric-card">
-          <span className="mono row-meta">Runs</span>
-          <strong>{ops.latestRuns.length}</strong>
-          <p>redacted public agent-run summaries published</p>
-        </div>
+        <p className="section-copy"><Link href="/sources">Inspect sources</Link> · <Link href="/repo">Repository evidence</Link></p>
       </section>
 
       <section className="link-list">

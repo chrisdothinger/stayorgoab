@@ -2,14 +2,9 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
-import { hasMergedNeutralOverview } from '@/lib/dossier-contract';
 import type { TopicMeta } from '@/lib/types';
 
 const allValue = 'all';
-
-function formatState(state: string) {
-  return state.replaceAll('_', ' ');
-}
 
 function pluralize(count: number, singular: string, plural = `${singular}s`) {
   return `${count} ${count === 1 ? singular : plural}`;
@@ -21,10 +16,6 @@ function groupedByCategory(topics: TopicMeta[]) {
     groups.set(topic.category, [...(groups.get(topic.category) ?? []), topic]);
   }
   return Array.from(groups.entries()).map(([category, items]) => ({ category, items }));
-}
-
-function neutralIsMergedIntoOverview(topic: TopicMeta) {
-  return hasMergedNeutralOverview(topic.slug);
 }
 
 export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
@@ -39,9 +30,6 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
   }, []);
 
   const categories = Array.from(new Set(topics.map((topic) => topic.category)));
-  const states = Array.from(new Set(topics.map((topic) => topic.state)));
-  const stateCounts = states.map((item) => ({ state: item, count: topics.filter((topic) => topic.state === item).length }));
-
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return topics.filter((topic) => {
@@ -102,52 +90,28 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
             {group.items.map((topic) => {
               const isExpanded = expanded === topic.slug;
               const topicNumber = filtered.indexOf(topic) + 1;
-              const showNeutralLink = !neutralIsMergedIntoOverview(topic);
               return (
-                <article className="index-row" key={topic.slug}>
+                <article className="index-row question-index-row" key={topic.slug}>
                   <span className="mono row-meta">{String(topicNumber).padStart(3, '0')}</span>
-                  <div>
+                  <div className="question-index-main">
                     <Link href={`/questions/${topic.slug}`}>{topic.title}</Link>
                     <div className="mono row-meta">{topic.source_count} sources · {topic.claim_count} claims</div>
                     <div className="question-row-actions mono">
-                      <Link aria-label={`Open dossier: ${topic.title}`} href={`/questions/${topic.slug}`}>Open dossier</Link>
+                      <Link className="open-dossier-link" aria-label={`Open dossier: ${topic.title}`} href={`/questions/${topic.slug}`}>Open dossier</Link>
                       <button
+                        className="summary-toggle"
                         type="button"
                         aria-expanded={isExpanded}
-                        aria-label={`${isExpanded ? 'Collapse' : 'Expand'} summary for ${topic.title}`}
+                        aria-label={`${isExpanded ? 'Hide' : 'Show'} short answer for ${topic.title}`}
                         onClick={() => setExpanded(isExpanded ? null : topic.slug)}
                       >
-                        {isExpanded ? 'Collapse summary' : 'Expand summary'}
+                        {isExpanded ? 'Hide short answer' : 'Show short answer'}
                       </button>
                     </div>
                   </div>
-                  <span className="mono row-meta state">{formatState(topic.state)}</span>
-                  <button
-                    className="disclosure-button"
-                    type="button"
-                    aria-expanded={isExpanded}
-                    aria-label={`${isExpanded ? 'Collapse' : 'Toggle'} visual summary for ${topic.title}`}
-                    onClick={() => setExpanded(isExpanded ? null : topic.slug)}
-                  >
-                    {isExpanded ? '-' : '+'}
-                  </button>
                   {isExpanded ? (
-                    <div className="expanded-row">
+                    <div className="expanded-row question-summary-row">
                       <strong>Short answer:</strong> {topic.summary}
-                      <div className="source-trail mono">
-                        <span>State: {formatState(topic.state)}</span>
-                        <span>Internal check: {topic.last_audited_at ?? 'pending provenance check'}</span>
-                        <span>{topic.source_count} sources</span>
-                        <span>{topic.claim_count} claims</span>
-                      </div>
-                      <div className="source-trail mono dossier-nav compact-dossier-links" aria-label={`Dossier tabs for ${topic.title}`}>
-                        <Link href={`/questions/${topic.slug}`}>Overview</Link>
-                        {showNeutralLink ? <Link href={`/questions/${topic.slug}/neutral`}>Neutral</Link> : null}
-                        <Link href={`/questions/${topic.slug}/pro`}>Pro</Link>
-                        <Link href={`/questions/${topic.slug}/anti`}>Anti</Link>
-                        <Link href={`/questions/${topic.slug}/claims`}>Claims</Link>
-                        <Link href={`/questions/${topic.slug}/sources`}>Sources</Link>
-                      </div>
                     </div>
                   ) : null}
                 </article>
@@ -165,7 +129,7 @@ export function TopicSearch({ topics }: { topics: TopicMeta[] }) {
 
       <footer className="questions-trust-meta mono" aria-label="Questions trust metadata">
         <div>
-          <strong>{topics.length}</strong> topics · {stateCounts.map((item) => `${formatState(item.state)}: ${item.count}`).join(' · ')}
+          <strong>{topics.length}</strong> source-backed questions maintained in the public repository.
         </div>
         <div>Last evidence check = this project’s automated public-repo check, not government or external audit.</div>
         <Link href="/audit">Review trail</Link>

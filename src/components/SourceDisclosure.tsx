@@ -28,7 +28,7 @@ export function SourceDisclosure({ children }: { children: ReactNode }) {
     <details className="sources-disclosure" ref={disclosureRef}>
       <summary id="sources">
         <span className="sources-disclosure-title" role="heading" aria-level={2}>Sources</span>
-        <span className="sources-disclosure-hint" aria-hidden="true">Source list</span>
+        <span className="sources-disclosure-hint" aria-hidden="true">Show source list</span>
       </summary>
       <div className="sources-disclosure-body">{children}</div>
     </details>

@@ -45,7 +45,8 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByRole('heading', { name: /Economy, taxes, and finance/i })).toBeVisible();
   const categoryBackground = await page.locator('.question-category-heading').first().evaluate((element) => getComputedStyle(element).backgroundColor);
   expect(categoryBackground).not.toBe('rgba(0, 0, 0, 0)');
-  await expect(page.getByLabel('Questions trust metadata')).toContainText(/full dossier/i);
+  await expect(page.getByLabel('Questions trust metadata')).toContainText(/source-backed questions maintained/i);
+  await expect(page.getByLabel('Questions trust metadata')).not.toContainText(/full dossier/i);
   await expect(page.getByLabel('Questions trust metadata')).toContainText(/Last evidence check =/i);
   await expect(page.getByLabel('Questions trust metadata').getByRole('link', { name: /Review trail/i })).toBeVisible();
 
@@ -56,20 +57,28 @@ test('questions page groups topics by category and keeps quiet trust metadata at
   await expect(page.getByText(/Search: CPP/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /Clear filters/i })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Would Albertans keep CPP benefits, or move to a new pension system?', exact: true })).toBeVisible();
-  await page.getByRole('button', { name: /Expand summary for .*CPP/i }).click();
-  await expect(page.getByText(/Short answer/i)).toBeVisible();
+  await page.getByRole('button', { name: /Show short answer for .*CPP/i }).click();
+  const cppArticle = page.getByRole('article').filter({ hasText: /Would Albertans keep CPP benefits/i });
+  await expect(cppArticle.getByText(/Short answer:/i)).toBeVisible();
   await expect(page.getByRole('article').getByRole('link', { name: /Review trail/i })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: /Hide short answer for .*CPP/i })).toBeVisible();
   await page.getByRole('button', { name: /Clear filters/i }).click();
   await expect(page.getByText(/50 questions shown/i)).toBeVisible();
 
   await page.getByLabel('Search topics').fill('legally need');
   await expect(page.getByText(/1 question shown/i)).toBeVisible();
-  await page.getByRole('button', { name: /Expand summary for .*Alberta to become independent/i }).click();
-  const compactLinks = page.getByLabel(/Dossier tabs for What would legally need to happen/i);
-  await expect(compactLinks.getByRole('link', { name: 'Overview', exact: true })).toBeVisible();
-  await expect(compactLinks.getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
-  await expect(compactLinks.getByRole('link', { name: 'Pro', exact: true })).toBeVisible();
-  await expect(compactLinks.getByRole('link', { name: 'Anti', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: /Show short answer for .*Alberta to become independent/i }).click();
+  const expandedArticle = page.getByRole('article').filter({ hasText: /What would legally need to happen/i });
+  await expect(expandedArticle.getByText(/Short answer:/i)).toBeVisible();
+  await expect(expandedArticle.getByText(/State:/i)).toHaveCount(0);
+  await expect(expandedArticle.getByText(/Internal check:/i)).toHaveCount(0);
+  await expect(expandedArticle.getByText(/12 sources/i)).toHaveCount(1);
+  await expect(expandedArticle.getByText(/8 claims/i)).toHaveCount(1);
+  await expect(expandedArticle.getByRole('navigation', { name: /Dossier tabs/i })).toHaveCount(0);
+  await expect(expandedArticle.getByRole('link', { name: 'Overview', exact: true })).toHaveCount(0);
+  await expect(expandedArticle.getByRole('link', { name: 'Pro', exact: true })).toHaveCount(0);
+  await expect(expandedArticle.getByRole('link', { name: 'Anti', exact: true })).toHaveCount(0);
+  await expect(expandedArticle.getByRole('link', { name: /Open dossier:/i })).toBeVisible();
 });
 
 test('global shell keeps header typography consistent and mobile content inside viewport', async ({ page }) => {
@@ -189,8 +198,8 @@ test('full dossier report pages show pro and anti structure, with neutral merged
   await page.goto('/questions/legal-process/pro/');
   await expect(page.getByText(/strongest fair pro-independence argument/i)).toBeVisible();
   await expect(page.getByRole('heading', { name: /Main weakness/i })).toBeVisible();
-  await expect(page.getByText(/Evidence: 3 sources/i).first()).toBeVisible();
-  await page.getByText(/Evidence: 3 sources/i).first().click();
+  await expect(page.locator('.evidence-chip summary').first()).toContainText(/\d+ sources/i);
+  await page.locator('.evidence-chip summary').first().click();
   await expect(page.locator('.evidence-chip[open]').first().getByRole('link', { name: /\[\d+\]/ }).first()).toBeVisible();
 
   await page.goto('/questions/legal-process/anti/');

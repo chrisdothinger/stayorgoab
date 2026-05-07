@@ -21,3 +21,14 @@ entries:
   - high-sensitivity-rights-language
   - no-global-source-edit
   result: pass
+- id: audit-indigenous-rights-treaties-2026-05-07
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Reworked the public Overview to the Question 1 baseline structure, merging the neutral synthesis into the main reader path with extra sensitivity review for section 35, treaty continuity, consultation, Indigenous-government participation, and uncertainty language.
+  checks:
+  - q1-overview-heading-contract
+  - overview-neutral-synthesis
+  - high-sensitivity-rights-language
+  - numbered-citations-preserved
+  - neutral-hidden-from-public-nav
+  result: pass

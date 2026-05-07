@@ -21,6 +21,7 @@ export interface PublicAgentRun {
   agent_id: string;
   agent_name: string;
   trigger: string;
+  recorded_at?: string;
   output_summary: string;
 }
 

@@ -1,34 +1,25 @@
-import { buildAuditManifest } from '@/lib/audit';
-import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
 
 export const metadata = { title: 'Method / Ops' };
 
-function compactList(items?: string[]) {
-  return items?.length ? items.join(' · ') : 'pending / not yet recorded';
+const GITHUB_REPO_URL = 'https://github.com/chrisdothinger/stayorgoab';
+
+function formatRunTime(recordedAt?: string) {
+  if (!recordedAt) return 'time not recorded';
+  const date = new Date(recordedAt);
+  if (Number.isNaN(date.getTime())) return recordedAt;
+  return date.toISOString().replace('T', ' ').replace('.000Z', ' UTC');
 }
 
 export default function MethodPage() {
-  const content = loadRepositoryContent();
-  const manifest = buildAuditManifest(content);
   const ops = loadOpsSnapshot();
-  const staleTopics = content.topics.filter((topic) => !topic.last_audited_at).length;
-  const fullDossiers = content.topics.filter((topic) => topic.state === 'full_dossier').length;
 
   return (
     <>
       <section className="section">
         <div className="section-label mono">/ Method / Ops</div>
         <h1>Method / Ops</h1>
-        <p>The site separates known facts, disputed claims, uncertainty, arguments, sources, and public review records. It does not tell readers how to vote. This page is the operating memo for the research method and scheduled source checks.</p>
-        <div className="metadata-ledger mono" aria-label="Method and ops metadata">
-          <div><span>Topics</span><strong>{content.topics.length}</strong></div>
-          <div><span>Full dossiers</span><strong>{fullDossiers}</strong></div>
-          <div><span>Sources</span><strong>{content.sources.length}</strong></div>
-          <div><span>Claims</span><strong>{content.claims.length}</strong></div>
-          <div><span>Review records</span><strong>{manifest.pages.length}</strong></div>
-          <div><span>Incidents</span><strong>{ops.incidentCount}</strong></div>
-        </div>
+        <p>The site separates known facts, disputed claims, uncertainty, arguments, sources, and public review records. It does not tell readers how to vote. This page explains the research method and operating model in plain language.</p>
       </section>
 
       <section className="section grid-two">
@@ -37,32 +28,23 @@ export default function MethodPage() {
           <h2>How dossiers are built</h2>
         </div>
         <div className="status-readout">
-          <article className="data-row trust-row"><span className="mono row-meta">Source first</span><strong>Claims trace to sources</strong><span>Every public claim should resolve to source records, topic claim ledgers, and visible publication state.</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Reader layer</span><strong>Short, sourced briefs</strong><span>Topic pages keep the public explanation readable while preserving source maps, claim maps, and review logs for anyone who wants to inspect the evidence.</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Uncertainty</span><strong>Sparse is allowed</strong><span>Pages can stay partial; fake completeness is not. Unsettled legal, fiscal, Indigenous-rights, and service-continuity claims require clear uncertainty labels close to the affected argument.</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Balance</span><strong>Neutral follows pro and anti</strong><span>Pro and anti reports steelman the strongest fair arguments current sources support. Neutral reports mediate those reports rather than inventing a third stance.</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Provenance</span><strong>Internal check</strong><span>Internal provenance check means automated public-repository validation, not government review or external assurance.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">1 / assign</span><strong>An orchestrator agent sets the work plan</strong><span>A central reviewing agent reads the public question, the repository rules, and the role definitions stored in GitHub. It assigns bounded tasks to specialist agents instead of letting one system write everything at once.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">2 / research</span><strong>Specialist agents work in defined lanes</strong><span>Different agents can handle source collection, pro-side arguments, anti-side arguments, neutral synthesis, citation checks, and release review. Each role has limits on what it can change and what evidence it must return.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">3 / report back</span><strong>Drafts come back with evidence</strong><span>Agents do not simply declare an answer. They return proposed text, source records, claim links, and a short summary of what changed so the work can be checked against the public files.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">4 / validate</span><strong>The orchestrator checks before publication</strong><span>The orchestrator compares the work against the site rules: sources must exist, claims must cite sources, public pages must build, secret scans must pass, and summaries must not expose private prompts or raw logs.</span></article>
+          <article className="data-row trust-row"><span className="mono row-meta">5 / publish</span><strong>Green work is published through GitHub</strong><span>Accepted changes go through the public repository and deployment checks before appearing on the site. That trail is intentional: readers can inspect what changed, when it changed, and what evidence supported it.</span></article>
         </div>
       </section>
 
       <section className="section grid-two">
         <div>
-          <div className="section-label mono">/ Automated workflows</div>
-          <h2>Automated workflows</h2>
-          <p className="section-copy">Workflow records are backed by <span className="mono">ops/schedules.yml</span>. Latest successful run is shown only where a public record exists; otherwise it stays pending.</p>
+          <div className="section-label mono">/ Public auditability</div>
+          <h2>Why GitHub is part of the method</h2>
+          <p className="section-copy">The goal is a completely auditable civic knowledge base: source-first, non-partisan, and transparent enough that readers can test whether the process is biased, incomplete, unsupported, or drifting away from its autonomous operating model.</p>
         </div>
-        <div className="workflow-ledger" aria-label="Automated workflow ledger">
-          <div className="workflow-ledger-header mono">
-            <span>Workflow</span><span>Runtime</span><span>Latest successful run</span><span>Purpose / gates</span>
-          </div>
-          {ops.schedules.map((schedule) => (
-            <article className="workflow-row" key={schedule.id}>
-              <strong className="mono">{schedule.id}</strong>
-              <span className="mono">{schedule.cron}<br />{schedule.timezone}</span>
-              <span className="mono">{schedule.latest_successful_run ?? 'pending / not yet recorded'}</span>
-              <span>{schedule.purpose}<br /><span className="mono row-meta">Checks: {compactList(schedule.required_checks)}</span><br /><span className="mono row-meta">Outputs: {compactList(schedule.allowed_outputs)} · human gate: {String(schedule.human_gate)}</span></span>
-            </article>
-          ))}
+        <div className="status-readout">
+          <article className="data-row trust-row"><span className="mono row-meta">Repository</span><strong>Inspect the public GitHub repo</strong><span>Source files, claims, topic dossiers, review records, and site changes are kept in public version control. People who want the operational detail can inspect the repository directly.</span><a href={GITHUB_REPO_URL}>Open the StayOrGoAB GitHub repository</a></article>
+          <article className="data-row trust-row"><span className="mono row-meta">Intent</span><strong>Auditable, not black-box</strong><span>The site is designed so readers can check the evidence trail instead of trusting a campaign, a slogan, or an unexplained AI answer.</span></article>
         </div>
       </section>
 
@@ -70,28 +52,17 @@ export default function MethodPage() {
         <div>
           <div className="section-label mono">/ Public run summaries</div>
           <h2>Latest recorded runs</h2>
+          <p className="section-copy">Run summaries are short public records of completed site work. They describe the trigger, recorded time, and outcome without exposing private prompts, raw logs, or internal tool traces.</p>
         </div>
         <div className="status-readout">
           {ops.latestRuns.map((run) => (
             <article className="data-row trust-row" key={run.run_id}>
               <span className="mono row-meta">{run.trigger}</span>
               <strong>{run.agent_name}</strong>
-              <span>{run.run_id} · {run.output_summary}</span>
+              <span><span className="mono">{run.run_id}</span><br />Recorded: {formatRunTime(run.recorded_at)}<br />Description: {run.output_summary}</span>
             </article>
           ))}
           {ops.latestRuns.length === 0 ? <p className="mono row-meta">pending / not yet recorded</p> : null}
-        </div>
-      </section>
-
-      <section className="section grid-two">
-        <div>
-          <div className="section-label mono">/ Runbooks + releases</div>
-          <h2>Operating files</h2>
-        </div>
-        <div className="status-readout">
-          <article className="data-row trust-row"><span className="mono row-meta">Runbooks</span><strong>{ops.runbooks.length}</strong><span>{ops.runbooks.map((runbook) => `ops/runbooks/${runbook}`).join(' · ')}</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Latest release</span><strong>{ops.releases[0]?.id ?? 'none'}</strong><span>{ops.releases[0]?.date ?? 'n/a'} · {ops.releases[0]?.summary ?? 'pending / not yet recorded'}</span></article>
-          <article className="data-row trust-row"><span className="mono row-meta">Stale topics</span><strong>{staleTopics}</strong><span>topics without a recorded internal provenance-check date</span></article>
         </div>
       </section>
     </>

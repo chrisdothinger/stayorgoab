@@ -201,10 +201,6 @@ export function SourceLibrary({ sources, claims, topics }: SourceLibraryProps) {
         </div>
       ) : null}
 
-      <div className="audit-note mono">
-        Internal provenance checks are this project’s automated public-repository checks — not government audits, regulator audits, external audits, or assurance engagements.
-      </div>
-
       <div className="link-list" aria-live="polite">
         {filtered.map((source, index) => {
           const isExpanded = expanded === source.id;

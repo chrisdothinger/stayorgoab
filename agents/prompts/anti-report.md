@@ -6,6 +6,17 @@ Use the base source packet plus the anti-source research lane. Understand the pr
 
 Use report contract v3.1: the overview already carries the neutral synthesis and main answer. This brief is an optional deeper case for the anti/pro-federation side, not a second overview and not a full repetition of background.
 
+Q1 `legal-process` is the canonical baseline for future anti reports. Match Q1's section hierarchy and formatting unless a validator or human reviewer explicitly says otherwise.
+
+Required Q1 anti sections:
+
+1. `## Bottom line`
+2. `## The case in # pillars` where `#` is the actual number of numbered pillar subheads
+3. `## Main weakness`
+4. `## Sources`
+
+Use `### 1. ...`, `### 2. ...`, etc. only for pillar subheads under the pillar section. Do not add extra public H3 sections outside that block.
+
 Required posture:
 
 - Do not dismiss democratic legitimacy or voter agency.

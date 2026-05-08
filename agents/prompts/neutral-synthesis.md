@@ -2,9 +2,9 @@
 
 Status: legacy helper for dossiers that have not yet migrated to the v3.1 overview-as-neutral standard.
 
-For new or substantially refreshed dossiers, do **not** create a separate neutral report. Fold this mediator work into `index.mdx` instead.
+For new or substantially refreshed dossiers, do **not** create a separate neutral report. Fold this mediator work into `index.mdx` instead. Q1 `legal-process` is the canonical baseline for that overview-as-neutral work.
 
-The refreshed overview should:
+The refreshed overview should match Q1's public order exactly:
 
 1. start with `## Short answer`;
 2. explain `## What this means for Albertans`;

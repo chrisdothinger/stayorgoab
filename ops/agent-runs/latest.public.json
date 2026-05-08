@@ -1,5 +1,45 @@
 [
   {
+    "run_id": "pr-76-agentic-workflow-refresh-2026-05-08",
+    "agent_id": "orchestrator",
+    "agent_name": "Orchestrator Agent",
+    "trigger": "PR #76",
+    "recorded_at": "2026-05-08T19:00:00Z",
+    "output_summary": "Refreshed agentic workflow records, public run surfaces, audit coverage, and launch-readiness guardrails so future runs follow the Q1 dossier standard."
+  },
+  {
+    "run_id": "pr-75-q1-future-dossier-standard-2026-05-08",
+    "agent_id": "topic-question-auditor",
+    "agent_name": "Topic Question Auditor",
+    "trigger": "PR #75",
+    "recorded_at": "2026-05-08T18:09:54Z",
+    "output_summary": "Recorded Q1 legal-process as the canonical standard for future new, migrated, or substantially refreshed dossiers."
+  },
+  {
+    "run_id": "pr-74-q1-section-hierarchy-2026-05-08",
+    "agent_id": "topic-writer",
+    "agent_name": "Topic Writer Agent",
+    "trigger": "PR #74",
+    "recorded_at": "2026-05-08T17:53:59Z",
+    "output_summary": "Enforced Q1-style overview, pro, anti, and source-section hierarchy for dossier consistency."
+  },
+  {
+    "run_id": "pr-73-q1-baseline-alignment-2026-05-08",
+    "agent_id": "synthesis-auditor",
+    "agent_name": "Synthesis & Risk Audit Agent",
+    "trigger": "PR #73",
+    "recorded_at": "2026-05-08T17:34:24Z",
+    "output_summary": "Aligned migrated dossiers to the Q1 baseline and fixed overview source-disclosure formatting."
+  },
+  {
+    "run_id": "pr-72-source-cleanup-2026-05-08",
+    "agent_id": "source-steward",
+    "agent_name": "Source Steward Agent",
+    "trigger": "PR #72",
+    "recorded_at": "2026-05-08T17:07:25Z",
+    "output_summary": "Cleaned source records and citation references after dossier migration while preserving public citation traceability."
+  },
+  {
     "run_id": "seed-build-2026-05-02",
     "agent_id": "codex-seed-builder",
     "agent_name": "Codex seed build",

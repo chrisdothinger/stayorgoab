@@ -39,6 +39,9 @@ export default function AgentsPage() {
               <span className="mono">+</span>
               <div className="expanded-row">
                 <p>{agent.purpose}</p>
+                <p className="mono row-meta">Persona: {agent.persona ?? 'unlisted'}</p>
+                <p className="mono row-meta">Prompts: {(agent.prompts ?? []).join(' · ') || 'unlisted'}</p>
+                <p className="mono row-meta">Rubrics: {(agent.rubrics ?? []).join(' · ') || 'unlisted'}</p>
                 <p className="mono row-meta">Allowed paths: {permissions.join(' · ')}</p>
               </div>
             </article>

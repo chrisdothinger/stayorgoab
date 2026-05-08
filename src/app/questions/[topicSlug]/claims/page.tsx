@@ -35,7 +35,7 @@ export default async function ClaimsPage({ params }: { params: Promise<{ topicSl
       <section className="section">
         <div className="section-label mono">/ Claims and evidence</div>
         <h1>{topic.title}</h1>
-        <p>Key claims used in this dossier, paired with the sources that support them.</p>
+        <p>Key claims used in this dossier, paired with the sources that support them. Claim status and risk labels come from the public claim ledger for this topic.</p>
       </section>
       <section className="section dossier-tab-strip">
         <DossierNav
@@ -56,6 +56,7 @@ export default async function ClaimsPage({ params }: { params: Promise<{ topicSl
               <div className="claim-title-row">
                 <strong>{claim.text}</strong>
                 <span className="claim-status">{formatStatus(claim.status)}</span>
+                <span className="claim-status">{formatStatus(claim.risk)} risk</span>
               </div>
               <div className="claim-sources" aria-label={`Sources for claim ${index + 1}`}>
                 <span>Sources:</span>
@@ -81,6 +82,15 @@ export default async function ClaimsPage({ params }: { params: Promise<{ topicSl
             </div>
           </article>
         ))}
+        {claims.length === 0 ? (
+          <article className="claim-row">
+            <div className="mono row-meta claim-number">000</div>
+            <div className="claim-main">
+              <div className="claim-title-row"><strong>No public claim records are listed for this dossier.</strong></div>
+              <p>Check the topic claim ledger before treating this dossier as complete.</p>
+            </div>
+          </article>
+        ) : null}
       </section>
     </>
   );

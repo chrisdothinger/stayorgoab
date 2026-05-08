@@ -4,7 +4,7 @@ schedules:
     cron: "17 14 * * *"
     timezone: America/Edmonton
     purpose: "Check official status sources and update public status if source-supported changes are found."
-    latest_successful_run: pending / not yet recorded
+    latest_successful_run: pr-76-agentic-workflow-refresh-2026-05-08
     allowed_outputs:
       - content source updates
       - public status summaries
@@ -21,7 +21,7 @@ schedules:
     cron: "23 16 * * 2"
     timezone: America/Edmonton
     purpose: "Review high-risk topics for source changes and redebate triggers."
-    latest_successful_run: pending / not yet recorded
+    latest_successful_run: pr-76-agentic-workflow-refresh-2026-05-08
     allowed_outputs:
       - topic redebate logs
       - updated claim risk notes
@@ -33,11 +33,11 @@ schedules:
     publish_raw_logs: false
     human_gate: false
   - id: dossier-factory-buildout
-    workflow: .github/workflows/dossier-factory.yml
+    workflow: .github/workflows/build-topic-dossier.yml
     cron: "11 09 * * 3"
     timezone: America/Edmonton
     purpose: "Expand partial questions into source-backed neutral, pro, anti, claims, and source-ledger dossiers."
-    latest_successful_run: pending / not yet recorded
+    latest_successful_run: pr-76-agentic-workflow-refresh-2026-05-08
     allowed_outputs:
       - topic report drafts
       - claims.yml updates
@@ -53,11 +53,11 @@ schedules:
     publish_raw_logs: false
     human_gate: false
   - id: source-discovery
-    workflow: .github/workflows/source-discovery.yml
+    workflow: .github/workflows/discover-sources.yml
     cron: "41 10 * * 1,4"
     timezone: America/Edmonton
     purpose: "Find official, legal, institutional, and high-value public sources that could improve topic dossiers."
-    latest_successful_run: pending / not yet recorded
+    latest_successful_run: pr-76-agentic-workflow-refresh-2026-05-08
     allowed_outputs:
       - source candidate summaries
       - source library records
@@ -70,11 +70,11 @@ schedules:
     publish_raw_logs: false
     human_gate: false
   - id: new-question-scout
-    workflow: .github/workflows/new-question-scout.yml
+    workflow: .github/workflows/agent-orchestrator.yml
     cron: "29 12 * * 5"
     timezone: America/Edmonton
     purpose: "Identify emerging Alberta independence questions that deserve transparent topic pages."
-    latest_successful_run: pending / not yet recorded
+    latest_successful_run: pr-76-agentic-workflow-refresh-2026-05-08
     allowed_outputs:
       - question candidates
       - content planning files
@@ -87,11 +87,11 @@ schedules:
     publish_raw_logs: false
     human_gate: false
   - id: current-events-monitor
-    workflow: .github/workflows/current-events-monitor.yml
+    workflow: .github/workflows/agent-orchestrator.yml
     cron: "07 15 * * *"
     timezone: America/Edmonton
     purpose: "Track current events that may require source checks, uncertainty updates, or dossier refreshes."
-    latest_successful_run: pending / not yet recorded
+    latest_successful_run: pr-76-agentic-workflow-refresh-2026-05-08
     allowed_outputs:
       - update flags
       - source-check summaries
@@ -104,11 +104,11 @@ schedules:
     publish_raw_logs: false
     human_gate: false
   - id: citation-claim-integrity-audit
-    workflow: .github/workflows/citation-integrity.yml
+    workflow: .github/workflows/citation-audit.yml
     cron: "53 13 * * 0"
     timezone: America/Edmonton
     purpose: "Check that public claims still resolve to defined source IDs and do not overstate sparse records."
-    latest_successful_run: pending / not yet recorded
+    latest_successful_run: pr-76-agentic-workflow-refresh-2026-05-08
     allowed_outputs:
       - citation issue summaries
       - claim downgrades
@@ -122,11 +122,11 @@ schedules:
     publish_raw_logs: false
     human_gate: false
   - id: public-release-rollback
-    workflow: .github/workflows/pages-release.yml
+    workflow: .github/workflows/deploy.yml
     cron: "on push to main / rollback on failed checks"
     timezone: America/Edmonton
     purpose: "Publish static site output after validators pass; withhold or roll back if gates fail."
-    latest_successful_run: pending / not yet recorded
+    latest_successful_run: pr-76-agentic-workflow-refresh-2026-05-08
     allowed_outputs:
       - static site export
       - release summaries

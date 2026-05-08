@@ -10,7 +10,7 @@ export default function QuestionsPage() {
       <section className="section">
         <div className="section-label mono">/ Questions</div>
         <h1>The questions that matter</h1>
-        <p>Critical questions about Alberta separation. Each dossier has pro and anti arguments, plus a neutral overview that summarizes the two sides.</p>
+        <p>Critical questions about Alberta separation. Each dossier opens with a neutral overview, then lets readers inspect the pro and anti briefs, claim map, and source map.</p>
       </section>
       <TopicSearch topics={topics} />
     </>

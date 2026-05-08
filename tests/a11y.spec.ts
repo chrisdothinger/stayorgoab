@@ -336,8 +336,8 @@ test('public trust surfaces explain repo, review log, and changelog clearly', as
   await expect(page.getByText(/source-first, non-partisan/i)).toBeVisible();
   await expect(page.getByText(/autonomous operating model/i)).toBeVisible();
   await expect(page.getByRole('heading', { name: /Latest recorded runs/i })).toBeVisible();
-  await expect(page.getByText(/Recorded:/i)).toBeVisible();
-  await expect(page.getByText(/Description:/i)).toBeVisible();
+  await expect(page.getByText(/Recorded:/i).first()).toBeVisible();
+  await expect(page.getByText(/Description:/i).first()).toBeVisible();
   await expect(page.getByText(/Dossier shape/i)).toHaveCount(0);
   await expect(page.getByRole('heading', { name: /The overview is the neutral synthesis/i })).toHaveCount(0);
   await expect(page.getByText(/Main balanced answer/i)).toHaveCount(0);

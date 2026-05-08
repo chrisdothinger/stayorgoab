@@ -15,6 +15,17 @@ agents:
     allowed_paths:
       - content/sources/**
       - content/topics/**/sources.yml
+      - ops/agent-runs/**
+  pro-source-researcher:
+    allowed_paths:
+      - content/topics/**/pro.mdx
+      - content/topics/**/sources.yml
+      - ops/agent-runs/**
+  anti-source-researcher:
+    allowed_paths:
+      - content/topics/**/anti.mdx
+      - content/topics/**/sources.yml
+      - ops/agent-runs/**
   claim-citation:
     allowed_paths:
       - content/claims/**
@@ -22,6 +33,11 @@ agents:
   topic-writer:
     allowed_paths:
       - content/topics/**
+  topic-question-auditor:
+    allowed_paths:
+      - content/topics/**
+      - docs/topic-question-standard.md
+      - ops/plans/**
   synthesis-auditor:
     allowed_paths:
       - content/topics/**/audit-log.yml

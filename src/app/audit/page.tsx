@@ -39,7 +39,7 @@ export default function AuditPage() {
       </section>
 
       <section className="link-list">
-        {manifest.pages.slice(0, 30).map((page, index) => (
+        {manifest.pages.map((page, index) => (
           <article className="index-row" key={page.path}>
             <span className="mono row-meta">{String(index + 1).padStart(3, '0')}</span>
             <strong>{page.path}</strong>

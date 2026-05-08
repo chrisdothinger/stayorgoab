@@ -14,4 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: echo "Redebate trigger check."
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run test:content
+      - run: npm run validate:citations
+      - run: npm run validate:public-audit
+      - run: npm run validate:secrets

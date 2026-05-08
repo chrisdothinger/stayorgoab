@@ -1,11 +1,21 @@
 entries:
-- at: '2026-05-05'
-  type: initial_full_dossier_audit
-  actor: hermes-agent
-  summary: Added full dossier with bounded official/legal source pack, numbered report
-    citations, source-supported baseline, labelled inferences, and high-salience index
-    fields.
+- id: audit-bankruptcy-insolvency-creditor-protection-2026-05-05
+  date: '2026-05-05'
+  agent: StayOrGoAB public agent team
+  summary: Added full dossier with bounded official/legal source pack, numbered report citations, source-supported baseline, labelled inferences, and high-salience index fields.
+  checks:
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - no-external-audit-wording
   result: pass
-  risks:
-  - Future independence terms, negotiated agreements, costs, court outcomes, staffing,
-    data sharing, recognition, and implementation details remain unresolved.
+- id: audit-bankruptcy-insolvency-creditor-protection-2026-05-07-q1
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Migrated the dossier to the Q1/v3 overview-as-neutral baseline and reframed insolvency as a continuity-and-recognition problem for active files, trustees, courts, creditors, and restructuring proceedings.
+  checks:
+  - q1-heading-contract
+  - overview-neutral-merge
+  - citation-source-alignment
+  - no-automatic-insolvency-continuity-claim
+  result: pass

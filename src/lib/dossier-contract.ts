@@ -18,7 +18,8 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'indigenous-rights-treaties',
   'economy-fiscal',
   'federal-debt-assets',
-  'tax-collection-revenue-agency'
+  'tax-collection-revenue-agency',
+  'bankruptcy-insolvency-creditor-protection'
 ] as const;
 
 export function hasMergedNeutralOverview(topicSlug: string) {

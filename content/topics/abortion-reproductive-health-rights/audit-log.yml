@@ -1,12 +1,14 @@
 entries:
-- id: audit-abortion-reproductive-health-rights-2026-05-05
-  date: '2026-05-05'
+- id: audit-abortion-reproductive-health-rights-2026-05-08
+  date: '2026-05-08'
   agent: StayOrGoAB public agent team
-  summary: Added full topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using checked source records and uncertainty labels.
+  summary: Migrated sensitive abortion and reproductive-health dossier to Q1/v3 with neutral synthesis folded into Overview, shorter Pro/Anti debate briefs, a legacy Neutral compatibility synthesis, and careful uncertainty wording around legal, clinical, funding, privacy, and access continuity.
   checks:
   - source-support
   - stance-balance
+  - rights-health-sensitivity
   - uncertainty-labels
   - citation-format
+  - q1-v3-dossier-contract
   - no-external-audit-wording
   result: pass

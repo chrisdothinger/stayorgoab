@@ -28,6 +28,7 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'student-loans-universities-research',
   'pharmaceutical-drug-approvals-supply',
   'public-health-disease-surveillance',
+  'abortion-reproductive-health-rights',
   'elections-law-political-parties-campaign-finance',
   'postal-telecom-broadcasting',
   'statistics-census-public-data'

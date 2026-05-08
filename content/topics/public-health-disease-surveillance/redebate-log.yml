@@ -1,7 +1,7 @@
 entries:
-- at: '2026-05-05'
-  type: initial_pro_anti_neutral_redebate
-  actor: hermes-agent
-  summary: Created paired pro-independence, anti-independence/pro-federation, and
-    neutral mediator reports with numbered citations and explicit uncertainty labels.
-  result: pass
+- id: redebate-public-health-disease-surveillance-2026-05-08
+  date: '2026-05-08'
+  trigger: q1-v3-migration
+  summary: 'Reframed the debate around public-health network continuity: local Alberta public-health
+    capacity and accountability versus high-consequence risk in surveillance feeds, vaccine reporting
+    reporting, lab coordination, and outbreak alerts.'

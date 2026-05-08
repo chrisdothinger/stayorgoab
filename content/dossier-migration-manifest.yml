@@ -598,11 +598,11 @@ topics:
     and other independence movements?
   category: Legal process and referendum
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-09-remaining-high-value
   migration_priority: keep
   score_total: 21
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -617,6 +617,12 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated: '2026-05-08'
+  last_migrated_pr: pending-q1-case-studies
+  validation_notes: Q1/v3 migration folds neutral synthesis into Overview and frames
+    Quebec, Scotland, and Brexit comparators as evidence checklists rather than
+    direct predictions for Alberta.
+  validation_status: passed_local
 - slug: tax-collection-revenue-agency
   public_question: Would Alberta need its own tax agency, and how hard would that
     be?

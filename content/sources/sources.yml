@@ -146,6 +146,7 @@ sources:
   - bureaucracy-governance
   - international-recognition
   - military-security
+  - case-studies
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -178,6 +179,7 @@ sources:
   - bureaucracy-governance
   - international-recognition
   - military-security
+  - case-studies
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -4849,4 +4851,80 @@ sources:
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-07'
+  status: active
+- id: uk-scotland-analysis-collection
+  slug: uk-scotland-analysis-collection
+  title: Scotland analysis
+  publisher: GOV.UK
+  author: Government of the United Kingdom
+  url: https://www.gov.uk/government/collections/scotland-analysis
+  published_at: '2013-10-08'
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: UK Government collection of Scotland analysis papers published before the 2014 Scottish independence referendum.
+  how_used: Comparator source for referendum preparation, institutional questions, and pre-vote analysis in the case-studies dossier.
+  related_topic_slugs:
+  - case-studies
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
+  status: active
+- id: uk-scottish-independence-referendum-act
+  slug: uk-scottish-independence-referendum-act
+  title: Scottish Independence Referendum Act 2013
+  publisher: legislation.gov.uk
+  author: Scottish Parliament
+  url: https://www.legislation.gov.uk/asp/2013/14/contents
+  published_at: '2013-12-17'
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: Scottish statute establishing the framework for the 2014 Scottish independence referendum.
+  how_used: Comparator source for referendum authorization and statutory process in the case-studies dossier.
+  related_topic_slugs:
+  - case-studies
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
+  status: active
+- id: uk-eu-withdrawal-agreement
+  slug: uk-eu-withdrawal-agreement
+  title: New Withdrawal Agreement and Political Declaration
+  publisher: GOV.UK
+  author: Government of the United Kingdom
+  url: https://www.gov.uk/government/publications/new-withdrawal-agreement-and-political-declaration
+  published_at: '2019-10-19'
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: UK Government publication of the Withdrawal Agreement and Political Declaration setting out Brexit withdrawal arrangements.
+  how_used: Comparator source for post-vote withdrawal terms and implementation complexity in the case-studies dossier.
+  related_topic_slugs:
+  - case-studies
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
+  status: active
+- id: uk-eu-future-relationship-act
+  slug: uk-eu-future-relationship-act
+  title: European Union (Future Relationship) Act 2020
+  publisher: legislation.gov.uk
+  author: Parliament of the United Kingdom
+  url: https://www.legislation.gov.uk/ukpga/2020/29/contents
+  published_at: '2020-12-31'
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_legal
+  summary: UK statute implementing the future relationship agreement framework after Brexit.
+  how_used: Comparator source for post-vote domestic legal implementation and future-relationship complexity in the case-studies dossier.
+  related_topic_slugs:
+  - case-studies
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
   status: active

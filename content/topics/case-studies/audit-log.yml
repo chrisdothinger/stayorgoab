@@ -2,11 +2,24 @@ entries:
 - id: audit-case-studies-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
+  - no-external-audit-wording
+  result: pass
+- id: audit-case-studies-2026-05-08
+  date: '2026-05-08'
+  agent: StayOrGoAB public agent team
+  summary: Migrated case-studies dossier to Q1/v3 with neutral synthesis folded into Overview, focused Pro/Anti briefs, expanded official source pack for Quebec, Scotland, and Brexit comparators, and careful warnings against direct prediction by analogy.
+  checks:
+  - source-support
+  - stance-balance
+  - claim-status-review
+  - uncertainty-labels
+  - citation-format
+  - q1-overview-neutral-contract
+  - legacy-neutral-compatibility
   - no-external-audit-wording
   result: pass

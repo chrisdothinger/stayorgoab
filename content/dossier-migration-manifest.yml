@@ -324,7 +324,7 @@ topics:
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
   last_migrated: '2026-05-08'
-  last_migrated_pr: pending-q1-economy-overall
+  last_migrated_pr: '#67'
   validation_notes: Q1/v3 migration folds neutral synthesis into Overview and frames
     U.S. alignment as a conditional economic strategy requiring trade, energy, defence,
     sovereignty, fiscal, and institution-continuity proof.

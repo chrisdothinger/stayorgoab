@@ -1,11 +1,21 @@
 entries:
-- id: audit-tax-collection-revenue-agency-2026-05-05
-  date: '2026-05-05'
+- id: audit-tax-collection-revenue-agency-2026-05-04
+  date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using checked source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
+  result: pass
+- id: audit-tax-collection-revenue-agency-2026-05-07-q1
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Migrated the dossier to the Q1/v3 overview-as-neutral baseline and reframed tax administration as a solvable but non-automatic transition system.
+  checks:
+  - q1-heading-contract
+  - overview-neutral-merge
+  - citation-source-alignment
+  - no-automatic-tax-continuity-claim
   result: pass

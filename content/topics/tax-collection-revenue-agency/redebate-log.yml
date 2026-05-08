@@ -1,5 +1,9 @@
 entries:
-- id: redebate-tax-collection-revenue-agency-2026-05-05
-  date: '2026-05-05'
+- id: redebate-tax-collection-revenue-agency-2026-05-04
+  date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-tax-collection-revenue-agency-2026-05-07-q1
+  date: '2026-05-07'
+  trigger: q1-v3-overview-neutral-migration
+  summary: Reframed the dossier around taxpayer-service continuity; pro case emphasizes local accountability and phased design, anti case emphasizes filing, benefits, audits, remittances, data, and revenue continuity risk, and Overview carries the neutral synthesis.

@@ -3,26 +3,34 @@ claims:
   topic_slug: tax-collection-revenue-agency
   text: Current public records show that residents and businesses interact with federal tax services and Alberta tax programs, but they do not establish a ready-made independent Alberta tax agency or transition plan.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - canada-revenue-agency
   - canada-tax-services
   - alberta-about-taxes
   risk: medium
 - id: claim-tax-collection-revenue-agency-002
   topic_slug: tax-collection-revenue-agency
-  text: The strongest pro case is that a local revenue administration could align tax collection, compliance priorities, and public accountability with Alberta policy choices.
+  text: A local revenue administration could align tax collection, compliance priorities, and public accountability with Alberta policy choices, but this remains a design argument rather than a proven transition outcome.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - alberta-about-taxes
+  - canada-revenue-agency
   risk: medium
 - id: claim-tax-collection-revenue-agency-003
   topic_slug: tax-collection-revenue-agency
-  text: The strongest caution is that standing up or replacing tax systems could disrupt filing, benefits, audits, employer remittances, and public revenue during transition.
+  text: Replacing or renegotiating tax administration could affect filing, benefits, audits, employer remittances, refunds, taxpayer records, and public revenue during transition.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - canada-revenue-agency
+  - canada-tax-services
+  - alberta-about-taxes
   risk: medium
 - id: claim-tax-collection-revenue-agency-004
   topic_slug: tax-collection-revenue-agency
-  text: 'This topic remains uncertainty-labelled: Medium; tax administration, benefits delivery, audit authority, data transfer, and taxpayer-service continuity remain conditional on future decisions and evidence.'
-  status: source_supported
-  source_ids: *id001
+  text: This topic remains uncertainty-labelled because tax administration, benefits delivery, audit authority, data transfer, staffing, technology, and taxpayer-service continuity depend on future plans or agreements.
+  status: inference
+  source_ids:
+  - canada-revenue-agency
+  - canada-tax-services
+  - alberta-about-taxes
   risk: medium

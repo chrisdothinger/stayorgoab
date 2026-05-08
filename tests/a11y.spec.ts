@@ -122,6 +122,25 @@ test('question overview keeps the shared dossier navigation and no duplicate dee
   await expect(dossierNav.getByRole('link', { name: 'Neutral', exact: true })).toHaveCount(0);
 });
 
+test('non-Q1 overview source lists render as collapsed compact disclosures', async ({ page }) => {
+  await page.goto('/questions/borders-trade/');
+  const disclosure = page.locator('.sources-disclosure');
+  await expect(disclosure).toBeVisible();
+  await expect(disclosure).not.toHaveAttribute('open', '');
+  await expect(disclosure.locator('.sources-disclosure-hint')).toContainText(/show source list/i);
+  await expect(disclosure.locator('.sources-disclosure-body li')).toHaveCount(7);
+  const [summaryFontSize, titleFontSize] = await disclosure.evaluate((element) => {
+    const summary = element.querySelector('summary');
+    const title = element.querySelector('.sources-disclosure-title');
+    return [
+      summary ? parseFloat(getComputedStyle(summary).fontSize) : 0,
+      title ? parseFloat(getComputedStyle(title).fontSize) : 0
+    ];
+  });
+  expect(summaryFontSize).toBeLessThan(20);
+  expect(titleFontSize).toBeGreaterThanOrEqual(24);
+});
+
 test('question dossier tabs preserve topic context on dossier, reports, claims, and sources', async ({ page }) => {
   for (const route of [
     '/questions/equalization/',

@@ -94,6 +94,46 @@ describe('content validation', () => {
     expect(result.errors).toEqual([]);
   });
 
+  it('keeps every completed dossier aligned to the Q1 reader-first section baseline', () => {
+    const manifestPath = path.join(process.cwd(), 'content/dossier-migration-manifest.yml');
+    const manifest = fs.readFileSync(manifestPath, 'utf8');
+    const completeSlugs = Array.from(manifest.matchAll(/- slug: ([a-z0-9-]+)[\s\S]*?migration_status: v3_complete/g), (match) => match[1]);
+    const expectedOverview = ['Short answer', 'What this means for Albertans', 'What each side gets right', 'What would have to be decided', 'What survives both arguments', 'Sources'];
+    const expectedNeutral = ['Bottom line', 'What each side gets right', 'What survives both arguments', 'What would change the answer', 'Sources'];
+    const offenders: string[] = [];
+    const h2s = (body: string) => Array.from(body.matchAll(/^##\s+(.+?)\s*$/gm), (match) => match[1]);
+    for (const slug of completeSlugs) {
+      const topicDir = path.join(process.cwd(), 'content/topics', slug);
+      const overview = fs.readFileSync(path.join(topicDir, 'index.mdx'), 'utf8');
+      if (JSON.stringify(h2s(overview)) !== JSON.stringify(expectedOverview)) offenders.push(`${slug}:index:${h2s(overview).join('|')}`);
+      const neutral = fs.readFileSync(path.join(topicDir, 'neutral.mdx'), 'utf8');
+      if (JSON.stringify(h2s(neutral)) !== JSON.stringify(expectedNeutral)) offenders.push(`${slug}:neutral:${h2s(neutral).join('|')}`);
+      for (const fileName of ['pro.mdx', 'anti.mdx']) {
+        const body = fs.readFileSync(path.join(topicDir, fileName), 'utf8');
+        const normalized = h2s(body).map((heading) => heading.replace(/^The case in \d+ pillars$/, 'The case in N pillars'));
+        const expected = ['Bottom line', 'The case in N pillars', 'Main weakness', 'Sources'];
+        if (JSON.stringify(normalized) !== JSON.stringify(expected)) offenders.push(`${slug}:${fileName}:${h2s(body).join('|')}`);
+      }
+    }
+    expect(offenders).toEqual([]);
+  });
+
+  it('renders completed dossier source lists through the shared collapsed Sources disclosure', () => {
+    const manifestPath = path.join(process.cwd(), 'content/dossier-migration-manifest.yml');
+    const manifest = fs.readFileSync(manifestPath, 'utf8');
+    const completeSlugs = Array.from(manifest.matchAll(/- slug: ([a-z0-9-]+)[\s\S]*?migration_status: v3_complete/g), (match) => match[1]);
+    const offenders: string[] = [];
+    for (const slug of completeSlugs) {
+      for (const fileName of ['index.mdx', 'neutral.mdx', 'pro.mdx', 'anti.mdx']) {
+        const body = fs.readFileSync(path.join(process.cwd(), 'content/topics', slug, fileName), 'utf8');
+        const sourceHeadingCount = Array.from(body.matchAll(/^##\s+Sources\s*$/gm)).length;
+        const hasNumberedSources = /\n\d+\.\s+.+Source ID:\s*`[a-z0-9-]+`/m.test(body);
+        if (sourceHeadingCount !== 1 || !hasNumberedSources) offenders.push(`${slug}:${fileName}`);
+      }
+    }
+    expect(offenders).toEqual([]);
+  });
+
   it('requires every current question topic to have public neutral, pro, and anti report content without overclaiming full status', () => {
     const content = loadRepositoryContent();
     const missing = content.topics.flatMap((topic) => {

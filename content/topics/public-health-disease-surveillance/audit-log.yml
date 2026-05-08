@@ -1,11 +1,16 @@
 entries:
-- at: '2026-05-05'
-  type: initial_full_dossier_audit
-  actor: hermes-agent
-  summary: Added full dossier with bounded official/legal source pack, numbered report
-    citations, source-supported baseline, labelled inferences, and high-salience index
-    fields.
+- id: audit-public-health-disease-surveillance-2026-05-08
+  date: '2026-05-08'
+  agent: Armin
+  summary: Migrated public-health-disease-surveillance to Q1/v3 with Overview as the neutral synthesis,
+    shorter Pro/Anti debate briefs, and legacy Neutral compatibility route.
+  checks:
+  - q1-v3-overview-neutral
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - legacy-neutral-compatibility
   result: pass
-  risks:
-  - Future independence terms, negotiated agreements, costs, court outcomes, staffing,
-    data sharing, recognition, and implementation details remain unresolved.
+  risks: Disease reporting, lab coordination, vaccine reporting feeds, emergency powers, cross-border
+    public-health alerts, public communications, and Canadian/international data-sharing arrangements
+    remain high-uncertainty without written transition terms.

@@ -482,11 +482,11 @@ topics:
     first year after independence?
   category: Public services, health, and benefits
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-08-regulators-public-services
   migration_priority: flagship
   score_total: 23
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -501,6 +501,12 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: pending-q1-public-services
+  validation_status: passed_local
+  notes: Overview now carries the neutral synthesis; Pro and Anti are shorter optional
+    debate briefs; legacy Neutral remains as compatibility synthesis. Service risk
+    is framed service-by-service around funding, workforce, legal authority, data
+    systems, and federal interfaces.
 - slug: energy-environment
   public_question: Would Alberta’s resources be unlocked faster, or would markets,
     Indigenous rights, environmental rules, and export routes still constrain development?

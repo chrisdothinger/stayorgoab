@@ -3,3 +3,7 @@ entries:
   date: '2026-05-04'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-international-recognition-2026-05-07
+  date: '2026-05-07'
+  trigger: q1-v3-overview-neutral-migration
+  summary: Neutral synthesis moved into Overview; Pro and Anti converted to shorter optional debate briefs; legacy Neutral retained as compatibility synthesis.

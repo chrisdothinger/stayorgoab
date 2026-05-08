@@ -2,11 +2,22 @@ entries:
 - id: audit-international-recognition-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-international-recognition-2026-05-07
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Migrated dossier to Q1/v3 overview-as-neutral format, refreshed source pack, shortened pro/anti reports into debate briefs, and preserved Neutral as a legacy compatibility synthesis.
+  checks:
+  - q1-overview-neutral-contract
+  - source-support
+  - stance-balance
+  - claim-status-review
+  - legacy-neutral-compatibility
+  result: pass
+  risks: Recognition remains externally controlled; claims about future foreign-government positions, treaty continuity, UN participation, and partner response remain inferential until official transition terms or recognition positions exist.

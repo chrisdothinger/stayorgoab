@@ -144,6 +144,7 @@ sources:
   - charter-rights-continuity
   - referendum-ballot-2026
   - bureaucracy-governance
+  - international-recognition
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -173,6 +174,7 @@ sources:
   - charter-rights-continuity
   - referendum-ballot-2026
   - bureaucracy-governance
+  - international-recognition
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -2436,6 +2438,7 @@ sources:
   - legal-process
   - indigenous-rights-treaties
   - indigenous-treaties
+  - international-recognition
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-05'
@@ -2563,6 +2566,7 @@ sources:
   related_topic_slugs:
   - borders-trade
   - economy-fiscal
+  - international-recognition
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -3788,6 +3792,7 @@ sources:
   related_topic_slugs:
   - quebec-secession-reference
   - legal-process
+  - international-recognition
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -3991,6 +3996,7 @@ sources:
   - environmental-assessment-pipeline-approvals
   - national-parks-public-lands
   - water-rights-rivers
+  - international-recognition
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -4713,6 +4719,7 @@ sources:
   how_used: Institution-building baseline for foreign representation and external-affairs functions.
   related_topic_slugs:
   - bureaucracy-governance
+  - international-recognition
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-07'

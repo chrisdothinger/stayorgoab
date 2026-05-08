@@ -553,11 +553,16 @@ topics:
     conditions might they attach?
   category: Foreign affairs, defence, and recognition
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-06-state-capacity-foreign-security
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
+  last_migrated_pr: '#59'
+  migration_notes: Overview now carries the neutral synthesis; Pro and Anti are shorter
+    optional debate briefs; legacy Neutral remains as compatibility synthesis. Recognition
+    is framed as conditional on lawful process, Canada’s response, rights protections,
+    state capacity, and external diplomatic decisions.
   required_lanes:
   - base-packet
   - pro-source

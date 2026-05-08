@@ -2,11 +2,22 @@ entries:
 - id: audit-military-security-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-military-security-2026-05-07
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Migrated dossier to Q1/v3 overview-as-neutral format, refreshed source pack, shortened Pro/Anti into debate briefs, and preserved Neutral as a legacy compatibility synthesis.
+  checks:
+  - q1-overview-neutral-contract
+  - source-support
+  - stance-balance
+  - claim-status-review
+  - legacy-neutral-compatibility
+  result: pass
+  risks: Defence, border enforcement, federal policing, intelligence coordination, emergency management, and critical-infrastructure continuity remain unresolved without negotiated transition terms or costed Alberta replacement plans. Independent review downgraded transition-complexity claims to inference and softened claims that lacked direct cost/timeline sourcing.

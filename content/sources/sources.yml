@@ -145,6 +145,7 @@ sources:
   - referendum-ballot-2026
   - bureaucracy-governance
   - international-recognition
+  - military-security
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -175,6 +176,7 @@ sources:
   - referendum-ballot-2026
   - bureaucracy-governance
   - international-recognition
+  - military-security
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -1210,6 +1212,7 @@ sources:
   related_topic_slugs:
   - emergency-management-disaster-aid
   - bureaucracy-governance
+  - military-security
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -1248,6 +1251,7 @@ sources:
   how_used: Baseline source for Alberta-side emergency management coordination, preparedness, response, and recovery roles.
   related_topic_slugs:
   - emergency-management-disaster-aid
+  - military-security
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -1401,6 +1405,7 @@ sources:
   how_used: Baseline source for rcmp-provincial-policing topic.
   related_topic_slugs:
   - rcmp-provincial-policing
+  - military-security
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -1439,6 +1444,7 @@ sources:
   how_used: Baseline source for rcmp-provincial-policing topic.
   related_topic_slugs:
   - rcmp-provincial-policing
+  - military-security
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -1650,6 +1656,7 @@ sources:
   related_topic_slugs:
   - border-enforcement-customs
   - bureaucracy-governance
+  - military-security
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-05'
@@ -4739,6 +4746,7 @@ sources:
   how_used: Institution-building baseline for defence and security-adjacent state functions.
   related_topic_slugs:
   - bureaucracy-governance
+  - military-security
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-07'

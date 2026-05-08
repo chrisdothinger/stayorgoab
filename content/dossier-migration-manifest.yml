@@ -1131,7 +1131,7 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
-  last_migrated_pr: pending-q1-pharmaceutical-drug-approvals-supply
+  last_migrated_pr: '#64'
   validation_status: passed_local
   notes: Overview now carries the neutral synthesis; Pro and Anti are shorter optional
     debate briefs; legacy Neutral remains as compatibility synthesis. Medicine continuity

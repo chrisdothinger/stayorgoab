@@ -986,11 +986,11 @@ topics:
     health rights?
   category: Justice, rights, and public safety
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-04-rights-courts-public-safety
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -1005,6 +1005,11 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated: '2026-05-08'
+  last_migrated_pr: '#66'
+  validation_notes: Q1/v3 sensitive migration folds neutral synthesis into Overview,
+    keeps Pro/Anti as careful debate briefs, and preserves legacy Neutral compatibility
+    path with source-backed uncertainty wording.
 - slug: firearms-laws-licensing
   public_question: What would happen to firearms laws, gun licensing, and restricted-weapon
     rules?

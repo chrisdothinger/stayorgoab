@@ -1,28 +1,34 @@
 claims:
 - id: claim-abortion-reproductive-health-rights-001
   topic_slug: abortion-reproductive-health-rights
-  text: Current sources show that abortion access is shaped by the post-Morgentaler criminal-law baseline, federal health-system principles, and Alberta service delivery; they do not settle how an independent Alberta would protect, fund, regulate, restrict, or expand reproductive-health services.
+  text: Current sources establish the existing post-Morgentaler legal baseline, Canada Health Act health-system principles, and Alberta Health Services public service information.
   status: source_supported
-  source_ids: &id001
+  source_ids: &abortion_sources
   - scc-morgentaler-1988
   - canada-health-act
   - ahs-abortion-services
   risk: high
 - id: claim-abortion-reproductive-health-rights-002
   topic_slug: abortion-reproductive-health-rights
-  text: the strongest pro-independence case is that Alberta could choose to maintain or clarify access in its own laws and health system, potentially making service rules more transparent if continuity were written into transition legislation.
+  text: Alberta could choose to preserve current abortion access through transition legislation, health funding rules, clinical guidance, service pathways, privacy protections, and regulator instructions.
   status: inference
-  source_ids: *id001
-  risk: medium
+  source_ids: *abortion_sources
+  risk: high
 - id: claim-abortion-reproductive-health-rights-003
   topic_slug: abortion-reproductive-health-rights
-  text: the strongest caution is that reproductive healthcare is a rights-and-access issue where legal uncertainty, funding changes, provider shortages, regional access gaps, or changed political control could affect people quickly if continuity were not explicit and enforceable.
+  text: Reproductive-health access could be affected quickly if legal authority, public funding, provider guidance, facility access, referral pathways, privacy rules, or remedies were unclear during transition.
   status: inference
-  source_ids: *id001
+  source_ids: *abortion_sources
   risk: high
 - id: claim-abortion-reproductive-health-rights-004
   topic_slug: abortion-reproductive-health-rights
-  text: 'This topic remains uncertainty-labelled: High; the legal baseline, health funding, provider licensing, facility access, conscience rules, court remedies, and future political choices would all affect reproductive-health access.'
-  status: source_supported
-  source_ids: *id001
+  text: Formal legality and practical access are separate questions; patients and clinicians would need clear rules for insured services, referrals, medication and procedural care, emergency care, follow-up care, privacy, and complaints.
+  status: inference
+  source_ids: *abortion_sources
+  risk: high
+- id: claim-abortion-reproductive-health-rights-005
+  topic_slug: abortion-reproductive-health-rights
+  text: Current sources do not settle how an independent Alberta would protect, fund, regulate, restrict, or expand reproductive-health services.
+  status: inference
+  source_ids: *abortion_sources
   risk: high

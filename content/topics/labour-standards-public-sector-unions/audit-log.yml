@@ -6,3 +6,17 @@ entries:
   result: pass
   risks:
   - Future independence terms, negotiated agreements, costs, court outcomes, staffing, and implementation details remain unresolved.
+- id: audit-labour-standards-public-sector-unions-2026-05-08
+  date: '2026-05-08'
+  agent: StayOrGoAB public agent team
+  summary: Migrated labour standards, union contracts, and public-sector bargaining dossier to Q1/v3 with neutral synthesis folded into Overview, focused Pro/Anti briefs, expanded legal source pack, and careful continuity wording for contracts, certifications, federal-sector workers, labour-board files, and public-sector bargaining.
+  checks:
+  - source-support
+  - stance-balance
+  - claim-status-review
+  - uncertainty-labels
+  - citation-format
+  - q1-overview-neutral-contract
+  - legacy-neutral-compatibility
+  - no-external-audit-wording
+  result: pass

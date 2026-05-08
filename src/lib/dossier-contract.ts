@@ -23,6 +23,7 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'bankruptcy-insolvency-creditor-protection',
   'bureaucracy-governance',
   'international-recognition',
+  'labour-standards-public-sector-unions',
   'military-security',
   'privacy-data-federal-ids',
   'public-services',

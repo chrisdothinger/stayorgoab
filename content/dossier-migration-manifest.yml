@@ -1205,11 +1205,11 @@ topics:
     bargaining?
   category: Work, education, and everyday life
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-07-energy-resources-economy
   migration_priority: keep
   score_total: 22
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -1224,6 +1224,13 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated: '2026-05-08'
+  last_migrated_pr: pending-q1-labour-standards-public-sector-unions
+  validation_notes: Q1/v3 migration folds neutral synthesis into Overview and frames
+    labour continuity around transition law for workplace standards, union certifications,
+    collective agreements, federal-sector workers, labour-board files, and public-sector
+    bargaining.
+  validation_status: passed_local
 - slug: federal-prisons-corrections-parole
   public_question: Who would be responsible for prisons, parole, inmate transfers,
     and sentence administration?

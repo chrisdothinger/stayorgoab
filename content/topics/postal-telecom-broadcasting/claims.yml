@@ -10,19 +10,19 @@ claims:
   risk: medium
 - id: claim-postal-telecom-broadcasting-002
   topic_slug: postal-telecom-broadcasting
-  text: The strongest pro case is that local communications policy could be designed around Alberta consumer, rural-connectivity, and business priorities.
+  text: The strongest pro-independence case is that Alberta could design a communications regime around local accountability, rural connectivity, affordability, competition, emergency resilience, and consumer protection if continuity agreements and regulator capacity were built first.
   status: inference
   source_ids: *id001
   risk: medium
 - id: claim-postal-telecom-broadcasting-003
   topic_slug: postal-telecom-broadcasting
-  text: The strongest caution is that mail delivery, carrier obligations, spectrum rights, consumer protections, emergency communications, and broadcasting rules could become complicated if federal systems were interrupted or renegotiated.
+  text: The strongest anti-independence caution is that postal delivery, carrier obligations, spectrum rights, broadcasting rules, emergency communications, and consumer protections could become complicated if federal systems were interrupted or renegotiated without binding bridge arrangements.
   status: inference
   source_ids: *id001
   risk: medium
 - id: claim-postal-telecom-broadcasting-004
   topic_slug: postal-telecom-broadcasting
-  text: 'This topic remains uncertainty-labelled: Medium; postal continuity, telecom regulation, spectrum licensing, broadcasting jurisdiction, consumer protection, emergency communications, and cross-border carrier arrangements remain conditional on future decisions and evidence.'
-  status: source_supported
+  text: This topic remains medium-uncertainty because source-backed current federal baselines do not answer future transition design, institutional capacity, service continuity, or negotiated recognition questions.
+  status: inference
   source_ids: *id001
   risk: medium

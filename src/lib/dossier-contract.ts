@@ -21,7 +21,8 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'tax-collection-revenue-agency',
   'bankruptcy-insolvency-creditor-protection',
   'bureaucracy-governance',
-  'elections-law-political-parties-campaign-finance'
+  'elections-law-political-parties-campaign-finance',
+  'postal-telecom-broadcasting'
 ] as const;
 
 export function hasMergedNeutralOverview(topicSlug: string) {

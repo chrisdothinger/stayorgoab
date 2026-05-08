@@ -3,3 +3,7 @@ entries:
   date: '2026-05-05'
   trigger: full-topic-expansion
   summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-postal-telecom-broadcasting-2026-05-07-q1-v3
+  date: '2026-05-07'
+  trigger: q1-v3-migration
+  summary: Merged neutral synthesis into Overview and narrowed Pro/Anti into optional debate briefs focused on continuity, regulator capacity, spectrum recognition, postal service, and consumer-protection uncertainty.

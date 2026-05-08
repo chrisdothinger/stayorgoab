@@ -31,10 +31,10 @@ claims:
   risk: high
 - id: claim-elections-law-political-parties-campaign-finance-004
   topic_slug: elections-law-political-parties-campaign-finance
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on transition
-    legislation, constitutional design, electoral boundaries, voter eligibility, party-registration
-    rules, campaign-finance limits, third-party advertising rules, enforcement independence,
-    court review, and public legitimacy.'
-  status: source_supported
+  text: This topic remains high-uncertainty because transition legislation, constitutional
+    design, electoral boundaries, voter eligibility, party registration, campaign-finance
+    limits, third-party advertising, enforcement independence, court review, and public
+    legitimacy are not settled by the current source pack.
+  status: inference
   source_ids: *id001
   risk: medium

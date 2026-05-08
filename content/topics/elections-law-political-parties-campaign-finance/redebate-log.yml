@@ -5,3 +5,9 @@ entries:
   summary: Created paired pro-independence, anti-independence/pro-federation, and
     neutral mediator reports with numbered citations and explicit uncertainty labels.
   result: pass
+- at: '2026-05-07'
+  type: q1_v3_overview_migration
+  actor: StayOrGoAB public agent team
+  summary: Neutral synthesis moved into Overview; Pro and Anti narrowed to debate
+    briefs focused on democratic-control upside versus legitimacy risk.
+  result: pass

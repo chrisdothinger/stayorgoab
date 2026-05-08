@@ -2,11 +2,23 @@ entries:
 - id: audit-statistics-census-public-data-2026-05-05
   date: '2026-05-05'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence
-    / pro-federation reports using checked source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using checked source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
   result: pass
+- id: audit-statistics-census-public-data-2026-05-07-q1-v3
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Migrated topic to Q1/v3 overview-as-neutral baseline; rewrote Pro and Anti as shorter debate briefs; retained Neutral as legacy compatibility synthesis.
+  checks:
+  - overview-as-neutral
+  - source-support
+  - citation-integrity
+  - claim-status-nuance
+  - public-audit-wording
+  result: pass
+  risks:
+  - Statistical-agency independence, census authority, survey capacity, privacy rules, data sharing, historical comparability, official indicators, and population counts for funding and elections remain unresolved without draft transition law or binding agreements.

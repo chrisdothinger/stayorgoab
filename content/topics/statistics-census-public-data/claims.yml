@@ -10,19 +10,19 @@ claims:
   risk: medium
 - id: claim-statistics-census-public-data-002
   topic_slug: statistics-census-public-data
-  text: The strongest pro case is that alberta could seek a statistical system focused on provincial priorities, faster local data products, and metrics designed around Alberta policy decisions.
+  text: The strongest pro-independence case is that Alberta could build a statistical system focused on provincial priorities, faster regional data products, open-data usability, and metrics designed around Alberta policy decisions if independence, comparability, and privacy safeguards were protected.
   status: inference
   source_ids: *id001
   risk: medium
 - id: claim-statistics-census-public-data-003
   topic_slug: statistics-census-public-data
-  text: The strongest caution is that governments, businesses, researchers, municipalities, and residents could lose comparability or reliability if census authority, data sharing, survey capacity, privacy rules, or official indicators were not continuous.
+  text: The strongest anti-independence caution is that governments, businesses, researchers, municipalities, and residents could lose comparability or reliability if census authority, data sharing, survey capacity, privacy rules, historical series, or official indicators were not continuous.
   status: inference
   source_ids: *id001
   risk: medium
 - id: claim-statistics-census-public-data-004
   topic_slug: statistics-census-public-data
-  text: 'This topic remains uncertainty-labelled: Medium; census authority, statistical-agency design, survey capacity, privacy rules, data sharing, historical comparability, official indicators, and continuity for governments, businesses, researchers, municipalities, and residents remain conditional on future decisions and evidence.'
-  status: source_supported
+  text: This topic remains medium-uncertainty because current official data baselines do not answer future statistical-agency design, census operations, privacy governance, data-sharing, or historical-comparability questions.
+  status: inference
   source_ids: *id001
   risk: medium

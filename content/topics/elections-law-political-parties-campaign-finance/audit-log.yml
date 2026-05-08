@@ -9,3 +9,12 @@ entries:
   risks:
   - Future independence terms, negotiated agreements, costs, court outcomes, staffing,
     data sharing, recognition, and implementation details remain unresolved.
+- at: '2026-05-07'
+  type: q1_v3_overview_migration
+  actor: StayOrGoAB public agent team
+  summary: Migrated topic to Q1/v3 overview-as-neutral baseline; rewrote Pro and Anti
+    as shorter debate briefs; retained Neutral as legacy compatibility synthesis.
+  result: pass
+  risks:
+  - Transition election rules, party continuity, campaign-finance limits, enforcement
+    independence, and legitimacy safeguards remain unresolved without draft legislation.

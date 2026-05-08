@@ -35,7 +35,7 @@ claims:
   source_ids:
   - global-affairs-cusma-text
   - canadian-free-trade-agreement
-  - canada-customs-act
+  - customs-act
   risk: high
 - id: claim-borders-trade-005
   topic_slug: borders-trade
@@ -45,6 +45,6 @@ claims:
   - scc-secession-reference
   - clarity-act
   - global-affairs-cusma-text
-  - canada-customs-act
+  - customs-act
   - wto-accessions
   risk: high

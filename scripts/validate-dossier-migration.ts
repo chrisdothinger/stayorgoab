@@ -4,6 +4,7 @@ import * as yaml from 'js-yaml';
 import {
   COMPACT_DOSSIER_OVERVIEW_SECTIONS,
   DOSSIER_OVERVIEW_SECTIONS,
+  MERGED_NEUTRAL_TOPIC_SLUGS,
   hasDeletedV3Section,
   hasLeanReportContract
 } from '../src/lib/dossier-contract';
@@ -169,6 +170,16 @@ export function validateDossierMigrationManifest() {
 
   const batchCounts = new Map<string, number>();
   let completeCount = 0;
+  const completeSlugs = manifest.topics.filter((topic) => topic.migration_status === 'v3_complete').map((topic) => topic.slug);
+  const mergedNeutralSlugs = [...MERGED_NEUTRAL_TOPIC_SLUGS];
+  const mergedNeutralSet = new Set<string>(mergedNeutralSlugs);
+  const completeSlugSet = new Set<string>(completeSlugs);
+  for (const slug of completeSlugs) {
+    if (!mergedNeutralSet.has(slug)) errors.push(`v3_complete topic ${slug} is missing from MERGED_NEUTRAL_TOPIC_SLUGS.`);
+  }
+  for (const slug of mergedNeutralSlugs) {
+    if (!completeSlugSet.has(slug)) errors.push(`MERGED_NEUTRAL_TOPIC_SLUGS includes non-v3_complete topic ${slug}.`);
+  }
   for (const topic of manifest.topics) {
     const indexTopic = indexBySlug.get(topic.slug);
     const registryTopic = registryBySlug.get(topic.slug);

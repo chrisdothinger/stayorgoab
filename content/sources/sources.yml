@@ -179,6 +179,7 @@ sources:
   - bureaucracy-governance
   - international-recognition
   - military-security
+  - public-services
   - case-studies
   archive_url: null
   content_hash: null
@@ -202,6 +203,9 @@ sources:
   - legal-process
   - quebec-secession-reference
   - clear-question-majority
+  - indigenous-rights-treaties
+  - indigenous-treaties
+  - international-recognition
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -298,7 +302,7 @@ sources:
   author: Athabasca Chipewyan First Nation
   url: https://www.newswire.ca/news-releases/athabasca-chipewyan-first-nation-welcomes-a-stay-in-alberta-separation-referendum-pending-the-decision-of-their-court-challenge-894958173.html
   published_at: '2026-04-11'
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: advocacy
   stance: anti_independence_or_rights_concern
   reliability_category: primary_stakeholder_statement
@@ -310,7 +314,7 @@ sources:
   - referendum-mechanics
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: globalnews-court-pauses-verification-2026-04-12
   slug: globalnews-court-pauses-verification-2026-04-12
@@ -422,7 +426,7 @@ sources:
   author: Stand With First Nations
   url: https://www.standwithfirstnations.ca/
   published_at: null
-  accessed_at: '2026-05-02'
+  accessed_at: '2026-05-06'
   source_type: advocacy
   stance: anti_independence_or_rights_concern
   reliability_category: stakeholder_advocacy
@@ -433,7 +437,7 @@ sources:
   - indigenous-treaties
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-02'
+  last_checked_at: '2026-05-06'
   status: active
 - id: canada-revenue-agency
   slug: canada-revenue-agency
@@ -543,10 +547,11 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Canadian constitutional text including Charter mobility-rights provisions relevant to citizens and permanent residents inside Canada.
-  how_used: Legal baseline for current Canadian mobility rights before considering any independence transition.
+  summary: Primary constitutional text for the Canadian Charter of Rights and Freedoms and related Constitution Act, 1982 rights provisions.
+  how_used: Legal baseline for current Charter rights, mobility rights, and rights-continuity questions before considering any independence transition.
   related_topic_slugs:
   - immigration-passports-mobility
+  - charter-rights-continuity
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -1452,25 +1457,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-06'
   status: active
-- id: canadian-charter-rights
-  slug: canadian-charter-rights
-  title: Constitution Act, 1982 / Canadian Charter of Rights and Freedoms
-  publisher: Justice Laws Website, Government of Canada
-  author: Parliament of Canada
-  url: https://laws-lois.justice.gc.ca/eng/const/page-12.html
-  published_at: null
-  accessed_at: '2026-05-06'
-  source_type: official
-  stance: neutral
-  reliability_category: primary_legal
-  summary: Primary federal legal text for the Canadian Charter baseline.
-  how_used: Baseline source for charter-rights-continuity topic.
-  related_topic_slugs:
-  - charter-rights-continuity
-  archive_url: null
-  content_hash: null
-  last_checked_at: '2026-05-06'
-  status: active
 - id: alberta-bill-of-rights
   slug: alberta-bill-of-rights
   title: Alberta Bill of Rights
@@ -1516,7 +1502,7 @@ sources:
   author: Parliament of Canada
   url: https://laws-lois.justice.gc.ca/eng/acts/c-6/FullText.html
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_legal
@@ -1527,7 +1513,7 @@ sources:
   - healthcare-portability-doctor-licensing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: ahs-abortion-services
   slug: ahs-abortion-services
@@ -1612,7 +1598,7 @@ sources:
   author: Government of Alberta
   url: https://www.alberta.ca/ahcip
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1622,7 +1608,7 @@ sources:
   - healthcare-portability-doctor-licensing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: cpsa-registration
   slug: cpsa-registration
@@ -1631,7 +1617,7 @@ sources:
   author: College of Physicians & Surgeons of Alberta
   url: https://cpsa.ca/physicians/registration/
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1641,7 +1627,7 @@ sources:
   - healthcare-portability-doctor-licensing
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: cbsa-main
   slug: cbsa-main
@@ -1671,17 +1657,18 @@ sources:
   author: Parliament of Canada
   url: https://laws-lois.justice.gc.ca/eng/acts/C-52.6/FullText.html
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-06'
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Official source for current customs act baseline relevant to the border-enforcement-customs topic.
-  how_used: Baseline source for What would happen to border enforcement, customs inspections, and cross-border travel?
+  summary: Primary federal customs statute governing customs administration, importation, reporting, release, accounting, enforcement, inspections, and related compliance concepts.
+  how_used: Baseline source for border-enforcement/customs and borders-trade claims about operational customs requirements even where tariffs are low or zero.
   related_topic_slugs:
   - border-enforcement-customs
+  - borders-trade
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-06'
   status: active
 - id: cdic-main
   slug: cdic-main
@@ -1999,7 +1986,7 @@ sources:
   accessed_at: '2026-05-05'
   source_type: official
   stance: neutral
-  reliability_category: primary_official
+  reliability_category: primary_legal
   summary: Primary federal labour statute baseline for federally regulated employment and labour relations.
   how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
   related_topic_slugs:
@@ -2075,7 +2062,7 @@ sources:
   accessed_at: '2026-05-08'
   source_type: official
   stance: neutral
-  reliability_category: primary_official
+  reliability_category: primary_legal
   summary: Primary federal statute for public-sector labour relations and collective bargaining in the federal public sector.
   how_used: Baseline source for federal public-sector bargaining continuity questions in the labour-standards and unions dossier.
   related_topic_slugs:
@@ -2094,7 +2081,7 @@ sources:
   accessed_at: '2026-05-08'
   source_type: official
   stance: neutral
-  reliability_category: primary_official
+  reliability_category: primary_legal
   summary: Primary federal statute for employment in the federal public service.
   how_used: Baseline source for federal public-service employment continuity questions in the labour-standards and unions dossier.
   related_topic_slugs:
@@ -2113,7 +2100,7 @@ sources:
   accessed_at: '2026-05-08'
   source_type: official
   stance: neutral
-  reliability_category: primary_official
+  reliability_category: primary_legal
   summary: Primary Alberta statute for provincial employment standards.
   how_used: Baseline statute for Alberta employment-standards continuity in the labour-standards and unions dossier.
   related_topic_slugs:
@@ -2132,7 +2119,7 @@ sources:
   accessed_at: '2026-05-08'
   source_type: official
   stance: neutral
-  reliability_category: primary_official
+  reliability_category: primary_legal
   summary: Primary Alberta statute for labour relations, bargaining, and related labour-board authority.
   how_used: Baseline statute for provincial labour-relations continuity in the labour-standards and unions dossier.
   related_topic_slugs:
@@ -2151,7 +2138,7 @@ sources:
   accessed_at: '2026-05-08'
   source_type: official
   stance: neutral
-  reliability_category: primary_official
+  reliability_category: primary_legal
   summary: Primary Alberta statute for Alberta public-service employment administration.
   how_used: Baseline statute for provincial public-service continuity in the labour-standards and unions dossier.
   related_topic_slugs:
@@ -2277,14 +2264,14 @@ sources:
 - id: alberta-public-health-act
   slug: alberta-public-health-act
   title: Public Health Act
-  publisher: Government of Alberta
-  author: Government of Alberta
+  publisher: Alberta King's Printer
+  author: Legislative Assembly of Alberta
   url: https://kings-printer.alberta.ca/1266.cfm?page=P37.cfm&leg_type=Acts&isbncln=9780779840932
   published_at: null
   accessed_at: '2026-05-05'
   source_type: official
   stance: neutral
-  reliability_category: primary_official
+  reliability_category: primary_legal
   summary: Primary Alberta public-health statute baseline for public-health powers and provincial disease-control authority.
   how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
   related_topic_slugs:
@@ -2526,28 +2513,6 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
-- id: constitution-act-amending-formula
-  slug: constitution-act-amending-formula
-  title: The Constitution Acts, 1867 to 1982 — Part V, Procedure for Amending Constitution of Canada
-  publisher: Justice Laws Website, Government of Canada
-  author: Government of Canada
-  url: https://laws-lois.justice.gc.ca/eng/const/page-13.html
-  published_at: null
-  accessed_at: '2026-05-05'
-  source_type: official
-  stance: neutral
-  reliability_category: primary_legal
-  summary: Official constitutional text covering amendment procedures and section 35 Aboriginal and treaty rights.
-  how_used: Used for constitutional implementation complexity and rights constraints after any referendum mandate.
-  related_topic_slugs:
-  - legal-process
-  - indigenous-rights-treaties
-  - indigenous-treaties
-  - international-recognition
-  archive_url: null
-  content_hash: null
-  last_checked_at: '2026-05-05'
-  status: active
 - id: ablawg-bankes-referendum-non-derogation-2025
   slug: ablawg-bankes-referendum-non-derogation-2025
   title: Provincial Referendum Legislation, Citizen-Led Secession Proposals, and Non-Derogation Clauses
@@ -2695,26 +2660,6 @@ sources:
   - economy-fiscal
   - economy-overall
   - healthcare-portability-doctor-licensing
-  archive_url: null
-  content_hash: null
-  last_checked_at: '2026-05-06'
-  status: active
-- id: canada-customs-act
-  slug: canada-customs-act
-  title: Customs Act
-  publisher: Justice Laws Website, Government of Canada
-  author: Parliament of Canada
-  url: https://laws-lois.justice.gc.ca/eng/acts/C-52.6/FullText.html
-  published_at: null
-  accessed_at: '2026-05-06'
-  source_type: official
-  stance: neutral
-  reliability_category: primary_legal
-  summary: Federal statute governing customs administration, including importation, reporting, release, accounting, enforcement, and related compliance concepts.
-  how_used: Used to ground the point that customs administration can create operational requirements even where tariffs are low or zero.
-  related_topic_slugs:
-  - borders-trade
-  - border-enforcement-customs
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'
@@ -4037,7 +3982,6 @@ sources:
   how_used: Context for demand, investment, and transition-risk uncertainty.
   related_topic_slugs:
   - energy-environment
-  - economy-overall
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-06'

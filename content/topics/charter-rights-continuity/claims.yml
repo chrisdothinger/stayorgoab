@@ -4,7 +4,7 @@ claims:
   text: The Canadian Charter applies to Alberta today as part of Canada's constitutional order, while Alberta also has provincial rights and human-rights statutes.
   status: source_supported
   source_ids: &charter_rights_sources
-  - canadian-charter-rights
+  - constitution-act-1982-charter
   - alberta-bill-of-rights
   - alberta-human-rights-act
   - scc-secession-reference

@@ -8,7 +8,7 @@ claims:
   source_ids:
   - scc-secession-reference
   - clarity-act
-  - constitution-act-amending-formula
+  - constitution-act-1982-amending-procedures
   risk: high
 - id: claim-legal-process-002
   topic_slug: legal-process
@@ -27,7 +27,7 @@ claims:
   source_ids:
   - scc-secession-reference
   - clarity-act
-  - constitution-act-amending-formula
+  - constitution-act-1982-amending-procedures
   risk: high
 - id: claim-legal-process-004
   topic_slug: legal-process
@@ -48,7 +48,7 @@ claims:
   status: source_supported
   source_ids:
   - scc-secession-reference
-  - constitution-act-amending-formula
+  - constitution-act-1982-amending-procedures
   - ablawg-bankes-referendum-non-derogation-2025
   - ablawg-hamilton-treaty-promises-2025
   risk: high
@@ -78,6 +78,6 @@ claims:
   status: source_supported
   source_ids:
   - scc-secession-reference
-  - constitution-act-amending-formula
+  - constitution-act-1982-amending-procedures
   - cbc-alberta-separation-legal-experts-2025
   risk: high

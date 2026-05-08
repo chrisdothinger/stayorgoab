@@ -1,10 +1,11 @@
-const isGithubPages = process.env.GITHUB_PAGES === 'true';
+const siteBasePath = process.env.SITE_BASE_PATH ?? (process.env.GITHUB_PAGES === 'true' ? '/stayorgoab' : '');
+const normalizedBasePath = siteBasePath === '/' ? '' : siteBasePath.replace(/\/$/, '');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: isGithubPages ? '/stayorgoab' : undefined,
-  assetPrefix: isGithubPages ? '/stayorgoab/' : undefined,
+  basePath: normalizedBasePath || undefined,
+  assetPrefix: normalizedBasePath ? `${normalizedBasePath}/` : undefined,
   trailingSlash: true,
   images: {
     unoptimized: true

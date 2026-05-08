@@ -1,4 +1,19 @@
 releases:
+  - id: agentic-workflow-refresh
+    date: "2026-05-08"
+    summary: "Refreshed public agent workflow records, audit coverage, run history, and launch-readiness guardrails."
+  - id: q1-future-dossier-standard
+    date: "2026-05-08"
+    summary: "Made Q1 legal-process the canonical standard for future dossier creation and substantial refreshes."
+  - id: q1-section-hierarchy-enforcement
+    date: "2026-05-08"
+    summary: "Enforced Q1-style dossier section hierarchy and source formatting."
+  - id: q1-baseline-dossier-alignment
+    date: "2026-05-08"
+    summary: "Aligned migrated dossiers to the Q1 baseline."
+  - id: post-migration-source-cleanup
+    date: "2026-05-08"
+    summary: "Cleaned source records and citation references after dossier migration."
   - id: normalize-dossier-report-citations
     date: "2026-05-05"
     summary: "Normalized all dossier reports to numbered inline citations with matching Sources sections."

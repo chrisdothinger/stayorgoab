@@ -8,7 +8,12 @@ This checklist maps the launch path to the baseline spec and `PRODUCTION_READINE
 - [ ] Public repo links are accurate or explicitly labeled fallback.
 - [ ] `stayorgoab.ca` primary domain decision executed.
 - [ ] `stayorgoab.ai` secondary behavior decided and executed.
+- [ ] Domain launch plan reviewed: `ops/runbooks/domain-launch-plan.md`.
 - [ ] README/status/docs contain no previous-builder references.
+
+### Domain setup approval boundary
+
+Repo preparation can keep builds domain-ready, but Chris approval is required before domain purchase, DNS edits, GitHub Pages custom-domain changes, `public/CNAME` activation, or repository transfer. Default fallback remains `https://chrisdothinger.github.io/stayorgoab/` until those external steps are approved and verified.
 
 ## 2. Content integrity
 

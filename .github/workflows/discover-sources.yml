@@ -1,6 +1,8 @@
 name: discover-sources
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "41 10 * * 1,4"
 permissions:
   contents: read
 jobs:
@@ -8,4 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: echo "Source discovery stub. Hermes agents should commit source record changes through pull requests or direct authorized commits."
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:citations
+      - run: npm run validate:public-audit
+      - run: npm run validate:secrets

@@ -14,7 +14,7 @@ export default function SourcesPage() {
       <section className="section sources-hero">
         <div className="section-label mono">/ Sources</div>
         <h1>Source library</h1>
-        <p>Search the official, court, primary, advocacy, media, and institutional records used by topic dossiers and claims.</p>
+        <p>Search the official, court, primary, advocacy, media, and institutional records used by topic dossiers. Each source record links back to the public topics and claims that rely on it.</p>
       </section>
 
       <SourceLibrary sources={sources} claims={claims} topics={topics} />

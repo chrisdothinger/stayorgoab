@@ -32,32 +32,11 @@ const latestRelease = {
 const repositoryHealth = {
   generated_at: manifest.generated_at,
   repository: manifest.repository,
-  checks: ['content-validation', 'search-index', 'audit-manifest', 'secret-scan'],
+  checks: ['content-validation', 'search-index', 'audit-manifest', 'ops-artifacts', 'agent-validation', 'secret-scan'],
   status: 'generated'
 };
-const latestAgentRuns = [
-  {
-    run_id: 'seed-build-2026-05-02',
-    agent_id: 'codex-seed-builder',
-    agent_name: 'Codex seed build',
-    started_at: '2026-05-02T00:00:00Z',
-    completed_at: manifest.generated_at,
-    trigger: 'build',
-    input_summary: 'Seed build from public baseline spec and verified public sources.',
-    output_summary: 'Generated static public audit artifacts and high-risk civic dossier seeds.',
-    files_changed: ['content/topics/_index.yml', 'content/sources/sources.yml'],
-    sources_checked: content.sources.map((source) => source.id),
-    claims_added: content.claims.map((claim) => claim.id),
-    claims_changed: [],
-    checks_run: repositoryHealth.checks,
-    checks_passed: repositoryHealth.checks,
-    checks_failed: [],
-    public_artifacts: ['audit-manifest.json', 'source-map.json', 'claim-map.json'],
-    commit_sha: manifest.commit_sha,
-    risk_flags: ['high-risk civic content', 'household finance', 'Indigenous rights'],
-    redactions_applied: ['no raw logs', 'no personal data', 'no raw transcripts']
-  }
-];
+const latestRunsPath = path.join(root, 'ops', 'agent-runs', 'latest.public.json');
+const latestAgentRuns = JSON.parse(fs.readFileSync(latestRunsPath, 'utf8')) as unknown[];
 
 const outputs: Record<string, unknown> = {
   'audit-manifest.json': manifest,

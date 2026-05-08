@@ -36,6 +36,9 @@ export interface AgentRecord {
   name: string;
   level: string;
   purpose: string;
+  persona?: string;
+  prompts?: string[];
+  rubrics?: string[];
 }
 
 export interface PermissionRecord {

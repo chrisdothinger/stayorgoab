@@ -61,16 +61,17 @@ export function hasMergedNeutralOverview(topicSlug: string) {
 
 export const DOSSIER_OVERVIEW_SECTIONS = [
   '## Short answer',
-  '## The debate in plain English',
-  '## Where the debate turns',
-  '## Read the briefs'
+  '## What this means for Albertans',
+  '## What each side gets right',
+  '## What would have to be decided',
+  '## What survives both arguments',
+  '## Sources'
 ] as const;
 
 export const DOSSIER_PRO_ANTI_SECTIONS = [
   '## Bottom line',
-  '## The case in 4 pillars',
-  '## Best objections / replies',
-  '## What would change this assessment',
+  '## The case in # pillars',
+  '## Main weakness',
   '## Sources'
 ] as const;
 
@@ -92,11 +93,7 @@ export const COMPACT_DOSSIER_OVERVIEW_SECTIONS = [
   '## Sources'
 ] as const;
 
-export const COMPACT_DOSSIER_PRO_ANTI_SECTIONS = [
-  '## Bottom line',
-  '## Main weakness',
-  '## Sources'
-] as const;
+export const COMPACT_DOSSIER_PRO_ANTI_SECTIONS = DOSSIER_PRO_ANTI_SECTIONS;
 
 export const COMPACT_DOSSIER_NEUTRAL_SECTIONS = [
   '## Bottom line',
@@ -155,13 +152,13 @@ export function hasLeanReportContract(body: string, kind: ReportKind) {
   const lowerBody = body.toLowerCase();
   const legacyRequired = kind === 'neutral'
     ? DOSSIER_NEUTRAL_SECTIONS
-    : DOSSIER_PRO_ANTI_SECTIONS.filter((section) => section !== '## The case in 4 pillars');
+    : DOSSIER_PRO_ANTI_SECTIONS.filter((section) => section !== '## The case in # pillars');
   const compactRequired = kind === 'neutral'
     ? COMPACT_DOSSIER_NEUTRAL_SECTIONS
     : COMPACT_DOSSIER_PRO_ANTI_SECTIONS;
   const hasLegacySections = lowerSections(legacyRequired).every((section) => lowerBody.includes(section));
   const hasCompactSections = lowerSections(compactRequired).every((section) => lowerBody.includes(section));
-  const hasRoleShape = kind === 'neutral' ? true : /## the case in [3-5] pillars/.test(lowerBody);
+  const hasRoleShape = kind === 'neutral' ? true : /## the case in \d+ pillars/.test(lowerBody);
   return (hasLegacySections || hasCompactSections) && hasRoleShape;
 }
 

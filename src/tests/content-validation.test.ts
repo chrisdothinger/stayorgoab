@@ -266,7 +266,7 @@ describe('content validation', () => {
     expect(offenders).toEqual([]);
   });
 
-  it('accepts three-to-five-pillar v3 pro/anti contracts and rejects retired v3 sections', () => {
+  it('accepts Q1-style v3 pro/anti contracts and rejects retired v3 sections', () => {
     const v3Base = `## Bottom line
 
 Clear answer.
@@ -282,13 +282,9 @@ Argument.
 ### 3. Third pillar
 Argument.
 
-## Best objections / replies
+## Main weakness
 
-Objection and reply.
-
-## What would change this assessment
-
-New source.
+Main caveat.
 
 ## Sources
 

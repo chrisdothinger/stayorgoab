@@ -10,4 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: echo "Run summarized Hermes/Codex orchestration. Raw logs are not public artifacts."
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:agents
+      - run: npm run validate:citations
+      - run: npm run validate:public-audit
+      - run: npm run validate:secrets

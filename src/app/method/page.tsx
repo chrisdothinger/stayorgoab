@@ -43,7 +43,7 @@ export default function MethodPage() {
         <div>
           <div className="section-label mono">/ Public auditability</div>
           <h2>Why GitHub is part of the method</h2>
-          <p className="section-copy">The goal is a completely auditable civic knowledge base: source-first, non-partisan, and transparent enough that readers can test whether the process is biased, incomplete, unsupported, or drifting away from its autonomous operating model.</p>
+          <p className="section-copy">The goal is an auditable civic knowledge base: source-first, non-partisan, and transparent enough that readers can test whether the process is biased, incomplete, unsupported, or drifting away from its autonomous operating model.</p>
         </div>
         <div className="status-readout">
           <article className="data-row trust-row"><span className="mono row-meta">Repository</span><strong>Inspect the public GitHub repo</strong><span>Source files, claims, topic dossiers, review records, and site changes are kept in public version control. People who want the operational detail can inspect the repository directly.</span><a href={GITHUB_REPO_URL}>Open the StayOrGoAB GitHub repository</a></article>
@@ -55,7 +55,7 @@ export default function MethodPage() {
         <div>
           <div className="section-label mono">/ Public run summaries</div>
           <h2>Latest recorded runs</h2>
-          <p className="section-copy">Run summaries are short public records of completed site work. They describe the trigger, recorded time, and outcome without exposing private prompts, raw logs, or internal tool traces.</p>
+          <p className="section-copy">Run summaries are short public records of completed site work. They describe the trigger, recorded time, and outcome without exposing private prompts, raw logs, or internal tool traces. The newest entries record the latest Q1 alignment, source cleanup, and workflow refresh runs.</p>
         </div>
         <div className="status-readout">
           {ops.latestRuns.map((run) => (

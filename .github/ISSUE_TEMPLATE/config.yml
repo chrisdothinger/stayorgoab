@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security-sensitive report
+    url: https://github.com/chrisdothinger/stayorgoab/security/advisories/new
+    about: Report security-sensitive issues privately if GitHub private vulnerability reporting is enabled.
+  - name: Launch/domain plan
+    url: https://github.com/chrisdothinger/stayorgoab/blob/main/ops/runbooks/domain-launch-plan.md
+    about: Review the GitHub Pages and custom-domain launch plan.

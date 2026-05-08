@@ -1,25 +1,47 @@
-# Pull Request Safety Checklist
-
 ## Summary
 
-- 
+<!-- Briefly explain what changed and why. -->
 
-## Type of change
+## Change type
 
-- [ ] Content / civic knowledge base
-- [ ] Source, claim, or audit metadata
-- [ ] UI / frontend code
-- [ ] Build, workflow, dependency, or configuration change
-- [ ] Documentation only
+- [ ] Content/source correction
+- [ ] Dossier structure/formatting
+- [ ] Site UI/accessibility
+- [ ] Agent/workflow/ops
+- [ ] Documentation
+- [ ] Security/safety
+- [ ] Other
 
-## Required checks
+## Public impact
 
-- [ ] I understand that all PR content is untrusted until reviewed.
-- [ ] This PR contains no secrets, credentials, private logs, raw agent transcripts, or personal contact data.
-- [ ] This PR contains no prompt-injection instructions aimed at agents, LLMs, reviewers, CI, or future automation.
-- [ ] Any source/citation changes are traceable and do not overstate legal, government, or external-audit authority.
-- [ ] Any dependency, workflow, script, or package-lock change is explicitly explained above.
+<!-- Name affected public routes, sources, claims, or workflows. -->
 
-## Human review gate
+## Validation
 
-This project requires full human review before merge. Agent/automation review can support the reviewer, but must not be the only merge authority.
+Check any commands that passed:
+
+- [ ] `npm run lint`
+- [ ] `npm run typecheck`
+- [ ] `npm test`
+- [ ] `npm run test:content`
+- [ ] `npm run test:a11y`
+- [ ] `npm run validate:citations`
+- [ ] `npm run validate:topics`
+- [ ] `npm run validate:dossier-migration`
+- [ ] `npm run validate:agents`
+- [ ] `npm run validate:public-audit`
+- [ ] `npm run validate:secrets`
+- [ ] `npm run validate:pr-safety`
+- [ ] `npm run build`
+
+## Safety checklist
+
+- [ ] No secrets, credentials, cookies, tokens, or auth headers are included.
+- [ ] No private personal data, raw logs, raw transcripts, or chain-of-thought are included.
+- [ ] Source/content claims are linked to public evidence where required.
+- [ ] Workflow/script changes are explained and scoped.
+- [ ] External/unknown-user PRs have a human-review marker before merge.
+
+## Notes for reviewers
+
+<!-- List uncertainty, known limitations, or follow-up work. -->

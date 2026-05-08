@@ -19,7 +19,8 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'economy-fiscal',
   'federal-debt-assets',
   'tax-collection-revenue-agency',
-  'bankruptcy-insolvency-creditor-protection'
+  'bankruptcy-insolvency-creditor-protection',
+  'bureaucracy-governance'
 ] as const;
 
 export function hasMergedNeutralOverview(topicSlug: string) {

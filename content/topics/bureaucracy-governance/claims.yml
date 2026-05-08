@@ -1,34 +1,63 @@
 claims:
 - id: claim-bureaucracy-governance-001
   topic_slug: bureaucracy-governance
-  text: An independent Alberta would need institutions now handled partly or wholly by Canada, including foreign affairs,
-    customs, immigration, tax administration, defence, and financial regulation.
+  text: An independent Alberta would need national institutional capacity for functions
+    now handled partly or wholly by Canada, including tax, immigration, border, financial
+    regulation, emergency coordination, foreign affairs, defence-adjacent interfaces,
+    and federal-program administration.
   status: source_supported
   source_ids:
-  - scc-secession-reference
-  - clarity-act
+  - canada-revenue-agency
+  - ircc-main
+  - cbsa-main
+  - bank-act
+  - public-safety-canada-emergency-management
+  - global-affairs-canada-main
+  - national-defence-main
+  - statistics-canada-main
+  - employment-social-development-canada
   risk: high
 - id: claim-bureaucracy-governance-002
   topic_slug: bureaucracy-governance
-  text: 'The strongest pro case is institutional responsiveness: Alberta could build public institutions directly accountable
-    to Alberta voters.'
+  text: Some institutions could likely be phased or bridged through temporary service
+    arrangements, but critical public functions would need explicit day-one continuity
+    plans.
   status: inference
   source_ids: &id001
   - scc-secession-reference
   - clarity-act
   - alberta-budget-documents-2026
+  - canada-revenue-agency
+  - ircc-main
+  - cbsa-main
+  - osfi-who-we-regulate
+  - public-safety-canada-emergency-management
   risk: high
 - id: claim-bureaucracy-governance-003
   topic_slug: bureaucracy-governance
-  text: 'The strongest caution is operational risk: building national institutions is expensive, time-consuming, and difficult
-    during a political transition.'
+  text: Building national institutions would require legal authority, budgets, staff,
+    systems, records, recognition, and implementation timelines rather than only a
+    political mandate.
   status: inference
   source_ids: *id001
   risk: high
 - id: claim-bureaucracy-governance-004
   topic_slug: bureaucracy-governance
-  text: 'This topic remains uncertainty-labelled: Medium-high; institutional categories are knowable, but cost and timeline
-    are not settled.'
-  status: source_supported
-  source_ids: *id001
+  text: The current public source record identifies institutional categories and baseline
+    functions, but total cost, timeline, federal cooperation, and mature-state design
+    remain unresolved without a specific transition plan.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - alberta-budget-documents-2026
+  - canada-revenue-agency
+  - ircc-main
+  - cbsa-main
+  - bank-act
+  - public-safety-canada-emergency-management
+  - global-affairs-canada-main
+  - national-defence-main
+  - statistics-canada-main
+  - employment-social-development-canada
   risk: high

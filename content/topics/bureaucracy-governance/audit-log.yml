@@ -2,11 +2,25 @@ entries:
 - id: audit-bureaucracy-governance-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence
+    / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
+  - no-external-audit-wording
+  result: pass
+- id: audit-bureaucracy-governance-2026-05-07-q1-v3
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Migrated dossier to Q1/v3 overview-as-neutral baseline; rewrote Pro and
+    Anti as shorter debate briefs; retained Neutral as legacy compatibility synthesis;
+    refreshed institutional source pack.
+  checks:
+  - q1-overview-baseline
+  - source-support
+  - stance-balance
+  - uncertainty-labels
+  - citation-validation
   - no-external-audit-wording
   result: pass

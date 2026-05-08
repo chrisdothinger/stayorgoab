@@ -2,4 +2,10 @@ entries:
 - id: redebate-bureaucracy-governance-2026-05-04
   date: '2026-05-04'
   trigger: full-topic-expansion
-  summary: Public agent team generated report triad and argument map for current topic coverage.
+  summary: Public agent team generated report triad and argument map for current topic
+    coverage.
+- id: redebate-bureaucracy-governance-2026-05-07-q1-v3
+  date: '2026-05-07'
+  trigger: q1-v3-overview-migration
+  summary: Neutral synthesis moved into Overview; Pro and Anti narrowed to debate
+    briefs focused on institution-building capacity versus transition risk.

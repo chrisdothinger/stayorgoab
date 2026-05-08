@@ -17,6 +17,7 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'referendum-ballot-2026',
   'indigenous-rights-treaties',
   'economy-fiscal',
+  'economy-overall',
   'federal-debt-assets',
   'tax-collection-revenue-agency',
   'bankruptcy-insolvency-creditor-protection',

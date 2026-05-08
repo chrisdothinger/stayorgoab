@@ -2,11 +2,24 @@ entries:
 - id: audit-economy-overall-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
+  - no-external-audit-wording
+  result: pass
+- id: audit-economy-overall-2026-05-08
+  date: '2026-05-08'
+  agent: StayOrGoAB public agent team
+  summary: Migrated overall economy and U.S.-alignment dossier to Q1/v3 with neutral synthesis folded into Overview, shorter Pro/Anti debate briefs, updated source pack, and uncertainty wording around trade, energy, defence, sovereignty, market access, and institutions.
+  checks:
+  - source-support
+  - stance-balance
+  - claim-status-review
+  - uncertainty-labels
+  - citation-format
+  - q1-overview-neutral-contract
+  - legacy-neutral-compatibility
   - no-external-audit-wording
   result: pass

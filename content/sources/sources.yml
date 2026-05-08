@@ -166,6 +166,7 @@ sources:
   related_topic_slugs:
   - legal-process
   - economy-fiscal
+  - economy-overall
   - clarity-act
   - quebec-secession-reference
   - clear-question-majority
@@ -2573,6 +2574,7 @@ sources:
   related_topic_slugs:
   - borders-trade
   - economy-fiscal
+  - economy-overall
   - international-recognition
   archive_url: null
   content_hash: null
@@ -2594,6 +2596,7 @@ sources:
   related_topic_slugs:
   - borders-trade
   - economy-fiscal
+  - economy-overall
   - healthcare-portability-doctor-licensing
   archive_url: null
   content_hash: null
@@ -4747,6 +4750,7 @@ sources:
   related_topic_slugs:
   - bureaucracy-governance
   - military-security
+  - economy-overall
   archive_url: null
   content_hash: null
   last_checked_at: '2026-05-07'

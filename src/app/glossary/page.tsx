@@ -1,6 +1,12 @@
 import { loadRepositoryContent } from '@/lib/content';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Glossary' };
+export const metadata = pageMetadata({
+  title: 'Alberta independence glossary',
+  description: 'Plain-language glossary for Alberta referendum, independence, separation, secession, constitutional, and public-policy terms.',
+  pathname: '/glossary/',
+  keywords: ['Alberta independence glossary', 'Alberta referendum terms', 'secession terms']
+});
 
 export default function GlossaryPage() {
   const { glossary } = loadRepositoryContent();

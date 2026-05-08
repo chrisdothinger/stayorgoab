@@ -21,7 +21,8 @@
     "validate:dossier-migration": "tsx scripts/validate-dossier-migration.ts",
     "validate:agents": "tsx scripts/validate-agents.ts",
     "validate:secrets": "tsx scripts/validate-secrets.ts",
-    "validate:pr-safety": "tsx scripts/validate-pr-safety.ts"
+    "validate:pr-safety": "tsx scripts/validate-pr-safety.ts",
+    "validate:seo": "tsx scripts/validate-seo.ts"
   },
   "dependencies": {
     "@mdx-js/mdx": "^3.1.1",

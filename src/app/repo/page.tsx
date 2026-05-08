@@ -1,11 +1,14 @@
 import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Repository evidence',
-  description: 'Where StayOrGoAB public source records, claims, review records, and validators live.'
-};
+export const metadata = pageMetadata({
+  title: 'StayOrGoAB repository evidence',
+  description: 'Where StayOrGoAB Alberta independence source records, claims, review records, generated manifests, and validators live.',
+  pathname: '/repo/',
+  keywords: ['Alberta independence repository', 'Alberta referendum source records']
+});
 
 export default function RepoPage() {
   const content = loadRepositoryContent();

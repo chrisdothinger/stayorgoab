@@ -1,10 +1,13 @@
 import { SourceLibrary } from '@/components/SourceLibrary';
 import { loadRepositoryContent } from '@/lib/content';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Source library',
-  description: 'Search source records used by StayOrGoAB topic dossiers and claims.'
-};
+export const metadata = pageMetadata({
+  title: 'Alberta independence source library',
+  description: 'Search official, court, academic, media, advocacy, and institutional sources used by StayOrGoAB Alberta referendum, independence, and separation dossiers.',
+  pathname: '/sources/',
+  keywords: ['Alberta independence sources', 'Alberta separation evidence', 'Alberta referendum sources']
+});
 
 export default function SourcesPage() {
   const { sources, claims, topics } = loadRepositoryContent();

@@ -2,11 +2,14 @@ import Link from 'next/link';
 import { buildAuditManifest } from '@/lib/audit';
 import { loadRepositoryContent } from '@/lib/content';
 import { loadOpsSnapshot } from '@/lib/ops';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Review trail',
-  description: 'Public review records for StayOrGoAB source, claim, and dossier checks.'
-};
+export const metadata = pageMetadata({
+  title: 'StayOrGoAB review trail',
+  description: 'Public review records for StayOrGoAB Alberta independence source, claim, dossier, and audit checks.',
+  pathname: '/audit/',
+  keywords: ['Alberta independence audit trail', 'Alberta separation sources']
+});
 
 export default function AuditPage() {
   const content = loadRepositoryContent();

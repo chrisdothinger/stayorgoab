@@ -3,6 +3,7 @@ import { DossierHeader } from '@/components/DossierHeader';
 import { DossierNav } from '@/components/DossierNav';
 import { MarkdownText } from '@/components/MarkdownText';
 import { loadRepositoryContent } from '@/lib/content';
+import { absoluteUrl, topicKeywords, topicMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
 
@@ -13,10 +14,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
-  return {
-    title: topic ? `${topic.title} — overview` : 'Question overview',
-    description: topic?.summary ?? 'A source-backed StayOrGoAB question overview.'
-  };
+  return topicMetadata(topic, 'overview');
 }
 
 export default async function TopicPage({ params }: { params: Promise<{ topicSlug: string }> }) {
@@ -28,9 +26,28 @@ export default async function TopicPage({ params }: { params: Promise<{ topicSlu
   if (!files.index) notFound();
 
   const isFullDossier = topic.state === 'full_dossier';
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: topic.title,
+    description: topic.summary,
+    url: absoluteUrl(`/questions/${topic.slug}/`),
+    inLanguage: 'en-CA',
+    keywords: topicKeywords(topic).join(', '),
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'StayOrGoAB',
+      url: absoluteUrl('/')
+    },
+    about: ['Alberta referendum', 'Alberta independence', 'Alberta separation']
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <DossierHeader topic={topic} sourceFile={`content/topics/${topic.slug}/index.mdx`} />
       {!isFullDossier ? (
         <section className="section">

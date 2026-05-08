@@ -1,34 +1,40 @@
 claims:
 - id: claim-public-services-001
   topic_slug: public-services
-  text: Health care, education, benefits, and other services would depend on staffing, legislation, funding, data systems,
-    and transition capacity.
-  status: source_supported
-  source_ids:
-  - alberta-budget-documents-2026
-  - alberta-budget-highlights-2026
-  risk: high
-- id: claim-public-services-002
-  topic_slug: public-services
-  text: The strongest pro case is local control over program design, tax choices, and spending priorities without federal
-    conditions.
+  text: Public-service continuity would depend on funding, staffing, legislation,
+    data systems, and transition capacity rather than a single yes-or-no decision.
   status: inference
-  source_ids: &id001
+  source_ids:
   - alberta-budget-documents-2026
   - alberta-budget-highlights-2026
   - scc-secession-reference
   risk: high
+- id: claim-public-services-002
+  topic_slug: public-services
+  text: Alberta already administers many front-line services, so some continuity work
+    would build on existing provincial institutions rather than starting from zero.
+  status: inference
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  risk: medium
 - id: claim-public-services-003
   topic_slug: public-services
-  text: 'The strongest caution is service continuity risk: duplicated administration, labour disruption, fiscal pressure,
-    and transition mistakes would affect households quickly.'
+  text: The main first-year risk is implementation disruption across payments, labour,
+    records, eligibility rules, federal interfaces, and legal authority.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - scc-secession-reference
   risk: high
 - id: claim-public-services-004
   topic_slug: public-services
-  text: 'This topic remains uncertainty-labelled: High; direct household effects depend on transition planning and fiscal
-    capacity.'
-  status: source_supported
-  source_ids: *id001
+  text: A useful public test would be a service-by-service continuity plan naming
+    owners, funding, authority, workforce, data dependencies, and fallback plans.
+  status: inference
+  source_ids:
+  - alberta-budget-documents-2026
+  - alberta-budget-highlights-2026
+  - scc-secession-reference
   risk: high

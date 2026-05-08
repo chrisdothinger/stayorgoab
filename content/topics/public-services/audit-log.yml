@@ -1,12 +1,16 @@
 entries:
-- id: audit-public-services-2026-05-04
-  date: '2026-05-04'
-  agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+- id: audit-public-services-2026-05-08
+  date: '2026-05-08'
+  agent: Armin
+  summary: Migrated public-services to Q1/v3 with Overview as the neutral synthesis,
+    shorter Pro/Anti debate briefs, and legacy Neutral compatibility route.
   checks:
+  - q1-v3-overview-neutral
   - source-support
   - stance-balance
   - uncertainty-labels
-  - no-external-audit-wording
+  - legacy-neutral-compatibility
   result: pass
+  risks: Public-service continuity, federal interfaces, data systems, workforce capacity,
+    labour arrangements, and fiscal assumptions remain high-uncertainty without service-by-service
+    transition plans.

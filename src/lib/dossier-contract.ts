@@ -24,6 +24,7 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'international-recognition',
   'military-security',
   'privacy-data-federal-ids',
+  'public-services',
   'elections-law-political-parties-campaign-finance',
   'postal-telecom-broadcasting',
   'statistics-census-public-data'

@@ -1,12 +1,9 @@
 claims:
 - id: claim-privacy-data-federal-ids-001
   topic_slug: privacy-data-federal-ids
-  text: Current sources show federal SIN administration and federal/provincial privacy-law
-    baselines; they do not settle whether an independent Alberta would keep SINs for
-    transitional purposes, issue new identifiers, inherit federal records, or negotiate
-    cross-border data-sharing arrangements.
+  text: Current sources show federal SIN administration and federal/provincial privacy-law baselines; they do not settle whether an independent Alberta would keep SINs for transitional purposes, issue new identifiers, inherit federal records, or negotiate cross-border data-sharing arrangements.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - service-canada-sin
   - privacy-act
   - pipeda
@@ -14,28 +11,31 @@ claims:
   risk: medium
 - id: claim-privacy-data-federal-ids-002
   topic_slug: privacy-data-federal-ids
-  text: The strongest pro-independence case is that Alberta could write clear privacy
-    and identity-continuity rules, protect existing service access during transition,
-    and design a provincial digital-government model with stronger local accountability
-    if it is backed by statute and implementation detail.
+  text: Alberta could design its own privacy and identity-continuity framework, but that conclusion depends on legislation, implementation capacity, and negotiated arrangements with Canada.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - service-canada-sin
+  - privacy-act
+  - pipeda
+  - alberta-pipa-overview
   risk: medium
 - id: claim-privacy-data-federal-ids-003
   topic_slug: privacy-data-federal-ids
-  text: The strongest caution is that identity systems touch taxes, payroll, benefits,
-    banking, immigration, health records, education, law enforcement, and private-sector
-    compliance; confusion over numbers, data custody, consent, and jurisdiction could
-    affect ordinary services quickly.
+  text: Identity-system confusion could affect payroll, tax filing, benefits, banking, public services, private-sector privacy compliance, and fraud prevention.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - service-canada-sin
+  - privacy-act
+  - pipeda
+  - alberta-pipa-overview
   risk: high
 - id: claim-privacy-data-federal-ids-004
   topic_slug: privacy-data-federal-ids
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on Canada-Alberta
-    agreements, future Alberta privacy statutes, records-transfer rules, public-sector
-    system design, private-sector compliance, benefits and tax administration, banking
-    requirements, and cybersecurity capacity.'
-  status: source_supported
-  source_ids: *id001
-  risk: medium
+  text: This topic remains high-uncertainty because outcomes depend on Canada-Alberta agreements, future Alberta privacy statutes, records-transfer rules, public-sector system design, private-sector compliance, benefits and tax administration, banking requirements, and cybersecurity capacity.
+  status: inference
+  source_ids:
+  - service-canada-sin
+  - privacy-act
+  - pipeda
+  - alberta-pipa-overview
+  risk: high

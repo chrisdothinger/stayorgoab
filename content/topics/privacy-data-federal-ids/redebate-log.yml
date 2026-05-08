@@ -1,8 +1,15 @@
 entries:
 - id: redebate-privacy-data-federal-ids-2026-05-05
   date: '2026-05-05'
-  summary: Initial public pro/anti/neutral dossier debate pass completed for this
-    high-salience Phase 2/3 topic.
+  summary: Initial public pro/anti/neutral dossier debate pass completed for this high-salience Phase 2/3 topic.
+  stances:
+  - pro_independence
+  - anti_independence_or_pro_federation
+  - neutral_mediator
+  result: complete
+- id: redebate-privacy-data-federal-ids-2026-05-07
+  date: '2026-05-07'
+  summary: Reframed debate for Q1/v3 around practical continuity for SINs, records transfer, privacy jurisdiction, employer/bank guidance, and cybersecurity controls.
   stances:
   - pro_independence
   - anti_independence_or_pro_federation

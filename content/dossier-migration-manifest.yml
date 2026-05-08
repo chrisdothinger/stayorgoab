@@ -304,11 +304,11 @@ topics:
     States, and what would that mean for trade, defence, energy, and sovereignty?
   category: Foreign affairs, defence, and recognition
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-07-energy-resources-economy
   migration_priority: flagship
   score_total: 24
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -323,6 +323,11 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated: '2026-05-08'
+  last_migrated_pr: '#67'
+  validation_notes: Q1/v3 migration folds neutral synthesis into Overview and frames
+    U.S. alignment as a conditional economic strategy requiring trade, energy, defence,
+    sovereignty, fiscal, and institution-continuity proof.
 - slug: equalization
   public_question: How much, if anything, would Albertans save from ending federal
     equalization and other transfers?

@@ -26,6 +26,8 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES: "true"
+          NEXT_PUBLIC_SITE_URL: "https://stayorgoab.ca"
+          SITE_BASE_PATH: ""
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

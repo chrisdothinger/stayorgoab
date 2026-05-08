@@ -1,4 +1,7 @@
 releases:
+  - id: custom-domain-launch-prep
+    date: "2026-05-08"
+    summary: "Prepared GitHub Pages deployment for the stayorgoab.ca custom domain."
   - id: agentic-workflow-refresh
     date: "2026-05-08"
     summary: "Refreshed public agent workflow records, audit coverage, run history, and launch-readiness guardrails."

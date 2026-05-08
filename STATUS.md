@@ -22,7 +22,7 @@ Spec target primary domain: `stayorgoab.ca`
 
 Spec target secondary domain: `stayorgoab.ai`
 
-Domain mapping and hosting are not executed yet. Current work is local/repository implementation only.
+Domain mapping and hosting are in progress. `stayorgoab.ca` has been purchased/configured in Cloudflare by Chris; the repository now prepares GitHub Pages for the custom domain while DNS/Pages certificate provisioning completes.
 
 ## Current implementation goals
 

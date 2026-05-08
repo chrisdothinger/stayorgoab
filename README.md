@@ -7,12 +7,12 @@ The project is built in public so readers can inspect the content model, source 
 ## Project status
 
 - **Launch target:** `https://stayorgoab.ca`
-- **Current GitHub Pages preview:** `https://chrisdothinger.github.io/stayorgoab/`
+- **Fallback GitHub Pages preview:** `https://chrisdothinger.github.io/stayorgoab/`
 - **Primary repository:** `https://github.com/chrisdothinger/stayorgoab`
 - **Canonical dossier standard:** Q1 / `legal-process`
-- **Current hosting path:** static export through GitHub Pages
+- **Current hosting path:** static export through GitHub Pages with a custom-domain launch in progress
 
-The production domain is not live yet. Domain setup is tracked in [`ops/runbooks/domain-launch-plan.md`](ops/runbooks/domain-launch-plan.md).
+Domain setup is tracked in [`ops/runbooks/domain-launch-plan.md`](ops/runbooks/domain-launch-plan.md).
 
 ## What the site publishes
 

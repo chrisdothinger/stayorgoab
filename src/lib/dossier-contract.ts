@@ -26,6 +26,7 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'privacy-data-federal-ids',
   'public-services',
   'student-loans-universities-research',
+  'pharmaceutical-drug-approvals-supply',
   'elections-law-political-parties-campaign-finance',
   'postal-telecom-broadcasting',
   'statistics-census-public-data'

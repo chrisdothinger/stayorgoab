@@ -1,13 +1,16 @@
 entries:
-- id: audit-pharmaceutical-drug-approvals-supply-2026-05-05
-  date: '2026-05-05'
-  agent: StayOrGoAB public agent team
-  summary: Added full topic dossier with neutral, pro-independence, and anti-independence
-    / pro-federation reports using checked source records and uncertainty labels.
+- id: audit-pharmaceutical-drug-approvals-supply-2026-05-08
+  date: '2026-05-08'
+  agent: Armin
+  summary: Migrated pharmaceutical-drug-approvals-supply to Q1/v3 with Overview as the neutral
+    synthesis, shorter Pro/Anti debate briefs, and legacy Neutral compatibility route.
   checks:
+  - q1-v3-overview-neutral
   - source-support
   - stance-balance
   - uncertainty-labels
-  - citation-format
-  - no-external-audit-wording
+  - legacy-neutral-compatibility
   result: pass
+  risks: Drug approval recognition, recall feeds, adverse-event reporting, compliance/enforcement
+    capacity, import rules, pharmacy guidance, public drug-plan continuity, and supply-chain contracts
+    remain high-uncertainty without written transition terms.

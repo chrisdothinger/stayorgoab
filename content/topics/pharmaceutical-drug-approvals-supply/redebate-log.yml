@@ -1,10 +1,7 @@
 entries:
-- id: redebate-pharmaceutical-drug-approvals-supply-2026-05-05
-  date: '2026-05-05'
-  summary: Initial public pro/anti/neutral dossier debate pass completed for this
-    high-salience Phase 2/3 topic.
-  stances:
-  - pro_independence
-  - anti_independence_or_pro_federation
-  - neutral_mediator
-  result: complete
+- id: redebate-pharmaceutical-drug-approvals-supply-2026-05-08
+  date: '2026-05-08'
+  trigger: q1-v3-migration
+  summary: 'Reframed the debate around medicine-safety continuity: recognition and staged local
+    control versus high-consequence risk in approvals, recalls, safety surveillance, enforcement,
+    imports, and supply chains.'

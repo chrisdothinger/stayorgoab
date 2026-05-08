@@ -1,41 +1,47 @@
 claims:
 - id: claim-pharmaceutical-drug-approvals-supply-001
   topic_slug: pharmaceutical-drug-approvals-supply
-  text: Current sources show federal legal and regulatory baselines for drug approval,
-    safety, compliance, recalls, and health-product information; they do not settle
-    whether an independent Alberta would rely on Canadian approvals, create its own
-    regulator, use mutual recognition, or face medicine-supply disruptions.
+  text: Current sources establish Canadian legal and regulatory baselines for drug approvals,
+    safety alerts, compliance, enforcement, recalls, and health-product information, but not Alberta
+    independence transition terms.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - health-canada-drugs-health-products
   - food-and-drugs-act
   - canada-recalls-safety-alerts
   - health-canada-compliance-enforcement
-  risk: medium
+  risk: high
 - id: claim-pharmaceutical-drug-approvals-supply-002
   topic_slug: pharmaceutical-drug-approvals-supply
-  text: The strongest pro-independence case is that Alberta could negotiate recognition
-    of existing drug approvals, preserve pharmacy supply during transition, and eventually
-    design faster or more locally responsive procurement and regulatory pathways where
-    evidence supports them.
+  text: A credible transition would need explicit arrangements for recognizing approvals, labelling,
+    recalls, adverse-event reporting, import rules, pharmacy guidance, manufacturer guidance,
+    and supply continuity.
   status: inference
-  source_ids: *id001
-  risk: medium
+  source_ids:
+  - health-canada-drugs-health-products
+  - food-and-drugs-act
+  - canada-recalls-safety-alerts
+  - health-canada-compliance-enforcement
+  risk: high
 - id: claim-pharmaceutical-drug-approvals-supply-003
   topic_slug: pharmaceutical-drug-approvals-supply
-  text: 'The strongest caution is that drug safety is not just purchasing: approvals,
-    labelling, inspections, recalls, adverse-event monitoring, imports, shortages,
-    and cross-border supply chains require trusted legal authority and regulator capacity
-    before patients can rely on continuity.'
+  text: The pro-independence case is strongest if Alberta can preserve current medicine access
+    through recognition and supply bridges before attempting local regulatory redesign.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - health-canada-drugs-health-products
+  - food-and-drugs-act
+  - canada-recalls-safety-alerts
   risk: high
 - id: claim-pharmaceutical-drug-approvals-supply-004
   topic_slug: pharmaceutical-drug-approvals-supply
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on Health
-    Canada arrangements, future Alberta regulator design, supply contracts, import
-    permissions, pharmacy systems, federal-provincial health programs, manufacturers,
-    wholesalers, and recall-data continuity.'
-  status: source_supported
-  source_ids: *id001
-  risk: medium
+  text: The anti-independence caution is strongest because medicine safety requires trusted legal
+    authority, regulator capacity, recall channels, and supply-chain clarity before patients can
+    rely on continuity.
+  status: inference
+  source_ids:
+  - health-canada-drugs-health-products
+  - food-and-drugs-act
+  - canada-recalls-safety-alerts
+  - health-canada-compliance-enforcement
+  risk: high

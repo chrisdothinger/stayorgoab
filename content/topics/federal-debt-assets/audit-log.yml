@@ -2,11 +2,21 @@ entries:
 - id: audit-federal-debt-assets-2026-05-04
   date: '2026-05-04'
   agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing
-    source records and uncertainty labels.
+  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using existing source records and uncertainty labels.
   checks:
   - source-support
   - stance-balance
   - uncertainty-labels
   - no-external-audit-wording
+  result: pass
+- id: audit-federal-debt-assets-2026-05-07-q1
+  date: '2026-05-07'
+  agent: StayOrGoAB public agent team
+  summary: Migrated the dossier to the Q1/v3 overview-as-neutral baseline, added federal public-accounting sources, and preserved high uncertainty around any debt or asset allocation formula.
+  checks:
+  - q1-heading-contract
+  - overview-neutral-merge
+  - citation-source-alignment
+  - no-fixed-debt-share-claim
+  - source-refresh
   result: pass

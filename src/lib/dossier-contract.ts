@@ -16,7 +16,8 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'clear-question-majority',
   'referendum-ballot-2026',
   'indigenous-rights-treaties',
-  'economy-fiscal'
+  'economy-fiscal',
+  'federal-debt-assets'
 ] as const;
 
 export function hasMergedNeutralOverview(topicSlug: string) {

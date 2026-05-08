@@ -1,6 +1,12 @@
 import { loadOpsSnapshot } from '@/lib/ops';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Agents' };
+export const metadata = pageMetadata({
+  title: 'StayOrGoAB public agent team',
+  description: 'Public workflow identities and validation gates behind StayOrGoAB Alberta independence and referendum research.',
+  pathname: '/agents/',
+  keywords: ['Alberta independence AI research', 'civic research agents']
+});
 
 export default function AgentsPage() {
   const ops = loadOpsSnapshot();

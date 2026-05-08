@@ -1,8 +1,35 @@
 import Link from 'next/link';
+import { absoluteUrl, pageMetadata } from '@/lib/seo';
+
+export const metadata = pageMetadata({
+  title: 'StayOrGoAB — Alberta referendum, independence, and separation answers',
+  description: 'Source-backed, non-partisan answers on Alberta independence, Alberta separation, referendum mechanics, legal process, economic questions, claims, and evidence.',
+  pathname: '/',
+  keywords: ['Alberta referendum 2026', 'Alberta independence referendum', 'Alberta separation referendum']
+});
 
 export default function HomePage() {
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'StayOrGoAB',
+    url: absoluteUrl('/'),
+    description: 'Source-backed, non-partisan answers on Alberta referendum, independence, and separation questions.',
+    inLanguage: 'en-CA',
+    about: [
+      'Alberta referendum',
+      'Alberta independence',
+      'Alberta separation',
+      'Canadian secession law'
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       <section className="hero landing-hero">
         <div>
           <div className="section-label mono">/ Source-backed answers on Alberta independence</div>

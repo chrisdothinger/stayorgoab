@@ -1,9 +1,12 @@
 import { loadOpsSnapshot } from '@/lib/ops';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'How this works',
-  description: 'How StayOrGoAB builds, checks, and publishes source-backed Alberta independence dossiers.'
-};
+export const metadata = pageMetadata({
+  title: 'How StayOrGoAB works',
+  description: 'How StayOrGoAB builds, checks, and publishes source-backed Alberta independence, separation, and referendum dossiers.',
+  pathname: '/method/',
+  keywords: ['Alberta independence research method', 'Alberta referendum evidence']
+});
 
 const GITHUB_REPO_URL = 'https://github.com/chrisdothinger/stayorgoab';
 

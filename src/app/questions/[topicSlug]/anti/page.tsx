@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { ReportPage } from '@/components/ReportPage';
 import { loadRepositoryContent } from '@/lib/content';
+import { topicMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -13,10 +14,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
-  return {
-    title: topic ? `${topic.title} — anti brief` : 'Anti brief',
-    description: topic ? `The strongest fair anti-independence or pro-federation argument for: ${topic.title}` : 'A source-backed anti-independence debate brief.'
-  };
+  return topicMetadata(topic, 'anti');
 }
 
 export default async function AntiReportPage({ params }: { params: Promise<{ topicSlug: string }> }) {

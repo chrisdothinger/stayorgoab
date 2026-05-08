@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { PageTrust } from '@/components/PageTrust';
 import { loadRepositoryContent } from '@/lib/content';
+import { sourceMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -11,10 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ sourceSlug: string }> }) {
   const { sourceSlug } = await params;
   const source = loadRepositoryContent().sources.find((item) => (item.slug ?? item.id) === sourceSlug || item.id === sourceSlug);
-  return {
-    title: source ? `${source.title} — source record` : 'Source record',
-    description: source?.summary ?? 'A StayOrGoAB source record.'
-  };
+  return sourceMetadata(source);
 }
 
 function formatValue(value: string) {

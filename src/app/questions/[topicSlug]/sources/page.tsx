@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { DossierNav } from '@/components/DossierNav';
 import { loadRepositoryContent } from '@/lib/content';
+import { topicMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -11,10 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
-  return {
-    title: topic ? `${topic.title} — sources` : 'Topic sources',
-    description: topic ? `Source records used in the StayOrGoAB dossier for: ${topic.title}` : 'Source records used in a StayOrGoAB dossier.'
-  };
+  return topicMetadata(topic, 'sources');
 }
 
 export default async function TopicSourcesPage({ params }: { params: Promise<{ topicSlug: string }> }) {

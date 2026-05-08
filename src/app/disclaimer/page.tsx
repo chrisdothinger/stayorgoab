@@ -1,7 +1,13 @@
 import { MarkdownText } from '@/components/MarkdownText';
 import { loadRepositoryContent } from '@/lib/content';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Disclaimer' };
+export const metadata = pageMetadata({
+  title: 'StayOrGoAB disclaimer',
+  description: 'Disclaimer for StayOrGoAB: independent, non-partisan Alberta referendum and independence research; not legal, financial, tax, voting, or professional advice.',
+  pathname: '/disclaimer/',
+  keywords: ['Alberta referendum disclaimer', 'Alberta independence research disclaimer']
+});
 
 export default function DisclaimerPage() {
   loadRepositoryContent();

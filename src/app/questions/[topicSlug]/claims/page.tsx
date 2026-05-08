@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { DossierNav } from '@/components/DossierNav';
 import { loadRepositoryContent } from '@/lib/content';
+import { topicMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -11,10 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
-  return {
-    title: topic ? `${topic.title} — claims and evidence` : 'Claims and evidence',
-    description: topic ? `Claims and source records supporting the StayOrGoAB dossier for: ${topic.title}` : 'Claims and source records supporting a StayOrGoAB dossier.'
-  };
+  return topicMetadata(topic, 'claims');
 }
 
 function formatStatus(status: string) {

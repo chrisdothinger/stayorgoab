@@ -4,6 +4,7 @@ import { DossierNav } from '@/components/DossierNav';
 import { ReportPage } from '@/components/ReportPage';
 import { hasMergedNeutralOverview } from '@/lib/dossier-contract';
 import { loadRepositoryContent } from '@/lib/content';
+import { topicMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -16,10 +17,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ topicSlug: string }> }) {
   const { topicSlug } = await params;
   const topic = loadRepositoryContent().topics.find((item) => item.slug === topicSlug);
-  return {
-    title: topic ? `${topic.title} — neutral synthesis` : 'Neutral synthesis',
-    description: topic ? `Neutral synthesis status for the StayOrGoAB dossier: ${topic.title}` : 'Neutral synthesis status for a StayOrGoAB dossier.'
-  };
+  return topicMetadata(topic, 'neutral');
 }
 
 export default async function NeutralReportPage({ params }: { params: Promise<{ topicSlug: string }> }) {

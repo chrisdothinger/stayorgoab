@@ -1,6 +1,4 @@
 name: discover-sources
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
   workflow_dispatch:
 permissions:
@@ -9,5 +7,5 @@ jobs:
   discover:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: echo "Source discovery stub. Hermes agents should commit source record changes through pull requests or direct authorized commits."

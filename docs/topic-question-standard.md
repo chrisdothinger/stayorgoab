@@ -97,7 +97,7 @@ Before adding or refreshing a topic:
 5. **Anti-source lane** — identify why a serious anti-independence/pro-federation argument needs this question and what evidence it would use.
 6. **Mediator-dedup lane** — decide whether the question is unique, too broad, too narrow, or better merged.
 7. **Registry update** — update `content/topic-question-registry.yml` before writing or migrating the dossier.
-8. **Dossier migration** — only then update the dossier to v3.1 overview-neutral + evidence-chip citations.
+8. **Dossier migration** — only then update the dossier to the Q1 `legal-process` v3.1 standard: overview-as-neutral, exact Q1 overview/pro/anti section hierarchy, compact evidence-chip citations, and a normalized bottom `## Sources` block.
 
 ## Deduplication rules
 

@@ -2,6 +2,12 @@
 
 This is the standard framework for new and substantially refreshed StayOrGoAB topic dossiers. It is flexible by design: legal, fiscal, health, policing, Indigenous rights, currency, environment, and service-delivery topics will not all need identical emphasis, but every dossier should help readers understand the strongest fair arguments, the evidence behind them, and what would change the analysis.
 
+Q1 `legal-process` is the canonical baseline for future dossiers. Use its section hierarchy and formatting as the default contract for every new, migrated, or substantially refreshed dossier:
+
+- Overview: `## Short answer`, `## What this means for Albertans`, `## What each side gets right`, `## What would have to be decided`, `## What survives both arguments`, `## Sources`.
+- Pro/anti: `## Bottom line`, `## The case in # pillars`, `## Main weakness`, `## Sources`.
+- Pro/anti pillar arguments must be numbered `###` subheads under the pillar section; do not add extra public H3 sections outside that block.
+
 ## Core product promise
 
 A reader should finish a dossier able to say:

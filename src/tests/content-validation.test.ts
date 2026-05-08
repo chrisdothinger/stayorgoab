@@ -201,12 +201,28 @@ describe('content validation', () => {
 
   it('documents and pilots the reader-first dossier writing contract on question 1', () => {
     const rubricPath = path.join(process.cwd(), 'agents/rubrics/reader-first-dossier-writing.md');
+    const debateRubricPath = path.join(process.cwd(), 'agents/rubrics/dossier-debate-brief-framework.md');
+    const architecturePath = path.join(process.cwd(), 'docs/dossier-architecture-v3.md');
+    const proPromptPath = path.join(process.cwd(), 'agents/prompts/pro-report.md');
+    const antiPromptPath = path.join(process.cwd(), 'agents/prompts/anti-report.md');
     expect(fs.existsSync(rubricPath)).toBe(true);
 
     const rubric = fs.readFileSync(rubricPath, 'utf8');
+    const standardDocs = [
+      ['reader rubric', rubric],
+      ['debate rubric', fs.readFileSync(debateRubricPath, 'utf8')],
+      ['architecture', fs.readFileSync(architecturePath, 'utf8')],
+      ['pro prompt', fs.readFileSync(proPromptPath, 'utf8')],
+      ['anti prompt', fs.readFileSync(antiPromptPath, 'utf8')]
+    ];
     expect(rubric).toContain('Plain-English answer first');
     expect(rubric).toContain('The agents do the critical thinking');
     expect(rubric).toContain('Do not reduce citation discipline');
+    for (const [name, body] of standardDocs) {
+      expect(body, `${name} must name Q1 as the future dossier standard`).toContain('Q1 `legal-process`');
+      expect(body, `${name} must name the exact pro/anti baseline`).toContain('`## Bottom line`');
+      expect(body, `${name} must name the exact pro/anti baseline`).toContain('`## Main weakness`');
+    }
 
     const topicDir = path.join(process.cwd(), 'content/topics/legal-process');
     const overview = fs.readFileSync(path.join(topicDir, 'index.mdx'), 'utf8');

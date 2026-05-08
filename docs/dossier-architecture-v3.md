@@ -2,6 +2,8 @@
 
 Status: current contract for refreshed full dossiers.
 
+Q1 `legal-process` is the canonical baseline for every new, migrated, or substantially refreshed dossier. If a future dossier does not match Q1's section hierarchy and source-list formatting, treat it as incomplete even if the sources are strong. The pro/anti baseline is `## Bottom line`, `## The case in # pillars`, `## Main weakness`, and `## Sources`.
+
 ## Purpose
 
 V3.1 separates the public reader layer from the audit layer and removes a reader-path duplication found in the v3 pilot.

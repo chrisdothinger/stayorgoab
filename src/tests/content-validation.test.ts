@@ -106,13 +106,23 @@ describe('content validation', () => {
       const topicDir = path.join(process.cwd(), 'content/topics', slug);
       const overview = fs.readFileSync(path.join(topicDir, 'index.mdx'), 'utf8');
       if (JSON.stringify(h2s(overview)) !== JSON.stringify(expectedOverview)) offenders.push(`${slug}:index:${h2s(overview).join('|')}`);
+      const overviewH3s = Array.from(overview.matchAll(/^###\s+(.+?)\s*$/gm), (match) => match[1]);
+      if (overviewH3s.length > 0) offenders.push(`${slug}:index:h3:${overviewH3s.join('|')}`);
       const neutral = fs.readFileSync(path.join(topicDir, 'neutral.mdx'), 'utf8');
       if (JSON.stringify(h2s(neutral)) !== JSON.stringify(expectedNeutral)) offenders.push(`${slug}:neutral:${h2s(neutral).join('|')}`);
       for (const fileName of ['pro.mdx', 'anti.mdx']) {
         const body = fs.readFileSync(path.join(topicDir, fileName), 'utf8');
-        const normalized = h2s(body).map((heading) => heading.replace(/^The case in \d+ pillars$/, 'The case in N pillars'));
+        const headings = h2s(body);
+        const normalized = headings.map((heading) => heading.replace(/^The case in \d+ pillars$/, 'The case in N pillars'));
         const expected = ['Bottom line', 'The case in N pillars', 'Main weakness', 'Sources'];
-        if (JSON.stringify(normalized) !== JSON.stringify(expected)) offenders.push(`${slug}:${fileName}:${h2s(body).join('|')}`);
+        if (JSON.stringify(normalized) !== JSON.stringify(expected)) offenders.push(`${slug}:${fileName}:${headings.join('|')}`);
+        const pillarHeading = headings[1] ?? '';
+        const declaredPillarCount = Number(pillarHeading.match(/^The case in (\d+) pillars$/)?.[1]);
+        const h3s = Array.from(body.matchAll(/^###\s+(.+?)\s*$/gm), (match) => match[1]);
+        const pillarH3s = h3s.filter((heading) => /^\d+\.\s+/.test(heading));
+        if (!Number.isFinite(declaredPillarCount) || pillarH3s.length !== declaredPillarCount || h3s.length !== pillarH3s.length) {
+          offenders.push(`${slug}:${fileName}:h3:${h3s.join('|') || 'none'}`);
+        }
       }
     }
     expect(offenders).toEqual([]);

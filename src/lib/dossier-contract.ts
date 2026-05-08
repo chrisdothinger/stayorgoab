@@ -34,7 +34,25 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'abortion-reproductive-health-rights',
   'elections-law-political-parties-campaign-finance',
   'postal-telecom-broadcasting',
-  'statistics-census-public-data'
+  'statistics-census-public-data',
+  'borders-currency-citizenship',
+  'indigenous-treaties',
+  'borders-trade',
+  'energy-environment',
+  'immigration-passports-mobility',
+  'courts-criminal-law',
+  'agriculture-food-inspection-market-access',
+  'national-parks-public-lands',
+  'air-transport-aviation-safety',
+  'water-rights-rivers',
+  'emergency-management-disaster-aid',
+  'rcmp-provincial-policing',
+  'charter-rights-continuity',
+  'firearms-laws-licensing',
+  'healthcare-portability-doctor-licensing',
+  'border-enforcement-customs',
+  'environmental-assessment-pipeline-approvals',
+  'federal-prisons-corrections-parole',
 ] as const;
 
 export function hasMergedNeutralOverview(topicSlug: string) {

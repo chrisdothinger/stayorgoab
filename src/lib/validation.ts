@@ -20,6 +20,16 @@ const SOURCE_STATUSES = new Set(['active', 'archived', 'superseded', 'broken', '
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
+function extractSourceAccessDates(body: string): Array<{ sourceId: string; accessedAt: string }> {
+  const sourceSection = body.split(/\n## Sources\b/i)[1] ?? '';
+  const entries: Array<{ sourceId: string; accessedAt: string }> = [];
+  const sourceLinePattern = /^(?=.*\baccessed\s+(\d{4}-\d{2}-\d{2}))(?=.*Source ID:\s*`([^`]+)`).*$/gim;
+  for (const match of Array.from(sourceSection.matchAll(sourceLinePattern))) {
+    entries.push({ sourceId: match[2], accessedAt: match[1] });
+  }
+  return entries;
+}
+
 function findForbiddenFields(value: unknown, found = new Set<string>()): Set<string> {
   if (Array.isArray(value)) {
     value.forEach((item) => findForbiddenFields(item, found));
@@ -36,11 +46,12 @@ export function validateContentModel(content: RepositoryContent): ValidationResu
   const errors: string[] = [];
   const topicSlugs = new Set<string>();
   const sourceIds = new Set(content.sources.map((source) => source.id));
+  const sourcesById = new Map(content.sources.map((source) => [source.id, source]));
   const seenSourceIds = new Set<string>();
   const seenSourceSlugs = new Set<string>();
   const claimIds = new Set<string>();
 
-  for (const forbidden of findForbiddenFields(content.rawRecords)) {
+  for (const forbidden of Array.from(findForbiddenFields(content.rawRecords))) {
     errors.push(`Forbidden human review field found: ${forbidden}.`);
   }
 
@@ -75,6 +86,17 @@ export function validateContentModel(content: RepositoryContent): ValidationResu
 
     for (const sourceId of files?.sourceIds ?? []) {
       if (!sourceIds.has(sourceId)) errors.push(`Topic ${topic.slug} references undefined source ${sourceId}.`);
+    }
+    for (const [kind, report] of Object.entries(files?.reports ?? {})) {
+      if (!report) continue;
+      for (const entry of extractSourceAccessDates(report.body)) {
+        const source = sourcesById.get(entry.sourceId);
+        if (source?.accessed_at && source.accessed_at !== entry.accessedAt) {
+          errors.push(
+            `Topic ${topic.slug} ${kind} report lists source ${entry.sourceId} accessed ${entry.accessedAt}, but canonical source accessed_at is ${source.accessed_at}.`
+          );
+        }
+      }
     }
   }
 

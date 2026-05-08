@@ -1,12 +1,9 @@
 claims:
 - id: claim-bankruptcy-insolvency-creditor-protection-001
   topic_slug: bankruptcy-insolvency-creditor-protection
-  text: Current sources show federal bankruptcy, insolvency, consumer-proposal, and
-    corporate restructuring baselines administered through federal law and institutions;
-    they do not settle what would happen to active Alberta files, trustee licences,
-    creditor priorities, stays of proceedings, or cross-border recognition after independence.
+  text: Current sources show federal bankruptcy, insolvency, consumer-proposal, and corporate restructuring baselines administered through federal law and institutions; they do not settle what would happen to active Alberta files, trustee licences, creditor priorities, stays of proceedings, or cross-border recognition after independence.
   status: source_supported
-  source_ids: &id001
+  source_ids:
   - office-superintendent-bankruptcy
   - bankruptcy-insolvency-act
   - companies-creditors-arrangement-act
@@ -14,28 +11,31 @@ claims:
   risk: medium
 - id: claim-bankruptcy-insolvency-creditor-protection-002
   topic_slug: bankruptcy-insolvency-creditor-protection
-  text: Alberta could build an insolvency regime tailored to its economy, preserve
-    active files by transitional legislation, and negotiate mutual recognition with
-    Canada so households and firms have continuity while local lawmakers adjust debtor-creditor
-    policy.
+  text: Alberta could build an insolvency regime tailored to its economy, preserve active files by transitional legislation, and negotiate mutual recognition with Canada so households and firms have continuity while local lawmakers adjust debtor-creditor policy.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - office-superintendent-bankruptcy
+  - bankruptcy-insolvency-act
+  - companies-creditors-arrangement-act
+  - alberta-court-of-kings-bench
   risk: medium
 - id: claim-bankruptcy-insolvency-creditor-protection-003
   topic_slug: bankruptcy-insolvency-creditor-protection
-  text: Insolvency law depends on predictability, national credit markets, courts,
-    trustee licensing, and creditor priority rules; uncertainty could raise borrowing
-    costs, complicate active cases, and make business restructuring harder during
-    a transition.
+  text: Insolvency law depends on predictability, credit markets, courts, trustee licensing, creditor priority rules, and cross-border recognition; uncertainty could raise borrowing costs, complicate active cases, and make restructuring harder during transition.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - office-superintendent-bankruptcy
+  - bankruptcy-insolvency-act
+  - companies-creditors-arrangement-act
+  - alberta-court-of-kings-bench
   risk: high
 - id: claim-bankruptcy-insolvency-creditor-protection-004
   topic_slug: bankruptcy-insolvency-creditor-protection
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on negotiated
-    recognition of federal insolvency proceedings, court jurisdiction, trustee licensing,
-    creditor priorities, consumer-proposal administration, secured lending markets,
-    cross-border enforcement, and any replacement insolvency statute.'
-  status: source_supported
-  source_ids: *id001
-  risk: medium
+  text: This topic remains high-uncertainty because outcomes depend on negotiated recognition of federal insolvency proceedings, court jurisdiction, trustee licensing, creditor priorities, consumer-proposal administration, secured lending markets, cross-border enforcement, and any replacement insolvency statute.
+  status: inference
+  source_ids:
+  - office-superintendent-bankruptcy
+  - bankruptcy-insolvency-act
+  - companies-creditors-arrangement-act
+  - alberta-court-of-kings-bench
+  risk: high

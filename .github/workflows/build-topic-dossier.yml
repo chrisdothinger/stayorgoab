@@ -1,6 +1,4 @@
 name: build-topic-dossier
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
   workflow_dispatch:
     inputs:
@@ -13,5 +11,5 @@ jobs:
   dossier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: echo "Build dossier for ${{ inputs.topic }} after source and citation checks."

@@ -1,6 +1,4 @@
 name: performance-test
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
   workflow_dispatch:
 permissions:
@@ -9,5 +7,5 @@ jobs:
   performance:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: echo "Performance smoke test stub for static preview."

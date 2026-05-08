@@ -558,7 +558,7 @@ topics:
   migration_priority: flagship
   score_total: 24
   source_refresh_required: false
-  last_migrated_pr: pending-q1-international-recognition
+  last_migrated_pr: '#59'
   migration_notes: Overview now carries the neutral synthesis; Pro and Anti are shorter
     optional debate briefs; legacy Neutral remains as compatibility synthesis. Recognition
     is framed as conditional on lawful process, Canada’s response, rights protections,

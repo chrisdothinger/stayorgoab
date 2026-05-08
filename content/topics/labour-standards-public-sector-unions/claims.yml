@@ -1,42 +1,48 @@
 claims:
 - id: claim-labour-standards-public-sector-unions-001
   topic_slug: labour-standards-public-sector-unions
-  text: Current sources show federal labour-law baselines for federally regulated work and
-    Alberta baselines for employment standards, labour relations, and labour-board administration;
-    they do not settle how an independent Alberta would treat federal-sector workers, existing
-    collective agreements, essential-services rules, pensions, successor rights, or public-sector
-    bargaining mandates.
-  status: source_supported
-  source_ids: &id001
-  - canada-labour-code
+  text: Alberta already has provincial employment-standards, labour-relations, labour-board, and public-service legal infrastructure, so an independent Alberta would not need to invent every workplace rule from scratch.
+  status: inference
+  source_ids:
   - alberta-employment-standards
+  - alberta-employment-standards-code
   - alberta-labour-relations
+  - alberta-labour-relations-code
   - alberta-labour-relations-board
+  - alberta-public-service-act
   risk: medium
 - id: claim-labour-standards-public-sector-unions-002
   topic_slug: labour-standards-public-sector-unions
-  text: The strongest pro-independence case is that Alberta could consolidate workplace regulation
-    under local statutes, tailor labour standards and bargaining rules to Alberta’s economy,
-    and write transition clauses that preserve existing contracts while reducing federal-provincial
-    complexity.
+  text: Canada currently has federal labour and federal public-service employment/labour-relations statutes, so federal-sector workers and employers would need explicit successor rules or negotiated recognition in an independence transition.
   status: inference
-  source_ids: *id001
-  risk: medium
+  source_ids:
+  - canada-labour-code
+  - canada-public-service-labour-relations-act
+  - canada-public-service-employment-act
+  risk: high
 - id: claim-labour-standards-public-sector-unions-003
   topic_slug: labour-standards-public-sector-unions
-  text: The strongest caution is that workers and employers need certainty before legal jurisdiction
-    changes; federal-sector employees, union certifications, public-sector contracts, strike/lockout
-    rules, tribunal files, and interprovincial employers could face real disruption without
-    detailed successor legislation and agreements.
+  text: Existing collective agreements, union certifications, labour-board orders, complaints, grievances, arbitrations, and essential-service arrangements could be preserved by transition legislation, but they should not be treated as automatically settled without clear successor provisions.
   status: inference
-  source_ids: *id001
+  source_ids:
+  - canada-labour-code
+  - canada-public-service-labour-relations-act
+  - alberta-employment-standards-code
+  - alberta-labour-relations-code
+  - alberta-labour-relations-board
   risk: high
 - id: claim-labour-standards-public-sector-unions-004
   topic_slug: labour-standards-public-sector-unions
-  text: 'This topic remains uncertainty-labelled: High; outcomes depend on transition legislation,
-    labour-board continuity, collective-agreement successor rules, treatment of federally
-    regulated employers, court challenges, public-sector bargaining mandates, fiscal capacity,
-    and negotiated recognition by Canada and other jurisdictions.'
-  status: source_supported
-  source_ids: *id001
-  risk: medium
+  text: 'The main uncertainty is administrative and legal continuity: which rules apply on day one, who enforces them, how active cases transfer, and how public-sector bargaining and essential services continue during transition.'
+  status: inference
+  source_ids:
+  - canada-labour-code
+  - canada-public-service-labour-relations-act
+  - canada-public-service-employment-act
+  - alberta-employment-standards
+  - alberta-employment-standards-code
+  - alberta-labour-relations
+  - alberta-labour-relations-code
+  - alberta-labour-relations-board
+  - alberta-public-service-act
+  risk: high

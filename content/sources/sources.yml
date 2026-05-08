@@ -2063,6 +2063,101 @@ sources:
   content_hash: null
   last_checked_at: '2026-05-05'
   status: active
+- id: canada-public-service-labour-relations-act
+  slug: canada-public-service-labour-relations-act
+  title: Federal Public Sector Labour Relations Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/P-33.3/FullText.html
+  published_at: null
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary federal statute for public-sector labour relations and collective bargaining in the federal public sector.
+  how_used: Baseline source for federal public-sector bargaining continuity questions in the labour-standards and unions dossier.
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
+  status: active
+- id: canada-public-service-employment-act
+  slug: canada-public-service-employment-act
+  title: Public Service Employment Act
+  publisher: Justice Laws Website, Government of Canada
+  author: Parliament of Canada
+  url: https://laws-lois.justice.gc.ca/eng/acts/P-33.01/FullText.html
+  published_at: null
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary federal statute for employment in the federal public service.
+  how_used: Baseline source for federal public-service employment continuity questions in the labour-standards and unions dossier.
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
+  status: active
+- id: alberta-employment-standards-code
+  slug: alberta-employment-standards-code
+  title: Employment Standards Code
+  publisher: Alberta King's Printer
+  author: Legislative Assembly of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=E09.cfm&leg_type=Acts&isbncln=9780779843300
+  published_at: null
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary Alberta statute for provincial employment standards.
+  how_used: Baseline statute for Alberta employment-standards continuity in the labour-standards and unions dossier.
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
+  status: active
+- id: alberta-labour-relations-code
+  slug: alberta-labour-relations-code
+  title: Labour Relations Code
+  publisher: Alberta King's Printer
+  author: Legislative Assembly of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=L01.cfm&leg_type=Acts&isbncln=9780779843317
+  published_at: null
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary Alberta statute for labour relations, bargaining, and related labour-board authority.
+  how_used: Baseline statute for provincial labour-relations continuity in the labour-standards and unions dossier.
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
+  status: active
+- id: alberta-public-service-act
+  slug: alberta-public-service-act
+  title: Public Service Act
+  publisher: Alberta King's Printer
+  author: Legislative Assembly of Alberta
+  url: https://kings-printer.alberta.ca/1266.cfm?page=P42.cfm&leg_type=Acts&isbncln=9780779843584
+  published_at: null
+  accessed_at: '2026-05-08'
+  source_type: official
+  stance: neutral
+  reliability_category: primary_official
+  summary: Primary Alberta statute for Alberta public-service employment administration.
+  how_used: Baseline statute for provincial public-service continuity in the labour-standards and unions dossier.
+  related_topic_slugs:
+  - labour-standards-public-sector-unions
+  archive_url: null
+  content_hash: null
+  last_checked_at: '2026-05-08'
+  status: active
 - id: correctional-service-canada
   slug: correctional-service-canada
   title: Correctional Service Canada

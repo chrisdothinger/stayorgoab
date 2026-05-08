@@ -1,5 +1,7 @@
 entries:
-- id: redebate-student-loans-universities-research-2026-05-05
-  date: '2026-05-05'
-  trigger: full-topic-expansion
-  summary: Public agent team generated report triad and argument map for current topic coverage.
+- id: redebate-student-loans-universities-research-2026-05-08
+  date: '2026-05-08'
+  trigger: q1-v3-migration
+  summary: 'Reframed the debate around continuity for borrowers, applicants, institutions, and
+    researchers: local post-secondary control versus transition risk in federal student aid and
+    tri-agency research funding.'

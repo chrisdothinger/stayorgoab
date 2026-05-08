@@ -10,8 +10,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Elections Alberta release announcing issuance of a citizen initiative petition
-    related to Alberta independence.
+  summary: Elections Alberta release announcing issuance of a citizen initiative petition related to Alberta independence.
   how_used: Seed source for referendum mechanics and current-status tracking.
   related_topic_slugs:
   - referendum-mechanics
@@ -32,8 +31,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Lists active citizen initiative petitions, including A Referendum Relating
-    to Alberta Independence, signature threshold, and collection dates.
+  summary: Lists active citizen initiative petitions, including A Referendum Relating to Alberta Independence, signature threshold, and collection dates.
   how_used: Current-status and referendum-mechanics source.
   related_topic_slugs:
   - referendum-mechanics
@@ -54,8 +52,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Explains notice, application, petition issuance, and requirements for citizen
-    initiative petitions.
+  summary: Explains notice, application, petition issuance, and requirements for citizen initiative petitions.
   how_used: Explains petition process mechanics.
   related_topic_slugs:
   - referendum-mechanics
@@ -76,8 +73,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Explains referendums under Alberta's Referendum Act and notes a referendum
-    set for October 19, 2026.
+  summary: Explains referendums under Alberta's Referendum Act and notes a referendum set for October 19, 2026.
   how_used: Seed source for referendum timing and process.
   related_topic_slugs:
   - referendum-mechanics
@@ -118,8 +114,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta address relevant to referendum context and provincial
-    positioning.
+  summary: Government of Alberta address relevant to referendum context and provincial positioning.
   how_used: Seed source for current-status and political-context tracking.
   related_topic_slugs:
   - referendum-ballot-2026
@@ -139,8 +134,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal law setting clarity requirements before the Government of Canada
-    enters negotiations on provincial secession.
+  summary: Federal law setting clarity requirements before the Government of Canada enters negotiations on provincial secession.
   how_used: Legal-process and clarity topic source.
   related_topic_slugs:
   - legal-process
@@ -165,8 +159,7 @@ sources:
   source_type: court
   stance: neutral
   reliability_category: primary_legal
-  summary: Supreme Court reference on unilateral secession, democratic expression,
-    constitutional negotiations, and Aboriginal interests.
+  summary: Supreme Court reference on unilateral secession, democratic expression, constitutional negotiations, and Aboriginal interests.
   how_used: Core legal baseline for secession and duty-to-negotiate claims.
   related_topic_slugs:
   - legal-process
@@ -195,10 +188,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Primary constitutional text for Part V amending procedures, including general,
-    unanimity, and province-specific amendment routes.
-  how_used: Legal baseline for explaining that lawful secession would require constitutional
-    amendment rather than an automatic referendum result.
+  summary: Primary constitutional text for Part V amending procedures, including general, unanimity, and province-specific amendment routes.
+  how_used: Legal baseline for explaining that lawful secession would require constitutional amendment rather than an automatic referendum result.
   related_topic_slugs:
   - clarity-act
   - legal-process
@@ -219,10 +210,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official House of Commons procedural overview describing the House's place
-    in Canada's parliamentary system.
-  how_used: Institutional baseline for distinguishing the House of Commons role under
-    the Clarity Act from the whole Parliament or constitutional amending process.
+  summary: Official House of Commons procedural overview describing the House's place in Canada's parliamentary system.
+  how_used: Institutional baseline for distinguishing the House of Commons role under the Clarity Act from the whole Parliament or constitutional amending process.
   related_topic_slugs:
   - clarity-act
   archive_url: null
@@ -241,10 +230,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Alberta statute governing citizen initiative petitions, including initiative
-    petition and referendum proposal mechanics.
-  how_used: Primary legal source for distinguishing petition mechanics from referendum
-    and implementation claims.
+  summary: Alberta statute governing citizen initiative petitions, including initiative petition and referendum proposal mechanics.
+  how_used: Primary legal source for distinguishing petition mechanics from referendum and implementation claims.
   related_topic_slugs:
   - referendum-mechanics
   - petition-vs-referendum-vs-negotiations
@@ -266,10 +253,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Alberta statute governing provincial referendums and their administration
-    under Alberta law.
-  how_used: Primary legal source for ballot-status, referendum-administration, and
-    legal-effect claims.
+  summary: Alberta statute governing provincial referendums and their administration under Alberta law.
+  how_used: Primary legal source for ballot-status, referendum-administration, and legal-effect claims.
   related_topic_slugs:
   - referendum-mechanics
   - petition-vs-referendum-vs-negotiations
@@ -310,10 +295,8 @@ sources:
   source_type: advocacy
   stance: anti_independence_or_rights_concern
   reliability_category: primary_stakeholder_statement
-  summary: First Nation statement about a stay related to an Alberta separation referendum
-    court challenge.
-  how_used: Seed source for Indigenous rights, treaties, litigation, and high-risk
-    current-status tracking.
+  summary: First Nation statement about a stay related to an Alberta separation referendum court challenge.
+  how_used: Seed source for Indigenous rights, treaties, litigation, and high-risk current-status tracking.
   related_topic_slugs:
   - indigenous-rights-treaties
   - indigenous-treaties
@@ -333,10 +316,8 @@ sources:
   source_type: media
   stance: neutral
   reliability_category: news_report
-  summary: News report describing a court pause on verification of an Alberta separation
-    petition.
-  how_used: Secondary source for current-status and court-process tracking; official/court
-    records should be preferred when available.
+  summary: News report describing a court pause on verification of an Alberta separation petition.
+  how_used: Secondary source for current-status and court-process tracking; official/court records should be preferred when available.
   related_topic_slugs:
   - referendum-mechanics
   - referendum-ballot-2026
@@ -356,8 +337,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta government pension information and link to Alberta Pension Plan
-    report material.
+  summary: Alberta government pension information and link to Alberta Pension Plan report material.
   how_used: Seed source for CPP/pension topic.
   related_topic_slugs:
   - cpp-pensions
@@ -376,8 +356,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Chief Actuary position on CPP withdrawal transfer calculation under subsection
-    113(2).
+  summary: Chief Actuary position on CPP withdrawal transfer calculation under subsection 113(2).
   how_used: Seed source for CPP withdrawal calculation claims.
   related_topic_slugs:
   - cpp-pensions
@@ -396,8 +375,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Budget 2026 documents, fiscal plan, revenue, expense, capital plan, and
-    related tables.
+  summary: Budget 2026 documents, fiscal plan, revenue, expense, capital plan, and related tables.
   how_used: Seed source for fiscal and economic baseline.
   related_topic_slugs:
   - economy-fiscal
@@ -441,10 +419,8 @@ sources:
   source_type: advocacy
   stance: anti_independence_or_rights_concern
   reliability_category: stakeholder_advocacy
-  summary: First Nations advocacy site describing treaty-rights concerns and litigation
-    related to Alberta separation.
-  how_used: Stakeholder/advocacy source for Indigenous rights and treaties topic;
-    requires corroboration for factual claims.
+  summary: First Nations advocacy site describing treaty-rights concerns and litigation related to Alberta separation.
+  how_used: Stakeholder/advocacy source for Indigenous rights and treaties topic; requires corroboration for factual claims.
   related_topic_slugs:
   - indigenous-rights-treaties
   - indigenous-treaties
@@ -463,10 +439,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada portal for the Canada Revenue Agency and federal tax
-    administration.
-  how_used: Baseline source for distinguishing current federal tax administration
-    from any future Alberta revenue-administration choices.
+  summary: Government of Canada portal for the Canada Revenue Agency and federal tax administration.
+  how_used: Baseline source for distinguishing current federal tax administration from any future Alberta revenue-administration choices.
   related_topic_slugs:
   - tax-collection-revenue-agency
   - bureaucracy-governance
@@ -485,10 +459,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada tax services page covering current federal tax filing,
-    payment, benefits, and program access.
-  how_used: Baseline source for the kinds of tax-facing systems residents and businesses
-    currently interact with.
+  summary: Government of Canada tax services page covering current federal tax filing, payment, benefits, and program access.
+  how_used: Baseline source for the kinds of tax-facing systems residents and businesses currently interact with.
   related_topic_slugs:
   - tax-collection-revenue-agency
   archive_url: null
@@ -506,10 +478,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta page describing Alberta tax programs and provincial
-    tax context.
-  how_used: Baseline source for Alberta-administered tax context and the distinction
-    between existing provincial capacity and future independence requirements.
+  summary: Government of Alberta page describing Alberta tax programs and provincial tax context.
+  how_used: Baseline source for Alberta-administered tax context and the distinction between existing provincial capacity and future independence requirements.
   related_topic_slugs:
   - tax-collection-revenue-agency
   archive_url: null
@@ -527,10 +497,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada portal for immigration, refugees, citizenship, and
-    related federal services.
-  how_used: Baseline source for current federal immigration and citizenship administration
-    before considering any independence transition.
+  summary: Government of Canada portal for immigration, refugees, citizenship, and related federal services.
+  how_used: Baseline source for current federal immigration and citizenship administration before considering any independence transition.
   related_topic_slugs:
   - immigration-passports-mobility
   - bureaucracy-governance
@@ -550,8 +518,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government of Canada page for Canadian passport and travel document services.
-  how_used: Baseline source for current passport administration and travel-document
-    services relevant to mobility questions.
+  how_used: Baseline source for current passport administration and travel-document services relevant to mobility questions.
   related_topic_slugs:
   - immigration-passports-mobility
   archive_url: null
@@ -569,10 +536,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Canadian constitutional text including Charter mobility-rights provisions
-    relevant to citizens and permanent residents inside Canada.
-  how_used: Legal baseline for current Canadian mobility rights before considering
-    any independence transition.
+  summary: Canadian constitutional text including Charter mobility-rights provisions relevant to citizens and permanent residents inside Canada.
+  how_used: Legal baseline for current Canadian mobility rights before considering any independence transition.
   related_topic_slugs:
   - immigration-passports-mobility
   archive_url: null
@@ -590,10 +555,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal Canadian statute governing citizenship status, grants, loss, resumption,
-    evidence, and related administration.
-  how_used: Legal baseline for Canadian citizenship claims and limits on assuming
-    automatic post-independence outcomes.
+  summary: Federal Canadian statute governing citizenship status, grants, loss, resumption, evidence, and related administration.
+  how_used: Legal baseline for Canadian citizenship claims and limits on assuming automatic post-independence outcomes.
   related_topic_slugs:
   - immigration-passports-mobility
   archive_url: null
@@ -611,8 +574,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal order establishing Canadian passport issuing authority and passport
-    administration.
+  summary: Federal order establishing Canadian passport issuing authority and passport administration.
   how_used: Legal baseline for Canadian passport eligibility and issuance questions.
   related_topic_slugs:
   - immigration-passports-mobility
@@ -632,8 +594,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Department of Justice Canada criminal justice information page.
-  how_used: Baseline source for distinguishing current federal criminal-justice responsibilities
-    from provincial court and justice-system operations.
+  how_used: Baseline source for distinguishing current federal criminal-justice responsibilities from provincial court and justice-system operations.
   related_topic_slugs:
   - courts-criminal-law
   archive_url: null
@@ -651,10 +612,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta page for provincial court information and court-related
-    public services.
-  how_used: Baseline source for existing Alberta court context before considering
-    any independence-related justice-system transition.
+  summary: Government of Alberta page for provincial court information and court-related public services.
+  how_used: Baseline source for existing Alberta court context before considering any independence-related justice-system transition.
   related_topic_slugs:
   - courts-criminal-law
   archive_url: null
@@ -672,10 +631,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Constitutional text setting the division of legislative powers, including
-    federal criminal-law authority and provincial administration-of-justice authority.
-  how_used: Legal baseline for distinguishing who currently makes criminal law from
-    who administers courts and justice in Alberta.
+  summary: Constitutional text setting the division of legislative powers, including federal criminal-law authority and provincial administration-of-justice authority.
+  how_used: Legal baseline for distinguishing who currently makes criminal law from who administers courts and justice in Alberta.
   related_topic_slugs:
   - courts-criminal-law
   archive_url: null
@@ -693,10 +650,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal Criminal Code statute containing Canadian criminal offences, procedure,
-    sentencing, appeals, warrants, and related operating rules.
-  how_used: Current-law baseline for what would have to be continued, copied, replaced,
-    or negotiated in any Alberta criminal-law transition.
+  summary: Federal Criminal Code statute containing Canadian criminal offences, procedure, sentencing, appeals, warrants, and related operating rules.
+  how_used: Current-law baseline for what would have to be continued, copied, replaced, or negotiated in any Alberta criminal-law transition.
   related_topic_slugs:
   - courts-criminal-law
   - firearms-laws-licensing
@@ -715,11 +670,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta page describing the Crown prosecution service responsible
-    for prosecuting offences in Alberta.
-  how_used: Provincial prosecution baseline for assessing how criminal case files,
-    prosecution authority, disclosure, appeals, and staffing would need continuity
-    planning.
+  summary: Government of Alberta page describing the Crown prosecution service responsible for prosecuting offences in Alberta.
+  how_used: Provincial prosecution baseline for assessing how criminal case files, prosecution authority, disclosure, appeals, and staffing would need continuity planning.
   related_topic_slugs:
   - courts-criminal-law
   archive_url: null
@@ -737,10 +689,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada page for the Canada Student Financial Assistance Program,
-    including federal student loans and grants context.
-  how_used: Baseline source for current federal student loan and grant systems before
-    considering independence-related continuity.
+  summary: Government of Canada page for the Canada Student Financial Assistance Program, including federal student loans and grants context.
+  how_used: Baseline source for current federal student loan and grant systems before considering independence-related continuity.
   related_topic_slugs:
   - student-loans-universities-research
   archive_url: null
@@ -758,8 +708,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta student-aid portal for provincial loan, grant, and
-    scholarship administration.
+  summary: Government of Alberta student-aid portal for provincial loan, grant, and scholarship administration.
   how_used: Baseline source for current Alberta student-aid administration.
   related_topic_slugs:
   - student-loans-universities-research
@@ -778,10 +727,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada page describing federal tri-agency research funding
-    coordination.
-  how_used: Baseline source for current federal research-funding institutions relevant
-    to universities and researchers.
+  summary: Government of Canada page describing federal tri-agency research funding coordination.
+  how_used: Baseline source for current federal research-funding institutions relevant to universities and researchers.
   related_topic_slugs:
   - student-loans-universities-research
   archive_url: null
@@ -795,18 +742,17 @@ sources:
   author: Canada Post
   url: https://www.canadapost-postescanada.ca/cpc/en/home.page
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-07'
   source_type: official
   stance: neutral
   reliability_category: primary_official
   summary: Canada Post public portal for national postal-service context.
-  how_used: Baseline source for current postal-service infrastructure and public-facing
-    services.
+  how_used: Baseline source for current postal-service infrastructure and public-facing services.
   related_topic_slugs:
   - postal-telecom-broadcasting
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-07'
   status: active
 - id: crtc-main
   slug: crtc-main
@@ -815,7 +761,7 @@ sources:
   author: Government of Canada
   url: https://crtc.gc.ca/eng/home-accueil.htm
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-07'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -825,7 +771,7 @@ sources:
   - postal-telecom-broadcasting
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-07'
   status: active
 - id: ised-spectrum-management
   slug: ised-spectrum-management
@@ -834,19 +780,17 @@ sources:
   author: Government of Canada
   url: https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-07'
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal spectrum-management and telecommunications portal for wireless-spectrum
-    and telecom policy context.
-  how_used: Baseline source for current spectrum-management and telecommunications
-    functions.
+  summary: Federal spectrum-management and telecommunications portal for wireless-spectrum and telecom policy context.
+  how_used: Baseline source for current spectrum-management and telecommunications functions.
   related_topic_slugs:
   - postal-telecom-broadcasting
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-07'
   status: active
 - id: cfia-main
   slug: cfia-main
@@ -859,10 +803,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Canadian Food Inspection Agency portal for federal food inspection, animal
-    health, plant health, and food-safety context.
-  how_used: Baseline source for current federal food-inspection and animal/plant health
-    functions.
+  summary: Canadian Food Inspection Agency portal for federal food inspection, animal health, plant health, and food-safety context.
+  how_used: Baseline source for current federal food-inspection and animal/plant health functions.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -880,10 +822,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CFIA export portal for food, plant, and animal exports, including export
-    certification and related requirements.
-  how_used: Supports claims that export market access depends on accepted inspection
-    and certification systems, not only domestic policy preferences.
+  summary: CFIA export portal for food, plant, and animal exports, including export certification and related requirements.
+  how_used: Supports claims that export market access depends on accepted inspection and certification systems, not only domestic policy preferences.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -901,10 +841,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CFIA animal-health portal covering disease prevention, surveillance, controls,
-    and animal-related regulatory context.
-  how_used: Supports claims about the need to preserve animal-health surveillance,
-    quarantine, disease response, reporting, and recognition during any transition.
+  summary: CFIA animal-health portal covering disease prevention, surveillance, controls, and animal-related regulatory context.
+  how_used: Supports claims about the need to preserve animal-health surveillance, quarantine, disease response, reporting, and recognition during any transition.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -922,10 +860,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CFIA plant-health portal covering plant pests, import/export controls,
-    regulated plants, and plant-protection context.
-  how_used: Supports claims about plant-health functions, pest response, phytosanitary
-    controls, and certification that would need continuity or successor recognition.
+  summary: CFIA plant-health portal covering plant pests, import/export controls, regulated plants, and plant-protection context.
+  how_used: Supports claims about plant-health functions, pest response, phytosanitary controls, and certification that would need continuity or successor recognition.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -944,8 +880,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CFIA consumer food-safety page for food recalls and allergy alerts.
-  how_used: Supports claims about recall authority, public communication, and food-safety
-    continuity needs during any independence transition.
+  how_used: Supports claims about recall authority, public communication, and food-safety continuity needs during any independence transition.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -963,10 +898,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Agriculture and Agri-Food Canada portal for federal agriculture programs
-    and market context.
-  how_used: Baseline source for current federal agriculture programming and market
-    context.
+  summary: Agriculture and Agri-Food Canada portal for federal agriculture programs and market context.
+  how_used: Baseline source for current federal agriculture programming and market context.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -984,11 +917,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Agriculture and Agri-Food Canada page for business risk management programs
-    supporting producers facing income, margin, disaster, and production risks.
-  how_used: Supports claims that federal agriculture support is delivered through
-    specific program systems that would need program-by-program continuity, replacement,
-    or wind-down rules.
+  summary: Agriculture and Agri-Food Canada page for business risk management programs supporting producers facing income, margin, disaster, and production risks.
+  how_used: Supports claims that federal agriculture support is delivered through specific program systems that would need program-by-program continuity, replacement, or wind-down rules.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -1006,11 +936,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Agriculture and Agri-Food Canada program page for market-development and
-    promotional activities for Canadian agriculture, agri-food, fish, and seafood
-    sectors.
-  how_used: Supports claims that market access and export growth involve public market-development
-    programs as well as inspection certificates and buyer confidence.
+  summary: Agriculture and Agri-Food Canada program page for market-development and promotional activities for Canadian agriculture, agri-food, fish, and seafood sectors.
+  how_used: Supports claims that market access and export growth involve public market-development programs as well as inspection certificates and buyer confidence.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
   archive_url: null
@@ -1028,8 +955,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta agriculture and irrigation portal for provincial
-    agriculture program context.
+  summary: Government of Alberta agriculture and irrigation portal for provincial agriculture program context.
   how_used: Baseline source for current Alberta agriculture responsibilities and programs.
   related_topic_slugs:
   - agriculture-food-inspection-market-access
@@ -1049,8 +975,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Federal department responsible for social programs and labour-market supports.
-  how_used: Baseline source for what would happen to employment insurance and federal
-    income benefits?
+  how_used: Baseline source for what would happen to employment insurance and federal income benefits?
   related_topic_slugs:
   - employment-insurance-federal-benefits
   - bureaucracy-governance
@@ -1070,8 +995,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government of Canada benefits portal for public benefit-program context.
-  how_used: Baseline source for what would happen to employment insurance and federal
-    income benefits?
+  how_used: Baseline source for what would happen to employment insurance and federal income benefits?
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -1090,8 +1014,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta income-support portal for provincial benefit-program context.
-  how_used: Baseline source for what would happen to employment insurance and federal
-    income benefits?
+  how_used: Baseline source for what would happen to employment insurance and federal income benefits?
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -1109,10 +1032,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal agency portal for national parks, historic sites, and conservation
-    context.
-  how_used: Baseline source for what would happen to national parks, crown land, and
-    public lands?
+  summary: Federal agency portal for national parks, historic sites, and conservation context.
+  how_used: Baseline source for what would happen to national parks, crown land, and public lands?
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -1130,10 +1051,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta public land use zones page for provincial public-land recreation
-    and land-management context.
-  how_used: Baseline source for what would happen to national parks, crown land, and
-    public lands?
+  summary: Alberta public land use zones page for provincial public-land recreation and land-management context.
+  how_used: Baseline source for what would happen to national parks, crown land, and public lands?
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -1151,10 +1070,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal natural-resources department portal for Crown-resource and policy
-    context.
-  how_used: Baseline source for what would happen to national parks, crown land, and
-    public lands?
+  summary: Federal natural-resources department portal for Crown-resource and policy context.
+  how_used: Baseline source for what would happen to national parks, crown land, and public lands?
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -1172,10 +1089,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Transport Canada aviation portal for civil aviation and safety-regulation
-    context.
-  how_used: Baseline source for what would happen to airports, air travel, and aviation
-    safety regulation?
+  summary: Transport Canada aviation portal for civil aviation and safety-regulation context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation safety regulation?
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -1193,10 +1108,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal transportation regulator portal for air-travel and transportation
-    market context.
-  how_used: Baseline source for what would happen to airports, air travel, and aviation
-    safety regulation?
+  summary: Federal transportation regulator portal for air-travel and transportation market context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation safety regulation?
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -1214,10 +1127,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta ministry portal for provincial transportation infrastructure and
-    corridor context.
-  how_used: Baseline source for what would happen to airports, air travel, and aviation
-    safety regulation?
+  summary: Alberta ministry portal for provincial transportation infrastructure and corridor context.
+  how_used: Baseline source for what would happen to airports, air travel, and aviation safety regulation?
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -1236,8 +1147,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta water portal for water management, policies, and programs.
-  how_used: Baseline source for what would happen to water rights, rivers, drinking
-    water, wastewater, and interprovincial water issues?
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -1255,10 +1165,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta portal for drinking-water and wastewater responsibilities and public
-    information.
-  how_used: Baseline source for what would happen to water rights, rivers, drinking
-    water, wastewater, and interprovincial water issues?
+  summary: Alberta portal for drinking-water and wastewater responsibilities and public information.
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -1276,10 +1184,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal information on transboundary water context relevant to cross-border
-    river and watershed questions.
-  how_used: Baseline source for what would happen to water rights, rivers, drinking
-    water, wastewater, and interprovincial water issues?
+  summary: Federal information on transboundary water context relevant to cross-border river and watershed questions.
+  how_used: Baseline source for what would happen to water rights, rivers, drinking water, wastewater, and interprovincial water issues?
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -1297,10 +1203,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Public Safety Canada emergency-management portal for federal emergency
-    roles and programs.
-  how_used: Baseline source for what would happen to emergency management, disaster
-    response, and disaster aid?
+  summary: Public Safety Canada emergency-management portal for federal emergency roles and programs.
+  how_used: Baseline source for what would happen to emergency management, disaster response, and disaster aid?
   related_topic_slugs:
   - emergency-management-disaster-aid
   - bureaucracy-governance
@@ -1319,10 +1223,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal Disaster Financial Assistance Arrangements page for disaster recovery
-    funding context.
-  how_used: Baseline source for what would happen to emergency management, disaster
-    response, and disaster aid?
+  summary: Federal Disaster Financial Assistance Arrangements page for disaster recovery funding context.
+  how_used: Baseline source for what would happen to emergency management, disaster response, and disaster aid?
   related_topic_slugs:
   - emergency-management-disaster-aid
   archive_url: null
@@ -1340,10 +1242,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta Emergency Management Agency page for provincial emergency management
-    leadership and coordination context.
-  how_used: Baseline source for Alberta-side emergency management coordination, preparedness,
-    response, and recovery roles.
+  summary: Alberta Emergency Management Agency page for provincial emergency management leadership and coordination context.
+  how_used: Baseline source for Alberta-side emergency management coordination, preparedness, response, and recovery roles.
   related_topic_slugs:
   - emergency-management-disaster-aid
   archive_url: null
@@ -1361,10 +1261,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Alberta statute establishing emergency-management authority, including
-    provincial and local emergency powers.
-  how_used: Legal baseline for command authority, local states of emergency, orders,
-    and emergency governance in any continuity plan.
+  summary: Alberta statute establishing emergency-management authority, including provincial and local emergency powers.
+  how_used: Legal baseline for command authority, local states of emergency, orders, and emergency governance in any continuity plan.
   related_topic_slugs:
   - emergency-management-disaster-aid
   archive_url: null
@@ -1382,10 +1280,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta disaster recovery program information for eligibility, applications,
-    and assistance after eligible disasters.
-  how_used: Baseline for Alberta-side recovery assistance and reimbursement questions
-    after floods, wildfires, severe weather, or other disasters.
+  summary: Alberta disaster recovery program information for eligibility, applications, and assistance after eligible disasters.
+  how_used: Baseline for Alberta-side recovery assistance and reimbursement questions after floods, wildfires, severe weather, or other disasters.
   related_topic_slugs:
   - emergency-management-disaster-aid
   archive_url: null
@@ -1403,10 +1299,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta Wildfire public portal for provincial wildfire prevention, preparedness,
-    response, status information, and operations.
-  how_used: Baseline for wildfire response capacity, surge requirements, evacuation
-    support, and seasonal disaster-cost planning.
+  summary: Alberta Wildfire public portal for provincial wildfire prevention, preparedness, response, status information, and operations.
+  how_used: Baseline for wildfire response capacity, surge requirements, evacuation support, and seasonal disaster-cost planning.
   related_topic_slugs:
   - emergency-management-disaster-aid
   archive_url: null
@@ -1424,10 +1318,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta emergency preparedness guidance for household, community, and local
-    readiness context.
-  how_used: Baseline source for preparedness, local readiness, and continuity planning
-    questions alongside statutory municipal emergency responsibilities.
+  summary: Alberta emergency preparedness guidance for household, community, and local readiness context.
+  how_used: Baseline source for preparedness, local readiness, and continuity planning questions alongside statutory municipal emergency responsibilities.
   related_topic_slugs:
   - emergency-management-disaster-aid
   archive_url: null
@@ -1445,10 +1337,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Statistics Canada public portal for federal statistical programs and official
-    data.
-  how_used: Baseline source for what would happen to census, statistics, and public
-    data systems?
+  summary: Statistics Canada public portal for federal statistical programs and official data.
+  how_used: Baseline source for what would happen to census, statistics, and public data systems?
   related_topic_slugs:
   - statistics-census-public-data
   - bureaucracy-governance
@@ -1467,10 +1357,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Statistics Canada census portal for national census products and public
-    data.
-  how_used: Baseline source for what would happen to census, statistics, and public
-    data systems?
+  summary: Statistics Canada census portal for national census products and public data.
+  how_used: Baseline source for what would happen to census, statistics, and public data systems?
   related_topic_slugs:
   - statistics-census-public-data
   archive_url: null
@@ -1488,10 +1376,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta regional data dashboard for provincial public-data
-    context.
-  how_used: Baseline source for what would happen to census, statistics, and public
-    data systems?
+  summary: Government of Alberta regional data dashboard for provincial public-data context.
+  how_used: Baseline source for what would happen to census, statistics, and public data systems?
   related_topic_slugs:
   - statistics-census-public-data
   archive_url: null
@@ -1509,8 +1395,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Current provincial overview of policing responsibilities, police services,
-    and public-safety context in Alberta.
+  summary: Current provincial overview of policing responsibilities, police services, and public-safety context in Alberta.
   how_used: Baseline source for rcmp-provincial-policing topic.
   related_topic_slugs:
   - rcmp-provincial-policing
@@ -1529,8 +1414,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Current RCMP Alberta page for provincial RCMP policing presence and public-service
-    context.
+  summary: Current RCMP Alberta page for provincial RCMP policing presence and public-service context.
   how_used: Baseline source for rcmp-provincial-policing topic.
   related_topic_slugs:
   - rcmp-provincial-policing
@@ -1549,8 +1433,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Public Safety Canada policing page for federal, provincial, territorial,
-    and RCMP-related policing context.
+  summary: Public Safety Canada policing page for federal, provincial, territorial, and RCMP-related policing context.
   how_used: Baseline source for rcmp-provincial-policing topic.
   related_topic_slugs:
   - rcmp-provincial-policing
@@ -1607,8 +1490,7 @@ sources:
   source_type: court
   stance: neutral
   reliability_category: primary_legal
-  summary: Supreme Court decision striking down the former Criminal Code abortion
-    provisions.
+  summary: Supreme Court decision striking down the former Criminal Code abortion provisions.
   how_used: Baseline source for abortion-reproductive-health-rights topic.
   related_topic_slugs:
   - abortion-reproductive-health-rights
@@ -1627,8 +1509,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal statute setting broad insured-health-service principles for provincial
-    health insurance plans.
+  summary: Federal statute setting broad insured-health-service principles for provincial health insurance plans.
   how_used: Baseline source for abortion-reproductive-health-rights topic.
   related_topic_slugs:
   - abortion-reproductive-health-rights
@@ -1667,10 +1548,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Official source for current firearms act baseline relevant to the firearms-laws-licensing
-    topic.
-  how_used: Baseline source for What would happen to firearms laws, gun licensing,
-    and restricted weapons rules?
+  summary: Official source for current firearms act baseline relevant to the firearms-laws-licensing topic.
+  how_used: Baseline source for What would happen to firearms laws, gun licensing, and restricted weapons rules?
   related_topic_slugs:
   - firearms-laws-licensing
   archive_url: null
@@ -1688,10 +1567,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official source for current canadian firearms program baseline relevant
-    to the firearms-laws-licensing topic.
-  how_used: Baseline source for What would happen to firearms laws, gun licensing,
-    and restricted weapons rules?
+  summary: Official source for current canadian firearms program baseline relevant to the firearms-laws-licensing topic.
+  how_used: Baseline source for What would happen to firearms laws, gun licensing, and restricted weapons rules?
   related_topic_slugs:
   - firearms-laws-licensing
   archive_url: null
@@ -1709,10 +1586,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta government page for the provincial Chief Firearms Office and firearms
-    administration in Alberta.
-  how_used: Alberta administrative baseline for claims about existing provincial-facing
-    firearms office capacity and its limits within the current federal framework.
+  summary: Alberta government page for the provincial Chief Firearms Office and firearms administration in Alberta.
+  how_used: Alberta administrative baseline for claims about existing provincial-facing firearms office capacity and its limits within the current federal framework.
   related_topic_slugs:
   - firearms-laws-licensing
   archive_url: null
@@ -1730,10 +1605,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official source for current alberta health care insurance plan baseline
-    relevant to the healthcare-portability-doctor-licensing topic.
-  how_used: Baseline source for What would happen to healthcare coverage, doctor licensing,
-    and out-of-province care?
+  summary: Official source for current alberta health care insurance plan baseline relevant to the healthcare-portability-doctor-licensing topic.
+  how_used: Baseline source for What would happen to healthcare coverage, doctor licensing, and out-of-province care?
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -1751,10 +1624,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official source for current physician registration baseline relevant to
-    the healthcare-portability-doctor-licensing topic.
-  how_used: Baseline source for What would happen to healthcare coverage, doctor licensing,
-    and out-of-province care?
+  summary: Official source for current physician registration baseline relevant to the healthcare-portability-doctor-licensing topic.
+  how_used: Baseline source for What would happen to healthcare coverage, doctor licensing, and out-of-province care?
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -1772,10 +1643,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official source for current canada border services agency baseline relevant
-    to the border-enforcement-customs topic.
-  how_used: Baseline source for What would happen to border enforcement, customs inspections,
-    and cross-border travel?
+  summary: Official source for current canada border services agency baseline relevant to the border-enforcement-customs topic.
+  how_used: Baseline source for What would happen to border enforcement, customs inspections, and cross-border travel?
   related_topic_slugs:
   - border-enforcement-customs
   - bureaucracy-governance
@@ -1794,10 +1663,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Official source for current customs act baseline relevant to the border-enforcement-customs
-    topic.
-  how_used: Baseline source for What would happen to border enforcement, customs inspections,
-    and cross-border travel?
+  summary: Official source for current customs act baseline relevant to the border-enforcement-customs topic.
+  how_used: Baseline source for What would happen to border enforcement, customs inspections, and cross-border travel?
   related_topic_slugs:
   - border-enforcement-customs
   archive_url: null
@@ -1815,10 +1682,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal deposit-insurance corporation portal for current CDIC coverage
-    and depositor-protection context.
-  how_used: Baseline source for What would happen to bank deposits, credit unions,
-    and financial-stability backstops?
+  summary: Federal deposit-insurance corporation portal for current CDIC coverage and depositor-protection context.
+  how_used: Baseline source for What would happen to bank deposits, credit unions, and financial-stability backstops?
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -1837,8 +1702,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Primary federal banking statute baseline.
-  how_used: Baseline source for What would happen to bank deposits, credit unions,
-    and financial-stability backstops?
+  how_used: Baseline source for What would happen to bank deposits, credit unions, and financial-stability backstops?
   related_topic_slugs:
   - bank-deposits-financial-stability
   - bureaucracy-governance
@@ -1858,8 +1722,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: OSFI overview of federally regulated financial institutions.
-  how_used: Baseline source for What would happen to bank deposits, credit unions,
-    and financial-stability backstops?
+  how_used: Baseline source for What would happen to bank deposits, credit unions, and financial-stability backstops?
   related_topic_slugs:
   - bank-deposits-financial-stability
   - bureaucracy-governance
@@ -1879,8 +1742,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta credit-union deposit-guarantee baseline.
-  how_used: Baseline source for What would happen to bank deposits, credit unions,
-    and financial-stability backstops?
+  how_used: Baseline source for What would happen to bank deposits, credit unions, and financial-stability backstops?
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -1899,8 +1761,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Health Canada portal for drug and health-product regulation.
-  how_used: Baseline source for What would happen to prescription drug approvals,
-    safety recalls, and medicine supply?
+  how_used: Baseline source for What would happen to prescription drug approvals, safety recalls, and medicine supply?
   related_topic_slugs:
   - pharmaceutical-drug-approvals-supply
   archive_url: null
@@ -1919,8 +1780,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Primary federal statute for food, drugs, cosmetics, and medical devices.
-  how_used: Baseline source for What would happen to prescription drug approvals,
-    safety recalls, and medicine supply?
+  how_used: Baseline source for What would happen to prescription drug approvals, safety recalls, and medicine supply?
   related_topic_slugs:
   - pharmaceutical-drug-approvals-supply
   archive_url: null
@@ -1939,8 +1799,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Government recall and safety-alert portal for health and consumer products.
-  how_used: Baseline source for What would happen to prescription drug approvals,
-    safety recalls, and medicine supply?
+  how_used: Baseline source for What would happen to prescription drug approvals, safety recalls, and medicine supply?
   related_topic_slugs:
   - pharmaceutical-drug-approvals-supply
   archive_url: null
@@ -1959,8 +1818,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Health Canada compliance and enforcement context for drugs and health products.
-  how_used: Baseline source for What would happen to prescription drug approvals,
-    safety recalls, and medicine supply?
+  how_used: Baseline source for What would happen to prescription drug approvals, safety recalls, and medicine supply?
   related_topic_slugs:
   - pharmaceutical-drug-approvals-supply
   archive_url: null
@@ -1978,10 +1836,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada SIN portal for current federal social-insurance-number
-    administration.
-  how_used: Baseline source for What would happen to privacy rules, Social Insurance
-    Numbers, and federal identity/data systems?
+  summary: Government of Canada SIN portal for current federal social-insurance-number administration.
+  how_used: Baseline source for What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
   related_topic_slugs:
   - privacy-data-federal-ids
   archive_url: null
@@ -2000,8 +1856,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Primary federal public-sector privacy statute baseline.
-  how_used: Baseline source for What would happen to privacy rules, Social Insurance
-    Numbers, and federal identity/data systems?
+  how_used: Baseline source for What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
   related_topic_slugs:
   - privacy-data-federal-ids
   archive_url: null
@@ -2020,8 +1875,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Primary federal private-sector privacy statute baseline.
-  how_used: Baseline source for What would happen to privacy rules, Social Insurance
-    Numbers, and federal identity/data systems?
+  how_used: Baseline source for What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
   related_topic_slugs:
   - privacy-data-federal-ids
   archive_url: null
@@ -2040,8 +1894,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta overview of provincial private-sector privacy legislation.
-  how_used: Baseline source for What would happen to privacy rules, Social Insurance
-    Numbers, and federal identity/data systems?
+  how_used: Baseline source for What would happen to privacy rules, Social Insurance Numbers, and federal identity/data systems?
   related_topic_slugs:
   - privacy-data-federal-ids
   archive_url: null
@@ -2060,8 +1913,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Federal agency portal for impact assessment administration and guidance.
-  how_used: Baseline source for What would happen to environmental assessments, pipeline
-    approvals, and major project regulation?
+  how_used: Baseline source for What would happen to environmental assessments, pipeline approvals, and major project regulation?
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -2080,8 +1932,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Primary federal statute for current federal impact-assessment baseline.
-  how_used: Baseline source for What would happen to environmental assessments, pipeline
-    approvals, and major project regulation?
+  how_used: Baseline source for What would happen to environmental assessments, pipeline approvals, and major project regulation?
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -2099,10 +1950,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta regulator portal for energy-development regulation and related
-    provincial approval context.
-  how_used: Baseline source for What would happen to environmental assessments, pipeline
-    approvals, and major project regulation?
+  summary: Alberta regulator portal for energy-development regulation and related provincial approval context.
+  how_used: Baseline source for What would happen to environmental assessments, pipeline approvals, and major project regulation?
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -2120,10 +1969,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta environmental-assessment process page for provincial major-project
-    assessment baseline.
-  how_used: Baseline source for What would happen to environmental assessments, pipeline
-    approvals, and major project regulation?
+  summary: Alberta environmental-assessment process page for provincial major-project assessment baseline.
+  how_used: Baseline source for What would happen to environmental assessments, pipeline approvals, and major project regulation?
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -2141,10 +1988,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Primary federal labour statute baseline for federally regulated employment
-    and labour relations.
-  how_used: Baseline source for What would happen to labour standards, union contracts,
-    and public-sector bargaining?
+  summary: Primary federal labour statute baseline for federally regulated employment and labour relations.
+  how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
   related_topic_slugs:
   - labour-standards-public-sector-unions
   archive_url: null
@@ -2163,8 +2008,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta employment-standards portal for current provincial workplace rules.
-  how_used: Baseline source for What would happen to labour standards, union contracts,
-    and public-sector bargaining?
+  how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
   related_topic_slugs:
   - labour-standards-public-sector-unions
   archive_url: null
@@ -2182,10 +2026,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta labour-relations overview for provincial bargaining and labour-relations
-    context.
-  how_used: Baseline source for What would happen to labour standards, union contracts,
-    and public-sector bargaining?
+  summary: Alberta labour-relations overview for provincial bargaining and labour-relations context.
+  how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
   related_topic_slugs:
   - labour-standards-public-sector-unions
   archive_url: null
@@ -2204,8 +2046,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Provincial labour-relations tribunal portal for Alberta labour-board administration.
-  how_used: Baseline source for What would happen to labour standards, union contracts,
-    and public-sector bargaining?
+  how_used: Baseline source for What would happen to labour standards, union contracts, and public-sector bargaining?
   related_topic_slugs:
   - labour-standards-public-sector-unions
   archive_url: null
@@ -2223,10 +2064,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal corrections agency portal for current penitentiary and offender-management
-    baseline.
-  how_used: Baseline source for What would happen to federal prisons, corrections,
-    parole, and sentenced inmates?
+  summary: Federal corrections agency portal for current penitentiary and offender-management baseline.
+  how_used: Baseline source for What would happen to federal prisons, corrections, parole, and sentenced inmates?
   related_topic_slugs:
   - federal-prisons-corrections-parole
   archive_url: null
@@ -2244,10 +2083,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Primary federal statute for corrections, conditional release, and related
-    institutional baseline.
-  how_used: Baseline source for What would happen to federal prisons, corrections,
-    parole, and sentenced inmates?
+  summary: Primary federal statute for corrections, conditional release, and related institutional baseline.
+  how_used: Baseline source for What would happen to federal prisons, corrections, parole, and sentenced inmates?
   related_topic_slugs:
   - federal-prisons-corrections-parole
   archive_url: null
@@ -2265,10 +2102,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal parole-board portal for current conditional-release decision-making
-    baseline.
-  how_used: Baseline source for What would happen to federal prisons, corrections,
-    parole, and sentenced inmates?
+  summary: Federal parole-board portal for current conditional-release decision-making baseline.
+  how_used: Baseline source for What would happen to federal prisons, corrections, parole, and sentenced inmates?
   related_topic_slugs:
   - federal-prisons-corrections-parole
   archive_url: null
@@ -2287,8 +2122,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta page for provincial adult correctional and remand centres.
-  how_used: Baseline source for What would happen to federal prisons, corrections,
-    parole, and sentenced inmates?
+  how_used: Baseline source for What would happen to federal prisons, corrections, parole, and sentenced inmates?
   related_topic_slugs:
   - federal-prisons-corrections-parole
   archive_url: null
@@ -2306,10 +2140,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal public-health agency portal for current disease prevention, surveillance,
-    emergency, and health-protection baselines.
-  how_used: Baseline source for What would happen to public-health disease surveillance,
-    outbreak response, and vaccine reporting?
+  summary: Federal public-health agency portal for current disease prevention, surveillance, emergency, and health-protection baselines.
+  how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
   related_topic_slugs:
   - public-health-disease-surveillance
   archive_url: null
@@ -2328,8 +2160,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Federal adverse-events-following-immunization reporting context.
-  how_used: Baseline source for What would happen to public-health disease surveillance,
-    outbreak response, and vaccine reporting?
+  how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
   related_topic_slugs:
   - public-health-disease-surveillance
   archive_url: null
@@ -2347,10 +2178,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Primary Alberta public-health statute baseline for public-health powers
-    and provincial disease-control authority.
-  how_used: Baseline source for What would happen to public-health disease surveillance,
-    outbreak response, and vaccine reporting?
+  summary: Primary Alberta public-health statute baseline for public-health powers and provincial disease-control authority.
+  how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
   related_topic_slugs:
   - public-health-disease-surveillance
   archive_url: null
@@ -2368,10 +2197,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta immunization-policy portal for provincial immunization program
-    and reporting context.
-  how_used: Baseline source for What would happen to public-health disease surveillance,
-    outbreak response, and vaccine reporting?
+  summary: Alberta immunization-policy portal for provincial immunization program and reporting context.
+  how_used: Baseline source for What would happen to public-health disease surveillance, outbreak response, and vaccine reporting?
   related_topic_slugs:
   - public-health-disease-surveillance
   archive_url: null
@@ -2389,10 +2216,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal insolvency regulator portal for bankruptcy, proposals, trustees,
-    and insolvency statistics baseline.
-  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor
-    protection, and consumer proposals?
+  summary: Federal insolvency regulator portal for bankruptcy, proposals, trustees, and insolvency statistics baseline.
+  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
   related_topic_slugs:
   - bankruptcy-insolvency-creditor-protection
   archive_url: null
@@ -2410,10 +2235,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Primary federal statute for bankruptcy, insolvency, consumer proposals,
-    and related proceedings.
-  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor
-    protection, and consumer proposals?
+  summary: Primary federal statute for bankruptcy, insolvency, consumer proposals, and related proceedings.
+  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
   related_topic_slugs:
   - bankruptcy-insolvency-creditor-protection
   archive_url: null
@@ -2431,10 +2254,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Primary federal statute for large-company creditor protection and restructuring
-    proceedings.
-  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor
-    protection, and consumer proposals?
+  summary: Primary federal statute for large-company creditor protection and restructuring proceedings.
+  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
   related_topic_slugs:
   - bankruptcy-insolvency-creditor-protection
   archive_url: null
@@ -2452,10 +2273,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta superior-court portal relevant to insolvency proceedings heard
-    in court and broader justice-system continuity.
-  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor
-    protection, and consumer proposals?
+  summary: Alberta superior-court portal relevant to insolvency proceedings heard in court and broader justice-system continuity.
+  how_used: Baseline source for What would happen to bankruptcy, insolvency, creditor protection, and consumer proposals?
   related_topic_slugs:
   - bankruptcy-insolvency-creditor-protection
   archive_url: null
@@ -2473,10 +2292,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal election-administration portal for current national party, candidate,
-    voting, and enforcement context.
-  how_used: Baseline source for What would happen to election laws, political parties,
-    and campaign finance?
+  summary: Federal election-administration portal for current national party, candidate, voting, and enforcement context.
+  how_used: Baseline source for What would happen to election laws, political parties, and campaign finance?
   related_topic_slugs:
   - elections-law-political-parties-campaign-finance
   archive_url: null
@@ -2495,8 +2312,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Primary federal election statute baseline.
-  how_used: Baseline source for What would happen to election laws, political parties,
-    and campaign finance?
+  how_used: Baseline source for What would happen to election laws, political parties, and campaign finance?
   related_topic_slugs:
   - elections-law-political-parties-campaign-finance
   archive_url: null
@@ -2514,10 +2330,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Provincial election-administration portal for Alberta election, party,
-    candidate, referendum, and finance context.
-  how_used: Baseline source for What would happen to election laws, political parties,
-    and campaign finance?
+  summary: Provincial election-administration portal for Alberta election, party, candidate, referendum, and finance context.
+  how_used: Baseline source for What would happen to election laws, political parties, and campaign finance?
   related_topic_slugs:
   - elections-law-political-parties-campaign-finance
   archive_url: null
@@ -2536,8 +2350,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Primary Alberta campaign-finance and contributions-disclosure statute baseline.
-  how_used: Baseline source for What would happen to election laws, political parties,
-    and campaign finance?
+  how_used: Baseline source for What would happen to election laws, political parties, and campaign finance?
   related_topic_slugs:
   - elections-law-political-parties-campaign-finance
   archive_url: null
@@ -2555,12 +2368,8 @@ sources:
   source_type: official
   stance: mixed
   reliability_category: primary_official
-  summary: Government of Alberta page describing 2025-2026 changes to provincial referendum
-    and citizen initiative rules, including direct-democracy thresholds and non-derogation
-    language for section 35 Aboriginal and treaty rights.
-  how_used: Used for current Alberta process context; provincial rules can make a
-    referendum route more accessible, but they do not decide Canada-wide constitutional
-    implementation.
+  summary: Government of Alberta page describing 2025-2026 changes to provincial referendum and citizen initiative rules, including direct-democracy thresholds and non-derogation language for section 35 Aboriginal and treaty rights.
+  how_used: Used for current Alberta process context; provincial rules can make a referendum route more accessible, but they do not decide Canada-wide constitutional implementation.
   related_topic_slugs:
   - legal-process
   - referendum-mechanics
@@ -2580,11 +2389,8 @@ sources:
   source_type: official
   stance: mixed
   reliability_category: primary_official_statement
-  summary: Provincial statement saying the government would not itself put separation
-    on the ballot but would respect a successful citizen-led petition process, while
-    also stating commitments around First Nations rights.
-  how_used: Used for current-event context and democratic-process framing, not as
-    binding law on secession.
+  summary: Provincial statement saying the government would not itself put separation on the ballot but would respect a successful citizen-led petition process, while also stating commitments around First Nations rights.
+  how_used: Used for current-event context and democratic-process framing, not as binding law on secession.
   related_topic_slugs:
   - legal-process
   - referendum-mechanics
@@ -2595,8 +2401,7 @@ sources:
   status: active
 - id: angus-reid-referendum-alberta-2025
   slug: angus-reid-referendum-alberta-2025
-  title: Referendum Reality? Half in Alberta & Saskatchewan call for vote on independence,
-    but fewer would actually leave
+  title: Referendum Reality? Half in Alberta & Saskatchewan call for vote on independence, but fewer would actually leave
   publisher: Angus Reid Institute
   author: Angus Reid Institute
   url: https://angusreid.org/referendum-alberta-saskatchewan-smith-moe/
@@ -2605,10 +2410,8 @@ sources:
   source_type: other
   stance: mixed
   reliability_category: public_opinion_polling
-  summary: Polling on Alberta and Saskatchewan attitudes toward an independence referendum
-    and actual separation support.
-  how_used: Used to distinguish support for having a vote from support for leaving
-    Canada.
+  summary: Polling on Alberta and Saskatchewan attitudes toward an independence referendum and actual separation support.
+  how_used: Used to distinguish support for having a vote from support for leaving Canada.
   related_topic_slugs:
   - legal-process
   - referendum-mechanics
@@ -2618,8 +2421,7 @@ sources:
   status: active
 - id: constitution-act-amending-formula
   slug: constitution-act-amending-formula
-  title: The Constitution Acts, 1867 to 1982 — Part V, Procedure for Amending Constitution
-    of Canada
+  title: The Constitution Acts, 1867 to 1982 — Part V, Procedure for Amending Constitution of Canada
   publisher: Justice Laws Website, Government of Canada
   author: Government of Canada
   url: https://laws-lois.justice.gc.ca/eng/const/page-13.html
@@ -2628,10 +2430,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Official constitutional text covering amendment procedures and section
-    35 Aboriginal and treaty rights.
-  how_used: Used for constitutional implementation complexity and rights constraints
-    after any referendum mandate.
+  summary: Official constitutional text covering amendment procedures and section 35 Aboriginal and treaty rights.
+  how_used: Used for constitutional implementation complexity and rights constraints after any referendum mandate.
   related_topic_slugs:
   - legal-process
   - indigenous-rights-treaties
@@ -2642,8 +2442,7 @@ sources:
   status: active
 - id: ablawg-bankes-referendum-non-derogation-2025
   slug: ablawg-bankes-referendum-non-derogation-2025
-  title: Provincial Referendum Legislation, Citizen-Led Secession Proposals, and Non-Derogation
-    Clauses
+  title: Provincial Referendum Legislation, Citizen-Led Secession Proposals, and Non-Derogation Clauses
   publisher: ABLawg, University of Calgary Faculty of Law
   author: Nigel Bankes
   url: https://ablawg.ca/2025/06/11/provincial-referendum-legislation-citizen-led-secession-proposals-and-non-derogation-clauses/
@@ -2652,10 +2451,8 @@ sources:
   source_type: academic
   stance: mixed
   reliability_category: expert_legal_commentary
-  summary: Legal commentary on Alberta referendum legislation, citizen-led secession
-    proposals, and non-derogation clauses related to Aboriginal and treaty rights.
-  how_used: Used to sharpen the distinction between provincial referendum machinery
-    and constitutional or treaty constraints.
+  summary: Legal commentary on Alberta referendum legislation, citizen-led secession proposals, and non-derogation clauses related to Aboriginal and treaty rights.
+  how_used: Used to sharpen the distinction between provincial referendum machinery and constitutional or treaty constraints.
   related_topic_slugs:
   - legal-process
   - referendum-mechanics
@@ -2666,8 +2463,7 @@ sources:
   status: active
 - id: ablawg-hamilton-treaty-promises-2025
   slug: ablawg-hamilton-treaty-promises-2025
-  title: '“Get the province of Alberta in line”: Treaty Promises, Provincial Power,
-    and the Role of Indigenous Nations in Discussions on Alberta Secession'
+  title: '“Get the province of Alberta in line”: Treaty Promises, Provincial Power, and the Role of Indigenous Nations in Discussions on Alberta Secession'
   publisher: ABLawg, University of Calgary Faculty of Law
   author: Robert Hamilton
   url: https://ablawg.ca/2025/05/30/get-the-province-of-alberta-in-line-treaty-promises-provincial-power-and-the-role-of-indigenous-nations-in-discussions-on-alberta-secession/
@@ -2676,10 +2472,8 @@ sources:
   source_type: academic
   stance: anti_independence_or_rights_concern
   reliability_category: expert_legal_commentary
-  summary: Legal commentary on treaty promises, provincial power, and why Indigenous
-    nations would be central actors in any Alberta secession discussion.
-  how_used: Used for anti/pro-federation and neutral analysis of Indigenous rights,
-    treaty relationships, and negotiation complexity.
+  summary: Legal commentary on treaty promises, provincial power, and why Indigenous nations would be central actors in any Alberta secession discussion.
+  how_used: Used for anti/pro-federation and neutral analysis of Indigenous rights, treaty relationships, and negotiation complexity.
   related_topic_slugs:
   - legal-process
   - indigenous-rights-treaties
@@ -2690,8 +2484,7 @@ sources:
   status: active
 - id: cbc-alberta-separation-legal-experts-2025
   slug: cbc-alberta-separation-legal-experts-2025
-  title: Alberta separation would send Canada into uncharted territory, say legal
-    experts
+  title: Alberta separation would send Canada into uncharted territory, say legal experts
   publisher: CBC News
   author: CBC News
   url: https://www.cbc.ca/news/canada/calgary/separation-consequences-1.7529623
@@ -2700,11 +2493,8 @@ sources:
   source_type: media
   stance: mixed
   reliability_category: news_report_expert_context
-  summary: News report quoting legal experts on the unsettled consequences of Alberta
-    separation, including currency, federal assets, national parks, First Nations,
-    and institutions.
-  how_used: Used for accessible public-facing examples of the practical transition
-    issues that a vote would not resolve by itself.
+  summary: News report quoting legal experts on the unsettled consequences of Alberta separation, including currency, federal assets, national parks, First Nations, and institutions.
+  how_used: Used for accessible public-facing examples of the practical transition issues that a vote would not resolve by itself.
   related_topic_slugs:
   - legal-process
   - economy-fiscal
@@ -2726,11 +2516,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal explanation of the Equalization program, including purpose, formula
-    overview, and constitutional commitment to reasonably comparable provincial public
-    services at reasonably comparable taxation levels.
-  how_used: Direct source for what equalization is and why it cannot be treated as
-    a separate Alberta cheque without broader fiscal analysis.
+  summary: Federal explanation of the Equalization program, including purpose, formula overview, and constitutional commitment to reasonably comparable provincial public services at reasonably comparable taxation levels.
+  how_used: Direct source for what equalization is and why it cannot be treated as a separate Alberta cheque without broader fiscal analysis.
   related_topic_slugs:
   - equalization
   - economy-fiscal
@@ -2749,11 +2536,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal transfer tables by province and territory, including Alberta rows
-    for major federal transfers such as the Canada Health Transfer, Canada Social
-    Transfer, Equalization, and related programs.
-  how_used: Direct source for separating equalization from other federal transfers
-    and for testing any Alberta savings claim against current federal transfer categories.
+  summary: Federal transfer tables by province and territory, including Alberta rows for major federal transfers such as the Canada Health Transfer, Canada Social Transfer, Equalization, and related programs.
+  how_used: Direct source for separating equalization from other federal transfers and for testing any Alberta savings claim against current federal transfer categories.
   related_topic_slugs:
   - equalization
   - economy-fiscal
@@ -2774,11 +2558,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada page linking to the CUSMA agreement text and chapters,
-    including goods market-access and rules-of-origin material relevant to cross-border
-    trade.
-  how_used: Used to distinguish existing Canadian external trade-agreement access
-    from any future Alberta continuity or accession claim.
+  summary: Government of Canada page linking to the CUSMA agreement text and chapters, including goods market-access and rules-of-origin material relevant to cross-border trade.
+  how_used: Used to distinguish existing Canadian external trade-agreement access from any future Alberta continuity or accession claim.
   related_topic_slugs:
   - borders-trade
   - economy-fiscal
@@ -2797,11 +2578,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Intergovernmental agreement framework for reducing and eliminating barriers
-    to the free movement of persons, goods, services, and investments within Canada.
-  how_used: Used as the baseline for current internal Canadian trade arrangements
-    that would need replacement or continuity treatment if Alberta became a separate
-    state.
+  summary: Intergovernmental agreement framework for reducing and eliminating barriers to the free movement of persons, goods, services, and investments within Canada.
+  how_used: Used as the baseline for current internal Canadian trade arrangements that would need replacement or continuity treatment if Alberta became a separate state.
   related_topic_slugs:
   - borders-trade
   - economy-fiscal
@@ -2821,10 +2599,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal statute governing customs administration, including importation,
-    reporting, release, accounting, enforcement, and related compliance concepts.
-  how_used: Used to ground the point that customs administration can create operational
-    requirements even where tariffs are low or zero.
+  summary: Federal statute governing customs administration, including importation, reporting, release, accounting, enforcement, and related compliance concepts.
+  how_used: Used to ground the point that customs administration can create operational requirements even where tariffs are low or zero.
   related_topic_slugs:
   - borders-trade
   - border-enforcement-customs
@@ -2843,10 +2619,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: WTO accessions page describing the process by which governments seek to
-    become WTO members.
-  how_used: Used to flag that international trade-organization status for a new state
-    is a process question rather than an automatic assumption.
+  summary: WTO accessions page describing the process by which governments seek to become WTO members.
+  how_used: Used to flag that international trade-organization status for a new state is a process question rather than an automatic assumption.
   related_topic_slugs:
   - borders-trade
   archive_url: null
@@ -2864,10 +2638,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal statute establishing key Canadian immigration and refugee-protection
-    rules, including admissibility and enforcement concepts.
-  how_used: Legal baseline for the traveller-inspection, admissibility, enforcement,
-    appeal, and rights questions an Alberta border plan would need to resolve.
+  summary: Federal statute establishing key Canadian immigration and refugee-protection rules, including admissibility and enforcement concepts.
+  how_used: Legal baseline for the traveller-inspection, admissibility, enforcement, appeal, and rights questions an Alberta border plan would need to resolve.
   related_topic_slugs:
   - immigration-passports-mobility
   - border-enforcement-customs
@@ -2886,10 +2658,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official U.S. Customs and Border Protection portal for U.S. border, customs,
-    travel, trade, and enforcement information.
-  how_used: Baseline source for the point that U.S. border procedures and recognition
-    are external constraints for any Alberta border arrangement.
+  summary: Official U.S. Customs and Border Protection portal for U.S. border, customs, travel, trade, and enforcement information.
+  how_used: Baseline source for the point that U.S. border procedures and recognition are external constraints for any Alberta border arrangement.
   related_topic_slugs:
   - border-enforcement-customs
   archive_url: null
@@ -2907,10 +2677,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CBSA commercial importing portal for current Canadian import, release,
-    accounting, and commercial-border guidance.
-  how_used: Baseline for the customs processes and documentation that goods-movement
-    continuity would need to preserve, replace, or interoperate with.
+  summary: CBSA commercial importing portal for current Canadian import, release, accounting, and commercial-border guidance.
+  how_used: Baseline for the customs processes and documentation that goods-movement continuity would need to preserve, replace, or interoperate with.
   related_topic_slugs:
   - borders-currency-citizenship
   - border-enforcement-customs
@@ -2930,10 +2698,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal transportation statute relevant to the current Canadian framework
-    for national transportation and rail-related regulation.
-  how_used: Baseline for identifying current Canadian transport-law architecture that
-    an Alberta corridor plan would have to account for.
+  summary: Federal transportation statute relevant to the current Canadian framework for national transportation and rail-related regulation.
+  how_used: Baseline for identifying current Canadian transport-law architecture that an Alberta corridor plan would have to account for.
   related_topic_slugs:
   - borders-currency-citizenship
   - borders-trade
@@ -2952,10 +2718,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: U.S. CBP trade guidance portal explaining basic importing and exporting
-    responsibilities and customs processes.
-  how_used: Baseline for U.S.-route claims, including the need for U.S. customs recognition,
-    documentation, and compliance.
+  summary: U.S. CBP trade guidance portal explaining basic importing and exporting responsibilities and customs processes.
+  how_used: Baseline for U.S.-route claims, including the need for U.S. customs recognition, documentation, and compliance.
   related_topic_slugs:
   - borders-currency-citizenship
   - border-enforcement-customs
@@ -2975,10 +2739,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: WTO facility page describing trade-facilitation agreement concepts, including
-    customs cooperation, release, clearance, transparency, and transit-related disciplines.
-  how_used: Benchmark for the customs and transit disciplines that a low-friction
-    Alberta goods-movement plan would need to address.
+  summary: WTO facility page describing trade-facilitation agreement concepts, including customs cooperation, release, clearance, transparency, and transit-related disciplines.
+  how_used: Benchmark for the customs and transit disciplines that a low-friction Alberta goods-movement plan would need to address.
   related_topic_slugs:
   - borders-currency-citizenship
   - borders-trade
@@ -2997,10 +2759,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Transport Canada overview of Canada Port Authorities and the current federal
-    port-authority framework.
-  how_used: Baseline for overseas-access claims because a landlocked Alberta would
-    rely on ports outside its territory.
+  summary: Transport Canada overview of Canada Port Authorities and the current federal port-authority framework.
+  how_used: Baseline for overseas-access claims because a landlocked Alberta would rely on ports outside its territory.
   related_topic_slugs:
   - borders-currency-citizenship
   - borders-trade
@@ -3019,10 +2779,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CATSA portal for the Canadian air transport security-screening authority
-    and passenger/baggage screening information.
-  how_used: Baseline for claims about current aviation security-screening functions
-    and the need for screening continuity in any transition.
+  summary: CATSA portal for the Canadian air transport security-screening authority and passenger/baggage screening information.
+  how_used: Baseline for claims about current aviation security-screening functions and the need for screening continuity in any transition.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -3040,12 +2798,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_international
-  summary: ICAO page for the Chicago Convention, the core international civil-aviation
-    framework for state responsibilities, airspace, aircraft nationality, standards,
-    and international cooperation.
-  how_used: International-law baseline for claims that an independent Alberta would
-    need internationally recognized aviation authority and air-service arrangements
-    rather than only domestic legal continuity.
+  summary: ICAO page for the Chicago Convention, the core international civil-aviation framework for state responsibilities, airspace, aircraft nationality, standards, and international cooperation.
+  how_used: International-law baseline for claims that an independent Alberta would need internationally recognized aviation authority and air-service arrangements rather than only domestic legal continuity.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -3063,12 +2817,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_operator
-  summary: NAV CANADA portal for Canada's civil air navigation service provider, relevant
-    to air traffic control, flight information, navigation infrastructure, and operational
-    interfaces.
-  how_used: Baseline for claims that aviation continuity would need air-navigation
-    service arrangements in addition to airport, airline, regulator, and screening
-    plans.
+  summary: NAV CANADA portal for Canada's civil air navigation service provider, relevant to air traffic control, flight information, navigation infrastructure, and operational interfaces.
+  how_used: Baseline for claims that aviation continuity would need air-navigation service arrangements in addition to airport, airline, regulator, and screening plans.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -3086,10 +2836,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Transport Canada procedures document for certification of aerodromes as
-    airports under the current Canadian airport-certification framework.
-  how_used: Specific baseline for claims about airport operating certificates, manuals,
-    safety obligations, emergency planning, and transition-day validity.
+  summary: Transport Canada procedures document for certification of aerodromes as airports under the current Canadian airport-certification framework.
+  how_used: Specific baseline for claims about airport operating certificates, manuals, safety obligations, emergency planning, and transition-day validity.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -3107,10 +2855,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Canadian Transportation Agency page listing Canada's air transport agreements
-    and arrangements for international air services.
-  how_used: Baseline for claims that international routes and traffic rights depend
-    on air-service arrangements with other jurisdictions, not unilateral Alberta policy.
+  summary: Canadian Transportation Agency page listing Canada's air transport agreements and arrangements for international air services.
+  how_used: Baseline for claims that international routes and traffic rights depend on air-service arrangements with other jurisdictions, not unilateral Alberta policy.
   related_topic_slugs:
   - air-transport-aviation-safety
   archive_url: null
@@ -3128,10 +2874,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Official federal statute governing corrections, conditional release, sentence
-    administration, and related federal correctional responsibilities.
-  how_used: Legal baseline for sentence administration and corrections-continuity
-    claims.
+  summary: Official federal statute governing corrections, conditional release, sentence administration, and related federal correctional responsibilities.
+  how_used: Legal baseline for sentence administration and corrections-continuity claims.
   related_topic_slugs:
   - federal-prisons-corrections-parole
   archive_url: null
@@ -3149,11 +2893,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Alberta statute for provincial correctional matters and correctional-services
-    authority.
-  how_used: Provincial legal baseline for distinguishing Alberta's existing correctional
-    authority from federal penitentiary, parole, and federal sentence-administration
-    functions.
+  summary: Alberta statute for provincial correctional matters and correctional-services authority.
+  how_used: Provincial legal baseline for distinguishing Alberta's existing correctional authority from federal penitentiary, parole, and federal sentence-administration functions.
   related_topic_slugs:
   - federal-prisons-corrections-parole
   archive_url: null
@@ -3171,10 +2912,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta government transition-study material for a possible Alberta Police
-    Service, relevant to design, cost, governance, staffing, and implementation questions.
-  how_used: Baseline for claims that provincial policing has been studied but is not
-    automatically operational.
+  summary: Alberta government transition-study material for a possible Alberta Police Service, relevant to design, cost, governance, staffing, and implementation questions.
+  how_used: Baseline for claims that provincial policing has been studied but is not automatically operational.
   related_topic_slugs:
   - rcmp-provincial-policing
   archive_url: null
@@ -3192,10 +2931,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Alberta Police Act legal baseline for police services, governance, commissions,
-    complaints, and oversight.
-  how_used: Legal baseline for claims about current Alberta policing authority and
-    any need for statutory authority in a transition.
+  summary: Alberta Police Act legal baseline for police services, governance, commissions, complaints, and oversight.
+  how_used: Legal baseline for claims about current Alberta policing authority and any need for statutory authority in a transition.
   related_topic_slugs:
   - rcmp-provincial-policing
   archive_url: null
@@ -3213,10 +2950,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Alberta statute establishing human-rights protections, prohibited grounds,
-    complaint processes, and enforcement mechanisms under provincial law.
-  how_used: Statutory human-rights baseline for claims about equality, discrimination,
-    tribunal continuity, and the need to preserve or redesign enforcement after independence.
+  summary: Alberta statute establishing human-rights protections, prohibited grounds, complaint processes, and enforcement mechanisms under provincial law.
+  how_used: Statutory human-rights baseline for claims about equality, discrimination, tribunal continuity, and the need to preserve or redesign enforcement after independence.
   related_topic_slugs:
   - charter-rights-continuity
   archive_url: null
@@ -3234,10 +2969,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CDIC guidance on eligible deposit categories, coverage limits, and product
-    scope.
-  how_used: Supports distinctions between insured deposits, limits, account categories,
-    and uninsured products.
+  summary: CDIC guidance on eligible deposit categories, coverage limits, and product scope.
+  how_used: Supports distinctions between insured deposits, limits, account categories, and uninsured products.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3255,10 +2988,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CDIC list of member institutions whose eligible deposits are protected
-    by CDIC.
-  how_used: Supports the claim that coverage attaches to eligible deposits at CDIC
-    member institutions, not all financial products everywhere.
+  summary: CDIC list of member institutions whose eligible deposits are protected by CDIC.
+  how_used: Supports the claim that coverage attaches to eligible deposits at CDIC member institutions, not all financial products everywhere.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3276,10 +3007,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal statute establishing and governing the Canada Deposit Insurance
-    Corporation.
-  how_used: Legal baseline for CDIC's authority and the statutory nature of federal
-    deposit insurance.
+  summary: Federal statute establishing and governing the Canada Deposit Insurance Corporation.
+  how_used: Legal baseline for CDIC's authority and the statutory nature of federal deposit insurance.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3297,10 +3026,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Bank of Canada overview of its financial-system core function, including
-    safe and efficient payments and financial stability.
-  how_used: Supports claims that deposit confidence depends on broader financial-stability
-    infrastructure beyond insurance.
+  summary: Bank of Canada overview of its financial-system core function, including safe and efficient payments and financial stability.
+  how_used: Supports claims that deposit confidence depends on broader financial-stability infrastructure beyond insurance.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3318,10 +3045,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Bank of Canada framework page for emergency lending assistance to eligible
-    financial institutions and financial market infrastructures.
-  how_used: Supports liquidity and lender-of-last-resort questions in transition risk
-    analysis.
+  summary: Bank of Canada framework page for emergency lending assistance to eligible financial institutions and financial market infrastructures.
+  how_used: Supports liquidity and lender-of-last-resort questions in transition risk analysis.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3340,8 +3065,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Federal statute governing Payments Canada and Canadian payment-system arrangements.
-  how_used: Supports payment-system access and clearing as part of deposit and banking
-    continuity.
+  how_used: Supports payment-system access and clearing as part of deposit and banking continuity.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3359,10 +3083,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Bank of Canada report assessing vulnerabilities and risks to Canada's financial
-    system.
-  how_used: Supports financial-stability framing and the importance of confidence,
-    liquidity, and system-wide risk monitoring.
+  summary: Bank of Canada report assessing vulnerabilities and risks to Canada's financial system.
+  how_used: Supports financial-stability framing and the importance of confidence, liquidity, and system-wide risk monitoring.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3381,8 +3103,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Alberta statute governing credit unions and related provincial framework.
-  how_used: Supports analysis of Alberta's existing provincial credit-union legal
-    baseline.
+  how_used: Supports analysis of Alberta's existing provincial credit-union legal baseline.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3400,10 +3121,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CIPF explanation of eligible client-property coverage at member investment
-    dealers.
-  how_used: Helps distinguish deposit insurance from investment-account protection
-    in public claims about savings.
+  summary: CIPF explanation of eligible client-property coverage at member investment dealers.
+  how_used: Helps distinguish deposit insurance from investment-account protection in public claims about savings.
   related_topic_slugs:
   - bank-deposits-financial-stability
   archive_url: null
@@ -3412,8 +3131,7 @@ sources:
   status: active
 - id: bill-c20-legisinfo
   slug: bill-c20-legisinfo
-  title: Bill C-20, An Act to give effect to the requirement for clarity as set out
-    in the opinion of the Supreme Court of Canada in the Quebec Secession Reference
+  title: Bill C-20, An Act to give effect to the requirement for clarity as set out in the opinion of the Supreme Court of Canada in the Quebec Secession Reference
   publisher: Parliament of Canada
   author: Parliament of Canada
   url: https://www.parl.ca/legisinfo/en/bill/36-2/C-20
@@ -3422,10 +3140,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Parliamentary bill-history record for Bill C-20, the legislation that became
-    the Clarity Act.
-  how_used: Legislative-history context for the federal clarity framework and the
-    link to the Secession Reference.
+  summary: Parliamentary bill-history record for Bill C-20, the legislation that became the Clarity Act.
+  how_used: Legislative-history context for the federal clarity framework and the link to the Secession Reference.
   related_topic_slugs:
   - clarity-act
   - legal-process
@@ -3437,8 +3153,7 @@ sources:
   status: active
 - id: senate-legal-constitutional-report-bill-c20-2000
   slug: senate-legal-constitutional-report-bill-c20-2000
-  title: Report of the Standing Senate Committee on Legal and Constitutional Affairs
-    on Bill C-20
+  title: Report of the Standing Senate Committee on Legal and Constitutional Affairs on Bill C-20
   publisher: Senate of Canada
   author: Standing Senate Committee on Legal and Constitutional Affairs
   url: https://sencanada.ca/en/Content/Sen/committee/362/lega/rep/rep09jun00-e
@@ -3447,11 +3162,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Senate committee report on Bill C-20 documenting parliamentary scrutiny
-    of the clarity legislation.
-  how_used: Legislative-history support for describing the Clarity Act as a statutory
-    implementation of the Secession Reference framework rather than a province-specific
-    measure.
+  summary: Senate committee report on Bill C-20 documenting parliamentary scrutiny of the clarity legislation.
+  how_used: Legislative-history support for describing the Clarity Act as a statutory implementation of the Secession Reference framework rather than a province-specific measure.
   related_topic_slugs:
   - clarity-act
   - legal-process
@@ -3471,10 +3183,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: House of Commons Hansard record from the parliamentary debates on Bill
-    C-20.
-  how_used: Parliamentary context for how elected federal actors debated clarity,
-    question wording, majority, and negotiation duties.
+  summary: House of Commons Hansard record from the parliamentary debates on Bill C-20.
+  how_used: Parliamentary context for how elected federal actors debated clarity, question wording, majority, and negotiation duties.
   related_topic_slugs:
   - clarity-act
   - legal-process
@@ -3485,8 +3195,7 @@ sources:
   status: active
 - id: quebec-fundamental-rights-act
   slug: quebec-fundamental-rights-act
-  title: Act respecting the exercise of the fundamental rights and prerogatives of
-    the Quebec people and the Quebec State
+  title: Act respecting the exercise of the fundamental rights and prerogatives of the Quebec people and the Quebec State
   publisher: Publications Quebec
   author: National Assembly of Quebec
   url: https://www.legisquebec.gouv.qc.ca/en/document/cs/E-20.2
@@ -3495,10 +3204,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Quebec statute enacted in response to the federal clarity framework, asserting
-    Quebec positions on self-determination and referendum-majority legitimacy.
-  how_used: Comparative legal context showing that federal clarity rules have been
-    contested politically and legally, especially in Quebec.
+  summary: Quebec statute enacted in response to the federal clarity framework, asserting Quebec positions on self-determination and referendum-majority legitimacy.
+  how_used: Comparative legal context showing that federal clarity rules have been contested politically and legally, especially in Quebec.
   related_topic_slugs:
   - clarity-act
   - quebec-secession-reference
@@ -3518,10 +3225,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official consolidated Canada Pension Plan statute, including withdrawal
-    and transfer provisions relevant to provincial CPP exit mechanics.
-  how_used: Legal baseline for CPP withdrawal authority, contribution/benefit framework,
-    and why a statutory mechanism is not the same as a complete transition plan.
+  summary: Official consolidated Canada Pension Plan statute, including withdrawal and transfer provisions relevant to provincial CPP exit mechanics.
+  how_used: Legal baseline for CPP withdrawal authority, contribution/benefit framework, and why a statutory mechanism is not the same as a complete transition plan.
   related_topic_slugs:
   - cpp-pensions
   archive_url: null
@@ -3539,10 +3244,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Public Government of Canada overview of CPP retirement, disability, survivor,
-    children's, death, and post-retirement benefits.
-  how_used: Establishes the current benefit families and household-facing administrative
-    continuity questions any Alberta transition would need to answer.
+  summary: Public Government of Canada overview of CPP retirement, disability, survivor, children's, death, and post-retirement benefits.
+  how_used: Establishes the current benefit families and household-facing administrative continuity questions any Alberta transition would need to answer.
   related_topic_slugs:
   - cpp-pensions
   - employment-insurance-federal-benefits
@@ -3561,10 +3264,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CRA guidance on CPP contribution rates, yearly maximum pensionable earnings,
-    additional maximum pensionable earnings, exemptions, and payroll administration.
-  how_used: Supports claims that contribution comparisons and employer payroll transition
-    are technical administrative questions, not slogans.
+  summary: CRA guidance on CPP contribution rates, yearly maximum pensionable earnings, additional maximum pensionable earnings, exemptions, and payroll administration.
+  how_used: Supports claims that contribution comparisons and employer payroll transition are technical administrative questions, not slogans.
   related_topic_slugs:
   - cpp-pensions
   archive_url: null
@@ -3582,10 +3283,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Chief Actuary actuarial valuation of the Canada Pension Plan, including
-    long-term financial projections and contribution-rate sustainability analysis.
-  how_used: Baseline for CPP sustainability, actuarial uncertainty, and why any Alberta
-    alternative needs transparent actuarial assumptions.
+  summary: Chief Actuary actuarial valuation of the Canada Pension Plan, including long-term financial projections and contribution-rate sustainability analysis.
+  how_used: Baseline for CPP sustainability, actuarial uncertainty, and why any Alberta alternative needs transparent actuarial assumptions.
   related_topic_slugs:
   - cpp-pensions
   archive_url: null
@@ -3603,11 +3302,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CPP Investments annual-report portal describing fund performance, assets,
-    governance reporting, and long-term investment management.
-  how_used: Supports discussion of investment governance, fund scale, performance
-    comparisons, and the evidence burden for claiming a successor plan would invest
-    better.
+  summary: CPP Investments annual-report portal describing fund performance, assets, governance reporting, and long-term investment management.
+  how_used: Supports discussion of investment governance, fund scale, performance comparisons, and the evidence burden for claiming a successor plan would invest better.
   related_topic_slugs:
   - cpp-pensions
   archive_url: null
@@ -3625,11 +3321,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: CPP Investments statement of its statutory mandate to invest CPP funds
-    in the best interests of contributors and beneficiaries without undue risk of
-    loss.
-  how_used: Baseline for comparing current arm's-length CPP investment governance
-    with proposed Alberta governance safeguards.
+  summary: CPP Investments statement of its statutory mandate to invest CPP funds in the best interests of contributors and beneficiaries without undue risk of loss.
+  how_used: Baseline for comparing current arm's-length CPP investment governance with proposed Alberta governance safeguards.
   related_topic_slugs:
   - cpp-pensions
   archive_url: null
@@ -3647,10 +3340,8 @@ sources:
   source_type: official
   stance: mixed
   reliability_category: expert_analysis
-  summary: Alberta-commissioned LifeWorks analysis of the possible costs, benefits,
-    risks, and implementation considerations of an Alberta Pension Plan.
-  how_used: Main source for the pro-APP case and for identifying the assumptions,
-    risks, and implementation questions that require scrutiny.
+  summary: Alberta-commissioned LifeWorks analysis of the possible costs, benefits, risks, and implementation considerations of an Alberta Pension Plan.
+  how_used: Main source for the pro-APP case and for identifying the assumptions, risks, and implementation questions that require scrutiny.
   related_topic_slugs:
   - cpp-pensions
   archive_url: null
@@ -3668,10 +3359,8 @@ sources:
   source_type: official
   stance: mixed
   reliability_category: primary_official
-  summary: Alberta public-engagement page presenting the Alberta Pension Plan report
-    and the government's framing of potential provincial pension choices.
-  how_used: Source for Alberta's public-facing claims about an APP and for distinguishing
-    official framing from settled actuarial or negotiated outcomes.
+  summary: Alberta public-engagement page presenting the Alberta Pension Plan report and the government's framing of potential provincial pension choices.
+  how_used: Source for Alberta's public-facing claims about an APP and for distinguishing official framing from settled actuarial or negotiated outcomes.
   related_topic_slugs:
   - cpp-pensions
   archive_url: null
@@ -3680,8 +3369,7 @@ sources:
   status: active
 - id: canada-cpp-annual-report-2024
   slug: canada-cpp-annual-report-2024
-  title: Annual report of the Canada Pension Plan for the fiscal year ending March
-    31, 2024
+  title: Annual report of the Canada Pension Plan for the fiscal year ending March 31, 2024
   publisher: Government of Canada
   author: Employment and Social Development Canada
   url: https://www.canada.ca/en/employment-social-development/programs/pensions/reports/annual-2024.html
@@ -3690,10 +3378,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal annual report on CPP administration, benefit payments, contributions,
-    stewardship, and operational reporting for the fiscal year ending March 31, 2024.
-  how_used: Current operating baseline for CPP administration and benefit delivery
-    that any transition would need to preserve or replace.
+  summary: Federal annual report on CPP administration, benefit payments, contributions, stewardship, and operational reporting for the fiscal year ending March 31, 2024.
+  how_used: Current operating baseline for CPP administration and benefit delivery that any transition would need to preserve or replace.
   related_topic_slugs:
   - cpp-pensions
   archive_url: null
@@ -3711,10 +3397,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal statute establishing Employment Insurance program authority, benefits,
-    contributions, administration, reconsideration, and appeal framework.
-  how_used: Core legal baseline for EI continuity and replacement-authority claims
-    in the employment-insurance-federal-benefits topic.
+  summary: Federal statute establishing Employment Insurance program authority, benefits, contributions, administration, reconsideration, and appeal framework.
+  how_used: Core legal baseline for EI continuity and replacement-authority claims in the employment-insurance-federal-benefits topic.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3732,10 +3416,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal regulations supporting Employment Insurance eligibility, administration,
-    insurable employment, benefits, records, and related implementation details.
-  how_used: Supports claims that EI continuity requires detailed regulatory and operational
-    replacement or bridging, not only broad statutory authority.
+  summary: Federal regulations supporting Employment Insurance eligibility, administration, insurable employment, benefits, records, and related implementation details.
+  how_used: Supports claims that EI continuity requires detailed regulatory and operational replacement or bridging, not only broad statutory authority.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3753,10 +3435,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada claimant-facing page for EI regular benefits, including
-    eligibility and application channel context.
-  how_used: Shows current federal service baseline for unemployed workers and the
-    functions any transition or Alberta successor program would need to preserve.
+  summary: Government of Canada claimant-facing page for EI regular benefits, including eligibility and application channel context.
+  how_used: Shows current federal service baseline for unemployed workers and the functions any transition or Alberta successor program would need to preserve.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3774,10 +3454,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada claimant-facing page for EI special benefits such
-    as sickness, maternity, parental, caregiving, and related benefit categories.
-  how_used: Expands the EI continuity analysis beyond job-loss benefits to special-benefit
-    claimants who would also need transition protection.
+  summary: Government of Canada claimant-facing page for EI special benefits such as sickness, maternity, parental, caregiving, and related benefit categories.
+  how_used: Expands the EI continuity analysis beyond job-loss benefits to special-benefit claimants who would also need transition protection.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3786,8 +3464,7 @@ sources:
   status: active
 - id: ei-monitoring-assessment-report-2023-2024
   slug: ei-monitoring-assessment-report-2023-2024
-  title: Employment Insurance Monitoring and Assessment Report for fiscal year beginning
-    April 1, 2023 and ending March 31, 2024
+  title: Employment Insurance Monitoring and Assessment Report for fiscal year beginning April 1, 2023 and ending March 31, 2024
   publisher: Employment and Social Development Canada
   author: Employment and Social Development Canada
   url: https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/reports/monitoring2024.html
@@ -3796,10 +3473,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal annual monitoring report on EI program use, finances, labour-market
-    context, and administration for 2023-2024.
-  how_used: Provides substantive program-depth evidence for the scale, monitoring,
-    and performance questions that a successor or transition plan would need to address.
+  summary: Federal annual monitoring report on EI program use, finances, labour-market context, and administration for 2023-2024.
+  how_used: Provides substantive program-depth evidence for the scale, monitoring, and performance questions that a successor or transition plan would need to address.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3817,10 +3492,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal statute establishing Old Age Security and related income-tested
-    senior benefits.
-  how_used: Legal baseline for assessing whether senior income benefits would continue,
-    require federal agreement, or require Alberta successor legislation.
+  summary: Federal statute establishing Old Age Security and related income-tested senior benefits.
+  how_used: Legal baseline for assessing whether senior income benefits would continue, require federal agreement, or require Alberta successor legislation.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3838,10 +3511,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Canada overview page for Old Age Security benefits and service
-    access.
-  how_used: Claimant-facing source for current federal OAS channels and senior-benefit
-    continuity questions.
+  summary: Government of Canada overview page for Old Age Security benefits and service access.
+  how_used: Claimant-facing source for current federal OAS channels and senior-benefit continuity questions.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3859,10 +3530,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Canada Revenue Agency overview of the Canada child benefit and related
-    child/family benefit administration.
-  how_used: Shows federal tax-administered family-benefit channels that would need
-    explicit transition treatment for parents and guardians.
+  summary: Canada Revenue Agency overview of the Canada child benefit and related child/family benefit administration.
+  how_used: Shows federal tax-administered family-benefit channels that would need explicit transition treatment for parents and guardians.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3880,10 +3549,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Canada Revenue Agency overview of the GST/HST credit for low- and modest-income
-    individuals and families.
-  how_used: Supports analysis of federal income-tested credits and payment channels
-    beyond EI and public pensions.
+  summary: Canada Revenue Agency overview of the GST/HST credit for low- and modest-income individuals and families.
+  how_used: Supports analysis of federal income-tested credits and payment channels beyond EI and public pensions.
   related_topic_slugs:
   - employment-insurance-federal-benefits
   archive_url: null
@@ -3901,10 +3568,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta criteria and rules for eligibility for provincial health-care insurance
-    coverage.
-  how_used: Supports claims about domestic continuity tasks for residents, movers,
-    temporary absence, and eligibility files.
+  summary: Alberta criteria and rules for eligibility for provincial health-care insurance coverage.
+  how_used: Supports claims about domestic continuity tasks for residents, movers, temporary absence, and eligibility files.
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -3922,10 +3587,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta guidance on hospital, physician, optometry, dental/oral-surgery,
-    podiatry, and other services covered or not covered by AHCIP.
-  how_used: Supports the distinction between preserving Alberta insured services and
-    negotiating external portability.
+  summary: Alberta guidance on hospital, physician, optometry, dental/oral-surgery, podiatry, and other services covered or not covered by AHCIP.
+  how_used: Supports the distinction between preserving Alberta insured services and negotiating external portability.
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -3943,10 +3606,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta information on emergency and planned insured services outside Alberta
-    and how out-of-province coverage is handled.
-  how_used: Core source for portability, reciprocal-care, referral, and pre-approval
-    risk analysis.
+  summary: Alberta information on emergency and planned insured services outside Alberta and how out-of-province coverage is handled.
+  how_used: Core source for portability, reciprocal-care, referral, and pre-approval risk analysis.
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -3964,10 +3625,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta instructions for submitting claims for insured health services,
-    including documentation and reimbursement context.
-  how_used: Supports operational claims about billing, reimbursement, paperwork, and
-    patient-facing administrative continuity.
+  summary: Alberta instructions for submitting claims for insured health services, including documentation and reimbursement context.
+  how_used: Supports operational claims about billing, reimbursement, paperwork, and patient-facing administrative continuity.
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -3985,10 +3644,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta guidance on how temporary or permanent absence from Alberta affects
-    AHCIP coverage.
-  how_used: Supports edge-case analysis for students, workers, snowbirds, movers,
-    and residents away from Alberta during transition.
+  summary: Alberta guidance on how temporary or permanent absence from Alberta affects AHCIP coverage.
+  how_used: Supports edge-case analysis for students, workers, snowbirds, movers, and residents away from Alberta during transition.
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -4006,10 +3663,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal description of Canada Health Transfer arrangements and their connection
-    to provincial and territorial health care funding.
-  how_used: Supports fiscal-transition claims about replacing or renegotiating federal
-    health funding in an independence scenario.
+  summary: Federal description of Canada Health Transfer arrangements and their connection to provincial and territorial health care funding.
+  how_used: Supports fiscal-transition claims about replacing or renegotiating federal health funding in an independence scenario.
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -4027,10 +3682,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: regulator
-  summary: CPSA information on independent-practice registration requirements and
-    pathways.
-  how_used: Supports detailed claims about credential standards, practice permits,
-    and the need to preserve comparable licensing pathways.
+  summary: CPSA information on independent-practice registration requirements and pathways.
+  how_used: Supports detailed claims about credential standards, practice permits, and the need to preserve comparable licensing pathways.
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -4049,8 +3702,7 @@ sources:
   stance: neutral
   reliability_category: data_official
   summary: CIHI national health spending data and trend reporting.
-  how_used: Supports claims that health coverage continuity is fiscally large and
-    must be budgeted, not merely promised.
+  how_used: Supports claims that health coverage continuity is fiscally large and must be budgeted, not merely promised.
   related_topic_slugs:
   - healthcare-portability-doctor-licensing
   archive_url: null
@@ -4068,11 +3720,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Primary constitutional text setting federal and provincial institutions
-    and division-of-powers context relevant to why secession cannot be accomplished
-    by ordinary provincial law alone.
-  how_used: Supports claims that Confederation is a constitutional order involving
-    federal and provincial actors, not only a single provincial electorate.
+  summary: Primary constitutional text setting federal and provincial institutions and division-of-powers context relevant to why secession cannot be accomplished by ordinary provincial law alone.
+  how_used: Supports claims that Confederation is a constitutional order involving federal and provincial actors, not only a single provincial electorate.
   related_topic_slugs:
   - quebec-secession-reference
   - legal-process
@@ -4093,8 +3742,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Quebec law governing referendums and popular consultations in Quebec.
-  how_used: Supports narrow Quebec-reference context for referendum mechanics while
-    distinguishing a consultative provincial vote from completed constitutional secession.
+  how_used: Supports narrow Quebec-reference context for referendum mechanics while distinguishing a consultative provincial vote from completed constitutional secession.
   related_topic_slugs:
   - quebec-secession-reference
   - referendum-mechanics
@@ -4115,8 +3763,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Official referendum results page for the 1995 Quebec sovereignty referendum.
-  how_used: Context source for why clear-question and clear-majority disputes mattered
-    after the close 1995 vote.
+  how_used: Context source for why clear-question and clear-majority disputes mattered after the close 1995 vote.
   related_topic_slugs:
   - quebec-secession-reference
   - clear-question-majority
@@ -4136,11 +3783,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Primary international-law instrument referring to equal rights and self-determination
-    of peoples.
-  how_used: Provides international-law context for self-determination arguments, read
-    through the Supreme Court's conclusion that international law did not give Quebec
-    a unilateral secession right in the circumstances before it.
+  summary: Primary international-law instrument referring to equal rights and self-determination of peoples.
+  how_used: Provides international-law context for self-determination arguments, read through the Supreme Court's conclusion that international law did not give Quebec a unilateral secession right in the circumstances before it.
   related_topic_slugs:
   - quebec-secession-reference
   - legal-process
@@ -4160,9 +3804,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Treaty text whose Article 1 recognizes the right of peoples to self-determination.
-  how_used: Provides international-law context for self-determination claims while
-    relying on the Secession Reference for the Canadian-law conclusion about unilateral
-    provincial secession.
+  how_used: Provides international-law context for self-determination claims while relying on the Secession Reference for the Canadian-law conclusion about unilateral provincial secession.
   related_topic_slugs:
   - quebec-secession-reference
   - legal-process
@@ -4319,8 +3961,7 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal fish habitat and pollution statute relevant to energy and environmental
-    regulation.
+  summary: Federal fish habitat and pollution statute relevant to energy and environmental regulation.
   how_used: Supports environmental-law continuity and federal-protection claims.
   related_topic_slugs:
   - energy-environment
@@ -4403,10 +4044,8 @@ sources:
   source_type: court
   stance: neutral
   reliability_category: primary_legal
-  summary: Supreme Court of Canada advisory opinion on constitutionality of parts
-    of the federal Impact Assessment Act scheme.
-  how_used: Supports bounded treatment of federal assessment authority and cautions
-    against overclaiming either federal or provincial control.
+  summary: Supreme Court of Canada advisory opinion on constitutionality of parts of the federal Impact Assessment Act scheme.
+  how_used: Supports bounded treatment of federal assessment authority and cautions against overclaiming either federal or provincial control.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4424,10 +4063,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Alberta statute for environmental protection, approvals, enforcement, and
-    related regulatory tools.
-  how_used: Supports discussion of provincial environmental duties and day-one continuity
-    for approvals and enforcement.
+  summary: Alberta statute for environmental protection, approvals, enforcement, and related regulatory tools.
+  how_used: Supports discussion of provincial environmental duties and day-one continuity for approvals and enforcement.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4445,10 +4082,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Alberta statute establishing the AER's integrated energy-resource regulatory
-    framework.
-  how_used: Supports the single-regulator institutional baseline and questions about
-    successor authority.
+  summary: Alberta statute establishing the AER's integrated energy-resource regulatory framework.
+  how_used: Supports the single-regulator institutional baseline and questions about successor authority.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4466,10 +4101,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_legal
-  summary: Federal statute governing the Canada Energy Regulator and federally regulated
-    pipelines and energy infrastructure.
-  how_used: Establishes federal pipeline and energy-infrastructure baseline for cross-border
-    approval questions.
+  summary: Federal statute governing the Canada Energy Regulator and federally regulated pipelines and energy infrastructure.
+  how_used: Establishes federal pipeline and energy-infrastructure baseline for cross-border approval questions.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4488,8 +4121,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CER public material on pipeline applications and hearings.
-  how_used: Supports pipeline-specific analysis, especially interprovincial and international
-    approval pathways.
+  how_used: Supports pipeline-specific analysis, especially interprovincial and international approval pathways.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4498,8 +4130,7 @@ sources:
   status: active
 - id: alberta-duty-to-consult-guidelines
   slug: alberta-duty-to-consult-guidelines
-  title: The Government of Alberta's Guidelines on Consultation with First Nations
-    on Land and Natural Resource Management
+  title: The Government of Alberta's Guidelines on Consultation with First Nations on Land and Natural Resource Management
   publisher: Government of Alberta
   author: Government of Alberta
   url: https://open.alberta.ca/publications/9781460143265
@@ -4508,10 +4139,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta guidance for consultation with First Nations on land and natural-resource
-    management decisions.
-  how_used: Supports treatment of Indigenous consultation as a first-order approval
-    and transition issue.
+  summary: Alberta guidance for consultation with First Nations on land and natural-resource management decisions.
+  how_used: Supports treatment of Indigenous consultation as a first-order approval and transition issue.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4530,8 +4159,7 @@ sources:
   stance: neutral
   reliability_category: primary_legal
   summary: Federal statute for wildlife species at risk and related protection measures.
-  how_used: Supports species-protection constraints and equivalency/continuity questions
-    in project approvals.
+  how_used: Supports species-protection constraints and equivalency/continuity questions in project approvals.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4549,10 +4177,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal major-project coordination material relevant to current Canadian
-    efforts to accelerate nationally significant projects.
-  how_used: Provides comparison point for permitting-speed claims inside Canada versus
-    independence proposals.
+  summary: Federal major-project coordination material relevant to current Canadian efforts to accelerate nationally significant projects.
+  how_used: Provides comparison point for permitting-speed claims inside Canada versus independence proposals.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4571,8 +4197,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: CER energy market snapshots and analysis material.
-  how_used: Supports market/export constraint framing and cautions against treating
-    legal approval as the only project bottleneck.
+  how_used: Supports market/export constraint framing and cautions against treating legal approval as the only project bottleneck.
   related_topic_slugs:
   - environmental-assessment-pipeline-approvals
   archive_url: null
@@ -4590,10 +4215,8 @@ sources:
   source_type: court
   stance: neutral
   reliability_category: primary_legal
-  summary: Leading Supreme Court of Canada decision on the Crown duty to consult and,
-    where appropriate, accommodate Indigenous peoples.
-  how_used: Establishes consultation-duty principles relevant to rights-affecting
-    Crown decisions.
+  summary: Leading Supreme Court of Canada decision on the Crown duty to consult and, where appropriate, accommodate Indigenous peoples.
+  how_used: Establishes consultation-duty principles relevant to rights-affecting Crown decisions.
   related_topic_slugs:
   - indigenous-rights-treaties
   archive_url: null
@@ -4611,8 +4234,7 @@ sources:
   source_type: court
   stance: neutral
   reliability_category: primary_legal
-  summary: Supreme Court of Canada decision applying consultation analysis in a treaty-rights
-    context.
+  summary: Supreme Court of Canada decision applying consultation analysis in a treaty-rights context.
   how_used: Supports careful treatment of treaty rights and Crown consultation obligations.
   related_topic_slugs:
   - indigenous-rights-treaties
@@ -4631,8 +4253,7 @@ sources:
   source_type: court
   stance: neutral
   reliability_category: primary_legal
-  summary: Supreme Court of Canada decision recognizing Aboriginal title and explaining
-    consequences for land-use decisions.
+  summary: Supreme Court of Canada decision recognizing Aboriginal title and explaining consequences for land-use decisions.
   how_used: Supports land/title uncertainty analysis in an independence transition.
   related_topic_slugs:
   - indigenous-rights-treaties
@@ -4661,8 +4282,7 @@ sources:
   status: active
 - id: alberta-first-nations-consultation-guidelines-2014
   slug: alberta-first-nations-consultation-guidelines-2014
-  title: The Government of Alberta's Guidelines on Consultation with First Nations
-    on Land and Natural Resource Management, 2014
+  title: The Government of Alberta's Guidelines on Consultation with First Nations on Land and Natural Resource Management, 2014
   publisher: Government of Alberta
   author: Government of Alberta
   url: https://open.alberta.ca/publications/9781460108536
@@ -4671,10 +4291,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta guidelines for consultation with First Nations on land and natural-resource
-    management.
-  how_used: Shows current Alberta consultation framework, while noting it is not a
-    secession-transition plan.
+  summary: Alberta guidelines for consultation with First Nations on land and natural-resource management.
+  how_used: Shows current Alberta consultation framework, while noting it is not a secession-transition plan.
   related_topic_slugs:
   - indigenous-rights-treaties
   archive_url: null
@@ -4692,10 +4310,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Parks Canada page listing national parks in Alberta and linking to park-specific
-    visitor and operating information.
-  how_used: Identifies Alberta national parks as federal Parks Canada sites whose
-    administration, access, and operations need explicit transition treatment.
+  summary: Parks Canada page listing national parks in Alberta and linking to park-specific visitor and operating information.
+  how_used: Identifies Alberta national parks as federal Parks Canada sites whose administration, access, and operations need explicit transition treatment.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -4713,10 +4329,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal statute governing national parks, including park dedication, administration,
-    protection, and regulatory authority.
-  how_used: Legal baseline for why national parks are a federal-law transition issue
-    rather than ordinary provincial public land.
+  summary: Federal statute governing national parks, including park dedication, administration, protection, and regulatory authority.
+  how_used: Legal baseline for why national parks are a federal-law transition issue rather than ordinary provincial public land.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -4734,10 +4348,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Parks Canada management-planning resources for national parks and other
-    protected heritage places.
-  how_used: Supports discussion of park operations, ecological objectives, planning
-    continuity, and why a transition must address more than land title.
+  summary: Parks Canada management-planning resources for national parks and other protected heritage places.
+  how_used: Supports discussion of park operations, ecological objectives, planning continuity, and why a transition must address more than land title.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -4756,8 +4368,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta statute for provincial public lands and related administration.
-  how_used: Legal baseline for Alberta-administered Crown/public lands and continuity
-    questions for dispositions and enforcement.
+  how_used: Legal baseline for Alberta-administered Crown/public lands and continuity questions for dispositions and enforcement.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -4776,8 +4387,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta public information on recreation access and rules on public land.
-  how_used: Grounds discussion of public access, permits, restrictions, enforcement,
-    and visitor communications on provincial public lands.
+  how_used: Grounds discussion of public access, permits, restrictions, enforcement, and visitor communications on provincial public lands.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -4796,8 +4406,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Alberta government page for provincial parks and protected areas.
-  how_used: Establishes Alberta's provincial parks/protected-areas baseline distinct
-    from federal national parks.
+  how_used: Establishes Alberta's provincial parks/protected-areas baseline distinct from federal national parks.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -4834,10 +4443,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta's land-use planning framework for managing growth, cumulative effects,
-    and regional planning.
-  how_used: Supports analysis of regional land-use planning and cumulative-effects
-    continuity.
+  summary: Alberta's land-use planning framework for managing growth, cumulative effects, and regional planning.
+  how_used: Supports analysis of regional land-use planning and cumulative-effects continuity.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -4855,10 +4462,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal information on numbered treaties relevant to Alberta and treaty
-    relationships.
-  how_used: Supports discussion of treaty rights and Crown obligations as first-order
-    land-transition issues.
+  summary: Federal information on numbered treaties relevant to Alberta and treaty relationships.
+  how_used: Supports discussion of treaty rights and Crown obligations as first-order land-transition issues.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -4876,10 +4481,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta statute governing water allocation, licences, approvals, priorities,
-    and related provincial water administration.
-  how_used: Provides the legal baseline for Alberta water rights, licences, approvals,
-    and allocation systems.
+  summary: Alberta statute governing water allocation, licences, approvals, priorities, and related provincial water administration.
+  how_used: Provides the legal baseline for Alberta water rights, licences, approvals, and allocation systems.
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -4897,10 +4500,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta's long-running water strategy emphasizing safe drinking water,
-    healthy aquatic ecosystems, and reliable water supplies.
-  how_used: Grounds watershed-policy and infrastructure-planning context without treating
-    strategy goals as transition guarantees.
+  summary: Alberta's long-running water strategy emphasizing safe drinking water, healthy aquatic ecosystems, and reliable water supplies.
+  how_used: Grounds watershed-policy and infrastructure-planning context without treating strategy goals as transition guarantees.
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -4919,8 +4520,7 @@ sources:
   stance: neutral
   reliability_category: primary_official
   summary: Provincial drought monitoring and current-conditions information for Alberta.
-  how_used: Supports the point that scarcity, drought operations, and public communications
-    are practical water-governance constraints.
+  how_used: Supports the point that scarcity, drought operations, and public communications are practical water-governance constraints.
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -4929,8 +4529,7 @@ sources:
   status: active
 - id: aer-directive-081-water-disposal-limits
   slug: aer-directive-081-water-disposal-limits
-  title: 'Directive 081: Water Disposal Limits and Reporting Requirements for Thermal
-    In Situ Oil Sands Schemes'
+  title: 'Directive 081: Water Disposal Limits and Reporting Requirements for Thermal In Situ Oil Sands Schemes'
   publisher: Alberta Energy Regulator
   author: Alberta Energy Regulator
   url: https://www.aer.ca/regulations-and-compliance-enforcement/rules-and-regulations/directives/directive-081
@@ -4939,10 +4538,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Alberta Energy Regulator directive setting water-disposal limits and reporting
-    requirements for thermal in situ oil sands operations.
-  how_used: Shows that water governance also intersects with industrial regulation
-    and operational reporting.
+  summary: Alberta Energy Regulator directive setting water-disposal limits and reporting requirements for thermal in situ oil sands operations.
+  how_used: Shows that water governance also intersects with industrial regulation and operational reporting.
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -4960,10 +4557,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal statute authorizing cooperative federal-provincial water-resource
-    arrangements, water-quality management, and related federal roles.
-  how_used: Grounds the federal legal baseline for cooperative and interjurisdictional
-    water management.
+  summary: Federal statute authorizing cooperative federal-provincial water-resource arrangements, water-quality management, and related federal roles.
+  how_used: Grounds the federal legal baseline for cooperative and interjurisdictional water management.
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -4981,10 +4576,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: IJC page on the 1909 Boundary Waters Treaty between Canada and the United
-    States and the commission's treaty mission.
-  how_used: Grounds the international boundary-water layer relevant to rivers and
-    water bodies crossing or affecting the United States.
+  summary: IJC page on the 1909 Boundary Waters Treaty between Canada and the United States and the commission's treaty mission.
+  how_used: Grounds the international boundary-water layer relevant to rivers and water bodies crossing or affecting the United States.
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -5002,10 +4595,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Intergovernmental board associated with apportionment and water-quality
-    cooperation among the Prairie provinces.
-  how_used: Supports the need to address downstream apportionment and prairie interprovincial
-    water arrangements in any transition.
+  summary: Intergovernmental board associated with apportionment and water-quality cooperation among the Prairie provinces.
+  how_used: Supports the need to address downstream apportionment and prairie interprovincial water arrangements in any transition.
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -5023,10 +4614,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal information on water and wastewater services, advisories, and support
-    in First Nations communities.
-  how_used: Grounds the need to address First Nations drinking-water and wastewater
-    responsibilities separately from provincial municipal systems.
+  summary: Federal information on water and wastewater services, advisories, and support in First Nations communities.
+  how_used: Grounds the need to address First Nations drinking-water and wastewater responsibilities separately from provincial municipal systems.
   related_topic_slugs:
   - water-rights-rivers
   archive_url: null
@@ -5035,8 +4624,7 @@ sources:
   status: active
 - id: undrip-action-plan-canada
   slug: undrip-action-plan-canada
-  title: United Nations Declaration on the Rights of Indigenous Peoples Act Action
-    Plan
+  title: United Nations Declaration on the Rights of Indigenous Peoples Act Action Plan
   publisher: Department of Justice Canada
   author: Department of Justice Canada
   url: https://www.justice.gc.ca/eng/declaration/ap-pa.html
@@ -5045,10 +4633,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Federal action plan under the UN Declaration Act, including measures related
-    to consultation, participation, and alignment of laws.
-  how_used: Adds official context for current Canadian UNDRIP implementation and self-determination
-    language.
+  summary: Federal action plan under the UN Declaration Act, including measures related to consultation, participation, and alignment of laws.
+  how_used: Adds official context for current Canadian UNDRIP implementation and self-determination language.
   related_topic_slugs:
   - indigenous-rights-treaties
   archive_url: null
@@ -5066,10 +4652,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Government of Alberta public lands overview for provincial Crown land administration
-    and access context.
-  how_used: Supports the baseline for Alberta public-land administration in the national
-    parks and public lands dossier.
+  summary: Government of Alberta public lands overview for provincial Crown land administration and access context.
+  how_used: Supports the baseline for Alberta public-land administration in the national parks and public lands dossier.
   related_topic_slugs:
   - national-parks-public-lands
   archive_url: null
@@ -5087,10 +4671,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Canada-wide public accounts reporting federal financial statements, liabilities,
-    assets, and accumulated deficit.
-  how_used: Provides the federal balance-sheet baseline for debt and asset allocation
-    discussions; not used as an Alberta-specific allocation formula.
+  summary: Canada-wide public accounts reporting federal financial statements, liabilities, assets, and accumulated deficit.
+  how_used: Provides the federal balance-sheet baseline for debt and asset allocation discussions; not used as an Alberta-specific allocation formula.
   related_topic_slugs:
   - federal-debt-assets
   archive_url: null
@@ -5108,10 +4690,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Finance Canada's accessible annual summary of the federal government's
-    fiscal results, debt charges, liabilities, and financial position for 2023–24.
-  how_used: Provides a current federal fiscal baseline for explaining debt and liabilities;
-    not used as an Alberta-specific secession settlement.
+  summary: Finance Canada's accessible annual summary of the federal government's fiscal results, debt charges, liabilities, and financial position for 2023–24.
+  how_used: Provides a current federal fiscal baseline for explaining debt and liabilities; not used as an Alberta-specific secession settlement.
   related_topic_slugs:
   - federal-debt-assets
   archive_url: null
@@ -5129,10 +4709,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official department page for Canada’s foreign affairs, trade, development,
-    and diplomatic functions.
-  how_used: Institution-building baseline for foreign representation and external-affairs
-    functions.
+  summary: Official department page for Canada’s foreign affairs, trade, development, and diplomatic functions.
+  how_used: Institution-building baseline for foreign representation and external-affairs functions.
   related_topic_slugs:
   - bureaucracy-governance
   archive_url: null
@@ -5150,10 +4728,8 @@ sources:
   source_type: official
   stance: neutral
   reliability_category: primary_official
-  summary: Official department page for Canada’s defence institution and armed-forces-related
-    public functions.
-  how_used: Institution-building baseline for defence and security-adjacent state
-    functions.
+  summary: Official department page for Canada’s defence institution and armed-forces-related public functions.
+  how_used: Institution-building baseline for defence and security-adjacent state functions.
   related_topic_slugs:
   - bureaucracy-governance
   archive_url: null

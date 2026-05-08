@@ -22,6 +22,7 @@ export const MERGED_NEUTRAL_TOPIC_SLUGS = [
   'tax-collection-revenue-agency',
   'bankruptcy-insolvency-creditor-protection',
   'bureaucracy-governance',
+  'case-studies',
   'international-recognition',
   'labour-standards-public-sector-unions',
   'military-security',

@@ -1,31 +1,49 @@
 claims:
 - id: claim-case-studies-001
   topic_slug: case-studies
-  text: Quebec, Scotland, Brexit, and other cases can illustrate risks and choices, but none is a direct prediction for Alberta.
+  text: Quebec, Scotland, Brexit, and other cases can clarify process questions and transition risks, but none is a direct prediction for Alberta.
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - uk-scotland-analysis-collection
+  - uk-scottish-independence-referendum-act
+  - uk-eu-withdrawal-agreement
+  - uk-eu-future-relationship-act
+  risk: medium
+- id: claim-case-studies-002
+  topic_slug: case-studies
+  text: The Quebec Secession Reference and Clarity Act support the importance of clear democratic expression, clarity, and negotiation, while rejecting automatic unilateral secession.
   status: source_supported
   source_ids:
   - scc-secession-reference
   - clarity-act
-  risk: high
-- id: claim-case-studies-002
-  topic_slug: case-studies
-  text: The strongest pro case uses case studies to show that democratic self-determination debates can force negotiations
-    and clarify political choices.
-  status: inference
-  source_ids: &id001
-  - scc-secession-reference
-  - clarity-act
-  risk: high
+  risk: medium
 - id: claim-case-studies-003
   topic_slug: case-studies
-  text: The strongest caution uses case studies to show transition complexity, divided mandates, economic uncertainty, and
-    long institutional consequences.
+  text: Scotland is useful for referendum authorization and pre-vote analysis, but it should not be treated as proof that Alberta would receive similar terms or face similar institutions.
   status: inference
-  source_ids: *id001
-  risk: high
+  source_ids:
+  - uk-scotland-analysis-collection
+  - uk-scottish-independence-referendum-act
+  risk: medium
 - id: claim-case-studies-004
   topic_slug: case-studies
-  text: 'This topic remains uncertainty-labelled: Low-to-medium for general lessons; high for direct prediction.'
-  status: source_supported
-  source_ids: *id001
-  risk: high
+  text: Brexit is useful as evidence that post-vote withdrawal, future-relationship law, and implementation can be complex, but it should not be treated as a direct forecast for Alberta.
+  status: inference
+  source_ids:
+  - uk-eu-withdrawal-agreement
+  - uk-eu-future-relationship-act
+  risk: medium
+- id: claim-case-studies-005
+  topic_slug: case-studies
+  text: 'The strongest case-study lesson for Alberta is to demand Alberta-specific evidence: legal route, clear question, transition plan, counterparties, Indigenous/treaty analysis, trade assumptions, and implementation timelines.'
+  status: inference
+  source_ids:
+  - scc-secession-reference
+  - clarity-act
+  - uk-scotland-analysis-collection
+  - uk-scottish-independence-referendum-act
+  - uk-eu-withdrawal-agreement
+  - uk-eu-future-relationship-act
+  risk: medium

@@ -1232,7 +1232,7 @@ topics:
   migration_priority: keep
   score_total: 21
   source_refresh_required: false
-  last_migrated_pr: pending-q1-bankruptcy-insolvency-creditor-protection
+  last_migrated_pr: '#54'
   migration_notes: Overview now carries the neutral synthesis; Pro and Anti are shorter
     optional debate briefs; legacy Neutral remains as compatibility synthesis.
   required_lanes:

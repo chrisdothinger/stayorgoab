@@ -1,11 +1,16 @@
 entries:
-- id: audit-student-loans-universities-research-2026-05-05
-  date: '2026-05-05'
-  agent: StayOrGoAB public agent team
-  summary: Expanded topic dossier with neutral, pro-independence, and anti-independence / pro-federation reports using checked source records and uncertainty labels.
+- id: audit-student-loans-universities-research-2026-05-08
+  date: '2026-05-08'
+  agent: Armin
+  summary: Migrated student-loans-universities-research to Q1/v3 with Overview as the neutral
+    synthesis, shorter Pro/Anti debate briefs, and legacy Neutral compatibility route.
   checks:
+  - q1-v3-overview-neutral
   - source-support
   - stance-balance
   - uncertainty-labels
-  - no-external-audit-wording
+  - legacy-neutral-compatibility
   result: pass
+  risks: Student-loan servicing, repayment assistance, grant eligibility, institutional funding,
+    data transfer, federal research-award continuity, and graduate-student funding remain conditional
+    without written transition terms.

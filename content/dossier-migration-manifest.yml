@@ -883,11 +883,11 @@ topics:
     why would that matter for funding and elections?
   category: Government institutions and regulators
   question_decision: keep
-  migration_status: legacy_refresh_needed
+  migration_status: v3_complete
   migration_batch: batch-06-state-capacity-foreign-security
   migration_priority: keep
   score_total: 18
-  source_refresh_required: true
+  source_refresh_required: false
   required_lanes:
   - base-packet
   - pro-source
@@ -902,6 +902,9 @@ topics:
     side
   - numbered citations and matching Sources sections are preserved
   - sources.yml, claims.yml, audit-log.yml, and redebate-log.yml are updated
+  last_migrated_pr: '#58'
+  migration_notes: Overview now carries the neutral synthesis; Pro and Anti are shorter
+    optional debate briefs; legacy Neutral remains as compatibility synthesis.
 - slug: rcmp-provincial-policing
   public_question: Would Alberta keep the RCMP, build a provincial police service,
     or need something new?

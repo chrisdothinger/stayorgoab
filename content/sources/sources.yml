@@ -1333,7 +1333,7 @@ sources:
   author: Statistics Canada
   url: https://www.statcan.gc.ca/en/start
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-07'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1344,7 +1344,7 @@ sources:
   - bureaucracy-governance
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-07'
   status: active
 - id: statistics-canada-census
   slug: statistics-canada-census
@@ -1353,7 +1353,7 @@ sources:
   author: Statistics Canada
   url: https://www12.statcan.gc.ca/census-recensement/index-eng.cfm
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-07'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1363,7 +1363,7 @@ sources:
   - statistics-census-public-data
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-07'
   status: active
 - id: alberta-regional-dashboard
   slug: alberta-regional-dashboard
@@ -1372,7 +1372,7 @@ sources:
   author: Government of Alberta
   url: https://regionaldashboard.alberta.ca/
   published_at: null
-  accessed_at: '2026-05-05'
+  accessed_at: '2026-05-07'
   source_type: official
   stance: neutral
   reliability_category: primary_official
@@ -1382,7 +1382,7 @@ sources:
   - statistics-census-public-data
   archive_url: null
   content_hash: null
-  last_checked_at: '2026-05-05'
+  last_checked_at: '2026-05-07'
   status: active
 - id: alberta-policing
   slug: alberta-policing

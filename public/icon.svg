@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="StayOrGoAB icon">
+  <rect width="512" height="512" rx="92" fill="#0b1220"/>
+  <path d="M96 116h320" stroke="#f8f7f2" stroke-width="30" stroke-linecap="round" opacity="0.96"/>
+  <path d="M96 256h248" stroke="#f2c94c" stroke-width="30" stroke-linecap="round"/>
+  <path d="M96 396h320" stroke="#38bdf8" stroke-width="30" stroke-linecap="round" opacity="0.94"/>
+  <path d="M363 210l62 46-62 46" fill="none" stroke="#f8f7f2" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="96" cy="256" r="22" fill="#6baa75"/>
+</svg>

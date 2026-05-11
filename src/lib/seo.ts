@@ -3,6 +3,8 @@ import { hasMergedNeutralOverview } from './dossier-contract';
 import type { SourceRecord, TopicMeta } from './types';
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://stayorgoab.ca').replace(/\/$/, '');
+export const DEFAULT_OG_IMAGE = '/og-image.png';
+export const DEFAULT_OG_IMAGE_ALT = 'StayOrGoAB source-backed Alberta referendum, independence, and separation answers';
 
 export const CORE_KEYWORDS = [
   'Alberta referendum',
@@ -61,12 +63,21 @@ export function pageMetadata({
       url: canonical,
       siteName: 'StayOrGoAB',
       locale: 'en_CA',
-      type
+      type,
+      images: [
+        {
+          url: DEFAULT_OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: DEFAULT_OG_IMAGE_ALT
+        }
+      ]
     },
     twitter: {
       card: 'summary_large_image',
       title,
-      description
+      description,
+      images: [DEFAULT_OG_IMAGE]
     }
   };
 }

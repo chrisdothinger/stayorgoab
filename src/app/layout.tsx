@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import './globals.css';
 import type { Metadata } from 'next';
-import { CORE_KEYWORDS, SITE_URL } from '@/lib/seo';
+import { CORE_KEYWORDS, DEFAULT_OG_IMAGE, DEFAULT_OG_IMAGE_ALT, SITE_URL } from '@/lib/seo';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -21,13 +21,31 @@ export const metadata: Metadata = {
     url: '/',
     siteName: 'StayOrGoAB',
     locale: 'en_CA',
-    type: 'website'
+    type: 'website',
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: DEFAULT_OG_IMAGE_ALT
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'StayOrGoAB',
-    description: 'Source-backed answers on Alberta independence, separation, and referendum questions.'
+    description: 'Source-backed answers on Alberta independence, separation, and referendum questions.',
+    images: [DEFAULT_OG_IMAGE]
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' }
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }]
+  },
+  manifest: '/site.webmanifest',
   robots: {
     index: true,
     follow: true

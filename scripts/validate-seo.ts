@@ -3,9 +3,30 @@ import path from 'node:path';
 
 const OUT_DIR = path.join(process.cwd(), 'out');
 const requiredKeywords = ['Alberta referendum', 'Alberta independence', 'Alberta separation'];
-const requiredFiles = ['index.html', 'questions/index.html', 'sources/index.html', 'sitemap.xml', 'robots.txt'];
+const requiredFiles = [
+  'index.html',
+  'questions/index.html',
+  'sources/index.html',
+  'alberta-separation/index.html',
+  'alberta-independence/index.html',
+  'alberta-referendum/index.html',
+  'alberta-secession/index.html',
+  'sitemap.xml',
+  'robots.txt',
+  'favicon.ico',
+  'icon.svg',
+  'icon-192.png',
+  'icon-512.png',
+  'apple-touch-icon.png',
+  'og-image.png',
+  'site.webmanifest'
+];
 const representativePages = [
   'index.html',
+  'alberta-separation/index.html',
+  'alberta-independence/index.html',
+  'alberta-referendum/index.html',
+  'alberta-secession/index.html',
   'questions/index.html',
   'questions/legal-process/index.html',
   'questions/referendum-mechanics/index.html',
@@ -33,7 +54,9 @@ for (const file of representativePages) {
   if (!/<meta name="description" content="[^"]{80,}"/.test(html)) errors.push(`${file} missing substantial meta description`);
   if (!/<link rel="canonical" href="https:\/\/stayorgoab\.ca\//.test(html)) errors.push(`${file} missing stayorgoab.ca canonical`);
   if (!/<meta property="og:title"/.test(html)) errors.push(`${file} missing Open Graph title`);
+  if (!/<meta property="og:image" content="https:\/\/stayorgoab\.ca\/og-image\.png"/.test(html)) errors.push(`${file} missing Open Graph image`);
   if (!/<meta name="twitter:card"/.test(html)) errors.push(`${file} missing Twitter card metadata`);
+  if (!/<meta name="twitter:image" content="https:\/\/stayorgoab\.ca\/og-image\.png"/.test(html)) errors.push(`${file} missing Twitter image`);
   for (const keyword of requiredKeywords) {
     if (!html.includes(keyword)) errors.push(`${file} missing keyword phrase: ${keyword}`);
   }
@@ -43,6 +66,10 @@ const sitemap = read('sitemap.xml');
 if (sitemap) {
   for (const url of [
     'https://stayorgoab.ca/',
+    'https://stayorgoab.ca/alberta-separation/',
+    'https://stayorgoab.ca/alberta-independence/',
+    'https://stayorgoab.ca/alberta-referendum/',
+    'https://stayorgoab.ca/alberta-secession/',
     'https://stayorgoab.ca/questions/',
     'https://stayorgoab.ca/questions/legal-process/',
     'https://stayorgoab.ca/questions/referendum-mechanics/',

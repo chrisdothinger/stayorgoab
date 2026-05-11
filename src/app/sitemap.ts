@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { loadRepositoryContent } from '@/lib/content';
 import { hasMergedNeutralOverview } from '@/lib/dossier-contract';
 import { absoluteUrl, SITE_URL } from '@/lib/seo';
+import { keywordEntryPages } from '@/lib/keyword-entry-pages';
 
 export const dynamic = 'force-static';
 
@@ -41,7 +42,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const sourceRoutes: MetadataRoute.Sitemap = content.sources.map((source) => sitemapUrl(`/sources/${source.slug ?? source.id}/`, 0.35, 'monthly'));
 
-  return [...staticRoutes, ...topicRoutes, ...sourceRoutes].map((entry) => ({
+  const keywordRoutes: MetadataRoute.Sitemap = keywordEntryPages.map((page) => sitemapUrl(`/${page.slug}/`, 0.88, 'weekly'));
+
+  return [...staticRoutes, ...keywordRoutes, ...topicRoutes, ...sourceRoutes].map((entry) => ({
     ...entry,
     url: entry.url.replace(`${SITE_URL}//`, `${SITE_URL}/`)
   }));

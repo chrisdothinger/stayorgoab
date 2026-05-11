@@ -1,1 +1,3 @@
+# Default ownership for public-interest launch repo.
+# Keeps external/unknown PRs behind Chris review instead of agent-only merge authority.
 * @chrisdothinger
